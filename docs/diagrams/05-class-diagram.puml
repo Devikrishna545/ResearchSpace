@@ -1,0 +1,947 @@
+@startuml Research_Assistant_Class_Diagram
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam packageStyle rectangle
+hide empty members
+
+' =====================================================================
+' DOMAIN MODEL / ENTITIES  (mirrors 04-system-design.md §3 Postgres schema)
+' =====================================================================
+package "domain.entities" {
+
+  class User {
+    +id: UUID
+    +email: str
+    +password_hash: str
+    +created_at: datetime
+  }
+
+  class ResearchSpace {
+    +id: UUID
+    +user_id: UUID
+    +name: str
+    +status: SpaceStatus
+    +created_at: datetime
+    +updated_at: datetime
+  }
+
+  enum SpaceStatus {
+    ACTIVE
+    ARCHIVED
+  }
+
+  class Paper {
+    +id: UUID
+    +doi: str
+    +arxiv_id: str
+    +pmid: str
+    +openalex_id: str
+    +title: str
+    +authors: list<Author>
+    +year: int
+    +venue: str
+    +abstract: str
+    +citation_count: int
+    +oa_status: str
+    +pdf_url: str
+    +source: str
+    +content_hash: str
+    +ingest_status: IngestStatus
+    +created_at: datetime
+  }
+
+  enum IngestStatus {
+    QUEUED
+    FETCHING
+    PARSING
+    CHUNKING
+    EMBEDDING
+    PROFILING
+    READY
+    DEGRADED
+    FAILED
+  }
+
+  class Author {
+    +name: str
+    +affiliation: str
+  }
+
+  class Pin {
+    +id: UUID
+    +space_id: UUID
+    +paper_id: UUID
+    +pinned_at: datetime
+  }
+
+  class Chunk {
+    +id: UUID
+    +paper_id: UUID
+    +section: str
+    +page: int
+    +ordinal: int
+    +text: str
+    +token_count: int
+    +vector_id: str
+  }
+
+  class PaperProfile {
+    +id: UUID
+    +paper_id: UUID
+    +problem: str
+    +method: str
+    +dataset: str
+    +metrics: str
+    +results: str
+    +limitations: str
+    +future_work: str
+    +generated_at: datetime
+    +verified: bool
+  }
+
+  class Turn {
+    +id: UUID
+    +space_id: UUID
+    +role: TurnRole
+    +content: str
+    +created_at: datetime
+  }
+
+  enum TurnRole {
+    USER
+    ASSISTANT
+  }
+
+  class Citation {
+    +id: UUID
+    +turn_id: UUID
+    +chunk_id: UUID
+    +claim_text: str
+    +ordinal: int
+  }
+
+  class VerificationIteration {
+    +id: UUID
+    +turn_id: UUID
+    +iteration: int
+    +draft_text: str
+    +verdict: VerdictType
+    +overall_score: float
+    +claim_findings: list<ClaimFinding>
+    +missing_evidence_queries: list<str>
+    +action_taken: LoopAction
+    +latency_ms: int
+    +model_used: str
+    +created_at: datetime
+  }
+
+  class Note {
+    +id: UUID
+    +space_id: UUID
+    +paper_id: UUID
+    +content: str
+    +source: NoteSource
+    +created_at: datetime
+    +updated_at: datetime
+  }
+
+  enum NoteSource {
+    AUTO
+    MANUAL
+  }
+
+  class ComparisonReport {
+    +id: UUID
+    +space_id: UUID
+    +paper_ids: list<UUID>
+    +matrix: ComparisonMatrix
+    +commonalities: list<str>
+    +contradictions: list<Contradiction>
+    +gaps: list<Gap>
+    +confidence: float
+    +generated_at: datetime
+  }
+
+  class SpaceMemory {
+    +space_id: UUID
+    +rolling_summary: str
+    +findings: list<str>
+    +open_questions: list<str>
+    +updated_at: datetime
+  }
+
+  ResearchSpace "1" *-- "many" Pin
+  ResearchSpace "1" *-- "many" Turn
+  ResearchSpace "1" *-- "many" Note
+  ResearchSpace "1" *-- "many" ComparisonReport
+  ResearchSpace "1" -- "1" SpaceMemory
+  ResearchSpace "1" -- "many" User : owned by >
+  Pin "many" -- "1" Paper
+  Paper "1" *-- "many" Chunk
+  Paper "1" -- "0..1" PaperProfile
+  Paper "1" -- "many" Author
+  Turn "1" *-- "many" Citation
+  Turn "1" *-- "many" VerificationIteration
+  Citation "many" -- "1" Chunk
+  Note "many" -- "0..1" Paper
+  ResearchSpace .. SpaceStatus
+  Paper .. IngestStatus
+  Turn .. TurnRole
+  Note .. NoteSource
+}
+
+' =====================================================================
+' VALUE OBJECTS / DTOs  (agent + service payloads)
+' =====================================================================
+package "domain.valueobjects" {
+
+  class SearchQuery {
+    +topic: str
+    +sub_queries: list<str>
+    +filters: SearchFilters
+  }
+
+  class SearchFilters {
+    +year_from: int
+    +year_to: int
+    +sources: list<str>
+    +open_access_only: bool
+    +venue: str
+    +min_citations: int
+  }
+
+  class SearchPlan {
+    +sub_queries: list<str>
+    +source_hints: list<str>
+    +filters: SearchFilters
+  }
+
+  class PaperIdentifier {
+    +doi: str
+    +arxiv_id: str
+    +pmid: str
+    +title: str
+  }
+
+  class RawPaperRecord {
+    +source: str
+    +identifier: PaperIdentifier
+    +title: str
+    +authors: list<str>
+    +year: int
+    +abstract: str
+    +raw_payload: dict
+  }
+
+  class SourceHealth {
+    +source: str
+    +status: HealthStatus
+    +latency_ms: int
+    +error: str
+  }
+
+  enum HealthStatus {
+    HEALTHY
+    DEGRADED
+    DOWN
+  }
+
+  class RankedPaper {
+    +paper: Paper
+    +semantic_score: float
+    +rerank_score: float
+    +final_score: float
+  }
+
+  class RankedPaperList {
+    +papers: list<RankedPaper>
+    +degraded_sources: list<SourceHealth>
+  }
+
+  class FullTextRef {
+    +url: str
+    +license: str
+    +format: str
+  }
+
+  class RawDocument {
+    +bytes: bytes
+    +mime_type: str
+    +source_url: str
+  }
+
+  class ParsedDocument {
+    +sections: list<Section>
+    +references: list<str>
+    +page_count: int
+  }
+
+  class Section {
+    +heading: str
+    +page: int
+    +text: str
+  }
+
+  class EmbeddedChunk {
+    +chunk: Chunk
+    +vector: list<float>
+  }
+
+  class IngestJob {
+    +job_id: UUID
+    +paper_id: UUID
+    +stage: IngestStatus
+    +error: str
+  }
+
+  class ScoredChunk {
+    +chunk: Chunk
+    +score: float
+    +retrieval_method: str
+  }
+
+  class EvidenceSet {
+    +chunks: list<ScoredChunk>
+    +token_count: int
+  }
+
+  class RewrittenQuery {
+    +text: str
+    +sub_queries: list<str>
+  }
+
+  class ConversationContext {
+    +recent_turns: list<Turn>
+    +rolling_summary: str
+    +recalled_turns: list<Turn>
+  }
+
+  class Claim {
+    +claim_id: str
+    +text: str
+    +cited_chunk_ids: list<str>
+  }
+
+  class Draft {
+    +text: str
+    +claims: list<Claim>
+  }
+
+  class ClaimFinding {
+    +claim_id: str
+    +claim_text: str
+    +status: ClaimStatus
+    +cited_chunk_ids: list<str>
+    +evidence_quote: str
+    +issue: str
+    +suggested_correction: str
+  }
+
+  enum ClaimStatus {
+    SUPPORTED
+    PARTIAL
+    UNSUPPORTED
+    CONTRADICTED
+    MISCITED
+  }
+
+  class ReviewVerdict {
+    +verdict: VerdictType
+    +overall_score: float
+    +claims: list<ClaimFinding>
+    +missing_evidence_queries: list<str>
+    +global_feedback: str
+    +hallucination_flags: list<str>
+  }
+
+  enum VerdictType {
+    APPROVED
+    REVISE
+    EVIDENCE_GAP
+    REJECT
+  }
+
+  enum LoopAction {
+    ACCEPT
+    REGENERATE
+    RE_RETRIEVE
+    FINALIZE_BEST_EFFORT
+  }
+
+  class TurnState {
+    +space_id: UUID
+    +turn_id: UUID
+    +question: str
+    +evidence: EvidenceSet
+    +draft: Draft
+    +review_history: list<ReviewVerdict>
+    +iteration: int
+    +elapsed_ms: int
+    +action: LoopAction
+  }
+
+  class AnsweredTurn {
+    +turn_id: UUID
+    +answer: str
+    +citations: list<Citation>
+    +confidence: float
+    +iterations: int
+  }
+
+  class PaperProfileDraft {
+    +problem: str
+    +method: str
+    +dataset: str
+    +metrics: str
+    +results: str
+    +limitations: str
+    +future_work: str
+  }
+
+  class ComparisonMatrix {
+    +rows: list<dict>
+    +dimensions: list<str>
+  }
+
+  class Contradiction {
+    +topic: str
+    +paper_a_id: UUID
+    +paper_a_claim: str
+    +paper_b_id: UUID
+    +paper_b_claim: str
+  }
+
+  class Gap {
+    +description: str
+    +supporting_paper_ids: list<UUID>
+    +category: str
+  }
+
+  SearchPlan ..> SearchFilters
+  RawPaperRecord ..> PaperIdentifier
+  RankedPaperList "1" *-- "many" RankedPaper
+  RankedPaper ..> Paper
+  EvidenceSet "1" *-- "many" ScoredChunk
+  Draft "1" *-- "many" Claim
+  ReviewVerdict "1" *-- "many" ClaimFinding
+  TurnState ..> EvidenceSet
+  TurnState ..> Draft
+  TurnState "1" o-- "many" ReviewVerdict : review_history
+  ComparisonMatrix ..> Contradiction
+}
+
+' =====================================================================
+' SOURCE ADAPTERS
+' =====================================================================
+package "sources" {
+
+  interface SourceAdapter {
+    +name: str
+    +search(query: SearchQuery): list<RawPaperRecord>
+    +fetch_by_id(identifier: PaperIdentifier): RawPaperRecord
+    +resolve_fulltext(record: RawPaperRecord): FullTextRef
+    +health_check(): SourceHealth
+  }
+
+  class ArxivAdapter implements SourceAdapter
+  class SemanticScholarAdapter implements SourceAdapter
+  class OpenAlexAdapter implements SourceAdapter
+  class COREAdapter implements SourceAdapter
+  class PubMedAdapter implements SourceAdapter
+  class CrossrefAdapter implements SourceAdapter
+  class UnpaywallAdapter implements SourceAdapter
+
+  class CircuitBreaker {
+    +state: BreakerState
+    +failure_threshold: int
+    +call(fn: Callable): Any
+    +record_success(): void
+    +record_failure(): void
+  }
+
+  enum BreakerState {
+    CLOSED
+    OPEN
+    HALF_OPEN
+  }
+
+  class SourceRegistry {
+    +adapters: list<SourceAdapter>
+    +breakers: map<str, CircuitBreaker>
+    +fan_out(plan: SearchPlan): list<RawPaperRecord>
+    +get_health(): list<SourceHealth>
+  }
+
+  class Normalizer {
+    +normalize(records: list<RawPaperRecord>): list<Paper>
+  }
+
+  class Deduplicator {
+    +merge(papers: list<Paper>): list<Paper>
+  }
+
+  SourceRegistry o-- "many" SourceAdapter
+  SourceRegistry o-- "many" CircuitBreaker
+  SourceRegistry ..> Normalizer
+  SourceRegistry ..> Deduplicator
+}
+
+' =====================================================================
+' AGENTS  (LangGraph node implementations)
+' =====================================================================
+package "agents" {
+
+  abstract class Agent {
+    +name: str
+    #{abstract} run(input: Any): Any
+    +with_tracing(span_name: str): Any
+  }
+
+  class QueryPlanner {
+    +plan(topic: str): SearchPlan
+  }
+
+  class RankingAgent {
+    +rank(papers: list<Paper>, topic: str): list<RankedPaper>
+  }
+
+  class IngestionAgent {
+    +ingest(paper_ref: PaperIdentifier): IngestJob
+  }
+
+  class RetrievalAgent {
+    +retrieve(space_id: UUID, question: str, scope: list<UUID>): EvidenceSet
+  }
+
+  class AnswerAgent {
+    +model: LLMProvider
+    +generate(question: str, evidence: EvidenceSet, feedback_history: list<ReviewVerdict>): Draft
+  }
+
+  class PeerReviewerAgent {
+    +model: LLMProvider
+    +claim_extractor: ClaimExtractor
+    +entailment_checker: EntailmentChecker
+    +citation_validator: CitationValidator
+    +review(question: str, evidence: EvidenceSet, draft: Draft): ReviewVerdict
+  }
+
+  class RefinementController {
+    +policies: LoopPolicies
+    +convergence: ConvergenceGuard
+    +decide(verdict: ReviewVerdict, iteration: int, elapsed_ms: int, history: list<ReviewVerdict>): LoopAction
+  }
+
+  class CompareAgent {
+    +synthesize(profiles: list<PaperProfile>): ComparisonMatrix
+  }
+
+  class GapAgent {
+    +identify_gaps(profiles: list<PaperProfile>, matrix: ComparisonMatrix): list<Gap>
+  }
+
+  class NotesAgent {
+    +generate(paper: Paper, chunks: list<Chunk>): PaperProfileDraft
+  }
+
+  class MemoryAgent {
+    +summarize(turns: list<Turn>, prior_summary: str): str
+  }
+
+  class SupervisorAgent {
+    +route(state: TurnState): str
+  }
+
+  Agent <|-- QueryPlanner
+  Agent <|-- RankingAgent
+  Agent <|-- IngestionAgent
+  Agent <|-- RetrievalAgent
+  Agent <|-- AnswerAgent
+  Agent <|-- PeerReviewerAgent
+  Agent <|-- CompareAgent
+  Agent <|-- GapAgent
+  Agent <|-- NotesAgent
+  Agent <|-- MemoryAgent
+  Agent <|-- SupervisorAgent
+
+  AnswerAgent ..> Draft
+  PeerReviewerAgent ..> ReviewVerdict
+  RefinementController ..> LoopAction
+}
+
+' =====================================================================
+' VERIFICATION SUBSYSTEM  (Phase 3 accuracy loop)
+' =====================================================================
+package "verification" {
+
+  class ClaimExtractor {
+    +extract(draft: Draft): list<Claim>
+  }
+
+  class EntailmentChecker {
+    +check(claim: Claim, evidence: EvidenceSet): ClaimFinding
+  }
+
+  class CitationValidator {
+    +validate(claim: Claim, chunk: Chunk): bool
+  }
+
+  class ScoringService {
+    +score(claims: list<ClaimFinding>): float
+  }
+
+  class ConvergenceGuard {
+    +min_improvement: float
+    +has_stalled(history: list<ReviewVerdict>): bool
+  }
+
+  class LoopPolicies {
+    +max_iterations: int
+    +wall_clock_cap_ms: int
+    +acceptance_threshold: float
+    +route(verdict: ReviewVerdict): LoopAction
+  }
+
+  class VerificationLoopDriver {
+    +retrieval_agent: RetrievalAgent
+    +answer_agent: AnswerAgent
+    +reviewer_agent: PeerReviewerAgent
+    +controller: RefinementController
+    +run(space_id: UUID, question: str): AnsweredTurn
+  }
+
+  class VerificationTrail {
+    +persist(turn_id: UUID, history: list<ReviewVerdict>): void
+    +get(turn_id: UUID): list<VerificationIteration>
+  }
+
+  VerificationLoopDriver ..> TurnState
+  VerificationLoopDriver o-- RetrievalAgent
+  VerificationLoopDriver o-- AnswerAgent
+  VerificationLoopDriver o-- PeerReviewerAgent
+  VerificationLoopDriver o-- RefinementController
+  VerificationLoopDriver ..> VerificationTrail
+  PeerReviewerAgent o-- ClaimExtractor
+  PeerReviewerAgent o-- EntailmentChecker
+  PeerReviewerAgent o-- CitationValidator
+  PeerReviewerAgent ..> ScoringService
+  RefinementController o-- LoopPolicies
+  RefinementController o-- ConvergenceGuard
+}
+
+' =====================================================================
+' RETRIEVAL SUBSYSTEM
+' =====================================================================
+package "retrieval" {
+
+  interface VectorStore {
+    +upsert(space_id: UUID, chunks: list<EmbeddedChunk>): void
+    +search(space_id: UUID, vector: list<float>, k: int): list<ScoredChunk>
+  }
+
+  class QdrantVectorStore implements VectorStore
+
+  class DenseSearch {
+    +vector_store: VectorStore
+    +search(query: RewrittenQuery, space_id: UUID, k: int): list<ScoredChunk>
+  }
+
+  class SparseSearch {
+    +search(query: RewrittenQuery, space_id: UUID, k: int): list<ScoredChunk>
+  }
+
+  class Fusion {
+    +rrf(dense: list<ScoredChunk>, sparse: list<ScoredChunk>): list<ScoredChunk>
+  }
+
+  class Reranker {
+    +model: CrossEncoderModel
+    +rerank(question: str, chunks: list<ScoredChunk>, top_k: int): list<ScoredChunk>
+  }
+
+  class MMRDiversifier {
+    +diversify(chunks: list<ScoredChunk>): list<ScoredChunk>
+  }
+
+  class QueryRewriter {
+    +rewrite(question: str, context: ConversationContext): RewrittenQuery
+  }
+
+  class ContextBuilder {
+    +pack(chunks: list<ScoredChunk>, token_budget: int): EvidenceSet
+  }
+
+  class HybridRetriever {
+    +dense: DenseSearch
+    +sparse: SparseSearch
+    +fusion: Fusion
+    +reranker: Reranker
+    +mmr: MMRDiversifier
+    +context_builder: ContextBuilder
+    +retrieve(space_id: UUID, question: str): EvidenceSet
+  }
+
+  HybridRetriever o-- DenseSearch
+  HybridRetriever o-- SparseSearch
+  HybridRetriever o-- Fusion
+  HybridRetriever o-- Reranker
+  HybridRetriever o-- MMRDiversifier
+  HybridRetriever o-- ContextBuilder
+  DenseSearch o-- VectorStore
+  RetrievalAgent o-- HybridRetriever
+  RetrievalAgent o-- QueryRewriter
+}
+
+' =====================================================================
+' INGESTION SUBSYSTEM
+' =====================================================================
+package "ingestion" {
+
+  class FullTextFetcher {
+    +fetch(paper: Paper): RawDocument
+  }
+
+  interface DocumentParser {
+    +parse(raw: RawDocument): ParsedDocument
+  }
+
+  class GrobidPdfParser implements DocumentParser
+  class OcrFallbackParser implements DocumentParser
+
+  class SemanticChunker {
+    +chunk(doc: ParsedDocument): list<Chunk>
+  }
+
+  class Embedder {
+    +llm_provider: LLMProvider
+    +embed(chunks: list<Chunk>): list<EmbeddedChunk>
+  }
+
+  class ProfileExtractor {
+    +extract(doc: ParsedDocument): PaperProfileDraft
+  }
+
+  class IngestionPipeline {
+    +fetcher: FullTextFetcher
+    +parser: DocumentParser
+    +ocr: OcrFallbackParser
+    +chunker: SemanticChunker
+    +embedder: Embedder
+    +profile_extractor: ProfileExtractor
+    +indexer: VectorStore
+    +ingest(paper_ref: PaperIdentifier): IngestJob
+  }
+
+  IngestionPipeline o-- FullTextFetcher
+  IngestionPipeline o-- DocumentParser
+  IngestionPipeline o-- OcrFallbackParser
+  IngestionPipeline o-- SemanticChunker
+  IngestionPipeline o-- Embedder
+  IngestionPipeline o-- ProfileExtractor
+  IngestionPipeline o-- VectorStore
+  IngestionAgent o-- IngestionPipeline
+}
+
+' =====================================================================
+' LLM PROVIDER LAYER  (self-hosted Ollama only)
+' =====================================================================
+package "llm" {
+
+  interface LLMProvider {
+    +chat(prompt: str, temperature: float, model_tier: ModelTier): str
+    +chat_stream(prompt: str, temperature: float): Iterator<str>
+    +embed(texts: list<str>): list<list<float>>
+  }
+
+  enum ModelTier {
+    SMALL
+    MEDIUM
+    LARGE
+    VERIFY
+  }
+
+  class OllamaClient implements LLMProvider {
+    +base_url: str
+    +keep_alive: str
+  }
+
+  class ModelRouter {
+    +llm_provider: LLMProvider
+    +resolve(tier: ModelTier): str
+    +route(agent_name: str): str
+  }
+
+  class CrossEncoderModel {
+    +score(question: str, passage: str): float
+  }
+
+  class PromptRegistry {
+    +get(template_name: str, version: str): str
+  }
+
+  ModelRouter o-- LLMProvider
+  AnswerAgent o-- LLMProvider
+  PeerReviewerAgent o-- LLMProvider
+  Embedder o-- LLMProvider
+  Reranker o-- CrossEncoderModel
+}
+
+' =====================================================================
+' APPLICATION SERVICES  (use-case orchestration, called by API layer)
+' =====================================================================
+package "services" {
+
+  class DiscoveryService {
+    +query_planner: QueryPlanner
+    +registry: SourceRegistry
+    +ranking_agent: RankingAgent
+    +discover(topic: str, filters: SearchFilters): RankedPaperList
+  }
+
+  class PaperService {
+    +paper_repo: PaperRepository
+    +pipeline: IngestionPipeline
+    +pin_and_ingest(space_id: UUID, ref: PaperIdentifier): IngestJob
+    +unpin(space_id: UUID, paper_id: UUID): void
+  }
+
+  class QAOrchestrator {
+    +memory_service: MemoryService
+    +loop_driver: VerificationLoopDriver
+    +answer(space_id: UUID, question: str): AnsweredTurn
+  }
+
+  class CompareService {
+    +profile_store: ProfileStore
+    +compare_agent: CompareAgent
+    +gap_agent: GapAgent
+    +loop_driver: VerificationLoopDriver
+    +compare(space_id: UUID, paper_ids: list<UUID>): ComparisonReport
+  }
+
+  class NotesService {
+    +note_repo: NoteRepository
+    +notes_agent: NotesAgent
+    +auto_generate(paper_id: UUID): Note
+    +create(space_id: UUID, paper_id: UUID, text: str): Note
+  }
+
+  class MemoryService {
+    +memory_agent: MemoryAgent
+    +get_context(space_id: UUID, budget_tokens: int): ConversationContext
+    +on_turn_complete(space_id: UUID, turn: Turn): void
+  }
+
+  class ProfileStore {
+    +profile_extractor: ProfileExtractor
+    +get_or_build(paper_id: UUID): PaperProfile
+  }
+
+  class HealthService {
+    +registry: SourceRegistry
+    +llm_provider: LLMProvider
+    +check_all(): map<str, HealthStatus>
+  }
+
+  DiscoveryService o-- QueryPlanner
+  DiscoveryService o-- SourceRegistry
+  DiscoveryService o-- RankingAgent
+  PaperService o-- IngestionPipeline
+  QAOrchestrator o-- MemoryService
+  QAOrchestrator o-- VerificationLoopDriver
+  CompareService o-- ProfileStore
+  CompareService o-- CompareAgent
+  CompareService o-- GapAgent
+  CompareService o-- VerificationLoopDriver
+  NotesService o-- NotesAgent
+  MemoryService o-- MemoryAgent
+}
+
+' =====================================================================
+' REPOSITORIES  (tenant-scoped data access)
+' =====================================================================
+package "repositories" {
+
+  interface Repository<T> {
+    +get(id: UUID): T
+    +save(entity: T): T
+    +delete(id: UUID): void
+  }
+
+  class SpaceRepository implements Repository
+  class PaperRepository implements Repository
+  class ChunkRepository implements Repository
+  class TurnRepository implements Repository
+  class NoteRepository implements Repository
+  class ComparisonRepository implements Repository
+  class VerificationRepository implements Repository {
+    +save_iteration(iteration: VerificationIteration): void
+    +get_trail(turn_id: UUID): list<VerificationIteration>
+  }
+
+  PaperService o-- PaperRepository
+  QAOrchestrator o-- TurnRepository
+  VerificationTrail o-- VerificationRepository
+  CompareService o-- ComparisonRepository
+  NotesService o-- NoteRepository
+}
+
+' =====================================================================
+' API LAYER
+' =====================================================================
+package "api" {
+
+  class SpacesController {
+    +create_space(): ResearchSpace
+    +get_space(id: UUID): ResearchSpace
+  }
+
+  class SearchController {
+    +discovery_service: DiscoveryService
+    +search(space_id: UUID, topic: str, filters: SearchFilters): RankedPaperList
+  }
+
+  class PapersController {
+    +paper_service: PaperService
+    +pin(space_id: UUID, ref: PaperIdentifier): IngestJob
+    +status(paper_id: UUID): IngestStatus
+  }
+
+  class ChatController {
+    +qa_orchestrator: QAOrchestrator
+    +chat(space_id: UUID, question: str): AnsweredTurn
+  }
+
+  class CompareController {
+    +compare_service: CompareService
+    +compare(space_id: UUID, paper_ids: list<UUID>): ComparisonReport
+  }
+
+  class NotesController {
+    +notes_service: NotesService
+    +create_note(space_id: UUID, paper_id: UUID, text: str): Note
+  }
+
+  class VerificationController {
+    +verification_repo: VerificationRepository
+    +get_trail(turn_id: UUID): list<VerificationIteration>
+  }
+
+  class AdminController {
+    +health_service: HealthService
+    +model_router: ModelRouter
+    +health(): map<str, HealthStatus>
+  }
+
+  SearchController o-- DiscoveryService
+  PapersController o-- PaperService
+  ChatController o-- QAOrchestrator
+  CompareController o-- CompareService
+  NotesController o-- NotesService
+  VerificationController o-- VerificationRepository
+  AdminController o-- HealthService
+  AdminController o-- ModelRouter
+}
+
+@enduml

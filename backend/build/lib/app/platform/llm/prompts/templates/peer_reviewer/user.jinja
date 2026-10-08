@@ -1,0 +1,14 @@
+Question:
+{{ question }}
+
+BEGIN_EVIDENCE_DATA
+{% for chunk in evidence.chunks -%}
+<<<EVIDENCE chunk_id="{{ chunk.chunk_id }}">
+{{ chunk.text }}
+>>>
+{% endfor -%}
+END_EVIDENCE_DATA
+
+BEGIN_DRAFT_DATA
+{{ draft.text }}
+END_DRAFT_DATA

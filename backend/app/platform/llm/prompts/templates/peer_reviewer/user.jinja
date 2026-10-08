@@ -1,0 +1,26 @@
+Question:
+{{ question }}
+
+BEGIN_EVIDENCE_DATA
+{% for chunk in evidence.chunks -%}
+<<<EVIDENCE chunk_id="{{ chunk.chunk_id }}">
+Paper: {{ chunk.source | tojson }}; paper_id: {{ chunk.paper_id | tojson }}; page: {{ chunk.page | tojson }}; section: {{ chunk.section | tojson }}
+{{ chunk.text }}
+>>>
+{% endfor -%}
+END_EVIDENCE_DATA
+
+BEGIN_DRAFT_DATA
+{{ draft.text }}
+END_DRAFT_DATA
+
+BEGIN_CLAIMS_DATA
+{% for claim in draft.claims -%}
+{{ claim.model_dump() | tojson }}
+{% endfor -%}
+END_CLAIMS_DATA
+
+Return exactly one finding for EACH claim_id listed above, using that exact ID.
+Do not renumber, merge, omit, or invent claims. Check the cited passages, not just
+whether a chunk exists. A method described by one paper must not be attributed
+to another paper. Use an exact supporting quote when available.

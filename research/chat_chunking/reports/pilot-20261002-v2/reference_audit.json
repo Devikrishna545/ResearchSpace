@@ -1,0 +1,1100 @@
+{
+  "manifest": {
+    "kind": "post_hoc_reference_aware_model_audit_not_human_ground_truth",
+    "primary_code_sha256": "298a6300f3e8d239a1f6bd9622d20f46de5dd75369a9c68e514705d20a25f65d",
+    "model": "gemma4:latest",
+    "model_digest": "dc35e8d9c6061baa6f0fa870975ab6932e2542b579b13ea0f199fa4bb7300c9c",
+    "audit_code_sha256": "5fd6d7f4c4aecd9d311a3becea0489a071b4e89b7cbcab9c9295985148dd3aeb",
+    "primary_thresholds_unchanged": true,
+    "reason": "Audit lexical-rubric false negatives and semantic abstentions; do not retune thresholds."
+  },
+  "strategies": {
+    "baseline": {
+      "all": {
+        "attempts": 24,
+        "answerable_correct_and_complete": 13,
+        "answerable_count": 20,
+        "answerable_accuracy_proxy": 0.65,
+        "semantic_abstention_correct": 1,
+        "unanswerable_count": 4,
+        "errors": 0,
+        "status_counts": {
+          "CORRECT": 14,
+          "PARTLY_CORRECT": 6,
+          "INCORRECT": 3,
+          "INSUFFICIENT_REFERENCE": 1
+        }
+      },
+      "held_out": {
+        "attempts": 16,
+        "answerable_correct_and_complete": 9,
+        "answerable_count": 14,
+        "answerable_accuracy_proxy": 0.6428571428571429,
+        "semantic_abstention_correct": 1,
+        "unanswerable_count": 2,
+        "errors": 0,
+        "status_counts": {
+          "CORRECT": 10,
+          "PARTLY_CORRECT": 3,
+          "INCORRECT": 2,
+          "INSUFFICIENT_REFERENCE": 1
+        }
+      }
+    },
+    "hierarchical_recursive": {
+      "all": {
+        "attempts": 24,
+        "answerable_correct_and_complete": 14,
+        "answerable_count": 20,
+        "answerable_accuracy_proxy": 0.7,
+        "semantic_abstention_correct": 1,
+        "unanswerable_count": 4,
+        "errors": 0,
+        "status_counts": {
+          "PARTLY_CORRECT": 5,
+          "CORRECT": 15,
+          "INSUFFICIENT_REFERENCE": 2,
+          "INCORRECT": 2
+        }
+      },
+      "held_out": {
+        "attempts": 16,
+        "answerable_correct_and_complete": 9,
+        "answerable_count": 14,
+        "answerable_accuracy_proxy": 0.6428571428571429,
+        "semantic_abstention_correct": 1,
+        "unanswerable_count": 2,
+        "errors": 0,
+        "status_counts": {
+          "PARTLY_CORRECT": 4,
+          "CORRECT": 10,
+          "INCORRECT": 2
+        }
+      }
+    },
+    "hierarchical_semantic_structured": {
+      "all": {
+        "attempts": 24,
+        "answerable_correct_and_complete": 13,
+        "answerable_count": 20,
+        "answerable_accuracy_proxy": 0.65,
+        "semantic_abstention_correct": 2,
+        "unanswerable_count": 4,
+        "errors": 0,
+        "status_counts": {
+          "PARTLY_CORRECT": 5,
+          "INSUFFICIENT_REFERENCE": 1,
+          "CORRECT": 15,
+          "INCORRECT": 3
+        }
+      },
+      "held_out": {
+        "attempts": 16,
+        "answerable_correct_and_complete": 8,
+        "answerable_count": 14,
+        "answerable_accuracy_proxy": 0.5714285714285714,
+        "semantic_abstention_correct": 2,
+        "unanswerable_count": 2,
+        "errors": 0,
+        "status_counts": {
+          "PARTLY_CORRECT": 3,
+          "CORRECT": 10,
+          "INCORRECT": 3
+        }
+      }
+    },
+    "research_aware": {
+      "all": {
+        "attempts": 24,
+        "answerable_correct_and_complete": 15,
+        "answerable_count": 20,
+        "answerable_accuracy_proxy": 0.75,
+        "semantic_abstention_correct": 1,
+        "unanswerable_count": 4,
+        "errors": 0,
+        "status_counts": {
+          "CORRECT": 16,
+          "INCORRECT": 3,
+          "PARTLY_CORRECT": 4,
+          "INSUFFICIENT_REFERENCE": 1
+        }
+      },
+      "held_out": {
+        "attempts": 16,
+        "answerable_correct_and_complete": 9,
+        "answerable_count": 14,
+        "answerable_accuracy_proxy": 0.6428571428571429,
+        "semantic_abstention_correct": 1,
+        "unanswerable_count": 2,
+        "errors": 0,
+        "status_counts": {
+          "CORRECT": 10,
+          "INCORRECT": 2,
+          "PARTLY_CORRECT": 4
+        }
+      }
+    }
+  },
+  "per_question": [
+    {
+      "strategy": "research_aware",
+      "case_id": "q13",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q12",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "method",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q15",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q10",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q10",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "numeric",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q03",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "figure_numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q02",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q21",
+      "split": "calibration",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INSUFFICIENT_REFERENCE",
+      "complete": false
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q16",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q13",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q16",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q11",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q05",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "numeric",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q03",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "figure_numeric",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q04",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "table_numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q18",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "abstract_numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q02",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q18",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "abstract_numeric",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q18",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "abstract_numeric",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q07",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q08",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "method",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q01",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q22",
+      "split": "held_out",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q09",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q09",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q20",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "cross_paper",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q20",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "cross_paper",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q09",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q14",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q05",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q08",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q24",
+      "split": "calibration",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INSUFFICIENT_REFERENCE",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q21",
+      "split": "calibration",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INSUFFICIENT_REFERENCE",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q19",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "web_capture",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q23",
+      "split": "held_out",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q03",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "figure_numeric",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q11",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q13",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q13",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q24",
+      "split": "calibration",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q16",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q17",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "abstract_only",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q19",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "web_capture",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q06",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "figure_conditions",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q23",
+      "split": "held_out",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q09",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q08",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "method",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q11",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q07",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q23",
+      "split": "held_out",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q03",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "figure_numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q17",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "abstract_only",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q15",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q19",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "web_capture",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q23",
+      "split": "held_out",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INSUFFICIENT_REFERENCE",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q11",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q01",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q06",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "figure_conditions",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q07",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q22",
+      "split": "held_out",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q01",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q14",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q17",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "abstract_only",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q20",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "cross_paper",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q02",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q20",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "cross_paper",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q12",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q21",
+      "split": "calibration",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q01",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q21",
+      "split": "calibration",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q10",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "numeric",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q19",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "web_capture",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q06",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "figure_conditions",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q16",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q02",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q24",
+      "split": "calibration",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q24",
+      "split": "calibration",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "INSUFFICIENT_REFERENCE",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q17",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "abstract_only",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q06",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "figure_conditions",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q04",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "table_numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q14",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q22",
+      "split": "held_out",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q05",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "numeric",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q07",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q04",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "table_numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q12",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q22",
+      "split": "held_out",
+      "unanswerable": true,
+      "primary_rubric_match": false,
+      "category": "unanswerable",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q15",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q14",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "definition",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q18",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "abstract_numeric",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q05",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "numeric",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q08",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "method",
+      "status": "INCORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q12",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "method",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q04",
+      "split": "calibration",
+      "unanswerable": false,
+      "primary_rubric_match": false,
+      "category": "table_numeric",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "baseline",
+      "case_id": "q15",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "method",
+      "status": "CORRECT",
+      "complete": true
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q10",
+      "split": "held_out",
+      "unanswerable": false,
+      "primary_rubric_match": true,
+      "category": "numeric",
+      "status": "PARTLY_CORRECT",
+      "complete": false
+    }
+  ]
+}

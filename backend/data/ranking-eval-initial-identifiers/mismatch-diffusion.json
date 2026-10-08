@@ -1,0 +1,1686 @@
+{
+  "id": "mismatch-diffusion",
+  "category": "vocabulary_mismatch",
+  "query": "iterative noise removal for image synthesis",
+  "target": {
+    "arxiv_id": "2006.11239"
+  },
+  "plan": {
+    "topic": "iterative noise removal for image synthesis",
+    "sub_queries": [
+      "iterative noise removal for image synthesis"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "A Comparative Study of Removal Noise from Remote Sensing Image",
+      "authors": [
+        "Salem Saleh Al-amri",
+        "N. V. Kalyankar",
+        "S. D. Khamitkar"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper attempts to undertake the study of three types of noise such as Salt and Pepper (SPN), Random variation Impulse Noise (RVIN), Speckle (SPKN). Different noise densities have been removed between 10% to 60% by using five types of filters as Mean Filter (MF), Adaptive Wiener Filter (AWF), Gaussian Filter (GF), Standard Median Filter (SMF) and Adaptive Median Filter (AMF). The same is applied to the Saturn remote sensing image and they are compared with one another. The comparative study is conducted with the help of Mean Square Errors (MSE) and Peak-Signal to Noise Ratio (PSNR). So as to choose the base method for removal of noise from remote sensing image.",
+      "doi": null,
+      "arxiv_id": "1002.1148v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1002.1148v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "IDF-CR: Iterative Diffusion Process for Divide-and-Conquer Cloud Removal in Remote-sensing Images",
+      "authors": [
+        "Meilin Wang",
+        "Yexing Song",
+        "Pengxu Wei",
+        "Xiaoyu Xian",
+        "Yukai Shi",
+        "Liang Lin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Deep learning technologies have demonstrated their effectiveness in removing cloud cover from optical remote-sensing images. Convolutional Neural Networks (CNNs) exert dominance in the cloud removal tasks. However, constrained by the inherent limitations of convolutional operations, CNNs can address only a modest fraction of cloud occlusion. In recent years, diffusion models have achieved state-of-the-art (SOTA) proficiency in image generation and reconstruction due to their formidable generative capabilities. Inspired by the rapid development of diffusion models, we first present an iterative diffusion process for cloud removal (IDF-CR), which exhibits a strong generative capabilities to achieve component divide-and-conquer cloud removal. IDF-CR consists of a pixel space cloud removal module (Pixel-CR) and a latent space iterative noise diffusion network (IND). Specifically, IDF-CR is divided into two-stage models that address pixel space and latent space. The two-stage model facilitates a strategic transition from preliminary cloud reduction to meticulous detail refinement. In the pixel space stage, Pixel-CR initiates the processing of cloudy images, yielding a suboptimal cloud removal prior to providing the diffusion model with prior cloud removal knowledge. In the latent space stage, the diffusion model transforms low-quality cloud removal into high-quality clean output. We refine the Stable Diffusion by implementing ControlNet. In addition, an unsupervised iterative noise refinement (INR) module is introduced for diffusion model to optimize the distribution of the predicted noise, thereby enhancing advanced detail recovery. Our model performs best with other SOTA methods, including image reconstruction and optical remote-sensing cloud removal on the optical remote-sensing datasets.",
+      "doi": null,
+      "arxiv_id": "2403.11870v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2403.11870v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Learning a Single Model with a Wide Range of Quality Factors for JPEG Image Artifacts Removal",
+      "authors": [
+        "Jianwei Li",
+        "Yongtao Wang",
+        "Haihua Xie",
+        "Kai-Kuang Ma"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Lossy compression brings artifacts into the compressed image and degrades the visual quality. In recent years, many compression artifacts removal methods based on convolutional neural network (CNN) have been developed with great success. However, these methods usually train a model based on one specific value or a small range of quality factors. Obviously, if the test image's quality factor does not match to the assumed value range, then degraded performance will be resulted. With this motivation and further consideration of practical usage, a highly robust compression artifacts removal network is proposed in this paper. Our proposed network is a single model approach that can be trained for handling a wide range of quality factors while consistently delivering superior or comparable image artifacts removal performance. To demonstrate, we focus on the JPEG compression with quality factors, ranging from 1 to 60. Note that a turnkey success of our proposed network lies in the novel utilization of the quantization tables as part of the training data. Furthermore, it has two branches in parallel---i.e., the restoration branch and the global branch. The former effectively removes the local artifacts, such as ringing artifacts removal. On the other hand, the latter extracts the global features of the entire image that provides highly instrumental image quality improvement, especially effective on dealing with the global artifacts, such as blocking, color shifting. Extensive experimental results performed on color and grayscale images have clearly demonstrated the effectiveness and efficacy of our proposed single-model approach on the removal of compression artifacts from the decoded image.",
+      "doi": null,
+      "arxiv_id": "2009.06912v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2009.06912v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Data synthesis and adversarial networks: A review and meta-analysis in cancer imaging",
+      "authors": [
+        "Richard Osuala",
+        "Kaisar Kushibar",
+        "Lidia Garrucho",
+        "Akis Linardos",
+        "Zuzanna Szafranowska",
+        "Stefan Klein",
+        "Ben Glocker",
+        "Oliver Diaz",
+        "Karim Lekadir"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Despite technological and medical advances, the detection, interpretation, and treatment of cancer based on imaging data continue to pose significant challenges. These include inter-observer variability, class imbalance, dataset shifts, inter- and intra-tumour heterogeneity, malignancy determination, and treatment effect uncertainty. Given the recent advancements in Generative Adversarial Networks (GANs), data synthesis, and adversarial training, we assess the potential of these technologies to address a number of key challenges of cancer imaging. We categorise these challenges into (a) data scarcity and imbalance, (b) data access and privacy, (c) data annotation and segmentation, (d) cancer detection and diagnosis, and (e) tumour profiling, treatment planning and monitoring. Based on our analysis of 164 publications that apply adversarial training techniques in the context of cancer imaging, we highlight multiple underexplored solutions with research potential. We further contribute the Synthesis Study Trustworthiness Test (SynTRUST), a meta-analysis framework for assessing the validation rigour of medical image synthesis studies. SynTRUST is based on 26 concrete measures of thoroughness, reproducibility, usefulness, scalability, and tenability. Based on SynTRUST, we analyse 16 of the most promising cancer imaging challenge solutions and observe a high validation rigour in general, but also several desirable improvements. With this work, we strive to bridge the gap between the needs of the clinical cancer imaging community and the current and prospective research on data synthesis and adversarial networks in the artificial intelligence community.",
+      "doi": null,
+      "arxiv_id": "2107.09543v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2107.09543v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.AI",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Synth-by-Reg (SbR): Contrastive learning for synthesis-based registration of paired images",
+      "authors": [
+        "Adrià Casamitjana",
+        "Matteo Mancini",
+        "Juan Eugenio Iglesias"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Nonlinear inter-modality registration is often challenging due to the lack of objective functions that are good proxies for alignment. Here we propose a synthesis-by-registration method to convert this problem into an easier intra-modality task. We introduce a registration loss for weakly supervised image translation between domains that does not require perfectly aligned training data. This loss capitalises on a registration U-Net with frozen weights, to drive a synthesis CNN towards the desired translation. We complement this loss with a structure preserving constraint based on contrastive learning, which prevents blurring and content shifts due to overfitting. We apply this method to the registration of histological sections to MRI slices, a key step in 3D histology reconstruction. Results on two different public datasets show improvements over registration based on mutual information (13% reduction in landmark error) and synthesis-based algorithms such as CycleGAN (11% reduction), and are comparable to a registration CNN with label supervision. Code and data are publicly available at \\url{https://github.com/acasamitjana/SynthByReg}",
+      "doi": null,
+      "arxiv_id": "2107.14449v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2107.14449v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Iterative Gradient Encoding Network with Feature Co-Occurrence Loss for Single Image Reflection Removal",
+      "authors": [
+        "Sutanu Bera",
+        "Prabir Kumar Biswas"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Removing undesired reflections from a photo taken in front of glass is of great importance for enhancing visual computing systems' efficiency. Previous learning-based approaches have produced visually plausible results for some reflections type, however, failed to generalize against other reflection types. There is a dearth of literature for efficient methods concerning single image reflection removal, which can generalize well in large-scale reflection types. In this study, we proposed an iterative gradient encoding network for single image reflection removal. Next, to further supervise the network in learning the correlation between the transmission layer features, we proposed a feature co-occurrence loss. Extensive experiments on the public benchmark dataset of SIR$^2$ demonstrated that our method can remove reflection favorably against the existing state-of-the-art method on all imaging settings, including diverse backgrounds. Moreover, as the reflection strength increases, our method can still remove reflection even where other state of the art methods failed.",
+      "doi": null,
+      "arxiv_id": "2103.15903v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2103.15903v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Rain Removal from Light Field Images with 4D Convolution and Multi-scale Gaussian Process",
+      "authors": [
+        "Tao Yan",
+        "Mingyue Li",
+        "Bin Li",
+        "Yang Yang",
+        "Rynson W. H. Lau"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Existing deraining methods focus mainly on a single input image. However, with just a single input image, it is extremely difficult to accurately detect and remove rain streaks, in order to restore a rain-free image. In contrast, a light field image (LFI) embeds abundant 3D structure and texture information of the target scene by recording the direction and position of each incident ray via a plenoptic camera. LFIs are becoming popular in the computer vision and graphics communities. However, making full use of the abundant information available from LFIs, such as 2D array of sub-views and the disparity map of each sub-view, for effective rain removal is still a challenging problem. In this paper, we propose a novel method, 4D-MGP-SRRNet, for rain streak removal from LFIs. Our method takes as input all sub-views of a rainy LFI. To make full use of the LFI, it adopts 4D convolutional layers to simultaneously process all sub-views of the LFI. In the pipeline, the rain detection network, MGPDNet, with a novel Multi-scale Self-guided Gaussian Process (MSGP) module is proposed to detect high-resolution rain streaks from all sub-views of the input LFI at multi-scales. Semi-supervised learning is introduced for MSGP to accurately detect rain streaks by training on both virtual-world rainy LFIs and real-world rainy LFIs at multi-scales via computing pseudo ground truths for real-world rain streaks. We then feed all sub-views subtracting the predicted rain streaks into a 4D convolution-based Depth Estimation Residual Network (DERNet) to estimate the depth maps, which are later converted into fog maps. Finally, all sub-views concatenated with the corresponding rain streaks and fog maps are fed into a powerful rainy LFI restoring model based on the adversarial recurrent neural network to progressively eliminate rain streaks and recover the rain-free LFI.",
+      "doi": null,
+      "arxiv_id": "2208.07735v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2208.07735v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Differentially Private Paired Table-Image Multimodal Synthesis",
+      "authors": [
+        "Kai Chen",
+        "Josephine Lamp",
+        "Somesh Jha",
+        "Tianhao Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Differentially private (DP) synthesis has been extensively studied for tabular and image data separately, yet many real-world datasets contain images paired with multivariate tabular records. Synthesizing such data is particularly challenging under DP, as the two modalities favor different private learning mechanisms while their dependence must also be preserved. To address this challenge, we propose DP-TabImage, a modality-specialized framework for private paired synthesis. DP-TabImage instantiates the factorization $p(x,y)=p_T(y)p_I(x\\;|\\;y)$ using a private Probabilistic Graphical Model for the multivariate table distribution and a table-conditioned diffusion model trained with DP-SGD for the conditional image distribution. To facilitate conditional learning under clipped and noisy gradients, we further pretrain the model on private table-image prototypes, pairing privately constructed attribute-conditioned images with tabular vectors derived from the already private tabular model at no additional privacy cost. Experiments on three real-world datasets show that DP-TabImage achieves a strong balance among tabular fidelity, image fidelity, and cross-modal alignment. Our analysis further reveals that visual warm-up primarily improves marginal image fidelity, whereas aligned table-image warm-up is critical for improving cross-modal correspondence. Our source code is available in the GitHub repository, https://github.com/KaiChen9909/TabImage_Syn.",
+      "doi": null,
+      "arxiv_id": "2609.00708v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.00708v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CR",
+          "cs.AI",
+          "cs.CV"
+        ],
+        "primary_category": "cs.CR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Neuromorphic Imaging with Joint Image Deblurring and Event Denoising",
+      "authors": [
+        "Pei Zhang",
+        "Haosen Liu",
+        "Zhou Ge",
+        "Chutian Wang",
+        "Edmund Y. Lam"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Neuromorphic imaging reacts to per-pixel brightness changes of a dynamic scene with high temporal precision and responds with asynchronous streaming events as a result. It also often supports a simultaneous output of an intensity image. Nevertheless, the raw events typically involve a large amount of noise due to the high sensitivity of the sensor, while capturing fast-moving objects at low frame rates results in blurry images. These deficiencies significantly degrade human observation and machine processing. Fortunately, the two information sources are inherently complementary -- events with microsecond-level temporal resolution, which are triggered by the edges of objects recorded in a latent sharp image, can supply rich motion details missing from the blurry one. In this work, we bring the two types of data together and introduce a simple yet effective unifying algorithm to jointly reconstruct blur-free images and noise-robust events in an iterative coarse-to-fine fashion. Specifically, an event-regularized prior offers precise high-frequency structures and dynamic features for blind deblurring, while image gradients serve as a kind of faithful supervision in regulating neuromorphic noise removal. Comprehensively evaluated on real and synthetic samples, such a synergy delivers superior reconstruction quality for both images with severe motion blur and raw event streams with a storm of noise, and also exhibits greater robustness to challenging realistic scenarios such as varying levels of illumination, contrast and motion magnitude. Meanwhile, it can be driven by much fewer events and holds a competitive edge at computational time overhead, rendering itself preferable as available computing resources are limited. Our solution gives impetus to the improvement of both sensing data and paves the way for highly accurate neuromorphic reasoning and analysis.",
+      "doi": null,
+      "arxiv_id": "2309.16106v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2309.16106v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Synthesis of Reversible Functions Beyond Gate Count and Quantum Cost",
+      "authors": [
+        "Robert Wille",
+        "Mehdi Saeedi",
+        "Rolf Drechsler"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Many synthesis approaches for reversible and quantum logic have been proposed so far. However, most of them generate circuits with respect to simple metrics, i.e. gate count or quantum cost. On the other hand, to physically realize reversible and quantum hardware, additional constraints exist. In this paper, we describe cost metrics beyond gate count and quantum cost that should be considered while synthesizing reversible and quantum logic for the respective target technologies. We show that the evaluation of a synthesis approach may differ if additional costs are applied. In addition, a new cost metric, namely Nearest Neighbor Cost (NNC) which is imposed by realistic physical quantum architectures, is considered in detail. We discuss how existing synthesis flows can be extended to generate optimal circuits with respect to NNC while still keeping the quantum cost small.",
+      "doi": null,
+      "arxiv_id": "1004.4609v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1004.4609v1",
+      "raw_payload": {
+        "categories": [
+          "quant-ph"
+        ],
+        "primary_category": "quant-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Advancing Unsupervised Low-light Image Enhancement: Noise Estimation, Illumination Interpolation, and Self-Regulation",
+      "authors": [
+        "Xiaofeng Liu",
+        "Jiaxin Gao",
+        "Xin Fan",
+        "Risheng Liu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Contemporary Low-Light Image Enhancement (LLIE) techniques have made notable advancements in preserving image details and enhancing contrast, achieving commendable results on specific datasets. Nevertheless, these approaches encounter persistent challenges in efficiently mitigating dynamic noise and accommodating diverse low-light scenarios. Insufficient constraints on complex pixel-wise mapping learning lead to overfitting to specific types of noise and artifacts associated with low-light conditions, reducing effectiveness in variable lighting scenarios. To this end, we first propose a method for estimating the noise level in low light images in a quick and accurate way. This facilitates precise denoising, prevents over-smoothing, and adapts to dynamic noise patterns. Subsequently, we devise a Learnable Illumination Interpolator (LII), which employs learnlable interpolation operations between the input and unit vector to satisfy general constraints between illumination and input. Finally, we introduce a self-regularization loss that incorporates intrinsic image properties and essential visual attributes to guide the output towards meeting human visual expectations. Comprehensive experiments validate the competitiveness of our proposed algorithm in both qualitative and quantitative assessments. Notably, our noise estimation method, with linear time complexity and suitable for various denoisers, significantly improves both denoising and enhancement performance. Benefiting from this, our approach achieves a 0.675dB PSNR improvement on the LOL dataset and 0.818dB on the MIT dataset on LLIE task, even compared to supervised methods. The source code is available at \\href{https://doi.org/10.5281/zenodo.11463142}{this DOI repository} and the specific code for noise estimation can be found at \\href{https://github.com/GoogolplexGoodenough/noise_estimate}{this separate GitHub link}.",
+      "doi": null,
+      "arxiv_id": "2305.10223v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2305.10223v4",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.MM"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "BINet: a binary inpainting network for deep patch-based image compression",
+      "authors": [
+        "André Nortje",
+        "Willie Brink",
+        "Herman A. Engelbrecht",
+        "Herman Kamper"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent deep learning models outperform standard lossy image compression codecs. However, applying these models on a patch-by-patch basis requires that each image patch be encoded and decoded independently. The influence from adjacent patches is therefore lost, leading to block artefacts at low bitrates. We propose the Binary Inpainting Network (BINet), an autoencoder framework which incorporates binary inpainting to reinstate interdependencies between adjacent patches, for improved patch-based compression of still images. When decoding a patch, BINet additionally uses the binarised encodings from surrounding patches to guide its reconstruction. In contrast to sequential inpainting methods where patches are decoded based on previons reconstructions, BINet operates directly on the binary codes of surrounding patches without access to the original or reconstructed image data. Encoding and decoding can therefore be performed in parallel. We demonstrate that BINet improves the compression quality of a competitive deep image codec across a range of compression levels.",
+      "doi": null,
+      "arxiv_id": "1912.05189v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1912.05189v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Instantaneous noise-based logic",
+      "authors": [
+        "Laszlo B. Kish",
+        "Sunil Khatri",
+        "Ferdinand Peper"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We show two universal, Boolean, deterministic logic schemes based on binary noise timefunctions that can be realized without time-averaging units. The first scheme is based on a new bipolar random telegraph wave scheme and the second one makes use of the recent noise-based logic which is conjectured to be the brain's method of logic operations [Physics Letters A 373 (2009) 2338-2342]. Error propagation and error removal issues are also addressed.",
+      "doi": null,
+      "arxiv_id": "1004.2652v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1004.2652v2",
+      "raw_payload": {
+        "categories": [
+          "cs.OH",
+          "physics.data-an"
+        ],
+        "primary_category": "cs.OH"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Privacy Preserving Image Registration",
+      "authors": [
+        "Riccardo Taiello",
+        "Melek Önen",
+        "Francesco Capano",
+        "Olivier Humbert",
+        "Marco Lorenzi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Image registration is a key task in medical imaging applications, allowing to represent medical images in a common spatial reference frame. Current approaches to image registration are generally based on the assumption that the content of the images is usually accessible in clear form, from which the spatial transformation is subsequently estimated. This common assumption may not be met in practical applications, since the sensitive nature of medical images may ultimately require their analysis under privacy constraints, preventing to openly share the image content.In this work, we formulate the problem of image registration under a privacy preserving regime, where images are assumed to be confidential and cannot be disclosed in clear. We derive our privacy preserving image registration framework by extending classical registration paradigms to account for advanced cryptographic tools, such as secure multi-party computation and homomorphic encryption, that enable the execution of operations without leaking the underlying data. To overcome the problem of performance and scalability of cryptographic tools in high dimensions, we propose several techniques to optimize the image registration operations by using gradient approximations, and by revisiting the use of homomorphic encryption trough packing, to allow the efficient encryption and multiplication of large matrices. We demonstrate our privacy preserving framework in linear and non-linear registration problems, evaluating its accuracy and scalability with respect to standard, non-private counterparts. Our results show that privacy preserving image registration is feasible and can be adopted in sensitive medical imaging applications.",
+      "doi": null,
+      "arxiv_id": "2205.10120v7",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2205.10120v7",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.CR",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Noise and Bell's inequality",
+      "authors": [
+        "David K. Ferry",
+        "Laszlo B. Kish"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "From the beginning of quantum mechanics, there has been a discussion about the concept of reality, as exemplified by the EPR paradox. To many, the idea of the paradox and the possibility of local hidden variables was dismissed by the Bell inequality. Yet, there remains considerable evidence that this inequality can be violated even by classical systems, so that experiments showing quantum behavior and the violation of the inequality must be questioned. Here, we demonstrate that classical optical polarization experiments based upon noise in the system can be shown to violate the Bell inequality.",
+      "doi": null,
+      "arxiv_id": "1008.0667v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1008.0667v2",
+      "raw_payload": {
+        "categories": [
+          "quant-ph",
+          "physics.class-ph"
+        ],
+        "primary_category": "quant-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Verisimilar Image Synthesis for Accurate Detection and Recognition of Texts in Scenes",
+      "authors": [
+        "Fangneng Zhan",
+        "Shijian Lu",
+        "Chuhui Xue"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The requirement of large amounts of annotated images has become one grand challenge while training deep neural network models for various visual detection and recognition tasks. This paper presents a novel image synthesis technique that aims to generate a large amount of annotated scene text images for training accurate and robust scene text detection and recognition models. The proposed technique consists of three innovative designs. First, it realizes \"semantic coherent\" synthesis by embedding texts at semantically sensible regions within the background image, where the semantic coherence is achieved by leveraging the semantic annotations of objects and image regions that have been created in the prior semantic segmentation research. Second, it exploits visual saliency to determine the embedding locations within each semantic sensible region, which coincides with the fact that texts are often placed around homogeneous regions for better visibility in scenes. Third, it designs an adaptive text appearance model that determines the color and brightness of embedded texts by learning from the feature of real scene text images adaptively. The proposed technique has been evaluated over five public datasets and the experiments show its superior performance in training accurate and robust scene text detection and recognition models.",
+      "doi": null,
+      "arxiv_id": "1807.03021v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1807.03021v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Deep learning-based blind image super-resolution with iterative kernel reconstruction and noise estimation",
+      "authors": [
+        "Hasan F. Ates",
+        "Suleyman Yildirim",
+        "Bahadir K. Gunturk"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Blind single image super-resolution (SISR) is a challenging task in image processing due to the ill-posed nature of the inverse problem. Complex degradations present in real life images make it difficult to solve this problem using naïve deep learning approaches, where models are often trained on synthetically generated image pairs. Most of the effort so far has been focused on solving the inverse problem under some constraints, such as for a limited space of blur kernels and/or assuming noise-free input images. Yet, there is a gap in the literature to provide a well-generalized deep learning-based solution that performs well on images with unknown and highly complex degradations. In this paper, we propose IKR-Net (Iterative Kernel Reconstruction Network) for blind SISR. In the proposed approach, kernel and noise estimation and high-resolution image reconstruction are carried out iteratively using dedicated deep models. The iterative refinement provides significant improvement in both the reconstructed image and the estimated blur kernel even for noisy inputs. IKR-Net provides a generalized solution that can handle any type of blur and level of noise in the input low-resolution image. IKR-Net achieves state-of-the-art results in blind SISR, especially for noisy images with motion blur.",
+      "doi": null,
+      "arxiv_id": "2404.16564v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2404.16564v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.LG"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "TransEM:Residual Swin-Transformer based regularized PET image reconstruction",
+      "authors": [
+        "Rui Hu",
+        "Huafeng Liu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Positron emission tomography(PET) image reconstruction is an ill-posed inverse problem and suffers from high level of noise due to limited counts received. Recently deep neural networks especially convolutional neural networks(CNN) have been successfully applied to PET image reconstruction. However, the local characteristics of the convolution operator potentially limit the image quality obtained by current CNN-based PET image reconstruction methods. In this paper, we propose a residual swin-transformer based regularizer(RSTR) to incorporate regularization into the iterative reconstruction framework. Specifically, a convolution layer is firstly adopted to extract shallow features, then the deep feature extraction is accomplished by the swin-transformer layer. At last, both deep and shallow features are fused with a residual operation and another convolution layer. Validations on the realistic 3D brain simulated low-count data show that our proposed method outperforms the state-of-the-art methods in both qualitative and quantitative measures.",
+      "doi": null,
+      "arxiv_id": "2205.04204v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2205.04204v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Non-iterative Coarse-to-fine Transformer Networks for Joint Affine and Deformable Image Registration",
+      "authors": [
+        "Mingyuan Meng",
+        "Lei Bi",
+        "Michael Fulham",
+        "Dagan Feng",
+        "Jinman Kim"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Image registration is a fundamental requirement for medical image analysis. Deep registration methods based on deep learning have been widely recognized for their capabilities to perform fast end-to-end registration. Many deep registration methods achieved state-of-the-art performance by performing coarse-to-fine registration, where multiple registration steps were iterated with cascaded networks. Recently, Non-Iterative Coarse-to-finE (NICE) registration methods have been proposed to perform coarse-to-fine registration in a single network and showed advantages in both registration accuracy and runtime. However, existing NICE registration methods mainly focus on deformable registration, while affine registration, a common prerequisite, is still reliant on time-consuming traditional optimization-based methods or extra affine registration networks. In addition, existing NICE registration methods are limited by the intrinsic locality of convolution operations. Transformers may address this limitation for their capabilities to capture long-range dependency, but the benefits of using transformers for NICE registration have not been explored. In this study, we propose a Non-Iterative Coarse-to-finE Transformer network (NICE-Trans) for image registration. Our NICE-Trans is the first deep registration method that (i) performs joint affine and deformable coarse-to-fine registration within a single network, and (ii) embeds transformers into a NICE registration framework to model long-range relevance between images. Extensive experiments with seven public datasets show that our NICE-Trans outperforms state-of-the-art registration methods on both registration accuracy and runtime.",
+      "doi": null,
+      "arxiv_id": "2307.03421v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2307.03421v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Quantum and Classical Frontiers of Noise",
+      "authors": [
+        "X. Oriols"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper is an introduction to the eleven works of the special issue on Quantum and Classical Frontiers of Noise. The weather, and its butterfly effect, is the typical example that explain why many natural phenomena are, in fact, not predictable with certainty. Noise in classical or quantum phenomena, understood as the difference between the empirical output of an experiment and its statistical prediction, is a measure of such uncertainty. One of the great contributions of noise appeared in 1905 when Einstein showed how the noisy (Brownian) motion of a dust particle seen in a microscope provided uncontroversial evidences on the existence of the (unseen) atoms. The aim of this special issue is to provoke discussions on how noise can help us to better understand (the reality behind) classical and quantum theories, and the frontier between them.",
+      "doi": null,
+      "arxiv_id": "1612.03430v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1612.03430v1",
+      "raw_payload": {
+        "categories": [
+          "quant-ph"
+        ],
+        "primary_category": "quant-ph"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "Image inpainting",
+      "authors": [
+        "Marcelo Bertalmı́o",
+        "Guillermo Sapiro",
+        "V. Caselles",
+        "Coloma Ballester"
+      ],
+      "year": 2000,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/344779.344972",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2295936755",
+      "citation_count": 3634,
+      "oa_status": "gold",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/344779.344972",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)",
+      "authors": [
+        "Bjoern H. Menze",
+        "András Áron Jakab",
+        "Stefan M. Bauer",
+        "Jayashree Kalpathy–Cramer",
+        "Keyvan Farahani",
+        "Justin Kirby",
+        "Yuliya Burren",
+        "Nicole Porz",
+        "Johannes Slotboom",
+        "Roland Wiest",
+        "Levente Lánczi",
+        "Elizabeth Robins Gerstner",
+        "Marc‐An﻿dré Weber",
+        "Tal Arbel",
+        "Brian Avants",
+        "Nicholas Ayache",
+        "Patricia Buendia",
+        "D. Louis Collins",
+        "Nicolas Cordier",
+        "Jason J. Corso",
+        "Antonio Criminisi",
+        "Tilak Das",
+        "Hervé Delingette",
+        "Çağatay Demiralp",
+        "Christopher R. Durst",
+        "Michel Dojat",
+        "Senan Doyle",
+        "Joana Festa",
+        "Florence Forbes",
+        "Ezequiel Geremia",
+        "Ben Glocker",
+        "Polina Golland",
+        "Xiaotao Guo",
+        "Andaç Hamamcı",
+        "Khan M. Iftekharuddin",
+        "Raj Jena",
+        "Nigel John",
+        "Ender Konukoğlu",
+        "Danial Lashkari",
+        "José António Mariz",
+        "Raphael Meier",
+        "Sérgio Pereira",
+        "Doina Precup",
+        "Stephen John Price",
+        "Tammy Riklin Raviv",
+        "Syed M. S. Reza",
+        "Michael J. Ryan",
+        "Duygu Sarıkaya",
+        "Lawrence Howard Schwartz",
+        "Hoo-Chang Shin",
+        "Jamie Shotton",
+        "Carlos A. Silva",
+        "Nuno Sousa",
+        "Nagesh K. Subbanna",
+        "Gábor Székely",
+        "Thomas J. Taylor",
+        "Owen Thomas",
+        "Nicholas J. Tustison",
+        "Gozde Deniz Unal",
+        "Flor Vasseur",
+        "Max Wintermark",
+        "Dong Hye Ye",
+        "Liang Zhao",
+        "Binsheng Zhao",
+        "Darko Zikic",
+        "Marcel W. Prastawa",
+        "Mauricio Reyes",
+        "Koen Van Leemput"
+      ],
+      "year": 2014,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tmi.2014.2377694",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W1641498739",
+      "citation_count": 6849,
+      "oa_status": "hybrid",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/42/7283692/06975210.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Palette: Image-to-Image Diffusion Models",
+      "authors": [
+        "Chitwan Saharia",
+        "William Chan",
+        "Huiwen Chang",
+        "Chris Lee",
+        "Jonathan B. Ho",
+        "Tim Salimans",
+        "David J. Fleet",
+        "Mohammad Norouzi"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3528233.3530757",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3212516020",
+      "citation_count": 1622,
+      "oa_status": "gold",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3528233.3530757",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Sparse Representation for Color Image Restoration",
+      "authors": [
+        "Julien Mairal",
+        "Michael Elad",
+        "Guillermo Sapiro"
+      ],
+      "year": 2007,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tip.2007.911828",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2114122776",
+      "citation_count": 1748,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Processing seismic ambient noise data to obtain reliable broad-band surface wave dispersion measurements",
+      "authors": [
+        "G. D. Bensen",
+        "Michael H. Ritzwoller",
+        "M. P. Barmin",
+        "Anatoli L Levshin",
+        "Fan‐Chi Lin",
+        "Morgan P. Moschetti",
+        "Nikolai M. Shapiro",
+        "Yingjie Yang"
+      ],
+      "year": 2007,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1111/j.1365-246x.2007.03374.x",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2139713088",
+      "citation_count": 2481,
+      "oa_status": "bronze",
+      "pdf_url": "https://academic.oup.com/gji/article-pdf/169/3/1239/6082124/169-3-1239.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Medical hyperspectral imaging: a review",
+      "authors": [
+        "Guolan Lu",
+        "Baowei Fei"
+      ],
+      "year": 2014,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1117/1.jbo.19.1.010901",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W1988386267",
+      "citation_count": 2311,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-19/issue-1/010901/Medical-hyperspectral-imaging-a-review/10.1117/1.JBO.19.1.010901.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Spot noise texture synthesis for data visualization",
+      "authors": [
+        "Jarke J. van Wijk"
+      ],
+      "year": 1991,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/122718.122751",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2034070517",
+      "citation_count": 398,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Image Denoising in Mixed Poisson–Gaussian Noise",
+      "authors": [
+        "Florian Luisier",
+        "Thierry Blu",
+        "Michael A. Unser"
+      ],
+      "year": 2010,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tip.2010.2073477",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2108855378",
+      "citation_count": 470,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Learning-based view synthesis for light field cameras",
+      "authors": [
+        "Nima Khademi Kalantari",
+        "Ting-Chun Wang",
+        "Ravi Ramamoorthi"
+      ],
+      "year": 2016,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/2980179.2980251",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2551052086",
+      "citation_count": 740,
+      "oa_status": "bronze",
+      "pdf_url": "http://dl.acm.org/ft_gateway.cfm?id=2980251&type=pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Practical Blind Image Denoising via Swin-Conv-UNet and Data Synthesis",
+      "authors": [
+        "Kai Zhang",
+        "Yawei Li",
+        "Jingyun Liang",
+        "Jiezhang Cao",
+        "Yulun Zhang",
+        "Hao Tang",
+        "Deng-Ping Fan",
+        "Radu Timofte",
+        "Luc Van Gool"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11633-023-1466-0",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4225538054",
+      "citation_count": 222,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11633-023-1466-0.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network",
+      "authors": [
+        "Christian Ledig",
+        "Lucas Theis",
+        "Ferenc Huszár",
+        "José Caballero",
+        "Andrew Cunningham",
+        "Alejandro Alvaro Ramírez Acosta",
+        "Andrew P. Aitken",
+        "Alykhan Tejani",
+        "Johannes Totz",
+        "Zehan Wang",
+        "Wenzhe Shi"
+      ],
+      "year": 2016,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.17863/cam.51996",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2523714292",
+      "citation_count": 1040,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1609.04802",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Variational-Based Mixed Noise Removal With CNN Deep Learning Regularization",
+      "authors": [
+        "Faqiang Wang",
+        "Haiyang Huang",
+        "Jun Liu"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tip.2019.2940496",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2975941751",
+      "citation_count": 53,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A review on medical imaging synthesis using deep learning and its clinical applications",
+      "authors": [
+        "Tonghe Wang",
+        "Yang Lei",
+        "Yabo Fu",
+        "Jacob Frank Wynne",
+        "Walter John Curran",
+        "Tian Liu",
+        "Xiaofeng Yang"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1002/acm2.13121",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3111777727",
+      "citation_count": 288,
+      "oa_status": "gold",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/acm2.13121",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "An Augmented Lagrangian Approach to the Constrained Optimization Formulation of Imaging Inverse Problems",
+      "authors": [
+        "M V Afonso",
+        "José M Bioucas-Dias",
+        "Mário A T Figueiredo"
+      ],
+      "year": 2010,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tip.2010.2076294",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2123031198",
+      "citation_count": 932,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Exploring CLIP for Assessing the Look and Feel of Images",
+      "authors": [
+        "Jianyi Wang",
+        "Kelvin C. K. Chan",
+        "Chen Change Loy"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v37i2.25353",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4382462760",
+      "citation_count": 691,
+      "oa_status": "diamond",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25353/25125",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Noise Reduction in Hyperspectral Imagery: Overview and Application",
+      "authors": [
+        "Behnood Rasti",
+        "Paul Scheunders",
+        "Pedram Ghamisi",
+        "Giorgio Licciardi",
+        "Jocelyn Chanussot"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/rs10030482",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2793218933",
+      "citation_count": 343,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A survey of image synthesis and editing with generative adversarial networks",
+      "authors": [
+        "Xian Wu",
+        "Kun Xu",
+        "Peter M. Hall"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.23919/tst.2017.8195348",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2772330423",
+      "citation_count": 204,
+      "oa_status": "diamond",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/5971803/8195337/08195348.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Simultaneous cartoon and texture image inpainting using morphological component analysis (MCA)",
+      "authors": [
+        "Michael Elad",
+        "Jean‐Luc Starck",
+        "Philippe Querre",
+        "David L. Donoho"
+      ],
+      "year": 2005,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.acha.2005.03.005",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W1999905919",
+      "citation_count": 920,
+      "oa_status": "bronze",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1063520305000655/pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Multiparametric Magnetic Resonance Imaging for Bladder Cancer: Development of VI-RADS (Vesical Imaging-Reporting And Data System)",
+      "authors": [
+        "Valeria Panebianco",
+        "Yoshifumi Narumi",
+        "Ersan Altun",
+        "Bernard H. Bochner",
+        "Jason Alexander Efstathiou",
+        "Shaista Hafeez",
+        "Robert Anthony Huddart",
+        "Steve Kennish",
+        "Seth P. Lerner",
+        "Rodolfo Montironi",
+        "Valdair Francisco Muglia",
+        "Georg Salomon",
+        "Stephen Thomas",
+        "Hebert Alberto Vargas",
+        "Johannes Alfred Witjes",
+        "Mitsuru Takeuchi",
+        "Jelle O. Barentsz",
+        "James W.F. Catto"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.eururo.2018.04.029",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2800613296",
+      "citation_count": 662,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Spot noise texture synthesis for data visualization",
+      "authors": [
+        "Jarke J. van Wijk"
+      ],
+      "year": 1991,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/127719.122751",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4234476136",
+      "citation_count": 138,
+      "oa_status": "bronze",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/127719.122751",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A modified iterative fuzzy control based filter for image enhancement with multiplicative noise removal property",
+      "authors": [
+        "F. Farbiz",
+        "M.B. Menhaj"
+      ],
+      "year": null,
+      "venue": "Proceedings 1999 International Conference on Image Processing (Cat. 99CH36348)",
+      "abstract": null,
+      "doi": "10.1109/icip.1999.821687",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Optimizing Iterative Noise Removal and Deconvolution by Simulation",
+      "authors": [
+        "James H. Leclere",
+        "Abolfazl M. Amini",
+        "George E. Ioup",
+        "Juliette W. Ioup"
+      ],
+      "year": 1995,
+      "venue": "Signal Recovery and Synthesis",
+      "abstract": null,
+      "doi": "10.1364/srs.1995.rtue4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Gaussian Noise Removal from Digital Image Using the Iterative MMSE Filter",
+      "authors": [
+        "Soumaya Fatnassi",
+        "Mohamed Yahia"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE International Multi-Conference on Smart Systems &amp;amp; Green Process (IMC-SSGP)",
+      "abstract": null,
+      "doi": "10.1109/imc-ssgp63352.2024.10919793",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Notice of Removal Low-frequency image noise removal using white noise filter",
+      "authors": [
+        "Meisam Rakhshanfar",
+        "Maria A. Amer"
+      ],
+      "year": 2016,
+      "venue": "2016 IEEE International Conference on Image Processing (ICIP)",
+      "abstract": null,
+      "doi": "10.1109/icip.2016.7532703",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Impulsive noise detection and removal with the use of iterative filter based on gradient adaptive neighborhoods",
+      "authors": [
+        "Mikhail Mozerov",
+        "Vitaly Kober"
+      ],
+      "year": 2005,
+      "venue": "SPIE Proceedings",
+      "abstract": null,
+      "doi": "10.1117/12.615727",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Edge detection, color quantization, segmentation, texture removal, and noise reduction of color image using quaternion iterative filtering",
+      "authors": [
+        "Yu-Zhe Hsiao",
+        "Soo-Chang Pei"
+      ],
+      "year": 2014,
+      "venue": "Journal of Electronic Imaging",
+      "abstract": null,
+      "doi": "10.1117/1.jei.23.4.043001",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Color image noise removal employing iterative hybrid vector filter and feature reconstruction based on correlation among RGB components",
+      "authors": [
+        "Jyohei Matsuoka",
+        "Go Tanaka",
+        "Noriaki Suetake",
+        "Eiji Uchino"
+      ],
+      "year": 2010,
+      "venue": "2010 10th International Symposium on Communications and Information Technologies",
+      "abstract": null,
+      "doi": "10.1109/iscit.2010.5665111",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "IQI-UNet: A Robust Gaussian Noise Removal in Image Quality Improvement]{IQI-UNet: A Robust Gaussian Noise Removal in Image Quality Improvement",
+      "authors": [
+        "Sonda AMMAR",
+        "Amina Kchaou",
+        "Bassem Ben Hamed"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-4372745/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Overcomplete image coding using iterative projection-based noise shaping",
+      "authors": [
+        "T.H. Reeves",
+        "N.G. Kingsbury"
+      ],
+      "year": null,
+      "venue": "Proceedings. International Conference on Image Processing",
+      "abstract": null,
+      "doi": "10.1109/icip.2002.1039041",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 35,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Iterative grouping median filter for removal of fixed value impulse noise",
+      "authors": [
+        "Jiayi Chen",
+        "Yinwei Zhan",
+        "Huiying Cao",
+        "Gangqiang Xiong"
+      ],
+      "year": 2019,
+      "venue": "IET Image Processing",
+      "abstract": null,
+      "doi": "10.1049/iet-ipr.2018.6331",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 15,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Noise removal from MR images via iterative regularization based on higher-order singular value decomposition",
+      "authors": [
+        "S. Faegheh Yeganli",
+        "Hasan Demirel",
+        "Runyi Yu"
+      ],
+      "year": 2017,
+      "venue": "Signal, Image and Video Processing",
+      "abstract": null,
+      "doi": "10.1007/s11760-017-1110-y",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 11,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Vexture: Image-to-Image Style Transfer with Local Noise Removal",
+      "authors": [
+        "hayoung lee",
+        "Myeongah Cho"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.6153183",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "An iterative method for impulse noise removal",
+      "authors": [
+        "Xuesha Wua",
+        "Yun Ji"
+      ],
+      "year": 2019,
+      "venue": "ScienceAsia",
+      "abstract": null,
+      "doi": "10.2306/scienceasia1513-1874.2019.45.092",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Low-Frequency Image Noise Removal Using White Noise Filter",
+      "authors": [
+        "Meisam Rakhshanfar",
+        "Maria A. Amer"
+      ],
+      "year": 2018,
+      "venue": "2018 25th IEEE International Conference on Image Processing (ICIP)",
+      "abstract": null,
+      "doi": "10.1109/icip.2018.8451391",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 6,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Machine Learning And Image Processing For Noise Removal And Robust Edge Detection In The Presence Of Mixed Noise",
+      "authors": [
+        "Mehdi Mafi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.25148/etd.fidc007840",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Iterative algorithm for image filtering utilizing image- and noise-related information",
+      "authors": [
+        "Alexander M. Taratorin"
+      ],
+      "year": 1993,
+      "venue": "Optical Engineering",
+      "abstract": null,
+      "doi": "10.1117/12.148132",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A Review Of Document Image Noise Removal Techniques",
+      "authors": [],
+      "year": 2021,
+      "venue": "i-manager's Journal on Image Processing",
+      "abstract": null,
+      "doi": "10.26634/jip.7.3.17324",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Removal of Image Blurring and Salt Pepper Noise Using Variation Models",
+      "authors": [
+        "Supreet Sahni"
+      ],
+      "year": 2017,
+      "venue": "International Journal of Scientific Engineering and Research",
+      "abstract": null,
+      "doi": "10.70729/ijser171865",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Removal of Noise and Artifacts",
+      "authors": [],
+      "year": null,
+      "venue": "Color Image Processing with Biomedical Applications",
+      "abstract": null,
+      "doi": "10.1117/3.887920.ch3",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Intelligent Iterative Image Reconstruction With Automatic Noise Artifact Suppression",
+      "authors": [
+        "E. Tanaka"
+      ],
+      "year": null,
+      "venue": "1990 IEEE Nuclear Science Symposium Conference Record",
+      "abstract": null,
+      "doi": "10.1109/nssmic.1990.693590",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Single-Step Sampling Approach for Unsupervised Anomaly Detection of Brain MRI Using Denoising Diffusion Models.",
+      "authors": [
+        "Damudi MZ",
+        "Kini AS"
+      ],
+      "year": 2024,
+      "venue": "International journal of biomedical imaging",
+      "abstract": null,
+      "doi": "10.1155/ijbi/2352602",
+      "arxiv_id": null,
+      "pmid": "39734753",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Variational based Mixed Noise Removal with CNN Deep Learning Regularization.",
+      "authors": [
+        "Wang F",
+        "Huang H",
+        "Liu J"
+      ],
+      "year": 2019,
+      "venue": "IEEE transactions on image processing : a publication of the IEEE Signal Processing Society",
+      "abstract": null,
+      "doi": "10.1109/TIP.2019.2940496",
+      "arxiv_id": null,
+      "pmid": "31562085",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "PRINT: a novel platform toward shape and size specific nanoparticle theranostics.",
+      "authors": [
+        "Perry JL",
+        "Herlihy KP",
+        "Napier ME",
+        "Desimone JM"
+      ],
+      "year": 2011,
+      "venue": "Accounts of chemical research",
+      "abstract": null,
+      "doi": "10.1021/ar2000315",
+      "arxiv_id": null,
+      "pmid": "21809808",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Hybridization-based in situ sequencing (HybISS) for spatially resolved transcriptomics in human and mouse brain tissue.",
+      "authors": [
+        "Gyllborg D",
+        "Langseth CM",
+        "Qian X",
+        "Choi E",
+        "Salas SM",
+        "Hilscher MM",
+        "Lein ES",
+        "Nilsson M"
+      ],
+      "year": 2020,
+      "venue": "Nucleic acids research",
+      "abstract": null,
+      "doi": "10.1093/nar/gkaa792",
+      "arxiv_id": null,
+      "pmid": "32990747",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Optimized truncation to integrate multi-channel MRS data using rank-R singular value decomposition.",
+      "authors": [
+        "Sung D",
+        "Risk BB",
+        "Owusu-Ansah M",
+        "Zhong X",
+        "Mao H",
+        "Fleischer CC"
+      ],
+      "year": 2020,
+      "venue": "NMR in biomedicine",
+      "abstract": null,
+      "doi": "10.1002/nbm.4297",
+      "arxiv_id": null,
+      "pmid": "32249522",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Transient streamlines: texture synthesis for in vivo flow visualisation.",
+      "authors": [
+        "Yang GZ",
+        "Kilner PJ",
+        "Mohiaddin RH",
+        "Firmin DN"
+      ],
+      "year": 2000,
+      "venue": "International journal of cardiac imaging",
+      "abstract": null,
+      "doi": "10.1023/a:1006418406598",
+      "arxiv_id": null,
+      "pmid": "11144771",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "An orientation-selective orthogonal lapped transform.",
+      "authors": [
+        "Kunz D"
+      ],
+      "year": 2008,
+      "venue": "IEEE transactions on image processing : a publication of the IEEE Signal Processing Society",
+      "abstract": null,
+      "doi": "10.1109/TIP.2008.926160",
+      "arxiv_id": null,
+      "pmid": "18632341",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Two-point water-fat imaging with partially-opposed-phase (POP) acquisition: an asymmetric Dixon method.",
+      "authors": [
+        "Xiang QS"
+      ],
+      "year": 2006,
+      "venue": "Magnetic resonance in medicine",
+      "abstract": null,
+      "doi": "10.1002/mrm.20984",
+      "arxiv_id": null,
+      "pmid": "16894578",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "[Combined scatter and attenuation correction for 201Tl myocardial perfusion SPECT using OS-EM algorithm].",
+      "authors": [
+        "Matsuoka S",
+        "Shinohara H",
+        "Yamamoto T",
+        "Niio Y",
+        "Shima H",
+        "Yamada M",
+        "Hasebe S",
+        "Uchiyama K",
+        "Kuniyasu Y",
+        "Takahashi M",
+        "Yokoi T"
+      ],
+      "year": 1998,
+      "venue": "Nihon Igaku Hoshasen Gakkai zasshi. Nippon acta radiologica",
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": "9866992",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 713,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2163,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 333,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1581,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "c02d28d161af2198ca02ab10ed1b9076128c92905edacf3d8a1e4d18d36fbc89",
+  "identified_openalex": true
+}

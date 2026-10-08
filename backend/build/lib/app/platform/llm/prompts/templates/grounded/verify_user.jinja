@@ -1,0 +1,11 @@
+Finding kind: {{ kind }}
+Statement: {{ statement }}
+
+Cited evidence:
+{% for e in evidence %}
+- {{ e.label }} ("{{ e.title }}"), fact {{ e.fact_id }} [{{ e.type }}], page {{ e.page if e.page is not none else "?" }}
+  value: {{ e.value }}
+  quote: {{ e.quote }}
+  excerpt: {{ e.excerpt }}
+{% endfor %}
+Is the statement supported by this evidence?

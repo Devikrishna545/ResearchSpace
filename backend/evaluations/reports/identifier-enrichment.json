@@ -1,0 +1,1251 @@
+{
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "mode": "cached",
+  "reference_year": 2026,
+  "scoring_options": {
+    "recency_weight": 0.0,
+    "remove_stopwords": false
+  },
+  "overall": {
+    "queries": 24,
+    "target_absent": 12,
+    "target_present": 12,
+    "ranking_failures_at_10": 3,
+    "ranking_failures_at_20": 1,
+    "recall_at_10": 0.375,
+    "recall_at_20": 0.4583,
+    "mrr": 0.3598,
+    "recall_at_10_present": 0.75,
+    "recall_at_20_present": 0.9167,
+    "mrr_present": 0.7196,
+    "median_rank_present": 1.0,
+    "mean_rank_present": 9.5
+  },
+  "categories": {
+    "descriptive": {
+      "queries": 8,
+      "target_absent": 4,
+      "target_present": 4,
+      "ranking_failures_at_10": 2,
+      "ranking_failures_at_20": 1,
+      "recall_at_10": 0.25,
+      "recall_at_20": 0.375,
+      "mrr": 0.2607,
+      "recall_at_10_present": 0.5,
+      "recall_at_20_present": 0.75,
+      "mrr_present": 0.5214,
+      "median_rank_present": 7.5,
+      "mean_rank_present": 21.5
+    },
+    "exact_title": {
+      "queries": 8,
+      "target_absent": 1,
+      "target_present": 7,
+      "ranking_failures_at_10": 0,
+      "ranking_failures_at_20": 0,
+      "recall_at_10": 0.875,
+      "recall_at_20": 0.875,
+      "mrr": 0.8125,
+      "recall_at_10_present": 1.0,
+      "recall_at_20_present": 1.0,
+      "mrr_present": 0.9286,
+      "median_rank_present": 1,
+      "mean_rank_present": 1.143
+    },
+    "vocabulary_mismatch": {
+      "queries": 8,
+      "target_absent": 7,
+      "target_present": 1,
+      "ranking_failures_at_10": 1,
+      "ranking_failures_at_20": 0,
+      "recall_at_10": 0.0,
+      "recall_at_20": 0.125,
+      "mrr": 0.0063,
+      "recall_at_10_present": 0.0,
+      "recall_at_20_present": 1.0,
+      "mrr_present": 0.05,
+      "median_rank_present": 20,
+      "mean_rank_present": 20
+    }
+  },
+  "queries": [
+    {
+      "id": "exact-transformers",
+      "category": "exact_title",
+      "query": "Attention Is All You Need",
+      "target": {
+        "arxiv_id": "1706.03762"
+      },
+      "candidates": 69,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 2946,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 4207,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 1136,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 2428,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "exact-bert",
+      "category": "exact_title",
+      "query": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "target": {
+        "arxiv_id": "1810.04805"
+      },
+      "candidates": 60,
+      "target_present": true,
+      "rank": 1,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 974,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2854,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 429,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1165,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "exact-resnet",
+      "category": "exact_title",
+      "query": "Deep Residual Learning for Image Recognition",
+      "target": {
+        "arxiv_id": "1512.03385",
+        "doi": "10.1109/CVPR.2016.90"
+      },
+      "candidates": 57,
+      "target_present": true,
+      "rank": 1,
+      "target_match_count": 2,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "degraded",
+          "latency_ms": 5025,
+          "error": "arxiv network timed out (ReadTimeout)",
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 3225,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 1205,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 2719,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "exact-diffusion",
+      "category": "exact_title",
+      "query": "Denoising Diffusion Probabilistic Models",
+      "target": {
+        "arxiv_id": "2006.11239"
+      },
+      "candidates": 68,
+      "target_present": true,
+      "rank": 2,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 821,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2793,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 370,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1389,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "exact-lora",
+      "category": "exact_title",
+      "query": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "target": {
+        "arxiv_id": "2106.09685"
+      },
+      "candidates": 76,
+      "target_present": true,
+      "rank": 1,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 1157,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2443,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 445,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1591,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "exact-flashattention",
+      "category": "exact_title",
+      "query": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "target": {
+        "arxiv_id": "2205.14135"
+      },
+      "candidates": 53,
+      "target_present": true,
+      "rank": 1,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 957,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 1923,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 371,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1004,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "exact-sentencebert",
+      "category": "exact_title",
+      "query": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+      "target": {
+        "arxiv_id": "1908.10084"
+      },
+      "candidates": 51,
+      "target_present": true,
+      "rank": 1,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 941,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 3535,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 474,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 525,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "exact-segment-anything",
+      "category": "exact_title",
+      "query": "Segment Anything",
+      "target": {
+        "arxiv_id": "2304.02643",
+        "doi": "10.1109/ICCV51070.2023.00371"
+      },
+      "candidates": 47,
+      "target_present": true,
+      "rank": 1,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "degraded",
+          "latency_ms": 5024,
+          "error": "arxiv network timed out (ReadTimeout)",
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2926,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 347,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1415,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-transformers",
+      "category": "descriptive",
+      "query": "transformer architecture for sequence transduction",
+      "target": {
+        "arxiv_id": "1706.03762"
+      },
+      "candidates": 62,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 727,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2088,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 441,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1723,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-dpr",
+      "category": "descriptive",
+      "query": "dense passage retriever for open domain question answering",
+      "target": {
+        "arxiv_id": "2004.04906"
+      },
+      "candidates": 50,
+      "target_present": true,
+      "rank": 1,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 1319,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2277,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 302,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1087,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-rag",
+      "category": "descriptive",
+      "query": "retrieval augmented generation for knowledge intensive question answering",
+      "target": {
+        "arxiv_id": "2005.11401"
+      },
+      "candidates": 77,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 1049,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2839,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 508,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1860,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-clip",
+      "category": "descriptive",
+      "query": "contrastive pretraining images and natural language from web data",
+      "target": {
+        "arxiv_id": "2103.00020"
+      },
+      "candidates": 57,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 1255,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2446,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 410,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 576,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-vit",
+      "category": "descriptive",
+      "query": "vision transformer splitting an image into fixed size patches",
+      "target": {
+        "arxiv_id": "2010.11929"
+      },
+      "candidates": 62,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 1154,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2213,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 572,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1633,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-reasoning",
+      "category": "descriptive",
+      "query": "chain of thought prompting for multi step reasoning",
+      "target": {
+        "arxiv_id": "2201.11903"
+      },
+      "candidates": 55,
+      "target_present": true,
+      "rank": 14,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 768,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2276,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 461,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1592,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-nerf",
+      "category": "descriptive",
+      "query": "neural radiance fields for novel view synthesis",
+      "target": {
+        "arxiv_id": "2003.08934"
+      },
+      "candidates": 69,
+      "target_present": true,
+      "rank": 1,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 959,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2129,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 307,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1803,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "descriptive-qlora",
+      "category": "descriptive",
+      "query": "quantized low rank fine tuning language models",
+      "target": {
+        "arxiv_id": "2305.14314"
+      },
+      "candidates": 80,
+      "target_present": true,
+      "rank": 70,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 1843,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 3101,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 419,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1679,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "mismatch-dpr",
+      "category": "vocabulary_mismatch",
+      "query": "dense vector representations for retrieval",
+      "target": {
+        "arxiv_id": "2004.04906"
+      },
+      "candidates": 70,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 636,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 1947,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 310,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 2176,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "mismatch-rag",
+      "category": "vocabulary_mismatch",
+      "query": "grounding language models in external documents",
+      "target": {
+        "arxiv_id": "2005.11401"
+      },
+      "candidates": 73,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 946,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2036,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 327,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1668,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "mismatch-transformers",
+      "category": "vocabulary_mismatch",
+      "query": "attention based translation without recurrence",
+      "target": {
+        "arxiv_id": "1706.03762"
+      },
+      "candidates": 80,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 867,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2243,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 317,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1865,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "mismatch-bert",
+      "category": "vocabulary_mismatch",
+      "query": "bidirectional contextual pretraining for question answering",
+      "target": {
+        "arxiv_id": "1810.04805"
+      },
+      "candidates": 63,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 707,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2296,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 470,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1279,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "mismatch-flashattention",
+      "category": "vocabulary_mismatch",
+      "query": "speeding up exact attention with less memory traffic",
+      "target": {
+        "arxiv_id": "2205.14135"
+      },
+      "candidates": 57,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 842,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 1926,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 452,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 635,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "mismatch-resnet",
+      "category": "vocabulary_mismatch",
+      "query": "skip connections help very deep image classifiers",
+      "target": {
+        "arxiv_id": "1512.03385"
+      },
+      "candidates": 66,
+      "target_present": true,
+      "rank": 20,
+      "target_match_count": 1,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 842,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2283,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 359,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1800,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "mismatch-lora",
+      "category": "vocabulary_mismatch",
+      "query": "parameter efficient adaptation via tiny trainable matrices",
+      "target": {
+        "arxiv_id": "2106.09685"
+      },
+      "candidates": 59,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 937,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 3122,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 455,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 532,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    },
+    {
+      "id": "mismatch-diffusion",
+      "category": "vocabulary_mismatch",
+      "query": "iterative noise removal for image synthesis",
+      "target": {
+        "arxiv_id": "2006.11239"
+      },
+      "candidates": 67,
+      "target_present": false,
+      "rank": null,
+      "target_match_count": 0,
+      "source_health": [
+        {
+          "source": "arxiv",
+          "status": "ok",
+          "latency_ms": 713,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "openalex",
+          "status": "ok",
+          "latency_ms": 2163,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "crossref",
+          "status": "ok",
+          "latency_ms": 333,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "pubmed",
+          "status": "ok",
+          "latency_ms": 1581,
+          "error": null,
+          "retry_after_seconds": null
+        },
+        {
+          "source": "semantic_scholar",
+          "status": "degraded",
+          "latency_ms": 0,
+          "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+          "retry_after_seconds": null
+        }
+      ]
+    }
+  ]
+}

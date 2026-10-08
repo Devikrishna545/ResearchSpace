@@ -1,0 +1,2046 @@
+{
+  "id": "exact-lora",
+  "category": "exact_title",
+  "query": "LoRA: Low-Rank Adaptation of Large Language Models",
+  "target": {
+    "arxiv_id": "2106.09685"
+  },
+  "plan": {
+    "topic": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "sub_queries": [
+      "LoRA: Low-Rank Adaptation of Large Language Models"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "authors": [
+        "Edward J. Hu",
+        "Yelong Shen",
+        "Phillip Wallis",
+        "Zeyuan Allen-Zhu",
+        "Yuanzhi Li",
+        "Shean Wang",
+        "Lu Wang",
+        "Weizhu Chen"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA.",
+      "doi": null,
+      "arxiv_id": "2106.09685v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2106.09685v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "BA-LoRA: Bias-Alleviating Low-Rank Adaptation to Mitigate Catastrophic Inheritance in Large Language Models",
+      "authors": [
+        "Yupeng Chang",
+        "Yi Chang",
+        "Yuan Wu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Parameter-efficient fine-tuning (PEFT) has become a de facto standard for adapting large language models (LLMs). However, we identify a critical vulnerability within popular low-rank adaptation methods such as LoRA: they can exacerbate \"Catastrophic Inheritance\" - the unchecked propagation of biases, noise, and data imbalances from pre-training. This phenomenon can degrade model robustness and fairness, undermining the benefits of efficient adaptation. To address this, we introduce Bias-Alleviating Low-Rank Adaptation (BA-LoRA). Our approach is founded on a principled decomposition of Catastrophic Inheritance into three core challenges: Knowledge Drift, Representation Collapse, and Overfitting to Noise. BA-LoRA systematically mitigates these issues by incorporating a trio of targeted regularizers: consistency, diversity, and an SVD-based term, designed to preserve core knowledge, promote representational richness, and encourage robust, low-rank output representations, respectively. We conduct comprehensive evaluations on a suite of Natural Language Generation (NLG) and Natural Language Understanding (NLU) tasks using diverse, prominent open-source language models (e.g., LLaMA-2-7B and DeBERTa-v3-base). Our results show that BA-LoRA not only outperforms state-of-the-art LoRA variants in terms of performance and stability, but also demonstrates superior robustness and bias mitigation on targeted evaluations. These results provide evidence that BA-LoRA can counteract the adverse effects of Catastrophic Inheritance.",
+      "doi": null,
+      "arxiv_id": "2408.04556v8",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2408.04556v8",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Low-Rank Adaptation with Task-Relevant Feature Enhancement for Fine-tuning Language Models",
+      "authors": [
+        "Changqun Li",
+        "Chaofan Ding",
+        "Kexin Luan",
+        "Xinhan Di"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Fine-tuning pre-trained large language models in a parameter-efficient manner is widely studied for its effectiveness and efficiency. LoRA is one of the most widely used methods, which assumes that the optimization process is essentially low dimensional. Although LoRA has demonstrated commendable performance, there remains a significant performance gap between LoRA and full fine-tuning when learning new tasks. In this work, we propose Low-Rank Adaptation with Task-Relevant Feature Enhancement(LoRATRF) for enhancing task-relevant features from the perspective of editing neural network representations. To prioritize task-relevant features, a task-aware filter that selectively extracts valuable knowledge from hidden representations for the target or current task is designed. As the experiments on a vareity of datasets including NLU, commonsense reasoning and mathematical reasoning tasks demonstrates, our method reduces 33.71% parameters and achieves better performance on a variety of datasets in comparison with SOTA low-rank methods.",
+      "doi": null,
+      "arxiv_id": "2412.09827v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2412.09827v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.CV"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Enhancing Human-Like Responses in Large Language Models",
+      "authors": [
+        "Ethem Yağız Çalık",
+        "Talha Rüzgar Akkuş"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper explores the advancements in making large language models (LLMs) more human-like. We focus on techniques that enhance natural language understanding, conversational coherence, and emotional intelligence in AI systems. The study evaluates various approaches, including fine-tuning with diverse datasets, incorporating psychological principles, and designing models that better mimic human reasoning patterns. Our findings demonstrate that these enhancements not only improve user interactions but also open new possibilities for AI applications across different domains. Future work will address the ethical implications and potential biases introduced by these human-like attributes.",
+      "doi": null,
+      "arxiv_id": "2501.05032v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2501.05032v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+      "authors": [
+        "Yuhui Xu",
+        "Lingxi Xie",
+        "Xiaotao Gu",
+        "Xin Chen",
+        "Heng Chang",
+        "Hengheng Zhang",
+        "Zhengsu Chen",
+        "Xiaopeng Zhang",
+        "Qi Tian"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recently years have witnessed a rapid development of large language models (LLMs). Despite the strong ability in many language-understanding tasks, the heavy computational burden largely restricts the application of LLMs especially when one needs to deploy them onto edge devices. In this paper, we propose a quantization-aware low-rank adaptation (QA-LoRA) algorithm. The motivation lies in the imbalanced degrees of freedom of quantization and adaptation, and the solution is to use group-wise operators which increase the degree of freedom of quantization meanwhile decreasing that of adaptation. QA-LoRA is easily implemented with a few lines of code, and it equips the original LoRA with two-fold abilities: (i) during fine-tuning, the LLM's weights are quantized (e.g., into INT4) to reduce time and memory usage; (ii) after fine-tuning, the LLM and auxiliary weights are naturally integrated into a quantized model without loss of accuracy. We apply QA-LoRA to the LLaMA and LLaMA2 model families and validate its effectiveness in different fine-tuning datasets and downstream scenarios. Code will be made available at https://github.com/yuhuixu1993/qa-lora.",
+      "doi": null,
+      "arxiv_id": "2309.14717v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2309.14717v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.CL"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's Personality",
+      "authors": [
+        "Yiming Ai",
+        "Zhiwei He",
+        "Ziyin Zhang",
+        "Wenhong Zhu",
+        "Hongkun Hao",
+        "Kai Yu",
+        "Lingjun Chen",
+        "Rui Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this study, we delve into the validity of conventional personality questionnaires in capturing the human-like personality traits of Large Language Models (LLMs). Our objective is to assess the congruence between the personality traits LLMs claim to possess and their demonstrated tendencies in real-world scenarios. By conducting an extensive examination of LLM outputs against observed human response patterns, we aim to understand the disjunction between self-knowledge and action in LLMs.",
+      "doi": null,
+      "arxiv_id": "2402.14679v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2402.14679v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.CY"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Large Language Models Lack Understanding of Character Composition of Words",
+      "authors": [
+        "Andrew Shin",
+        "Kunitake Kaneko"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Large language models (LLMs) have demonstrated remarkable performances on a wide range of natural language tasks. Yet, LLMs' successes have been largely restricted to tasks concerning words, sentences, or documents, and it remains questionable how much they understand the minimal units of text, namely characters. In this paper, we examine contemporary LLMs regarding their ability to understand character composition of words, and show that most of them fail to reliably carry out even the simple tasks that can be handled by humans with perfection. We analyze their behaviors with comparison to token level performances, and discuss the potential directions for future research.",
+      "doi": null,
+      "arxiv_id": "2405.11357v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2405.11357v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Low-Rank Adapters Meet Neural Architecture Search for LLM Compression",
+      "authors": [
+        "J. Pablo Muñoz",
+        "Jinjie Yuan",
+        "Nilesh Jain"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The rapid expansion of Large Language Models (LLMs) has posed significant challenges regarding the computational resources required for fine-tuning and deployment. Recent advancements in low-rank adapters have demonstrated their efficacy in parameter-efficient fine-tuning (PEFT) of these models. This retrospective paper comprehensively discusses innovative approaches that synergize low-rank representations with Neural Architecture Search (NAS) techniques, particularly weight-sharing super-networks. Robust solutions for compressing and fine-tuning large pre-trained models are developed by integrating these methodologies. Our analysis highlights the potential of these combined strategies to democratize the use of LLMs, making them more accessible for deployment in resource-constrained environments. The resulting models exhibit reduced memory footprints and faster inference times, paving the way for more practical and scalable applications of LLMs. Models and code are available at https://github.com/IntelLabs/Hardware-Aware-Automated-Machine-Learning.",
+      "doi": null,
+      "arxiv_id": "2501.16372v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2501.16372v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Unmasking the Shadows of AI: Investigating Deceptive Capabilities in Large Language Models",
+      "authors": [
+        "Linge Guo"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This research critically navigates the intricate landscape of AI deception, concentrating on deceptive behaviours of Large Language Models (LLMs). My objective is to elucidate this issue, examine the discourse surrounding it, and subsequently delve into its categorization and ramifications. The essay initiates with an evaluation of the AI Safety Summit 2023 (ASS) and introduction of LLMs, emphasising multidimensional biases that underlie their deceptive behaviours.The literature review covers four types of deception categorised: Strategic deception, Imitation, Sycophancy, and Unfaithful Reasoning, along with the social implications and risks they entail. Lastly, I take an evaluative stance on various aspects related to navigating the persistent challenges of the deceptive AI. This encompasses considerations of international collaborative governance, the reconfigured engagement of individuals with AI, proposal of practical adjustments, and specific elements of digital education.",
+      "doi": null,
+      "arxiv_id": "2403.09676v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2403.09676v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Low-Rank Adapting Models for Sparse Autoencoders",
+      "authors": [
+        "Matthew Chen",
+        "Joshua Engels",
+        "Max Tegmark"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Sparse autoencoders (SAEs) decompose language model representations into a sparse set of linear latent vectors. Recent works have improved SAEs using language model gradients, but these techniques require many expensive backward passes during training and still cause a significant increase in cross entropy loss when SAE reconstructions are inserted into the model. In this work, we improve on these limitations by taking a fundamentally different approach: we use low-rank adaptation (LoRA) to finetune the \\textit{language model itself} around a previously trained SAE. We analyze our method across SAE sparsity, SAE width, language model size, LoRA rank, and model layer on the Gemma Scope family of SAEs. In these settings, our method reduces the cross entropy loss gap by 30\\% to 55\\% when SAEs are inserted during the forward pass. We also find that compared to end-to-end (e2e) SAEs, our approach achieves the same downstream cross entropy loss 3$\\times$ to 20$\\times$ faster on \\gemma and 2$\\times$ to 10$\\times$ faster on \\llama. We further show that our technique improves downstream metrics and can adapt multiple SAEs at once without harming general language model capabilities. Our results demonstrate that improving model interpretability is not limited to post-hoc SAE training; Pareto improvements can also be achieved by directly optimizing the model itself.",
+      "doi": null,
+      "arxiv_id": "2501.19406v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2501.19406v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "C-LoRA: Contextual Low-Rank Adaptation for Uncertainty Estimation in Large Language Models",
+      "authors": [
+        "Amir Hossein Rahmati",
+        "Sanket Jantre",
+        "Weifeng Zhang",
+        "Yucheng Wang",
+        "Byung-Jun Yoon",
+        "Nathan M. Urban",
+        "Xiaoning Qian"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Low-Rank Adaptation (LoRA) offers a cost-effective solution for fine-tuning large language models (LLMs), but it often produces overconfident predictions in data-scarce few-shot settings. To address this issue, several classical statistical learning approaches have been repurposed for scalable uncertainty-aware LoRA fine-tuning. However, these approaches neglect how input characteristics affect the predictive uncertainty estimates. To address this limitation, we propose Contextual Low-Rank Adaptation (C-LoRA) as a novel uncertainty-aware and parameter efficient fine-tuning approach, by developing new lightweight LoRA modules contextualized to each input data sample to dynamically adapt uncertainty estimates. Incorporating data-driven contexts into the parameter posteriors, C-LoRA mitigates overfitting, achieves well-calibrated uncertainties, and yields robust predictions. Extensive experiments on LLaMA2-7B models demonstrate that C-LoRA consistently outperforms the state-of-the-art uncertainty-aware LoRA methods in both uncertainty quantification and model generalization. Ablation studies further confirm the critical role of our contextual modules in capturing sample-specific uncertainties. C-LoRA sets a new standard for robust, uncertainty-aware LLM fine-tuning in few-shot regimes. Although our experiments are limited to 7B models, our method is architecture-agnostic and, in principle, applies beyond this scale; studying its scaling to larger models remains an open problem. Our code is available at https://github.com/ahra99/c_lora.",
+      "doi": null,
+      "arxiv_id": "2505.17773v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2505.17773v3",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "DenseLoRA: Dense Low-Rank Adaptation of Large Language Models",
+      "authors": [
+        "Lin Mu",
+        "Xiaoyu Wang",
+        "Li Ni",
+        "Yang Li",
+        "Zhize Wu",
+        "Peiquan Jin",
+        "Yiwen Zhang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Low-rank adaptation (LoRA) has been developed as an efficient approach for adapting large language models (LLMs) by fine-tuning two low-rank matrices, thereby reducing the number of trainable parameters. However, prior research indicates that many of the weights in these matrices are redundant, leading to inefficiencies in parameter utilization. To address this limitation, we introduce Dense Low-Rank Adaptation (DenseLoRA), a novel approach that enhances parameter efficiency while achieving superior performance compared to LoRA. DenseLoRA builds upon the concept of representation fine-tuning, incorporating a single Encoder-Decoder to refine and compress hidden representations across all adaptation layers before applying adaptation. Instead of relying on two redundant low-rank matrices as in LoRA, DenseLoRA adapts LLMs through a dense low-rank matrix, improving parameter utilization and adaptation efficiency. We evaluate DenseLoRA on various benchmarks, showing that it achieves 83.8% accuracy with only 0.01% of trainable parameters, compared to LoRA's 80.8% accuracy with 0.70% of trainable parameters on LLaMA3-8B. Additionally, we conduct extensive experiments to systematically assess the impact of DenseLoRA's components on overall model performance. Code is available at https://github.com/mulin-ahu/DenseLoRA.",
+      "doi": null,
+      "arxiv_id": "2505.23808v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2505.23808v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Making Large Language Models Better Reasoners with Alignment",
+      "authors": [
+        "Peiyi Wang",
+        "Lei Li",
+        "Liang Chen",
+        "Feifan Song",
+        "Binghuai Lin",
+        "Yunbo Cao",
+        "Tianyu Liu",
+        "Zhifang Sui"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Reasoning is a cognitive process of using evidence to reach a sound conclusion. The reasoning capability is essential for large language models (LLMs) to serve as the brain of the artificial general intelligence agent. Recent studies reveal that fine-tuning LLMs on data with the chain of thought (COT) reasoning process can significantly enhance their reasoning capabilities. However, we find that the fine-tuned LLMs suffer from an \\textit{Assessment Misalignment} problem, i.e., they frequently assign higher scores to subpar COTs, leading to potential limitations in their reasoning abilities. To address this problem, we introduce an \\textit{Alignment Fine-Tuning (AFT)} paradigm, which involves three steps: 1) fine-tuning LLMs with COT training data; 2) generating multiple COT responses for each question, and categorizing them into positive and negative ones based on whether they achieve the correct answer; 3) calibrating the scores of positive and negative responses given by LLMs with a novel constraint alignment loss. Specifically, the constraint alignment loss has two objectives: a) Alignment, which guarantees that positive scores surpass negative scores to encourage answers with high-quality COTs; b) Constraint, which keeps the negative scores confined to a reasonable range to prevent the model degradation. Beyond just the binary positive and negative feedback, the constraint alignment loss can be seamlessly adapted to the ranking situations when ranking feedback is accessible. Furthermore, we also delve deeply into recent ranking-based alignment methods, such as DPO, RRHF, and PRO, and discover that the constraint, which has been overlooked by these approaches, is also crucial for their performance. Extensive experiments on four reasoning benchmarks with both binary and ranking feedback demonstrate the effectiveness of AFT.",
+      "doi": null,
+      "arxiv_id": "2309.02144v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2309.02144v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "QR-LoRA: QR-Based Low-Rank Adaptation for Efficient Fine-Tuning of Large Language Models",
+      "authors": [
+        "Jessica Liang",
+        "Anirudh Bharadwaj"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The growing scale of Large Language Models (LLMs) has necessitated the development of parameter-efficient fine-tuning techniques. Low-Rank Adaptation (LoRA) has emerged as a promising approach, reducing the number of trainable parameters by applying low-rank updates to pretrained weights. While standard LoRA learns both update factors directly, several recent variants first initialize those matrices via an SVD of the pretrained weights -- an operation that can be expensive on large models and yields singular vectors that are not always easy to interpret. In this work, we extract an orthonormal basis from the pretrained weight matrix using QR decomposition with column pivoting, and then express the LoRA update as a linear combination of these basis vectors -- training only the scalar coefficients, which imposes clear structure on adaptation and drastically reduces parameter count. Experiments across GLUE tasks show that QR-LoRA matches or exceeds the performance of full fine-tuning, standard LoRA, and SVD-LoRA (LoRA with update matrices initialized via singular value decomposition) with as few as 601 parameters -- a reduction of over 1000x compared to full fine-tuning and 77x fewer than typical LoRA setups.",
+      "doi": null,
+      "arxiv_id": "2508.21810v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2508.21810v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Why LoRA Fails to Forget: Regularized Low-Rank Adaptation Against Backdoors in Language Models",
+      "authors": [
+        "Hoang-Chau Luong",
+        "Lingwei Chen"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Low-Rank Adaptation (LoRA) is widely used for parameter-efficient fine-tuning of large language models, but it is notably ineffective at removing backdoor behaviors from poisoned pretrained models when fine-tuning on clean dataset. Contrary to the common belief that this weakness is caused primarily by low rank, we show that LoRA's vulnerability is fundamentally spectral. Our analysis identifies two key factors: LoRA updates (i) possess insufficient spectral strength, with singular values far below those of pretrained weights, and (ii) exhibit unfavorable spectral alignment, weakly matching clean-task directions while retaining overlap with trigger-sensitive subspaces. We further establish a critical scaling threshold beyond which LoRA can theoretically suppress trigger-induced activations, and we show empirically that standard LoRA rarely reaches this regime. We introduce Regularized Low-Rank Adaptation (RoRA), which improves forgetting by increasing spectral strength and correcting alignment through clean-strengthened regularization, trigger-insensitive constraints, and post-training spectral rescaling. Experiments across multiple NLP benchmarks and attack settings show that RoRA substantially reduces attack success rates while maintaining clean accuracy.",
+      "doi": null,
+      "arxiv_id": "2601.06305v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2601.06305v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "ALoRA: Allocating Low-Rank Adaptation for Fine-tuning Large Language Models",
+      "authors": [
+        "Zequan Liu",
+        "Jiawen Lyn",
+        "Wei Zhu",
+        "Xing Tian",
+        "Yvette Graham"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Parameter-efficient fine-tuning (PEFT) is widely studied for its effectiveness and efficiency in the era of large language models. Low-rank adaptation (LoRA) has demonstrated commendable performance as a popular and representative method. However, it is implemented with a fixed intrinsic rank that might not be the ideal setting for the downstream tasks. Recognizing the need for more flexible downstream task adaptation, we extend the methodology of LoRA to an innovative approach we call allocating low-rank adaptation (ALoRA) that enables dynamic adjustments to the intrinsic rank during the adaptation process. First, we propose a novel method, AB-LoRA, that can effectively estimate the importance score of each LoRA rank. Second, guided by AB-LoRA, we gradually prune abundant and negatively impacting LoRA ranks and allocate the pruned LoRA budgets to important Transformer modules needing higher ranks. We have conducted experiments on various tasks, and the experimental results demonstrate that our ALoRA method can outperform the recent baselines with comparable tunable parameters.",
+      "doi": null,
+      "arxiv_id": "2403.16187v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2403.16187v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Self-Cognition in Large Language Models: An Exploratory Study",
+      "authors": [
+        "Dongping Chen",
+        "Jiawen Shi",
+        "Yao Wan",
+        "Pan Zhou",
+        "Neil Zhenqiang Gong",
+        "Lichao Sun"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "While Large Language Models (LLMs) have achieved remarkable success across various applications, they also raise concerns regarding self-cognition. In this paper, we perform a pioneering study to explore self-cognition in LLMs. Specifically, we first construct a pool of self-cognition instruction prompts to evaluate where an LLM exhibits self-cognition and four well-designed principles to quantify LLMs' self-cognition. Our study reveals that 4 of the 48 models on Chatbot Arena--specifically Command R, Claude3-Opus, Llama-3-70b-Instruct, and Reka-core--demonstrate some level of detectable self-cognition. We observe a positive correlation between model size, training data quality, and self-cognition level. Additionally, we also explore the utility and trustworthiness of LLM in the self-cognition state, revealing that the self-cognition state enhances some specific tasks such as creative writing and exaggeration. We believe that our work can serve as an inspiration for further research to study the self-cognition in LLMs.",
+      "doi": null,
+      "arxiv_id": "2407.01505v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2407.01505v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "OLoRA: Orthonormal Low-Rank Adaptation of Large Language Models",
+      "authors": [
+        "Kerim Büyükakyüz"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The advent of large language models (LLMs) has revolutionized natural language processing, enabling unprecedented capabilities in understanding and generating human-like text. However, the computational cost and convergence times associated with fine-tuning these models remain significant challenges. Low-Rank Adaptation (LoRA) has emerged as a promising method to mitigate these issues by introducing efficient fine-tuning techniques with a reduced number of trainable parameters. In this paper, we present OLoRA, an enhancement to the LoRA method that leverages orthonormal matrix initialization through QR decomposition. OLoRA significantly accelerates the convergence of LLM training while preserving the efficiency benefits of LoRA, such as the number of trainable parameters and GPU memory footprint. Our empirical evaluations demonstrate that OLoRA not only converges faster but also exhibits improved performance compared to standard LoRA across a variety of language modeling tasks. This advancement opens new avenues for more efficient and accessible fine-tuning of LLMs, potentially enabling broader adoption and innovation in natural language applications.",
+      "doi": null,
+      "arxiv_id": "2406.01775v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2406.01775v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A Critical Review of Causal Reasoning Benchmarks for Large Language Models",
+      "authors": [
+        "Linying Yang",
+        "Vik Shirvaikar",
+        "Oscar Clivio",
+        "Fabian Falck"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Numerous benchmarks aim to evaluate the capabilities of Large Language Models (LLMs) for causal inference and reasoning. However, many of them can likely be solved through the retrieval of domain knowledge, questioning whether they achieve their purpose. In this review, we present a comprehensive overview of LLM benchmarks for causality. We highlight how recent benchmarks move towards a more thorough definition of causal reasoning by incorporating interventional or counterfactual reasoning. We derive a set of criteria that a useful benchmark or set of benchmarks should aim to satisfy. We hope this work will pave the way towards a general framework for the assessment of causal understanding in LLMs and the design of novel benchmarks.",
+      "doi": null,
+      "arxiv_id": "2407.08029v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2407.08029v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.CL"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "QDyLoRA: Quantized Dynamic Low-Rank Adaptation for Efficient Large Language Model Tuning",
+      "authors": [
+        "Hossein Rajabzadeh",
+        "Mojtaba Valipour",
+        "Tianshu Zhu",
+        "Marzieh Tahaei",
+        "Hyock Ju Kwon",
+        "Ali Ghodsi",
+        "Boxing Chen",
+        "Mehdi Rezagholizadeh"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Finetuning large language models requires huge GPU memory, restricting the choice to acquire Larger models. While the quantized version of the Low-Rank Adaptation technique, named QLoRA, significantly alleviates this issue, finding the efficient LoRA rank is still challenging. Moreover, QLoRA is trained on a pre-defined rank and, therefore, cannot be reconfigured for its lower ranks without requiring further fine-tuning steps. This paper proposes QDyLoRA -Quantized Dynamic Low-Rank Adaptation-, as an efficient quantization approach for dynamic low-rank adaptation. Motivated by Dynamic LoRA, QDyLoRA is able to efficiently finetune LLMs on a set of pre-defined LoRA ranks. QDyLoRA enables fine-tuning Falcon-40b for ranks 1 to 64 on a single 32 GB V100-GPU through one round of fine-tuning. Experimental results show that QDyLoRA is competitive to QLoRA and outperforms when employing its optimal rank.",
+      "doi": null,
+      "arxiv_id": "2402.10462v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2402.10462v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.CL"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "LoRA Fine-Tuning of a 3B Code LLM for Algorithmic Efficiency",
+      "authors": [
+        "J. Edward Hu",
+        "Yelong Shen",
+        "Phillip Wallis",
+        "Zeyuan Allen-Zhu",
+        "Yuanzhi Li",
+        "Shean Wang",
+        "Wang, Lu",
+        "Chen, Weizhu"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2106.09685",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3168867926",
+      "citation_count": 2551,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2106.09685",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey of Large Language Models",
+      "authors": [
+        "Wayne Xin Zhao",
+        "Kun Zhou",
+        "Junyi Li",
+        "Tianyi Tang",
+        "Zican Dong",
+        "Yupeng Hou",
+        "Beichen Zhang",
+        "Yingqian Min",
+        "Junjie Zhang",
+        "Peiyu Liu",
+        "Xiaolei Wang",
+        "Yifan Du",
+        "Yushuo Chen",
+        "Yushuo Chen",
+        "Zhipeng Chen",
+        "Jinhao Jiang",
+        "Ruiyang Ren",
+        "Yifan Li",
+        "Xinyu Tang",
+        "Peiyu Liu",
+        "Yiwen Hu",
+        "Jian‐Yun Nie",
+        "Ji-Rong Wen"
+      ],
+      "year": 2026,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11704-026-60308-3",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4362515116",
+      "citation_count": 1558,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11704-026-60308-3.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+      "authors": [
+        "Yuhui Xu",
+        "Lingxi Xie",
+        "Xiaotao Gu",
+        "Xin Chen",
+        "Heng Chang",
+        "Hengheng Zhang",
+        "Chen, Zhengsu",
+        "Xiaopeng Zhang",
+        "Qi Chuan Tian"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2309.14717",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4387156572",
+      "citation_count": 21,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2309.14717",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Parameter-efficient fine-tuning of large-scale pre-trained language models",
+      "authors": [
+        "Ning Ding",
+        "Yujia Qin",
+        "Guang You Yang",
+        "Fuchao Wei",
+        "Zonghan Yang",
+        "Yusheng Su",
+        "Shengding Hu",
+        "Yulin Chen",
+        "Chi-Min Chan",
+        "Weize Chen",
+        "Jing Yi",
+        "Weilin Zhao",
+        "Xiaozhi Wang",
+        "Zhiyuan Liu",
+        "Hai-Tao Zheng",
+        "Jianfei Chen",
+        "Yang Liu",
+        "Jie Tang",
+        "Juanzi Li",
+        "Maosong Sun"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s42256-023-00626-4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4322766882",
+      "citation_count": 1030,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.nature.com/articles/s42256-023-00626-4.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Adapted large language models can outperform medical experts in clinical text summarization",
+      "authors": [
+        "Dave Van Veen",
+        "Cara Van Uden",
+        "Louis Blankemeier",
+        "Jean-Benoit Delbrouck",
+        "Asad Aali",
+        "Christian Bluethgen",
+        "Anuj Pareek",
+        "Malgorzata Polacin",
+        "Eduardo Pontes Reis",
+        "Anna Seehofnerová",
+        "Nidhi Rohatgi",
+        "Poonam Hosamani",
+        "William J. Collins",
+        "Neera K. Ahuja",
+        "Curtis P. Langlotz",
+        "Jason Hom",
+        "Sergios Gatidis",
+        "John M. Pauly",
+        "Akshay Sanjay Chaudhari"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41591-024-02855-5",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4392193048",
+      "citation_count": 762,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "DyLoRA: Parameter-Efficient Tuning of Pre-trained Models using Dynamic Search-Free Low-Rank Adaptation",
+      "authors": [
+        "Mojtaba Valipour",
+        "Mehdi Rezagholizadeh",
+        "Ivan Kobyzev",
+        "Ali Ghodsi"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2023.eacl-main.239",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4386566659",
+      "citation_count": 117,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2023.eacl-main.239.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Structured information extraction from scientific text with large language models",
+      "authors": [
+        "John M. Dagdelen",
+        "Alexander Dunn",
+        "Sang‐Hoon Lee",
+        "Nicholas A. Walker",
+        "Andrew Rosen",
+        "Gerbrand Ceder",
+        "Kristin Aslaug Persson",
+        "Anubhav Jain"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41467-024-45563-x",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4391836235",
+      "citation_count": 719,
+      "oa_status": "gold",
+      "pdf_url": "https://www.nature.com/articles/s41467-024-45563-x.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A survey on LoRA of large language models",
+      "authors": [
+        "Yuren Mao",
+        "Yuhang Ge",
+        "Yijiang Fan",
+        "Wenyi Xu",
+        "Yu Mi",
+        "Zhonghao Hu",
+        "Yunjun Gao"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11704-024-40663-9",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4403753254",
+      "citation_count": 120,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11704-024-40663-9.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+      "authors": [
+        "Deyao Zhu",
+        "Jun Chen",
+        "Xiaoqian Shen",
+        "Xiang Li",
+        "Mohamed Elhoseiny"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2304.10592",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4366850747",
+      "citation_count": 484,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2304.10592",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "LoRA-Adv: Boosting Text Classification in Large Language Models Through Adversarial Low-Rank Adaptations",
+      "authors": [
+        "Hong Ye",
+        "Xialin Xie",
+        "Fenlong Xie",
+        "Jun Zuo",
+        "Chunyan Bu"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/access.2025.3579539",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4411270486",
+      "citation_count": 9,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Leveraging large language models for predictive chemistry",
+      "authors": [
+        "Kevin Maik Jablonka",
+        "Philippe Schwaller",
+        "Andres Ortega‐Guerrero",
+        "Berend Smit"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s42256-023-00788-1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4391561379",
+      "citation_count": 351,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.nature.com/articles/s42256-023-00788-1.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Sparse Low-rank Adaptation of Pre-trained Language Models",
+      "authors": [
+        "Ning Ding",
+        "Xingtai Lv",
+        "Qiaosen Wang",
+        "Yulin Chen",
+        "Bowen Zhou",
+        "Zhiyuan Liu",
+        "Maosong Sun"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2023.emnlp-main.252",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389524340",
+      "citation_count": 54,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2023.emnlp-main.252.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Comprehensive Overview of Large Language Models",
+      "authors": [
+        "Humza Naveed",
+        "Asad Ullah Khan",
+        "Shi Qiu",
+        "Muhammad Saqib",
+        "Saeed Anwar",
+        "Muhammad Usman",
+        "Akhtar, Naveed",
+        "Nick M. Barnes",
+        "Ajmal Saeed Mian"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2307.06435",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4384389802",
+      "citation_count": 370,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2307.06435",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Differentially Private Low-Rank Adaptation of Large Language Model Using Federated Learning",
+      "authors": [
+        "Xiao-Yang Liu",
+        "Rongyi Zhu",
+        "Daochen Zha",
+        "Jiechao Gao",
+        "Shan Zhong",
+        "Matt White",
+        "Meikang Qiu"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3682068",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4401545746",
+      "citation_count": 63,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation",
+      "authors": [
+        "Keqin Bao",
+        "Jizhi Zhang",
+        "Yang Zhang",
+        "Wenjie Wang",
+        "Fuli Feng",
+        "Xiangnan He"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3604915.3608857",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4386728933",
+      "citation_count": 430,
+      "oa_status": "gold",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3604915.3608857",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Large Language Models in Finance: A Survey",
+      "authors": [
+        "Yinheng Li",
+        "Shaofei Wang",
+        "Han Ding",
+        "Hang Chen"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3604237.3626869",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4388994228",
+      "citation_count": 268,
+      "oa_status": "gold",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3604237.3626869",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "LaMDA: Language Models for Dialog Applications",
+      "authors": [
+        "Romal Thoppilan",
+        "Daniel De Freitas",
+        "Jamie Hall",
+        "Noam Shazeer",
+        "Apoorv Kulshreshtha",
+        "Heng-Tze Cheng",
+        "Alicia Jin",
+        "Taylor Bos",
+        "Leslie L. Baker",
+        "Yu Du",
+        "YaGuang Li",
+        "Hongrae Lee",
+        "Huaixiu Zheng",
+        "Amin Ghafouri",
+        "Marcelo Menegali",
+        "Yanping Huang",
+        "Maxim Krikun",
+        "Dmitry Lepikhin",
+        "James Qin",
+        "Dehao Chen",
+        "Yuanzhong Xu",
+        "Zhifeng Chen",
+        "Adam Roberts",
+        "Maarten Bosma",
+        "Vincent Zhao",
+        "Yanqi Zhou",
+        "Chung-Ching Chang",
+        "Igor Krivokon",
+        "Will Rusch",
+        "Marc Pickett",
+        "Pranesh Srinivasan",
+        "Laichee Man",
+        "Kathleen S. Meier-Hellstern",
+        "Meredith Ringel Morris",
+        "Tulsee S Doshi",
+        "Renelito Delos Santos",
+        "Toju Duke",
+        "Johnny Hartz Søraker",
+        "Ben Zevenbergen",
+        "Vinodkumar Prabhakaran",
+        "Mark Díaz",
+        "Ben Hutchinson",
+        "Kristen M. Olson",
+        "Alejandra Molina",
+        "Erin Hoffman-John",
+        "Josh Lee",
+        "Lora M. Aroyo",
+        "Ravi Rajakumar",
+        "Alena Butryna",
+        "Matthew S. Lamm",
+        "Viktoriya Kuzmina",
+        "Joe Fenton",
+        "Aaron J. Cohen",
+        "Rachel A. Bernstein",
+        "Ray Kurzweil",
+        "Blaise Aguera-Arcas",
+        "Claire Murong Cui",
+        "Marian Croak",
+        "Ed H.",
+        "Quoc Viet Le"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2201.08239",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4226399820",
+      "citation_count": 709,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2201.08239",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Large Language Models: A Survey",
+      "authors": [
+        "Shervin Minaee",
+        "Tomas Mikolov",
+        "Nikzad, Narjes",
+        "Meysam Chenaghlu",
+        "Richard Socher",
+        "Xavier Amatriain",
+        "Jianfeng Gao"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2402.06196",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4391766565",
+      "citation_count": 230,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2402.06196",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Orthogonal Subspace Learning for Language Model Continual Learning",
+      "authors": [
+        "Xinghuan Wang",
+        "Tianze Chen",
+        "Qiming Ge",
+        "Xia Han",
+        "Rong Bao",
+        "Rui Zheng",
+        "Qi Zhang",
+        "Tao Gui",
+        "Xuanjing Huang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2023.findings-emnlp.715",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389520299",
+      "citation_count": 69,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2023.findings-emnlp.715.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "LlamaFactory: Unified Efficient Fine-Tuning of 100+ Language Models",
+      "authors": [
+        "Yaowei Zheng",
+        "Richong Zhang",
+        "Junhao Zhang",
+        "YeYanhan YeYanhan",
+        "Zheyan Luo"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2024.acl-demos.38",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4402667093",
+      "citation_count": 384,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2024.acl-demos.38.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "ID-LoRA: Intrinsic Dimension-Based Pruning with Low-Rank Adaptation for Vision-Language Models",
+      "authors": [
+        "Jessica Liang",
+        "Jianbo Shi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.36227/techrxiv.176521385.54906010/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Energy-Efficient Training of Large Language Models Through Sparse Attention and Low-Rank Adaptation (LoRA-S)",
+      "authors": [
+        "Anjani Kumar Tiwari",
+        "Pawar Harish"
+      ],
+      "year": 2026,
+      "venue": "International Research Journal of Scientific Reports and Reviews",
+      "abstract": null,
+      "doi": "10.66542/irjsrr.v2.i1.000022",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "C-LoRA: Contextual Low-Rank Adaptation for Uncertainty Estimation in Large Language Models",
+      "authors": [
+        "Amir Hossein Rahmati",
+        "Sanket Jantre",
+        "Weifeng Zhang",
+        "Yucheng Wang",
+        "Byung-Jun Yoon",
+        "Nathan Urban",
+        "Xiaoning Qian"
+      ],
+      "year": 2025,
+      "venue": "Advances in Neural Information Processing Systems 38",
+      "abstract": null,
+      "doi": "10.52202/085713-2263",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Why LoRA Fails to Forget: Regularized Low-Rank Adaptation Against Backdoors in Language Models",
+      "authors": [
+        "Hoang-Chau Luong",
+        "Lingwei Chen"
+      ],
+      "year": 2026,
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "abstract": null,
+      "doi": "10.18653/v1/2026.findings-acl.1732",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Recover-LoRA: Data-Free Accuracy Recovery of Degraded Language Models via Low-Rank Adaptation",
+      "authors": [
+        "Devleena Das",
+        "Rajeev Patwari",
+        "Ashish Sirasao"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track",
+      "abstract": null,
+      "doi": "10.18653/v1/2025.emnlp-industry.164",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Modify Mistral Large Performance with Low-Rank Adaptation (LoRA) on the BIG-Bench Dataset",
+      "authors": [
+        "Haruka Fujiwara",
+        "Renta Kimura",
+        "Tokuniki Nakano"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-4440421/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "LoRA-CLIP: Efficient Low-Rank Adaptation of Large CLIP Foundation Model for Scene Classification",
+      "authors": [
+        "Mohamad Mahmoud Al Rahhal",
+        "Yakoub Bazi",
+        "Mansour Zuair"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.36227/techrxiv.173933020.03770078/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Rank-Gated and Sparse Low-Rank Adaptation for Efficient Fine-Tuning of Vision--Language Models",
+      "authors": [
+        "Qinwu Xu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-11056529/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "LoRA-N-Gly: Sequence-based Prediction of N-Linked Glycosylation Sites by Tuning Protein Language Models with Low-rank Adaptation",
+      "authors": [
+        "Zhiyong Feng",
+        "Xing Zhang",
+        "He Wang",
+        "Xu Hong",
+        "hongxun Yao",
+        "Jian Zhan",
+        "Yaoqi Zhou"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.7130100",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "NLoRA: Nyström-Initiated Low-Rank Adaptation for Large Language Models",
+      "authors": [
+        "Chenlu Guo",
+        "Yi Chang",
+        "Yuan Wu"
+      ],
+      "year": 2025,
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+      "abstract": null,
+      "doi": "10.18653/v1/2025.findings-emnlp.72",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Low-Rank Adaptation for Parameter-Efficient Fine-Tuning of Large Language Models",
+      "authors": [
+        "Shicheng Wei"
+      ],
+      "year": 2026,
+      "venue": "Theoretical and Natural Science",
+      "abstract": null,
+      "doi": "10.54254/2753-8818/2026.36279",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Low-rank adaptation with gating mechanisms in large language models, an improved method for fine-tuning: G-LoRA",
+      "authors": [
+        "Zijing Liang",
+        "Zirui Fang",
+        "Yanjie Xu",
+        "Lin Liu",
+        "Yifan Hong",
+        "Ke Liu",
+        "Penghui Shang"
+      ],
+      "year": 2024,
+      "venue": "Ninth International Symposium on Advances in Electrical, Electronics, and Computer Engineering (ISAEECE 2024)",
+      "abstract": null,
+      "doi": "10.1117/12.3033402",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A Comparative Analysis of the Role of Large Language Models and Low-Rank Adaptation in Automated Program Repair",
+      "authors": [
+        "Celia Patricio",
+        "Pablo Zubasti",
+        "Antonio Berlanga",
+        "Miguel Ángel Patricio"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.5896253",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Dynamic Low-Rank Adaptation Based Pruning Algorithm for Large Language Models",
+      "authors": [
+        "Linfeng Li",
+        "Lei Guo"
+      ],
+      "year": 2024,
+      "venue": "2024 7th International Conference on Pattern Recognition and Artificial Intelligence (PRAI)",
+      "abstract": null,
+      "doi": "10.1109/prai62207.2024.10826600",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Supervised Fine-Tuning Large Language Model with Low-Rank Adaptation and Quantized Low-Rank Adaptation for Student Mental Health Support",
+      "authors": [
+        "Thimmapuram Anuradha",
+        "M. Vijay Kumar"
+      ],
+      "year": 2025,
+      "venue": "Algorithms in Advanced Artificial Intelligence",
+      "abstract": null,
+      "doi": "10.1201/9781003641537-65",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Small Language Models and Neuro-Symbolic AI in Zonal Architectures: Federated Low-Rank Adaptation (Fed-LoRA) for Regional Behavior Modeling",
+      "authors": [
+        "Naresh Kalimuthu"
+      ],
+      "year": 2026,
+      "venue": "International Journal of Artificial Intelligence, Data Science and Machine Learning",
+      "abstract": null,
+      "doi": "10.63282/3050-9262.ijaidsml-v7i1p138",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models",
+      "authors": [
+        "Zhuxuanzi Wang",
+        "Mingqiao Mo",
+        "Xi Xiao",
+        "Chen Liu",
+        "Chenrui Ma",
+        "Yunbei Zhang",
+        "Xiao Wang",
+        "Smita Krishnaswamy",
+        "Tianyang Wang"
+      ],
+      "year": 2026,
+      "venue": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "abstract": null,
+      "doi": "10.1109/icassp55912.2026.11463994",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "BLoB: Bayesian Low-Rank Adaptation by Backpropagation for Large Language Models",
+      "authors": [
+        "Yibin Wang",
+        "Haizhou Shi",
+        "Ligong Han",
+        "Dimitris Metaxas",
+        "Hao Wang"
+      ],
+      "year": 2024,
+      "venue": "Advances in Neural Information Processing Systems 37",
+      "abstract": null,
+      "doi": "10.52202/079017-2164",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 12,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "ESM-LoRA-Gly: Improved prediction of N- and O-linked glycosylation sites by tuning protein language models with low-rank adaptation (LoRA)",
+      "authors": [
+        "Zhiyong Feng",
+        "Xing Zhang",
+        "He Wang",
+        "Xu Hong",
+        "Jian Zhan",
+        "Yaoqi Zhou"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1101/2025.08.12.669850",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A Parameter-Efficient Hybrid Framework for Vertical Domain Adaptation of Large Language Models: Integrating Dynamic Knowledge Retrieval and Low-Rank Adaptation",
+      "authors": [
+        "Junqiao Chen"
+      ],
+      "year": 2026,
+      "venue": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+      "abstract": null,
+      "doi": "10.1109/caibda70336.2026.11621114",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "LoRASculpt: Harmonious Low-Rank Adaptation for Multimodal Large Language Models.",
+      "authors": [
+        "Liang J",
+        "Huang W",
+        "Guo X",
+        "Wan G",
+        "Du B",
+        "Ye M"
+      ],
+      "year": 2026,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2026.3707616",
+      "arxiv_id": null,
+      "pmid": "42348385",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Low-Rank Adaptation of Pre-Trained Large Vision Models for Improved Lung Nodule Malignancy Classification.",
+      "authors": [
+        "Veasey BP",
+        "Amini AA"
+      ],
+      "year": 2025,
+      "venue": "IEEE open journal of engineering in medicine and biology",
+      "abstract": null,
+      "doi": "10.1109/OJEMB.2025.3530841",
+      "arxiv_id": null,
+      "pmid": "40034837",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Parameter-Efficient Adaptation of Large Vision-Language Models for Video Memorability Prediction.",
+      "authors": [
+        "Martín-Fernández I",
+        "Esteban-Romero S",
+        "Fernández-Martínez F",
+        "Gil-Martín M"
+      ],
+      "year": 2025,
+      "venue": "Sensors (Basel, Switzerland)",
+      "abstract": null,
+      "doi": "10.3390/s25061661",
+      "arxiv_id": null,
+      "pmid": "40292713",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "BioInstruct: instruction tuning of large language models for biomedical natural language processing.",
+      "authors": [
+        "Tran H",
+        "Yang Z",
+        "Yao Z",
+        "Yu H"
+      ],
+      "year": 2024,
+      "venue": "Journal of the American Medical Informatics Association : JAMIA",
+      "abstract": null,
+      "doi": "10.1093/jamia/ocae122",
+      "arxiv_id": null,
+      "pmid": "38833265",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "scDrugMap: Benchmarking Large Foundation Models for Drug Response Prediction.",
+      "authors": [
+        "Wang Q",
+        "Pan Y",
+        "Zhou M",
+        "Tang Z",
+        "Wang Y",
+        "Wang G",
+        "Song Q"
+      ],
+      "year": 2025,
+      "venue": "ArXiv",
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": "40386575",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "RaLo: Rank-aware low-rank adaptation for pre-trained foundation models.",
+      "authors": [
+        "Deng Y",
+        "Zhou G",
+        "Zhao Q"
+      ],
+      "year": 2026,
+      "venue": "Neural networks : the official journal of the International Neural Network Society",
+      "abstract": null,
+      "doi": "10.1016/j.neunet.2025.108423",
+      "arxiv_id": null,
+      "pmid": "41380276",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "An Empirical Evaluation of Low-Rank Adapted Vision-Language Models for Radiology Image Captioning.",
+      "authors": [
+        "Hoque M",
+        "Chowdhury RN",
+        "Hasan MR",
+        "Peter OOE",
+        "Khalifa F",
+        "Rahman MM"
+      ],
+      "year": 2025,
+      "venue": "Bioengineering (Basel, Switzerland)",
+      "abstract": null,
+      "doi": "10.3390/bioengineering12121330",
+      "arxiv_id": null,
+      "pmid": "41463627",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Fine-tuning large language models for improved health communication in low-resource languages.",
+      "authors": [
+        "Bui N",
+        "Nguyen G",
+        "Nguyen N",
+        "Vo B",
+        "Vo L",
+        "Huynh T",
+        "Tang A",
+        "Tran VN",
+        "Huynh T",
+        "Nguyen HQ",
+        "Dinh M"
+      ],
+      "year": 2025,
+      "venue": "Computer methods and programs in biomedicine",
+      "abstract": null,
+      "doi": "10.1016/j.cmpb.2025.108655",
+      "arxiv_id": null,
+      "pmid": "39987667",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Contextual Phenotyping of Pediatric Sepsis Cohort Using Large Language Models.",
+      "authors": [
+        "Nagori A",
+        "Gautam A",
+        "Wiens MO",
+        "Nguyen V",
+        "Mugisha NK",
+        "Kabakyenga J",
+        "Kissoon N",
+        "Ansermino JM",
+        "Kamaleswaran R"
+      ],
+      "year": 2024,
+      "venue": "AMIA ... Annual Symposium proceedings. AMIA Symposium",
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": "41726472",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "NanoAbLLaMA: construction of nanobody libraries with protein large language models.",
+      "authors": [
+        "Wang X",
+        "Chen H",
+        "Chen B",
+        "Liang L",
+        "Mei F",
+        "Huang B"
+      ],
+      "year": 2025,
+      "venue": "Frontiers in chemistry",
+      "abstract": null,
+      "doi": "10.3389/fchem.2025.1545136",
+      "arxiv_id": null,
+      "pmid": "40070407",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "La-LoRA: Parameter-efficient fine-tuning with layer-wise adaptive low-rank adaptation.",
+      "authors": [
+        "Gu J",
+        "Yuan J",
+        "Cai J",
+        "Zhou X",
+        "Fan L"
+      ],
+      "year": 2026,
+      "venue": "Neural networks : the official journal of the International Neural Network Society",
+      "abstract": null,
+      "doi": "10.1016/j.neunet.2025.108095",
+      "arxiv_id": null,
+      "pmid": "40953549",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Enhancing privacy-preserving deployable large language models for perioperative complication detection: a targeted strategy with LoRA fine-tuning.",
+      "authors": [
+        "Gao S",
+        "Zhao X",
+        "Chen L",
+        "Yu J",
+        "Tian S",
+        "Zhou H",
+        "Chen J",
+        "Long S",
+        "He Q",
+        "Feng X"
+      ],
+      "year": 2025,
+      "venue": "NPJ digital medicine",
+      "abstract": null,
+      "doi": "10.1038/s41746-025-02139-3",
+      "arxiv_id": null,
+      "pmid": "41390570",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "DeCAF: Decentralized consensus-and-factorization for low-rank adaptation of foundation models.",
+      "authors": [
+        "Saadati N",
+        "Jiang Z",
+        "Waite JR",
+        "Ganguly S",
+        "Balu A",
+        "Hegde C",
+        "Sarkar S"
+      ],
+      "year": 2026,
+      "venue": "Neural networks : the official journal of the International Neural Network Society",
+      "abstract": null,
+      "doi": "10.1016/j.neunet.2026.108992",
+      "arxiv_id": null,
+      "pmid": "42090865",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Application of large language models in clinical record correction: a comprehensive study on various retraining methods.",
+      "authors": [
+        "Maitin AM",
+        "Nogales A",
+        "Fernández-Rincón S",
+        "Aranguren E",
+        "Cervera-Barba E",
+        "Denizon-Arranz S",
+        "Mateos-Rodríguez A",
+        "García-Tejedor ÁJ"
+      ],
+      "year": 2025,
+      "venue": "Journal of the American Medical Informatics Association : JAMIA",
+      "abstract": null,
+      "doi": "10.1093/jamia/ocae302",
+      "arxiv_id": null,
+      "pmid": "39707579",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Parameter-efficient fine-tuning on large protein language models improves signal peptide prediction.",
+      "authors": [
+        "Zeng S",
+        "Wang D",
+        "Jiang L",
+        "Xu D"
+      ],
+      "year": 2024,
+      "venue": "Genome research",
+      "abstract": null,
+      "doi": "10.1101/gr.279132.124",
+      "arxiv_id": null,
+      "pmid": "39060029",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Inter-patient multi-label ECG classification via low-rank adaptation fine-tuned large language models with dynamic graph convolutional network.",
+      "authors": [
+        "Cheng Y",
+        "Wang L"
+      ],
+      "year": 2026,
+      "venue": "Physiological measurement",
+      "abstract": null,
+      "doi": "10.1088/1361-6579/ae85b6",
+      "arxiv_id": null,
+      "pmid": "42392149",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Advancing Evidence-Based Medicine for Population, Intervention, Comparison, and Outcome Element Recognition and Extraction in Medical Literature: Large Language Model Approach.",
+      "authors": [
+        "Hao Z",
+        "Duan Y",
+        "Wang Y"
+      ],
+      "year": 2026,
+      "venue": "Journal of medical Internet research",
+      "abstract": null,
+      "doi": "10.2196/91215",
+      "arxiv_id": null,
+      "pmid": "42600130",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "SPIRA: Sparse Information-Geometric Rank Adaptation for Parameter-Efficient Fine-Tuning of Large Pretrained Models.",
+      "authors": [
+        "Wen Z",
+        "Zhai Z",
+        "Sun G",
+        "Wang Y",
+        "Li Q",
+        "Shao H",
+        "Wang S"
+      ],
+      "year": 2026,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2026.3724606",
+      "arxiv_id": null,
+      "pmid": "42640767",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Triangular Adaptive Low-Rank Adaptation for Parameter-Efficient Fine-Tuning.",
+      "authors": [
+        "Liang Y",
+        "Wang Y",
+        "Zeng Y"
+      ],
+      "year": 2026,
+      "venue": "IEEE transactions on neural networks and learning systems",
+      "abstract": null,
+      "doi": "10.1109/TNNLS.2026.3703540",
+      "arxiv_id": null,
+      "pmid": "42329929",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Assertion Detection in Clinical Natural Language Processing using Large Language Models.",
+      "authors": [
+        "Ji Y",
+        "Yu Z",
+        "Wang Y"
+      ],
+      "year": 2024,
+      "venue": "Proceedings. IEEE International Conference on Healthcare Informatics",
+      "abstract": null,
+      "doi": "10.1109/ichi61247.2024.00039",
+      "arxiv_id": null,
+      "pmid": "40092287",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 1157,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2443,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 445,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1591,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

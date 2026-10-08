@@ -1,0 +1,327 @@
+{
+  "complete": true,
+  "unique_records": 1800,
+  "errors": 18,
+  "qasper_heldout_paired_to_current_control": {
+    "baseline": {
+      "answer_f1": {
+        "difference": -0.04067079153703714,
+        "bootstrap95_interval": [
+          -0.10590040443308145,
+          0.024544320599912507
+        ],
+        "independent_question_clusters": 100
+      },
+      "evidence_f1": {
+        "difference": -0.05398503028383546,
+        "bootstrap95_interval": [
+          -0.08154518167679954,
+          -0.028184224423237546
+        ],
+        "independent_question_clusters": 100
+      }
+    },
+    "research_aware": {
+      "answer_f1": {
+        "difference": -0.006599228421938944,
+        "bootstrap95_interval": [
+          -0.06653930909549563,
+          0.05404335699813649
+        ],
+        "independent_question_clusters": 100
+      },
+      "evidence_f1": {
+        "difference": 0.007466163596753616,
+        "bootstrap95_interval": [
+          -0.015564585191128789,
+          0.031376403318722226
+        ],
+        "independent_question_clusters": 100
+      }
+    }
+  },
+  "bootstrap_method": "10000 paired resamples over100 distinct held-out QASPER papers; seed repetitions averaged first; no multiple-comparison adjustment",
+  "supplement_confidence_limit": "Four held-out PDF documents with cross-paper questions are not60 independent source clusters; no narrow question-bootstrap interval claimed.",
+  "per_category": {
+    "current_chat": {
+      "abstractive": {
+        "attempts": 75,
+        "errors": 0,
+        "answer_f1": 0.19690692594865047,
+        "evidence_f1": 0.19603587523587523
+      },
+      "application": {
+        "attempts": 12,
+        "errors": 0,
+        "answer_f1": 0.125,
+        "evidence_f1": 0.05555555555555555
+      },
+      "boolean": {
+        "attempts": 45,
+        "errors": 0,
+        "answer_f1": 0.7333333333333333,
+        "evidence_f1": 0.08076601760812287
+      },
+      "cross_paper": {
+        "attempts": 12,
+        "errors": 0,
+        "answer_f1": 0.0625,
+        "evidence_f1": 0.0
+      },
+      "definition": {
+        "attempts": 18,
+        "errors": 1,
+        "answer_f1": 0.32564102564102565,
+        "evidence_f1": 0.1433862433862434
+      },
+      "extractive": {
+        "attempts": 120,
+        "errors": 7,
+        "answer_f1": 0.42875615603460265,
+        "evidence_f1": 0.15325864212277257
+      },
+      "figure": {
+        "attempts": 6,
+        "errors": 0,
+        "answer_f1": 0.8333333333333333,
+        "evidence_f1": 0.058823529411764705
+      },
+      "method": {
+        "attempts": 57,
+        "errors": 1,
+        "answer_f1": 0.15108984582668794,
+        "evidence_f1": 0.06619379645695435
+      },
+      "none": {
+        "attempts": 60,
+        "errors": 0,
+        "answer_f1": 0.2151462480142043,
+        "evidence_f1": 0.04768675768675769
+      },
+      "numeric": {
+        "attempts": 30,
+        "errors": 0,
+        "answer_f1": 0.29555555555555557,
+        "evidence_f1": 0.06383838383838385
+      },
+      "table": {
+        "attempts": 9,
+        "errors": 0,
+        "answer_f1": 0.0,
+        "evidence_f1": 0.2253968253968254
+      },
+      "unanswerable": {
+        "attempts": 36,
+        "errors": 0,
+        "answer_f1": 0.5555555555555556,
+        "evidence_f1": 0.0
+      }
+    },
+    "baseline": {
+      "abstractive": {
+        "attempts": 75,
+        "errors": 1,
+        "answer_f1": 0.1780323353230047,
+        "evidence_f1": 0.09499409788443426
+      },
+      "application": {
+        "attempts": 12,
+        "errors": 0,
+        "answer_f1": 0.4583333333333333,
+        "evidence_f1": 0.023809523809523808
+      },
+      "boolean": {
+        "attempts": 45,
+        "errors": 0,
+        "answer_f1": 0.6888888888888889,
+        "evidence_f1": 0.04866186784791436
+      },
+      "cross_paper": {
+        "attempts": 12,
+        "errors": 0,
+        "answer_f1": 0.17915417915417917,
+        "evidence_f1": 0.06458333333333334
+      },
+      "definition": {
+        "attempts": 18,
+        "errors": 0,
+        "answer_f1": 0.6357487922705314,
+        "evidence_f1": 0.09603174603174604
+      },
+      "extractive": {
+        "attempts": 120,
+        "errors": 2,
+        "answer_f1": 0.3137566126478329,
+        "evidence_f1": 0.08740243417621876
+      },
+      "figure": {
+        "attempts": 6,
+        "errors": 0,
+        "answer_f1": 0.8333333333333333,
+        "evidence_f1": 0.0625
+      },
+      "method": {
+        "attempts": 57,
+        "errors": 0,
+        "answer_f1": 0.21893276949125398,
+        "evidence_f1": 0.09630184714852907
+      },
+      "none": {
+        "attempts": 60,
+        "errors": 0,
+        "answer_f1": 0.2987179487179487,
+        "evidence_f1": 0.059854356170145645
+      },
+      "numeric": {
+        "attempts": 30,
+        "errors": 0,
+        "answer_f1": 0.4066666666666667,
+        "evidence_f1": 0.07505128205128204
+      },
+      "table": {
+        "attempts": 9,
+        "errors": 0,
+        "answer_f1": 0.0,
+        "evidence_f1": 0.0
+      },
+      "unanswerable": {
+        "attempts": 36,
+        "errors": 0,
+        "answer_f1": 0.5,
+        "evidence_f1": 0.0
+      }
+    },
+    "research_aware": {
+      "abstractive": {
+        "attempts": 75,
+        "errors": 0,
+        "answer_f1": 0.15242392843833932,
+        "evidence_f1": 0.17612415744169682
+      },
+      "application": {
+        "attempts": 12,
+        "errors": 0,
+        "answer_f1": 0.45238095238095244,
+        "evidence_f1": 0.0
+      },
+      "boolean": {
+        "attempts": 45,
+        "errors": 0,
+        "answer_f1": 0.7333333333333333,
+        "evidence_f1": 0.1401961961961962
+      },
+      "cross_paper": {
+        "attempts": 12,
+        "errors": 0,
+        "answer_f1": 0.14235764235764237,
+        "evidence_f1": 0.029411764705882353
+      },
+      "definition": {
+        "attempts": 18,
+        "errors": 0,
+        "answer_f1": 0.5333333333333333,
+        "evidence_f1": 0.05
+      },
+      "extractive": {
+        "attempts": 120,
+        "errors": 3,
+        "answer_f1": 0.4201330824308019,
+        "evidence_f1": 0.15748218229554992
+      },
+      "figure": {
+        "attempts": 6,
+        "errors": 0,
+        "answer_f1": 0.8333333333333333,
+        "evidence_f1": 0.07142857142857144
+      },
+      "method": {
+        "attempts": 57,
+        "errors": 0,
+        "answer_f1": 0.21777423356370723,
+        "evidence_f1": 0.09386760816364574
+      },
+      "none": {
+        "attempts": 60,
+        "errors": 0,
+        "answer_f1": 0.255,
+        "evidence_f1": 0.05688750862663906
+      },
+      "numeric": {
+        "attempts": 30,
+        "errors": 0,
+        "answer_f1": 0.38333333333333336,
+        "evidence_f1": 0.09510683760683761
+      },
+      "table": {
+        "attempts": 9,
+        "errors": 0,
+        "answer_f1": 0.0,
+        "evidence_f1": 0.20952380952380953
+      },
+      "unanswerable": {
+        "attempts": 36,
+        "errors": 0,
+        "answer_f1": 0.8055555555555556,
+        "evidence_f1": 0.0
+      }
+    }
+  },
+  "seed_repetition": {
+    "current_chat": {
+      "identical_across_three_seeds": 182,
+      "questions": 200,
+      "temperature": 0,
+      "note": "Seeds do not guarantee independent stochastic answers at temperature0."
+    },
+    "baseline": {
+      "identical_across_three_seeds": 180,
+      "questions": 200,
+      "temperature": 0,
+      "note": "Seeds do not guarantee independent stochastic answers at temperature0."
+    },
+    "research_aware": {
+      "identical_across_three_seeds": 179,
+      "questions": 200,
+      "temperature": 0,
+      "note": "Seeds do not guarantee independent stochastic answers at temperature0."
+    }
+  },
+  "provider_model_loading": {
+    "current_chat": {
+      "answer_load_seconds_total": 156.8239273,
+      "review_load_seconds_total": 384.3094228,
+      "note": "Provider load times are included in request wall times; not a controlled cold-model experiment."
+    },
+    "baseline": {
+      "answer_load_seconds_total": 158.0486223,
+      "review_load_seconds_total": 922.5562923,
+      "note": "Provider load times are included in request wall times; not a controlled cold-model experiment."
+    },
+    "research_aware": {
+      "answer_load_seconds_total": 147.18074000000001,
+      "review_load_seconds_total": 362.5005099,
+      "note": "Provider load times are included in request wall times; not a controlled cold-model experiment."
+    }
+  },
+  "numeric_checks_including_errors": {
+    "current_chat": {
+      "attempts": 45,
+      "passed": 17,
+      "failure_inclusive_pass_rate": 0.37777777777777777,
+      "scope": "Supplementary registered numerical checks; missing/error outcomes count as failures."
+    },
+    "baseline": {
+      "attempts": 45,
+      "passed": 21,
+      "failure_inclusive_pass_rate": 0.4666666666666667,
+      "scope": "Supplementary registered numerical checks; missing/error outcomes count as failures."
+    },
+    "research_aware": {
+      "attempts": 45,
+      "passed": 20,
+      "failure_inclusive_pass_rate": 0.4444444444444444,
+      "scope": "Supplementary registered numerical checks; missing/error outcomes count as failures."
+    }
+  },
+  "safety_target95_percent": "Cannot certify until accepted-answer human_adjudication_queue is completed."
+}

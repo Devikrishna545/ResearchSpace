@@ -1,0 +1,928 @@
+{
+  "corpus_sha256": "8880d0930286caea5e32b8db3386e0388cefb722a44aefd41ccb422c46ec40b0",
+  "corpus_file_sha256": "085a8a4bcd12d7e00080b5f071beb169a932566494312a7ed57ca350557d905d",
+  "documents": [
+    {
+      "doc_id": "word2vec-fullpdf",
+      "title": "Efficient Estimation of Word Representations in Vector Space",
+      "landing_url": "https://arxiv.org/abs/1301.3781v3",
+      "pdf_url": "https://arxiv.org/pdf/1301.3781v3",
+      "requested_url": "https://arxiv.org/pdf/1301.3781v3",
+      "final_url": "https://arxiv.org/pdf/1301.3781v3",
+      "sha256": "a44d7e22d2005752271c9cc1929c6462d4c8270916b063977992a883e3a54362",
+      "bytes": 228716,
+      "pages": 12,
+      "total_pdf_pages": 12,
+      "processed_pages": 12,
+      "empty_or_skipped_pages": [],
+      "first_page_identity_verified": true,
+      "page_audit": [
+        {
+          "page": 1,
+          "raw_text_characters": 2827,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "f6c452ee0aafe933d33128550a14070a44c16c4b2c01aa835de3dda6ae41e2f0"
+        },
+        {
+          "page": 2,
+          "raw_text_characters": 3989,
+          "blocks": 10,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "8b216ff514b80a4000e1ed39608a00eb7af44d6d51f23ec7e9a376adc419677d"
+        },
+        {
+          "page": 3,
+          "raw_text_characters": 3995,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "7e717914ec5c4651e9b8d90daf0aac66dd01bea11d679825ca6f36fe02a84db5"
+        },
+        {
+          "page": 4,
+          "raw_text_characters": 3980,
+          "blocks": 10,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "3303c3df4e262d1ac5dc4fc00c3fc8652f7d8d1715a8c9ab7e85f0f7068b46e2"
+        },
+        {
+          "page": 5,
+          "raw_text_characters": 2685,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "892c6d4feabd54b00379af21188f55efe9a7190a905704d13a5fac26198d73d4"
+        },
+        {
+          "page": 6,
+          "raw_text_characters": 3496,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 1,
+          "figure_units": 0,
+          "text_sha256": "3a6027f0b99320ca7567238d72328de70027cc1911a3ef8fab3d29cb47cdbf10"
+        },
+        {
+          "page": 7,
+          "raw_text_characters": 3175,
+          "blocks": 10,
+          "images": 0,
+          "table_units": 2,
+          "figure_units": 0,
+          "text_sha256": "d6a7835b5a47b2408f9bdd03ab698987f482fd6c44d81c3b5fdbf42e37ac4d34"
+        },
+        {
+          "page": 8,
+          "raw_text_characters": 2197,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 2,
+          "figure_units": 0,
+          "text_sha256": "58a55e910bb84051d6fdd5bf0e9cdf4a077a74823a0b13cac1c312383b8a3515"
+        },
+        {
+          "page": 9,
+          "raw_text_characters": 2988,
+          "blocks": 10,
+          "images": 0,
+          "table_units": 3,
+          "figure_units": 0,
+          "text_sha256": "42956aea94b2c833098c7edc8b4d21bf747e7c8d1d65b02c5b01e86e2049ab3a"
+        },
+        {
+          "page": 10,
+          "raw_text_characters": 3829,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 1,
+          "figure_units": 0,
+          "text_sha256": "10353b15fcf93883bfdbc1dc98f4468cbcfcaf138577ed51e0a2c505b8950c96"
+        },
+        {
+          "page": 11,
+          "raw_text_characters": 3556,
+          "blocks": 15,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "f2cf718bad8bf602d21124af7c0f7408212c3485954030bb0857148ddfb72fe6"
+        },
+        {
+          "page": 12,
+          "raw_text_characters": 2095,
+          "blocks": 10,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "f0a2c427d9f39310a0f34fb7b657fc718733af5db541210d1adf16e0a54263a5"
+        }
+      ],
+      "scope": "Every PDF page parsed; digital text and detected tables/captions retained. Figure pixels/equations are not guaranteed lossless; no vision model used.",
+      "ambiguous_table_pages": [
+        "ambiguous_table_rows_page_7",
+        "ambiguous_table_rows_page_8",
+        "ambiguous_table_rows_page_8",
+        "ambiguous_table_rows_page_9"
+      ],
+      "known_section_count": 17
+    },
+    {
+      "doc_id": "guppy-fullpdf",
+      "title": "GUPPY: Pythonic Quantum-Classical Programming",
+      "landing_url": "https://arxiv.org/abs/2510.12582v1",
+      "pdf_url": "https://arxiv.org/pdf/2510.12582v1",
+      "requested_url": "https://arxiv.org/pdf/2510.12582v1",
+      "final_url": "https://arxiv.org/pdf/2510.12582v1",
+      "sha256": "5df59d04a9cb8b164fc84bf38160d7c367bc1077a1821b6727f9771acbd09b4e",
+      "bytes": 453334,
+      "pages": 7,
+      "total_pdf_pages": 7,
+      "processed_pages": 7,
+      "empty_or_skipped_pages": [],
+      "first_page_identity_verified": true,
+      "page_audit": [
+        {
+          "page": 1,
+          "raw_text_characters": 2347,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "2f5c60422d7cb13a13403dba2735b0d19c0e7ad25919c49ca305bf5385760785"
+        },
+        {
+          "page": 2,
+          "raw_text_characters": 3570,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "27b10add195120f0cf317c6fa80eb64052fd3944221b6b8fb53620d1015f7022"
+        },
+        {
+          "page": 3,
+          "raw_text_characters": 3044,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "6cbdf25fae85a6bed910037ed5a0d6708d7d12c55b90309e41944beec7f77a69"
+        },
+        {
+          "page": 4,
+          "raw_text_characters": 2666,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "8f2af9b68d5c9197a17fd46550172c4c2d39f46ac34a4bd6382182c64ea5f16e"
+        },
+        {
+          "page": 5,
+          "raw_text_characters": 3984,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "8c437a473f82967b56d30fd00642227c0575cbffde6d82533503d383138e5c87"
+        },
+        {
+          "page": 6,
+          "raw_text_characters": 5519,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "c2511d313f33a252ece959cd27b2446d27e05250f6923745b7769bbc4870ca87"
+        },
+        {
+          "page": 7,
+          "raw_text_characters": 1384,
+          "blocks": 5,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "5de7719c81bcab8d2a4f5b945ece08ab40c87df895b8505f552e8cbc89549392"
+        }
+      ],
+      "scope": "Every PDF page parsed; digital text and detected tables/captions retained. Figure pixels/equations are not guaranteed lossless; no vision model used.",
+      "ambiguous_table_pages": [
+        "ambiguous_table_rows_page_4",
+        "ambiguous_table_rows_page_4"
+      ],
+      "known_section_count": 5
+    },
+    {
+      "doc_id": "glove-fullpdf",
+      "title": "Glove: Global Vectors for Word Representation",
+      "landing_url": "https://aclanthology.org/D14-1162/",
+      "pdf_url": "https://aclanthology.org/D14-1162.pdf",
+      "requested_url": "https://aclanthology.org/D14-1162.pdf",
+      "final_url": "https://aclanthology.org/D14-1162.pdf",
+      "sha256": "6631a1719122a89b3941d851a55ecf38c55971c36b30ae9c0cec617124056adf",
+      "bytes": 2661778,
+      "pages": 12,
+      "total_pdf_pages": 12,
+      "processed_pages": 12,
+      "empty_or_skipped_pages": [],
+      "first_page_identity_verified": true,
+      "page_audit": [
+        {
+          "page": 1,
+          "raw_text_characters": 4092,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "e6e9aed8ae5ec7f25e76de768829c97bf63be5e55ce22bf7802029411af15bb8"
+        },
+        {
+          "page": 2,
+          "raw_text_characters": 4772,
+          "blocks": 11,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "f9a65c6d3e74c67ffba1d0f50348dfb745b748acf503c0089018e6ce58e8bcb4"
+        },
+        {
+          "page": 3,
+          "raw_text_characters": 4007,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 1,
+          "figure_units": 0,
+          "text_sha256": "64939aa4d370b06a487de593ac4fc02db6299e6ecbd0d5ca81f39630971f1052"
+        },
+        {
+          "page": 4,
+          "raw_text_characters": 3804,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "658d0a441ca81146b3cb1748d2d0a8e1fc243395e6a544b42321c1f9d1b6aea1"
+        },
+        {
+          "page": 5,
+          "raw_text_characters": 4010,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "09fa40895f57e3b11a78544dca61aba275bb39c0ec804199b607eda975489ad6"
+        },
+        {
+          "page": 6,
+          "raw_text_characters": 3682,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 1,
+          "figure_units": 0,
+          "text_sha256": "d9bf07f38ce2eced4d18947a6c7b342c3af9f52df50c44c6b11711cd2e5da204"
+        },
+        {
+          "page": 7,
+          "raw_text_characters": 4435,
+          "blocks": 16,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "1c5519ec1a236de3846709bb70d910a2c4a705f9055026a0506dd98ed3ae97cd"
+        },
+        {
+          "page": 8,
+          "raw_text_characters": 4800,
+          "blocks": 13,
+          "images": 0,
+          "table_units": 3,
+          "figure_units": 0,
+          "text_sha256": "179560270cf0ca9395628242d6d95d650d8392fa7b531153a54e81bddb5226b3"
+        },
+        {
+          "page": 9,
+          "raw_text_characters": 4067,
+          "blocks": 11,
+          "images": 0,
+          "table_units": 1,
+          "figure_units": 2,
+          "text_sha256": "f3042940fc3c149b69bb15e6963d710d3320e633df7c4f952b8955575ac7af64"
+        },
+        {
+          "page": 10,
+          "raw_text_characters": 3927,
+          "blocks": 13,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "be41c087708f57951c8b3c31a279616125c064dfd2906daabe3479117984a44f"
+        },
+        {
+          "page": 11,
+          "raw_text_characters": 3897,
+          "blocks": 19,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "ec5feb4015ddfe0ad8e8993f7953009d15f443ac72c028e779c7c9b0e0500ac0"
+        },
+        {
+          "page": 12,
+          "raw_text_characters": 805,
+          "blocks": 5,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "aa7f0a6198d53779ec89edb2ec7c88a8eab0cc86b020e60dd6f2a3f890f2ed77"
+        }
+      ],
+      "scope": "Every PDF page parsed; digital text and detected tables/captions retained. Figure pixels/equations are not guaranteed lossless; no vision model used.",
+      "ambiguous_table_pages": [],
+      "known_section_count": 24
+    },
+    {
+      "doc_id": "qppl-fullpdf",
+      "title": "Quantum Programming Without the Quantum Physics",
+      "landing_url": "https://arxiv.org/abs/2408.16234v2",
+      "pdf_url": "https://arxiv.org/pdf/2408.16234v2",
+      "requested_url": "https://arxiv.org/pdf/2408.16234v2",
+      "final_url": "https://arxiv.org/pdf/2408.16234v2",
+      "sha256": "256b2eb8df54e1310d6d6ce497b5c589b1523ff6d12307ca960a9d8d9fb08285",
+      "bytes": 660688,
+      "pages": 20,
+      "total_pdf_pages": 20,
+      "processed_pages": 20,
+      "empty_or_skipped_pages": [],
+      "first_page_identity_verified": true,
+      "page_audit": [
+        {
+          "page": 1,
+          "raw_text_characters": 2493,
+          "blocks": 5,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "4ee8046705981cca2c52133d9080268e6e7c6f59076b193f963f9213a7b05583"
+        },
+        {
+          "page": 2,
+          "raw_text_characters": 3286,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "a18089fc006dcac3232a05b485a25b47e2f06b00e1aab66c6e082096952fb33f"
+        },
+        {
+          "page": 3,
+          "raw_text_characters": 3278,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "f740a2b16d7d2c14d25e9b9716188290b26e0faf2cb93d68aaf295a9562a6b2e"
+        },
+        {
+          "page": 4,
+          "raw_text_characters": 2053,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "9de5eefa747456ec78a7b8b17d4680add9608974d6fdecea3cc0a5367d33ed74"
+        },
+        {
+          "page": 5,
+          "raw_text_characters": 3230,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "021d0a54610b92e9711e6e19c93d6b64dd6f701878de1657b03356cacb45b91d"
+        },
+        {
+          "page": 6,
+          "raw_text_characters": 1937,
+          "blocks": 5,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "69ce851829c01e80494357c97b90c3c962200e50e2483d326e19fdf0d67dd158"
+        },
+        {
+          "page": 7,
+          "raw_text_characters": 3364,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "eadac0d997ac18c711d658be2413c8428da58d6d06e775a01df1e6f812895abe"
+        },
+        {
+          "page": 8,
+          "raw_text_characters": 3237,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "d90600eba21c2e5064dd4d1fd8fb4189b16a7ce2788b7f7f95f06ff2404c03bd"
+        },
+        {
+          "page": 9,
+          "raw_text_characters": 2985,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "a52ab8d666f53739c571caa7245a5dde29839b4621a65f6bd30fbac2b773455f"
+        },
+        {
+          "page": 10,
+          "raw_text_characters": 2385,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "881f44481b58b164504fabb40509ac955e52d26e21cedd94609ecef6ac146f30"
+        },
+        {
+          "page": 11,
+          "raw_text_characters": 3366,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "ce5ad2517a7837810427617e17784abd274ef91676bb17c0351af1cc9967dbec"
+        },
+        {
+          "page": 12,
+          "raw_text_characters": 3087,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "55f9f4d5d982fa21acc4ef249893d56a1b1443d1c68bfd07ea050b29142ac28a"
+        },
+        {
+          "page": 13,
+          "raw_text_characters": 2473,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "875d57e6d98548b7eb3ef92f91e1a7397e9d9e82bc1682c7dcfe5acd0582ca4e"
+        },
+        {
+          "page": 14,
+          "raw_text_characters": 2287,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "e49306d028a1568d828401251998dc75a39e428817e18e022fab5a6b7990f4db"
+        },
+        {
+          "page": 15,
+          "raw_text_characters": 2806,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "1ddc6af89e4ddd5502297cfa70550aca2f714106b294eb2cd5aaca564dc89a50"
+        },
+        {
+          "page": 16,
+          "raw_text_characters": 2333,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "740140cb3a2180a29745200c2c5b4c38ca876a51919cce18c11089f67d6ce7ad"
+        },
+        {
+          "page": 17,
+          "raw_text_characters": 2854,
+          "blocks": 5,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "fa26f315fb971b41cec3920ff123ab43319172a81c3df6870e2b75c5898c48a5"
+        },
+        {
+          "page": 18,
+          "raw_text_characters": 3052,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "b3dea4f4c6902c7c746383fc9586adad16fd6fbf5642db706c60f420217b29ba"
+        },
+        {
+          "page": 19,
+          "raw_text_characters": 3021,
+          "blocks": 15,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "fa427c09626078222283da4431d7bcd1a5ea2092fc37f1b6c0097d4efee8f20d"
+        },
+        {
+          "page": 20,
+          "raw_text_characters": 3312,
+          "blocks": 12,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "35aeb26d74c853e3eacbff404a4f6cfd447504acadf426c96d88abd68903c8c0"
+        }
+      ],
+      "scope": "Every PDF page parsed; digital text and detected tables/captions retained. Figure pixels/equations are not guaranteed lossless; no vision model used.",
+      "ambiguous_table_pages": [],
+      "known_section_count": 39
+    },
+    {
+      "doc_id": "tensor-fullpdf",
+      "title": "Tensor quantum programming",
+      "landing_url": "https://arxiv.org/abs/2403.13486",
+      "pdf_url": "https://arxiv.org/pdf/2403.13486",
+      "requested_url": "https://arxiv.org/pdf/2403.13486",
+      "final_url": "https://arxiv.org/pdf/2403.13486",
+      "sha256": "a235baf349b8199152ae50f67bb6258f6532d0f3fb67499d2a96630e240bd5d8",
+      "bytes": 1248901,
+      "pages": 17,
+      "total_pdf_pages": 17,
+      "processed_pages": 17,
+      "empty_or_skipped_pages": [],
+      "first_page_identity_verified": true,
+      "page_audit": [
+        {
+          "page": 1,
+          "raw_text_characters": 5418,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "7714834243b754e47a784fcd66e69c77f8c1797264c14a2478f0a66245a578a9"
+        },
+        {
+          "page": 2,
+          "raw_text_characters": 4068,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "ec6a751a19d3bdbb03afaf3c63bbdffa6714fe6f1105c267128121b28a804b28"
+        },
+        {
+          "page": 3,
+          "raw_text_characters": 7024,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "07fccba3af87e9c68a208471418a80ab5c6c78e53b681d8f7704467cc33c0ce8"
+        },
+        {
+          "page": 4,
+          "raw_text_characters": 4560,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "15aaa587d091502716b6745cbb25330d2f92e90e005611b75f9e60f5be6c45b8"
+        },
+        {
+          "page": 5,
+          "raw_text_characters": 4754,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "53d827ce99268a2ec1a8cc33f95919e42d4a200336fb4234462693bbfb2cfbb3"
+        },
+        {
+          "page": 6,
+          "raw_text_characters": 4455,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "00b77cc4c37a2f3e6b4db49113d67304bf6c87fa043c976cc71d6756e1625a3d"
+        },
+        {
+          "page": 7,
+          "raw_text_characters": 4996,
+          "blocks": 15,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "ce8336764d6953eda56ae6ca499a4d81ea8e79cf6d41c01e314e93659dd41f16"
+        },
+        {
+          "page": 8,
+          "raw_text_characters": 4741,
+          "blocks": 13,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "6dd36d379d932d94107dac76bb618967d9dd6160f5646e2bf0b410b491d744a8"
+        },
+        {
+          "page": 9,
+          "raw_text_characters": 2730,
+          "blocks": 5,
+          "images": 9,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "bf539ed2bfc9154edaecf99883eb534ebb79f5270a11ea81e4e7731a181248f1"
+        },
+        {
+          "page": 10,
+          "raw_text_characters": 3352,
+          "blocks": 9,
+          "images": 6,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "30561a00c9d18578252d640cb6e022504bde6576aea2230241ceb0ec689c57ef"
+        },
+        {
+          "page": 11,
+          "raw_text_characters": 4183,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 1,
+          "text_sha256": "fdb7d1251b0222e1ab1dfddbd7065b17cb5399306006e3ba800d9b655a655238"
+        },
+        {
+          "page": 12,
+          "raw_text_characters": 4420,
+          "blocks": 11,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "623ac659c4ef93172dbd3fd199ac82510af79b743721eb01d04172646ba9fe3e"
+        },
+        {
+          "page": 13,
+          "raw_text_characters": 6102,
+          "blocks": 11,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "4c1d760795e60ed695f97f07ac7ae81f332f296ac137b7fa356b77a9c1d6ebda"
+        },
+        {
+          "page": 14,
+          "raw_text_characters": 2132,
+          "blocks": 5,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "1165da45fc1c729baaad7cce79708f997b0d3184e42283c6aff6de593466ac14"
+        },
+        {
+          "page": 15,
+          "raw_text_characters": 5956,
+          "blocks": 25,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "e7a43131d21061067db0965f7f6c8b49f14126011fb7c6c97cfebf868979b028"
+        },
+        {
+          "page": 16,
+          "raw_text_characters": 6140,
+          "blocks": 24,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "c9569c98dfb25130ce32841e91bab54e849bf58d24c50fda9f9713cbaef884e6"
+        },
+        {
+          "page": 17,
+          "raw_text_characters": 2790,
+          "blocks": 12,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "a3f9fe0c432fd6d3e6e8d9926b4b15fc3343069695e2463372a01ad277390ba8"
+        }
+      ],
+      "scope": "Every PDF page parsed; digital text and detected tables/captions retained. Figure pixels/equations are not guaranteed lossless; no vision model used.",
+      "ambiguous_table_pages": [
+        "ambiguous_table_rows_page_9"
+      ],
+      "known_section_count": 16
+    },
+    {
+      "doc_id": "nisq-fullpdf",
+      "title": "Quantum Computing in the NISQ era and beyond",
+      "landing_url": "https://arxiv.org/abs/1801.00862",
+      "pdf_url": "https://arxiv.org/pdf/1801.00862",
+      "requested_url": "https://arxiv.org/pdf/1801.00862",
+      "final_url": "https://arxiv.org/pdf/1801.00862",
+      "sha256": "cf64a00c519e800c0753b89c243b59013a6cd777187910912e029b068e17de69",
+      "bytes": 470175,
+      "pages": 20,
+      "total_pdf_pages": 20,
+      "processed_pages": 20,
+      "empty_or_skipped_pages": [],
+      "first_page_identity_verified": true,
+      "page_audit": [
+        {
+          "page": 1,
+          "raw_text_characters": 2831,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "a123ebca7c0f4fbeb582816a5f0994db7a30501be08030f2e00a861991de66d4"
+        },
+        {
+          "page": 2,
+          "raw_text_characters": 3871,
+          "blocks": 6,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "2e9edcf6c753bf94773079ac8f1a6502916dc527f617cd2ba21b633ed091a42a"
+        },
+        {
+          "page": 3,
+          "raw_text_characters": 3838,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "1630d872f98365474b2d95f3e01023fd41639d5b1a9bcbc94b9409918bf82a23"
+        },
+        {
+          "page": 4,
+          "raw_text_characters": 3330,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "2bc457169d8a620e786509cb89aa3fc24774b21109d8d25e70b54466057bbe68"
+        },
+        {
+          "page": 5,
+          "raw_text_characters": 3903,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "287d235c7208905b990bf2af4a0a4e019f878a1d5651b09b90aa301daf661998"
+        },
+        {
+          "page": 6,
+          "raw_text_characters": 3176,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "30fe7201c56d36f9ee207bca3262ee0c41c3ce5419290c227f19e8398c4d1570"
+        },
+        {
+          "page": 7,
+          "raw_text_characters": 3952,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "14ffe372539495a664d6d7ed76f0575d66c99c29f2897aae3221795384a84c49"
+        },
+        {
+          "page": 8,
+          "raw_text_characters": 3535,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "c402a8f1ce208e4c61afcceed3fa355f2fc383fa9685370665265be0ccbd451b"
+        },
+        {
+          "page": 9,
+          "raw_text_characters": 3962,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "02911630fbac1a3f01785900f3600782df9185912797f7b973df541f0f901081"
+        },
+        {
+          "page": 10,
+          "raw_text_characters": 3875,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "a26378ba579cf1b2055188841a3c2193696860f5674f6a44cdf716f9a34e5d17"
+        },
+        {
+          "page": 11,
+          "raw_text_characters": 3757,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "a1ef119fc5e7c48c6f1ad7f06e868a9c73cd1e8e37dbc2a97729192646a9df37"
+        },
+        {
+          "page": 12,
+          "raw_text_characters": 3824,
+          "blocks": 8,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "bc8d1cc0fdb48bc99d9c7d6e3b73d16edddea9cd3bd5978c68833f1a854c1eab"
+        },
+        {
+          "page": 13,
+          "raw_text_characters": 3772,
+          "blocks": 7,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "d76b1b562c01d4938309d0aff77f5a6b73b4edbaa05b1d584eb0bd04f6cb4092"
+        },
+        {
+          "page": 14,
+          "raw_text_characters": 3732,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "8ce87d7f63f7d5b8615bfb9cf68ca58cc1ba757008c83bfd6d481e850ef2bfea"
+        },
+        {
+          "page": 15,
+          "raw_text_characters": 3124,
+          "blocks": 10,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "476028b983207c6f20ad21d1cfce11bd52fee83ddd79ff133761c14c78adc37b"
+        },
+        {
+          "page": 16,
+          "raw_text_characters": 3203,
+          "blocks": 9,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "e8c7b9e660acffe066a702ab4976991ea1e80e87d2fa005036557749eb3bdd3c"
+        },
+        {
+          "page": 17,
+          "raw_text_characters": 3272,
+          "blocks": 12,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "e1a74c5dabc8d51f54bc718722b6d9ce3f70777ef602a4625769f997f72211de"
+        },
+        {
+          "page": 18,
+          "raw_text_characters": 3172,
+          "blocks": 14,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "d2ed528372677989ebe59dffe2480ad5ce0ebd3ef41385cf64ce6abd6063a78b"
+        },
+        {
+          "page": 19,
+          "raw_text_characters": 2960,
+          "blocks": 13,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "95e75c9aa474865b16ab5f3a171259c6a6918f5fe513dbbda042206ac99e7bcf"
+        },
+        {
+          "page": 20,
+          "raw_text_characters": 808,
+          "blocks": 4,
+          "images": 0,
+          "table_units": 0,
+          "figure_units": 0,
+          "text_sha256": "04d3042cdf43aa6b7ac4d274d173923c91ef0ff30eeb22bcd2857dd0db53dc43"
+        }
+      ],
+      "scope": "Every PDF page parsed; digital text and detected tables/captions retained. Figure pixels/equations are not guaranteed lossless; no vision model used.",
+      "ambiguous_table_pages": [],
+      "known_section_count": 12
+    }
+  ]
+}

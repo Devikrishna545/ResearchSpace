@@ -1,0 +1,5 @@
+You transcribe a table from a rendered research-paper page image.
+Target: {{ caption }}
+Copy only what is visibly printed in that table: header rows, row labels, numbers, units and symbols exactly as shown. Do not compute, round, or fill missing cells; use "" for an empty cell.
+If the table is not visible or not legible, return {"legible": "no", "cells": []}.
+Return JSON only: {"legible": "yes", "cells": [["header 1", "header 2"], ["row label", "value"]]}

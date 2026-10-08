@@ -1,0 +1,17 @@
+Question:
+{{ question }}
+
+BEGIN_EVIDENCE_DATA
+{% for chunk in evidence.chunks -%}
+<<<EVIDENCE chunk_id="{{ chunk.chunk_id }}">
+{{ chunk.text }}
+>>>
+{% endfor -%}
+END_EVIDENCE_DATA
+
+{% if feedback_history %}
+Previous reviewer feedback to address:{% for item in feedback_history %}
+- {{ item.global_feedback }}{% for c in item.claims %}{% if c.issue %}
+  - claim "{{ c.claim_text[:120] }}": {{ c.issue }} {{ c.suggested_correction }}{% endif %}{% endfor %}{% endfor %}
+{% endif %}
+Answer:

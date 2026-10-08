@@ -1,0 +1,103 @@
+{
+  "_comment": "Engineering draft populated from the local research library. Faculty must verify every label, add the missing benchmark cases listed in draft_gaps, and set faculty_approved to true before these data support a release decision.",
+  "faculty_approved": false,
+  "review_status": "awaiting_faculty_review",
+  "draft_gaps": [
+    "genuine contradiction pair",
+    "unrelated-paper negative control",
+    "scanned-PDF/OCR pair",
+    "figure-dependent pair",
+    "missing-limitations pair",
+    "numeric/statistical comparison with faculty-checked expected values"
+  ],
+  "pairs": [
+    {
+      "pair_id": "word2vec-vs-glove",
+      "case": "Real agreement plus architecture-versus-dataset and related-work ownership traps.",
+      "space_id": "f56d0676-0278-415a-8fd6-2319a193eb6b",
+      "paper_ids": [
+        "4509d60f-b6be-4af8-b936-da4f592c2810",
+        "dbaeb490-7121-4442-8aa2-1174b9bbe032"
+      ],
+      "report_id": null,
+      "facts": {
+        "P1": {
+          "dataset": {
+            "values": ["Wikipedia 2014", "Gigaword 5", "Common Crawl", "CoNLL-2003"],
+            "wrong_type": ["global log-bilinear regression model", "weighted least squares model"],
+            "not_owned": ["Google News corpus"]
+          },
+          "method": {
+            "values": ["global log-bilinear regression model", "weighted least squares model", "GloVe model"]
+          },
+          "metric": {
+            "values": ["percent accuracy", "Spearman rank correlation", "F1 score"]
+          }
+        },
+        "P2": {
+          "dataset": {
+            "values": ["Semantic-Syntactic Word Relationship test set"],
+            "wrong_type": ["Continuous Bag-of-Words Model", "Continuous Skip-gram Model"],
+            "not_owned": []
+          },
+          "method": {
+            "values": ["Continuous Bag-of-Words Model", "Continuous Skip-gram Model"]
+          },
+          "metric": {
+            "values": ["Accuracy"]
+          }
+        }
+      },
+      "commonalities": [
+        {
+          "dimension": "metric",
+          "keywords": ["accuracy"]
+        }
+      ],
+      "contradictions": [],
+      "numeric": [],
+      "accepted_gaps": [],
+      "expected_insufficient": {
+        "P1": ["population", "inclusion_criterion", "exclusion_criterion"],
+        "P2": ["population", "exclusion_criterion"]
+      },
+      "unrelated": false,
+      "faculty_review_notes": [
+        "Confirm whether Google News should be a P2 dataset fact or only a related-work/experimental-corpus mention.",
+        "Confirm whether CoNLL-2003 is in scope as a GloVe evaluation dataset.",
+        "Add accepted candidate gaps only after reviewing the exact cited passages."
+      ]
+    },
+    {
+      "pair_id": "quantum-programming-methods",
+      "case": "Related papers expected to share a broad method/topic while differing in programming abstractions; draft labels are intentionally sparse.",
+      "space_id": "1b182673-44e8-42d2-bb29-133906741d3f",
+      "paper_ids": [
+        "55bfc83d-d3c3-4e14-a7f6-9581b4d3841c",
+        "5dbf86d4-ac1d-41fc-a169-ad6676f56fe7",
+        "ba4fa890-7abf-4259-aedb-54af4719b078"
+      ],
+      "report_id": null,
+      "facts": {},
+      "commonalities": [
+        {
+          "dimension": "method",
+          "keywords": ["quantum", "programming"]
+        }
+      ],
+      "contradictions": [],
+      "numeric": [],
+      "accepted_gaps": [],
+      "expected_insufficient": {
+        "P1": ["population"],
+        "P2": ["population"],
+        "P3": ["population"]
+      },
+      "unrelated": false,
+      "faculty_review_notes": [
+        "Populate typed fact labels from the source papers before using this pair for precision or recall.",
+        "Decide whether the web framework-comparison page is suitable evaluation evidence or should be replaced by a peer-reviewed paper."
+      ]
+    }
+  ]
+}

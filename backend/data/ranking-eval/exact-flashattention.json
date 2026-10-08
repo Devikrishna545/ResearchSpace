@@ -1,0 +1,1542 @@
+{
+  "id": "exact-flashattention",
+  "category": "exact_title",
+  "query": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+  "target": {
+    "arxiv_id": "2205.14135"
+  },
+  "plan": {
+    "topic": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+    "sub_queries": [
+      "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "FlashAttention: Fast",
+      "Memory-Efficient Exact Attention with IO-Awareness"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "authors": [
+        "Tri Dao",
+        "Daniel Y. Fu",
+        "Stefano Ermon",
+        "Atri Rudra",
+        "Christopher Ré"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Transformers are slow and memory-hungry on long sequences, since the time and memory complexity of self-attention are quadratic in sequence length. Approximate attention methods have attempted to address this problem by trading off model quality to reduce the compute complexity, but often do not achieve wall-clock speedup. We argue that a missing principle is making attention algorithms IO-aware -- accounting for reads and writes between levels of GPU memory. We propose FlashAttention, an IO-aware exact attention algorithm that uses tiling to reduce the number of memory reads/writes between GPU high bandwidth memory (HBM) and GPU on-chip SRAM. We analyze the IO complexity of FlashAttention, showing that it requires fewer HBM accesses than standard attention, and is optimal for a range of SRAM sizes. We also extend FlashAttention to block-sparse attention, yielding an approximate attention algorithm that is faster than any existing approximate attention method. FlashAttention trains Transformers faster than existing baselines: 15% end-to-end wall-clock speedup on BERT-large (seq. length 512) compared to the MLPerf 1.1 training speed record, 3$\\times$ speedup on GPT-2 (seq. length 1K), and 2.4$\\times$ speedup on long-range arena (seq. length 1K-4K). FlashAttention and block-sparse FlashAttention enable longer context in Transformers, yielding higher quality models (0.7 better perplexity on GPT-2 and 6.4 points of lift on long-document classification) and entirely new capabilities: the first Transformers to achieve better-than-chance performance on the Path-X challenge (seq. length 16K, 61.4% accuracy) and Path-256 (seq. length 64K, 63.1% accuracy).",
+      "doi": null,
+      "arxiv_id": "2205.14135v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2205.14135v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Fast ungated five-dimensional cardiac MRI on a 1.5 T MR-linac for MRI-guided radiotherapy",
+      "authors": [
+        "M. L. Terpstra",
+        "T. E. Olausson",
+        "M. M. N. Aubert",
+        "C. Beijst",
+        "A. Sbrizzi",
+        "C. A. T. van den Berg",
+        "M. F. Fast"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Background: Stereotactic arrhythmia radio-ablation (STAR) for patients with ventricular tachycardia is currently limited by complex cardiorespiratory motion. Current 5D-MRI motion models require long acquisition and reconstruction times, limiting clinical viability. Objective: To develop a fast, ungated 5D-MRI reconstruction method for personalized motion characterization to support MRI-guided STAR treatments. Methods: We propose a fast, ungated 5D-MRI reconstruction method based on the CMR-MOTUS framework. The method uses a 3D Cartesian acquisition with a joint optimization framework to reconstruct a motion-corrected reference image and low-rank deformation vector fields (DVFs). By exploiting the low rank structure, we explicitly disentangle respiratory and cardiac motion during optimization. Then, the DVFs are used for 5D-MRI reconstruction with a retrospectively adjustable number of motion states. Validation was performed using digital and physical cardiorespiratory phantoms. Furthermore, the approach was evaluated using 10 healthy volunteers, comparing motion consistency with 2D cine MRI. Results: Validation of 5D CMR-MOTUS using digital and physical phantoms demonstrated accurate 5D-MRI reconstruction. In the physical phantom, 5D CMR-MOTUS achieved a left-ventricle DICE of 0.96 +/- 0.01. In the volunteer cohort, the 5D-MRI scans showed strong motion to 2D cine MRI, with a cardiac motion error of 0.1 +/- 0.9 mm and a respiratory motion error of 0.2 +/- 2.9 mm. Crucially, 5D-MRI data were acquired in 1 minute and reconstructed in 6 minutes. Conclusions: The proposed 5D-MRI method enables rapid, high-quality, and personalized motion characterization, demonstrating potential for integration into MRI-guided STAR treatments. Data Availability: The 3D k-space data and 5D reconstructions for the ten volunteers are publicly available at https://doi.org/10.5281/zenodo.21278894",
+      "doi": null,
+      "arxiv_id": "2607.16033v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2607.16033v1",
+      "raw_payload": {
+        "categories": [
+          "physics.med-ph"
+        ],
+        "primary_category": "physics.med-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Memory-efficient Segmentation of High-resolution Volumetric MicroCT Images",
+      "authors": [
+        "Yuan Wang",
+        "Laura Blackie",
+        "Irene Miguel-Aliaga",
+        "Wenjia Bai"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In recent years, 3D convolutional neural networks have become the dominant approach for volumetric medical image segmentation. However, compared to their 2D counterparts, 3D networks introduce substantially more training parameters and higher requirement for the GPU memory. This has become a major limiting factor for designing and training 3D networks for high-resolution volumetric images. In this work, we propose a novel memory-efficient network architecture for 3D high-resolution image segmentation. The network incorporates both global and local features via a two-stage U-net-based cascaded framework and at the first stage, a memory-efficient U-net (meU-net) is developed. The features learnt at the two stages are connected via post-concatenation, which further improves the information flow. The proposed segmentation method is evaluated on an ultra high-resolution microCT dataset with typically 250 million voxels per volume. Experiments show that it outperforms state-of-the-art 3D segmentation methods in terms of both segmentation accuracy and memory efficiency.",
+      "doi": null,
+      "arxiv_id": "2205.15941v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2205.15941v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FlashBEV: Fast and Memory-Efficient Exact BEV Transformation with IO-Awareness",
+      "authors": [
+        "Shunsuke Yokokawa",
+        "Hironori Kasahara"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Bird's-eye-view (BEV) perception is a core component of camera-based 3D understanding in autonomous driving, where view transformation (VT) maps multi-camera image features into a unified BEV representation. Sampling-based view transformation (Sampling-VT) is attractive because it supports dense and continuous BEV aggregation for high-resolution and long-range perception. Its deployment bottleneck, however, is systems-level: standard tensorized implementations of Sampling-VT -- which we refer to as Tensorized Sampling-VT -- explicitly materialize large height-dependent intermediate tensors, causing memory and latency costs that scale poorly with vertical resolution and the number of cameras. We revisit Tensorized Sampling-VT from an operator-execution perspective and show that it follows a gather-reduction pattern: each BEV query independently accumulates contributions across cameras and height bins, enabling thread-local accumulation with on-the-fly recomputation that eliminates the need to materialize height- and camera-dependent intermediates. Based on this insight, we propose FlashBEV, a fully fused and IO-aware execution strategy mathematically equivalent to Tensorized Sampling-VT (same operator output) while substantially reducing global memory traffic and kernel-launch overhead. Experiments show that FlashBEV achieves more than an order of magnitude lower peak GPU memory and significant inference-latency speedups, with memory effectively independent of the number of height bins, reducing the operator's peak memory to O(BCXY) (output only). This unlocks higher BEV range/resolution and vertical discretization within fixed deployment budgets on memory-constrained devices. Our contribution is an execution redesign -- same math, different execution -- that removes a key scalability barrier for deployment-ready Sampling-VT. Code available at https://github.com/yokosyun/FlashBEV",
+      "doi": null,
+      "arxiv_id": "2607.10071v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2607.10071v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Learning Efficient Algorithms with Hierarchical Attentive Memory",
+      "authors": [
+        "Marcin Andrychowicz",
+        "Karol Kurach"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper, we propose and investigate a novel memory architecture for neural networks called Hierarchical Attentive Memory (HAM). It is based on a binary tree with leaves corresponding to memory cells. This allows HAM to perform memory access in O(log n) complexity, which is a significant improvement over the standard attention mechanism that requires O(n) operations, where n is the size of the memory.\n  We show that an LSTM network augmented with HAM can learn algorithms for problems like merging, sorting or binary searching from pure input-output examples. In particular, it learns to sort n numbers in time O(n log n) and generalizes well to input sequences much longer than the ones seen during the training. We also show that HAM can be trained to act like classic data structures: a stack, a FIFO queue and a priority queue.",
+      "doi": null,
+      "arxiv_id": "1602.03218v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1602.03218v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Exact Attention Sensitivity and the Geometry of Transformer Stability",
+      "authors": [
+        "Seyed Morteza Emadi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We develop a sensitivity analysis for transformer attention in a geometry aligned with tokenwise computation. Our main result is the exact identity $\\|J_τ(u)\\|_{\\infty\\to1}=θ(p)/τ$ for the Jacobian $J_τ(u)$ of the tempered softmax $u\\mapsto\\mathrm{softmax}(u/τ)$, where $θ(p)=4\\max_{S\\subseteq[L]}p(S)(1-p(S))$ measures how evenly the attention distribution can be bisected rather than how concentrated it is. We combine this identity with a block-$\\infty$/RMS norm under which row-stochastic attention mixing is nonexpansive. This yields a distribution-aware local Jacobian bound for multi-head attention and a sequence-length-independent Lipschitz bound on bounded input sets, with explicit dependence on width, input magnitude, temperature, and projection norms. We also identify a structural distinction between normalization placements: a pre-LN residual-sublayer Jacobian contains an additive identity term, whereas a post-LN residual-sublayer Jacobian does not. A LayerNorm projection lemma gives a sufficient condition under which the LayerNorm-only term in the post-LN expansion contracts geometrically; the condition is not tested by our experiments. Across three Pre-LN early-training runs of $774$M-parameter models, attention becomes substantially more concentrated while the median lower-bound certificate for $θ(p)$ remains near one at every sampled layer and checkpoint. This certifies near-maximal exact sensitivity for at least half of the sampled rows within each layer. A minority of rows enters a dominant-atom regime with lower exact sensitivity, consistent with the deterministic relationship between $p_{\\max}$ and $θ(p)$.",
+      "doi": null,
+      "arxiv_id": "2602.18849v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2602.18849v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A Pilot Study of Interplanetary Scintillation with FAST",
+      "authors": [
+        "Li-Jia Liu",
+        "Bo Peng",
+        "Lei Yu",
+        "Ye-Zhao Yu",
+        "Ji-Guang Lu",
+        "Bin Liu",
+        "O. Chang",
+        "M. M. Bisi",
+        "FAST Collaboration"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Observations of Interplanetary Scintillation (IPS) are an efficient remote-sensing method to study the solar wind and inner heliosphere. From 2016 to 2018, some distinctive observations of IPS sources like 3C 286 and 3C 279 were accomplished with the Five-hundred-meter Aperture Spherical radio Telescope (FAST), the largest single-dish telescope in the world. Due to the 270-1620 MHz wide frequency coverage of the Ultra-Wideband (UWB) receiver, one can use both single-frequency and dual-frequency analyses to determine the projected velocity of the solar wind. Moreover, based on the extraordinary sensitivity owing to the large collecting surface area of FAST, we can observe weak IPS signals. With the advantages of both the wider frequency coverage and high sensitivity, also with our radio frequency interference (RFI) mitigation strategy and an optimized model-fitting method developed, in this paper, we analyze the fitting confidence intervals of the solar wind velocity, and present some preliminary results achieved using FAST, which points to the current FAST system being highly capable of carrying out observations of IPS",
+      "doi": null,
+      "arxiv_id": "2105.02783v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2105.02783v1",
+      "raw_payload": {
+        "categories": [
+          "physics.space-ph",
+          "astro-ph.SR"
+        ],
+        "primary_category": "physics.space-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "KVBuffer: IO-aware Serving for Linear Attention",
+      "authors": [
+        "Longwei Zou",
+        "Lin Zhong"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Linear attention has recently gained significant attention for long-context inference due to its constant decoding cost with respect to context length. However, existing serving systems typically serve linear attention by recurrently computing and updating a large linear attention state in every decoding step. Since the state is much larger than the per-token key and value, recurrent decoding incurs substantial memory access and becomes inefficient for serving linear attention. In this paper, we propose KVBuffer, an IO-aware serving mechanism for linear attention. By buffering recent keys and values, KVBuffer enables serving systems to compute linear attention outputs in more flexible and memory-efficient ways. For decoding, KVBuffer enables chunkwise computation, which reduces average memory access and decoding latency by deferring state updates and applying them in batch. For speculative decoding, KVBuffer verifies draft tokens in parallel and avoids storing temporary states. For short contexts, KVBuffer computes attention outputs directly from buffered keys and values, without creating or updating the linear attention state. We implement KVBuffer in SGLang for Qwen3-Next. Our evaluations show that KVBuffer can reduce linear attention decoding latency by up to 45.17% and increase the maximum number of serving requests by 5x for speculative decoding when verifying four draft tokens.",
+      "doi": null,
+      "arxiv_id": "2605.19049v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2605.19049v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "ELFATT: Efficient Linear Fast Attention for Vision Transformers",
+      "authors": [
+        "Chong Wu",
+        "Maolin Che",
+        "Renjie Xu",
+        "Zhuoheng Ran",
+        "Hong Yan"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The attention mechanism is the key to the success of transformers in different machine learning tasks. However, the quadratic complexity with respect to the sequence length of the vanilla softmax-based attention mechanism becomes the major bottleneck for the application of long sequence tasks, such as vision tasks. Although various efficient linear attention mechanisms have been proposed, they need to sacrifice performance to achieve high efficiency. What's more, memory-efficient methods, such as FlashAttention-1-3, still have quadratic computation complexity which can be further improved. In this paper, we propose a novel efficient linear fast attention (ELFATT) mechanism to achieve low memory input/output operations, linear computational complexity, and high performance at the same time. ELFATT offers 4-7x speedups over the vanilla softmax-based attention mechanism in high-resolution vision tasks without losing performance. ELFATT is FlashAttention friendly. Using FlashAttention-2 acceleration, ELFATT still offers 2-3x speedups over the vanilla softmax-based attention mechanism on high-resolution vision tasks without losing performance. Even in some non-vision tasks of long-range arena, ELFATT still achieves leading performance and offers 1.2-2.3x speedups over FlashAttention-2. Even on edge GPUs, ELFATT still offers 1.6x to 2.0x speedups compared to state-of-the-art attention mechanisms in various power modes from 5W to 60W. Furthermore, ELFATT can be used to enhance and accelerate diffusion tasks directly without training.",
+      "doi": null,
+      "arxiv_id": "2501.06098v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2501.06098v4",
+      "raw_payload": {
+        "categories": [
+          "eess.IV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Performance of FAST with an Ultra-Wide Bandwidth Receiver at 500-3300 MHz",
+      "authors": [
+        "Chuan-Peng Zhang",
+        "Peng Jiang",
+        "Ming Zhu",
+        "Jun Pan",
+        "Cheng Cheng",
+        "Hong-Fei Liu",
+        "Yan Zhu",
+        "Chun Sun",
+        "FAST Collaboration"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The Five-hundred-meter Aperture Spherical radio Telescope (FAST) has been running for several years. A new Ultra-Wide Bandwidth (UWB) receiver, simultaneously covering 500-3300 MHz, has been mounted in the FAST feed cabin and passed a series of observational tests. The whole UWB band is separated into four independent bands. Each band has 1048576 channels in total, resulted in a spectral resolution of 1 kHz. At 500-3300 MHz, the antenna gain is around 14.3-7.7 K/Jy, the aperture efficiency is around 0.56-0.30, the system temperature is around 88-130 K, and the HPBW is around 7.6-1.6 arcmin. The measured standard deviation of pointing accuracy is better than ~7.9 arcsec, when zenith angle (ZA) is within 26.4deg. The sensitivity and stability of the UWB receiver are confirmed to satisfy expectation by spectral observations, e.g., HI and OH. The FAST UWB receiver already has a good performance for taking sensitive observations in various scientific goals.",
+      "doi": null,
+      "arxiv_id": "2304.11895v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2304.11895v2",
+      "raw_payload": {
+        "categories": [
+          "astro-ph.IM",
+          "astro-ph.GA"
+        ],
+        "primary_category": "astro-ph.IM"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FlashAttention on a Napkin: A Diagrammatic Approach to Deep Learning IO-Awareness",
+      "authors": [
+        "Vincent Abbott",
+        "Gioele Zardini"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Optimizing deep learning algorithms currently requires slow, manual derivation, potentially leaving much performance untapped. Methods like FlashAttention have achieved a x6 performance improvement over native PyTorch by avoiding unnecessary data transfers, but required three iterations over three years to be developed. Automated compiled methods have consistently lagged behind. This paper extends Neural Circuit Diagrams for deep learning models to consider resource usage and the distribution of tasks across a GPU hierarchy. We show how diagrams can use simple relabellings to derive high-level streaming and tiling optimization strategies along with performance models. We show how this high-level performance model allows the effects of quantization and multi-level GPU hierarchies to be readily considered. We develop a methodology for representing intermediate-level pseudocode with diagrams, allowing hardware-aware algorithms to be derived step-by-step. Finally, we show how our methodology can be used to better understand existing techniques like FlashAttention. This work uses a theoretical framework to link assumptions about GPU behaviour to claims about performance. We aim to lay the groundwork for a scientific approach to GPU optimization where experiments can address clear hypotheses rather than post-hoc rationalizations.",
+      "doi": null,
+      "arxiv_id": "2412.03317v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2412.03317v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Study of Three Rotating Radio Transients with FAST",
+      "authors": [
+        "Jiguang Lu",
+        "Bo Peng",
+        "Kuo Liu",
+        "Peng Jiang",
+        "Youling Yue",
+        "Meng Yu",
+        "Ye-Zhao Yu",
+        "Feifei Kou",
+        "Lin Wang",
+        "FAST Collaboration"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Rotating radio transients (RRATs) are peculiar astronomical objects whose emission mechanism remains under investigation. In this paper, we present observations of three RRATs, J1538+2345, J1854+0306 and J1913+1330, observed with the Five-hundred-meter Aperture Spherical radio Telescope (FAST). Specifically, we analyze the mean pulse profiles and temporal flux density evolutions of the RRATs. Owing to the high sensitivity of FAST, the derived burst rates of the three RRATs are higher than those in previous reports. RRAT J1854+0306 exhibited a time-dynamic mean pulse profile, whereas RRAT J1913+1330 showed distinct radiation and nulling segments on its pulse intensity trains. The mean pulse profile variation with frequency is also studied for RRAT J1538+2345 and RRAT J1913+1330, and the profiles at different frequencies could be well fitted with a cone-core model and a conal-beam model, respectively.",
+      "doi": null,
+      "arxiv_id": "1903.06364v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1903.06364v1",
+      "raw_payload": {
+        "categories": [
+          "astro-ph.HE"
+        ],
+        "primary_category": "astro-ph.HE"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+      "authors": [
+        "Tri Dao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Scaling Transformers to longer sequence lengths has been a major problem in the last several years, promising to improve performance in language modeling and high-resolution image understanding, as well as to unlock new applications in code, audio, and video generation. The attention layer is the main bottleneck in scaling to longer sequences, as its runtime and memory increase quadratically in the sequence length. FlashAttention exploits the asymmetric GPU memory hierarchy to bring significant memory saving (linear instead of quadratic) and runtime speedup (2-4$\\times$ compared to optimized baselines), with no approximation. However, FlashAttention is still not nearly as fast as optimized matrix-multiply (GEMM) operations, reaching only 25-40\\% of the theoretical maximum FLOPs/s. We observe that the inefficiency is due to suboptimal work partitioning between different thread blocks and warps on the GPU, causing either low-occupancy or unnecessary shared memory reads/writes. We propose FlashAttention-2, with better work partitioning to address these issues. In particular, we (1) tweak the algorithm to reduce the number of non-matmul FLOPs (2) parallelize the attention computation, even for a single head, across different thread blocks to increase occupancy, and (3) within each thread block, distribute the work between warps to reduce communication through shared memory. These yield around 2$\\times$ speedup compared to FlashAttention, reaching 50-73\\% of the theoretical maximum FLOPs/s on A100 and getting close to the efficiency of GEMM operations. We empirically validate that when used end-to-end to train GPT-style models, FlashAttention-2 reaches training speed of up to 225 TFLOPs/s per A100 GPU (72\\% model FLOPs utilization).",
+      "doi": null,
+      "arxiv_id": "2307.08691v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2307.08691v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Predictions for the FAST telescope's CRAFTS Extra-Galactic HI Survey",
+      "authors": [
+        "Kai Zhang",
+        "Jingwen Wu",
+        "Di Li",
+        "Chao-Wei Tsai",
+        "Lister Staveley-Smith",
+        "Jing Wang",
+        "Jian Fu",
+        "Travis McIntyre",
+        "Mao Yuan",
+        "FAST collaboration"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The Five-hundred-meter Aperture Spherical radio Telescope (FAST) has started the Commensal Radio Astronomy FasT Survey (CRAFTS). In this paper, we use the technical parameters of FAST derived from commissioning observations to simulate the completeness function for extragalactic HI survey of CRAFTS, HI galaxies from two kinds of mock catalogues are selected. One is generated by Monte-Carlo simulation based on the interpolated mass-velocity width function of the ALFALFA $100\\%$ (a.k.a. $α$ .100) catalogue. The other is constructed by semi-analytical N-body simulation based on the $Λ$CDM model. Our results suggest that a two-pass extragalactic HI survey will be able to detect nearly $4.8\\times10^{5}$ galaxies, from which the 'faint end' slope of the HI Mass Function (HIMF) can be recovered to $\\mathrm{10^{7}\\, M_{\\odot}}$ and the 'knee mass' of the HIMF can be measured to a redshift of 0.1. Considering the radio frequency interference status and sensitivity limitation, CRAFTS will be efficient in detecting HI galaxies at redshifts below 0.1, which implies a tremendous potential in exploring the galaxy interactions in different environments and the spatial distribution of HI galaxies in the local universe.",
+      "doi": null,
+      "arxiv_id": "2012.01683v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2012.01683v1",
+      "raw_payload": {
+        "categories": [
+          "astro-ph.GA"
+        ],
+        "primary_category": "astro-ph.GA"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "INT-FlashAttention: Enabling Flash Attention for INT8 Quantization",
+      "authors": [
+        "Shimao Chen",
+        "Zirui Liu",
+        "Zhiying Wu",
+        "Ce Zheng",
+        "Peizhuang Cong",
+        "Zihan Jiang",
+        "Yuhan Wu",
+        "Lei Su",
+        "Tong Yang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "As the foundation of large language models (LLMs), self-attention module faces the challenge of quadratic time and memory complexity with respect to sequence length. FlashAttention accelerates attention computation and reduces its memory usage by leveraging the GPU memory hierarchy. A promising research direction is to integrate FlashAttention with quantization methods. This paper introduces INT-FlashAttention, the first INT8 quantization architecture compatible with the forward workflow of FlashAttention, which significantly improves the inference speed of FlashAttention on Ampere GPUs. We implement our INT-FlashAttention prototype with fully INT8 activations and general matrix-multiplication (GEMM) kernels, making it the first attention operator with fully INT8 input. As a general token-level post-training quantization framework, INT-FlashAttention is also compatible with other data formats like INT4, etc. Experimental results show INT-FlashAttention achieves 72% faster inference speed and 82% smaller quantization error compared to standard FlashAttention with FP16 and FP8 data format.",
+      "doi": null,
+      "arxiv_id": "2409.16997v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2409.16997v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Fast Weight Attention for Continual Learning",
+      "authors": [
+        "Yifan Zhang",
+        "Steve Ta",
+        "Jasper Zhang",
+        "Jichen Feng",
+        "Shuzhen Li",
+        "Yongxin Zhang",
+        "Yifeng Liu",
+        "Huizhuo Yuan",
+        "Mengdi Wang",
+        "Quanquan Gu",
+        "Andrew Chi-Chih Yao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recurrent fast-weight memories and selective state-space models compress an expanding context into a fixed-size recurrent state, making the state transition an online learning rule. We study this rule under read-after-write autoregressive semantics. For the prefix-prediction objective considered here, the local fast-memory example revealed at step $t$ is the prefix-aligned pair $(\\mathbf{x}_t,\\mathbf{y}_t)=(φ(\\mathbf{k}_{t-1}),\\mathbf{v}_t)$. The common same-step association $(φ(\\mathbf{k}_t),\\mathbf{v}_t)$ remains causal, but optimizes a different internal objective. We derive normalized first-order updates for squared-error regression and negative inner-product objectives. The regression family comprises Falcon-1 (a scalar NLMS update), Falcon-2 (its per-column extension), and Falcon-3 (a sliding-window mini-batch update); Falcon-1A/Falcon-2A/Falcon-3A are the corresponding inner-product variants. We provide recurrent, masked-parallel, and chunk-parallel forms, together with numerically stable positive-decay renormalization. Representative variants remain competitive in language modeling and improve length extrapolation on variable-digit addition. This framework separates temporal alignment, plasticity, forgetting, and bounded rehearsal in recurrent sequence models.",
+      "doi": null,
+      "arxiv_id": "2608.27763v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2608.27763v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.CL",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FlashMask: Efficient and Rich Mask Extension of FlashAttention",
+      "authors": [
+        "Guoxia Wang",
+        "Jinle Zeng",
+        "Xiyuan Xiao",
+        "Siming Wu",
+        "Jiabin Yang",
+        "Lujing Zheng",
+        "Zeyu Chen",
+        "Jiang Bian",
+        "Dianhai Yu",
+        "Haifeng Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The computational and memory demands of vanilla attention scale quadratically with the sequence length $N$, posing significant challenges for processing long sequences in Transformer models. FlashAttention alleviates these challenges by eliminating the $O(N^2)$ memory dependency and reducing attention latency through IO-aware memory optimizations. However, its native support for certain attention mask types is limited, and it does not inherently accommodate more complex masking requirements. Previous approaches resort to using dense masks with $O(N^2)$ memory complexity, leading to inefficiencies. In this paper, we propose FlashMask, an extension of FlashAttention that introduces a column-wise sparse representation of attention masks. This approach efficiently represents a wide range of mask types and facilitates the development of optimized kernel implementations. By adopting this novel representation, FlashMask achieves linear memory complexity $O(N)$, suitable for modeling long-context sequences. Moreover, this representation enables kernel optimizations that eliminate unnecessary computations by leveraging sparsity in the attention mask, without sacrificing computational accuracy, resulting in higher computational efficiency. We evaluate FlashMask's performance in fine-tuning and alignment training of LLMs such as SFT, LoRA, DPO, and RM. FlashMask achieves significant throughput improvements, with end-to-end speedups ranging from 1.65x to 3.22x compared to existing FlashAttention dense method. Additionally, our kernel-level comparisons demonstrate that FlashMask surpasses the latest counterpart, FlexAttention, by 12.1% to 60.7% in terms of kernel TFLOPs/s, achieving 37.8% to 62.3% of the theoretical maximum FLOPs/s on the A100 GPU. The code is open-sourced on PaddlePaddle and integrated into PaddleNLP, supporting models with over 100 billion parameters for contexts up to 128K tokens.",
+      "doi": null,
+      "arxiv_id": "2410.01359v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2410.01359v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision",
+      "authors": [
+        "Jay Shah",
+        "Ganesh Bikshandi",
+        "Ying Zhang",
+        "Vijay Thakkar",
+        "Pradeep Ramani",
+        "Tri Dao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Attention, as a core layer of the ubiquitous Transformer architecture, is the bottleneck for large language models and long-context applications. FlashAttention elaborated an approach to speed up attention on GPUs through minimizing memory reads/writes. However, it has yet to take advantage of new capabilities present in recent hardware, with FlashAttention-2 achieving only 35% utilization on the H100 GPU. We develop three main techniques to speed up attention on Hopper GPUs: exploiting asynchrony of the Tensor Cores and TMA to (1) overlap overall computation and data movement via warp-specialization and (2) interleave block-wise matmul and softmax operations, and (3) block quantization and incoherent processing that leverages hardware support for FP8 low-precision. We demonstrate that our method, FlashAttention-3, achieves speedup on H100 GPUs by 1.5-2.0$\\times$ with FP16 reaching up to 740 TFLOPs/s (75% utilization), and with FP8 reaching close to 1.2 PFLOPs/s. We validate that FP8 FlashAttention-3 achieves 2.6$\\times$ lower numerical error than a baseline FP8 attention.",
+      "doi": null,
+      "arxiv_id": "2407.08608v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2407.08608v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "authors": [
+        "Quan Nguyen-Tri",
+        "Mukul Ranjan",
+        "Zhiqiang Shen"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, largely due to the absence of effective Key-Value (KV) caching and scalable parallel decoding mechanisms. Existing acceleration methods typically study KV caching and parallel decoding in isolation, overlooking the I/O bottlenecks that arise when cache reuse and parallel token verification are jointly applied. In this work, we introduce $\\textbf{Flash-dLLM}$, a training-free inference acceleration framework for fast and memory-efficient dLLMs. Flash-dLLM first identifies GPU memory I/O as a dominant bottleneck in KV-cache-enabled dLLM inference and addresses it with an I/O-aware fused KV-cache kernel that reduces redundant memory movement. Building on this optimized cache mechanism, Flash-dLLM further proposes an efficient KV-cache-driven draft-and-verify decoding strategy, where the dLLM itself serves as both drafter and verifier without requiring an auxiliary model. This unified design enables faster decoding while preserving generation quality and improving scalability to longer sequences and larger batch size. Extensive experiments on mathematical reasoning and code-generation benchmarks demonstrate that Flash-dLLM consistently outperforms existing state-of-the-art dLLM acceleration methods in both inference speed and memory efficiency. In particular, it achieves $5.1\\times$ and $11.0\\times$ speedups over prior strongest baseline Elastic-Cache on GSM8K and HumanEval, respectively.",
+      "doi": null,
+      "arxiv_id": "2609.26796v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2609.26796v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "ELSA: Exact Linear-Scan Attention for Fast and Memory-Light Vision Transformers",
+      "authors": [
+        "Chih-Chung Hsu",
+        "Xin-Di Ma",
+        "Wo-Ting Liao",
+        "Chia-Ming Lee"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Existing attention accelerators often trade exact softmax semantics, depend on fused Tensor Core kernels, or incur sequential depth that limits FP32 throughput on long sequences. We present \\textbf{ELSA}, an algorithmic reformulation of online softmax attention that (i)~preserves exact softmax semantics in real arithmetic with a \\emph{provable} $\\mathcal{O}(u\\log n)$ FP32 relative error bound; (ii)~casts the online softmax update as a prefix scan over an associative monoid $(m,S,W)$, yielding $O(n)$ extra memory and $O(\\log n)$ parallel depth; and (iii)~is Tensor-Core independent, implemented in Triton and CUDA C++, and deployable as a \\emph{drop-in replacement} requiring no retraining or weight modification. Unlike FlashAttention-2/3, which rely on HMMA/GMMA Tensor Core instructions and provide no compatible FP32 path, ELSA operates identically on A100s and resource-constrained edge devices such as Jetson TX2 -- making it the only hardware-agnostic exact-attention kernel that reduces parallel depth to $O(\\log n)$ at full precision. On A100 FP32 benchmarks (1K--16K tokens), ELSA delivers $1.3$--$3.5\\times$ speedup over memory-efficient SDPA and $1.97$--$2.27\\times$ on BERT; on Jetson TX2, ELSA achieves $1.5$--$1.6\\times$ over Math (64--900 tokens), with $17.8$--$20.2\\%$ throughput gains under LLaMA-13B offloading at $\\ge$32K. In FP16, ELSA approaches hardware-fused baselines at long sequences while retaining full FP32 capability, offering a unified kernel for high-precision inference across platforms. Our code and implementation are available at https://github.com/ming053l/ELSA.",
+      "doi": null,
+      "arxiv_id": "2604.23798v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2604.23798v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.CV"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "authors": [
+        "Tri Dao",
+        "Dan Fu",
+        "Stefano Ermon",
+        "Atri Rudra",
+        "Christopher Ré"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.52202/068431-1189",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W7133227460",
+      "citation_count": 485,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "authors": [
+        "Dao, Tri",
+        "Daniel Y. Fu",
+        "Stefano Ermon",
+        "Atri Rudra",
+        "Christopher Ré"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2205.14135",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4281758439",
+      "citation_count": 463,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2205.14135",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "authors": [
+        "Woosuk Kwon",
+        "Z. Li",
+        "Siyuan Zhuang",
+        "Ying Sheng",
+        "L Zheng",
+        "Cody Hao Yu",
+        "Joseph E. Gonzalez",
+        "Hao Zhang",
+        "Ion Gabriel Stoica"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3600006.3613165",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4387321091",
+      "citation_count": 1575,
+      "oa_status": "gold",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3600006.3613165",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+      "authors": [
+        "Tri Dao"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2307.08691",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4384648639",
+      "citation_count": 145,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2307.08691",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+      "authors": [
+        "Albert Gu",
+        "Tri Dao"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2312.00752",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389326242",
+      "citation_count": 1068,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2312.00752",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference",
+      "authors": [
+        "Benjamin C. Warner",
+        "Antoine Chaffin",
+        "Benjamin Clavié",
+        "Orion Weller",
+        "Oskar Hallström",
+        "Said Taghadouini",
+        "Alexis Gallagher",
+        "Raja Biswas",
+        "Faisal Ladhak",
+        "Tom Aarsen",
+        "Griffin Adams",
+        "Jeremy Howard",
+        "Iacopo Poli"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2025.acl-long.127",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4412886823",
+      "citation_count": 183,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2025.acl-long.127.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "LlamaFactory: Unified Efficient Fine-Tuning of 100+ Language Models",
+      "authors": [
+        "Yaowei Zheng",
+        "Richong Zhang",
+        "Junhao Zhang",
+        "YeYanhan YeYanhan",
+        "Zheyan Luo"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2024.acl-demos.38",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4402667093",
+      "citation_count": 384,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2024.acl-demos.38.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "authors": [
+        "Nelson F. Liu",
+        "Kevin Lin",
+        "John Hewitt",
+        "Ashwin Paranjape",
+        "Michele Bevilacqua",
+        "Fabio Petroni",
+        "Percy Liang"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1162/tacl_a_00638",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4391876619",
+      "citation_count": 1314,
+      "oa_status": "diamond",
+      "pdf_url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00638/2336043/tacl_a_00638.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+      "authors": [
+        "Joshua Ainslie",
+        "James Lee-Thorp",
+        "Michiel de Jong",
+        "Yury Zemlyanskiy",
+        "Federico Lebrón",
+        "Sumit Sanghai"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2023.emnlp-main.298",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389518760",
+      "citation_count": 391,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2023.emnlp-main.298.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Mistral 7B",
+      "authors": [
+        "Albert Q. Jiang",
+        "Alexandre Sablayrolles",
+        "Arthur Mensch",
+        "Chris Bamford",
+        "Devendra Singh Chaplot",
+        "Diego de Las Casas",
+        "Florian Bressand",
+        "Gianna Lengyel",
+        "Guillaume Lample",
+        "Lucile Saulnier",
+        "Lélio Renard Lavaud",
+        "Marie-Anne Lachaux",
+        "Pierre Stock",
+        "Teven Le Scao",
+        "Thibaut Lavril",
+        "Thomas J. Wang",
+        "Timothée Lacroix",
+        "William El Sayed"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2310.06825",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4387561528",
+      "citation_count": 322,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2310.06825",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Accurate predictions on small data with a tabular foundation model",
+      "authors": [
+        "Noah Hollmann",
+        "Samuel Müller",
+        "Lennart Purucker",
+        "Arjun Krishnakumar",
+        "Max Körfer",
+        "Shi Bin Hoo",
+        "Robin Tibor Schirrmeister",
+        "Frank Hutter"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41586-024-08328-6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4406170795",
+      "citation_count": 932,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.nature.com/articles/s41586-024-08328-6.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "OpenFold: retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization",
+      "authors": [
+        "Gustaf Ahdritz",
+        "Nazim Bouatta",
+        "Christina Floristean",
+        "Sachin Kadyan",
+        "Qinghui Xia",
+        "William Gerecke",
+        "Timothy J. O’Donnell",
+        "Daniel Berenberg",
+        "I. Fisk",
+        "Niccolò Zanichelli",
+        "Bo Zhang",
+        "Arkadiusz Nowaczynski",
+        "Bei Wang",
+        "Marta M. Stepniewska-Dziubinska",
+        "Shang Zhang",
+        "Adegoke A. Ojewole",
+        "Murat Efe Guney",
+        "Stella Biderman",
+        "Andrew M. Watkins",
+        "Stephen Ra",
+        "Pablo Ribalta Lorenzo",
+        "Lucas G. Nivón",
+        "Brian D. Weitzner",
+        "Yih‐En Andrew Ban",
+        "Shiyang Chen",
+        "Minjia Zhang",
+        "Conglong Li",
+        "Shuaiwen Leon Song",
+        "Yuxiong He",
+        "Peter Karl Sorger",
+        "Emad Mostaque",
+        "Zhao Zhang",
+        "Richard Bonneau",
+        "Mohammed AlQuraishi"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41592-024-02272-z",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4396895148",
+      "citation_count": 331,
+      "oa_status": "hybrid",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "EfficientViT: Memory Efficient Vision Transformer with Cascaded Group Attention",
+      "authors": [
+        "Xinyu Liu",
+        "Houwen Peng",
+        "Ningxin Zheng",
+        "Yuqing Yang",
+        "Han Hu",
+        "Yixuan Yuan"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2305.07027",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4376312661",
+      "citation_count": 37,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2305.07027",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Boltz-1 Democratizing Biomolecular Interaction Modeling",
+      "authors": [
+        "Jeremy Wohlwend",
+        "Gabriele Corso",
+        "Saro Passaro",
+        "Noah Getz",
+        "Mateo Reveiz",
+        "Ken Leidal",
+        "Wojtek Swiderski",
+        "Liam Atkinson",
+        "Tally Portnoi",
+        "Itamar Chinn",
+        "Jacob Silterra",
+        "Tommi Jaakkola",
+        "Regina Barzilay"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1101/2024.11.19.624167",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4404565424",
+      "citation_count": 487,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "DINOv2: Learning Robust Visual Features without Supervision",
+      "authors": [
+        "Maxime Oquab",
+        "Timothée Darcet",
+        "Théo Moutakanni",
+        "Huy Vo",
+        "Marc Szafraniec",
+        "Vasil Khalidov",
+        "Pierre Fernandez",
+        "Daniel Haziza",
+        "Francisco Massa",
+        "Alaaeldin El-Nouby",
+        "Mahmoud Assran",
+        "Nicolas Ballas",
+        "Wojciech Galuba",
+        "Russell Howes",
+        "Po-Yao Huang",
+        "Shang-Wen Li",
+        "Ishan Misra",
+        "Michael Rabbat",
+        "Vasu Dev Sharma",
+        "Gabriel Synnaeve",
+        "Hu Xu",
+        "Hervé Jeǵou",
+        "Julien Mairal",
+        "Patrick Labatut",
+        "Armand Joulin",
+        "Piotr Bojanowski"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2304.07193",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4366208220",
+      "citation_count": 1074,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2304.07193",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ChunkAttention: Efficient Self-Attention with Prefix-Aware KV Cache and Two-Phase Partition",
+      "authors": [
+        "Lu Ye",
+        "Ze Tao",
+        "Yong Huang",
+        "Yang Li"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2024.acl-long.623",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4402671542",
+      "citation_count": 30,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2024.acl-long.623.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "authors": [
+        "Woosuk Kwon",
+        "Zhuohan Li",
+        "Siyuan Zhuang",
+        "Ying Sheng",
+        "Lianmin Zheng",
+        "Cody Hao Yu",
+        "Joseph E. Gonzalez",
+        "Hao Zhang",
+        "Ion Gabriel Stoica"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2309.06180",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4386721862",
+      "citation_count": 49,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2309.06180",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Multimodal Learning With Transformers: A Survey",
+      "authors": [
+        "Peng Xu",
+        "Xiatian Zhu",
+        "David Andrew Clifton"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tpami.2023.3275156",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4376226279",
+      "citation_count": 978,
+      "oa_status": "hybrid",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/34/4359286/10123038.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "xLSTM: Extended Long Short-Term Memory",
+      "authors": [
+        "Maximilian Beck",
+        "Korbinian Pöppel",
+        "Markus Spanring",
+        "Andreas Auer",
+        "O. G. PRUDNIKOVA",
+        "Michael Kopp",
+        "Günter Klambauer",
+        "J. Brandstetter",
+        "Sepp Hochreiter"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2405.04517",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4396815331",
+      "citation_count": 92,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2405.04517",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "authors": [
+        "Zheng, Lianmin",
+        "Wei-Lin Chiang",
+        "Ying Sheng",
+        "Siyuan Zhuang",
+        "Zhanghao Wu",
+        "Yonghao Zhuang",
+        "Lin Zi",
+        "Zhuohan Li",
+        "Dacheng Li",
+        "Eric P. Xing",
+        "Hao Zhang",
+        "Joseph E. Gonzalez",
+        "Ion Gabriel Stoica"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2306.05685",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4380353763",
+      "citation_count": 492,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2306.05685",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "authors": [
+        "Tri Dao",
+        "Dan Fu",
+        "Stefano Ermon",
+        "Atri Rudra",
+        "Christopher Ré"
+      ],
+      "year": 2022,
+      "venue": "Advances in Neural Information Processing Systems 35",
+      "abstract": null,
+      "doi": "10.52202/068431-1189",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 710,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "FlashBEV: Fast and Memory-Efficient Exact BEV Transformation with IO-Awareness",
+      "authors": [
+        "Shunsuke Yokokawa",
+        "Hironori Kasahara"
+      ],
+      "year": 2026,
+      "venue": "Lecture Notes in Computer Science",
+      "abstract": null,
+      "doi": "10.1007/978-3-032-37362-5_29",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "FlashAttention and the Co-Evolution of Algorithms and Hardware: From IO-Awareness to Vector Optimization",
+      "authors": [
+        "Smitha Shivashankaraiah"
+      ],
+      "year": 2026,
+      "venue": "International Journal of AI, BigData, Computational and Management Studies",
+      "abstract": null,
+      "doi": "10.63282/3050-9416.ijaibdcms-v7i2p135",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Memory-Efficient Exact Backpropagation",
+      "authors": [
+        "Vladimer Khasia"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.7188238",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision",
+      "authors": [
+        "Jay Shah",
+        "Ganesh Bikshandi",
+        "Ying Zhang",
+        "Vijay Thakkar",
+        "Pradeep Ramani",
+        "Tri Dao"
+      ],
+      "year": 2024,
+      "venue": "Advances in Neural Information Processing Systems 37",
+      "abstract": null,
+      "doi": "10.52202/079017-2193",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 92,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Fast &amp; Power Efficient Voltage Translators for IO/Memory Sub-Systems",
+      "authors": [
+        "Mainak Ghosh",
+        "Poleboyina Manideep",
+        "Viraj Panchal",
+        "Priyanka Nirakari",
+        "Ramesh Karmungi"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI)",
+      "abstract": null,
+      "doi": "10.1109/iatmsi68868.2026.11465684",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "How relational features modulate attention, awareness and visual short-term memory (VSTM)",
+      "authors": [
+        "Aimee Martin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.14264/uql.2020.50",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Scratchpad Memory Optimizations",
+      "authors": [],
+      "year": null,
+      "venue": "Fast, Efficient and Predictable Memory Accesses",
+      "abstract": null,
+      "doi": "10.1007/1-4020-4822-x_4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Main Memory Optimizations",
+      "authors": [],
+      "year": null,
+      "venue": "Fast, Efficient and Predictable Memory Accesses",
+      "abstract": null,
+      "doi": "10.1007/1-4020-4822-x_5",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Efficient Spatio-Temporal Traffic Flow Prediction via Cyclic Temporal Awareness and Memory-Enhanced Attention",
+      "authors": [
+        "Huan Li",
+        "Ying Xia"
+      ],
+      "year": 2026,
+      "venue": "2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+      "abstract": null,
+      "doi": "10.1109/cscwd68734.2026.11582350",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "The attentional focus and conscious awareness",
+      "authors": [
+        "Nelson Cowan"
+      ],
+      "year": 1998,
+      "venue": "Attention and Memory",
+      "abstract": null,
+      "doi": "10.1093/acprof:oso/9780195119107.003.0007",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Occupied-Orbital Fast Multipole Method for Efficient Exact Exchange Evaluation",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1021/acs.jctc.7b00880.s001",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Fast, Efficient and Predictable Memory Accesses",
+      "authors": [],
+      "year": 2006,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/1-4020-4822-x",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Fast and memory efficient implementation of the exact PNN",
+      "authors": [
+        "P. Franti",
+        "T. Kaukoranta",
+        "D.-F. Shen",
+        "K.-S. Chang"
+      ],
+      "year": 2000,
+      "venue": "IEEE Transactions on Image Processing",
+      "abstract": null,
+      "doi": "10.1109/83.841516",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 51,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Analog In-Memory Computing Attention Mechanism for Fast and Energy-Efficient Large Language Models",
+      "authors": [
+        "Nathan Leroux",
+        "Paul-Philipp Manea",
+        "Chirag Sudarshan",
+        "Jan Finkbeiner",
+        "Sebastian Siegel",
+        "John Paul Strachan",
+        "Emre Neftci"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-5461915/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 5,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Introduction",
+      "authors": [],
+      "year": null,
+      "venue": "Fast, Efficient and Predictable Memory Accesses",
+      "abstract": null,
+      "doi": "10.1007/1-4020-4822-x_2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Abstract",
+      "authors": [],
+      "year": null,
+      "venue": "Fast, Efficient and Predictable Memory Accesses",
+      "abstract": null,
+      "doi": "10.1007/1-4020-4822-x_1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Summary",
+      "authors": [],
+      "year": null,
+      "venue": "Fast, Efficient and Predictable Memory Accesses",
+      "abstract": null,
+      "doi": "10.1007/1-4020-4822-x_7",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Future Work",
+      "authors": [],
+      "year": null,
+      "venue": "Fast, Efficient and Predictable Memory Accesses",
+      "abstract": null,
+      "doi": "10.1007/1-4020-4822-x_8",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Enabling fast and energy-efficient FM-index exact matching using processing-near-memory",
+      "authors": [
+        "Jose M. Herruzo",
+        "Ivan Fernandez",
+        "Sonia González-Navarro",
+        "Oscar Plata"
+      ],
+      "year": 2021,
+      "venue": "The Journal of Supercomputing",
+      "abstract": null,
+      "doi": "10.1007/s11227-021-03661-3",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 14,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 957,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 1923,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 371,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1004,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

@@ -1,0 +1,12 @@
+Dimension: {{ dimension }}
+
+{% for paper in papers %}
+=== {{ paper.label }}: "{{ paper.title }}" ===
+{% for f in paper.facts %}
+- fact_id: {{ f.fact_id }} | type: {{ f.type }} | page {{ f.page if f.page is not none else "?" }}
+  value: {{ f.value }}
+  quote: {{ f.quote }}
+  excerpt: {{ f.excerpt }}
+{% endfor %}
+{% endfor %}
+Compare the papers on {{ dimension | lower }}.

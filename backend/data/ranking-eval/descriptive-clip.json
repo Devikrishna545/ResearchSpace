@@ -1,0 +1,1612 @@
+{
+  "id": "descriptive-clip",
+  "category": "descriptive",
+  "query": "contrastive pretraining images and natural language from web data",
+  "target": {
+    "arxiv_id": "2103.00020"
+  },
+  "plan": {
+    "topic": "contrastive pretraining images and natural language from web data",
+    "sub_queries": [
+      "contrastive pretraining images and natural language from web data",
+      "contrastive pretraining images",
+      "natural language from web data"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "Unsupervised Multi-label Dataset Generation from Web Data",
+      "authors": [
+        "Carlos Roig",
+        "David Varas",
+        "Issey Masuda",
+        "Juan Carlos Riveiro",
+        "Elisenda Bou-Balust"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper presents a system towards the generation of multi-label datasets from web data in an unsupervised manner. To achieve this objective, this work comprises two main contributions, namely: a) the generation of a low-noise unsupervised single-label dataset from web-data, and b) the augmentation of labels in such dataset (from single label to multi label). The generation of a single-label dataset uses an unsupervised noise reduction phase (clustering and selection of clusters using anchors) obtaining a 85% of correctly labeled images. An unsupervised label augmentation process is then performed to assign new labels to the images in the dataset using the class activation maps and the uncertainty associated with each class. This process is applied to the dataset generated in this paper and a public dataset (Places365) achieving a 9.5% and 27% of extra labels in each dataset respectively, therefore demonstrating that the presented system can robustly enrich the initial dataset.",
+      "doi": null,
+      "arxiv_id": "2005.05623v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2005.05623v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A Comprehensive Review of State-of-The-Art Methods for Java Code Generation from Natural Language Text",
+      "authors": [
+        "Jessica López Espejel",
+        "Mahaman Sanoussi Yahaya Alassan",
+        "El Mehdi Chouham",
+        "Walid Dahhane",
+        "El Hassane Ettifouri"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Java Code Generation consists in generating automatically Java code from a Natural Language Text. This NLP task helps in increasing programmers' productivity by providing them with immediate solutions to the simplest and most repetitive tasks. Code generation is a challenging task because of the hard syntactic rules and the necessity of a deep understanding of the semantic aspect of the programming language. Many works tried to tackle this task using either RNN-based, or Transformer-based models. The latter achieved remarkable advancement in the domain and they can be divided into three groups: (1) encoder-only models, (2) decoder-only models, and (3) encoder-decoder models. In this paper, we provide a comprehensive review of the evolution and progress of deep learning models in Java code generation task. We focus on the most important methods and present their merits and limitations, as well as the objective functions used by the community. In addition, we provide a detailed description of datasets and evaluation metrics used in the literature. Finally, we discuss results of different models on CONCODE dataset, then propose some future directions.",
+      "doi": null,
+      "arxiv_id": "2306.06371v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2306.06371v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "UrbanCLIP: Learning Text-enhanced Urban Region Profiling with Contrastive Language-Image Pretraining from the Web",
+      "authors": [
+        "Yibo Yan",
+        "Haomin Wen",
+        "Siru Zhong",
+        "Wei Chen",
+        "Haodong Chen",
+        "Qingsong Wen",
+        "Roger Zimmermann",
+        "Yuxuan Liang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Urban region profiling from web-sourced data is of utmost importance for urban planning and sustainable development. We are witnessing a rising trend of LLMs for various fields, especially dealing with multi-modal data research such as vision-language learning, where the text modality serves as a supplement information for the image. Since textual modality has never been introduced into modality combinations in urban region profiling, we aim to answer two fundamental questions in this paper: i) Can textual modality enhance urban region profiling? ii) and if so, in what ways and with regard to which aspects? To answer the questions, we leverage the power of Large Language Models (LLMs) and introduce the first-ever LLM-enhanced framework that integrates the knowledge of textual modality into urban imagery profiling, named LLM-enhanced Urban Region Profiling with Contrastive Language-Image Pretraining (UrbanCLIP). Specifically, it first generates a detailed textual description for each satellite image by an open-source Image-to-Text LLM. Then, the model is trained on the image-text pairs, seamlessly unifying natural language supervision for urban visual representation learning, jointly with contrastive loss and language modeling loss. Results on predicting three urban indicators in four major Chinese metropolises demonstrate its superior performance, with an average improvement of 6.1% on R^2 compared to the state-of-the-art methods. Our code and the image-language dataset will be released upon paper notification.",
+      "doi": null,
+      "arxiv_id": "2310.18340v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2310.18340v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A Holistic Natural Language Generation Framework for the Semantic Web",
+      "authors": [
+        "Axel-Cyrille Ngonga Ngomo",
+        "Diego Moussallem",
+        "Lorenz Bühmann"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "With the ever-growing generation of data for the Semantic Web comes an increasing demand for this data to be made available to non-semantic Web experts. One way of achieving this goal is to translate the languages of the Semantic Web into natural language. We present LD2NL, a framework for verbalizing the three key languages of the Semantic Web, i.e., RDF, OWL, and SPARQL. Our framework is based on a bottom-up approach to verbalization. We evaluated LD2NL in an open survey with 86 persons. Our results suggest that our framework can generate verbalizations that are close to natural languages and that can be easily understood by non-experts. Therewith, it enables non-domain experts to interpret Semantic Web data with more than 91\\% of the accuracy of domain experts.",
+      "doi": null,
+      "arxiv_id": "1911.01248v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1911.01248v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.DB"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Time, Tense and Aspect in Natural Language Database Interfaces",
+      "authors": [
+        "I. Androutsopoulos",
+        "G. D. Ritchie",
+        "P. Thanisch"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Most existing natural language database interfaces (NLDBs) were designed to be used with database systems that provide very limited facilities for manipulating time-dependent data, and they do not support adequately temporal linguistic mechanisms (verb tenses, temporal adverbials, temporal subordinate clauses, etc.). The database community is becoming increasingly interested in temporal database systems, that are intended to store and manipulate in a principled manner information not only about the present, but also about the past and future. When interfacing to temporal databases, supporting temporal linguistic mechanisms becomes crucial.\n  We present a framework for constructing natural language interfaces for temporal databases (NLTDBs), that draws on research in tense and aspect theories, temporal logics, and temporal databases. The framework consists of a temporal intermediate representation language, called TOP, an HPSG grammar that maps a wide range of questions involving temporal mechanisms to appropriate TOP expressions, and a provably correct method for translating from TOP to TSQL2, TSQL2 being a recently proposed temporal extension of the SQL database language. This framework was employed to implement a prototype NLTDB using ALE and Prolog.",
+      "doi": null,
+      "arxiv_id": "9803002v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/cmp-lg/9803002v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "An Open Natural Language Processing Development Framework for EHR-based Clinical Research: A case demonstration using the National COVID Cohort Collaborative (N3C)",
+      "authors": [
+        "Sijia Liu",
+        "Andrew Wen",
+        "Liwei Wang",
+        "Huan He",
+        "Sunyang Fu",
+        "Robert Miller",
+        "Andrew Williams",
+        "Daniel Harris",
+        "Ramakanth Kavuluru",
+        "Mei Liu",
+        "Noor Abu-el-rub",
+        "Dalton Schutte",
+        "Rui Zhang",
+        "Masoud Rouhizadeh",
+        "John D. Osborne",
+        "Yongqun He",
+        "Umit Topaloglu",
+        "Stephanie S Hong",
+        "Joel H Saltz",
+        "Thomas Schaffter",
+        "Emily Pfaff",
+        "Christopher G. Chute",
+        "Tim Duong",
+        "Melissa A. Haendel",
+        "Rafael Fuentes",
+        "Peter Szolovits",
+        "Hua Xu",
+        "Hongfang Liu",
+        "National COVID Cohort Collaborative",
+        "Natural Language Processing",
+        " Subgroup",
+        "National COVID Cohort Collaborative"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "While we pay attention to the latest advances in clinical natural language processing (NLP), we can notice some resistance in the clinical and translational research community to adopt NLP models due to limited transparency, interpretability, and usability. In this study, we proposed an open natural language processing development framework. We evaluated it through the implementation of NLP algorithms for the National COVID Cohort Collaborative (N3C). Based on the interests in information extraction from COVID-19 related clinical notes, our work includes 1) an open data annotation process using COVID-19 signs and symptoms as the use case, 2) a community-driven ruleset composing platform, and 3) a synthetic text data generation workflow to generate texts for information extraction tasks without involving human subjects. The corpora were derived from texts from three different institutions (Mayo Clinic, University of Kentucky, University of Minnesota). The gold standard annotations were tested with a single institution's (Mayo) ruleset. This resulted in performances of 0.876, 0.706, and 0.694 in F-scores for Mayo, Minnesota, and Kentucky test datasets, respectively. The study as a consortium effort of the N3C NLP subgroup demonstrates the feasibility of creating a federated NLP algorithm development and benchmarking platform to enhance multi-institution clinical NLP study and adoption. Although we use COVID-19 as a use case in this effort, our framework is general enough to be applied to other domains of interest in clinical NLP.",
+      "doi": null,
+      "arxiv_id": "2110.10780v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2110.10780v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.IR"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "An Automated Multiple-Choice Question Generation Using Natural Language Processing Techniques",
+      "authors": [
+        "Chidinma A. Nwafor",
+        "Ikechukwu E. Onyenwe"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Automatic multiple-choice question generation (MCQG) is a useful yet challenging task in Natural Language Processing (NLP). It is the task of automatic generation of correct and relevant questions from textual data. Despite its usefulness, manually creating sizeable, meaningful and relevant questions is a time-consuming and challenging task for teachers. In this paper, we present an NLP-based system for automatic MCQG for Computer-Based Testing Examination (CBTE).We used NLP technique to extract keywords that are important words in a given lesson material. To validate that the system is not perverse, five lesson materials were used to check the effectiveness and efficiency of the system. The manually extracted keywords by the teacher were compared to the auto-generated keywords and the result shows that the system was capable of extracting keywords from lesson materials in setting examinable questions. This outcome is presented in a user-friendly interface for easy accessibility.",
+      "doi": null,
+      "arxiv_id": "2103.14757v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2103.14757v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Constraints on dark energy from H II starburst galaxy apparent magnitude versus redshift data",
+      "authors": [
+        "Data Mania",
+        "Bharat Ratra"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper we use H II starburst galaxy apparent magnitude versus redshift data from Siegel et al. (2005) to constrain dark energy cosmological model parameters. These constraints are generally consistent with those derived using other data sets, but are not as restrictive as the tightest currently available constraints.",
+      "doi": null,
+      "arxiv_id": "1110.5626v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1110.5626v1",
+      "raw_payload": {
+        "categories": [
+          "astro-ph.CO"
+        ],
+        "primary_category": "astro-ph.CO"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Data Encoding for Byzantine-Resilient Distributed Optimization",
+      "authors": [
+        "Deepesh Data",
+        "Linqi Song",
+        "Suhas Diggavi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We study distributed optimization in the presence of Byzantine adversaries, where both data and computation are distributed among $m$ worker machines, $t$ of which may be corrupt. The compromised nodes may collaboratively and arbitrarily deviate from their pre-specified programs, and a designated (master) node iteratively computes the model/parameter vector for generalized linear models. In this work, we primarily focus on two iterative algorithms: Proximal Gradient Descent (PGD) and Coordinate Descent (CD). Gradient descent (GD) is a special case of these algorithms. PGD is typically used in the data-parallel setting, where data is partitioned across different samples, whereas, CD is used in the model-parallelism setting, where data is partitioned across the parameter space.\n  In this paper, we propose a method based on data encoding and error correction over real numbers to combat adversarial attacks. We can tolerate up to $t\\leq \\lfloor\\frac{m-1}{2}\\rfloor$ corrupt worker nodes, which is information-theoretically optimal. We give deterministic guarantees, and our method does not assume any probability distribution on the data. We develop a {\\em sparse} encoding scheme which enables computationally efficient data encoding and decoding. We demonstrate a trade-off between the corruption threshold and the resource requirements (storage, computational, and communication complexity). As an example, for $t\\leq\\frac{m}{3}$, our scheme incurs only a {\\em constant} overhead on these resources, over that required by the plain distributed PGD/CD algorithms which provide no adversarial protection. To the best of our knowledge, ours is the first paper that makes CD secure against adversarial attacks.\n  Our encoding scheme extends efficiently to the data streaming model and for stochastic gradient descent (SGD). We also give experimental results to show the efficacy of our proposed schemes.",
+      "doi": null,
+      "arxiv_id": "1907.02664v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1907.02664v2",
+      "raw_payload": {
+        "categories": [
+          "cs.DC",
+          "cs.CR",
+          "cs.LG"
+        ],
+        "primary_category": "cs.DC"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Procedural Pretraining: Warming Up Language Models with Abstract Data",
+      "authors": [
+        "Liangze Jiang",
+        "Zachary Shinnick",
+        "Anton van den Hengel",
+        "Hemanth Saratchandran",
+        "Damien Teney"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Pretraining language models directly on web-scale corpora is the de facto paradigm. We study an alternative where the model is initially exposed to abstract structured data to ease the subsequent acquisition of rich semantic knowledge, much like humans learning simple logic and mathematics before higher reasoning. We focus on procedural data, generated by formal languages and other simple algorithms, as such abstract data. We first diagnose the algorithmic skills that different forms of procedural data can improve, often significantly. For example, the accuracy of context recall (Needle-in-a-haystack) jumps from 10 to 98% when a model is pretrained on Dyck sequences (balanced brackets). Second, we study how these gains are reflected in pretraining larger models (up to 1.3B). We find that front-loading as little as 0.1 to 0.3% procedural data significantly outperforms standard pretraining on natural language, code, and informal mathematics (C4, CodeParrot, and DeepMind-Math datasets). Notably, this also enables the models to reach the same loss value with only 55/67/86% of the original data and thus a comparable reduction in FLOPs. Third, we explore the mechanisms behind the benefits and find that procedural pretraining instills non-trivial structure in both attention and MLP layers. The former is particularly important for structured domains (e.g. code), and the latter for language. Finally, we lay a path for combining multiple forms of procedural data. Our results show that procedural pretraining is a simple, lightweight means of improving performance and accelerating language model pretraining, ultimately suggesting the promise of disentangling knowledge acquisition from reasoning in LLMs.",
+      "doi": null,
+      "arxiv_id": "2601.21725v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2601.21725v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Byzantine-Resilient SGD in High Dimensions on Heterogeneous Data",
+      "authors": [
+        "Deepesh Data",
+        "Suhas Diggavi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We study distributed stochastic gradient descent (SGD) in the master-worker architecture under Byzantine attacks. We consider the heterogeneous data model, where different workers may have different local datasets, and we do not make any probabilistic assumptions on data generation. At the core of our algorithm, we use the polynomial-time outlier-filtering procedure for robust mean estimation proposed by Steinhardt et al. (ITCS 2018) to filter-out corrupt gradients. In order to be able to apply their filtering procedure in our {\\em heterogeneous} data setting where workers compute {\\em stochastic} gradients, we derive a new matrix concentration result, which may be of independent interest.\n  We provide convergence analyses for smooth strongly-convex and non-convex objectives. We derive our results under the bounded variance assumption on local stochastic gradients and a {\\em deterministic} condition on datasets, namely, gradient dissimilarity; and for both these quantities, we provide concrete bounds in the statistical heterogeneous data model. We give a trade-off between the mini-batch size for stochastic gradients and the approximation error. Our algorithm can tolerate up to $\\frac{1}{4}$ fraction Byzantine workers. It can find approximate optimal parameters in the strongly-convex setting exponentially fast and reach to an approximate stationary point in the non-convex setting with a linear speed, thus, matching the convergence rates of vanilla SGD in the Byzantine-free setting.\n  We also propose and analyze a Byzantine-resilient SGD algorithm with gradient compression, where workers send $k$ random coordinates of their gradients. Under mild conditions, we show a $\\frac{d}{k}$-factor saving in communication bits as well as decoding complexity over our compression-free algorithm without affecting its convergence rate (order-wise) and the approximation error.",
+      "doi": null,
+      "arxiv_id": "2005.07866v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2005.07866v1",
+      "raw_payload": {
+        "categories": [
+          "stat.ML",
+          "cs.CR",
+          "cs.DC",
+          "cs.LG"
+        ],
+        "primary_category": "stat.ML"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Modular Mechanistic Networks: On Bridging Mechanistic and Phenomenological Models with Deep Neural Networks in Natural Language Processing",
+      "authors": [
+        "Simon Dobnik",
+        "John D. Kelleher"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Natural language processing (NLP) can be done using either top-down (theory driven) and bottom-up (data driven) approaches, which we call mechanistic and phenomenological respectively. The approaches are frequently considered to stand in opposition to each other. Examining some recent approaches in deep learning we argue that deep neural networks incorporate both perspectives and, furthermore, that leveraging this aspect of deep learning may help in solving complex problems within language technology, such as modelling language and perception in the domain of spatial cognition.",
+      "doi": null,
+      "arxiv_id": "1807.09844v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1807.09844v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.LG",
+          "cs.NE",
+          "stat.ML"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "TerraGen: A Unified Multi-Task Layout Generation Framework for Remote Sensing Data Augmentation",
+      "authors": [
+        "Datao Tang",
+        "Hao Wang",
+        "Yudeng Xin",
+        "Hui Qiao",
+        "Dongsheng Jiang",
+        "Yin Li",
+        "Zhiheng Yu",
+        "Xiangyong Cao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Remote sensing vision tasks require extensive labeled data across multiple, interconnected domains. However, current generative data augmentation frameworks are task-isolated, i.e., each vision task requires training an independent generative model, and ignores the modeling of geographical information and spatial constraints. To address these issues, we propose \\textbf{TerraGen}, a unified layout-to-image generation framework that enables flexible, spatially controllable synthesis of remote sensing imagery for various high-level vision tasks, e.g., detection, segmentation, and extraction. Specifically, TerraGen introduces a geographic-spatial layout encoder that unifies bounding box and segmentation mask inputs, combined with a multi-scale injection scheme and mask-weighted loss to explicitly encode spatial constraints, from global structures to fine details. Also, we construct the first large-scale multi-task remote sensing layout generation dataset containing 45k images and establish a standardized evaluation protocol for this task. Experimental results show that our TerraGen can achieve the best generation image quality across diverse tasks. Additionally, TerraGen can be used as a universal data-augmentation generator, enhancing downstream task performance significantly and demonstrating robust cross-task generalisation in both full-data and few-shot scenarios.",
+      "doi": null,
+      "arxiv_id": "2510.21391v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2510.21391v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "AeroGen: Enhancing Remote Sensing Object Detection with Diffusion-Driven Data Generation",
+      "authors": [
+        "Datao Tang",
+        "Xiangyong Cao",
+        "Xuan Wu",
+        "Jialin Li",
+        "Jing Yao",
+        "Xueru Bai",
+        "Dongsheng Jiang",
+        "Yin Li",
+        "Deyu Meng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Remote sensing image object detection (RSIOD) aims to identify and locate specific objects within satellite or aerial imagery. However, there is a scarcity of labeled data in current RSIOD datasets, which significantly limits the performance of current detection algorithms. Although existing techniques, e.g., data augmentation and semi-supervised learning, can mitigate this scarcity issue to some extent, they are heavily dependent on high-quality labeled data and perform worse in rare object classes. To address this issue, this paper proposes a layout-controllable diffusion generative model (i.e. AeroGen) tailored for RSIOD. To our knowledge, AeroGen is the first model to simultaneously support horizontal and rotated bounding box condition generation, thus enabling the generation of high-quality synthetic images that meet specific layout and object category requirements. Additionally, we propose an end-to-end data augmentation framework that integrates a diversity-conditioned generator and a filtering mechanism to enhance both the diversity and quality of generated data. Experimental results demonstrate that the synthetic data produced by our method are of high quality and diversity. Furthermore, the synthetic RSIOD data can significantly improve the detection performance of existing RSIOD models, i.e., the mAP metrics on DIOR, DIOR-R, and HRSC datasets are improved by 3.7%, 4.3%, and 2.43%, respectively. The code is available at https://github.com/Sonettoo/AeroGen.",
+      "doi": null,
+      "arxiv_id": "2411.15497v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2411.15497v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Challenges Encountered in Turkish Natural Language Processing Studies",
+      "authors": [
+        "Kadir Tohma",
+        "Yakup Kutlu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Natural language processing is a branch of computer science that combines artificial intelligence with linguistics. It aims to analyze a language element such as writing or speaking with software and convert it into information. Considering that each language has its own grammatical rules and vocabulary diversity, the complexity of the studies in this field is somewhat understandable. For instance, Turkish is a very interesting language in many ways. Examples of this are agglutinative word structure, consonant/vowel harmony, a large number of productive derivational morphemes (practically infinite vocabulary), derivation and syntactic relations, a complex emphasis on vocabulary and phonological rules. In this study, the interesting features of Turkish in terms of natural language processing are mentioned. In addition, summary info about natural language processing techniques, systems and various sources developed for Turkish are given.",
+      "doi": null,
+      "arxiv_id": "2101.11436v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2101.11436v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Can You Tell Me How to Get Past Sesame Street? Sentence-Level Pretraining Beyond Language Modeling",
+      "authors": [
+        "Alex Wang",
+        "Jan Hula",
+        "Patrick Xia",
+        "Raghavendra Pappagari",
+        "R. Thomas McCoy",
+        "Roma Patel",
+        "Najoung Kim",
+        "Ian Tenney",
+        "Yinghui Huang",
+        "Katherin Yu",
+        "Shuning Jin",
+        "Berlin Chen",
+        "Benjamin Van Durme",
+        "Edouard Grave",
+        "Ellie Pavlick",
+        "Samuel R. Bowman"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Natural language understanding has recently seen a surge of progress with the use of sentence encoders like ELMo (Peters et al., 2018a) and BERT (Devlin et al., 2019) which are pretrained on variants of language modeling. We conduct the first large-scale systematic study of candidate pretraining tasks, comparing 19 different tasks both as alternatives and complements to language modeling. Our primary results support the use language modeling, especially when combined with pretraining on additional labeled-data tasks. However, our results are mixed across pretraining tasks and show some concerning trends: In ELMo's pretrain-then-freeze paradigm, random baselines are worryingly strong and results vary strikingly across target tasks. In addition, fine-tuning BERT on an intermediate task often negatively impacts downstream transfer. In a more positive trend, we see modest gains from multitask training, suggesting the development of more sophisticated multitask and transfer learning techniques as an avenue for further research.",
+      "doi": null,
+      "arxiv_id": "1812.10860v5",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1812.10860v5",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Image-based Natural Language Understanding Using 2D Convolutional Neural Networks",
+      "authors": [
+        "Erinc Merdivan",
+        "Anastasios Vafeiadis",
+        "Dimitrios Kalatzis",
+        "Sten Hanke",
+        "Johannes Kropf",
+        "Konstantinos Votis",
+        "Dimitrios Giakoumis",
+        "Dimitrios Tzovaras",
+        "Liming Chen",
+        "Raouf Hamzaoui",
+        "Matthieu Geist"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We propose a new approach to natural language understanding in which we consider the input text as an image and apply 2D Convolutional Neural Networks to learn the local and global semantics of the sentences from the variations ofthe visual patterns of words. Our approach demonstrates that it is possible to get semantically meaningful features from images with text without using optical character recognition and sequential processing pipelines, techniques that traditional Natural Language Understanding algorithms require. To validate our approach, we present results for two applications: text classification and dialog modeling. Using a 2D Convolutional Neural Network, we were able to outperform the state-of-art accuracy results of non-Latin alphabet-based text classification and achieved promising results for eight text classification datasets. Furthermore, our approach outperformed the memory networks when using out of vocabulary entities fromtask 4 of the bAbI dialog dataset.",
+      "doi": null,
+      "arxiv_id": "1810.10401v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1810.10401v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A 20 Gbps Data Transmitting ASIC with PAM4 for Particle Physics Experiments",
+      "authors": [
+        "Li Zhang",
+        "Datao Gong",
+        "Suen Hou",
+        "Guanming Huang",
+        "Xing Huang",
+        "Chonghan Liu",
+        "Tiankuan Liu",
+        "Hanhan Sun",
+        "Quan Sun",
+        "Xiangming Sun",
+        "Wei Zhang",
+        "Jingbo Ye"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We present the design principle and test results of a data transmitting ASIC, GBS20, for particle physics experiments. The goal of GBS20 will be an ASIC that employs two serializers each from the 10.24 Gbps lpGBT SerDes, sharing the PLL also from lpGBT. A PAM4 encoder plus a VCSEL driver will be implemented in the same die to use the same clock system, eliminating the need of CDRs in the PAM4 encoder. This way the transmitter module, GBT20, developed using the GBS20 ASIC, will have the exact lpGBT data interface and transmission protocol, with an output up to 20.48 Gbps over one fiber. With PAM4 embedded FPGAs at the receiving end, GBT20 will halve the fibers needed in a system and better use the input bandwidth of the FPGA. A prototype, GBS20v0 is fabricated using a commercial 65 nm CMOS technology. This prototype has two serializers and a PAM4 encoder sharing the lpGBT PLL, but no user data input. An internal PRBS generator provides data to the serializers. GBS20v0 is tested barely up to 20.48 Gbps. With lessons learned from this prototype, we are designing the second prototype, GBS20v1, that will have 16 user data input channels each at 1.28 Gbps. We present the design concept of the GBS20 ASIC and the GBT20 module, the preliminary test results, and lessons learned from GBS20v0 and the design of GBS20v1 which will be not only a test chip but also a user chip with 16 input data channels.",
+      "doi": null,
+      "arxiv_id": "2010.16064v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2010.16064v1",
+      "raw_payload": {
+        "categories": [
+          "physics.ins-det",
+          "hep-ex"
+        ],
+        "primary_category": "physics.ins-det"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FASTUS: A Cascaded Finite-State Transducer for Extracting Information from Natural-Language Text",
+      "authors": [
+        "Jerry R. Hobbs",
+        "Douglas Appelt",
+        "John Bear",
+        "David Israel",
+        "Megumi Kameyama",
+        "Mark Stickel",
+        "Mabry Tyson"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "FASTUS is a system for extracting information from natural language text for entry into a database and for other applications. It works essentially as a cascaded, nondeterministic finite-state automaton. There are five stages in the operation of FASTUS. In Stage 1, names and other fixed form expressions are recognized. In Stage 2, basic noun groups, verb groups, and prepositions and some other particles are recognized. In Stage 3, certain complex noun groups and verb groups are constructed. Patterns for events of interest are identified in Stage 4 and corresponding ``event structures'' are built. In Stage 5, distinct event structures that describe the same event are identified and merged, and these are used in generating database entries. This decomposition of language processing enables the system to do exactly the right amount of domain-independent syntax, so that domain-dependent semantic and pragmatic processing can be applied to the right larger-scale structures. FASTUS is very efficient and effective, and has been used successfully in a number of applications.",
+      "doi": null,
+      "arxiv_id": "9705013v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/cmp-lg/9705013v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Lexpresso: a Controlled Natural Language",
+      "authors": [
+        "Adam Saulwick"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper presents an overview of `Lexpresso', a Controlled Natural Language developed at the Defence Science & Technology Organisation as a bidirectional natural language interface to a high-level information fusion system. The paper describes Lexpresso's main features including lexical coverage, expressiveness and range of linguistic syntactic and semantic structures. It also touches on its tight integration with a formal semantic formalism and tentatively classifies it against the PENS system.",
+      "doi": null,
+      "arxiv_id": "1407.1933v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1407.1933v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations",
+      "authors": [
+        "Ranjay Krishna",
+        "Yuke Zhu",
+        "Oliver Groth",
+        "Justin Johnson",
+        "Kenji Hata",
+        "Joshua Kravitz",
+        "Stephanie Y Chen",
+        "Yannis Kalantidis",
+        "Li-Jia Li",
+        "David A. Shamma",
+        "Michael S. Bernstein",
+        "Li Fei-Fei"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11263-016-0981-7",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2277195237",
+      "citation_count": 5329,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007%2Fs11263-016-0981-7.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A large annotated corpus for learning natural language inference",
+      "authors": [
+        "Samuel R. Bowman",
+        "Gabor Angeli",
+        "Christopher E. Potts",
+        "Christopher D. Manning"
+      ],
+      "year": 2015,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/d15-1075",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W1840435438",
+      "citation_count": 3497,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/D15-1075.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing",
+      "authors": [
+        "Pengfei Liu",
+        "Weizhe Yuan",
+        "Jinlan Fu",
+        "Zhengbao Jiang",
+        "Hiroaki Hayashi",
+        "Graham Neubig"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3560815",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3185341429",
+      "citation_count": 3879,
+      "oa_status": "bronze",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3560815",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models",
+      "authors": [
+        "Jiahui Yu",
+        "Zirui Wang",
+        "Vijay K. Vasudevan",
+        "Legg Yeung",
+        "Mojtaba Seyedhosseini",
+        "Yonghui Wu"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2205.01917",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4229042118",
+      "citation_count": 518,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2205.01917",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Learning in Medical Image Analysis",
+      "authors": [
+        "Dinggang G. Shen",
+        "Guorong Wu",
+        "Heung‐Il Suk"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1146/annurev-bioeng-071516-044442",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2533800772",
+      "citation_count": 4950,
+      "oa_status": "bronze",
+      "pdf_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-bioeng-071516-044442",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "authors": [],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.emnlp-main",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4205807230",
+      "citation_count": 1687,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2021.emnlp-main.0.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey on Hate Speech Detection using Natural Language Processing",
+      "authors": [
+        "Anna Grau Schmidt",
+        "Michael Wiegand"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/w17-1101",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2740168486",
+      "citation_count": 1426,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/W17-1101.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+      "authors": [
+        "Junnan Li",
+        "Dongxu Li",
+        "Silvio Savarese",
+        "Steven C. H. Hoi"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2301.12597",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4318718936",
+      "citation_count": 924,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2301.12597",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation",
+      "authors": [
+        "Junnan Li",
+        "Dongxu Li",
+        "Caiming Xiong",
+        "Steven C. H. Hoi"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2201.12086",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4226182655",
+      "citation_count": 874,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2201.12086",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text\\n Transformer",
+      "authors": [
+        "Colin Raffel",
+        "Noam Shazeer",
+        "Adam Roberts",
+        "Katherine Lee",
+        "Sharan Narang",
+        "Michael Matena",
+        "Yanqi Zhou",
+        "Wei Li",
+        "Peter J. Liu"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.1910.10683",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4288089799",
+      "citation_count": 8346,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1910.10683",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "authors": [],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2020.emnlp-main",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2489487449",
+      "citation_count": 1287,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.emnlp-main.0.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "PaLM: Scaling Language Modeling with Pathways",
+      "authors": [
+        "Aakanksha Chowdhery",
+        "Sharan Narang",
+        "Jacob Devlin",
+        "Maarten Bosma",
+        "Gaurav Mishra",
+        "Adam Roberts",
+        "Paul Barham",
+        "Hyung Won Chung",
+        "Charles A. Sutton",
+        "Sebastian Gehrmann",
+        "Parker Schuh",
+        "Kensen Shi",
+        "Sasha Tsvyashchenko",
+        "Joshua Maynez",
+        "Abhishek S. Rao",
+        "Parker Barnes",
+        "Yi Hong Tay",
+        "Noam Shazeer",
+        "Vinodkumar Prabhakaran",
+        "Emily Reif",
+        "Nan Du",
+        "Ben Hutchinson",
+        "Reiner Pope",
+        "James T. Bradbury",
+        "Jacob Austin",
+        "Michael Isard",
+        "Guy Gur-Ari",
+        "Pengcheng Yin",
+        "Toju Duke",
+        "Anselm Levskaya",
+        "Sanjay Ghemawat",
+        "Sunipa Dev",
+        "Henryk Michalewski",
+        "Xavier García",
+        "Vedant Misra",
+        "Kevin G. Robinson",
+        "Liam Fedus",
+        "Denny Zhou",
+        "Daphne Ippolito",
+        "David Luan",
+        "Hyeontaek Lim",
+        "Barret Zoph",
+        "Alexander Spiridonov",
+        "Ryan Sepassi",
+        "D. Dohan",
+        "Shivani Agrawal",
+        "Mark Omernick",
+        "Andrew M. Dai",
+        "Thanumalayan Sankaranarayana Pillai",
+        "Marie Pellat",
+        "Aitor Lewkowycz",
+        "Érica Rodrigues Moreira",
+        "Rewon Child",
+        "Oleksandr Polozov",
+        "Katherine Lee",
+        "Zongwei Zhou",
+        "Xuezhi Wang",
+        "Brennan Saeta",
+        "Mark Díaz",
+        "Orhan Fırat",
+        "Michele Catasta",
+        "Wei, Jason",
+        "Meier-Hellstern, Kathy",
+        "Douglas Eck",
+        "Jeff Dean",
+        "Slav Petrov",
+        "Noah Fiedel"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2204.02311",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4224308101",
+      "citation_count": 2138,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2204.02311",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "scBERT as a large-scale pretrained deep language model for cell type annotation of single-cell RNA-seq data",
+      "authors": [
+        "Fan Yang",
+        "Wenchuan Wang",
+        "Fang Wang",
+        "Yuan Fang",
+        "Duyu Tang",
+        "Junzhou Huang",
+        "Hui Juan Lu",
+        "Jianhua Yao"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s42256-022-00534-z",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4297243391",
+      "citation_count": 642,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "MedCLIP: Contrastive Learning from Unpaired Medical Images and Text",
+      "authors": [
+        "Zifeng Wang",
+        "Zhenbang Wu",
+        "Dinesh Chandra Agarwal",
+        "Jimeng Sun"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2022.emnlp-main.256",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4385573131",
+      "citation_count": 716,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2022.emnlp-main.256.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey of Large Language Models",
+      "authors": [
+        "Wayne Xin Zhao",
+        "Kun Zhou",
+        "Junyi Li",
+        "Tianyi Tang",
+        "Zican Dong",
+        "Yupeng Hou",
+        "Beichen Zhang",
+        "Yingqian Min",
+        "Junjie Zhang",
+        "Peiyu Liu",
+        "Xiaolei Wang",
+        "Yifan Du",
+        "Yushuo Chen",
+        "Yushuo Chen",
+        "Zhipeng Chen",
+        "Jinhao Jiang",
+        "Ruiyang Ren",
+        "Yifan Li",
+        "Xinyu Tang",
+        "Peiyu Liu",
+        "Yiwen Hu",
+        "Jian‐Yun Nie",
+        "Ji-Rong Wen"
+      ],
+      "year": 2026,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11704-026-60308-3",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4362515116",
+      "citation_count": 1558,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11704-026-60308-3.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention in Natural Language Processing",
+      "authors": [
+        "Andrea Galassi",
+        "Marco Lippi",
+        "Paolo Torroni"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tnnls.2020.3019893",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3031696893",
+      "citation_count": 641,
+      "oa_status": "hybrid",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/5962385/9559436/09194070.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Unified Vision-Language Pre-Training for Image Captioning and VQA",
+      "authors": [
+        "Luowei Zhou",
+        "Hamid Palangi",
+        "Lei Zhang",
+        "Houdong Hu",
+        "Jason J. Corso",
+        "Jianfeng Gao"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v34i07.7005",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2997591391",
+      "citation_count": 855,
+      "oa_status": "diamond",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A survey on large language model based autonomous agents",
+      "authors": [
+        "Lei Wang",
+        "Chen Ma",
+        "Xueyang Feng",
+        "Zeyu Zhang",
+        "Hao Yuan Yang",
+        "Jingsen Zhang",
+        "Zhiyuan Chen",
+        "Jiakai Tang",
+        "Xu Chen",
+        "Yankai Lin",
+        "Wayne Xin Zhao",
+        "Zhewei Wei",
+        "Ji-Rong Wen"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11704-024-40231-1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4393065402",
+      "citation_count": 1627,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11704-024-40231-1.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "SimVLM: Simple Visual Language Model Pretraining with Weak Supervision",
+      "authors": [
+        "Zirui Wang",
+        "Jiahui Yu",
+        "Adams Wei Yu",
+        "Zihang Dai",
+        "Yulia Tsvetkov",
+        "Yuan Jie Cao"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2108.10904",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3193402170",
+      "citation_count": 343,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2108.10904",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CLIPScore: A Reference-free Evaluation Metric for Image Captioning",
+      "authors": [
+        "Jack Hessel",
+        "Ari Holtzman",
+        "Maxwell Forbes",
+        "Ronan Joseph Le Bras",
+        "Yejin Choi"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.emnlp-main.595",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3153469116",
+      "citation_count": 1135,
+      "oa_status": "hybrid",
+      "pdf_url": "https://aclanthology.org/2021.emnlp-main.595.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "UrbanCLIP: Learning Text-enhanced Urban Region Profiling with Contrastive Language-Image Pretraining from the Web",
+      "authors": [
+        "Yibo Yan",
+        "Haomin Wen",
+        "Siru Zhong",
+        "Wei Chen",
+        "Haodong Chen",
+        "Qingsong Wen",
+        "Roger Zimmermann",
+        "Yuxuan Liang"
+      ],
+      "year": 2024,
+      "venue": "Proceedings of the ACM Web Conference 2024",
+      "abstract": null,
+      "doi": "10.1145/3589334.3645378",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 73,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks",
+      "authors": [
+        "Wenhan Yang",
+        "Jingdong Gao",
+        "Baharan Mirzasoleiman"
+      ],
+      "year": 2023,
+      "venue": "Advances in Neural Information Processing Systems 36",
+      "abstract": null,
+      "doi": "10.52202/075280-0469",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 5,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "NiCLIP: Neuroimaging contrastive language-image pretraining model for predicting text from brain activation images",
+      "authors": [
+        "Julio A. Peraza",
+        "James D. Kent",
+        "Thomas E. Nichols",
+        "Jean-Baptiste Poline",
+        "Alejandro de la Vega",
+        "Angela R. Laird"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1101/2025.06.14.659706",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Evaluating Scoliosis Severity Based on Posturographic X-ray Images Using a Contrastive Language–Image Pretraining Model",
+      "authors": [
+        "Artur Fabijan",
+        "Robert Fabijan",
+        "Agnieszka Zawadzka-Fabijan",
+        "Emilia Nowosławska",
+        "Krzysztof Zakrzewski",
+        "Bartosz Polis"
+      ],
+      "year": 2023,
+      "venue": "Diagnostics",
+      "abstract": null,
+      "doi": "10.3390/diagnostics13132142",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 10,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "CLAP-MDR: Contrastive Language–Audio Pretraining for Multimodal Depression Recognition",
+      "authors": [
+        "Xiang Wang",
+        "Xinke Huang",
+        "Jiamin Yu"
+      ],
+      "year": 2026,
+      "venue": "2026 6th International Conference on Artificial Intelligence, Big Data and Algorithms (CAIBDA)",
+      "abstract": null,
+      "doi": "10.1109/caibda70336.2026.11621807",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "CLOP-DiT: Structured-Metadata-Conditioned Single-Cell Latent Generation via Contrastive Language-Omics Pretraining and Diffusion Transformers",
+      "authors": [
+        "Zeyu Fu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.64898/2026.03.26.714457",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "From Video to Images: Contrastive Pretraining for Emotion Recognition from Single Image (Student Abstract)",
+      "authors": [
+        "Bhanu Garg",
+        "Kijun Kim",
+        "Sudhanshu Ranjan"
+      ],
+      "year": 2022,
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "abstract": null,
+      "doi": "10.1609/aaai.v36i11.21612",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "ProtoCLAP – Prototypical Contrastive Language-Audio Pretraining",
+      "authors": [
+        "Adria Mallol-Ragolta",
+        "Björn Schuller"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+      "abstract": null,
+      "doi": "10.1109/asru65441.2025.11434742",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "RelCLIP: Adapting Language-Image Pretraining for Visual Relationship Detection via Relational Contrastive Learning",
+      "authors": [
+        "Yi Zhu",
+        "Zhaoqing Zhu",
+        "Bingqian Lin",
+        "Xiaodan Liang",
+        "Feng Zhao",
+        "Jianzhuang Liu"
+      ],
+      "year": 2022,
+      "venue": "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+      "abstract": null,
+      "doi": "10.18653/v1/2022.emnlp-main.317",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 9,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Contrastive Visual Semantic Pretraining Magnifies the Semantics of Natural Language Representations",
+      "authors": [
+        "Robert Wolfe",
+        "Aylin Caliskan"
+      ],
+      "year": 2022,
+      "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "abstract": null,
+      "doi": "10.18653/v1/2022.acl-long.217",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Multimodal Model Based on Contrastive Language-Image Pretraining for Micro-Expression Recognition",
+      "authors": [
+        "Peng Yang",
+        "Xiaoguang Wu",
+        "Yanyang Zhou",
+        "Qilin Wei",
+        "Zhifeng Zeng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-8133344/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Efficient Few-Shot Classification via Contrastive Pretraining on Web Data",
+      "authors": [
+        "Zhuoling Li",
+        "Haohan Wang",
+        "Tymoteusz Świstek",
+        "En Yu",
+        "Haoqian Wang"
+      ],
+      "year": 2023,
+      "venue": "IEEE Transactions on Artificial Intelligence",
+      "abstract": null,
+      "doi": "10.1109/tai.2022.3169463",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 5,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "MedCLIP: Contrastive Learning from Unpaired Medical Images and Text",
+      "authors": [
+        "Zifeng Wang",
+        "Zhenbang Wu",
+        "Dinesh Agarwal",
+        "Jimeng Sun"
+      ],
+      "year": 2022,
+      "venue": "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+      "abstract": null,
+      "doi": "10.18653/v1/2022.emnlp-main.256",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 703,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "CLIP<sup>2</sup>: Contrastive Language-Image-Point Pretraining from Real-World Point Cloud Data",
+      "authors": [
+        "Yihan Zeng",
+        "Chenhan Jiang",
+        "Jiageng Mao",
+        "Jianhua Han",
+        "Chaoqiang Ye",
+        "Qingqiu Huang",
+        "Dit-Yan Yeung",
+        "Zhen Yang",
+        "Xiaodan Liang",
+        "Hang Xu"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "abstract": null,
+      "doi": "10.1109/cvpr52729.2023.01463",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 89,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "CyCLIP: Cyclic Contrastive Language-Image Pretraining",
+      "authors": [
+        "Shashank Goel",
+        "Hritik Bansal",
+        "Sumit Bhatia",
+        "Ryan Rossi",
+        "Vishwa Vinay",
+        "Aditya Grover"
+      ],
+      "year": 2022,
+      "venue": "Advances in Neural Information Processing Systems 35",
+      "abstract": null,
+      "doi": "10.52202/068431-0486",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 15,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Molecular Contrastive Pretraining with Collaborative Featurizations",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1021/acs.jcim.3c01468.s001",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "ConGraT: Self-Supervised Contrastive Pretraining for Joint Graph and Text Embeddings",
+      "authors": [
+        "William Brannon",
+        "Wonjune Kang",
+        "Suyash Fulay",
+        "Hang Jiang",
+        "Brandon Roy",
+        "Deb Roy",
+        "Jad Kabbara"
+      ],
+      "year": 2024,
+      "venue": "Proceedings of TextGraphs-17: Graph-based Methods for Natural Language Processing",
+      "abstract": null,
+      "doi": "10.18653/v1/2024.textgraphs-1.2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 12,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1117/12.3006630.77a1d053-6836-ee11-a999-00505691c5e1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Relative Contrastive Pretraining of Heterogeneous Graph Aware Language Model for Zero-Shot Multi-Label Document Classification",
+      "authors": [
+        "Quan Fang",
+        "Jiawei Wu",
+        "Yu Long",
+        "Jun Hu",
+        "Shengsheng Qian"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.5021485",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "CLiP-Sampler: Keyframe Selection via Contrastive Language-Image Pretraining for Efficient Policy",
+      "authors": [
+        "Yifan Li",
+        "Zisui Wang"
+      ],
+      "year": 2026,
+      "venue": "Advances in Engineering Technology Research",
+      "abstract": null,
+      "doi": "10.56028/aetr.16.1.1044.2026",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 1255,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2446,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 410,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 576,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

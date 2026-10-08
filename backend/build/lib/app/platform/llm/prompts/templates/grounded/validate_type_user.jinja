@@ -1,0 +1,12 @@
+Requested type: {{ fact_type.name | upper }} — {{ fact_type.definition }}
+It is NOT: {{ fact_type.not_this }}.
+Paper: "{{ paper_title }}"
+
+{% for item in items %}
+Item id: {{ item.id }}
+Candidate value: {{ item.value }}
+Quote: {{ item.quote }}
+Source context (page {{ item.page if item.page is not none else "?" }}, section {{ item.section }}): {{ item.context }}
+Question: Is "{{ item.value }}" a {{ fact_type.label | lower }} as defined above? Answer yes/no/uncertain and why.
+
+{% endfor %}

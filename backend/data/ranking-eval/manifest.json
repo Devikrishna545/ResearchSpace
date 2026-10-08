@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "created_at": "2026-09-25T05:37:08.183485+00:00",
+  "reference_year": 2026,
+  "identified_openalex": true,
+  "per_source_limit": 20,
+  "files": {
+    "exact-transformers": "f94d41638ff26958d87584db10db25ede65d20d8a03dd6aac4b3e124e8f72059",
+    "exact-bert": "aab3194262eac0ed766e0b7e99fcd6d718eb48de3fe74a79d35634ddbaf57463",
+    "exact-resnet": "e21a866a31fd62cc74122f89c9364020bd8f388e2a73201e4802b39a850134fb",
+    "exact-diffusion": "dcdb02957524b82eea91348cc04f7583c6cc2f33c3a4251931866d902e594a4a",
+    "exact-lora": "1f4387122f22c0f4230f6b67abae072c1c815695138012fd6d26ef5b3cb01f30",
+    "exact-flashattention": "247138177f7181d9f2c5074e813e4a894d4a5c1b6dccafe2b9732d58d9fcfd32",
+    "exact-sentencebert": "d337cac7cdb89363c856d288b65e1f967a6caf2033684ca6c88ecfed18119451",
+    "exact-segment-anything": "7d84debd6889e92e002d404509d83861fba5e2da968654ca0efc72f437485973",
+    "descriptive-transformers": "98edc05e87ccfd7acf22072ae9617627e4e0e5a8803c7aa70731657eaa093ba3",
+    "descriptive-dpr": "ac187fbabb4ac956dda2cb9dfdd167d0f6fd2ac815fb3db2e30ec5743a822fb9",
+    "descriptive-rag": "636547329caad4e9aac2b7ac2b73555c2831130cc9776eacf0bf1019657d0c28",
+    "descriptive-clip": "09841ea234e32337c989bebc5b212f9d631339123c801360fef2590c8080f3b3",
+    "descriptive-vit": "065a46d91f6c1d2ac5b7a59f29e67702f99e9cefa0468e0b4b58eb3e2f6b2c05",
+    "descriptive-reasoning": "4978fae12b6c511a00f539f2dc755d6e1d4d1fb6db6c20c591c72af3e8b06f27",
+    "descriptive-nerf": "32ed8f8fbe43890ac35ef858ff26d56ede908e9d300c8932e554933f815d3337",
+    "descriptive-qlora": "558af4485f1a78aba40ad1a9a73c63292c8b86adf8ae3d2b1dd9f0ffe9b5177b",
+    "mismatch-dpr": "150909c6a1fbf6b71d91186961e9b87558eb238f83512acd37d7d714a30792cf",
+    "mismatch-rag": "323fabc2cf6d30232f1272b5c3b770eaca45153bc2bfc7cf16c92eb0592e44e1",
+    "mismatch-transformers": "f584fbc1e65966ba3a23607c369f1341e22853795f6187b90696bd0289360a4d",
+    "mismatch-bert": "969acf4d0732f5cedf42b1fed8d138ebc43fd37d21c221af6fe0a157839cb341",
+    "mismatch-flashattention": "1a40298e9a3fa7c8518ba64e6f6e4307b5abde8f5947147db492d3ffafe7b7e0",
+    "mismatch-resnet": "2c1cbd9fe84fde4b0f9eaddde127a06063b9ca2e3f16d9a33d95deee96841284",
+    "mismatch-lora": "051f702a18d327e27e007b4eaeeb378722d69c5282a1ae5717210b1818202f25",
+    "mismatch-diffusion": "134f9704ee1669a14c8ce8992700de084f676308049254e59c57d8b9fa77c441"
+  },
+  "relabel_provenance": {
+    "old_dataset_sha256": "c02d28d161af2198ca02ab10ed1b9076128c92905edacf3d8a1e4d18d36fbc89",
+    "corrected_ids": [
+      "exact-resnet",
+      "exact-segment-anything"
+    ],
+    "reason": "Verified published DOI aliases for DOI-only candidates; candidate arrays unchanged"
+  }
+}

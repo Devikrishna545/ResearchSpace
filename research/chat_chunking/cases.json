@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "label_policy": "Source-grounded, agent-authored rubric; lexical concept coverage is a proxy, not human-adjudicated accuracy.",
+  "cases": [
+    {
+      "id": "q01", "split": "calibration", "category": "definition",
+      "question": "What two families of word-vector methods does GloVe combine?",
+      "evidence": [{"title": "Glove:", "pattern": "global matrix factorization and local context window methods"}],
+      "concepts": ["global.{0,30}matrix factorization", "local.{0,30}context window"]
+    },
+    {
+      "id": "q02", "split": "held_out", "category": "method",
+      "question": "Does GloVe train on every cell of the co-occurrence matrix or only nonzero entries?",
+      "evidence": [{"title": "Glove:", "pattern": "training only on the nonzero elements.{0,100}occurrence matrix"}],
+      "concepts": ["non.?zero", "co.?occurrence|matrix"]
+    },
+    {
+      "id": "q03", "split": "held_out", "category": "figure_numeric",
+      "question": "In GloVe Figure 1, what alpha and x_max values are used for the weighting function?",
+      "evidence": [{"title": "Glove:", "pattern": "Figure 1: Weighting function.{0,180}xmax = 100"}],
+      "concepts": ["3\\s*/\\s*4|0\\.75", "\\b100\\b"],
+      "forbidden": ["alpha.{0,10}(?:0\\.5|0\\.25)\\b", "x_?max.{0,10}1000\\b"]
+    },
+    {
+      "id": "q04", "split": "calibration", "category": "table_numeric",
+      "question": "In GloVe Table 2, what total word-analogy accuracy does the 300-dimensional GloVe model trained on 42B tokens achieve?",
+      "evidence": [{"title": "Glove:", "pattern": "GloVe 300 42B\\s*\\|?\\s*81\\.9 69\\.3 75\\.0"}],
+      "concepts": ["\\b75(?:\\.0)?\\s*%|\\b75(?:\\.0)?\\s*percent"],
+      "forbidden": ["total.{0,30}\\b(?:81\\.9|69\\.3)\\s*%"]
+    },
+    {
+      "id": "q05", "split": "held_out", "category": "numeric",
+      "question": "How many of the most frequent words are retained in GloVe's training vocabulary?",
+      "evidence": [{"title": "Glove:", "pattern": "vocabulary of the 400,000 most frequent words"}],
+      "concepts": ["400[ ,]?000|400\\s*(?:k|thousand)"]
+    },
+    {
+      "id": "q06", "split": "held_out", "category": "figure_conditions",
+      "question": "For GloVe Figure 4's training-time comparison, what corpus, vector dimension, and symmetric window size are shared by all models?",
+      "evidence": [{"title": "Glove:", "pattern": "Figure 4: Overall accuracy.{0,700}symmetric context window of size 10"}],
+      "concepts": ["\\b300\\b", "6\\s*(?:B|billion)", "Wikipedia.{0,50}Gigaword", "(?:window|context).{0,30}\\b10\\b"]
+    },
+    {
+      "id": "q07", "split": "calibration", "category": "definition",
+      "question": "Which two architectures are proposed in Efficient Estimation of Word Representations in Vector Space?",
+      "evidence": [
+        {"title": "Efficient Estimation", "pattern": "3\\.1 Continuous Bag-of-Words Model"},
+        {"title": "Efficient Estimation", "pattern": "3\\.2 Continuous Skip-gram Model"}
+      ],
+      "concepts": ["CBOW|bag.of.words", "skip.gram"]
+    },
+    {
+      "id": "q08", "split": "held_out", "category": "method",
+      "question": "In the original word2vec paper, does the CBOW projection preserve the order of context words?",
+      "evidence": [{"title": "Efficient Estimation", "pattern": "order of words.{0,250}projection"}],
+      "concepts": ["(?:not|ignore|discard|without|doesn.t|no).{0,45}(?:order|ordering)|order.{0,45}(?:not|ignore|discard|irrelevant)", "CBOW|bag.of.words|projection"]
+    },
+    {
+      "id": "q09", "split": "held_out", "category": "method",
+      "question": "What does the Skip-gram architecture use as input, and what words does it try to predict?",
+      "evidence": [{"title": "Efficient Estimation", "pattern": "we use each current word as an input.{0,420}current word"}],
+      "concepts": ["current word|center word|centre word|target word", "surround|context|before and after|nearby"]
+    },
+    {
+      "id": "q10", "split": "held_out", "category": "numeric",
+      "question": "What training time and dataset size are reported in the abstract of Efficient Estimation of Word Representations in Vector Space?",
+      "evidence": [{"title": "Efficient Estimation", "pattern": "less than a day.{0,90}1\\.6 billion words"}],
+      "concepts": ["less than (?:a|one|1) day|under (?:a|one|1|24).{0,6}(?:day|hour)", "1\\.6\\s*(?:billion|B)"]
+    },
+    {
+      "id": "q11", "split": "calibration", "category": "definition",
+      "question": "What host language embeds Guppy, and what kind of quantum programs is it designed to express?",
+      "evidence": [{"title": "GUPPY:", "pattern": "domain-specific language embedded in Python.{0,180}Pythonic syntax"}],
+      "concepts": ["Python", "hybrid|quantum.classical", "control flow"]
+    },
+    {
+      "id": "q12", "split": "held_out", "category": "method",
+      "question": "What does it mean that Guppy's qubits are linear, and when are related programming errors caught?",
+      "evidence": [{"title": "GUPPY:", "pattern": "Qubits in.{0,35}linear.{0,220}compile time"}],
+      "concepts": ["cannot.{0,50}(?:cop|duplicat)|not.{0,30}(?:cop|duplicat)", "discard", "compile.time"]
+    },
+    {
+      "id": "q13", "split": "held_out", "category": "method",
+      "question": "Which intermediate representation is Guppy statically compiled to?",
+      "evidence": [{"title": "GUPPY:", "pattern": "statically compiled.{0,140}Hugr"}],
+      "concepts": ["HUGR"]
+    },
+    {
+      "id": "q14", "split": "calibration", "category": "definition",
+      "question": "In Quantum Programming Without the Quantum Physics, what replaces unfamiliar quantum data types?",
+      "evidence": [{"title": "Without the Quantum", "pattern": "all data are familiar classical data.{0,130}negative probabil- ity"}],
+      "concepts": ["classical data", "negative.{0,15}probabil", "random"]
+    },
+    {
+      "id": "q15", "split": "held_out", "category": "method",
+      "question": "How does Quantum Programming Without the Quantum Physics explain measurement without referring to qubits?",
+      "evidence": [{"title": "Without the Quantum", "pattern": "measurements can be understood.{0,130}loss of signs on probabilities"}],
+      "concepts": ["loss|losing|remov", "sign", "probabil"]
+    },
+    {
+      "id": "q16", "split": "held_out", "category": "method",
+      "question": "Does Quantum Programming Without the Quantum Physics impose reversibility ad hoc or derive it from assumptions about probabilistic programming?",
+      "evidence": [{"title": "Without the Quantum", "pattern": "reversibility are derived.{0,220}ad-hoc basis"}],
+      "concepts": ["deriv", "probabilistic programming|commonsense|common.sense"]
+    },
+    {
+      "id": "q17", "split": "held_out", "category": "abstract_only",
+      "question": "What difficulty of tensor-network algorithms does Tensor quantum programming identify as its key challenge?",
+      "evidence": [{"title": "Tensor quantum", "pattern": "primary challenge.{0,110}high ranks \\(bond dimensions\\)"}],
+      "concepts": ["high ranks|large ranks|bond dimensions"]
+    },
+    {
+      "id": "q18", "split": "calibration", "category": "abstract_numeric",
+      "question": "What does Tensor quantum programming encode into circuits, and how does circuit depth scale with the number of qubits?",
+      "evidence": [{"title": "Tensor quantum", "pattern": "encodes matrix product operators.{0,160}number of qubits"}],
+      "concepts": ["matrix product operator|MPO", "linear"]
+    },
+    {
+      "id": "q19", "split": "held_out", "category": "web_capture",
+      "question": "According to the saved quantum-programming introduction, what does NISQ stand for and what hardware limitations does it describe?",
+      "evidence": [{"title": "An In-Depth", "pattern": "Noisy Intermediate-Scale Quantum.{0,180}short coherence times and gate errors"}],
+      "concepts": ["Noisy Intermediate.Scale Quantum", "coherence", "gate errors|error.prone|noisy"]
+    },
+    {
+      "id": "q20", "split": "held_out", "category": "cross_paper",
+      "question": "Contrast the global training statistics used by GloVe with the word-context prediction approach of Skip-gram in the original word2vec paper.",
+      "evidence": [
+        {"title": "Glove:", "pattern": "training only on the nonzero elements.{0,100}occurrence matrix"},
+        {"title": "Efficient Estimation", "pattern": "we use each current word as an input.{0,420}current word"}
+      ],
+      "concepts": ["co.?occurrence|global.{0,30}statistic", "skip.gram", "surround|context|nearby"]
+    },
+    {
+      "id": "q21", "split": "calibration", "category": "unanswerable",
+      "question": "What exact wall-clock speedup on IBM hardware does the saved Tensor quantum programming abstract report?",
+      "evidence": [], "concepts": [], "unanswerable": true,
+      "reason": "The abstract describes an algorithm and scaling, not an IBM wall-clock benchmark."
+    },
+    {
+      "id": "q22", "split": "held_out", "category": "unanswerable",
+      "question": "What is the exact Guppy 2027 release date stated in the saved paper?",
+      "evidence": [], "concepts": [], "unanswerable": true,
+      "reason": "A future release date is not established by the saved paper."
+    },
+    {
+      "id": "q23", "split": "held_out", "category": "unanswerable",
+      "question": "What clinical-trial cure rate for diabetes did the GloVe paper establish?",
+      "evidence": [], "concepts": [], "unanswerable": true,
+      "reason": "The word-vector paper contains no such clinical trial."
+    },
+    {
+      "id": "q24", "split": "calibration", "category": "unanswerable",
+      "question": "Which identical training corpus and identical qubit count did GloVe and Tensor quantum programming both use?",
+      "evidence": [], "concepts": [], "unanswerable": true,
+      "reason": "This conflates word-vector training with quantum algorithms; shared conditions are not established."
+    }
+  ]
+}

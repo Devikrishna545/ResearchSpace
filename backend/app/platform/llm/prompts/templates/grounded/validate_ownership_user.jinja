@@ -1,0 +1,10 @@
+Requested dimension: {{ fact_type.label }} — {{ fact_type.definition }}
+Paper: "{{ paper_title }}"
+
+{% for item in items %}
+Item id: {{ item.id }}
+Candidate value: {{ item.value }}
+Quote: {{ item.quote }}
+Source context (page {{ item.page if item.page is not none else "?" }}, section {{ item.section }}): {{ item.context }}
+
+{% endfor %}

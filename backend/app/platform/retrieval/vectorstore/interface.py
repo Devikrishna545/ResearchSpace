@@ -1,0 +1,9 @@
+from abc import ABC,abstractmethod
+from app.modules.chat.schemas.chat import ScoredChunk
+class VectorStore(ABC):
+    @abstractmethod
+    async def upsert(self,space_id:str,chunks:list[ScoredChunk],vectors:list[list[float]])->None: ...
+    @abstractmethod
+    async def search(self,space_id:str,vector:list[float],k:int=10)->list[ScoredChunk]: ...
+    @abstractmethod
+    async def health_check(self)->bool: ...

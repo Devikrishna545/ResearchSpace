@@ -1,0 +1,1588 @@
+{
+  "id": "descriptive-transformers",
+  "category": "descriptive",
+  "query": "transformer architecture for sequence transduction",
+  "target": {
+    "arxiv_id": "1706.03762"
+  },
+  "plan": {
+    "topic": "transformer architecture for sequence transduction",
+    "sub_queries": [
+      "transformer architecture for sequence transduction"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "Architectural Implications of Graph Neural Networks",
+      "authors": [
+        "Zhihui Zhang",
+        "Jingwen Leng",
+        "Lingxiao Ma",
+        "Youshan Miao",
+        "Chao Li",
+        "Minyi Guo"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Graph neural networks (GNN) represent an emerging line of deep learning models that operate on graph structures. It is becoming more and more popular due to its high accuracy achieved in many graph-related tasks. However, GNN is not as well understood in the system and architecture community as its counterparts such as multi-layer perceptrons and convolutional neural networks. This work tries to introduce the GNN to our community. In contrast to prior work that only presents characterizations of GCNs, our work covers a large portion of the varieties for GNN workloads based on a general GNN description framework. By constructing the models on top of two widely-used libraries, we characterize the GNN computation at inference stage concerning general-purpose and application-specific architectures and hope our work can foster more system and architecture research for GNNs.",
+      "doi": null,
+      "arxiv_id": "2009.00804v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2009.00804v2",
+      "raw_payload": {
+        "categories": [
+          "cs.AR",
+          "cs.LG",
+          "cs.PF"
+        ],
+        "primary_category": "cs.AR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Dalorex: A Data-Local Program Execution and Architecture for Memory-bound Applications",
+      "authors": [
+        "Marcelo Orenes-Vera",
+        "Esin Tureci",
+        "David Wentzlaff",
+        "Margaret Martonosi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Applications with low data reuse and frequent irregular memory accesses, such as graph or sparse linear algebra workloads, fail to scale well due to memory bottlenecks and poor core utilization. While prior work with prefetching, decoupling, or pipelining can mitigate memory latency and improve core utilization, memory bottlenecks persist due to limited off-chip bandwidth. Approaches doing processing in-memory (PIM) with Hybrid Memory Cube (HMC) overcome bandwidth limitations but fail to achieve high core utilization due to poor task scheduling and synchronization overheads. Moreover, the high memory-per-core ratio available with HMC limits strong scaling.\n  We introduce Dalorex, a hardware-software co-design that achieves high parallelism and energy efficiency, demonstrating strong scaling with >16,000 cores when processing graph and sparse linear algebra workloads. Over the prior work in PIM, both using 256 cores, Dalorex improves performance and energy consumption by two orders of magnitude through (1) a tile-based distributed-memory architecture where each processing tile holds an equal amount of data, and all memory operations are local; (2) a task-based parallel programming model where tasks are executed by the processing unit that is co-located with the target data; (3) a network design optimized for irregular traffic, where all communication is one-way, and messages do not contain routing metadata; (4) novel traffic-aware task scheduling hardware that maintains high core utilization; and (5) a data placement strategy that improves work balance.\n  This work proposes architectural and software innovations to provide the greatest scalability to date for running graph algorithms while still being programmable for other domains.",
+      "doi": null,
+      "arxiv_id": "2207.13219v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2207.13219v4",
+      "raw_payload": {
+        "categories": [
+          "cs.AR",
+          "cs.DC"
+        ],
+        "primary_category": "cs.AR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "PyramidTNT: Improved Transformer-in-Transformer Baselines with Pyramid Architecture",
+      "authors": [
+        "Kai Han",
+        "Jianyuan Guo",
+        "Yehui Tang",
+        "Yunhe Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Transformer networks have achieved great progress for computer vision tasks. Transformer-in-Transformer (TNT) architecture utilizes inner transformer and outer transformer to extract both local and global representations. In this work, we present new TNT baselines by introducing two advanced designs: 1) pyramid architecture, and 2) convolutional stem. The new \"PyramidTNT\" significantly improves the original TNT by establishing hierarchical representations. PyramidTNT achieves better performances than the previous state-of-the-art vision transformers such as Swin Transformer. We hope this new baseline will be helpful to the further research and application of vision transformer. Code will be available at https://github.com/huawei-noah/CV-Backbones/tree/master/tnt_pytorch.",
+      "doi": null,
+      "arxiv_id": "2201.00978v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2201.00978v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Quantifying efficient information transduction of biochemical signaling cascades",
+      "authors": [
+        "Tatsuaki Tsuruyama"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Cells can be considered as systems that utilize changes in thermodynamic entropy as information. Therefore, they serve as useful models for investigating the relationships between entropy production and information transmission, i.e., signal transduction. Based on the hypothesis that cells apply a chemical reaction cascade for the most efficient transduction of information, we adopted a coding design that minimizes the number of bits per concentration of molecules that are employed for information transduction. As a result, the average rate of entropy production is uniform across all cycles in a cascade reaction. Thus, the entropy production rate can be a valuable measure for the quantification of intracellular signal transduction.",
+      "doi": null,
+      "arxiv_id": "1605.03452v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1605.03452v3",
+      "raw_payload": {
+        "categories": [
+          "q-bio.MN",
+          "physics.bio-ph"
+        ],
+        "primary_category": "q-bio.MN"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Towards Assessing Spread in Sets of Software Architecture Designs",
+      "authors": [
+        "Vittorio Cortellessa",
+        "J. Andres Diaz-Pace",
+        "Daniele Di Pompeo",
+        "Michele Tucci"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Several approaches have recently used automated techniques to generate architecture design alternatives by means of optimization techniques. These approaches aim at improving an initial architecture with respect to quality aspects, such as performance, reliability, or maintainability. In this context, each optimization experiment usually produces a different set of architecture alternatives that is characterized by specific settings. As a consequence, the designer is left with the task of comparing such sets to identify the settings that lead to better solution sets for the problem. To assess the quality of solution sets, multi-objective optimization commonly relies on quality indicators. Among these, the quality indicator for the maximum spread estimates the diversity of the generated alternatives, providing a measure of how much of the solution space has been explored. However, the maximum spread indicator is computed only on the objective space and does not consider architectural information (e.g., components structure, design decisions) from the architectural space. In this paper, we propose a quality indicator for the spread that assesses the diversity of alternatives by taking into account architectural features. To compute the spread, we rely on a notion of distance between alternatives according to the way they were generated during the optimization. We demonstrate how our architectural quality indicator can be applied to a dataset from the literature.",
+      "doi": null,
+      "arxiv_id": "2402.19171v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2402.19171v1",
+      "raw_payload": {
+        "categories": [
+          "cs.SE",
+          "cs.PF"
+        ],
+        "primary_category": "cs.SE"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "LSQCA: Resource-Efficient Load/Store Architecture for Limited-Scale Fault-Tolerant Quantum Computing",
+      "authors": [
+        "Takumi Kobori",
+        "Yasunari Suzuki",
+        "Yosuke Ueno",
+        "Teruo Tanimoto",
+        "Synge Todo",
+        "Yuuki Tokunaga"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Current fault-tolerant quantum computer (FTQC) architectures utilize several encoding techniques to enable reliable logical operations with restricted qubit connectivity. However, such logical operations demand additional memory overhead to ensure fault tolerance. Since the main obstacle to practical quantum computing is the limited qubit count, our primary mission is to design floorplans that can reduce memory overhead without compromising computational capability. Despite extensive efforts to explore FTQC architectures, even the current state-of-the-art floorplan strategy devotes 50% of memory space to this overhead, not to data storage, to ensure unit-time random access to all logical qubits.\n  In this paper, we propose an FTQC architecture based on a novel floorplan strategy, Load/Store Quantum Computer Architecture (LSQCA), which can achieve almost 100% memory density. The idea behind our architecture is to separate all memory regions into small computational space called Computational Registers (CR) and space-efficient memory space called Scan-Access Memory (SAM). We define an instruction set for these abstract structures and provide concrete designs named point-SAM and line-SAM architectures. With this design, we can improve the memory density by allowing variable-latency memory access while concealing the latency with other bottlenecks. We also propose optimization techniques to exploit properties of quantum programs observed in our static analysis, such as access locality in memory reference timestamps. Our numerical results indicate that LSQCA successfully leverages this idea. In a resource-restricted situation, a specific benchmark shows that we can achieve about 90% memory density with 5% increase in the execution time compared to a conventional floorplan, which achieves at most 50% memory density for unit-time random access. Our design ensures broad quantum applicability.",
+      "doi": null,
+      "arxiv_id": "2412.20486v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2412.20486v2",
+      "raw_payload": {
+        "categories": [
+          "quant-ph",
+          "cs.AR"
+        ],
+        "primary_category": "quant-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A Novel Reconfigurable Architecture of a DSP Processor for Efficient Mapping of DSP Functions using Field Programmable DSP Arrays",
+      "authors": [
+        "Amitabha Sinha",
+        "Mitrava Sarkar",
+        "Soumojit Acharyya",
+        "Suranjan Chakraborty"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Development of modern integrated circuit technologies makes it feasible to develop cheaper, faster and smaller special purpose signal processing function circuits. Digital Signal processing functions are generally implemented either on ASICs with inflexibility, or on FPGAs with bottlenecks of relatively smaller utilization factor or lower speed compared to ASIC. Field Programmable DSP Array (FPDA) is the proposed DSP dedicated device, redolent to FPGA, but with basic fixed common modules (CMs) (like adders, subtractors, multipliers, scaling units, shifters) instead of CLBs. This paper introduces the development of reconfigurable system architecture with a focus on FPDA that integrates different DSP functions like DFT, FFT, DCT, FIR, IIR, and DWT etc. The switching between DSP functions is occurred by reconfiguring the interconnection between CMs. Validation of the proposed architecture has been achieved on Virtex5 FPGA. The architecture provides sufficient amount of flexibility, parallelism and scalability.",
+      "doi": null,
+      "arxiv_id": "1306.0089v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1306.0089v1",
+      "raw_payload": {
+        "categories": [
+          "cs.AR"
+        ],
+        "primary_category": "cs.AR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "From Fuzzy to Exact: The Halo Architecture for Infinite-Depth Reasoning via Rational Arithmetic",
+      "authors": [
+        "Hansheng Ren"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The prevailing scaling paradigm of Large Language Models (LLMs) rests on a substrate of \"Fuzzy\" floating-point arithmetic. To mitigate the inherent instability of this approximate foundation, modern architectures have erected a complex scaffolding of structural and numerical heuristics--Complex Residuals, Pre-RMSNorm, Attention Scaling, and Gradient Clipping--consuming significant compute solely to prevent numerical collapse.\n  We propose a paradigm shift to the \"Exact\". We introduce the Halo Architecture, grounded in the Rational Field (Q) and powered by a custom Exact Inference Unit (EIU). To resolve the exponential bit-width growth of rational arithmetic, Halo employs a Dual-Ring Topology that unifies two complementary control mechanisms: (1) The Micro-Ring (Continuum Maintenance), which strictly bounds memory complexity via Diophantine Approximation; and (2) The Macro-Ring (Symbolic Alignment), which enforces logical consistency via periodic state collapse.\n  This stable dual-ring substrate allows for the \"Great Dismantling\" of numerical scaffolding, reducing the Transformer block to its \"Clean\" algebraic form (Tabula Rasa). Furthermore, we verify the \"Efficiency Paradox\": the elimination of gradient noise (sigma -> 0) allows for Macro-Learning Rates, potentially reducing the Total Time-to-Convergence by orders of magnitude. Halo demonstrates that General Intelligence requires the hybridization of continuous fields and discrete chains under a rigorous mathematical framework.",
+      "doi": null,
+      "arxiv_id": "2601.18702v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2601.18702v4",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.AR"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures",
+      "authors": [
+        "Chenggang Zhao",
+        "Chengqi Deng",
+        "Chong Ruan",
+        "Damai Dai",
+        "Huazuo Gao",
+        "Jiashi Li",
+        "Liyue Zhang",
+        "Panpan Huang",
+        "Shangyan Zhou",
+        "Shirong Ma",
+        "Wenfeng Liang",
+        "Ying He",
+        "Yuqing Wang",
+        "Yuxuan Liu",
+        "Y. X. Wei"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The rapid scaling of large language models (LLMs) has unveiled critical limitations in current hardware architectures, including constraints in memory capacity, computational efficiency, and interconnection bandwidth. DeepSeek-V3, trained on 2,048 NVIDIA H800 GPUs, demonstrates how hardware-aware model co-design can effectively address these challenges, enabling cost-efficient training and inference at scale. This paper presents an in-depth analysis of the DeepSeek-V3/R1 model architecture and its AI infrastructure, highlighting key innovations such as Multi-head Latent Attention (MLA) for enhanced memory efficiency, Mixture of Experts (MoE) architectures for optimized computation-communication trade-offs, FP8 mixed-precision training to unlock the full potential of hardware capabilities, and a Multi-Plane Network Topology to minimize cluster-level network overhead. Building on the hardware bottlenecks encountered during DeepSeek-V3's development, we engage in a broader discussion with academic and industry peers on potential future hardware directions, including precise low-precision computation units, scale-up and scale-out convergence, and innovations in low-latency communication fabrics. These insights underscore the critical role of hardware and model co-design in meeting the escalating demands of AI workloads, offering a practical blueprint for innovation in next-generation AI systems.",
+      "doi": null,
+      "arxiv_id": "2505.09343v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2505.09343v2",
+      "raw_payload": {
+        "categories": [
+          "cs.DC",
+          "cs.AI",
+          "cs.AR"
+        ],
+        "primary_category": "cs.DC"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Sequence Transduction with Recurrent Neural Networks",
+      "authors": [
+        "Alex Graves"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Many machine learning tasks can be expressed as the transformation---or \\emph{transduction}---of input sequences into output sequences: speech recognition, machine translation, protein secondary structure prediction and text-to-speech to name but a few. One of the key challenges in sequence transduction is learning to represent both the input and output sequences in a way that is invariant to sequential distortions such as shrinking, stretching and translating. Recurrent neural networks (RNNs) are a powerful sequence learning architecture that has proven capable of learning such representations. However RNNs traditionally require a pre-defined alignment between the input and output sequences to perform transduction. This is a severe limitation since \\emph{finding} the alignment is the most difficult aspect of many sequence transduction problems. Indeed, even determining the length of the output sequence is often challenging. This paper introduces an end-to-end, probabilistic sequence transduction system, based entirely on RNNs, that is in principle able to transform any input sequence into any finite, discrete output sequence. Experimental results for phoneme recognition are provided on the TIMIT speech corpus.",
+      "doi": null,
+      "arxiv_id": "1211.3711v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1211.3711v1",
+      "raw_payload": {
+        "categories": [
+          "cs.NE",
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "cs.NE"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Quality Attributes Optimization of Software Architecture: Research Challenges and Directions",
+      "authors": [
+        "Daniele Di Pompeo",
+        "Michele Tucci"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The estimation and improvement of quality attributes in software architectures is a challenging and time-consuming activity. On modern software applications, a model-based representation is crucial to face the complexity of such activity. One main challenge is that the improvement of distinctive quality attributes may require contrasting refactoring actions on the architecture, for instance when looking for trade-off between performance and reliability (or other non-functional quality attributes). In such cases, multi-objective optimization can provide the designer with a more complete view on these trade-offs and, consequently, can lead to identify suitable refactoring actions that take into account independent or even competing objectives.\n  In this paper, we present open challenges and research directions to fill current gaps in the context of multi-objective software architecture optimization.",
+      "doi": null,
+      "arxiv_id": "2301.07516v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2301.07516v1",
+      "raw_payload": {
+        "categories": [
+          "cs.SE"
+        ],
+        "primary_category": "cs.SE"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Applying the Transformer to Character-level Transduction",
+      "authors": [
+        "Shijie Wu",
+        "Ryan Cotterell",
+        "Mans Hulden"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The transformer has been shown to outperform recurrent neural network-based sequence-to-sequence models in various word-level NLP tasks. Yet for character-level transduction tasks, e.g. morphological inflection generation and historical text normalization, there are few works that outperform recurrent models using the transformer. In an empirical study, we uncover that, in contrast to recurrent sequence-to-sequence models, the batch size plays a crucial role in the performance of the transformer on character-level tasks, and we show that with a large enough batch size, the transformer does indeed outperform recurrent models. We also introduce a simple technique to handle feature-guided character-level transduction that further improves performance. With these insights, we achieve state-of-the-art performance on morphological inflection and historical text normalization. We also show that the transformer outperforms a strong baseline on two other character-level transduction tasks: grapheme-to-phoneme conversion and transliteration.",
+      "doi": null,
+      "arxiv_id": "2005.10213v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2005.10213v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Fast Processing of Large Graph Applications Using Asynchronous Architecture",
+      "authors": [
+        "Michel A. Kinsy",
+        "Rashmi S. Agrawal",
+        "Hien D. Nguyen"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Graph algorithms and techniques are increasingly being used in scientific and commercial applications to express relations and explore large data sets. Although conventional or commodity computer architectures, like CPU or GPU, can compute fairly well dense graph algorithms, they are often inadequate in processing large sparse graph applications. Memory access patterns, memory bandwidth requirements and on-chip network communications in these applications do not fit in the conventional program execution flow. In this work, we propose and design a new architecture for fast processing of large graph applications. To leverage the lack of the spatial and temporal localities in these applications and to support scalable computational models, we design the architecture around two key concepts. (1) The architecture is a multicore processor of independently clocked processing elements. These elements communicate in a self-timed manner and use handshaking to perform synchronization, communication, and sequencing of operations. By being asynchronous, the operating speed at each processing element is determined by actual local latencies rather than global worst-case latencies. We create a specialized ISA to support these operations. (2) The application compilation and mapping process uses a graph clustering algorithm to optimize parallel computing of graph operations and load balancing. Through the clustering process, we make scalability an inherent property of the architecture where task-to-element mapping can be done at the graph node level or at node cluster level. A prototyped version of the architecture outperforms a comparable CPU by 10~20x across all benchmarks and provides 2~5x better power efficiency when compared to a GPU.",
+      "doi": null,
+      "arxiv_id": "1706.09953v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1706.09953v1",
+      "raw_payload": {
+        "categories": [
+          "cs.AR"
+        ],
+        "primary_category": "cs.AR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "An All-MLP Sequence Modeling Architecture That Excels at Copying",
+      "authors": [
+        "Chenwei Cui",
+        "Zehao Yan",
+        "Gedeon Muhawenayo",
+        "Hannah Kerner"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent work demonstrated Transformers' ability to efficiently copy strings of exponential sizes, distinguishing them from other architectures. We present the Causal Relation Network (CausalRN), an all-MLP sequence modeling architecture that can match Transformers on the copying task. Extending Relation Networks (RNs), we implemented key innovations to support autoregressive sequence modeling while maintaining computational feasibility. We discovered that exponentially-activated RNs are reducible to linear time complexity, and pre-activation normalization induces an infinitely growing memory pool, similar to a KV cache. In ablation study, we found both exponential activation and pre-activation normalization are indispensable for Transformer-level copying. Our findings provide new insights into what actually constitutes strong in-context retrieval.",
+      "doi": null,
+      "arxiv_id": "2406.16168v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2406.16168v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Multi-objective Software Architecture Refactoring driven by Quality Attributes",
+      "authors": [
+        "Daniele Di Pompeo",
+        "Michele Tucci"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Architecture optimization is the process of automatically generating design options, typically to enhance software's quantifiable quality attributes, such as performance and reliability. Multi-objective optimization approaches have been used in this situation to assist the designer in selecting appropriate trade-offs between a number of non-functional features. Through automated refactoring, design alternatives can be produced in this process, and assessed using non-functional models.\n  This type of optimization tasks are hard and time- and resource-intensive, which frequently hampers their use in software engineering procedures.\n  In this paper, we present our optimization framework where we examined the performance of various genetic algorithms. We also exercised our framework with two case studies with various levels of size, complexity, and domain served as our test subjects.",
+      "doi": null,
+      "arxiv_id": "2301.07500v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2301.07500v1",
+      "raw_payload": {
+        "categories": [
+          "cs.SE"
+        ],
+        "primary_category": "cs.SE"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+      "authors": [
+        "Kieran Wood",
+        "Sven Giegerich",
+        "Stephen Roberts",
+        "Stefan Zohren"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We introduce the Momentum Transformer, an attention-based deep-learning architecture, which outperforms benchmark time-series momentum and mean-reversion trading strategies. Unlike state-of-the-art Long Short-Term Memory (LSTM) architectures, which are sequential in nature and tailored to local processing, an attention mechanism provides our architecture with a direct connection to all previous time-steps. Our architecture, an attention-LSTM hybrid, enables us to learn longer-term dependencies, improves performance when considering returns net of transaction costs and naturally adapts to new market regimes, such as during the SARS-CoV-2 crisis. Via the introduction of multiple attention heads, we can capture concurrent regimes, or temporal dynamics, which are occurring at different timescales. The Momentum Transformer is inherently interpretable, providing us with greater insights into our deep-learning momentum trading strategy, including the importance of different factors over time and the past time-steps which are of the greatest significance to the model.",
+      "doi": null,
+      "arxiv_id": "2112.08534v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2112.08534v3",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "q-fin.TR",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "SAPA: Self-Aware Polymorphic Architecture",
+      "authors": [
+        "Michel A. Kinsy",
+        "Mihailo Isakov",
+        "Alan Ehret",
+        "Donato Kava"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this work, we introduce a Self-Aware Polymorphic Architecture (SAPA) design approach to support emerging context-aware applications and mitigate the programming challenges caused by the ever-increasing complexity and heterogeneity of high performance computing systems. Through the SAPA design, we examined the salient software-hardware features of adaptive computing systems that allow for (1) the dynamic allocation of computing resources depending on program needs (e.g., the amount of parallelism in the program) and (2) automatic approximation to meet program and system goals (e.g., execution time budget, power constraints and computation resiliency) without the programming complexity of current multicore and many-core systems. The proposed adaptive computer architecture framework applies machine learning algorithms and control theory techniques to the application execution based on information collected about the system runtime performance trade-offs. It has heterogeneous reconfigurable cores with fast hardware-level migration capability, self-organizing memory structures and hierarchies, an adaptive application-aware network-on-chip, and a built-in hardware layer for dynamic, autonomous resource management. Our prototyped architecture performs extremely well on a large pool of applications.",
+      "doi": null,
+      "arxiv_id": "1802.05100v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1802.05100v1",
+      "raw_payload": {
+        "categories": [
+          "cs.AR",
+          "cs.SE"
+        ],
+        "primary_category": "cs.AR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Eigenvalues and Transduction of Morphic Sequences: Extended Version",
+      "authors": [
+        "David Sprunger",
+        "William Tune",
+        "Jörg Endrullis",
+        "Lawrence S. Moss"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We study finite state transduction of automatic and morphic sequences. Dekking proved that morphic sequences are closed under transduction and in particular morphic images. We present a simple proof of this fact, and use the construction in the proof to show that non-erasing transductions preserve a condition called alpha-substitutivity. Roughly, a sequence is alpha-substitutive if the sequence can be obtained as the limit of iterating a substitution with dominant eigenvalue alpha. Our results culminate in the following fact: for multiplicatively independent real numbers alpha and beta, if v is an alpha-substitutive sequence and w is a beta-substitutive sequence, then v and w have no common non-erasing transducts except for the ultimately periodic sequences. We rely on Cobham's theorem for substitutions, a recent result of Durand.",
+      "doi": null,
+      "arxiv_id": "1406.1754v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1406.1754v1",
+      "raw_payload": {
+        "categories": [
+          "cs.FL"
+        ],
+        "primary_category": "cs.FL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "General-Purpose Multicore Architectures",
+      "authors": [
+        "Saugata Ghose"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The first years of the 2000s led to an inflection point in computer architectures: while the number of available transistors on a chip continued to grow, crucial transistor scaling properties started to break down and result in increasing power consumption, while aggressive single-core performance optimizations were resulting in diminishing returns due to inherent limits in instruction-level parallelism. This led to the rise of multicore CPU architectures, which are now commonplace in modern computers at all scales. In this chapter, we discuss the evolution of multicore CPUs since their introduction. Starting with a historic overview of multiprocessing, we explore the basic microarchitecture of a multicore CPU, key challenges resulting from shared memory resources, operating system modifications to optimize multicore CPU support, popular metrics for multicore evaluation, and recent trends in multicore CPU design.",
+      "doi": null,
+      "arxiv_id": "2408.12999v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2408.12999v2",
+      "raw_payload": {
+        "categories": [
+          "cs.AR",
+          "cs.DC"
+        ],
+        "primary_category": "cs.AR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Energy-Proportional Data Center Network Architecture Through OS, Switch and Laser Co-design",
+      "authors": [
+        "Haiyang Han",
+        "Nikos Terzenidis",
+        "Dimitris Syrivelis",
+        "Arash F. Beldachi",
+        "George T. Kanellos",
+        "Yigit Demir",
+        "Jie Gu",
+        "Srikanth Kandula",
+        "Nikos Pleros",
+        "Fabián Bustamante",
+        "Nikos Hardavellas"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Optical interconnects are already the dominant technology in large-scale data center networks. However, the high optical loss of many optical components coupled with the low efficiency of laser sources result in high aggregate power requirements for the thousands of optical transceivers used by these networks. As optical interconnects stay always on even as traffic demands ebb and flow, most of this power is wasted. We present LC/DC, a data center network system architecture in which the operating system, the switch, and the optical components are co-designed to achieve energy proportionality.\n  LC/DC capitalizes on the path divergence of data center networks to turn on and off redundant paths according to traffic demand, while maintaining full connectivity. Turning off redundant paths allows the optical transceivers and their electronic drivers to power down and save energy. Maintaining full connectivity hides the laser turn-on delay. At the node layer, intercepting send requests within the OS allows for the NIC's laser turn-on delay to be fully overlapped with TCP/IP packet processing, and thus egress links can remain powered off until needed with zero performance penalty.\n  We demonstrate the feasibility of LC/DC by i) implementing the necessary modifications in the Linux kernel and device drivers, ii) implementing a 10Gbit/s FPGA switch, and iii) performing physical experiments with optical devices and circuit simulations. Our results on university data center traces and models of Facebook and Microsoft data center traffic show that LC/DC saves on average 60% of the optical transceivers power (68% max) at the cost of 6% higher packet delay.",
+      "doi": null,
+      "arxiv_id": "2112.02083v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2112.02083v2",
+      "raw_payload": {
+        "categories": [
+          "cs.NI",
+          "cs.AR"
+        ],
+        "primary_category": "cs.NI"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "Gradient-based learning applied to document recognition",
+      "authors": [
+        "Yann LeCun",
+        "Léon Bottou",
+        "Yoshua Bengio",
+        "Patrick Haffner"
+      ],
+      "year": 1998,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/5.726791",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2112796928",
+      "citation_count": 59931,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Jitendra Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N. Gomez",
+        "Łukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/2q58a426",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2626778328",
+      "citation_count": 7679,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Sequence Transduction with Recurrent Neural Networks",
+      "authors": [
+        "Alex M Graves"
+      ],
+      "year": 2012,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.1211.3711",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W1828163288",
+      "citation_count": 1292,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1211.3711",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "BEHRT: Transformer for Electronic Health Records",
+      "authors": [
+        "Yikuan Li",
+        "Shishir Rao",
+        "José Roberto Ayala Solares",
+        "Abdelǎali Hassaïne",
+        "Rema Ramakrishnan",
+        "Dexter Canoy",
+        "Yajie Zhu",
+        "Kazem Rahimi",
+        "Gholamreza Salimi‐Khorshidi"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41598-020-62922-y",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3017637887",
+      "citation_count": 585,
+      "oa_status": "gold",
+      "pdf_url": "https://www.nature.com/articles/s41598-020-62922-y.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Transformer neural network for protein-specific de novo drug generation as a machine translation problem",
+      "authors": [
+        "Daria Grechishnikova"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41598-020-79682-4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3119872582",
+      "citation_count": 232,
+      "oa_status": "gold",
+      "pdf_url": "https://www.nature.com/articles/s41598-020-79682-4.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "authors": [
+        "Ze Liu",
+        "Yutong Lin",
+        "Yue Cao",
+        "Han Hu",
+        "Yixuan Wei",
+        "Zheng Zhang",
+        "Stephen Ching-Feng Lin",
+        "Baining Guo"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2103.14030",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3202406646",
+      "citation_count": 412,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2103.14030",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Graph Transformer for Graph-to-Sequence Learning",
+      "authors": [
+        "Deng Cai",
+        "Wai Pang Lam"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v34i05.6243",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2998702685",
+      "citation_count": 172,
+      "oa_status": "diamond",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Transformer Architecture and Attention Mechanisms in Genome Data Analysis: A Comprehensive Review",
+      "authors": [
+        "Sanghyuk Roy Choi",
+        "Minhyeok Lee"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/biology12071033",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4385201870",
+      "citation_count": 237,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2079-7737/12/7/1033/pdf?version=1690007847",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Conformer: Convolution-augmented Transformer for Speech Recognition",
+      "authors": [
+        "Anmol Gulati",
+        "James Qin",
+        "Chung‐Cheng Chiu",
+        "Niki Jitendra Parmar",
+        "Yu Zhang",
+        "Jiahui Yu",
+        "Wei Han",
+        "Shibo Wang",
+        "Zhengdong Zhang",
+        "Yonghui Wu",
+        "Ruoming Pang"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2005.08100",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3025165719",
+      "citation_count": 387,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2005.08100",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Self-Training Multi-Sequence Learning with Transformer for Weakly Supervised Video Anomaly Detection",
+      "authors": [
+        "Shuo Li",
+        "Fang Liu",
+        "Licheng Jiao"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v36i2.20028",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4283811196",
+      "citation_count": 278,
+      "oa_status": "diamond",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Hand-Transformer: Non-Autoregressive Structured Modeling for 3D Hand Pose Estimation",
+      "authors": [
+        "Lin Huang",
+        "Jianchao Tan",
+        "Ji Liu",
+        "Junsong Yuan"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/978-3-030-58595-2_2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3108516375",
+      "citation_count": 128,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Spatio-temporal wind speed forecasting using graph networks and novel Transformer architectures",
+      "authors": [
+        "Lars Ødegaard Bentsen",
+        "Narada Dilp Warakagoda",
+        "Roy Stenbro",
+        "Paal Einar Engelstad"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.apenergy.2022.120565",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4313443611",
+      "citation_count": 205,
+      "oa_status": "hybrid",
+      "pdf_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0306261922018220-ga1_lrg.jpg",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Novel Transformer Based Semantic Segmentation Scheme for Fine-Resolution Remote Sensing Images",
+      "authors": [
+        "Libo Wang",
+        "Rui Li",
+        "Chenxi Duan",
+        "Ce Zhang",
+        "Xiaoliang Meng",
+        "Shenghui Fang"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/lgrs.2022.3143368",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3161825146",
+      "citation_count": 415,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Multimodal Transformer for Unaligned Multimodal Language Sequences",
+      "authors": [
+        "Yao-Hung Hubert Tsai",
+        "Shaojie Bai",
+        "Paul Pu Liang",
+        "J. Zico Kolter",
+        "Louis‐Philippe Morency",
+        "Ruslan Salakhutdinov"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/p19-1656",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2947476638",
+      "citation_count": 142,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/P19-1656.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Applying the Transformer to Character-level Transduction",
+      "authors": [
+        "Shijie Wu",
+        "Ryan Cotterell",
+        "Mans Hulden"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.eacl-main.163",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3153224075",
+      "citation_count": 70,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2021.eacl-main.163.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A tutorial survey of architectures, algorithms, and applications for deep learning",
+      "authors": [
+        "Li Deng"
+      ],
+      "year": 2014,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1017/atsip.2013.9",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2123585936",
+      "citation_count": 744,
+      "oa_status": "gold",
+      "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/023B6ADF962FA37F8EC684B209E3DFAE/S2048770313000097a.pdf/div-class-title-a-tutorial-survey-of-architectures-algorithms-and-applications-for-deep-learning-div.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Parallel Iterative Edit Models for Local Sequence Transduction",
+      "authors": [
+        "Abhijeet Awasthi",
+        "Sunita Sarawagi",
+        "Rasna Goyal",
+        "Sabyasachi Ghosh",
+        "Vihari Piratla"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/d19-1435",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2970429618",
+      "citation_count": 147,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/D19-1435.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "FTRANS",
+      "authors": [
+        "Bingbing Li",
+        "Santosh Pandey",
+        "Haowen Fang",
+        "Yanjun Lyv",
+        "Ji Li",
+        "Jieyang Chen",
+        "Mimi Xie",
+        "Lipeng Wan",
+        "Hang Liu",
+        "Caiwen Ding"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3370748.3406567",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3047848469",
+      "citation_count": 202,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Multistep short-term wind speed forecasting using transformer",
+      "authors": [
+        "Huijuan Wu",
+        "Keqilao Meng",
+        "Daoerji Fan",
+        "Zhanqiang Zhang",
+        "Qing Huo Liu"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.energy.2022.125231",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4292814179",
+      "citation_count": 202,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0360544222021193/pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Transformer-Based Approach Combining Deep Learning Network and Spatial-Temporal Information for Raw EEG Classification",
+      "authors": [
+        "Jin Xie",
+        "J. X. Zhang",
+        "Jiayao Sun",
+        "Zheng Ma",
+        "Liuni Qin",
+        "Guanglin Li",
+        "Huihui Zhou",
+        "Yang Zhan"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tnsre.2022.3194600",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4289538860",
+      "citation_count": 315,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Approximation Rate of the Transformer Architecture for Sequence Modeling",
+      "authors": [
+        "Haotian Jiang",
+        "Qianxiao Li"
+      ],
+      "year": 2024,
+      "venue": "Advances in Neural Information Processing Systems 37",
+      "abstract": null,
+      "doi": "10.52202/079017-2202",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 7,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A Transformer-based Sequence Prediction Architecture for Etch Profile Evolution in Semiconductor Manufacturing_supp1-3669891.docx",
+      "authors": [
+        "Dong Ni"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tsm.2026.3669891/mm1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 9: Transformer architecture.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3276/fig-9",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "ViSTA: variant-integrated sequence transformer architecture learns DNA mutational contexts for breast cancer subtyping",
+      "authors": [
+        "Sushil Shakyawar",
+        "Chittibabu Guda"
+      ],
+      "year": 2026,
+      "venue": "Genome Biology",
+      "abstract": null,
+      "doi": "10.1186/s13059-026-04275-9",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 6: Vision transformer architecture.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.4069/fig-6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 8: Transformer-based architecture.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3510/fig-8",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 8: The Transformer architecture.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.1224/fig-8",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Fig. 4. Architecture combining transformer blocks with a U-shaped architecture [81].",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.17816/dd629866-4230420",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 4: Transformer architecture (Vaswani, 2017).",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3072/fig-4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Intelligent Sensing and Modeling for Molecular Sequence Prediction Based on Transformer Architecture",
+      "authors": [
+        "Kangjie li",
+        "Jiahang Han",
+        "Bo Pang",
+        "Dongqing Liu",
+        "Xuechao Guo",
+        "Nan Zhang"
+      ],
+      "year": 2025,
+      "venue": "2025 37th Chinese Control and Decision Conference (CCDC)",
+      "abstract": null,
+      "doi": "10.1109/ccdc65474.2025.11090480",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 2: General transformer architecture of GPT.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerjcs.2400/fig-2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 4: Model architecture of Swin Transformer.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3829/fig-4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 2: Architecture of Swin Transformer block.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.2447/fig-2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 3: Architecture of transformer-based models.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3951/fig-3",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 3: The suggested vision transformer architecture.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.4082/fig-3",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Supplemental Information 8: The architecture of Transformer.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3761/supp-8",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 2: Architecture of the transformer module.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.1638/fig-2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Voice Transformer Network: Sequence-to-Sequence Voice Conversion Using Transformer with Text-to-Speech Pretraining",
+      "authors": [
+        "Wen-Chin Huang",
+        "Tomoki Hayashi",
+        "Yi-Chiao Wu",
+        "Hirokazu Kameoka",
+        "Tomoki Toda"
+      ],
+      "year": 2020,
+      "venue": "Interspeech 2020",
+      "abstract": null,
+      "doi": "10.21437/interspeech.2020-1066",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 57,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 6: Architecture of the tab transformer model.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3206/fig-6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A Novel Transformer Architecture for Time Series Forecasting: Integrating DP Block and Sequence Slicing Attention",
+      "authors": [
+        "Jilong Lan",
+        "Jihao Zhang",
+        "Zhijiang Wang",
+        "Chunna Zhao",
+        "Yaqun Huang"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE International Conference on Data Science and Systems (DSS)",
+      "abstract": null,
+      "doi": "10.1109/dss64273.2024.00017",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "MaTPIP: A deep-learning architecture with eXplainable AI for sequence-driven, feature mixed protein-protein interaction prediction.",
+      "authors": [
+        "Ghosh S",
+        "Mitra P"
+      ],
+      "year": 2024,
+      "venue": "Computer methods and programs in biomedicine",
+      "abstract": null,
+      "doi": "10.1016/j.cmpb.2023.107955",
+      "arxiv_id": null,
+      "pmid": "38064959",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "BEHRT: Transformer for Electronic Health Records.",
+      "authors": [
+        "Li Y",
+        "Rao S",
+        "Solares JRA",
+        "Hassaine A",
+        "Ramakrishnan R",
+        "Canoy D",
+        "Zhu Y",
+        "Rahimi K",
+        "Salimi-Khorshidi G"
+      ],
+      "year": 2020,
+      "venue": "Scientific reports",
+      "abstract": null,
+      "doi": "10.1038/s41598-020-62922-y",
+      "arxiv_id": null,
+      "pmid": "32346050",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "ResUbiNet: A Novel Deep Learning Architecture for Ubiquitination Site Prediction.",
+      "authors": [
+        "Duan Z",
+        "Liang Y",
+        "Xiu X",
+        "Ma W",
+        "Mei H"
+      ],
+      "year": 2025,
+      "venue": "Current genomics",
+      "abstract": null,
+      "doi": "10.2174/0113892029331751240820111158",
+      "arxiv_id": null,
+      "pmid": "41235098",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Deep learning-driven decoding of ubiquitination: from regulatory mechanisms to targeted protein degradation.",
+      "authors": [
+        "Zhang J",
+        "Xia B",
+        "Wang Z",
+        "Wang Z",
+        "Sun Y",
+        "Wang H",
+        "Li X",
+        "Gao X",
+        "Zhao W",
+        "Li Y",
+        "Zhou F",
+        "Chen T",
+        "Shi Z",
+        "Lv J",
+        "Yang R",
+        "Zhang Y"
+      ],
+      "year": 2026,
+      "venue": "Biology direct",
+      "abstract": null,
+      "doi": "10.1186/s13062-026-00848-7",
+      "arxiv_id": null,
+      "pmid": "42226266",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "ProMoHGT: a heterogeneous graph transformer with graph contrastive learning for robust microbial protein function prediction.",
+      "authors": [
+        "Sui J",
+        "Wang X",
+        "Su Y",
+        "Gao M",
+        "Huang H",
+        "Liu H",
+        "Zhang J",
+        "Tang Y"
+      ],
+      "year": 2025,
+      "venue": "BMC genomics",
+      "abstract": null,
+      "doi": "10.1186/s12864-025-12383-2",
+      "arxiv_id": null,
+      "pmid": "41402709",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "A protein pre-trained model-based approach for the identification of the liquid-liquid phase separation (LLPS) proteins.",
+      "authors": [
+        "Ahmed Z",
+        "Shahzadi K",
+        "Temesgen SA",
+        "Ahmad B",
+        "Chen X",
+        "Ning L",
+        "Zulfiqar H",
+        "Lin H",
+        "Jin YT"
+      ],
+      "year": 2024,
+      "venue": "International journal of biological macromolecules",
+      "abstract": null,
+      "doi": "10.1016/j.ijbiomac.2024.134146",
+      "arxiv_id": null,
+      "pmid": "39067723",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Transformer neural network for protein-specific de novo drug generation as a machine translation problem.",
+      "authors": [
+        "Grechishnikova D"
+      ],
+      "year": 2021,
+      "venue": "Scientific reports",
+      "abstract": null,
+      "doi": "10.1038/s41598-020-79682-4",
+      "arxiv_id": null,
+      "pmid": "33432013",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Predicting nucleic acid binding sites by attention map-guided graph convolutional network with protein language embeddings and physicochemical information.",
+      "authors": [
+        "Li X",
+        "Peng W",
+        "Zhu X"
+      ],
+      "year": 2025,
+      "venue": "Briefings in bioinformatics",
+      "abstract": null,
+      "doi": "10.1093/bib/bbaf457",
+      "arxiv_id": null,
+      "pmid": "40919912",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 727,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2088,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 441,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1723,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "c02d28d161af2198ca02ab10ed1b9076128c92905edacf3d8a1e4d18d36fbc89",
+  "identified_openalex": true
+}

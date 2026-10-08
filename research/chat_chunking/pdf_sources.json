@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "access_policy": "Public open-access PDFs from author/preprint or scholarly repositories; retain locally for the authorized experiment, do not redistribute.",
+  "documents": [
+    {
+      "doc_id": "word2vec-fullpdf",
+      "title": "Efficient Estimation of Word Representations in Vector Space",
+      "landing_url": "https://arxiv.org/abs/1301.3781v3",
+      "pdf_url": "https://arxiv.org/pdf/1301.3781v3",
+      "identity_pattern": "Efficient\\s+Estimation\\s+of\\s+Word\\s+Representations"
+    },
+    {
+      "doc_id": "guppy-fullpdf",
+      "title": "GUPPY: Pythonic Quantum-Classical Programming",
+      "landing_url": "https://arxiv.org/abs/2510.12582v1",
+      "pdf_url": "https://arxiv.org/pdf/2510.12582v1",
+      "identity_pattern": "GUPPY\\s*:\\s*Pythonic\\s+Quantum.Classical\\s+Programming"
+    },
+    {
+      "doc_id": "glove-fullpdf",
+      "title": "Glove: Global Vectors for Word Representation",
+      "landing_url": "https://aclanthology.org/D14-1162/",
+      "pdf_url": "https://aclanthology.org/D14-1162.pdf",
+      "identity_pattern": "GloV\\s*e\\s*:\\s*Global\\s+V\\s*ectors\\s+for\\s+Word\\s+Representation"
+    },
+    {
+      "doc_id": "qppl-fullpdf",
+      "title": "Quantum Programming Without the Quantum Physics",
+      "landing_url": "https://arxiv.org/abs/2408.16234v2",
+      "pdf_url": "https://arxiv.org/pdf/2408.16234v2",
+      "identity_pattern": "Quantum\\s+Programming\\s+Without\\s+the\\s+Quantum\\s+Physics"
+    },
+    {
+      "doc_id": "tensor-fullpdf",
+      "title": "Tensor quantum programming",
+      "landing_url": "https://arxiv.org/abs/2403.13486",
+      "pdf_url": "https://arxiv.org/pdf/2403.13486",
+      "identity_pattern": "Tensor\\s+Quantum\\s+Programming"
+    },
+    {
+      "doc_id": "nisq-fullpdf",
+      "title": "Quantum Computing in the NISQ era and beyond",
+      "landing_url": "https://arxiv.org/abs/1801.00862",
+      "pdf_url": "https://arxiv.org/pdf/1801.00862",
+      "identity_pattern": "Quantum\\s+Computing\\s+in\\s+the\\s+NISQ\\s+era\\s+and\\s+beyond"
+    }
+  ]
+}

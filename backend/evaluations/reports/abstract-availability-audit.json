@@ -1,0 +1,186 @@
+{
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "candidate_appearances": 1533,
+  "approx_distinct_identifiers_or_source_titles": 1462,
+  "missing_abstract_appearances": 1094,
+  "missing_abstract_share": 0.7136,
+  "groups": {
+    "missing_abstract": {
+      "appearances": 1094,
+      "mean_score": 0.5128,
+      "median_score": 0.4942,
+      "mean_rank": 36.916,
+      "median_rank": 37.0,
+      "ranked_at_10": 102,
+      "ranked_at_20": 260
+    },
+    "with_abstract": {
+      "appearances": 439,
+      "mean_score": 0.6413,
+      "median_score": 0.5666,
+      "mean_rank": 23.565,
+      "median_rank": 20,
+      "ranked_at_10": 138,
+      "ranked_at_20": 220
+    }
+  },
+  "present_target_appearances": 10,
+  "present_targets_without_abstract": [
+    {
+      "query_id": "exact-resnet",
+      "rank": 1
+    },
+    {
+      "query_id": "exact-segment-anything",
+      "rank": 1
+    }
+  ],
+  "abstractless_present_targets_outranked": 0,
+  "per_query": [
+    {
+      "query_id": "exact-transformers",
+      "category": "exact_title",
+      "candidates": 69,
+      "missing_abstract": 49
+    },
+    {
+      "query_id": "exact-bert",
+      "category": "exact_title",
+      "candidates": 60,
+      "missing_abstract": 40
+    },
+    {
+      "query_id": "exact-resnet",
+      "category": "exact_title",
+      "candidates": 57,
+      "missing_abstract": 57
+    },
+    {
+      "query_id": "exact-diffusion",
+      "category": "exact_title",
+      "candidates": 68,
+      "missing_abstract": 48
+    },
+    {
+      "query_id": "exact-lora",
+      "category": "exact_title",
+      "candidates": 77,
+      "missing_abstract": 57
+    },
+    {
+      "query_id": "exact-flashattention",
+      "category": "exact_title",
+      "candidates": 54,
+      "missing_abstract": 34
+    },
+    {
+      "query_id": "exact-sentencebert",
+      "category": "exact_title",
+      "candidates": 52,
+      "missing_abstract": 32
+    },
+    {
+      "query_id": "exact-segment-anything",
+      "category": "exact_title",
+      "candidates": 47,
+      "missing_abstract": 47
+    },
+    {
+      "query_id": "descriptive-transformers",
+      "category": "descriptive",
+      "candidates": 62,
+      "missing_abstract": 42
+    },
+    {
+      "query_id": "descriptive-dpr",
+      "category": "descriptive",
+      "candidates": 51,
+      "missing_abstract": 31
+    },
+    {
+      "query_id": "descriptive-rag",
+      "category": "descriptive",
+      "candidates": 77,
+      "missing_abstract": 57
+    },
+    {
+      "query_id": "descriptive-clip",
+      "category": "descriptive",
+      "candidates": 57,
+      "missing_abstract": 37
+    },
+    {
+      "query_id": "descriptive-vit",
+      "category": "descriptive",
+      "candidates": 62,
+      "missing_abstract": 42
+    },
+    {
+      "query_id": "descriptive-reasoning",
+      "category": "descriptive",
+      "candidates": 56,
+      "missing_abstract": 36
+    },
+    {
+      "query_id": "descriptive-nerf",
+      "category": "descriptive",
+      "candidates": 69,
+      "missing_abstract": 49
+    },
+    {
+      "query_id": "descriptive-qlora",
+      "category": "descriptive",
+      "candidates": 80,
+      "missing_abstract": 60
+    },
+    {
+      "query_id": "mismatch-dpr",
+      "category": "vocabulary_mismatch",
+      "candidates": 70,
+      "missing_abstract": 50
+    },
+    {
+      "query_id": "mismatch-rag",
+      "category": "vocabulary_mismatch",
+      "candidates": 73,
+      "missing_abstract": 53
+    },
+    {
+      "query_id": "mismatch-transformers",
+      "category": "vocabulary_mismatch",
+      "candidates": 80,
+      "missing_abstract": 60
+    },
+    {
+      "query_id": "mismatch-bert",
+      "category": "vocabulary_mismatch",
+      "candidates": 63,
+      "missing_abstract": 44
+    },
+    {
+      "query_id": "mismatch-flashattention",
+      "category": "vocabulary_mismatch",
+      "candidates": 57,
+      "missing_abstract": 37
+    },
+    {
+      "query_id": "mismatch-resnet",
+      "category": "vocabulary_mismatch",
+      "candidates": 66,
+      "missing_abstract": 46
+    },
+    {
+      "query_id": "mismatch-lora",
+      "category": "vocabulary_mismatch",
+      "candidates": 59,
+      "missing_abstract": 39
+    },
+    {
+      "query_id": "mismatch-diffusion",
+      "category": "vocabulary_mismatch",
+      "candidates": 67,
+      "missing_abstract": 47
+    }
+  ],
+  "interpretation": "No abstract-less present target was outranked. Group-wide score/rank differences are observational and confounded by query relevance, source and citations; this cache does not demonstrate target harm requiring a compensating ranking boost."
+}

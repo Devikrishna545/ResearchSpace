@@ -1,0 +1,1464 @@
+{
+  "id": "mismatch-lora",
+  "category": "vocabulary_mismatch",
+  "query": "parameter efficient adaptation via tiny trainable matrices",
+  "target": {
+    "arxiv_id": "2106.09685"
+  },
+  "plan": {
+    "topic": "parameter efficient adaptation via tiny trainable matrices",
+    "sub_queries": [
+      "parameter efficient adaptation via tiny trainable matrices"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "The Via Project: Overview of the Science, Instrument, and Survey",
+      "authors": [
+        " The Via Collaboration"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Via is a forthcoming all-sky spectroscopic survey that will achieve 100 m s$^{-1}$ radial velocity stability for millions of faint ($G \\lesssim 21$) stars while reaching LSST's single-visit depth ($r \\approx 24$) for transient spectroscopy, opening new regimes in near-field cosmology and time-domain astrophysics. Via will deploy identical fiber-fed, multi-object spectrographs on the 6.5m MMT and Magellan/Clay telescopes for a five-year, dual-hemisphere survey of $>2{,}000{,}000$ stars beginning in 2027 - timed to complement LSST. Each instrument has 576 robotically positioned fibers over a $1^\\circ$ field of view, feeding two spectrographs: Viaspec ($R \\approx 15{,}000$; 505-595 nm; 540 fibers) and Boombox ($R \\approx 1{,}000$; 360-1010 nm; 36 fibers). Four key goals drive the survey: (1) a comprehensive survey of velocity perturbations in cold stellar streams, sensitive to $M \\lesssim 10^7$ subhalos below the threshold of galaxy formation, a stringent test of the particle nature of dark matter; (2) a chemodynamical census of Milky Way satellite galaxies to understand the formation of the faintest galaxies; (3) the first 3D tomographic maps of cold gas in the circumgalactic medium via NaI absorption; and (4) the rapid characterization of thousands of transients to the single-epoch survey depth of LSST. Ancillary science - including the Ly$α$ forest at $z \\approx 3$-$4$, polluted white dwarfs, exoplanet host characterization, fast radio burst host galaxies, and extragalactic dwarf galaxies - will leverage spare fibers in every pointing. The Via Project is a collaboration between the Center for Astrophysics $|$ Harvard & Smithsonian, Carnegie Observatories, Stanford University, and Yale University.",
+      "doi": null,
+      "arxiv_id": "2606.18332v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2606.18332v1",
+      "raw_payload": {
+        "categories": [
+          "astro-ph.IM",
+          "astro-ph.GA"
+        ],
+        "primary_category": "astro-ph.IM"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Symmetric Hadamard matrices of order 116 and 172 exist",
+      "authors": [
+        "Olivia Di Matteo",
+        "Dragomir Z. Djokovic",
+        "Ilias S. Kotsireas"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We construct new symmetric Hadamard matrices of orders $92,116$, and $172$. While the existence of those of order $92$ was known since 1978, the orders $116$ and $172$ are new. Our construction is based on a recent new combinatorial array discovered by N. A. Balonin and J. Seberry. For order $116$ we used an adaptation of an algorithm for parallel collision search. The adaptation pertains to the modification of some aspects of the algorithm to make it suitable to solve a 3-way matching problem. We also point out that a new infinite series of symmetric Hadamard matrices arises by plugging into the GP array the matrices constructed by Xia, Xia, Seberry, and Wu in 2005.",
+      "doi": null,
+      "arxiv_id": "1503.04226v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1503.04226v2",
+      "raw_payload": {
+        "categories": [
+          "math.CO"
+        ],
+        "primary_category": "math.CO"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Spectrum of random centrosymmetric matrices; CLT and Circular law",
+      "authors": [
+        "Indrajit Jana",
+        "Sunita Rani"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We analyze the asymptotic fluctuations of linear eigenvalue statistics of random centrosymmetric matrices with i.i.d. entries. We prove that for a complex analytic test function, the centered and normalized linear eigenvalue statistics of random centrosymmetric matrices converge to a normal distribution. We find the exact expression of the variance of the limiting normal distribution via combinatorial arguments. Moreover, we also argue that the limiting spectral distribution of properly scaled centrosymmetric matrices follows the circular law.",
+      "doi": null,
+      "arxiv_id": "2403.03513v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2403.03513v3",
+      "raw_payload": {
+        "categories": [
+          "math.PR",
+          "math-ph"
+        ],
+        "primary_category": "math.PR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Supplementary difference sets with symmetry for Hadamard matrices",
+      "authors": [
+        "Dragomir Z. Djokovic"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "First we give an overview of the known supplementary difference sets (SDS) (A_i), i=1..4, with parameters (n;k_i;d), where k_i=|A_i| and each A_i is either symmetric or skew and k_1 + ... + k_4 = n + d. Five new Williamson matrices over the elementary abelian groups of order 25, 27 and 49 are constructed. New examples of skew Hadamard matrices of order 4n for n=47,61,127 are presented. The last of these is obtained from a (127,57,76)-difference family that we have constructed. An old non-published example of G-matrices of order 37 is also included.",
+      "doi": null,
+      "arxiv_id": "0903.5053v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/0903.5053v2",
+      "raw_payload": {
+        "categories": [
+          "math.CO"
+        ],
+        "primary_category": "math.CO"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Asymptotic Freeness of Unitary Matrices in Tensor Product Spaces for Invariant States",
+      "authors": [
+        "Benoît Collins",
+        "Pierre Yves Gaudreau Lamarre",
+        "Camille Male"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper, we pursue our study of asymptotic properties of families of random matrices that have a tensor structure. In previous work, the first- and second-named authors provided conditions under which tensor products of unitary random matrices are asymptotically free with respect to the normalized trace. Here, we extend this result by proving that asymptotic freeness of tensor products of Haar unitary matrices holds with respect to a significantly larger class of states. Our result relies on invariance under the symmetric group, and therefore on traffic probability.\n  As a byproduct, we explore two additional generalisations: (i) we state results of freeness in a context of general sequences of representations of the unitary group -- the fundamental representation being a particular case that corresponds to the classical asymptotic freeness result for Haar unitary matrices, and (ii) we consider actions of the symmetric group and the free group simultaneously and obtain a result of asymptotic freeness in this context as well.",
+      "doi": null,
+      "arxiv_id": "1911.07627v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1911.07627v2",
+      "raw_payload": {
+        "categories": [
+          "math.PR",
+          "math.CO",
+          "math.OA"
+        ],
+        "primary_category": "math.PR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Universality of local eigenvalue statistics in random matrices with external source",
+      "authors": [
+        "Sean O'Rourke",
+        "Van Vu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Consider a random matrix of the form $W_n = M_n + D_n$, where $M_n$ is a Wigner matrix and $D_n$ is a real deterministic diagonal matrix ($D_n$ is commonly referred to as an external source in the mathematical physics literature). We study the universality of the local eigenvalue statistics of $W_n$ for a general class of Wigner matrices $M_n$ and diagonal matrices $D_n$. Unlike the setting of many recent results concerning universality, the global semicircle law fails for this model. However, we can still obtain the universal sine kernel formula for the correlation functions. This demonstrates the remarkable phenomenon that local laws are more resilient than global ones. The universality of the correlation functions follows from a four moment theorem, which we prove using a variant of the approach used earlier by Tao and Vu.",
+      "doi": null,
+      "arxiv_id": "1308.1057v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1308.1057v3",
+      "raw_payload": {
+        "categories": [
+          "math.PR",
+          "math-ph"
+        ],
+        "primary_category": "math.PR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Efficient unsupervised domain adaptation via self-supervised vision transformer and synergistic cross-domain alignment",
+      "authors": [
+        "Ali Abedi",
+        "Q. M. Jonathan Wu",
+        "Ning Zhang",
+        "Farhad Pourpanah"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Unsupervised domain adaptation (UDA) aims to mitigate domain shift, where the distribution of labeled source data differs from that of unlabeled target data. Despite recent advances, existing methods often rely on fine-tuning large backbone models, which leads to high computational cost and limits scalability in resource-constrained environments. This limitation highlights the need for parameter-efficient approaches that maintain strong performance with reduced training complexity. Self-supervised foundation models such as DINOv2 provide highly transferable representations and raise the question of whether effective domain adaptation can be achieved without full fine-tuning. To address this question, we propose Efficient Unsupervised Domain Adaptation (EUDA), a parameter-efficient framework that leverages a frozen DINOv2 backbone as a feature extractor and updates only a lightweight bottleneck and classification head. We also adopt a synergistic domain alignment loss (SDAL), which combines cross-entropy (CE) and maximum mean discrepancy (MMD) to promote both discriminative learning and cross-domain alignment. Experimental results on Office-Home, Office-31, VisDA-2017, and DomainNet demonstrate that EUDA achieves competitive performance across diverse domain complexities, while reducing the number of trainable parameters by 42 to 99.7%. These results show the suitability of the proposed method for resource-constrained and distributed environments.",
+      "doi": null,
+      "arxiv_id": "2407.21311v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2407.21311v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Dynamics of tuples of matrices in Jordan form",
+      "authors": [
+        "George Costakis",
+        "Ioannis Parissis"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "A tuple (T_1,...,T_k) of (n x n) matrices over R is called hypercyclic if for some x in R^n the set {T^{m_1} T^{m_2}...T^{m_k} x : m_1,m_2,...,m_k in N} is dense in R^n. We prove that the minimum number of (n x n) matrices in Jordan form over R which form a hypercyclic tuple is n+1. This answers a question of Costakis, Hadjiloucas and Manoussos.",
+      "doi": null,
+      "arxiv_id": "1003.5321v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1003.5321v3",
+      "raw_payload": {
+        "categories": [
+          "math.FA",
+          "math.DS"
+        ],
+        "primary_category": "math.FA"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Parameter-Efficient Adaptation of SAM3 for Prompt-Driven Surgical Concept Segmentation",
+      "authors": [
+        "Changjing Liu",
+        "Yiming Huang",
+        "Beilei Cui",
+        "Liangjing Shao",
+        "Long Bai",
+        "Yanheng Li",
+        "Haoxuan Che",
+        "Hongliang Ren"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Efficient surgical segmentation empowers clinical diagnosis, intraoperative monitoring, and downstream robotic pipelines for reconstruction and simulation. Although prompt-driven foundation models like Segment Anything Model 3 (SAM3) achieve strong segmentation performance on natural images, surgical data exhibits domain gaps against its pre-training data, resulting in degraded segmentation accuracy. Furthermore, existing medical SAM methods require full-parameter fine-tuning, incurring heavy computational consumption and low efficiency. To address these limitations, this work proposes a parameter-efficient Low-Rank Adaptation (LoRA) adaptation of SAM3 for surgical concept segmentation. We inject low-rank adapters into the prompt encoder, detector and tracker while fully freezing the vision backbone, which only optimizes 0.98% of the total model parameters and supports training on a single consumer GPU. Comprehensive experiments demonstrate that our method consistently outperforms zero-shot SAM3 and other mainstream baselines, and the generated segmentation results can be directly deployed to support downstream robotic surgical scene reconstruction and physical simulation pipelines.",
+      "doi": null,
+      "arxiv_id": "2607.23694v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2607.23694v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "The 1st Tiny Object Detection Challenge:Methods and Results",
+      "authors": [
+        "Xuehui Yu",
+        "Zhenjun Han",
+        "Yuqi Gong",
+        "Nan Jiang",
+        "Jian Zhao",
+        "Qixiang Ye",
+        "Jie Chen",
+        "Yuan Feng",
+        "Bin Zhang",
+        "Xiaodi Wang",
+        "Ying Xin",
+        "Jingwei Liu",
+        "Mingyuan Mao",
+        "Sheng Xu",
+        "Baochang Zhang",
+        "Shumin Han",
+        "Cheng Gao",
+        "Wei Tang",
+        "Lizuo Jin",
+        "Mingbo Hong",
+        "Yuchao Yang",
+        "Shuiwang Li",
+        "Huan Luo",
+        "Qijun Zhao",
+        "Humphrey Shi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The 1st Tiny Object Detection (TOD) Challenge aims to encourage research in developing novel and accurate methods for tiny object detection in images which have wide views, with a current focus on tiny person detection. The TinyPerson dataset was used for the TOD Challenge and is publicly released. It has 1610 images and 72651 box-levelannotations. Around 36 participating teams from the globe competed inthe 1st TOD Challenge. In this paper, we provide a brief summary of the1st TOD Challenge including brief introductions to the top three methods.The submission leaderboard will be reopened for researchers that areinterested in the TOD challenge. The benchmark dataset and other information can be found at: https://github.com/ucas-vg/TinyBenchmark.",
+      "doi": null,
+      "arxiv_id": "2009.07506v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2009.07506v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Efficient computation of permanents, with applications to boson sampling and random matrices",
+      "authors": [
+        "P. H. Lundow",
+        "K. Markström"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In order to find the outcome probabilities of quantum mechanical systems like the optical networks underlying Boson sampling, it is necessary to be able to compute the permanents of unitary matrices, a computationally hard task. Here we first discuss how to compute the permanent efficiently on a parallel computer, followed by algorithms which provide an exponential speed-up for sparse matrices and linear run times for matrices of limited bandwidth. The parallel algorithm has been implemented in a freely available software package, also available in an efficient serial version. As part of the timing runs for this package we set a new world record for the matrix order on which a permanent has been computed. Next we perform a simulation study of several conjectures regarding the distribution of the permanent for random matrices. Here we focus on permanent anti-concentration conjecture, which has been used to find the classical computational complexity of Boson sampling. We find a good agreement with the basic versions of these conjectures and based on our data we propose refined versions of some of them. For small systems we also find noticable deviations from a propose strengthening of a bound for the number of photons in a Boson sampling system.",
+      "doi": null,
+      "arxiv_id": "1904.06229v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1904.06229v2",
+      "raw_payload": {
+        "categories": [
+          "quant-ph"
+        ],
+        "primary_category": "quant-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Parameter Efficient Fine-tuning via Explained Variance Adaptation",
+      "authors": [
+        "Fabian Paischer",
+        "Lukas Hauzenberger",
+        "Thomas Schmied",
+        "Benedikt Alkin",
+        "Marc Peter Deisenroth",
+        "Sepp Hochreiter"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Foundation models (FMs) are pre-trained on large-scale datasets and then fine-tuned for a specific downstream task. The most common fine-tuning method is to update pretrained weights via low-rank adaptation (LoRA). Existing initialization strategies for LoRA often rely on singular value decompositions (SVD) of gradients or weight matrices. However, they do not provably maximize the expected gradient signal, which is critical for fast adaptation. To this end, we introduce Explained Variance Adaptation (EVA), an initialization scheme that uses the directions capturing the most activation variance, provably maximizing the expected gradient signal and accelerating fine-tuning. EVA performs incremental SVD on minibatches of activation vectors and selects the right-singular vectors for initialization once they converged. Further, by selecting the directions that capture the most activation-variance for a given rank budget, EVA accommodates adaptive ranks that reduce the number of trainable parameters. We apply EVA to a variety of fine-tuning tasks as language generation and understanding, image classification, and reinforcement learning. EVA exhibits faster convergence than competitors and achieves the highest average score across a multitude of tasks per domain while reducing the number of trainable parameters through rank redistribution. In summary, EVA establishes a new Pareto frontier compared to existing LoRA initialization schemes in both accuracy and efficiency.",
+      "doi": null,
+      "arxiv_id": "2410.07170v5",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2410.07170v5",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CL",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "CDPM-Align: Multi-Scale Guidance-Aligned Diffusion Pretraining for Robust Few-Shot Anatomical Landmark Detection",
+      "authors": [
+        "Roberto Di Via",
+        "Irina Voiculescu",
+        "Francesca Odone",
+        "Vito Paolo Pastore"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Anatomical landmark detection is a fundamental task in medical image analysis supporting a wide range of diagnostic and interventional workflows. Although recent methods have achieved sub-millimetric localisation, accuracy alone is not sufficient for clinical deployment, requiring reliability and robustness in prediction. Despite its clinical relevance, the impact of representation learning in this context is still underexplored. In this work, we introduce CDPM-align, a multi-scale guidance-aligned conditional diffusion pre-training for anatomical landmark detection. Our experimental setup focuses on a few images and a few annotation regimes. Specifically, we employ three popular heterogeneous small-scale benchmark datasets for representation learning via conditional generative pre-training. Furthermore, we consider low-annotation scenarios for the downstream task of landmark detection, with 10 and 25 annotated images, reflecting realistic trade-offs between clinical effort and resource constraints for annotations. Our results confirm that generative pre-training enables the model to learn a robust representation. This improves both accuracy and uncertainty on the downstream tasks, advancing towards safe and efficient clinical deployment.",
+      "doi": null,
+      "arxiv_id": "2606.04898v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2606.04898v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Everything to the Synthetic: Diffusion-driven Test-time Adaptation via Synthetic-Domain Alignment",
+      "authors": [
+        "Jiayi Guo",
+        "Junhao Zhao",
+        "Chaoqun Du",
+        "Yulin Wang",
+        "Chunjiang Ge",
+        "Zanlin Ni",
+        "Shiji Song",
+        "Humphrey Shi",
+        "Gao Huang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Test-time adaptation (TTA) aims to improve the performance of source-domain pre-trained models on previously unseen, shifted target domains. Traditional TTA methods primarily adapt model weights based on target data streams, making model performance sensitive to the amount and order of target data. The recently proposed diffusion-driven TTA methods mitigate this by adapting model inputs instead of weights, where an unconditional diffusion model, trained on the source domain, transforms target-domain data into a synthetic domain that is expected to approximate the source domain. However, in this paper, we reveal that although the synthetic data in diffusion-driven TTA seems indistinguishable from the source data, it is unaligned with, or even markedly different from the latter for deep networks. To address this issue, we propose a \\textbf{S}ynthetic-\\textbf{D}omain \\textbf{A}lignment (SDA) framework. Our key insight is to fine-tune the source model with synthetic data to ensure better alignment. Specifically, we first employ a conditional diffusion model to generate labeled samples, creating a synthetic dataset. Subsequently, we use the aforementioned unconditional diffusion model to add noise to and denoise each sample before fine-tuning. This Mix of Diffusion (MoD) process mitigates the potential domain misalignment between the conditional and unconditional models. Extensive experiments across classifiers, segmenters, and multimodal large language models (MLLMs, \\eg, LLaVA) demonstrate that SDA achieves superior domain alignment and consistently outperforms existing diffusion-driven TTA methods. Our code is available at https://github.com/SHI-Labs/Diffusion-Driven-Test-Time-Adaptation-via-Synthetic-Domain-Alignment.",
+      "doi": null,
+      "arxiv_id": "2406.04295v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2406.04295v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Tiny language models",
+      "authors": [
+        "Ronit D. Gross",
+        "Yarden Tzach",
+        "Tal Halevi",
+        "Ella Koresh",
+        "Ido Kanter"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "A prominent achievement of natural language processing (NLP) is its ability to understand and generate meaningful human language. This capability relies on complex feedforward transformer block architectures pre-trained on large language models (LLMs). However, LLM pre-training is currently feasible only for a few dominant companies due to the immense computational resources required, limiting broader research participation. This creates a critical need for more accessible alternatives. In this study, we explore whether tiny language models (TLMs) exhibit the same key qualitative features of LLMs. We demonstrate that TLMs exhibit a clear performance gap between pre-trained and non-pre-trained models across classification tasks, indicating the effectiveness of pre-training, even at a tiny scale. The performance gap increases with the size of the pre-training dataset and with greater overlap between tokens in the pre-training and classification datasets. Furthermore, the classification accuracy achieved by a pre-trained deep TLM architecture can be replicated through a soft committee of multiple, independently pre-trained shallow architectures, enabling low-latency TLMs without affecting classification accuracy. Our results are based on pre-training BERT-6 and variants of BERT-1 on subsets of the Wikipedia dataset and evaluating their performance on FewRel, AGNews, and DBPedia classification tasks. Future research on TLM is expected to further illuminate the mechanisms underlying NLP, especially given that its biologically inspired models suggest that TLMs may be sufficient for children or adolescents to develop language. The data and code that support the findings of this study are openly available on https://github.com/Rg32601/Tiny-Language-Models .",
+      "doi": null,
+      "arxiv_id": "2507.14871v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2507.14871v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Accurate Parameter-Efficient Test-Time Adaptation for Time Series Forecasting",
+      "authors": [
+        "Heitor R. Medeiros",
+        "Hossein Sharifi-Noghabi",
+        "Gabriel L. Oliveira",
+        "Saghar Irandoust"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Real-world time series often exhibit a non-stationary nature, degrading the performance of pre-trained forecasting models. Test-Time Adaptation (TTA) addresses this by adjusting models during inference, but existing methods typically update the full model, increasing memory and compute costs. We propose PETSA, a parameter-efficient method that adapts forecasters at test time by only updating small calibration modules on the input and output. PETSA uses low-rank adapters and dynamic gating to adjust representations without retraining. To maintain accuracy despite limited adaptation capacity, we introduce a specialized loss combining three components: (1) a robust term, (2) a frequency-domain term to preserve periodicity, and (3) a patch-wise structural term for structural alignment. PETSA improves the adaptability of various forecasting backbones while requiring fewer parameters than baselines. Experimental results on benchmark datasets show that PETSA achieves competitive or better performance across all horizons. Our code is available at: https://github.com/BorealisAI/PETSA",
+      "doi": null,
+      "arxiv_id": "2506.23424v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2506.23424v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "RoCoFT: Efficient Finetuning of Large Language Models with Row-Column Updates",
+      "authors": [
+        "Md Kowsher",
+        "Tara Esmaeilbeig",
+        "Chun-Nam Yu",
+        "Chen Chen",
+        "Mojtaba Soltanalian",
+        "Niloofar Yousefi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We propose RoCoFT, a parameter-efficient fine-tuning method for large-scale language models (LMs) based on updating only a few rows and columns of the weight matrices in transformers. Through extensive experiments with medium-size LMs like BERT and RoBERTa, and larger LMs like Bloom-7B, Llama2-7B, and Llama2-13B, we show that our method gives comparable or better accuracies than state-of-art PEFT methods while also being more memory and computation-efficient. We also study the reason behind the effectiveness of our method with tools from neural tangent kernel theory. We empirically demonstrate that our kernel, constructed using a restricted set of row and column parameters, are numerically close to the full-parameter kernel and gives comparable classification performance. Ablation studies are conducted to investigate the impact of different algorithmic choices, including the selection strategy for rows and columns as well as the optimal rank for effective implementation of our method.",
+      "doi": null,
+      "arxiv_id": "2410.10075v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2410.10075v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "TriAdaptLoRA: Brain-Inspired Triangular Adaptive Low-Rank Adaptation for Parameter-Efficient Fine-Tuning",
+      "authors": [
+        "Yao Liang",
+        "Yuwei Wang",
+        "Yi Zeng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The fine-tuning of Large Language Models (LLMs) is pivotal for achieving optimal performance across diverse downstream tasks. However, while full fine-tuning delivers superior results, it entails significant computational and resource costs. Parameter-Efficient Fine-Tuning (PEFT) methods, such as LoRA, address these challenges by reducing the number of trainable parameters, but they often struggle with rank adjustment efficiency and task-specific adaptability. We propose Triangular Adaptive Low-Rank Adaptation (TriAdaptLoRA), a novel PEFT framework inspired by neuroscience principles, which dynamically optimizes the allocation of trainable parameters. TriAdaptLoRA introduces three key innovations: 1) a triangular split of transformation matrices into lower and upper triangular components to maximize parameter utilization, 2) a parameter importance metric based on normalized Frobenius norms for efficient adaptation, and 3) an adaptive rank-growth strategy governed by dynamic thresholds, allowing flexible parameter allocation across training steps. Experiments conducted on a variety of natural language understanding and generation tasks demonstrate that TriAdaptLoRA consistently outperforms existing PEFT methods. It achieves superior performance, enhanced stability, and reduced computational overhead, particularly under linear threshold-driven rank growth. These results highlight its efficacy as a scalable and resource-efficient solution for fine-tuning LLMs.",
+      "doi": null,
+      "arxiv_id": "2501.08008v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2501.08008v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Towards a Unified View of Parameter-Efficient Transfer Learning",
+      "authors": [
+        "Junxian He",
+        "Chunting Zhou",
+        "Xuezhe Ma",
+        "Taylor Berg-Kirkpatrick",
+        "Graham Neubig"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Fine-tuning large pre-trained language models on downstream tasks has become the de-facto learning paradigm in NLP. However, conventional approaches fine-tune all the parameters of the pre-trained model, which becomes prohibitive as the model size and the number of tasks grow. Recent work has proposed a variety of parameter-efficient transfer learning methods that only fine-tune a small number of (extra) parameters to attain strong performance. While effective, the critical ingredients for success and the connections among the various methods are poorly understood. In this paper, we break down the design of state-of-the-art parameter-efficient transfer learning methods and present a unified framework that establishes connections between them. Specifically, we re-frame them as modifications to specific hidden states in pre-trained models, and define a set of design dimensions along which different methods vary, such as the function to compute the modification and the position to apply the modification. Through comprehensive empirical studies across machine translation, text summarization, language understanding, and text classification benchmarks, we utilize the unified view to identify important design choices in previous methods. Furthermore, our unified framework enables the transfer of design elements across different approaches, and as a result we are able to instantiate new parameter-efficient fine-tuning methods that tune less parameters than previous methods while being more effective, achieving comparable results to fine-tuning all parameters on all four tasks.",
+      "doi": null,
+      "arxiv_id": "2110.04366v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2110.04366v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "TinyTL: Reduce Activations, Not Trainable Parameters for Efficient On-Device Learning",
+      "authors": [
+        "Han Cai",
+        "Chuang Gan",
+        "Ligeng Zhu",
+        "Song Han"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "On-device learning enables edge devices to continually adapt the AI models to new data, which requires a small memory footprint to fit the tight memory constraint of edge devices. Existing work solves this problem by reducing the number of trainable parameters. However, this doesn't directly translate to memory saving since the major bottleneck is the activations, not parameters. In this work, we present Tiny-Transfer-Learning (TinyTL) for memory-efficient on-device learning. TinyTL freezes the weights while only learns the bias modules, thus no need to store the intermediate activations. To maintain the adaptation capacity, we introduce a new memory-efficient bias module, the lite residual module, to refine the feature extractor by learning small residual feature maps adding only 3.8% memory overhead. Extensive experiments show that TinyTL significantly saves the memory (up to 6.5x) with little accuracy loss compared to fine-tuning the full network. Compared to fine-tuning the last layer, TinyTL provides significant accuracy improvements (up to 34.1%) with little memory overhead. Furthermore, combined with feature extractor adaptation, TinyTL provides 7.3-12.9x memory saving without sacrificing accuracy compared to fine-tuning the full Inception-V3.",
+      "doi": null,
+      "arxiv_id": "2007.11622v5",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2007.11622v5",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+      "authors": [
+        "Elad Ben Zaken",
+        "Yoav Goldberg",
+        "Shauli Ravfogel"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2022.acl-short.1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3176828726",
+      "citation_count": 734,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2022.acl-short.1.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey of Quantization Methods for Efficient Neural Network Inference",
+      "authors": [
+        "Amir Gholami",
+        "Sehoon Kim",
+        "Zhen Dong",
+        "Zhewei Yao",
+        "Michael W. Mahoney",
+        "Kurt Keutzer"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1201/9781003162810-13",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3137147200",
+      "citation_count": 1129,
+      "oa_status": "gold",
+      "pdf_url": "https://api.taylorfrancis.com/content/chapters/edit/download?identifierName=doi&identifierValue=10.1201/9781003162810-13&type=chapterpdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ResMLP: Feedforward Networks for Image Classification With Data-Efficient Training",
+      "authors": [
+        "Hugo Touvron",
+        "Piotr Bojanowski",
+        "Mathilde Caron",
+        "Matthieu Cord",
+        "Alaaeldin El-Nouby",
+        "Édouard Grave",
+        "Gautier Izacard",
+        "Armand Joulin",
+        "Gabriel Synnaeve",
+        "Jakob J. Verbeek",
+        "Hervé Jeǵou"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tpami.2022.3206148",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3163465952",
+      "citation_count": 808,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Least angle regression",
+      "authors": [
+        "Bradley Efron",
+        "Trevor Hastie",
+        "Iain M. Johnstone",
+        "Robert John Tibshirani"
+      ],
+      "year": 2004,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1214/009053604000000067",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2063978378",
+      "citation_count": 9594,
+      "oa_status": "bronze",
+      "pdf_url": "https://projecteuclid.org/journals/annals-of-statistics/volume-32/issue-2/Least-angle-regression/10.1214/009053604000000067.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning",
+      "authors": [
+        "Haokun Liu",
+        "Derek Tam",
+        "Muqeeth, Mohammed",
+        "Jay Mohta",
+        "Tenghao Huang",
+        "Mohit Bansal",
+        "Colin Raffel"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2205.05638",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4280534475",
+      "citation_count": 294,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2205.05638",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "authors": [
+        "Tim Dettmers",
+        "Artidoro Pagnoni",
+        "Ari Holtzman",
+        "Luke Zettlemoyer"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2305.14314",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4378509449",
+      "citation_count": 510,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2305.14314",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Parameter-Efficient Model Adaptation for Vision Transformers",
+      "authors": [
+        "Xuehai He",
+        "Chunyuan Li",
+        "Pengchuan Zhang",
+        "Jianwei Yang",
+        "Xin Eric Wang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v37i1.25160",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4382465573",
+      "citation_count": 70,
+      "oa_status": "diamond",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25160/24932",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Efficient Acceleration of Deep Learning Inference on Resource-Constrained Edge Devices: A Review",
+      "authors": [
+        "Md Maruf Hossain Shuvo",
+        "SYED KAMRUL ISLAM",
+        "Jianlin Jack Cheng",
+        "Bashir I. Morshed"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/jproc.2022.3226481",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4312910656",
+      "citation_count": 413,
+      "oa_status": "hybrid",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Large scale tissue histopathology image classification, segmentation, and visualization via deep convolutional activation features",
+      "authors": [
+        "Yan Lei Xu",
+        "Zhipeng Jia",
+        "Liang-Bo Wang",
+        "Yuqing Ai",
+        "Fang Zhang",
+        "Maode Lai",
+        "Eric Chang"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1186/s12859-017-1685-x",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2618999197",
+      "citation_count": 432,
+      "oa_status": "gold",
+      "pdf_url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-017-1685-x",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Modeling Protein Evolution with Several Amino Acid Replacement Matrices Depending on Site Rates",
+      "authors": [
+        "Si Quang Le",
+        "Cuong Cao Dang",
+        "Olivier Gascuel"
+      ],
+      "year": 2012,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1093/molbev/mss112",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2100030044",
+      "citation_count": 263,
+      "oa_status": "bronze",
+      "pdf_url": "https://academic.oup.com/mbe/article-pdf/29/10/2921/3416403/mss112.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects",
+      "authors": [
+        "Zewen Li",
+        "Fan Liu",
+        "Wenjie Yang",
+        "Shouheng Peng",
+        "Jun Wei Zhou"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tnnls.2021.3084827",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3168997536",
+      "citation_count": 5150,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Efficient Neural Architecture Search via Proximal Iterations",
+      "authors": [
+        "Quanming Yao",
+        "Ju Xu",
+        "Wei-Wei Tu",
+        "Zhanxing Zhu"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v34i04.6143",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2998227662",
+      "citation_count": 102,
+      "oa_status": "diamond",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Sparse Low-rank Adaptation of Pre-trained Language Models",
+      "authors": [
+        "Ning Ding",
+        "Xingtai Lv",
+        "Qiaosen Wang",
+        "Yulin Chen",
+        "Bowen Zhou",
+        "Zhiyuan Liu",
+        "Maosong Sun"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2023.emnlp-main.252",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389524340",
+      "citation_count": 54,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2023.emnlp-main.252.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ST-Adapter: Parameter-Efficient Image-to-Video Transfer Learning",
+      "authors": [
+        "Junting Pan",
+        "Ziyi Lin",
+        "Xiatian Zhu",
+        "Jing Shao",
+        "Hongsheng Li"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2206.13559",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4306294758",
+      "citation_count": 78,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2206.13559",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "FacT: Factor-Tuning for Lightweight Adaptation on Vision Transformer",
+      "authors": [
+        "Shibo Jie",
+        "Zhihong Deng"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v37i1.25187",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4382463911",
+      "citation_count": 98,
+      "oa_status": "diamond",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25187/24959",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep learning modelling techniques: current progress, applications, advantages, and challenges",
+      "authors": [
+        "Shams Forruque Ahmed",
+        "Md. Sakib Bin Alam",
+        "Maruf Hassan",
+        "Mahtabin Rodela Rozbu",
+        "Taoseef Ishtiak",
+        "Nazifa Rafa",
+        "M. Mofijur",
+        "A. B. M. Shawkat Ali",
+        "Amir H. Gandomi"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s10462-023-10466-8",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4366091323",
+      "citation_count": 1058,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-023-10466-8.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey on Efficient Convolutional Neural Networks and Hardware Acceleration",
+      "authors": [
+        "Deepak Ghimire",
+        "Dayoung Kil",
+        "Seong‐heum Kim"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/electronics11060945",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4220731687",
+      "citation_count": 199,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2079-9292/11/6/945/pdf?version=1647599229",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey on Efficient Vision Transformers: Algorithms, Techniques, and Performance Benchmarking",
+      "authors": [
+        "Lorenzo Papa",
+        "Paolo Russo",
+        "Irene Amerini",
+        "Luping Zhou"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tpami.2024.3392941",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4395113676",
+      "citation_count": 139,
+      "oa_status": "hybrid",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Diffusion Models: A Comprehensive Survey of Methods and Applications",
+      "authors": [
+        "Ling Qiang Yang",
+        "Zhilong Zhang",
+        "Yang Song",
+        "Shenda Hong",
+        "Runsheng Xu",
+        "Yue Zhao",
+        "Wentao Zhang",
+        "Bin Cui",
+        "Ming–Hsuan Yang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3626235",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4387195417",
+      "citation_count": 1566,
+      "oa_status": "bronze",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3626235",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Consensus Adversarial Domain Adaptation",
+      "authors": [
+        "Han Zou",
+        "Yuxun Zhou",
+        "Jianfei Yang",
+        "Huihan Liu",
+        "H. Das",
+        "Costas J. Spanos"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v33i01.33015997",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2905589284",
+      "citation_count": 79,
+      "oa_status": "diamond",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "SVDTrack: Parameter-Efficient Tracking via Residual-Subspace Adaptation",
+      "authors": [
+        "Omar Abdelaziz",
+        "Ahmed Radwan",
+        "Mahmoud Soliman",
+        "Mohamed  S. Shehata"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.7081514",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "LoLDU: Low-Rank Adaptation via Lower-Diag-Upper Decomposition for Parameter-Efficient Fine-Tuning",
+      "authors": [
+        "Yiming Shi",
+        "Jiwei Wei",
+        "Yujia Wu",
+        "Ran Ran",
+        "Chengwei Sun"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.32388/in8jl4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Parameter-Efficient Adaptation of Qwen2.5 for Aspect-Based Sentiment Analysis Using Low-Rank Adaptation and Parameter-Efficient Fine-Tuning",
+      "authors": [
+        "Pei Ying Lim",
+        "Chuk Fong Ho",
+        "Chi Wee Tan"
+      ],
+      "year": 2026,
+      "venue": "IEEE ICCBE 2025",
+      "abstract": null,
+      "doi": "10.3390/engproc2026128015",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Parameter-Efficient Domain Adaptation for E-commerce Multimodal Retrieval via Gated Adapters",
+      "authors": [
+        "Zihan Zhou"
+      ],
+      "year": 2026,
+      "venue": "2026 International Conference on Large Models and Intelligent Agent Technologies (LMIAT)",
+      "abstract": null,
+      "doi": "10.1109/lmiat70705.2026.11682246",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Infrared Monocular Depth Estimation via Parameter-Efficient Adaptation",
+      "authors": [
+        "Jaehyun Pyun",
+        "Seunghun Moon",
+        "Yunseong Jeong",
+        "Suk-Ju Kang"
+      ],
+      "year": 2026,
+      "venue": "2026 International Conference on Electronics, Information, and Communication (ICEIC)",
+      "abstract": null,
+      "doi": "10.1109/iceic69189.2026.11386423",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Parameter Efficient Fine-tuning via Explained Variance Adaptation",
+      "authors": [
+        "Fabian Paischer",
+        "Lukas Hauzenberger",
+        "Thomas Schmied",
+        "Benedikt Alkin",
+        "Marc Deisenroth",
+        "Sepp Hochreiter"
+      ],
+      "year": 2025,
+      "venue": "Advances in Neural Information Processing Systems 38",
+      "abstract": null,
+      "doi": "10.52202/085713-1539",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "LYRA: Low-Frequency Rank Adaptation via Factored DCT Coefficients for Parameter Efficient Fine Tuning of Transformers_supp1-3714737.pdf",
+      "authors": [
+        "Seok-Bum Ko"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/lsp.2026.3714737/mm1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Parameter-Efficient Multimodal Adaptation",
+      "authors": [
+        "Karthik Ganesh Malini"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.31979/etd.47dw-kbuk",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Sarcasm Detection with Small-Scale Decoder-Only Language Models via Low-Rank Adaptation-Based Parameter-Efficient Adaptation",
+      "authors": [
+        "Wahyu Tisno Atmojo",
+        "Pulung Nurtantio Andono",
+        "Abdul Syukur",
+        "Ahmad Zainul Fanani"
+      ],
+      "year": 2026,
+      "venue": "Ingénierie des systèmes d information",
+      "abstract": null,
+      "doi": "10.18280/isi.310811",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Assessing the Portability of Parameter Matrices Trained by Parameter-Efficient Finetuning Methods",
+      "authors": [
+        "Mohammed Sabry",
+        "Anya Belz"
+      ],
+      "year": 2024,
+      "venue": "Findings of the Association for Computational Linguistics: EACL 2024",
+      "abstract": null,
+      "doi": "10.18653/v1/2024.findings-eacl.106",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Variable-Rate Learned Image Compression Using Parameter Efficient Fine-Tuning and Trainable Quantization Step-Size",
+      "authors": [
+        "Ran Wang",
+        "Yongqiang Wang",
+        "Heming Sun",
+        "Jiro Katto"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE International Symposium on Circuits and Systems (ISCAS)",
+      "abstract": null,
+      "doi": "10.1109/iscas66217.2026.11562796",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Algorithm 1: Fine-tuning process for FakeNews-TransAug with Arabic-specific preprocessing and parameter-efficient adaptation.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3654/table-101",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Efficient Adaptation of Large Language Models: A Survey of Parameter-Efficient, Quantization-Aware, and Alignment-Stage Tuning",
+      "authors": [
+        "Yogesh Kale",
+        "Daniel Ocansey"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.7460118",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "SPEAR-MM: Selective Parameter Evaluation and Restoration via Model Merging for Efficient Financial LLM Adaptation",
+      "authors": [
+        "Berkcan Kapusuzoglu",
+        "Supriyo Chakraborty",
+        "Renkun Ni",
+        "Stephen Rawls",
+        "Sambit Sahu"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE International Conference on Big Data (BigData)",
+      "abstract": null,
+      "doi": "10.1109/bigdata66926.2025.11402347",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Efficient fine-tuning of vision transformer via path-augmented parameter adaptation",
+      "authors": [
+        "Yao Zhou",
+        "Zhang Yi",
+        "Gary G. Yen"
+      ],
+      "year": 2025,
+      "venue": "Information Sciences",
+      "abstract": null,
+      "doi": "10.1016/j.ins.2025.121948",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 9,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Parameter-efficient visible-to-thermal adaptation of YOLO-world via modality prompts and LoRA",
+      "authors": [
+        "Shotaro Miwa",
+        "Jia Qu"
+      ],
+      "year": 2026,
+      "venue": "Infrared Technology and Applications LII",
+      "abstract": null,
+      "doi": "10.1117/12.3094888",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Revolutionizing Large Model Fine-Tuning: The Role of LoRA in Parameter-Efficient Adaptation",
+      "authors": [
+        "Jianhong Shun",
+        "Chang Zheng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.36227/techrxiv.174015835.57150536/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Parameter-Efficient Adaptation of DINO Vision Transformers for Cervical Cytology via Attention LoRA",
+      "authors": [
+        "Zakariae El Aidi",
+        "Mohammed El Hassouni Lrit Laboratory Flsh"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE 13th International Symposium on Signal, Image, Video and Communications (ISIVC)",
+      "abstract": null,
+      "doi": "10.1109/isivc69944.2026.11574379",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A Language-Agnostic Framework for Parameter-Efficient Whisper Adaptation in Low-Resource ASR",
+      "authors": [
+        "Fang Liu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-10674249/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Efficient Optimization of Large Language Models via Parameter-Efficient Tuning and Adaptive Inference",
+      "authors": [
+        "Yang Ji"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-9365582/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 937,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 3122,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 455,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 532,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

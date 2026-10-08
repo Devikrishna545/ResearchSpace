@@ -1,0 +1,1625 @@
+{
+  "id": "mismatch-resnet",
+  "category": "vocabulary_mismatch",
+  "query": "skip connections help very deep image classifiers",
+  "target": {
+    "arxiv_id": "1512.03385"
+  },
+  "plan": {
+    "topic": "skip connections help very deep image classifiers",
+    "sub_queries": [
+      "skip connections help very deep image classifiers"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "The Importance of Skip Connections in Biomedical Image Segmentation",
+      "authors": [
+        "Michal Drozdzal",
+        "Eugene Vorontsov",
+        "Gabriel Chartrand",
+        "Samuel Kadoury",
+        "Chris Pal"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper, we study the influence of both long and short skip connections on Fully Convolutional Networks (FCN) for biomedical image segmentation. In standard FCNs, only long skip connections are used to skip features from the contracting path to the expanding path in order to recover spatial information lost during downsampling. We extend FCNs by adding short skip connections, that are similar to the ones introduced in residual networks, in order to build very deep FCNs (of hundreds of layers). A review of the gradient flow confirms that for a very deep FCN it is beneficial to have both long and short skip connections. Finally, we show that a very deep FCN can achieve near-to-state-of-the-art results on the EM dataset without any further post-processing.",
+      "doi": null,
+      "arxiv_id": "1608.04117v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1608.04117v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "DCIL: Deep Contextual Internal Learning for Image Restoration and Image Retargeting",
+      "authors": [
+        "Indra Deep Mastan",
+        "Shanmuganathan Raman"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recently, there is a vast interest in developing methods which are independent of the training samples such as deep image prior, zero-shot learning, and internal learning. The methods above are based on the common goal of maximizing image features learning from a single image despite inherent technical diversity. In this work, we bridge the gap between the various unsupervised approaches above and propose a general framework for image restoration and image retargeting. We use contextual feature learning and internal learning to improvise the structure similarity between the source and the target images. We perform image resize application in the following setups: classical image resize using super-resolution, a challenging image resize where the low-resolution image contains noise, and content-aware image resize using image retargeting. We also provide comparisons to the relevant state-of-the-art methods.",
+      "doi": null,
+      "arxiv_id": "1912.04229v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1912.04229v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "DILIE: Deep Internal Learning for Image Enhancement",
+      "authors": [
+        "Indra Deep Mastan",
+        "Shanmuganathan Raman"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We consider the generic deep image enhancement problem where an input image is transformed into a perceptually better-looking image. Recent methods for image enhancement consider the problem by performing style transfer and image restoration. The methods mostly fall into two categories: training data-based and training data-independent (deep internal learning methods). We perform image enhancement in the deep internal learning framework. Our Deep Internal Learning for Image Enhancement framework enhances content features and style features and uses contextual content loss for preserving image context in the enhanced image. We show results on both hazy and noisy image enhancement. To validate the results, we use structure similarity and perceptual error, which is efficient in measuring the unrealistic deformation present in the images. We show that the proposed framework outperforms the relevant state-of-the-art works for image enhancement.",
+      "doi": null,
+      "arxiv_id": "2012.06469v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2012.06469v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "DeepCFL: Deep Contextual Features Learning from a Single Image",
+      "authors": [
+        "Indra Deep Mastan",
+        "Shanmuganathan Raman"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recently, there is a vast interest in developing image feature learning methods that are independent of the training data, such as deep image prior, InGAN, SinGAN, and DCIL. These methods are unsupervised and are used to perform low-level vision tasks such as image restoration, image editing, and image synthesis. In this work, we proposed a new training data-independent framework, called Deep Contextual Features Learning (DeepCFL), to perform image synthesis and image restoration based on the semantics of the input image. The contextual features are simply the high dimensional vectors representing the semantics of the given image. DeepCFL is a single image GAN framework that learns the distribution of the context vectors from the input image. We show the performance of contextual learning in various challenging scenarios: outpainting, inpainting, and restoration of randomly removed pixels. DeepCFL is applicable when the input source image and the generated target image are not aligned. We illustrate image synthesis using DeepCFL for the task of image resizing.",
+      "doi": null,
+      "arxiv_id": "2011.03712v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2011.03712v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Hybrid deep learning-based strategy for the hepatocellular carcinoma cancer grade classification of H&E stained liver histopathology images",
+      "authors": [
+        "Ajinkya Deshpande",
+        "Deep Gupta",
+        "Ankit Bhurane",
+        "Nisha Meshram",
+        "Sneha Singh",
+        "Petia Radeva"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Hepatocellular carcinoma (HCC) is a common type of liver cancer whose early-stage diagnosis is a common challenge, mainly due to the manual assessment of hematoxylin and eosin-stained whole slide images, which is a time-consuming process and may lead to variability in decision-making. For accurate detection of HCC, we propose a hybrid deep learning-based architecture that uses transfer learning to extract the features from pre-trained convolutional neural network (CNN) models and a classifier made up of a sequence of fully connected layers. This study uses a publicly available The Cancer Genome Atlas Hepatocellular Carcinoma (TCGA-LIHC)database (n=491) for model development and database of Kasturba Gandhi Medical College (KMC), India for validation. The pre-processing step involves patch extraction, colour normalization, and augmentation that results in 3920 patches for the TCGA dataset. The developed hybrid deep neural network consisting of a CNN-based pre-trained feature extractor and a customized artificial neural network-based classifier is trained using five-fold cross-validation. For this study, eight different state-of-the-art models are trained and tested as feature extractors for the proposed hybrid model. The proposed hybrid model with ResNet50-based feature extractor provided the sensitivity, specificity, F1-score, accuracy, and AUC of 100.00%, 100.00%, 100.00%, 100.00%, and 1.00, respectively on the TCGA database. On the KMC database, EfficientNetb3 resulted in the optimal choice of the feature extractor giving sensitivity, specificity, F1-score, accuracy, and AUC of 96.97, 98.85, 96.71, 96.71, and 0.99, respectively. The proposed hybrid models showed improvement in accuracy of 2% and 4% over the pre-trained models in TCGA-LIHC and KMC databases.",
+      "doi": null,
+      "arxiv_id": "2412.03084v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2412.03084v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV",
+          "cs.LG",
+          "q-bio.QM"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Multi-level Encoder-Decoder Architectures for Image Restoration",
+      "authors": [
+        "Indra Deep Mastan",
+        "Shanmuganathan Raman"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Many real-world solutions for image restoration are learning-free and based on handcrafted image priors such as self-similarity. Recently, deep-learning methods that use training data have achieved state-of-the-art results in various image restoration tasks (e.g., super-resolution and inpainting). Ulyanov et al. bridge the gap between these two families of methods (CVPR 18). They have shown that learning-free methods perform close to the state-of-the-art learning-based methods (approximately 1 PSNR). Their approach benefits from the encoder-decoder network. In this paper, we propose a framework based on the multi-level extensions of the encoder-decoder network, to investigate interesting aspects of the relationship between image restoration and network construction independent of learning. Our framework allows various network structures by modifying the following network components: skip links, cascading of the network input into intermediate layers, a composition of the encoder-decoder subnetworks, and network depth. These handcrafted network structures illustrate how the construction of untrained networks influence the following image restoration tasks: denoising, super-resolution, and inpainting. We also demonstrate image reconstruction using flash and no-flash image pairs. We provide performance comparisons with the state-of-the-art methods for all the restoration tasks above.",
+      "doi": null,
+      "arxiv_id": "1905.00322v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1905.00322v3",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "LCSCNet: Linear Compressing Based Skip-Connecting Network for Image Super-Resolution",
+      "authors": [
+        "Wenming Yang",
+        "Xuechen Zhang",
+        "Yapeng Tian",
+        "Wei Wang",
+        "Jing-Hao Xue",
+        "Qingmin Liao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper, we develop a concise but efficient network architecture called linear compressing based skip-connecting network (LCSCNet) for image super-resolution. Compared with two representative network architectures with skip connections, ResNet and DenseNet, a linear compressing layer is designed in LCSCNet for skip connection, which connects former feature maps and distinguishes them from newly-explored feature maps. In this way, the proposed LCSCNet enjoys the merits of the distinguish feature treatment of DenseNet and the parameter-economic form of ResNet. Moreover, to better exploit hierarchical information from both low and high levels of various receptive fields in deep models, inspired by gate units in LSTM, we also propose an adaptive element-wise fusion strategy with multi-supervised training. Experimental results in comparison with state-of-the-art algorithms validate the effectiveness of LCSCNet.",
+      "doi": null,
+      "arxiv_id": "1909.03573v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1909.03573v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Building medical image classifiers with very limited data using segmentation networks",
+      "authors": [
+        "Ken C. L. Wong",
+        "Tanveer Syeda-Mahmood",
+        "Mehdi Moradi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Deep learning has shown promising results in medical image analysis, however, the lack of very large annotated datasets confines its full potential. Although transfer learning with ImageNet pre-trained classification models can alleviate the problem, constrained image sizes and model complexities can lead to unnecessary increase in computational cost and decrease in performance. As many common morphological features are usually shared by different classification tasks of an organ, it is greatly beneficial if we can extract such features to improve classification with limited samples. Therefore, inspired by the idea of curriculum learning, we propose a strategy for building medical image classifiers using features from segmentation networks. By using a segmentation network pre-trained on similar data as the classification task, the machine can first learn the simpler shape and structural concepts before tackling the actual classification problem which usually involves more complicated concepts. Using our proposed framework on a 3D three-class brain tumor type classification problem, we achieved 82% accuracy on 191 testing samples with 91 training samples. When applying to a 2D nine-class cardiac semantic level classification problem, we achieved 86% accuracy on 263 testing samples with 108 training samples. Comparisons with ImageNet pre-trained classifiers and classifiers trained from scratch are presented.",
+      "doi": null,
+      "arxiv_id": "1808.05205v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1808.05205v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Deep Learning and Computational Physics (Lecture Notes)",
+      "authors": [
+        "Deep Ray",
+        "Orazio Pinti",
+        "Assad A. Oberai"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "These notes were compiled as lecture notes for a course developed and taught at the University of the Southern California. They should be accessible to a typical engineering graduate student with a strong background in Applied Mathematics.\n  The main objective of these notes is to introduce a student who is familiar with concepts in linear algebra and partial differential equations to select topics in deep learning. These lecture notes exploit the strong connections between deep learning algorithms and the more conventional techniques of computational physics to achieve two goals. First, they use concepts from computational physics to develop an understanding of deep learning algorithms. Not surprisingly, many concepts in deep learning can be connected to similar concepts in computational physics, and one can utilize this connection to better understand these algorithms. Second, several novel deep learning algorithms can be used to solve challenging problems in computational physics. Thus, they offer someone who is interested in modeling a physical phenomena with a complementary set of tools.",
+      "doi": null,
+      "arxiv_id": "2301.00942v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2301.00942v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "math-ph"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Development of Skip Connection in Deep Neural Networks for Computer Vision and Medical Image Analysis: A Survey",
+      "authors": [
+        "Guoping Xu",
+        "Xiaxia Wang",
+        "Xinglong Wu",
+        "Xuesong Leng",
+        "Yongchao Xu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Deep learning has made significant progress in computer vision, specifically in image classification, object detection, and semantic segmentation. The skip connection has played an essential role in the architecture of deep neural networks,enabling easier optimization through residual learning during the training stage and improving accuracy during testing. Many neural networks have inherited the idea of residual learning with skip connections for various tasks, and it has been the standard choice for designing neural networks. This survey provides a comprehensive summary and outlook on the development of skip connections in deep neural networks. The short history of skip connections is outlined, and the development of residual learning in deep neural networks is surveyed. The effectiveness of skip connections in the training and testing stages is summarized, and future directions for using skip connections in residual learning are discussed. Finally, we summarize seminal papers, source code, models, and datasets that utilize skip connections in computer vision, including image classification, object detection, semantic segmentation, and image reconstruction. We hope this survey could inspire peer researchers in the community to develop further skip connections in various forms and tasks and the theory of residual learning in deep neural networks. The project page can be found at https://github.com/apple1986/Residual_Learning_For_Images",
+      "doi": null,
+      "arxiv_id": "2405.01725v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2405.01725v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "BINet: a binary inpainting network for deep patch-based image compression",
+      "authors": [
+        "André Nortje",
+        "Willie Brink",
+        "Herman A. Engelbrecht",
+        "Herman Kamper"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent deep learning models outperform standard lossy image compression codecs. However, applying these models on a patch-by-patch basis requires that each image patch be encoded and decoded independently. The influence from adjacent patches is therefore lost, leading to block artefacts at low bitrates. We propose the Binary Inpainting Network (BINet), an autoencoder framework which incorporates binary inpainting to reinstate interdependencies between adjacent patches, for improved patch-based compression of still images. When decoding a patch, BINet additionally uses the binarised encodings from surrounding patches to guide its reconstruction. In contrast to sequential inpainting methods where patches are decoded based on previons reconstructions, BINet operates directly on the binary codes of surrounding patches without access to the original or reconstructed image data. Encoding and decoding can therefore be performed in parallel. We demonstrate that BINet improves the compression quality of a competitive deep image codec across a range of compression levels.",
+      "doi": null,
+      "arxiv_id": "1912.05189v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1912.05189v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Image Restoration Using Very Deep Convolutional Encoder-Decoder Networks with Symmetric Skip Connections",
+      "authors": [
+        "Xiao-Jiao Mao",
+        "Chunhua Shen",
+        "Yu-Bin Yang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper, we propose a very deep fully convolutional encoding-decoding framework for image restoration such as denoising and super-resolution. The network is composed of multiple layers of convolution and de-convolution operators, learning end-to-end mappings from corrupted images to the original ones. The convolutional layers act as the feature extractor, which capture the abstraction of image contents while eliminating noises/corruptions. De-convolutional layers are then used to recover the image details. We propose to symmetrically link convolutional and de-convolutional layers with skip-layer connections, with which the training converges much faster and attains a higher-quality local optimum. First, The skip connections allow the signal to be back-propagated to bottom layers directly, and thus tackles the problem of gradient vanishing, making training deep networks easier and achieving restoration performance gains consequently. Second, these skip connections pass image details from convolutional layers to de-convolutional layers, which is beneficial in recovering the original image. Significantly, with the large capacity, we can handle different levels of noises using a single model. Experimental results show that our network achieves better performance than all previously reported state-of-the-art methods.",
+      "doi": null,
+      "arxiv_id": "1603.09056v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1603.09056v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Translated Skip Connections -- Expanding the Receptive Fields of Fully Convolutional Neural Networks",
+      "authors": [
+        "Joshua Bruton",
+        "Hairong Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The effective receptive field of a fully convolutional neural network is an important consideration when designing an architecture, as it defines the portion of the input visible to each convolutional kernel. We propose a neural network module, extending traditional skip connections, called the translated skip connection. Translated skip connections geometrically increase the receptive field of an architecture with negligible impact on both the size of the parameter space and computational complexity. By embedding translated skip connections into a benchmark architecture, we demonstrate that our module matches or outperforms four other approaches to expanding the effective receptive fields of fully convolutional neural networks. We confirm this result across five contemporary image segmentation datasets from disparate domains, including the detection of COVID-19 infection, segmentation of aerial imagery, common object segmentation, and segmentation for self-driving cars.",
+      "doi": null,
+      "arxiv_id": "2211.02111v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2211.02111v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "On the approximation of rough functions with deep neural networks",
+      "authors": [
+        "Tim De Ryck",
+        "Siddhartha Mishra",
+        "Deep Ray"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Deep neural networks and the ENO procedure are both efficient frameworks for approximating rough functions. We prove that at any order, the ENO interpolation procedure can be cast as a deep ReLU neural network. This surprising fact enables the transfer of several desirable properties of the ENO procedure to deep neural networks, including its high-order accuracy at approximating Lipschitz functions. Numerical tests for the resulting neural networks show excellent performance for approximating solutions of nonlinear conservation laws and at data compression.",
+      "doi": null,
+      "arxiv_id": "1912.06732v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1912.06732v2",
+      "raw_payload": {
+        "categories": [
+          "math.NA",
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "math.NA"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Memorization in Deep Neural Networks: Does the Loss Function matter?",
+      "authors": [
+        "Deep Patel",
+        "P. S. Sastry"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Deep Neural Networks, often owing to the overparameterization, are shown to be capable of exactly memorizing even randomly labelled data. Empirical studies have also shown that none of the standard regularization techniques mitigate such overfitting. We investigate whether the choice of the loss function can affect this memorization. We empirically show, with benchmark data sets MNIST and CIFAR-10, that a symmetric loss function, as opposed to either cross-entropy or squared error loss, results in significant improvement in the ability of the network to resist such overfitting. We then provide a formal definition for robustness to memorization and provide a theoretical explanation as to why the symmetric losses provide this robustness. Our results clearly bring out the role loss functions alone can play in this phenomenon of memorization.",
+      "doi": null,
+      "arxiv_id": "2107.09957v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2107.09957v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.CV",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Learn to Accumulate Evidence from All Training Samples: Theory and Practice",
+      "authors": [
+        "Deep Pandey",
+        "Qi Yu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Evidential deep learning, built upon belief theory and subjective logic, offers a principled and computationally efficient way to turn a deterministic neural network uncertainty-aware. The resultant evidential models can quantify fine-grained uncertainty using the learned evidence. To ensure theoretically sound evidential models, the evidence needs to be non-negative, which requires special activation functions for model training and inference. This constraint often leads to inferior predictive performance compared to standard softmax models, making it challenging to extend them to many large-scale datasets. To unveil the real cause of this undesired behavior, we theoretically investigate evidential models and identify a fundamental limitation that explains the inferior performance: existing evidential activation functions create zero evidence regions, which prevent the model to learn from training samples falling into such regions. A deeper analysis of evidential activation functions based on our theoretical underpinning inspires the design of a novel regularizer that effectively alleviates this fundamental limitation. Extensive experiments over many challenging real-world datasets and settings confirm our theoretical findings and demonstrate the effectiveness of our proposed approach.",
+      "doi": null,
+      "arxiv_id": "2306.11113v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2306.11113v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CV"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Deep learning observables in computational fluid dynamics",
+      "authors": [
+        "Kjetil O. Lye",
+        "Siddhartha Mishra",
+        "Deep Ray"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Many large scale problems in computational fluid dynamics such as uncertainty quantification, Bayesian inversion, data assimilation and PDE constrained optimization are considered very challenging computationally as they require a large number of expensive (forward) numerical solutions of the corresponding PDEs. We propose a machine learning algorithm, based on deep artificial neural networks, that predicts the underlying \\emph{input parameters to observable} map from a few training samples (computed realizations of this map). By a judicious combination of theoretical arguments and empirical observations, we find suitable network architectures and training hyperparameters that result in robust and efficient neural network approximations of the parameters to observable map. Numerical experiments are presented to demonstrate low prediction errors for the trained network networks, even when the network has been trained with a few samples, at a computational cost which is several orders of magnitude lower than the underlying PDE solver.\n  Moreover, we combine the proposed deep learning algorithm with Monte Carlo (MC) and Quasi-Monte Carlo (QMC) methods to efficiently compute uncertainty propagation for nonlinear PDEs. Under the assumption that the underlying neural networks generalize well, we prove that the deep learning MC and QMC algorithms are guaranteed to be faster than the baseline (quasi-) Monte Carlo methods. Numerical experiments demonstrating one to two orders of magnitude speed up over baseline QMC and MC algorithms, for the intricate problem of computing probability distributions of the observable, are also presented.",
+      "doi": null,
+      "arxiv_id": "1903.03040v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1903.03040v2",
+      "raw_payload": {
+        "categories": [
+          "physics.comp-ph",
+          "cs.LG",
+          "math.NA",
+          "physics.flu-dyn",
+          "stat.ML"
+        ],
+        "primary_category": "physics.comp-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Deep one-gate per layer networks with skip connections are universal classifiers",
+      "authors": [
+        "Raul Rojas"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper shows how a multilayer perceptron with two hidden layers, which has been designed to classify two classes of data points, can easily be transformed into a deep neural network with one-gate layers and skip connections.",
+      "doi": null,
+      "arxiv_id": "2511.05552v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2511.05552v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Solution of Physics-based Bayesian Inverse Problems with Deep Generative Priors",
+      "authors": [
+        "Dhruv V Patel",
+        "Deep Ray",
+        "Assad A Oberai"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Inverse problems are ubiquitous in nature, arising in almost all areas of science and engineering ranging from geophysics and climate science to astrophysics and biomechanics. One of the central challenges in solving inverse problems is tackling their ill-posed nature. Bayesian inference provides a principled approach for overcoming this by formulating the inverse problem into a statistical framework. However, it is challenging to apply when inferring fields that have discrete representations of large dimensions (the so-called \"curse of dimensionality\") and/or when prior information is available only in the form of previously acquired solutions. In this work, we present a novel method for efficient and accurate Bayesian inversion using deep generative models. Specifically, we demonstrate how using the approximate distribution learned by a Generative Adversarial Network (GAN) as a prior in a Bayesian update and reformulating the resulting inference problem in the low-dimensional latent space of the GAN, enables the efficient solution of large-scale Bayesian inverse problems. Our statistical framework preserves the underlying physics and is demonstrated to yield accurate results with reliable uncertainty estimates, even in the absence of information about underlying noise model, which is a significant challenge with many existing methods. We demonstrate the effectiveness of proposed method on a variety of inverse problems which include both synthetic as well as experimentally observed data.",
+      "doi": null,
+      "arxiv_id": "2107.02926v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2107.02926v2",
+      "raw_payload": {
+        "categories": [
+          "stat.ML",
+          "cs.LG"
+        ],
+        "primary_category": "stat.ML"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Deep image mining for diabetic retinopathy screening",
+      "authors": [
+        "Gwenolé Quellec",
+        "Katia Charrière",
+        "Yassine Boudi",
+        "Béatrice Cochener",
+        "Mathieu Lamard"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Deep learning is quickly becoming the leading methodology for medical image analysis. Given a large medical archive, where each image is associated with a diagnosis, efficient pathology detectors or classifiers can be trained with virtually no expert knowledge about the target pathologies. However, deep learning algorithms, including the popular ConvNets, are black boxes: little is known about the local patterns analyzed by ConvNets to make a decision at the image level. A solution is proposed in this paper to create heatmaps showing which pixels in images play a role in the image-level predictions. In other words, a ConvNet trained for image-level classification can be used to detect lesions as well. A generalization of the backpropagation method is proposed in order to train ConvNets that produce high-quality heatmaps. The proposed solution is applied to diabetic retinopathy (DR) screening in a dataset of almost 90,000 fundus photographs from the 2015 Kaggle Diabetic Retinopathy competition and a private dataset of almost 110,000 photographs (e-ophtha). For the task of detecting referable DR, very good detection performance was achieved: $A_z = 0.954$ in Kaggle's dataset and $A_z = 0.949$ in e-ophtha. Performance was also evaluated at the image level and at the lesion level in the DiaretDB1 dataset, where four types of lesions are manually segmented: microaneurysms, hemorrhages, exudates and cotton-wool spots. The proposed detector outperforms recent algorithms trained to detect those lesions specifically, as well as competing heatmap generation algorithms for ConvNets. This detector is part of the Messidor system for mobile eye pathology screening. Because it does not rely on expert knowledge or manual segmentation for detecting relevant patterns, the proposed solution is a promising image mining tool, which has the potential to discover new biomarkers in images.",
+      "doi": null,
+      "arxiv_id": "1610.07086v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1610.07086v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "A survey on deep learning in medical image analysis",
+      "authors": [
+        "Geert J. S. Litjens",
+        "Thijs Kooi",
+        "Babak Ehteshami Bejnordi",
+        "Arnaud A. A. Setio",
+        "Francesco Ciompi",
+        "Mohsen Ghafoorian",
+        "Jeroen van der Laak",
+        "Bram van Ginneken",
+        "Clara Isabel Sánchez"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.media.2017.07.005",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2592929672",
+      "citation_count": 15321,
+      "oa_status": "bronze",
+      "pdf_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1361841517301135-fx1_lrg.jpg",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Residual Learning for Image Recognition",
+      "authors": [
+        "He, Kaiming",
+        "Xiangyu Zhang",
+        "Shaoqing Ren",
+        "Jian Cheng Sun"
+      ],
+      "year": 2015,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.1512.03385",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2949650786",
+      "citation_count": 4772,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1512.03385",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Regularized Evolution for Image Classifier Architecture Search",
+      "authors": [
+        "Esteban Real",
+        "Alok Aggarwal",
+        "Yanping Huang",
+        "Quoc Viet Le"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v33i01.33014780",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2965658867",
+      "citation_count": 2714,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization",
+      "authors": [
+        "Ramprasaath R. Selvaraju",
+        "Michael Cogswell",
+        "Abhishek Das",
+        "Ramakrishna Vedantam",
+        "Devi Parikh",
+        "Dhruv Batra"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11263-019-01228-7",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2616247523",
+      "citation_count": 6072,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Learning Techniques for Medical Image Segmentation: Achievements and Challenges",
+      "authors": [
+        "Mohammad Hesam Hesamian",
+        "Wenjing Jia",
+        "Xiangjian He",
+        "Paul J Kennedy"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s10278-019-00227-x",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2947263797",
+      "citation_count": 1655,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10278-019-00227-x.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Neural Networks Based Recognition of Plant Diseases by Leaf Image Classification",
+      "authors": [
+        "Srdjan Sladojević",
+        "Marko Arsenović",
+        "Andraš Anderla",
+        "Dubravko R. Culibrk",
+        "Darko Stefanović"
+      ],
+      "year": 2016,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1155/2016/3289801",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2470368200",
+      "citation_count": 2026,
+      "oa_status": "hybrid",
+      "pdf_url": "https://downloads.hindawi.com/journals/cin/2016/3289801.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Survey on deep learning with class imbalance",
+      "authors": [
+        "Justin M. Johnson",
+        "Taghi M. Khoshgoftaar"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1186/s40537-019-0192-5",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2936503027",
+      "citation_count": 3019,
+      "oa_status": "gold",
+      "pdf_url": "https://journalofbigdata.springeropen.com/track/pdf/10.1186/s40537-019-0192-5",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Learning‐Based Crack Damage Detection Using Convolutional Neural Networks",
+      "authors": [
+        "Young‐Jin Cha",
+        "Wooram Choi",
+        "Oral Büyüköztürk"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1111/mice.12263",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2598457882",
+      "citation_count": 3269,
+      "oa_status": "hybrid",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/mice.12263",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Learning for Generic Object Detection: A Survey",
+      "authors": [
+        "Li Liu",
+        "Wanli Ouyang",
+        "Xiaogang Wang",
+        "Paul Fieguth",
+        "Jie Chen",
+        "Xinwang Liu",
+        "Matti Pietikäinen"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11263-019-01247-4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2988916019",
+      "citation_count": 2846,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11263-019-01247-4.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Residual Learning for Image Recognition: A Survey",
+      "authors": [
+        "Muhammad Faisal Shafiq",
+        "Zhaoquan Gu"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/app12188972",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4295122555",
+      "citation_count": 1021,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2076-3417/12/18/8972/pdf?version=1662547655",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deeply Supervised Salient Object Detection with Short Connections",
+      "authors": [
+        "Qibin Hou",
+        "Ming‐Ming Cheng",
+        "Xiaowei Hu",
+        "Ali Borji",
+        "Zhuowen Tu",
+        "Philip H. S. Torr"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tpami.2018.2815688",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2569272946",
+      "citation_count": 722,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Medical image segmentation using deep learning: A survey",
+      "authors": [
+        "Risheng Wang",
+        "Tao Lei",
+        "Ruixia Cui",
+        "Bingtao Zhang",
+        "Hongying Meng",
+        "Asoke Kumar Nandi"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1049/ipr2.12419",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4206693420",
+      "citation_count": 826,
+      "oa_status": "gold",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1049/ipr2.12419",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep learning in remote sensing applications: A meta-analysis and review",
+      "authors": [
+        "Lei Ma",
+        "Yü Liu",
+        "Xueliang Zhang",
+        "Yuanxin Ye",
+        "Gaofei Yin",
+        "Brian Alan Johnson"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.isprsjprs.2019.04.015",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2940726923",
+      "citation_count": 2440,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0924271619301108/pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Image-to-Image Translation with Conditional Adversarial Networks",
+      "authors": [
+        "Phillip Isola",
+        "Jun-Yan Zhu",
+        "Tinghui Zhou",
+        "Alexei A. Efros"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr.2017.632",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2552465644",
+      "citation_count": 1597,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Ensemble deep learning: A review",
+      "authors": [
+        "M. A. Ganaie",
+        "Minghui Hu",
+        "A. K. Malik",
+        "M. Tanveer",
+        "Ponnuthurai Nagaratnam Suganthan"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.engappai.2022.105151",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3149839747",
+      "citation_count": 2155,
+      "oa_status": "bronze",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S095219762200269X",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Learning for Cardiac Image Segmentation: A Review",
+      "authors": [
+        "Chen Chen",
+        "Chen Qin",
+        "Huaqi Qiu",
+        "Giacomo Tarroni",
+        "Jinming Duan",
+        "Wenjia Bai",
+        "Daniel Rueckert"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3389/fcvm.2020.00025",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3009563704",
+      "citation_count": 865,
+      "oa_status": "gold",
+      "pdf_url": "https://www.frontiersin.org/articles/10.3389/fcvm.2020.00025/pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Review of Deep-Learning-Based Medical Image Segmentation Methods",
+      "authors": [
+        "Xiangbin Liu",
+        "Liping Song",
+        "Shuai Liu",
+        "Yudong Zhang"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/su13031224",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3123982987",
+      "citation_count": 879,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2071-1050/13/3/1224/pdf?version=1612330114",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep Learning Techniques for Automatic MRI Cardiac Multi-Structures Segmentation and Diagnosis: Is the Problem Solved?",
+      "authors": [
+        "Olivier Bernard",
+        "Alain Lalande",
+        "Clément Zotti",
+        "Frederick Cervenansky",
+        "Xin Yang",
+        "Pheng‐Ann Heng",
+        "Irem Cetin",
+        "Karim Lekadir",
+        "Óscar Cámara",
+        "Miguel Á. González Ballester",
+        "Gerard Sanromà",
+        "Sandy A. Napel",
+        "Steffen Erhard Petersen",
+        "Georgios Tziritas",
+        "Elias Grinias",
+        "Mahendra Khened",
+        "Varghese Alex Kollerathu",
+        "Ganapathy Krishnamurthi",
+        "Marc-Michel Rohé",
+        "Xavier Pennec",
+        "Maxime Sermesant",
+        "Fabian Isensee",
+        "Paul F. Jäger",
+        "Klaus Hermann Maier-Hein",
+        "Peter M. Full",
+        "Ivo Wolf",
+        "Sandy Engelhardt",
+        "Christian Frederik Baumgartner",
+        "Lisa Margret Koch",
+        "Jelmer M. Wolterink",
+        "Ivana Išgum",
+        "Yeonggul Jang",
+        "Yoonmi Hong",
+        "Jay Patravali",
+        "Shubham Jain",
+        "Olivier Humbert",
+        "Pierre‐Marc Jodoin"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tmi.2018.2837502",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2804047627",
+      "citation_count": 2402,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep learning in medical imaging and radiation therapy",
+      "authors": [
+        "Berkman Sahiner",
+        "Aria Pezeshk",
+        "Lubomir M. Hadjiiski",
+        "Xiaosong Wang",
+        "Karen Drukker",
+        "Kenny H. Cha",
+        "Ronald M. Summers",
+        "Maryellen Lissak Giger"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1002/mp.13264",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2898197178",
+      "citation_count": 762,
+      "oa_status": "bronze",
+      "pdf_url": "https://aapm.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mp.13264",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Deep learning for sentiment analysis: A survey",
+      "authors": [
+        "Lei Zhang",
+        "Shuai Wang",
+        "Bing Liu"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1002/widm.1253",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2964236337",
+      "citation_count": 1932,
+      "oa_status": "bronze",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/widm.1253",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Image Denoising Using Deep CGAN With Bi-Skip Connections",
+      "authors": [
+        "Peng Wang"
+      ],
+      "year": 2019,
+      "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+      "abstract": null,
+      "doi": "10.1109/cvprw.2019.00099",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Image inpainting and super-resolution using non-local recursive deep convolutional network with skip connections",
+      "authors": [
+        "Miaofeng Liu"
+      ],
+      "year": 2017,
+      "venue": "SPIE Proceedings",
+      "abstract": null,
+      "doi": "10.1117/12.2282200",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 3,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Single Image Super-Resolution Using Deep CNN with Dense Skip Connections and Inception-ResNet",
+      "authors": [
+        "Chao Chen",
+        "Feng Qi"
+      ],
+      "year": 2018,
+      "venue": "2018 9th International Conference on Information Technology in Medicine and Education (ITME)",
+      "abstract": null,
+      "doi": "10.1109/itme.2018.00222",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 24,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Skip connections.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3586/table-6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Convolutional Neural Networks Using Skip Connections with Layer Groups for Super-Resolution Image Reconstruction Based on Deep Learning",
+      "authors": [
+        "Hyeongyeom Ahn",
+        "Changhoon Yim"
+      ],
+      "year": 2020,
+      "venue": "Applied Sciences",
+      "abstract": null,
+      "doi": "10.3390/app10061959",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 27,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Enhanced Deep Learning for Food Semantic Segmentation Using Skip Connections Fine-Tuning and Explainability",
+      "authors": [
+        "Khaoula Ben Ali",
+        "Moktar Hamdi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.20944/preprints202609.1386.v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Multiresolution Cochleagram Speech Enhancement Algorithm Using Improved Deep Neural Networks with Skip Connections",
+      "authors": [
+        "chaofeng lan",
+        "Chundong Liu",
+        "Lei Zhang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-229829/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Novel View Synthesis With Skip Connections",
+      "authors": [
+        "Juhyeon Kim",
+        "Young Min Kim"
+      ],
+      "year": 2020,
+      "venue": "2020 IEEE International Conference on Image Processing (ICIP)",
+      "abstract": null,
+      "doi": "10.1109/icip40778.2020.9191076",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Generative Adversarial Image Super‐Resolution Through Deep Dense Skip Connections",
+      "authors": [
+        "Xiaobin Zhu",
+        "Zhuangzi Li",
+        "Xiaoyu Zhang",
+        "Haisheng Li",
+        "Ziyu Xue",
+        "Lei Wang"
+      ],
+      "year": 2018,
+      "venue": "Computer Graphics Forum",
+      "abstract": null,
+      "doi": "10.1111/cgf.13568",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 21,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Underwater image restoration using deep encoder–decoder network with symmetric skip connections",
+      "authors": [
+        "Shankar Gangisetty",
+        "Raghu Raj Rai"
+      ],
+      "year": 2022,
+      "venue": "Signal, Image and Video Processing",
+      "abstract": null,
+      "doi": "10.1007/s11760-021-01982-7",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 10,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Popular deep learning image classifiers",
+      "authors": [
+        "Habib Izadkhah"
+      ],
+      "year": 2022,
+      "venue": "Deep Learning in Bioinformatics",
+      "abstract": null,
+      "doi": "10.1016/b978-0-12-823822-6.00016-0",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "The Importance of Skip Connections in Biomedical Image Segmentation",
+      "authors": [
+        "Michal Drozdzal",
+        "Eugene Vorontsov",
+        "Gabriel Chartrand",
+        "Samuel Kadoury",
+        "Chris Pal"
+      ],
+      "year": 2016,
+      "venue": "Lecture Notes in Computer Science",
+      "abstract": null,
+      "doi": "10.1007/978-3-319-46976-8_19",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 747,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1117/12.2549775.6142082544001",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Supplemental Information 2: Residual learning with skip connections.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3648/supp-2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Sellf-Adaptive Weighted Skip Connections for Image Super-Resolution",
+      "authors": [
+        "Jiachen Wang",
+        "Yingyun Yang"
+      ],
+      "year": 2020,
+      "venue": "2020 International Conference on Culture-oriented Science &amp; Technology (ICCST)",
+      "abstract": null,
+      "doi": "10.1109/iccst50977.2020.00043",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Revisiting the Training of Very Deep Neural Networks without Skip Connections",
+      "authors": [
+        "Oyebade K. Oyedotun",
+        "Abd El Rahman Shabayek",
+        "Djamila Aouada",
+        "Bjorn Ottersten"
+      ],
+      "year": 2021,
+      "venue": "2020 25th International Conference on Pattern Recognition (ICPR)",
+      "abstract": null,
+      "doi": "10.1109/icpr48806.2021.9412508",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Towards a Certification of Deep Image Classifiers against Convolutional Attacks",
+      "authors": [
+        "Mallek Mziou-Sallami",
+        "Faouzi Adjed"
+      ],
+      "year": 2022,
+      "venue": "Proceedings of the 14th International Conference on Agents and Artificial Intelligence",
+      "abstract": null,
+      "doi": "10.5220/0010870400003116",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 6,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Image Super-Resolution Using Dense Skip Connections",
+      "authors": [
+        "Tong Tong",
+        "Gen Li",
+        "Xiejie Liu",
+        "Qinquan Gao"
+      ],
+      "year": 2017,
+      "venue": "2017 IEEE International Conference on Computer Vision (ICCV)",
+      "abstract": null,
+      "doi": "10.1109/iccv.2017.514",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1124,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "On skip connections and normalisation layers in deep optimisation",
+      "authors": [
+        "Lachlan Macdonald",
+        "Jack Valmadre",
+        "Hemanth Saratchandran",
+        "Simon Lucey"
+      ],
+      "year": 2023,
+      "venue": "Advances in Neural Information Processing Systems 36",
+      "abstract": null,
+      "doi": "10.52202/075280-0647",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Training very deep neural networks: Rethinking the role of skip connections",
+      "authors": [
+        "Oyebade K. Oyedotun",
+        "Kassem Al Ismaeil",
+        "Djamila Aouada"
+      ],
+      "year": 2021,
+      "venue": "Neurocomputing",
+      "abstract": null,
+      "doi": "10.1016/j.neucom.2021.02.004",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 28,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Attention 3D U-Net with Multiple Skip Connections for Segmentation of Brain Tumor Images.",
+      "authors": [
+        "Nodirov J",
+        "Abdusalomov AB",
+        "Whangbo TK"
+      ],
+      "year": 2022,
+      "venue": "Sensors (Basel, Switzerland)",
+      "abstract": null,
+      "doi": "10.3390/s22176501",
+      "arxiv_id": null,
+      "pmid": "36080958",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "DilUnet: A U-net based architecture for blood vessels segmentation.",
+      "authors": [
+        "Hussain S",
+        "Guo F",
+        "Li W",
+        "Shen Z"
+      ],
+      "year": 2022,
+      "venue": "Computer methods and programs in biomedicine",
+      "abstract": null,
+      "doi": "10.1016/j.cmpb.2022.106732",
+      "arxiv_id": null,
+      "pmid": "35279601",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Multi-Task Learning U-Net for Functional Shoulder Sub-Task Segmentation.",
+      "authors": [
+        "Chu EP",
+        "Liu KC",
+        "Hsieh CY",
+        "Chang CY",
+        "Tsao Y",
+        "Chan CT"
+      ],
+      "year": 2023,
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+      "abstract": null,
+      "doi": "10.1109/EMBC40787.2023.10341137",
+      "arxiv_id": null,
+      "pmid": "38083530",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Hierarchical classification of anterior cruciate ligament using deep learning for athletes healthcare.",
+      "authors": [
+        "Yan X",
+        "Xiao L"
+      ],
+      "year": 2025,
+      "venue": "BioImpacts : BI",
+      "abstract": null,
+      "doi": "10.34172/bi.31060",
+      "arxiv_id": null,
+      "pmid": "41322394",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Enhancing advanced cervical cell categorization with cluster-based intelligent systems by a novel integrated CNN approach with skip mechanisms and GAN-based augmentation.",
+      "authors": [
+        "Shandilya G",
+        "Gupta S",
+        "Almogren A",
+        "Bharany S",
+        "Altameem A",
+        "Rehman AU",
+        "Hussen S"
+      ],
+      "year": 2024,
+      "venue": "Scientific reports",
+      "abstract": null,
+      "doi": "10.1038/s41598-024-80260-1",
+      "arxiv_id": null,
+      "pmid": "39580498",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Progressive ShallowNet for large scale dynamic and spontaneous facial behaviour analysis in children.",
+      "authors": [
+        "Qayyum A",
+        "Razzak I",
+        "Moustafa N",
+        "Mazher M"
+      ],
+      "year": 2022,
+      "venue": "Image and vision computing",
+      "abstract": null,
+      "doi": "10.1016/j.imavis.2022.104375",
+      "arxiv_id": null,
+      "pmid": "35068648",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "ULNet for the detection of coronavirus (COVID-19) from chest X-ray images.",
+      "authors": [
+        "Wu T",
+        "Tang C",
+        "Xu M",
+        "Hong N",
+        "Lei Z"
+      ],
+      "year": 2021,
+      "venue": "Computers in biology and medicine",
+      "abstract": null,
+      "doi": "10.1016/j.compbiomed.2021.104834",
+      "arxiv_id": null,
+      "pmid": "34507159",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "A phase-aware Cross-Scale U-MAMba with uncertainty-aware segmentation and Switch Atrous Bifovea EfficientNetB7 classification of kidney lesion subtype.",
+      "authors": [
+        "Rmr SS",
+        "Mb S",
+        "R D",
+        "M T",
+        "P V"
+      ],
+      "year": 2025,
+      "venue": "Lasers in medical science",
+      "abstract": null,
+      "doi": "10.1007/s10103-025-04644-z",
+      "arxiv_id": null,
+      "pmid": "41026235",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 842,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2283,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 359,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1800,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

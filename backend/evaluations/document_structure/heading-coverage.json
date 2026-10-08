@@ -1,0 +1,84 @@
+{
+  "mode": "public-pdf-heading-detection-and-wal-consistent-disposable-db-rehearsal",
+  "live_database_modified": false,
+  "historical_overall": {
+    "total_chunks": 167,
+    "labelled": 86,
+    "unknown": 81,
+    "note": "No full-corpus after count exists: only three public PDFs were measured and no live rows were changed."
+  },
+  "papers": {
+    "word2vec": {
+      "historical_stored_chunks": 27,
+      "historical_sections": {"unknown": 1, "Result_incorrectly_inherited": 26},
+      "new_ingestion": {
+        "pages": 12,
+        "chunks": 39,
+        "real_heading_derived": 25,
+        "unknown": 14,
+        "canonical_introduction": 2,
+        "canonical_method": 7,
+        "canonical_results": 2,
+        "canonical_dataset": 0
+      },
+      "identity_preserving_scratch_repair": {
+        "old_chunks_uniquely_aligned": 27,
+        "updated_chunks": 27,
+        "truthful_heading_derived": 6,
+        "unknown_including_multi_section_spans": 21,
+        "paper_ids_and_chunk_ids_preserved": true,
+        "synthetic_citation_id_and_chunk_link_preserved": true,
+        "synthetic_citation_section_corrected_to_unknown": true
+      }
+    },
+    "glove": {
+      "historical_stored_chunks": 33,
+      "historical_sections": {"Method": 16, "Related Work": 13, "Introduction": 3, "Conclusion": 1},
+      "new_ingestion": {
+        "pages": 12,
+        "chunks": 41,
+        "real_heading_derived": 19,
+        "unknown": 22,
+        "canonical_introduction": 2,
+        "canonical_method": 1,
+        "canonical_results": 1,
+        "canonical_dataset": 1
+      },
+      "identity_preserving_scratch_repair": {
+        "old_chunks_uniquely_aligned": 17,
+        "unmatched": 16,
+        "updated_chunks": 0,
+        "reason": "The available public PDF variant differs from the source text originally ingested; an in-place backfill must stop."
+      }
+    },
+    "medical_nutraceutical": {
+      "historical_stored_chunks": 27,
+      "historical_labelled": 0,
+      "new_ingestion": {
+        "pages": 13,
+        "chunks": 29,
+        "real_heading_derived": 8,
+        "unknown": 21,
+        "numbered_table_rows_and_reference_entries_rejected_as_headings": true
+      },
+      "caveat": "Medical and humanities PDFs with unnumbered or styled headings have partial coverage."
+    }
+  },
+  "compare_selector_read_only_check": {
+    "glove_dataset": 1,
+    "glove_results": 1,
+    "glove_equation_symmetry_under_dataset": false,
+    "word2vec_method": 7,
+    "word2vec_results": 2,
+    "word2vec_dataset": 0,
+    "conclusion": "True-section filtering narrows the known equation/boilerplate errors but is incomplete, especially where pages have no detected heading. No Compare selector was implemented."
+  },
+  "scratch_repair_invariants": {
+    "sqlite_integrity": "ok",
+    "alembic_head": "0005_openalex_consent",
+    "preexisting_fk_findings_unchanged": 1,
+    "paper_pin_note_turn_user_session_counts_unchanged": true,
+    "chunk_ids_text_pages_embeddings_unchanged": true,
+    "citation_ids_and_links_unchanged": true
+  }
+}

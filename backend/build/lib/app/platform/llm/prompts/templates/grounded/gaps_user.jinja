@@ -1,0 +1,11 @@
+{% for paper in papers %}
+=== {{ paper.label }}: "{{ paper.title }}" ===
+{% for f in paper.facts %}
+- fact_id: {{ f.fact_id }} | {{ f.type }} | page {{ f.page if f.page is not none else "?" }}: {{ f.value }} — "{{ f.quote }}"
+{% endfor %}
+{% endfor %}
+{% if comparisons %}
+Verified comparison findings:
+{% for c in comparisons %}- {{ c }}
+{% endfor %}{% endif %}
+Propose candidate gaps grounded in these facts.

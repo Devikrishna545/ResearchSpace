@@ -1,0 +1,1878 @@
+{
+  "id": "exact-transformers",
+  "category": "exact_title",
+  "query": "Attention Is All You Need",
+  "target": {
+    "arxiv_id": "1706.03762"
+  },
+  "plan": {
+    "topic": "Attention Is All You Need",
+    "sub_queries": [
+      "Attention Is All You Need"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "Do You Even Need Attention? A Stack of Feed-Forward Layers Does Surprisingly Well on ImageNet",
+      "authors": [
+        "Luke Melas-Kyriazi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The strong performance of vision transformers on image classification and other vision tasks is often attributed to the design of their multi-head attention layers. However, the extent to which attention is responsible for this strong performance remains unclear. In this short report, we ask: is the attention layer even necessary? Specifically, we replace the attention layer in a vision transformer with a feed-forward layer applied over the patch dimension. The resulting architecture is simply a series of feed-forward layers applied over the patch and feature dimensions in an alternating fashion. In experiments on ImageNet, this architecture performs surprisingly well: a ViT/DeiT-base-sized model obtains 74.9\\% top-1 accuracy, compared to 77.9\\% and 79.9\\% for ViT and DeiT respectively. These results indicate that aspects of vision transformers other than attention, such as the patch embedding, may be more responsible for their strong performance than previously thought. We hope these results prompt the community to spend more time trying to understand why our current models are as effective as they are.",
+      "doi": null,
+      "arxiv_id": "2105.02723v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2105.02723v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "\"All You Need\" is Not All You Need for a Paper Title: On the Origins of a Scientific Meme",
+      "authors": [
+        "Anton Alyakin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The 2017 paper ''Attention Is All You Need'' introduced the Transformer architecture-and inadvertently spawned one of machine learning's most persistent naming conventions. We analyze 717 arXiv preprints containing ''All You Need'' in their titles (2009-2025), finding exponential growth ($R^2$ > 0.994) following the original paper, with 200 titles in 2025 alone. Among papers following the canonical ''X [Is] All You Need'' structure, ''Attention'' remains the most frequently claimed necessity (28 occurrences). Situating this phenomenon within memetic theory, we argue the pattern's success reflects competitive pressures in scientific communication that increasingly favor memorability over precision. Whether this trend represents harmless academic whimsy or symptomatic sensationalism, we leave-with appropriate self-awareness-to the reader.",
+      "doi": null,
+      "arxiv_id": "2512.19700v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2512.19700v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CY",
+          "cs.DL"
+        ],
+        "primary_category": "cs.CY"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Quit When You Can: Efficient Evaluation of Ensembles with Ordering Optimization",
+      "authors": [
+        "Serena Wang",
+        "Maya Gupta",
+        "Seungil You"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Given a classifier ensemble and a set of examples to be classified, many examples may be confidently and accurately classified after only a subset of the base models in the ensemble are evaluated. This can reduce both mean latency and CPU while maintaining the high accuracy of the original ensemble. To achieve such gains, we propose jointly optimizing a fixed evaluation order of the base models and early-stopping thresholds. Our proposed objective is a combinatorial optimization problem, but we provide a greedy algorithm that achieves a 4-approximation of the optimal solution for certain cases. For those cases, this is also the best achievable polynomial time approximation bound unless $P = NP$. Experiments on benchmark and real-world problems show that the proposed Quit When You Can (QWYC) algorithm can speed-up average evaluation time by $2$x--$4$x, and is around $1.5$x faster than prior work. QWYC's joint optimization of ordering and thresholds also performed better in experiments than various fixed orderings, including gradient boosted trees' ordering.",
+      "doi": null,
+      "arxiv_id": "1806.11202v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1806.11202v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "GAN Vocoder: Multi-Resolution Discriminator Is All You Need",
+      "authors": [
+        "Jaeseong You",
+        "Dalhyun Kim",
+        "Gyuhyeon Nam",
+        "Geumbyeol Hwang",
+        "Gyeongsu Chae"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Several of the latest GAN-based vocoders show remarkable achievements, outperforming autoregressive and flow-based competitors in both qualitative and quantitative measures while synthesizing orders of magnitude faster. In this work, we hypothesize that the common factor underlying their success is the multi-resolution discriminating framework, not the minute details in architecture, loss function, or training strategy. We experimentally test the hypothesis by evaluating six different generators paired with one shared multi-resolution discriminating framework. For all evaluative measures with respect to text-to-speech syntheses and for all perceptual metrics, their performances are not distinguishable from one another, which supports our hypothesis.",
+      "doi": null,
+      "arxiv_id": "2103.05236v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2103.05236v2",
+      "raw_payload": {
+        "categories": [
+          "cs.SD",
+          "cs.LG",
+          "eess.AS"
+        ],
+        "primary_category": "cs.SD"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Object Counting: You Only Need to Look at One",
+      "authors": [
+        "Hui Lin",
+        "Xiaopeng Hong",
+        "Yabin Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper aims to tackle the challenging task of one-shot object counting. Given an image containing novel, previously unseen category objects, the goal of the task is to count all instances in the desired category with only one supporting bounding box example. To this end, we propose a counting model by which you only need to Look At One instance (LaoNet). First, a feature correlation module combines the Self-Attention and Correlative-Attention modules to learn both inner-relations and inter-relations. It enables the network to be robust to the inconsistency of rotations and sizes among different instances. Second, a Scale Aggregation mechanism is designed to help extract features with different scale information. Compared with existing few-shot counting methods, LaoNet achieves state-of-the-art results while learning with a high convergence speed. The code will be available soon.",
+      "doi": null,
+      "arxiv_id": "2112.05993v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2112.05993v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Names Are All You Need: Effective and Safe Regression Test Selection for Python",
+      "authors": [
+        "You Wang",
+        "Michael Pradel",
+        "Zhongxin Liu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Regression test selection reduces the cost of regression testing by executing only those tests affected by a code change. Despite extensive study of RTS in statically typed languages, achieving effective and safe RTS in Python is challenging. Python's dynamic typing makes precise call-graph construction difficult, which can cause call-graph-based RTS to miss affected tests. Python's eager importing mechanism, in contrast, renders file-level dependency analysis overly conservative. This paper presents NameRTS, the first Python RTS approach based on fine-grained dependency analysis. NameRTS models a Python program as a bipartite graph of code element nodes and name nodes, with edges capturing definitions and references. RTS is formulated as a reachability problem on this graph: a test is selected if any modified code element is reachable from the names used in that test. This design avoids call-graph construction, enabling a conservative analysis amenable to safety. To control dependency cascades introduced by coarse name matching, NameRTS applies two pruning strategies that leverage prior test executions and context information to refine name matching. To evaluate NameRTS, we construct the first Python RTS dataset with a ground truth indicating which test files are affected by each commit. We compare NameRTS with the best-performing baseline, BabelRTS, an RTS technique based on coarse file-level dependencies. On this benchmark, NameRTS skips 69.90% of test files on average, outperforming BabelRTS by 146.5%. It also reduces end-to-end testing time by 45.59%, yielding a 107.7% improvement over BabelRTS. In terms of safety, NameRTS selects all affected tests for 99.6% of commits, with only rare misses in exceptional cases. In contrast, BabelRTS is safe for 76.6% of commits. These results demonstrate the effectiveness of NameRTS, paving the way for more efficient regression testing in Python.",
+      "doi": null,
+      "arxiv_id": "2605.25356v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2605.25356v1",
+      "raw_payload": {
+        "categories": [
+          "cs.SE"
+        ],
+        "primary_category": "cs.SE"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Pay Attention to What You Need",
+      "authors": [
+        "Yifei Gao",
+        "Shaohong Chen",
+        "Lei Wang",
+        "Ruiting Dai",
+        "Ziyun Zhang",
+        "Kerui Ren",
+        "Jiaji Wu",
+        "Jun Cheng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Although large language models (LLMs) have achieved significant success in natural language processing, they still struggle with long-context comprehension. Traditional approaches to mitigating this issue typically rely on fine-tuning or retraining, which is both resource-intensive and challenging to deploy in lightweight industrial settings. In this paper, we investigate the potential to accomplish this without any additional resources. Through an in-depth study of the attention mechanism in LLMs, we propose a method called Scaled ReAttention (SRA) to strengthen LLMs' ability to interpret and retrieve information by strategically manipulating their attention scores during inference. Through extensive experiments, we demonstrate that integrating SRA significantly boosts LLMs' performance on a variety of downstream tasks, highlighting its practical potential for enhancing language understanding without incurring the overhead of traditional training.",
+      "doi": null,
+      "arxiv_id": "2307.13365v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2307.13365v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Grounding is All You Need? Dual Temporal Grounding for Video Dialog",
+      "authors": [
+        "You Qin",
+        "Wei Ji",
+        "Xinze Lan",
+        "Hao Fei",
+        "Xun Yang",
+        "Dan Guo",
+        "Roger Zimmermann",
+        "Lizi Liao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In the realm of video dialog response generation, the understanding of video content and the temporal nuances of conversation history are paramount. While a segment of current research leans heavily on large-scale pretrained visual-language models and often overlooks temporal dynamics, another delves deep into spatial-temporal relationships within videos but demands intricate object trajectory pre-extractions and sidelines dialog temporal dynamics. This paper introduces the Dual Temporal Grounding-enhanced Video Dialog model (DTGVD), strategically designed to merge the strengths of both dominant approaches. It emphasizes dual temporal relationships by predicting dialog turn-specific temporal regions, filtering video content accordingly, and grounding responses in both video and dialog contexts. One standout feature of DTGVD is its heightened attention to chronological interplay. By recognizing and acting upon the dependencies between different dialog turns, it captures more nuanced conversational dynamics. To further bolster the alignment between video and dialog temporal dynamics, we've implemented a list-wise contrastive learning strategy. Within this framework, accurately grounded turn-clip pairings are designated as positive samples, while less precise pairings are categorized as negative. This refined classification is then funneled into our holistic end-to-end response generation mechanism. Evaluations using AVSD@DSTC-7 and AVSD@DSTC-8 datasets underscore the superiority of our methodology.",
+      "doi": null,
+      "arxiv_id": "2410.05767v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2410.05767v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.MM"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Relative quantum cohomology under birational transformations",
+      "authors": [
+        "Fenglong You"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We study how relative quantum cohomology, defined by Tseng--You and Fan--Wu--You, varies under birational transformations. For toric complete intersections with simple normal crossings divisors that contain the loci of indeterminacy, we prove that their respective relative $I$-functions can be directly identified. For toric complete intersections with smooth divisors, we prove that their respective relative $I$-functions are related by analytic continuation. We also study some connections with extremal transitions and FJRW theory.",
+      "doi": null,
+      "arxiv_id": "2204.00509v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2204.00509v1",
+      "raw_payload": {
+        "categories": [
+          "math.AG"
+        ],
+        "primary_category": "math.AG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "The Matrix Calculus You Need For Deep Learning",
+      "authors": [
+        "Terence Parr",
+        "Jeremy Howard"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper is an attempt to explain all the matrix calculus you need in order to understand the training of deep neural networks. We assume no math knowledge beyond what you learned in calculus 1, and provide links to help you refresh the necessary math where needed. Note that you do not need to understand this material before you start learning to train and use deep learning in practice; rather, this material is for those who are already familiar with the basics of neural networks, and wish to deepen their understanding of the underlying math. Don't worry if you get stuck at some point along the way---just go back and reread the previous section, and try writing down and working through some examples. And if you're still stuck, we're happy to answer your questions in the Theory category at forums.fast.ai. Note: There is a reference section at the end of the paper summarizing all the key matrix calculus rules and terminology discussed here. See related articles at http://explained.ai",
+      "doi": null,
+      "arxiv_id": "1802.01528v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1802.01528v3",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A Picture Tells a Thousand Words -- About You! User Interest Profiling from User Generated Visual Content",
+      "authors": [
+        "Quanzeng You",
+        "Sumit Bhatia",
+        "Jiebo Luo"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Inference of online social network users' attributes and interests has been an active research topic. Accurate identification of users' attributes and interests is crucial for improving the performance of personalization and recommender systems. Most of the existing works have focused on textual content generated by the users and have successfully used it for predicting users' interests and other identifying attributes. However, little attention has been paid to user generated visual content (images) that is becoming increasingly popular and pervasive in recent times. We posit that images posted by users on online social networks are a reflection of topics they are interested in and propose an approach to infer user attributes from images posted by them. We analyze the content of individual images and then aggregate the image-level knowledge to infer user-level interest distribution. We employ image-level similarity to propagate the label information between images, as well as utilize the image category information derived from the user created organization structure to further propagate the category-level knowledge for all images. A real life social network dataset created from Pinterest is used for evaluation and the experimental results demonstrate the effectiveness of our proposed approach.",
+      "doi": null,
+      "arxiv_id": "1504.04558v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1504.04558v1",
+      "raw_payload": {
+        "categories": [
+          "cs.SI",
+          "cs.IR",
+          "cs.MM"
+        ],
+        "primary_category": "cs.SI"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "COCO is \"ALL'' You Need for Visual Instruction Fine-tuning",
+      "authors": [
+        "Xiaotian Han",
+        "Yiqi Wang",
+        "Bohan Zhai",
+        "Quanzeng You",
+        "Hongxia Yang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Multi-modal Large Language Models (MLLMs) are increasingly prominent in the field of artificial intelligence. Visual instruction fine-tuning (IFT) is a vital process for aligning MLLMs' output with user's intentions. High-quality and diversified instruction following data is the key to this fine-tuning process. Recent studies propose to construct visual IFT datasets through a multifaceted approach: transforming existing datasets with rule-based templates, employing GPT-4 for rewriting annotations, and utilizing GPT-4V for visual dataset pseudo-labeling. LLaVA-1.5 adopted similar approach and construct LLaVA-mix-665k, which is one of the simplest, most widely used, yet most effective IFT datasets today. Notably, when properly fine-tuned with this dataset, MLLMs can achieve state-of-the-art performance on several benchmarks. However, we noticed that models trained with this dataset often struggle to follow user instructions properly in multi-round dialog. In addition, tradition caption and VQA evaluation benchmarks, with their closed-form evaluation structure, are not fully equipped to assess the capabilities of modern open-ended generative MLLMs. This problem is not unique to the LLaVA-mix-665k dataset, but may be a potential issue in all IFT datasets constructed from image captioning or VQA sources, though the extent of this issue may vary. We argue that datasets with diverse and high-quality detailed instruction following annotations are essential and adequate for MLLMs IFT. In this work, we establish a new IFT dataset, with images sourced from the COCO dataset along with more diverse instructions. Our experiments show that when fine-tuned with out proposed dataset, MLLMs achieve better performance on open-ended evaluation benchmarks in both single-round and multi-round dialog setting.",
+      "doi": null,
+      "arxiv_id": "2401.08968v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2401.08968v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "All You Need Is A Fuzzing Brain: An LLM-Powered System for Automated Vulnerability Detection and Patching",
+      "authors": [
+        "Ze Sheng",
+        "Qingxiao Xu",
+        "Jianwei Huang",
+        "Matthew Woodcock",
+        "Heqing Huang",
+        "Alastair F. Donaldson",
+        "Guofei Gu",
+        "Jeff Huang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Our team, All You Need Is A Fuzzing Brain, was one of seven finalists in DARPA's Artificial Intelligence Cyber Challenge (AIxCC), placing fourth in the final round. During the competition, we developed a Cyber Reasoning System (CRS) that autonomously discovered 28 security vulnerabilities - including six previously unknown zero-days - in real-world open-source C and Java projects, and successfully patched 14 of them. The complete CRS is open source at https://github.com/o2lab/afc-crs-all-you-need-is-a-fuzzing-brain. This paper provides a detailed technical description of our CRS, with an emphasis on its LLM-powered components and strategies. Building on AIxCC, we further introduce a public leaderboard for benchmarking state-of-the-art LLMs on vulnerability detection and patching tasks, derived from the AIxCC dataset. The leaderboard is available at https://o2lab.github.io/FuzzingBrain-Leaderboard/.",
+      "doi": null,
+      "arxiv_id": "2509.07225v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2509.07225v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CR"
+        ],
+        "primary_category": "cs.CR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Not All Attention Is Equal: A Quantitative Survey of the EEI Trade-off",
+      "authors": [
+        "Aditya Singh"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Attention mechanisms have driven machine learning for a decade, from neural machine translation to language models that do general-purpose reasoning. This survey covers four connected threads: their formulation for sequence-to-sequence tasks, adaptation to computer vision, efficiency innovations that address the quadratic bottleneck, and advances in interpretability. We define three criteria: efficiency, expressiveness, and interpretability, and compare twenty-one methods using an EEI scoring framework. Scores come from a single rater with an assumed +/-1-point perturbation range. A deterministic Monte Carlo analysis with 200,000 samples shows that, under this perturbation model, rank changes of more than one position occur in 67-70% of samples on average. A rank-matched null model reproduces a similar stability profile, so the results support coarse tier-level comparisons rather than fine-grained rankings. The survey traces attention from Bahdanau-Luong alignment through the Transformer and into vision architectures. It reviews fixed and learned sparse attention, linear attention, IO-aware exact algorithms including FlashAttention, and state-space alternatives including Mamba. It also covers induction heads, superposition, and the attention-SSM duality. We further provide a structured narrative review, a benchmark synthesis with cross-study caveats, a five-problem research gap analysis, and a 2015-2026 evolution timeline. We conclude by framing attention research as an expansion of the efficiency-expressiveness-interpretability frontier and identifying future directions including unified efficiency benchmarks, learned routing for hybrid architectures, length generalization, and scalable mechanistic interpretability.",
+      "doi": null,
+      "arxiv_id": "2608.15459v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2608.15459v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "An extremal theorem for graphs with non-negative Bakry--Émery curvature",
+      "authors": [
+        "Jiawei Xie",
+        "Zhe You"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recently, Chen, Liu, and You (An extremal theorem for positive curvature of graphs, arXiv:2607.02297) proved an extremal theorem for positive Lin--Lu--Yau curvature. They further proposed the similar problems for other discrete curvature. In this paper, we prove a sharp extremal theorem for non-negative Bakry--Émery curvature with non-normalized Laplacian: every graph of order \\(n\\geq 7\\) with more than \\[\n  \\binom {n}{2}-\\lfloor{\\frac{n}{2}\\rfloor}-2 \\] edges satisfies $CD(0,\\infty)$, and this threshold is optimal.",
+      "doi": null,
+      "arxiv_id": "2608.09180v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2608.09180v1",
+      "raw_payload": {
+        "categories": [
+          "math.CO",
+          "math.DG"
+        ],
+        "primary_category": "math.CO"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "CliffordNet: All You Need is Geometric Algebra",
+      "authors": [
+        "Zhongping Ji"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Modern computer vision architectures, from CNNs to Transformers, predominantly rely on the stacking of heuristic modules: spatial mixers (Attention/Conv) followed by channel mixers (FFNs). In this work, we challenge this paradigm by returning to mathematical first principles. We propose the Clifford Algebra Network (CAN), also referred to as CliffordNet, a vision backbone grounded purely in Geometric Algebra. Instead of engineering separate modules for mixing and memory, we derive a unified interaction mechanism based on the Clifford Geometric Product ($uv = u \\cdot v + u \\wedge v$). This operation ensures algebraic completeness regarding the Geometric Product by simultaneously capturing feature coherence (via the generalized inner product) and structural variation (via the exterior wedge product).\n  Implemented via an efficient sparse rolling mechanism with strict linear complexity $O(N)$, our model reveals a surprising emergent property: the geometric interaction is so representationally dense that standard Feed-Forward Networks (FFNs) become redundant. Empirically, CliffordNet establishes a new Pareto frontier: our Nano variant achieves 77.82\\% accuracy on CIFAR-100 with only 1.4M parameters, effectively matching the heavy-weight ResNet-18 (11.2M) with $8\\times$ fewer parameters, while our Lite variant (2.6M) sets a new SOTA for tiny models at 79.05\\%. Our results suggest that global understanding can emerge solely from rigorous, algebraically complete local interactions, potentially signaling a shift where geometry is all you need. Code is available at https://github.com/ParaMind2025/CAN.",
+      "doi": null,
+      "arxiv_id": "2601.06793v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2601.06793v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Quantifying attention via dwell time and engagement in a social media browsing environment",
+      "authors": [
+        "Ziv Epstein",
+        "Hause Lin",
+        "Gordon Pennycook",
+        "David Rand"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Modern computational systems have an unprecedented ability to detect, leverage and influence human attention. Prior work identified user engagement and dwell time as two key metrics of attention in digital environments, but these metrics have yet to be integrated into a unified model that can advance the theory andpractice of digital attention. We draw on work from cognitive science, digital advertising, and AI to propose a two-stage model of attention for social media environments that disentangles engagement and dwell. In an online experiment, we show that attention operates differently in these two stages and find clear evidence of dissociation: when dwelling on posts (Stage 1), users attend more to sensational than credible content, but when deciding whether to engage with content (Stage 2), users attend more to credible than sensational content. These findings have implications for the design and development of computational systems that measure and model human attention, such as newsfeed algorithms on social media.",
+      "doi": null,
+      "arxiv_id": "2209.10464v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2209.10464v2",
+      "raw_payload": {
+        "categories": [
+          "cs.HC",
+          "cs.CY"
+        ],
+        "primary_category": "cs.HC"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Unveiling the Role of Artificial Intelligence and Stock Market Growth in Achieving Carbon Neutrality in the United States: An ARDL Model Analysis",
+      "authors": [
+        "Azizul Hakim Rafi",
+        "Abdullah Al Abrar Chowdhury",
+        "Adita Sultana",
+        "Abdulla All Noman"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Given the fact that climate change has become one of the most pressing problems in many countries in recent years, specialized research on how to mitigate climate change has been adopted by many countries. Within this discussion, the influence of advanced technologies in achieving carbon neutrality has been discussed. While several studies investigated how AI and Digital innovations could be used to reduce the environmental footprint, the actual influence of AI in reducing CO2 emissions (a proxy measuring carbon footprint) has yet to be investigated. This paper studies the role of advanced technologies in general, and Artificial Intelligence (AI) and ICT use in particular, in advancing carbon neutrality in the United States, between 2021. Secondly, this paper examines how Stock Market Growth, ICT use, Gross Domestic Product (GDP), and Population affect CO2 emissions using the STIRPAT model. After examining stationarity among the variables using a variety of unit root tests, this study concluded that there are no unit root problems across all the variables, with a mixed order of integration. The ARDL bounds test for cointegration revealed that variables in this study have a long-run relationship. Moreover, the estimates revealed from the ARDL model in the short- and long-run indicated that economic growth, stock market capitalization, and population significantly contributed to the carbon emissions in both the short-run and long-run. Conversely, AI and ICT use significantly reduced carbon emissions over both periods. Furthermore, findings were confirmed to be robust using FMOLS, DOLS, and CCR estimations. Furthermore, diagnostic tests indicated the absence of serial correlation, heteroscedasticity, and specification errors and, thus, the model was robust.",
+      "doi": null,
+      "arxiv_id": "2412.16166v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2412.16166v1",
+      "raw_payload": {
+        "categories": [
+          "econ.GN",
+          "cs.AI"
+        ],
+        "primary_category": "econ.GN"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Can you hear your location on a manifold?",
+      "authors": [
+        "Emmett L. Wyman",
+        "Yakun Xi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We introduce a variation on Kac's question, \"Can one hear the shape of a drum?\" Instead of trying to identify a compact manifold and its metric via its Laplace--Beltrami spectrum, we ask if it is possible to uniquely identify a point $x$ on the manifold, up to symmetry, from its pointwise counting function\n  \\[\n  N_x(λ) = \\sum_{λ_j \\leq λ} |e_j(x)|^2,\n  \\] where here $Δ_g e_j = -λ_j^2 e_j$ and $e_j$ form an orthonormal basis for $L^2(M)$.\n  This problem has several natural physical interpretations, two of which are acoustic: 1. You are placed at an arbitrary location in a familiar room with your eyes closed. Can you identify your location in the room by clapping your hands once and listening to the resulting echoes and reverberations? 2. If a drum of a known shape is struck at some unknown point, can you determine this point by listening to the quality of the sound the drum produces?\n  The main result of this paper provides an affirmative answer to this question for a generic class of metrics. We also probe the problem with a variety of simple examples, highlighting along the way helpful geometric invariants that can be pulled out of the pointwise counting function $N_x$.",
+      "doi": null,
+      "arxiv_id": "2304.04659v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2304.04659v2",
+      "raw_payload": {
+        "categories": [
+          "math.AP",
+          "math.CA",
+          "math.SP"
+        ],
+        "primary_category": "math.AP"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "First De-Trend then Attend: Rethinking Attention for Time-Series Forecasting",
+      "authors": [
+        "Xiyuan Zhang",
+        "Xiaoyong Jin",
+        "Karthick Gopalswamy",
+        "Gaurav Gupta",
+        "Youngsuk Park",
+        "Xingjian Shi",
+        "Hao Wang",
+        "Danielle C. Maddix",
+        "Yuyang Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Transformer-based models have gained large popularity and demonstrated promising results in long-term time-series forecasting in recent years. In addition to learning attention in time domain, recent works also explore learning attention in frequency domains (e.g., Fourier domain, wavelet domain), given that seasonal patterns can be better captured in these domains. In this work, we seek to understand the relationships between attention models in different time and frequency domains. Theoretically, we show that attention models in different domains are equivalent under linear conditions (i.e., linear kernel to attention scores). Empirically, we analyze how attention models of different domains show different behaviors through various synthetic experiments with seasonality, trend and noise, with emphasis on the role of softmax operation therein. Both these theoretical and empirical analyses motivate us to propose a new method: TDformer (Trend Decomposition Transformer), that first applies seasonal-trend decomposition, and then additively combines an MLP which predicts the trend component with Fourier attention which predicts the seasonal component to obtain the final prediction. Extensive experiments on benchmark time-series forecasting datasets demonstrate that TDformer achieves state-of-the-art performance against existing attention-based models.",
+      "doi": null,
+      "arxiv_id": "2212.08151v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2212.08151v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Jitendra Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N. Gomez",
+        "Łukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/2q58a426",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2626778328",
+      "citation_count": 7679,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention Is All You Need In Speech Separation",
+      "authors": [
+        "Cem Subakan",
+        "Mirco Ravanelli",
+        "Samuele Cornell",
+        "Mirko Bronzi",
+        "Jianyuan Zhong"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/icassp39728.2021.9413901",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3163652268",
+      "citation_count": 645,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Channel Attention Is All You Need for Video Frame Interpolation",
+      "authors": [
+        "Myungsub Choi",
+        "Heewon Kim",
+        "Bohyung Han",
+        "Ning Xu",
+        "Kyoung Mu Lee"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v34i07.6693",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2997150500",
+      "citation_count": 342,
+      "oa_status": "diamond",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention is all you need: utilizing attention in AI-enabled drug discovery",
+      "authors": [
+        "Yang Zhang",
+        "Caiqi Liu",
+        "Mujiexin Liu",
+        "Tianyuan Liu",
+        "Hao Lin",
+        "Huang Cheng-bing",
+        "Ning Lin"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1093/bib/bbad467",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4390678101",
+      "citation_count": 378,
+      "oa_status": "hybrid",
+      "pdf_url": "https://academic.oup.com/bib/article-pdf/25/1/bbad467/55123365/bbad467.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Is Space-Time Attention All You Need for Video Understanding?",
+      "authors": [
+        "Gedas Bertasius",
+        "Heng Wang",
+        "Lorenzo Torresani"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2102.05095",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3126721948",
+      "citation_count": 1460,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2102.05095",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Cross-Attention is All You Need: Adapting Pretrained Transformers for Machine Translation",
+      "authors": [
+        "Mozhdeh Gheini",
+        "Xiang Ren",
+        "Jonathan May"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.emnlp-main.132",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3199258042",
+      "citation_count": 152,
+      "oa_status": "hybrid",
+      "pdf_url": "https://aclanthology.org/2021.emnlp-main.132.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention is not all you need: the complicated case of ethically using large language models in healthcare and medicine",
+      "authors": [
+        "Stefan Harrer"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.ebiom.2023.104512",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4324373918",
+      "citation_count": 480,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention Is All You Need for Chinese Word Segmentation",
+      "authors": [
+        "Sufeng Duan",
+        "Hai Zhao"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2020.emnlp-main.317",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3099527960",
+      "citation_count": 30,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.emnlp-main.317.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention is all you need: An interpretable transformer-based asset allocation approach",
+      "authors": [
+        "Tian Ma",
+        "Wanwan Wang",
+        "Yu Chen"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.irfa.2023.102876",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4385478480",
+      "citation_count": 42,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Yes, \"Attention Is All You Need\", for Exemplar based Colorization",
+      "authors": [
+        "Wang Yin",
+        "Peng Lu",
+        "Zhaoran Zhao",
+        "Xujun Peng"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3474085.3475385",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3207381926",
+      "citation_count": 27,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Cross attention is all you need: relational remote sensing change detection with transformer",
+      "authors": [
+        "Kaixuan Lu",
+        "Xiao Huang",
+        "Ruiheng Xia",
+        "Pan Zhang",
+        "Junping Shen"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1080/15481603.2024.2380126",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4400867263",
+      "citation_count": 31,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Equity‐premium prediction: Attention is all you need",
+      "authors": [
+        "Luiz Renato Lima",
+        "Lucas Lúcio Godeiro"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1002/jae.2939",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4295763107",
+      "citation_count": 19,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Is Attention All You Need?",
+      "authors": [
+        "Patrick Mineault"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/978-3-031-84300-6_13",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4412428247",
+      "citation_count": 53,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Not All Attention Is All You Need",
+      "authors": [
+        "Hongqiu Wu",
+        "Hai Zhao",
+        "Min Zhang"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2104.04692",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3155713635",
+      "citation_count": 10,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2104.04692",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Sparse attention is all you need for pre-training on tabular data",
+      "authors": [
+        "Tokimasa Isomura",
+        "Ryotaro Shimizu",
+        "Masayuki Goto"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s00521-024-10698-x",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4404545263",
+      "citation_count": 15,
+      "oa_status": "hybrid",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention is All You Need in Speech Separation",
+      "authors": [
+        "Cem Subakan",
+        "Mirco Ravanelli",
+        "Samuele Cornell",
+        "Mirko Bronzi",
+        "Jianyuan Zhong"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2010.13154",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3094280184",
+      "citation_count": 10,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2010.13154",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Moral Attention Is All You Need",
+      "authors": [
+        "Mark Graves"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1080/14746700.2025.2472118",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4408534178",
+      "citation_count": 8,
+      "oa_status": "bronze",
+      "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/14746700.2025.2472118?needAccess=true",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Is Attention all You Need in Medical Image Analysis? A Review",
+      "authors": [
+        "Giorgos Papanastasiou",
+        "Nikolaos Dikaios",
+        "Jiahao Huang",
+        "Chengjia Wang",
+        "Guang Zhong Yang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/jbhi.2023.3348436",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4390421984",
+      "citation_count": 87,
+      "oa_status": "hybrid",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6221020/6363502/10376277.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Fastformer: Additive Attention Can Be All You Need",
+      "authors": [
+        "Chuhan Wu",
+        "Fangzhao Wu",
+        "Tao Qi",
+        "Yongfeng Huang",
+        "Xing Xie"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2108.09084",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3194203264",
+      "citation_count": 80,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2108.09084",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Attention is Not All You Need: Pure Attention Loses Rank Doubly\\n Exponentially with Depth",
+      "authors": [
+        "Yihe Dong",
+        "Jean-Baptiste Cordonnier",
+        "Andreas Loukas"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2103.03404",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3172099915",
+      "citation_count": 90,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2103.03404",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Is Attention All You Need?",
+      "authors": [
+        "Patrick Mineault"
+      ],
+      "year": 2025,
+      "venue": "From Human Attention to Computational Attention",
+      "abstract": null,
+      "doi": "10.1007/978-3-031-84300-6_13",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 55,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need: An Analysis Of The Valuation Of Artificial Intelligence Tokens",
+      "authors": [
+        "Mfon Akpan"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.4993784",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention is All You Need... Unless You Are a CISO: The Inherent Incompatibility Between Transformer Architectures and Zero-Trust Environments",
+      "authors": [
+        "Giuseppe Canale"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.5967774",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "One Vector Is All You Need for O(1) Self-Attention: The Ocean State",
+      "authors": [
+        "SHUYUAN YU"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-10916252/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Correction to: Attention is all you need: utilizing attention in AI-enabled drug discovery",
+      "authors": [],
+      "year": 2026,
+      "venue": "Briefings in Bioinformatics",
+      "abstract": null,
+      "doi": "10.1093/bib/bbag239",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Year 2026: Attention to AI Over-Reliance is All You Need in AI Education!",
+      "authors": [
+        "Tee Hui Teo"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.7137418",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention via Synaptic Plasticity is All You Need A Biologically Inspired Spiking Neuromorphic Transformer",
+      "authors": [
+        "Ankush Kumar",
+        "Kallol Mondal"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.6096874",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "All You Need Is LSD",
+      "authors": [
+        "Leo Butler"
+      ],
+      "year": 2018,
+      "venue": "All You Need Is LSD",
+      "abstract": null,
+      "doi": "10.5040/9781350101272.00000005",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 14,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "J. Mark Bishop",
+        "Gabriel Seiberth"
+      ],
+      "year": 2025,
+      "venue": "Driving Intelligence: The Green Book",
+      "abstract": null,
+      "doi": "10.1201/9781003561460-19",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 6,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N.Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/pc26a033",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 21,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N.Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/ysbyhc05",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 22,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N.Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/mdcm8z23",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 3,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N.Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/nxvz2v36",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 16,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N.Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/ctdc8e75",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 69,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N.Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/2q58a426",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 11,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N.Gomez",
+        "Lukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.65215/r5bs2d54",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 20,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Physics Is All You Need: Outperforming Self-Attention Mechanisms in Solar Irradiance Forecasting",
+      "authors": [
+        "Mohammed Ezzaldin Babiker Abdullah",
+        "Rufaidah Abdallah Ibrahim Mohammed"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.36227/techrxiv.176827103.31624241/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "All You Need is Attention: Lightweight Attention-based Data Augmentation for Text Classification",
+      "authors": [
+        "Junehyung Kim",
+        "Sungjae Hwang"
+      ],
+      "year": 2024,
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      "abstract": null,
+      "doi": "10.18653/v1/2024.findings-emnlp.752",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attention (And Money) Is All You Need: Why Universities Are Struggling to Keep AI Talent",
+      "authors": [
+        "Ufuk Akcigit",
+        "Craig Chikis",
+        "Emin Dinlersoz",
+        "Nathan Goldschlag"
+      ],
+      "year": 2026,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3386/w34964",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Human Gaze is All You Need: Aligning Image Encoders with Human Attention",
+      "authors": [
+        "Anna Antipova",
+        "Ilya Nachevsky",
+        "Mikhail Salamatin",
+        "Anna Izmalkova",
+        "Anna Shestakova"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.6161005",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Attention is all you need: utilizing attention in AI-enabled drug discovery.",
+      "authors": [
+        "Zhang Y",
+        "Liu C",
+        "Liu M",
+        "Liu T",
+        "Lin H",
+        "Huang CB",
+        "Ning L"
+      ],
+      "year": 2023,
+      "venue": "Briefings in bioinformatics",
+      "abstract": null,
+      "doi": "10.1093/bib/bbad467",
+      "arxiv_id": null,
+      "pmid": "38189543",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Is Attention all You Need in Medical Image Analysis? A Review.",
+      "authors": [
+        "Papanastasiou G",
+        "Dikaios N",
+        "Huang J",
+        "Wang C",
+        "Yang G"
+      ],
+      "year": 2024,
+      "venue": "IEEE journal of biomedical and health informatics",
+      "abstract": null,
+      "doi": "10.1109/JBHI.2023.3348436",
+      "arxiv_id": null,
+      "pmid": "38157463",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Counting is almost all you need.",
+      "authors": [
+        "Akerman O",
+        "Isakov H",
+        "Levi R",
+        "Psevkin V",
+        "Louzoun Y"
+      ],
+      "year": 2022,
+      "venue": "Frontiers in immunology",
+      "abstract": null,
+      "doi": "10.3389/fimmu.2022.1031011",
+      "arxiv_id": null,
+      "pmid": "36741395",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Attention is not all you need: the complicated case of ethically using large language models in healthcare and medicine.",
+      "authors": [
+        "Harrer S"
+      ],
+      "year": 2023,
+      "venue": "EBioMedicine",
+      "abstract": null,
+      "doi": "10.1016/j.ebiom.2023.104512",
+      "arxiv_id": null,
+      "pmid": "36924620",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Mitigating Harms of Social Media for Adolescent Body Image and Eating Disorders: A Review.",
+      "authors": [
+        "Mazzeo SE",
+        "Weinstock M",
+        "Vashro TN",
+        "Henning T",
+        "Derrigo K"
+      ],
+      "year": 2024,
+      "venue": "Psychology research and behavior management",
+      "abstract": null,
+      "doi": "10.2147/PRBM.S410600",
+      "arxiv_id": null,
+      "pmid": "38978847",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "All you need is [somebody's] love \"third-party reproduction\" and the existential density of biological affinity.",
+      "authors": [
+        "Madureira DMS"
+      ],
+      "year": 2024,
+      "venue": "Monash bioethics review",
+      "abstract": null,
+      "doi": "10.1007/s40592-024-00212-3",
+      "arxiv_id": null,
+      "pmid": "39546249",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "The gut microbiota-brain axis in neurological disorders.",
+      "authors": [
+        "You M",
+        "Chen N",
+        "Yang Y",
+        "Cheng L",
+        "He H",
+        "Cai Y",
+        "Liu Y",
+        "Liu H",
+        "Hong G"
+      ],
+      "year": 2024,
+      "venue": "MedComm",
+      "abstract": null,
+      "doi": "10.1002/mco2.656",
+      "arxiv_id": null,
+      "pmid": "39036341",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Experimental study on physical exercise in diabetes: pathophysiology and therapeutic effects.",
+      "authors": [
+        "Messina G",
+        "Alioto A",
+        "Parisi MC",
+        "Mingrino O",
+        "Di Corrado D",
+        "Crescimanno C",
+        "Kuliś S",
+        "Nese Sahin F",
+        "Padua E",
+        "Canzone A",
+        "Francavilla VC"
+      ],
+      "year": 2023,
+      "venue": "European journal of translational myology",
+      "abstract": null,
+      "doi": "10.4081/ejtm.2023.11560",
+      "arxiv_id": null,
+      "pmid": "37817671",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Attention is all you need (in the brain): semantic contextualization in human hippocampus.",
+      "authors": [
+        "Katlowitz KA",
+        "Belanger JL",
+        "Ismail T",
+        "Chavez AG",
+        "Chericoni A",
+        "Franch M",
+        "Mickiewicz EA",
+        "Mathura RK",
+        "Paulo DL",
+        "Bartoli E",
+        "Piantadosi ST",
+        "Provenza NR",
+        "Watrous AJ",
+        "Sheth SA",
+        "Hayden BY"
+      ],
+      "year": 2025,
+      "venue": "bioRxiv : the preprint server for biology",
+      "abstract": null,
+      "doi": "10.1101/2025.06.23.661103",
+      "arxiv_id": null,
+      "pmid": "40667335",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "A short trajectory is all you need: A transformer-based model for long-time dissipative quantum dynamics.",
+      "authors": [
+        "Herrera Rodríguez LE",
+        "Kananenka AA"
+      ],
+      "year": 2024,
+      "venue": "The Journal of chemical physics",
+      "abstract": null,
+      "doi": "10.1063/5.0232871",
+      "arxiv_id": null,
+      "pmid": "39484891",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Response to \"Attention is not all you need: the complicated case of ethically using large language models in healthcare and medicine\".",
+      "authors": [
+        "Trengove M",
+        "Vandersluis R",
+        "Goetz L"
+      ],
+      "year": 2023,
+      "venue": "EBioMedicine",
+      "abstract": null,
+      "doi": "10.1016/j.ebiom.2023.104671",
+      "arxiv_id": null,
+      "pmid": "37327676",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Inhibition of S100A8/A9 ameliorates neuroinflammation by blocking NET formation following traumatic brain injury.",
+      "authors": [
+        "Shi G",
+        "Cao Y",
+        "Xu J",
+        "Chen B",
+        "Zhang X",
+        "Zhu Y",
+        "Liu L",
+        "Liu X",
+        "Zhang L",
+        "Zhou Y",
+        "Li S",
+        "Yang G",
+        "Liu X",
+        "Chen F",
+        "Chen X",
+        "Zhang J",
+        "Zhang S"
+      ],
+      "year": 2025,
+      "venue": "Redox biology",
+      "abstract": null,
+      "doi": "10.1016/j.redox.2025.103532",
+      "arxiv_id": null,
+      "pmid": "39929053",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Lessons on Leadership.",
+      "authors": [
+        "Davenport MS",
+        "Dunnick NR"
+      ],
+      "year": 2018,
+      "venue": "Radiographics : a review publication of the Radiological Society of North America, Inc",
+      "abstract": null,
+      "doi": "10.1148/rg.2018180028",
+      "arxiv_id": null,
+      "pmid": "30303800",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "\"Hormones rule me\": A qualitative exploration of the impact of perimenopause on women with ADHD.",
+      "authors": [
+        "Kini-Seery C",
+        "Trevaskis S",
+        "Kilbride K",
+        "Wrigley M",
+        "Bramham J"
+      ],
+      "year": 2026,
+      "venue": "Women's health (London, England)",
+      "abstract": null,
+      "doi": "10.1177/17455057261450178",
+      "arxiv_id": null,
+      "pmid": "42466994",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Epidemiology of Itch.",
+      "authors": [
+        "Carstens E",
+        "Akiyama T",
+        "Weisshaar E",
+        "Matterne U"
+      ],
+      "year": 2014,
+      "venue": "",
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": "24830008",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Response to M. Trengove & coll regarding \"Attention is not all you need: the complicated case of ethically using large language models in healthcare and medicine\".",
+      "authors": [
+        "Harrer S"
+      ],
+      "year": 2023,
+      "venue": "EBioMedicine",
+      "abstract": null,
+      "doi": "10.1016/j.ebiom.2023.104672",
+      "arxiv_id": null,
+      "pmid": "37331162",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Kentucky Domestic Violence.",
+      "authors": [
+        "Huecker MR",
+        "Malik A",
+        "King KC",
+        "Smock W"
+      ],
+      "year": 2023,
+      "venue": "",
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": "29763099",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Getting the attention you need.",
+      "authors": [
+        "Davenport TH",
+        "Beck JC"
+      ],
+      "year": 2000,
+      "venue": "Harvard business review",
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": "11143148",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Protein structure prediction by AlphaFold2: are attention and symmetries all you need?",
+      "authors": [
+        "Bouatta N",
+        "Sorger P",
+        "AlQuraishi M"
+      ],
+      "year": 2021,
+      "venue": "Acta crystallographica. Section D, Structural biology",
+      "abstract": null,
+      "doi": "10.1107/S2059798321007531",
+      "arxiv_id": null,
+      "pmid": "34342271",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Florida: Domestic Violence.",
+      "authors": [
+        "Houseman B",
+        "Kopitnik NL",
+        "Semien G"
+      ],
+      "year": 2024,
+      "venue": "",
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": "29630246",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 2946,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 4207,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 1136,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 2428,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

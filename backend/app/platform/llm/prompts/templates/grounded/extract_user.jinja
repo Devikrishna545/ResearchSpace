@@ -1,0 +1,14 @@
+Requested fact type: {{ fact_type.name | upper }} ({{ fact_type.label }})
+Definition: {{ fact_type.definition }}
+This is NOT: {{ fact_type.not_this }}.
+{% if fact_type.attributes %}Also fill "attributes" with any of these keys that are explicitly stated (omit keys that are not stated): {{ fact_type.attributes | join(", ") }}.
+{% endif %}
+Paper identity: "{{ paper_title }}"
+
+Eligible source excerpts:
+{% for e in excerpts %}
+[source_id: {{ e.source_id }} | page {{ e.page if e.page is not none else "?" }} | section: {{ e.section }} | kind: {{ e.kind }}{% if e.status != "parsed" %} | status: {{ e.status }}{% endif %}]
+{{ e.text }}
+{% endfor %}
+
+Extract every {{ fact_type.label | lower }} explicitly stated for this paper, or return not_found.

@@ -1,0 +1,21 @@
+{% if mode == "summary" -%}
+Prior summary:
+{{ prior_summary }}
+
+Recent turns:
+{% for turn in turns -%}
+- {{ turn.role }}: {{ turn.content }}
+{% endfor -%}
+
+Updated rolling summary:
+{%- else -%}
+Prior findings/open questions:
+{{ prior_findings }}
+
+Recent turns:
+{% for turn in turns -%}
+- {{ turn.role }}: {{ turn.content }}
+{% endfor -%}
+
+Return only JSON.
+{%- endif %}

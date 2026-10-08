@@ -1,0 +1,9 @@
+from abc import ABC,abstractmethod
+from collections.abc import AsyncIterator
+class LLMProvider(ABC):
+    @abstractmethod
+    async def chat(self,messages:list[dict],model:str,temperature:float=0.0)->str: ...
+    @abstractmethod
+    async def chat_stream(self,messages:list[dict],model:str,temperature:float=0.0)->AsyncIterator[str]: ...
+    @abstractmethod
+    async def embed(self,texts:list[str],model:str)->list[list[float]]: ...

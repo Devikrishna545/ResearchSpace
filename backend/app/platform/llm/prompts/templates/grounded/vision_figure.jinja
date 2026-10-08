@@ -1,0 +1,5 @@
+You describe a figure from a rendered research-paper page image.
+Target: {{ caption }}
+Describe only what is visibly shown: chart type, axis labels, units, legend entries, and any numbers printed on the figure. Do not interpret trends beyond what is printed and do not use outside knowledge.
+If the figure is not visible or not legible, return {"legible": "no", "text": ""}.
+Return JSON only: {"legible": "yes", "text": "..."}

@@ -1,0 +1,22 @@
+ Todo: major enhancements in the UI.
+1.when we switch from one module to other module maintain the sessions properly, so that users do not lose their context or progress.
+for example , when in chat module , when we ask question while waiting for answer when we change module and coming back to chat we will not able to find the question until the answer is received.
+2.Implement a mechanism to automatically save the state of each module, so that users can seamlessly continue their work from where they left off when switching between modules.
+3.In librarymodule , now we have pinned papers on the left and also in the main view , instead of main view ,there we have to add the recent papers from the search and a clear option to clear the recent serach to get new papers there . the select all kind of button for pinned paers should show in the left sidebar pinned papers.
+4.Improve the search functionality in the library module to allow users to filter and sort papers based on various criteria such as relevance, date, and authors.
+5.findings , open questions can be out of the space memory, allowing users to manage and organize their research more effectively.
+6.space memory should be dynamically updating with the latest findings, notes, and interactions from all modules, ensuring that users always have access to the most current information.
+7.currently showing a notification always in our app is not correct , check it . Notifications can happen when one module performs its task and ends it , a notification to user can be provided.
+8.The user interface has to be enhanced for each modules according to their specific functionalities and user interactions, ensuring a more intuitive and efficient user experience.
+9.space memory , open question and findings are common for all modules and it should be arranged in the ui in a consistent and accessible manner.
+10.some functionalities are there only specifically for some modules , those has to be arranged properly in the ui according to their relevance and usage within each module.
+11.In compare module , model tier option should not be visible to the users.
+12.In compare module , when we get the result of comparison , the complete ui becomes unstable and not properly responsive, requiring a fix to ensure a stable and consistent user experience.
+13.In chat module, there should be an option to export chat sessions, allowing users to save and share their conversations outside the platform.
+
+
+future enhancements:
+1.A new module to write Research papers from our finidings and notes with templates and formatting options, allowing users to efficiently compile their research into well-structured documents.
+2.Include ollama model gemma4:e4b,as the largest and strongest model available for research purposes, ensuring high-quality and accurate results.
+3.fallbacks for small and medium models should be defined on purposes of ensuring that users have access to appropriate model capabilities based on their research needs.Try using Qwen3-VL as a fallback option.
+4.Degraded papers in library have an external link , if possible collect webscrape or collect those page contents to get the paper content.

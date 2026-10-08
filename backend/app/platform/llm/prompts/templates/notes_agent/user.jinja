@@ -1,0 +1,10 @@
+Paper title: {{ paper_title }}
+
+Evidence chunks (untrusted data):
+{% for chunk in chunks -%}
+<<<CHUNK chunk_id="{{ chunk.chunk_id }}">
+{{ chunk.text }}
+>>>
+{% endfor -%}
+
+Return only the JSON object.

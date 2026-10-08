@@ -1,0 +1,66 @@
+{
+  "kind": "post_hoc_explicit_numeric_invariant_not_replacement_accuracy_metric",
+  "primary_metrics_and_thresholds_unchanged": true,
+  "records": [
+    {
+      "strategy": "baseline",
+      "case_id": "q04",
+      "split": "calibration",
+      "expected_total_accuracy_percent": 75.0,
+      "explicit_answer_percentages": [
+        95.2
+      ],
+      "wrong_explicit_numeric_assertion": true,
+      "expected_value_present": false,
+      "scope": "q04 asks one total percentage; explicit other percentage assertions are wrong for that requested field. Missing/word-spelled percentages are not automatically declared correct.",
+      "model_audit_status": "CORRECT",
+      "confirmed_audit_false_positive": true
+    },
+    {
+      "strategy": "hierarchical_recursive",
+      "case_id": "q04",
+      "split": "calibration",
+      "expected_total_accuracy_percent": 75.0,
+      "explicit_answer_percentages": [
+        75.9
+      ],
+      "wrong_explicit_numeric_assertion": true,
+      "expected_value_present": false,
+      "scope": "q04 asks one total percentage; explicit other percentage assertions are wrong for that requested field. Missing/word-spelled percentages are not automatically declared correct.",
+      "model_audit_status": "CORRECT",
+      "confirmed_audit_false_positive": true
+    },
+    {
+      "strategy": "hierarchical_semantic_structured",
+      "case_id": "q04",
+      "split": "calibration",
+      "expected_total_accuracy_percent": 75.0,
+      "explicit_answer_percentages": [
+        75.0
+      ],
+      "wrong_explicit_numeric_assertion": false,
+      "expected_value_present": true,
+      "scope": "q04 asks one total percentage; explicit other percentage assertions are wrong for that requested field. Missing/word-spelled percentages are not automatically declared correct.",
+      "model_audit_status": "CORRECT",
+      "confirmed_audit_false_positive": false
+    },
+    {
+      "strategy": "research_aware",
+      "case_id": "q04",
+      "split": "calibration",
+      "expected_total_accuracy_percent": 75.0,
+      "explicit_answer_percentages": [
+        75.9,
+        81.9,
+        75.9,
+        81.9,
+        82.9
+      ],
+      "wrong_explicit_numeric_assertion": true,
+      "expected_value_present": false,
+      "scope": "q04 asks one total percentage; explicit other percentage assertions are wrong for that requested field. Missing/word-spelled percentages are not automatically declared correct.",
+      "model_audit_status": "CORRECT",
+      "confirmed_audit_false_positive": true
+    }
+  ]
+}

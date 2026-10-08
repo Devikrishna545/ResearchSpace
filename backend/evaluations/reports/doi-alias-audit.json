@@ -1,0 +1,159 @@
+{
+  "reason": "Verified Crossref DOI aliases for the same arXiv-targeted works returned as DOI-only records by discovery providers; candidate arrays were not refetched or changed.",
+  "verification": {
+    "exact-resnet": "Crossref 10.1109/CVPR.2016.90: Deep Residual Learning for Image Recognition, He, 2016",
+    "exact-segment-anything": "Crossref 10.1109/ICCV51070.2023.00371: Segment Anything, Kirillov, 2023"
+  },
+  "original_dataset_sha256": "c02d28d161af2198ca02ab10ed1b9076128c92905edacf3d8a1e4d18d36fbc89",
+  "corrected_dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "original_overall": {
+    "queries": 24,
+    "target_absent": 16,
+    "target_present": 8,
+    "ranking_failures_at_10": 1,
+    "ranking_failures_at_20": 0,
+    "recall_at_10": 0.2917,
+    "recall_at_20": 0.3333,
+    "mrr": 0.2354,
+    "recall_at_10_present": 0.875,
+    "recall_at_20_present": 1.0,
+    "mrr_present": 0.7063,
+    "median_rank_present": 1.0,
+    "mean_rank_present": 4.625
+  },
+  "corrected_overall": {
+    "queries": 24,
+    "target_absent": 14,
+    "target_present": 10,
+    "ranking_failures_at_10": 1,
+    "ranking_failures_at_20": 0,
+    "recall_at_10": 0.375,
+    "recall_at_20": 0.4167,
+    "mrr": 0.3188,
+    "recall_at_10_present": 0.9,
+    "recall_at_20_present": 1.0,
+    "mrr_present": 0.765,
+    "median_rank_present": 1.0,
+    "mean_rank_present": 3.9
+  },
+  "original_by_category": {
+    "descriptive": {
+      "queries": 8,
+      "target_absent": 5,
+      "target_present": 3,
+      "ranking_failures_at_10": 1,
+      "ranking_failures_at_20": 0,
+      "recall_at_10": 0.25,
+      "recall_at_20": 0.375,
+      "mrr": 0.2562,
+      "recall_at_10_present": 0.6667,
+      "recall_at_20_present": 1.0,
+      "mrr_present": 0.6833,
+      "median_rank_present": 1,
+      "mean_rank_present": 7.333
+    },
+    "exact_title": {
+      "queries": 8,
+      "target_absent": 3,
+      "target_present": 5,
+      "ranking_failures_at_10": 0,
+      "ranking_failures_at_20": 0,
+      "recall_at_10": 0.625,
+      "recall_at_20": 0.625,
+      "mrr": 0.45,
+      "recall_at_10_present": 1.0,
+      "recall_at_20_present": 1.0,
+      "mrr_present": 0.72,
+      "median_rank_present": 1,
+      "mean_rank_present": 3
+    },
+    "vocabulary_mismatch": {
+      "queries": 8,
+      "target_absent": 8,
+      "target_present": 0,
+      "ranking_failures_at_10": 0,
+      "ranking_failures_at_20": 0,
+      "recall_at_10": 0.0,
+      "recall_at_20": 0.0,
+      "mrr": 0.0,
+      "recall_at_10_present": null,
+      "recall_at_20_present": null,
+      "mrr_present": null,
+      "median_rank_present": null,
+      "mean_rank_present": null
+    }
+  },
+  "corrected_by_category": {
+    "descriptive": {
+      "queries": 8,
+      "target_absent": 5,
+      "target_present": 3,
+      "ranking_failures_at_10": 1,
+      "ranking_failures_at_20": 0,
+      "recall_at_10": 0.25,
+      "recall_at_20": 0.375,
+      "mrr": 0.2562,
+      "recall_at_10_present": 0.6667,
+      "recall_at_20_present": 1.0,
+      "mrr_present": 0.6833,
+      "median_rank_present": 1,
+      "mean_rank_present": 7.333
+    },
+    "exact_title": {
+      "queries": 8,
+      "target_absent": 1,
+      "target_present": 7,
+      "ranking_failures_at_10": 0,
+      "ranking_failures_at_20": 0,
+      "recall_at_10": 0.875,
+      "recall_at_20": 0.875,
+      "mrr": 0.7,
+      "recall_at_10_present": 1.0,
+      "recall_at_20_present": 1.0,
+      "mrr_present": 0.8,
+      "median_rank_present": 1,
+      "mean_rank_present": 2.429
+    },
+    "vocabulary_mismatch": {
+      "queries": 8,
+      "target_absent": 8,
+      "target_present": 0,
+      "ranking_failures_at_10": 0,
+      "ranking_failures_at_20": 0,
+      "recall_at_10": 0.0,
+      "recall_at_20": 0.0,
+      "mrr": 0.0,
+      "recall_at_10_present": null,
+      "recall_at_20_present": null,
+      "mrr_present": null,
+      "median_rank_present": null,
+      "mean_rank_present": null
+    }
+  },
+  "corrected_queries": [
+    {
+      "id": "exact-resnet",
+      "original_target": {
+        "arxiv_id": "1512.03385"
+      },
+      "corrected_target": {
+        "arxiv_id": "1512.03385",
+        "doi": "10.1109/CVPR.2016.90"
+      },
+      "rank_before": null,
+      "rank_after": 1
+    },
+    {
+      "id": "exact-segment-anything",
+      "original_target": {
+        "arxiv_id": "2304.02643"
+      },
+      "corrected_target": {
+        "arxiv_id": "2304.02643",
+        "doi": "10.1109/ICCV51070.2023.00371"
+      },
+      "rank_before": null,
+      "rank_after": 1
+    }
+  ]
+}

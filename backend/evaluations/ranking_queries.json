@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "description": "Known-paper discovery queries, verified against arXiv identifiers before ranking changes.",
+  "queries": [
+    {"id": "exact-transformers", "category": "exact_title", "query": "Attention Is All You Need", "target": {"arxiv_id": "1706.03762"}},
+    {"id": "exact-bert", "category": "exact_title", "query": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", "target": {"arxiv_id": "1810.04805"}},
+    {"id": "exact-resnet", "category": "exact_title", "query": "Deep Residual Learning for Image Recognition", "target": {"arxiv_id": "1512.03385", "doi": "10.1109/CVPR.2016.90"}},
+    {"id": "exact-diffusion", "category": "exact_title", "query": "Denoising Diffusion Probabilistic Models", "target": {"arxiv_id": "2006.11239"}},
+    {"id": "exact-lora", "category": "exact_title", "query": "LoRA: Low-Rank Adaptation of Large Language Models", "target": {"arxiv_id": "2106.09685"}},
+    {"id": "exact-flashattention", "category": "exact_title", "query": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness", "target": {"arxiv_id": "2205.14135"}},
+    {"id": "exact-sentencebert", "category": "exact_title", "query": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks", "target": {"arxiv_id": "1908.10084"}},
+    {"id": "exact-segment-anything", "category": "exact_title", "query": "Segment Anything", "target": {"arxiv_id": "2304.02643", "doi": "10.1109/ICCV51070.2023.00371"}},
+
+    {"id": "descriptive-transformers", "category": "descriptive", "query": "transformer architecture for sequence transduction", "target": {"arxiv_id": "1706.03762"}},
+    {"id": "descriptive-dpr", "category": "descriptive", "query": "dense passage retriever for open domain question answering", "target": {"arxiv_id": "2004.04906"}},
+    {"id": "descriptive-rag", "category": "descriptive", "query": "retrieval augmented generation for knowledge intensive question answering", "target": {"arxiv_id": "2005.11401"}},
+    {"id": "descriptive-clip", "category": "descriptive", "query": "contrastive pretraining images and natural language from web data", "target": {"arxiv_id": "2103.00020"}},
+    {"id": "descriptive-vit", "category": "descriptive", "query": "vision transformer splitting an image into fixed size patches", "target": {"arxiv_id": "2010.11929"}},
+    {"id": "descriptive-reasoning", "category": "descriptive", "query": "chain of thought prompting for multi step reasoning", "target": {"arxiv_id": "2201.11903"}},
+    {"id": "descriptive-nerf", "category": "descriptive", "query": "neural radiance fields for novel view synthesis", "target": {"arxiv_id": "2003.08934"}},
+    {"id": "descriptive-qlora", "category": "descriptive", "query": "quantized low rank fine tuning language models", "target": {"arxiv_id": "2305.14314"}},
+
+    {"id": "mismatch-dpr", "category": "vocabulary_mismatch", "query": "dense vector representations for retrieval", "target": {"arxiv_id": "2004.04906"}},
+    {"id": "mismatch-rag", "category": "vocabulary_mismatch", "query": "grounding language models in external documents", "target": {"arxiv_id": "2005.11401"}},
+    {"id": "mismatch-transformers", "category": "vocabulary_mismatch", "query": "attention based translation without recurrence", "target": {"arxiv_id": "1706.03762"}},
+    {"id": "mismatch-bert", "category": "vocabulary_mismatch", "query": "bidirectional contextual pretraining for question answering", "target": {"arxiv_id": "1810.04805"}},
+    {"id": "mismatch-flashattention", "category": "vocabulary_mismatch", "query": "speeding up exact attention with less memory traffic", "target": {"arxiv_id": "2205.14135"}},
+    {"id": "mismatch-resnet", "category": "vocabulary_mismatch", "query": "skip connections help very deep image classifiers", "target": {"arxiv_id": "1512.03385"}},
+    {"id": "mismatch-lora", "category": "vocabulary_mismatch", "query": "parameter efficient adaptation via tiny trainable matrices", "target": {"arxiv_id": "2106.09685"}},
+    {"id": "mismatch-diffusion", "category": "vocabulary_mismatch", "query": "iterative noise removal for image synthesis", "target": {"arxiv_id": "2006.11239"}}
+  ]
+}

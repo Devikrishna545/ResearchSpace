@@ -1,0 +1,1409 @@
+{
+  "id": "mismatch-flashattention",
+  "category": "vocabulary_mismatch",
+  "query": "speeding up exact attention with less memory traffic",
+  "target": {
+    "arxiv_id": "2205.14135"
+  },
+  "plan": {
+    "topic": "speeding up exact attention with less memory traffic",
+    "sub_queries": [
+      "speeding up exact attention with less memory traffic"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "Traffic of Molecular Motors",
+      "authors": [
+        "Stefan Klumpp",
+        "Melanie J. I. Müller",
+        "Reinhard Lipowsky"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Molecular motors perform active movements along cytoskeletal filaments and drive the traffic of organelles and other cargo particles in cells. In contrast to the macroscopic traffic of cars, however, the traffic of molecular motors is characterized by a finite walking distance (or run length) after which a motor unbinds from the filament along which it moves. Unbound motors perform Brownian motion in the surrounding aqueous solution until they rebind to a filament. We use variants of driven lattice gas models to describe the interplay of their active movements, the unbound diffusion, and the binding/unbinding dynamics. If the motor concentration is large, motor-motor interactions become important and lead to a variety of cooperative traffic phenomena such as traffic jams on the filaments, boundary-induced phase transitions, and spontaneous symmetry breaking in systems with two species of motors. If the filament is surrounded by a large reservoir of motors, the jam length, i.e., the extension of the traffic jams is of the order of the walking distance. Much longer jams can be found in confined geometries such as tube-like compartments.",
+      "doi": null,
+      "arxiv_id": "0512119v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/cond-mat/0512119v1",
+      "raw_payload": {
+        "categories": [
+          "cond-mat.stat-mech",
+          "q-bio.SC"
+        ],
+        "primary_category": "cond-mat.stat-mech"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Jam-avoiding adaptive cruise control (ACC) and its impact on traffic dynamics",
+      "authors": [
+        "Arne Kesting",
+        "Martin Treiber",
+        "Martin Schönhof",
+        "Florian Kranke",
+        "Dirk Helbing"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Adaptive-Cruise Control (ACC) automatically accelerates or decelerates a vehicle to maintain a selected time gap, to reach a desired velocity, or to prevent a rear-end collision. To this end, the ACC sensors detect and track the vehicle ahead for measuring the actual distance and speed difference. Together with the own velocity, these input variables are exactly the same as in car-following models. The focus of this contribution is: What will be the impact of a spreading of ACC systems on the traffic dynamics? Do automated driving strategies have the potential to improve the capacity and stability of traffic flow or will they necessarily increase the heterogeneity and instability? How does the result depend on the ACC equipment level?\n  We discuss microscopic modeling aspects for human and automated (ACC) driving. By means of microscopic traffic simulations, we study how a variable percentage of ACC-equipped vehicles influences the stability of traffic flow, the maximum flow under free traffic conditions until traffic breaks down, and the dynamic capacity of congested traffic. Furthermore, we compare different percentages of ACC with respect to travel times in a specific congestion scenario. Remarkably, we find that already a small amount of ACC equipped cars and, hence, a marginally increased free and dynamic capacity, leads to a drastic reduction of traffic congestion.",
+      "doi": null,
+      "arxiv_id": "0601096v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/physics/0601096v1",
+      "raw_payload": {
+        "categories": [
+          "physics.soc-ph"
+        ],
+        "primary_category": "physics.soc-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Runtime Observability for Heterogeneous Attention Memory",
+      "authors": [
+        "Fanzhe Wei",
+        "Li Liu",
+        "Ziyang Wang",
+        "Chenyu Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Modern models no longer keep a plain KV cache: latent caches, learned sparse selectors and recurrent states each carry the model's memory in a different form, and each fails differently under compression. We give a runtime observability contract that covers all four memory classes with three operators, instantiate it on six model configurations across five architecture families, and compose the per-stage bounds into an executable request-level risk ledger. Contracts carry their error metric as a type -- composition is only defined when metrics match, and this check rejected our own first composed chain; the repaired chain crosses metrics through two proved bridges, and whatever no formal system can certify is measured instead, dropping the composed tier to empirical automatically: every claim is certified, partially certified, or empirical, composition inherits the weakest tier, and the tier is decided by the machine. Replayed over $12.4$M entry reads and run under eight-way concurrency with per-request budgets and fail-closed identity attribution, the ledger quantifies the honest trade-off on today's witness and holds its risk budget with zero violations. A fused always-on probe observes a declared one-layer subset under CUDA graphs inside the serving noise floor. Applied to a served DeepSeek-V4 stack with a packed compressed-KV prototype, the same machinery localizes a silent corruption to a precise structural boundary -- exact in the eviction-free, identity-isolated regime, with every observed failure in an eviction or slot-reuse regime -- through a machine-adjudicated discrimination campaign whose calculus rejected two of our own confounded inferences along the way. All artifacts, guards, and the Lean development are released at https://github.com/metask-ai/witprobe-attention-memory; every number in this paper regenerates from the shipped artifacts by one command.",
+      "doi": null,
+      "arxiv_id": "2608.05863v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2608.05863v2",
+      "raw_payload": {
+        "categories": [
+          "cs.AI"
+        ],
+        "primary_category": "cs.AI"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Learning Efficient Algorithms with Hierarchical Attentive Memory",
+      "authors": [
+        "Marcin Andrychowicz",
+        "Karol Kurach"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper, we propose and investigate a novel memory architecture for neural networks called Hierarchical Attentive Memory (HAM). It is based on a binary tree with leaves corresponding to memory cells. This allows HAM to perform memory access in O(log n) complexity, which is a significant improvement over the standard attention mechanism that requires O(n) operations, where n is the size of the memory.\n  We show that an LSTM network augmented with HAM can learn algorithms for problems like merging, sorting or binary searching from pure input-output examples. In particular, it learns to sort n numbers in time O(n log n) and generalizes well to input sequences much longer than the ones seen during the training. We also show that HAM can be trained to act like classic data structures: a stack, a FIFO queue and a priority queue.",
+      "doi": null,
+      "arxiv_id": "1602.03218v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1602.03218v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Exact Attention Sensitivity and the Geometry of Transformer Stability",
+      "authors": [
+        "Seyed Morteza Emadi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We develop a sensitivity analysis for transformer attention in a geometry aligned with tokenwise computation. Our main result is the exact identity $\\|J_τ(u)\\|_{\\infty\\to1}=θ(p)/τ$ for the Jacobian $J_τ(u)$ of the tempered softmax $u\\mapsto\\mathrm{softmax}(u/τ)$, where $θ(p)=4\\max_{S\\subseteq[L]}p(S)(1-p(S))$ measures how evenly the attention distribution can be bisected rather than how concentrated it is. We combine this identity with a block-$\\infty$/RMS norm under which row-stochastic attention mixing is nonexpansive. This yields a distribution-aware local Jacobian bound for multi-head attention and a sequence-length-independent Lipschitz bound on bounded input sets, with explicit dependence on width, input magnitude, temperature, and projection norms. We also identify a structural distinction between normalization placements: a pre-LN residual-sublayer Jacobian contains an additive identity term, whereas a post-LN residual-sublayer Jacobian does not. A LayerNorm projection lemma gives a sufficient condition under which the LayerNorm-only term in the post-LN expansion contracts geometrically; the condition is not tested by our experiments. Across three Pre-LN early-training runs of $774$M-parameter models, attention becomes substantially more concentrated while the median lower-bound certificate for $θ(p)$ remains near one at every sampled layer and checkpoint. This certifies near-maximal exact sensitivity for at least half of the sampled rows within each layer. A minority of rows enters a dominant-atom regime with lower exact sensitivity, consistent with the deterministic relationship between $p_{\\max}$ and $θ(p)$.",
+      "doi": null,
+      "arxiv_id": "2602.18849v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2602.18849v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Modeling Self-Similar Traffic for Network Simulation",
+      "authors": [
+        "Xiaofeng Bai",
+        "Abdallah Shami"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In order to closely simulate the real network scenario thereby verify the effectiveness of protocol designs, it is necessary to model the traffic flows carried over realistic networks. Extensive studies [1] showed that the actual traffic in access and local area networks (e.g., those generated by ftp and video streams) exhibits the property of self-similarity and long-range dependency (LRD) [2]. In this appendix we briefly introduce the property of self-similarity and suggest a practical approach for modeling self-similar traces with specified traffic intensity.",
+      "doi": null,
+      "arxiv_id": "1308.3842v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1308.3842v1",
+      "raw_payload": {
+        "categories": [
+          "cs.NI"
+        ],
+        "primary_category": "cs.NI"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Distilling Feedback into Memory-as-a-Tool",
+      "authors": [
+        "Víctor Gallego"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We propose a framework that amortizes the cost of inference-time reasoning by converting transient critiques into retrievable guidelines, through a file-based memory system and agent-controlled tool calls. We evaluate this method on the Rubric Feedback Bench, a novel dataset for rubric-based learning. Experiments demonstrate that our augmented LLMs rapidly match the performance of test-time refinement pipelines while drastically reducing inference cost.",
+      "doi": null,
+      "arxiv_id": "2601.05960v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2601.05960v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Leveraging Queue Length and Attention Mechanisms for Enhanced Traffic Signal Control Optimization",
+      "authors": [
+        "Liang Zhang",
+        "Shubin Xie",
+        "Jianming Deng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Reinforcement learning (RL) techniques for traffic signal control (TSC) have gained increasing popularity in recent years. However, most existing RL-based TSC methods tend to focus primarily on the RL model structure while neglecting the significance of proper traffic state representation. Furthermore, some RL-based methods heavily rely on expert-designed traffic signal phase competition. In this paper, we present a novel approach to TSC that utilizes queue length as an efficient state representation. We propose two new methods: (1) Max Queue-Length (M-QL), an optimization-based traditional method designed based on the property of queue length; and (2) AttentionLight, an RL model that employs the self-attention mechanism to capture the signal phase correlation without requiring human knowledge of phase relationships. Comprehensive experiments on multiple real-world datasets demonstrate the effectiveness of our approach: (1) the M-QL method outperforms the latest RL-based methods; (2) AttentionLight achieves a new state-of-the-art performance; and (3) our results highlight the significance of proper state representation, which is as crucial as neural network design in TSC methods. Our findings have important implications for advancing the development of more effective and efficient TSC methods. Our code is released on Github (https://github. com/LiangZhang1996/AttentionLight).",
+      "doi": null,
+      "arxiv_id": "2201.00006v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2201.00006v3",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "eess.SY"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Efficient Online Hyperparameter Optimization for Kernel Ridge Regression with Applications to Traffic Time Series Prediction",
+      "authors": [
+        "Hongyuan Zhan",
+        "Gabriel Gomes",
+        "Xiaoye S. Li",
+        "Kamesh Madduri",
+        "Kesheng Wu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Computational efficiency is an important consideration for deploying machine learning models for time series prediction in an online setting. Machine learning algorithms adjust model parameters automatically based on the data, but often require users to set additional parameters, known as hyperparameters. Hyperparameters can significantly impact prediction accuracy. Traffic measurements, typically collected online by sensors, are serially correlated. Moreover, the data distribution may change gradually. A typical adaptation strategy is periodically re-tuning the model hyperparameters, at the cost of computational burden. In this work, we present an efficient and principled online hyperparameter optimization algorithm for Kernel Ridge regression applied to traffic prediction problems. In tests with real traffic measurement data, our approach requires as little as one-seventh of the computation time of other tuning methods, while achieving better or similar prediction accuracy.",
+      "doi": null,
+      "arxiv_id": "1811.00620v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1811.00620v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A First Look at Class Incremental Learning in Deep Learning Mobile Traffic Classification",
+      "authors": [
+        "Giampaolo Bovenzi",
+        "Lixuan Yang",
+        "Alessandro Finamore",
+        "Giuseppe Aceto",
+        "Domenico Ciuonzo",
+        "Antonio Pescapè",
+        "Dario Rossi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The recent popularity growth of Deep Learning (DL) re-ignited the interest towards traffic classification, with several studies demonstrating the accuracy of DL-based classifiers to identify Internet applications' traffic. Even with the aid of hardware accelerators (GPUs, TPUs), DL model training remains expensive, and limits the ability to operate frequent model updates necessary to fit to the ever evolving nature of Internet traffic, and mobile traffic in particular. To address this pain point, in this work we explore Incremental Learning (IL) techniques to add new classes to models without a full retraining, hence speeding up model's updates cycle. We consider iCarl, a state of the art IL method, and MIRAGE-2019, a public dataset with traffic from 40 Android apps, aiming to understand \"if there is a case for incremental learning in traffic classification\". By dissecting iCarl internals, we discuss ways to improve its design, contributing a revised version, namely iCarl+. Despite our analysis reveals their infancy, IL techniques are a promising research area on the roadmap towards automated DL-based traffic analysis systems.",
+      "doi": null,
+      "arxiv_id": "2107.04464v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2107.04464v1",
+      "raw_payload": {
+        "categories": [
+          "cs.NI",
+          "cs.LG"
+        ],
+        "primary_category": "cs.NI"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Image Classification using CNN for Traffic Signs in Pakistan",
+      "authors": [
+        "Abdul Azeem Sikander",
+        "Hamza Ali"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The autonomous automotive industry is one of the largest and most conventional projects worldwide, with many technology companies effectively designing and orienting their products towards automobile safety and accuracy. These products are performing very well over the roads in developed countries. But can fail in the first minute in an underdeveloped country because there is much difference between a developed country environment and an underdeveloped country environment. The following study proposed to train these Artificial intelligence models in environment space in an underdeveloped country like Pakistan. The proposed approach on image classification uses convolutional neural networks for image classification for the model. For model pre-training German traffic signs data set was selected then fine-tuned on Pakistan's dataset. The experimental setup showed the best results and accuracy from the previously conducted experiments. In this work to increase the accuracy, more dataset was collected to increase the size of images in every class in the data set. In the future, a low number of classes are required to be further increased where more images for traffic signs are required to be collected to get more accuracy on the training of the model over traffic signs of Pakistan's most used and popular roads motorway and national highway, whose traffic signs color, size, and shapes are different from common traffic signs.",
+      "doi": null,
+      "arxiv_id": "2102.10130v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2102.10130v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Traffic flow and efficient routing on scale-free networks: A survey",
+      "authors": [
+        "Bing-Hong Wang",
+        "Tao Zhou"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recently, motivated by the pioneer works in revealing the small-world effect and scale-free property of various real-life networks, many scientists devote themselves to studying complex networks. In this paper, we give a brief review on the studies of traffic flow and efficient routing on scale-free networks, including the traffic dynamics based on global routing protocol, Traffic dynamics based on local routing protocol, and the critical phenomena and scaling behaviors of real and artificial traffic. Finally, perspectives and some interesting problems are proposed.",
+      "doi": null,
+      "arxiv_id": "0609031v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/physics/0609031v1",
+      "raw_payload": {
+        "categories": [
+          "physics.soc-ph",
+          "physics.data-an"
+        ],
+        "primary_category": "physics.soc-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Stream-CQSA: Exact Out-of-Memory Recovery for Attention",
+      "authors": [
+        "Yiming Bian",
+        "Joshua M. Akey"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Long-context large language models are limited not only by attention cost but also by out-of-memory (OOM) failures. A selected attention call may not fit in available device memory even when the kernel is optimized. Exact and approximate attention methods reduce memory use, but every fixed implementation still has a device-specific capacity boundary. We introduce Stream-CQSA, an attention-level OOM recovery framework based on CQS decomposition, derived from the theory of cyclic quorum sets (CQS). Stream-CQSA recursively partitions an infeasible attention call into independent subsequence tasks, executes each with a compatible inner kernel, and recomposes the local statistics to recover the full attention output. This recovery is exact relative to the wrapped attention kernel, whether that kernel is exact or approximate. Compared with FlashAttention-2, the major baseline, our native Stream-CQSA kernel improves 16-bit forward-output error relative to a dense float64 reference and matches 16-bit backward-gradient error where FlashAttention-2 fits in the GPU memory. At the longest feasible baseline length, it costs $1.5$--$1.9\\times$ the forward runtime and $2.1$--$2.4\\times$ the forward--backward runtime. Beyond that sequence length boundary, our method continues to return an output while FlashAttention-2 OOMs. Stream-CQSA is therefore not a faster attention method. Instead, it converts memory-capacity failure into a recoverable execution path by trading extra compute, host-device transfer, and recomposition for completion.",
+      "doi": null,
+      "arxiv_id": "2604.20819v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2604.20819v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.DC"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Analytical approaches to CA for traffic flow: Approximations and exact solutions",
+      "authors": [
+        "Andreas Schadschneider"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Cellular automata have turned out to be important tools for the simulation of traffic flow. They are designed for an efficient impletmentation on the computer, but hard to treat analytically. Here we discuss several approaches for an analytical description of the Nagel-Schreckenberg (NaSch) model and its variants. These methods yield the exact solution for the special case $\\vm=1$ of the NaSch model and are good approximations for higher values of the velocity ($\\vm > 1$). We discuss the validity of these approximations and the conclusions for the underlying physics that can be drawn from the success or failure of the approximation.",
+      "doi": null,
+      "arxiv_id": "9711296v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/cond-mat/9711296v1",
+      "raw_payload": {
+        "categories": [
+          "cond-mat.stat-mech"
+        ],
+        "primary_category": "cond-mat.stat-mech"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Collective traffic of agents that remember",
+      "authors": [
+        "Danny Raj M",
+        "Arvind Nayak"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Traffic and pedestrian systems consist of human collectives where agents are intelligent and capable of processing available information, to perform tactical manoeuvres that can potentially increase their movement efficiency. In this study, we introduce a social force model for agents that possess memory. Information of the agent's past affects the agent's instantaneous movement in order to swiftly take the agent towards its desired state. We show how the presence of memory is akin to an agent performing a proportional-integral control to achieve its desired state. The longer the agent remembers and the more impact the memory has on its motion, better is the movement of an isolated agent in terms of achieving its desired state. However, when in a collective, the interactions between the agents lead to non-monotonic effect of memory on the traffic dynamics. A group of agents with memory exiting through a narrow door exhibit more clogging with memory than without it. We also show that a very large amount of memory results in variation in the memory force experienced by agents in the system at any time, which reduces the propensity to form clogs and leads to efficient movement.",
+      "doi": null,
+      "arxiv_id": "2302.03253v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2302.03253v1",
+      "raw_payload": {
+        "categories": [
+          "nlin.AO"
+        ],
+        "primary_category": "nlin.AO"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Comparison of several short-term traffic speed forecasting models",
+      "authors": [
+        "John Boaz Lee",
+        "Kardi Teknomo"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The widespread adoption of smartphones in recent years has made it possible for us to collect large amounts of traffic data. Special software installed on the phones of drivers allow us to gather GPS trajectories of their vehicles on the road network. In this paper, we simulate the trajectories of multiple agents on a road network and use various models to forecast the short-term traffic speed of various links. Our results show that traditional techniques like multiple regression and artificial neural networks work well but simpler adaptive models that do not require prior training also perform comparatively well.",
+      "doi": null,
+      "arxiv_id": "1609.02409v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1609.02409v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "math.PR",
+          "stat.AP",
+          "stat.CO"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "In-Line-Test of Variability and Bit-Error-Rate of HfOx-Based Resistive Memory",
+      "authors": [
+        "B. L. Ji",
+        "H. Li",
+        "Q. Ye",
+        "S. Gausepohl",
+        "S. Deora",
+        "D. Veksler",
+        "S. Vivekanand",
+        "H. Chong",
+        "H. Stamper",
+        "T. Burroughs",
+        "C. Johnson",
+        "M. Smalley",
+        "S. Bennett",
+        "V. Kaushik",
+        "J. Piccirillo",
+        "M. Rodgers",
+        "M. Passaro",
+        "M. Liehr"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Spatial and temporal variability of HfOx-based resistive random access memory (RRAM) are investigated for manufacturing and product designs. Manufacturing variability is characterized at different levels including lots, wafers, and chips. Bit-error-rate (BER) is proposed as a holistic parameter for the write cycle resistance statistics. Using the electrical in-line-test cycle data, a method is developed to derive BERs as functions of the design margin, to provide guidance for technology evaluation and product design. The proposed BER calculation can also be used in the off-line bench test and build-in-self-test (BIST) for adaptive error correction and for the other types of random access memories.",
+      "doi": null,
+      "arxiv_id": "1509.00070v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1509.00070v1",
+      "raw_payload": {
+        "categories": [
+          "cs.ET",
+          "cond-mat.mtrl-sci",
+          "physics.data-an"
+        ],
+        "primary_category": "cs.ET"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "An exact formalism to study the thermodynamic properties of hard-sphere systems under spherical confinement",
+      "authors": [
+        "Ignacio Urrutia",
+        "Gabriela Castelletti"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper presents a modified grand canonical ensemble which provides a new simple and efficient scheme to study few-body fluid-like inhomogeneous systems under confinement. The new formalism is implemented to investigate the exact thermodynamic properties of a hard sphere (HS) fluid-like system with up to three particles confined in a spherical cavity. In addition, the partition function of this system was used to analyze the surface thermodynamic properties of the many-HS system and to derive the exact curvature dependence of both the surface tension and adsorption in powers of the density. The expressions for the surface tension and the adsorption were also obtained for the many- HS system outside of a fixed hard spherical object. We used these results to derive the dependence of the fluid-substrate Tolman length up to first order in density.",
+      "doi": null,
+      "arxiv_id": "1203.2145v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1203.2145v2",
+      "raw_payload": {
+        "categories": [
+          "cond-mat.stat-mech",
+          "cond-mat.soft"
+        ],
+        "primary_category": "cond-mat.stat-mech"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Multi-fold Correlation Attention Network for Predicting Traffic Speeds with Heterogeneous Frequency",
+      "authors": [
+        "Yidan Sun",
+        "Guiyuan Jiang",
+        "Siew-Kei Lam",
+        "Peilan He",
+        "Fangxin Ning"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Substantial efforts have been devoted to the investigation of spatiotemporal correlations for improving traffic speed prediction accuracy. However, existing works typically model the correlations based solely on the observed traffic state (e.g. traffic speed) without due consideration that different correlation measurements of the traffic data could exhibit a diverse set of patterns under different traffic situations. In addition, the existing works assume that all road segments can employ the same sampling frequency of traffic states, which is impractical. In this paper, we propose new measurements to model the spatial correlations among traffic data and show that the resulting correlation patterns vary significantly under various traffic situations. We propose a Heterogeneous Spatial Correlation (HSC) model to capture the spatial correlation based on a specific measurement, where the traffic data of varying road segments can be heterogeneous (i.e. obtained with different sampling frequency). We propose a Multi-fold Correlation Attention Network (MCAN), which relies on the HSC model to explore multi-fold spatial correlations and leverage LSTM networks to capture multi-fold temporal correlations to provide discriminating features in order to achieve accurate traffic prediction. The learned multi-fold spatiotemporal correlations together with contextual factors are fused with attention mechanism to make the final predictions. Experiments on real-world datasets demonstrate that the proposed MCAN model outperforms the state-of-the-art baselines.",
+      "doi": null,
+      "arxiv_id": "2104.09083v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2104.09083v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Statistical Analysis of High-Flow Traffic States",
+      "authors": [
+        "Florian Knorr",
+        "Thomas Zaksek",
+        "Johannes Brügmann",
+        "Michael Schreckenberg"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The relation between the fundamental observables of traffic flow (i.e., vehicle density, flow rate, and average velocity) is of great importance for the study of traffic phenomena. Probably the most common source of such data are inductive loop detectors, which count the number of passing vehicles and measure their speed. We will present an analysis of detector data collected by more than 3000 loop detectors during the past three years on the motorway network of the state of North Rhine-Westphalia. Besides presenting some general aspects of traffic flow, our analysis focuses on the characteristics of so-called high-flow states, i.e. traffic states where the flow rate exceeds 50 vehicles per minute and lane (3000 veh/h/lane). We investigate the duration, frequency and other statistics of such states, the viability of the data and we study the conditions under which they occur. The factors that influence the existence of high-flow states in traffic are, for instance, the fraction of slow vehicles (namely trucks), the motorway's general topology (e.g. number of lanes), the hour of the day and day of the week. This information is directly accessible from the detector data.",
+      "doi": null,
+      "arxiv_id": "1312.3589v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1312.3589v1",
+      "raw_payload": {
+        "categories": [
+          "stat.AP"
+        ],
+        "primary_category": "stat.AP"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "In-Memory Big Data Management and Processing: A Survey",
+      "authors": [
+        "Hao Zhang",
+        "Gang Chen",
+        "Beng Chin Ooi",
+        "Kian‐Lee Tan",
+        "Meihui Zhang"
+      ],
+      "year": 2015,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tkde.2015.2427795",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2019183416",
+      "citation_count": 425,
+      "oa_status": "bronze",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/69/7116676/07097722.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Drivers Display Anger‐Congruent Attention to Potential Traffic Hazards",
+      "authors": [
+        "Amanda N. Stephens",
+        "Steven L. Trawley",
+        "Ruth Madigan",
+        "John A. Groeger"
+      ],
+      "year": 2012,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1002/acp.2894",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W1906156774",
+      "citation_count": 67,
+      "oa_status": "bronze",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/acp.2894",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "An RFID-Based Intelligent Vehicle Speed Controller Using Active Traffic Signals",
+      "authors": [
+        "Joshué Pérez Rastelli",
+        "Fernando A. Seco",
+        "Vicente Milanés",
+        "Antonio Ramón Jiménez",
+        "Julio C. Díaz",
+        "Teresa de Pedro"
+      ],
+      "year": 2010,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/s100605872",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W1964475440",
+      "citation_count": 120,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/1424-8220/10/6/5872/pdf?version=1403312594",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Speeding up Martins’ algorithm for multiple objective shortest path problems",
+      "authors": [
+        "Sofie Demeyer",
+        "Jan Goedgebeur",
+        "Pieter Audenaert",
+        "Mario Pickavet",
+        "Piet M. A. Demeester"
+      ],
+      "year": 2013,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s10288-013-0232-5",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2075265540",
+      "citation_count": 30,
+      "oa_status": "bronze",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10288-013-0232-5.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Convergence of Edge Computing and Deep Learning: A Comprehensive Survey",
+      "authors": [
+        "Xiaofei Wang",
+        "Yiwen Han",
+        "Victor C. M. Leung",
+        "Dusit Tao Niyato",
+        "Xueqiang Yan",
+        "Xu Chen"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/comst.2020.2970550",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2962814013",
+      "citation_count": 1508,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and Key Research Challenges",
+      "authors": [
+        "Hazim Shakhatreh",
+        "Ahmad Sawalmeh",
+        "Ala Al‐Fuqaha",
+        "Zuochao Dou",
+        "Eyad K. Almaita",
+        "Issa M. Khalil",
+        "Noor Shamsiah Othman",
+        "Abdallah A. Khreishah",
+        "Mohsen Guizani"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/access.2019.2909530",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4213147678",
+      "citation_count": 2390,
+      "oa_status": "gold",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8600701/08682048.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Bunching on the Autobahn? Speeding responses to a ‘notched’ penalty scheme",
+      "authors": [
+        "Christian Traxler",
+        "Franz G. Westermaier",
+        "Ansgar Wohlschlegel"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.jpubeco.2017.11.006",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2774567028",
+      "citation_count": 23,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Driving and attention deficit hyperactivity disorder",
+      "authors": [
+        "Anselm B. M. Fuermaier",
+        "Lara Tucha",
+        "Ben Lewis Evans",
+        "Janneke Koerts",
+        "Dick de Waard",
+        "Karel Brookhuis",
+        "Steffen Aschenbrenner",
+        "Johannes Thome",
+        "Klaus W. Lange",
+        "Oliver M. Tucha"
+      ],
+      "year": 2015,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s00702-015-1465-6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2162689451",
+      "citation_count": 88,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007%2Fs00702-015-1465-6.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "An Abnormal Traffic Detection Model Combined BiIndRNN With Global Attention",
+      "authors": [
+        "Li Huang",
+        "Hongjuan Ge",
+        "Haoqi Yang",
+        "Jie Yan",
+        "Yiqin Sang"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/access.2022.3159550",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4226359231",
+      "citation_count": 23,
+      "oa_status": "gold",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/9668973/09734035.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Injury severity of pedestrians involved in road traffic crashes in Addis Ababa, Ethiopia",
+      "authors": [
+        "Getu Segni Tulu",
+        "Simon P. Washington",
+        "Md. Mazharul Haque",
+        "Mark King"
+      ],
+      "year": 2017,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1080/19439962.2016.1199622",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2568808108",
+      "citation_count": 61,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Genetic algorithm approaches for the phylogenetic analysis of large biological sequence datasets under the maximum likelihood criterion",
+      "authors": [
+        "Derrick J. Zwickl"
+      ],
+      "year": 2006,
+      "venue": null,
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2103088017",
+      "citation_count": 3150,
+      "oa_status": "green",
+      "pdf_url": "https://repositories.lib.utexas.edu/bitstreams/6ce55e54-df0e-40b7-aeb0-e8cca31c1b6d/download",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Intelligent Traffic Management in Next-Generation Networks",
+      "authors": [
+        "Ons Aouedi",
+        "Kandaraj Piamrat",
+        "Benoît Parrein"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/fi14020044",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4210432373",
+      "citation_count": 43,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/1999-5903/14/2/44/pdf?version=1644813605",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "The role of route familiarity in traffic participants’ behaviour and transport psychology research: A systematic review",
+      "authors": [
+        "Ilse M. Harms",
+        "Bridget R.D. Burdett",
+        "Samuel G. Charlton"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.trip.2021.100331",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3135930035",
+      "citation_count": 41,
+      "oa_status": "gold",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2590198221000385/pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Neural-Network-Based Traffic Sign Detection and Recognition in High-Definition Images Using Region Focusing and Parallelization",
+      "authors": [
+        "Aleksej Avramović",
+        "Davor Sluga",
+        "Domen Tabernik",
+        "Danijel Skočaj",
+        "Vladan Stojnić",
+        "Nejc Ilc"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/access.2020.3031191",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3093799191",
+      "citation_count": 68,
+      "oa_status": "gold",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09223648.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CatBoost for big data: an interdisciplinary review",
+      "authors": [
+        "John Hancock",
+        "Taghi M. Khoshgoftaar"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1186/s40537-020-00369-8",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3094948551",
+      "citation_count": 1809,
+      "oa_status": "gold",
+      "pdf_url": "https://journalofbigdata.springeropen.com/counter/pdf/10.1186/s40537-020-00369-8",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Data prefetch mechanisms",
+      "authors": [
+        "Steven P. Vanderwiel",
+        "David J. Lilja"
+      ],
+      "year": 2000,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/358923.358939",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2016558956",
+      "citation_count": 300,
+      "oa_status": "bronze",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/358923.358939",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Textual Explanations for Self-Driving Vehicles",
+      "authors": [
+        "Jinkyu Kim",
+        "Anna Rohrbach",
+        "Trevor J. Darrell",
+        "John Canny",
+        "Zeynep Akata"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/978-3-030-01216-8_35",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2885138528",
+      "citation_count": 336,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Particle Swarm Optimization Algorithm and Its Applications: A Systematic Review",
+      "authors": [
+        "Ahmed G. Gad"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11831-021-09694-4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4224300633",
+      "citation_count": 1869,
+      "oa_status": "hybrid",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11831-021-09694-4.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Salience and Timely Compliance: Evidence from Speeding Tickets",
+      "authors": [
+        "Libor Dušek",
+        "Nicolas Pardo",
+        "Christian Traxler"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1002/pam.22387",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4220821359",
+      "citation_count": 17,
+      "oa_status": "hybrid",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pam.22387",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Driver support in congestion: An assessment of user needs and impacts on driver and traffic flow",
+      "authors": [
+        "C.J.G. van Driel"
+      ],
+      "year": 2007,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3990/1.9789036525701",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2139299196",
+      "citation_count": 40,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "LESS TALK, MORE ACTION: SPEEDING UP THE ZOMBIE APOCALYPSE IN NETFLIX'S BLACK SUMMER",
+      "authors": [
+        "Stella Gaynor"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.59350/8a458-8fk75",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "LESS TALK, MORE ACTION: SPEEDING UP THE ZOMBIE APOCALYPSE IN NETFLIX'S BLACK SUMMER",
+      "authors": [
+        "Stella Gaynor"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.59350/sba3m-s6950",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "DCRoute: Speeding up Inter-Datacenter Traffic Allocation while Guaranteeing Deadlines",
+      "authors": [
+        "Mohammad Noormohammadpour",
+        "Cauligi S. Raghavendra",
+        "Sriram Rao"
+      ],
+      "year": 2016,
+      "venue": "2016 IEEE 23rd International Conference on High Performance Computing (HiPC)",
+      "abstract": null,
+      "doi": "10.1109/hipc.2016.019",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 13,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "DCRoute: Speeding up Inter-Datacenter Traffic Allocation while Guaranteeing Deadlines",
+      "authors": [
+        "Max Noormohammadpour",
+        "Cauligi S. Raghavendra",
+        "Sriram Rao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.31219/osf.io/2ec3q_v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "DCRoute: Speeding up Inter-Datacenter Traffic Allocation while Guaranteeing Deadlines",
+      "authors": [
+        "Max Noormohammadpour",
+        "Cauligi S. Raghavendra",
+        "Sriram Rao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.31219/osf.io/2ec3q",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding up spin-based in-memory computing",
+      "authors": [
+        "Saül Vélez"
+      ],
+      "year": 2025,
+      "venue": "Newton",
+      "abstract": null,
+      "doi": "10.1016/j.newton.2025.100233",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding up irregular applications in shared-memory multiprocessors: memory binding and group prefetching",
+      "authors": [
+        "Zheng Zhang",
+        "J. Torrellas"
+      ],
+      "year": null,
+      "venue": "Proceedings 22nd Annual International Symposium on Computer Architecture",
+      "abstract": null,
+      "doi": "10.1109/isca.1995.524560",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 22,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding up Exact Algorithms With High Probability",
+      "authors": [
+        "Henning Fernau"
+      ],
+      "year": 2006,
+      "venue": "Electronic Notes in Discrete Mathematics",
+      "abstract": null,
+      "doi": "10.1016/j.endm.2006.06.065",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding-up exact and fast FIFO-based cache configuration simulation",
+      "authors": [
+        "Masashi Tawada",
+        "Masao Yanagisawa",
+        "Nozomu Togawa"
+      ],
+      "year": 2011,
+      "venue": "IEICE Electronics Express",
+      "abstract": null,
+      "doi": "10.1587/elex.8.1161",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding up the memory hierarchy in Flat COMA multiprocessors",
+      "authors": [
+        "L. Yang",
+        "J. Torrellas"
+      ],
+      "year": null,
+      "venue": "Proceedings Third International Symposium on High-Performance Computer Architecture",
+      "abstract": null,
+      "doi": "10.1109/hpca.1997.569581",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding up crossbar resistive memory by exploiting in-memory data patterns",
+      "authors": [
+        "Wen Wen",
+        "Lei Zhao",
+        "Youtao Zhang",
+        "Jun Yang"
+      ],
+      "year": 2017,
+      "venue": "2017 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)",
+      "abstract": null,
+      "doi": "10.1109/iccad.2017.8203787",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 12,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Preprocess your Paths - Speeding up Linear Programming-based Optimization for Segment Routing Traffic Engineering",
+      "authors": [
+        "Alexander Brundiers",
+        "Timmy Schüller",
+        "Nils Aschenbruck"
+      ],
+      "year": 2024,
+      "venue": "2024 IFIP Networking Conference (IFIP Networking)",
+      "abstract": null,
+      "doi": "10.23919/ifipnetworking62109.2024.10619747",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 6,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding up FaaS Warm Starts with Memory Restoration Templates",
+      "authors": [
+        "Aravinda Prasad",
+        "Sreenivas Subramoney",
+        "Sandeep Kumar",
+        "Antti Kervinen"
+      ],
+      "year": 2026,
+      "venue": "Proceedings of the 4th Workshop on Disruptive Memory Systems",
+      "abstract": null,
+      "doi": "10.1145/3831664.3837781",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding Up Convolutional Object Detection for Traffic Surveillance Videos",
+      "authors": [
+        "Tu Minh Phuong",
+        "Nguyen Ngoc Diep"
+      ],
+      "year": 2018,
+      "venue": "2018 10th International Conference on Knowledge and Systems Engineering (KSE)",
+      "abstract": null,
+      "doi": "10.1109/kse.2018.8573424",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding up Reinforcement Learning by Combining Attention and Agency Features",
+      "authors": [
+        "Demirel Berkay",
+        "Sánchez-Fibla Martí"
+      ],
+      "year": 2019,
+      "venue": "Frontiers in Artificial Intelligence and Applications",
+      "abstract": null,
+      "doi": "10.3233/faia190111",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding up irregular applications in shared-memory multiprocessors",
+      "authors": [
+        "Zheng Zhang",
+        "Josep Torrellas"
+      ],
+      "year": 1995,
+      "venue": "Proceedings of the 22nd annual international symposium on Computer architecture  - ISCA '95",
+      "abstract": null,
+      "doi": "10.1145/223982.224423",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 20,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Do Speeding Tickets Reduce the Likelihood of Receiving Subsequent Speeding Tickets? A Longitudinal Study of Speeding Violators in Maryland",
+      "authors": [
+        "Saranath Lawpoolsri",
+        "Jingyi Li",
+        "Elisa R. Braver"
+      ],
+      "year": 2007,
+      "venue": "Traffic Injury Prevention",
+      "abstract": null,
+      "doi": "10.1080/15389580601009764",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 44,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speeding Up Exact Motif Discovery by Bounding the Expected Clump Size",
+      "authors": [
+        "Tobias Marschall",
+        "Sven Rahmann"
+      ],
+      "year": 2010,
+      "venue": "Lecture Notes in Computer Science",
+      "abstract": null,
+      "doi": "10.1007/978-3-642-15294-8_28",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Using traffic signal control to better serve pedestrians and limit speeding on urban arterials : adaptive walk intervals and speeding opportunities",
+      "authors": [
+        "Halawani"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.17760/d20292647",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "S/C: Speeding up Data Materialization with Bounded Memory",
+      "authors": [
+        "Zhaoheng Li",
+        "Xinyu Pi",
+        "Yongjoo Park"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE 39th International Conference on Data Engineering (ICDE)",
+      "abstract": null,
+      "doi": "10.1109/icde55515.2023.00393",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 8,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 842,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 1926,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 452,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 635,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

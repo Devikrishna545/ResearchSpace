@@ -1,0 +1,8 @@
+Candidate gap: {{ gap }}
+
+Retrieved items:
+{% for i in items %}
+- item_id: {{ i.item_id }} | {{ i.title }}{% if i.year %} ({{ i.year }}){% endif %}
+  {{ i.abstract if i.abstract else "(no abstract)" }}
+{% endfor %}
+Is the gap addressed by these items?

@@ -1,0 +1,8 @@
+from datetime import datetime
+from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy import String,Integer,Text,JSON,DateTime,ForeignKey,UniqueConstraint
+from app.db.base import Base, utcnow
+class Paper(Base):
+    __tablename__='papers'
+    __table_args__=(UniqueConstraint('owner_id','doi',name='uq_paper_owner_doi'),UniqueConstraint('owner_id','arxiv_id',name='uq_paper_owner_arxiv_id'),UniqueConstraint('owner_id','content_hash',name='uq_paper_owner_content_hash'))
+    id:Mapped[str]=mapped_column(String,primary_key=True); owner_id:Mapped[str|None]=mapped_column(String,ForeignKey('users.id'),nullable=True,index=True); doi:Mapped[str|None]=mapped_column(String,nullable=True); arxiv_id:Mapped[str|None]=mapped_column(String,nullable=True); pmid:Mapped[str|None]=mapped_column(String,nullable=True); openalex_id:Mapped[str|None]=mapped_column(String,nullable=True); title:Mapped[str]=mapped_column(Text); authors:Mapped[list]=mapped_column(JSON,default=list); year:Mapped[int|None]=mapped_column(Integer,nullable=True); venue:Mapped[str|None]=mapped_column(String,nullable=True); abstract:Mapped[str|None]=mapped_column(Text,nullable=True); citation_count:Mapped[int]=mapped_column(Integer,default=0); oa_status:Mapped[str|None]=mapped_column(String,nullable=True); pdf_url:Mapped[str|None]=mapped_column(String,nullable=True); source:Mapped[str|None]=mapped_column(String,nullable=True); content_hash:Mapped[str|None]=mapped_column(String,nullable=True); ingest_status:Mapped[str]=mapped_column(String,default='QUEUED'); raw_payload:Mapped[dict]=mapped_column(JSON,default=dict); created_at:Mapped[datetime]=mapped_column(DateTime(timezone=True),default=utcnow)

@@ -1,0 +1,20 @@
+{
+  "_comment": "Engineering-proposed conservative thresholds. Faculty must review these values and set _faculty_approved to true before the release gate can pass.",
+  "_faculty_approved": false,
+  "_review_status": "awaiting_faculty_review",
+  "parser_shape_success": {"min": 0.99},
+  "source_id_resolution": {"min": 1.0},
+  "quote_fidelity": {"min": 0.99},
+  "fact_type_precision": {"min": 0.95},
+  "fact_type_recall": {"min": 0.8},
+  "fact_ownership_precision": {"min": 0.98},
+  "dimension_relevance": {"min": 0.95},
+  "commonality_precision": {"min": 0.95},
+  "contradiction_precision": {"min": 0.95},
+  "false_cross_paper_agreement_rate": {"max": 0.02},
+  "numerical_calculation_accuracy": {"min": 1.0},
+  "gap_precision": {"min": 0.9},
+  "appropriate_abstention_rate": {"min": 0.95},
+  "model_failure_rate": {"max": 0.05},
+  "latency_s": {"max": 1200}
+}

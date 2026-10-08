@@ -1,0 +1,1599 @@
+{
+  "id": "descriptive-vit",
+  "category": "descriptive",
+  "query": "vision transformer splitting an image into fixed size patches",
+  "target": {
+    "arxiv_id": "2010.11929"
+  },
+  "plan": {
+    "topic": "vision transformer splitting an image into fixed size patches",
+    "sub_queries": [
+      "vision transformer splitting an image into fixed size patches"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "Vicinity Vision Transformer",
+      "authors": [
+        "Weixuan Sun",
+        "Zhen Qin",
+        "Hui Deng",
+        "Jianyuan Wang",
+        "Yi Zhang",
+        "Kaihao Zhang",
+        "Nick Barnes",
+        "Stan Birchfield",
+        "Lingpeng Kong",
+        "Yiran Zhong"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Vision transformers have shown great success on numerous computer vision tasks. However, its central component, softmax attention, prohibits vision transformers from scaling up to high-resolution images, due to both the computational complexity and memory footprint being quadratic. Although linear attention was introduced in natural language processing (NLP) tasks to mitigate a similar issue, directly applying existing linear attention to vision transformers may not lead to satisfactory results. We investigate this problem and find that computer vision tasks focus more on local information compared with NLP tasks. Based on this observation, we present a Vicinity Attention that introduces a locality bias to vision transformers with linear complexity. Specifically, for each image patch, we adjust its attention weight based on its 2D Manhattan distance measured by its neighbouring patches. In this case, the neighbouring patches will receive stronger attention than far-away patches. Moreover, since our Vicinity Attention requires the token length to be much larger than the feature dimension to show its efficiency advantages, we further propose a new Vicinity Vision Transformer (VVT) structure to reduce the feature dimension without degenerating the accuracy. We perform extensive experiments on the CIFAR100, ImageNet1K, and ADE20K datasets to validate the effectiveness of our method. Our method has a slower growth rate of GFlops than previous transformer-based and convolution-based networks when the input resolution increases. In particular, our approach achieves state-of-the-art image classification accuracy with 50% fewer parameters than previous methods.",
+      "doi": null,
+      "arxiv_id": "2206.10552v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2206.10552v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "BINet: a binary inpainting network for deep patch-based image compression",
+      "authors": [
+        "André Nortje",
+        "Willie Brink",
+        "Herman A. Engelbrecht",
+        "Herman Kamper"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent deep learning models outperform standard lossy image compression codecs. However, applying these models on a patch-by-patch basis requires that each image patch be encoded and decoded independently. The influence from adjacent patches is therefore lost, leading to block artefacts at low bitrates. We propose the Binary Inpainting Network (BINet), an autoencoder framework which incorporates binary inpainting to reinstate interdependencies between adjacent patches, for improved patch-based compression of still images. When decoding a patch, BINet additionally uses the binarised encodings from surrounding patches to guide its reconstruction. In contrast to sequential inpainting methods where patches are decoded based on previons reconstructions, BINet operates directly on the binary codes of surrounding patches without access to the original or reconstructed image data. Encoding and decoding can therefore be performed in parallel. We demonstrate that BINet improves the compression quality of a competitive deep image codec across a range of compression levels.",
+      "doi": null,
+      "arxiv_id": "1912.05189v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1912.05189v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "TransMorph: Transformer for unsupervised medical image registration",
+      "authors": [
+        "Junyu Chen",
+        "Eric C. Frey",
+        "Yufan He",
+        "William P. Segars",
+        "Ye Li",
+        "Yong Du"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In the last decade, convolutional neural networks (ConvNets) have been a major focus of research in medical image analysis. However, the performances of ConvNets may be limited by a lack of explicit consideration of the long-range spatial relationships in an image. Recently Vision Transformer architectures have been proposed to address the shortcomings of ConvNets and have produced state-of-the-art performances in many medical imaging applications. Transformers may be a strong candidate for image registration because their substantially larger receptive field enables a more precise comprehension of the spatial correspondence between moving and fixed images. Here, we present TransMorph, a hybrid Transformer-ConvNet model for volumetric medical image registration. This paper also presents diffeomorphic and Bayesian variants of TransMorph: the diffeomorphic variants ensure the topology-preserving deformations, and the Bayesian variant produces a well-calibrated registration uncertainty estimate. We extensively validated the proposed models using 3D medical images from three applications: inter-patient and atlas-to-patient brain MRI registration and phantom-to-CT registration. The proposed models are evaluated in comparison to a variety of existing registration methods and Transformer architectures. Qualitative and quantitative results demonstrate that the proposed Transformer-based model leads to a substantial performance improvement over the baseline methods, confirming the effectiveness of Transformers for medical image registration.",
+      "doi": null,
+      "arxiv_id": "2111.10480v6",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2111.10480v6",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.AI",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Global Adaptive Filtering Layer for Computer Vision",
+      "authors": [
+        "Viktor Shipitsin",
+        "Iaroslav Bespalov",
+        "Dmitry V. Dylov"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We devise a universal adaptive neural layer to \"learn\" optimal frequency filter for each image together with the weights of the base neural network that performs some computer vision task. The proposed approach takes the source image in the spatial domain, automatically selects the best frequencies from the frequency domain, and transmits the inverse-transform image to the main neural network. Remarkably, such a simple add-on layer dramatically improves the performance of the main network regardless of its design. We observe that the light networks gain a noticeable boost in the performance metrics; whereas, the training of the heavy ones converges faster when our adaptive layer is allowed to \"learn\" alongside the main architecture. We validate the idea in four classical computer vision tasks: classification, segmentation, denoising, and erasing, considering popular natural and medical data benchmarks.",
+      "doi": null,
+      "arxiv_id": "2010.01177v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2010.01177v4",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Are Vision Transformers Robust to Patch Perturbations?",
+      "authors": [
+        "Jindong Gu",
+        "Volker Tresp",
+        "Yao Qin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent advances in Vision Transformer (ViT) have demonstrated its impressive performance in image classification, which makes it a promising alternative to Convolutional Neural Network (CNN). Unlike CNNs, ViT represents an input image as a sequence of image patches. The patch-based input image representation makes the following question interesting: How does ViT perform when individual input image patches are perturbed with natural corruptions or adversarial perturbations, compared to CNNs? In this work, we study the robustness of ViT to patch-wise perturbations. Surprisingly, we find that ViTs are more robust to naturally corrupted patches than CNNs, whereas they are more vulnerable to adversarial patches. Furthermore, we discover that the attention mechanism greatly affects the robustness of vision transformers. Specifically, the attention module can help improve the robustness of ViT by effectively ignoring natural corrupted patches. However, when ViTs are attacked by an adversary, the attention mechanism can be easily fooled to focus more on the adversarially perturbed patches and cause a mistake. Based on our analysis, we propose a simple temperature-scaling based method to improve the robustness of ViT against adversarial patches. Extensive qualitative and quantitative experiments are performed to support our findings, understanding, and improvement of ViT robustness to patch-wise perturbations across a set of transformer-based architectures.",
+      "doi": null,
+      "arxiv_id": "2111.10659v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2111.10659v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Vim4Path: Self-Supervised Vision Mamba for Histopathology Images",
+      "authors": [
+        "Ali Nasiri-Sarvi",
+        "Vincent Quoc-Huy Trinh",
+        "Hassan Rivaz",
+        "Mahdi S. Hosseini"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Representation learning from Gigapixel Whole Slide Images (WSI) poses a significant challenge in computational pathology due to the complicated nature of tissue structures and the scarcity of labeled data. Multi-instance learning methods have addressed this challenge, leveraging image patches to classify slides utilizing pretrained models using Self-Supervised Learning (SSL) approaches. The performance of both SSL and MIL methods relies on the architecture of the feature encoder. This paper proposes leveraging the Vision Mamba (Vim) architecture, inspired by state space models, within the DINO framework for representation learning in computational pathology. We evaluate the performance of Vim against Vision Transformers (ViT) on the Camelyon16 dataset for both patch-level and slide-level classification. Our findings highlight Vim's enhanced performance compared to ViT, particularly at smaller scales, where Vim achieves an 8.21 increase in ROC AUC for models of similar size. An explainability analysis further highlights Vim's capabilities, which reveals that Vim uniquely emulates the pathologist workflow-unlike ViT. This alignment with human expert analysis highlights Vim's potential in practical diagnostic settings and contributes significantly to developing effective representation-learning algorithms in computational pathology. We release the codes and pretrained weights at \\url{https://github.com/AtlasAnalyticsLab/Vim4Path}.",
+      "doi": null,
+      "arxiv_id": "2404.13222v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2404.13222v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "PatchDropout: Economizing Vision Transformers Using Patch Dropout",
+      "authors": [
+        "Yue Liu",
+        "Christos Matsoukas",
+        "Fredrik Strand",
+        "Hossein Azizpour",
+        "Kevin Smith"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Vision transformers have demonstrated the potential to outperform CNNs in a variety of vision tasks. But the computational and memory requirements of these models prohibit their use in many applications, especially those that depend on high-resolution images, such as medical image classification. Efforts to train ViTs more efficiently are overly complicated, necessitating architectural changes or intricate training schemes. In this work, we show that standard ViT models can be efficiently trained at high resolution by randomly dropping input image patches. This simple approach, PatchDropout, reduces FLOPs and memory by at least 50% in standard natural image datasets such as ImageNet, and those savings only increase with image size. On CSAW, a high-resolution medical dataset, we observe a 5 times savings in computation and memory using PatchDropout, along with a boost in performance. For practitioners with a fixed computational or memory budget, PatchDropout makes it possible to choose image resolution, hyperparameters, or model size to get the most performance out of their model.",
+      "doi": null,
+      "arxiv_id": "2208.07220v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2208.07220v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A Simple and Robust Framework for Cross-Modality Medical Image Segmentation applied to Vision Transformers",
+      "authors": [
+        "Matteo Bastico",
+        "David Ryckelynck",
+        "Laurent Corté",
+        "Yannick Tillier",
+        "Etienne Decencière"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "When it comes to clinical images, automatic segmentation has a wide variety of applications and a considerable diversity of input domains, such as different types of Magnetic Resonance Images (MRIs) and Computerized Tomography (CT) scans. This heterogeneity is a challenge for cross-modality algorithms that should equally perform independently of the input image type fed to them. Often, segmentation models are trained using a single modality, preventing generalization to other types of input data without resorting to transfer learning techniques. Furthermore, the multi-modal or cross-modality architectures proposed in the literature frequently require registered images, which are not easy to collect in clinical environments, or need additional processing steps, such as synthetic image generation. In this work, we propose a simple framework to achieve fair image segmentation of multiple modalities using a single conditional model that adapts its normalization layers based on the input type, trained with non-registered interleaved mixed data. We show that our framework outperforms other cross-modality segmentation methods, when applied to the same 3D UNet baseline model, on the Multi-Modality Whole Heart Segmentation Challenge. Furthermore, we define the Conditional Vision Transformer (C-ViT) encoder, based on the proposed cross-modality framework, and we show that it brings significant improvements to the resulting segmentation, up to 6.87\\% of Dice accuracy, with respect to its baseline reference. The code to reproduce our experiments and the trained model weights are available at https://github.com/matteo-bastico/MI-Seg.",
+      "doi": null,
+      "arxiv_id": "2310.05572v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2310.05572v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Patch-Based Stochastic Attention for Image Editing",
+      "authors": [
+        "Nicolas Cherel",
+        "Andrés Almansa",
+        "Yann Gousseau",
+        "Alasdair Newson"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Attention mechanisms have become of crucial importance in deep learning in recent years. These non-local operations, which are similar to traditional patch-based methods in image processing, complement local convolutions. However, computing the full attention matrix is an expensive step with heavy memory and computational loads. These limitations curb network architectures and performances, in particular for the case of high resolution images. We propose an efficient attention layer based on the stochastic algorithm PatchMatch, which is used for determining approximate nearest neighbors. We refer to our proposed layer as a \"Patch-based Stochastic Attention Layer\" (PSAL). Furthermore, we propose different approaches, based on patch aggregation, to ensure the differentiability of PSAL, thus allowing end-to-end training of any network containing our layer. PSAL has a small memory footprint and can therefore scale to high resolution images. It maintains this footprint without sacrificing spatial precision and globality of the nearest neighbors, which means that it can be easily inserted in any level of a deep architecture, even in shallower levels. We demonstrate the usefulness of PSAL on several image editing tasks, such as image inpainting, guided image colorization, and single-image super-resolution. Our code is available at: https://github.com/ncherel/psal",
+      "doi": null,
+      "arxiv_id": "2202.03163v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2202.03163v4",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "VoxelPrompt: A Vision Agent for End-to-End Medical Image Analysis",
+      "authors": [
+        "Andrew Hoopes",
+        "Neel Dey",
+        "Victor Ion Butoi",
+        "John V. Guttag",
+        "Adrian V. Dalca"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We present VoxelPrompt, an end-to-end image analysis agent that tackles free-form radiological tasks. Given any number of volumetric medical images and a natural language prompt, VoxelPrompt integrates a language model that generates executable code to invoke a jointly-trained, adaptable vision network. This code further carries out analytical steps to address practical quantitative aims, such as measuring the growth of a tumor across visits. The pipelines generated by VoxelPrompt automate analyses that currently require practitioners to painstakingly combine multiple specialized vision and statistical tools. We evaluate VoxelPrompt using diverse neuroimaging tasks and show that it can delineate hundreds of anatomical and pathological features, measure complex morphological properties, and perform open-language analysis of lesion characteristics. VoxelPrompt performs these objectives with an accuracy similar to that of specialist single-task models for image analysis, while facilitating a broad range of compositional biomedical workflows.",
+      "doi": null,
+      "arxiv_id": "2410.08397v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2410.08397v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.AI",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Iterative Grassmannian Optimization for Robust Image Alignment",
+      "authors": [
+        "Jun He",
+        "Dejiao Zhang",
+        "Laura Balzano",
+        "Tao Tao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Robust high-dimensional data processing has witnessed an exciting development in recent years, as theoretical results have shown that it is possible using convex programming to optimize data fit to a low-rank component plus a sparse outlier component. This problem is also known as Robust PCA, and it has found application in many areas of computer vision. In image and video processing and face recognition, the opportunity to process massive image databases is emerging as people upload photo and video data online in unprecedented volumes. However, data quality and consistency is not controlled in any way, and the massiveness of the data poses a serious computational challenge. In this paper we present t-GRASTA, or \"Transformed GRASTA (Grassmannian Robust Adaptive Subspace Tracking Algorithm)\". t-GRASTA iteratively performs incremental gradient descent constrained to the Grassmann manifold of subspaces in order to simultaneously estimate a decomposition of a collection of images into a low-rank subspace, a sparse part of occlusions and foreground objects, and a transformation such as rotation or translation of the image. We show that t-GRASTA is 4 $\\times$ faster than state-of-the-art algorithms, has half the memory requirement, and can achieve alignment for face images as well as jittered camera surveillance images.",
+      "doi": null,
+      "arxiv_id": "1306.0404v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1306.0404v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "math.OC",
+          "stat.ML"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A residual dense vision transformer for medical image super-resolution with segmentation-based perceptual loss fine-tuning",
+      "authors": [
+        "Jin Zhu",
+        "Guang Yang",
+        "Pietro Lio"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Super-resolution plays an essential role in medical imaging because it provides an alternative way to achieve high spatial resolutions and image quality with no extra acquisition costs. In the past few decades, the rapid development of deep neural networks has promoted super-resolution performance with novel network architectures, loss functions and evaluation metrics. Specifically, vision transformers dominate a broad range of computer vision tasks, but challenges still exist when applying them to low-level medical image processing tasks. This paper proposes an efficient vision transformer with residual dense connections and local feature fusion to achieve efficient single-image super-resolution (SISR) of medical modalities. Moreover, we implement a general-purpose perceptual loss with manual control for image quality improvements of desired aspects by incorporating prior knowledge of medical image segmentation. Compared with state-of-the-art methods on four public medical image datasets, the proposed method achieves the best PSNR scores of 6 modalities among seven modalities. It leads to an average improvement of $+0.09$ dB PSNR with only 38\\% parameters of SwinIR. On the other hand, the segmentation-based perceptual loss increases $+0.14$ dB PSNR on average for SOTA methods, including CNNs and vision transformers. Additionally, we conduct comprehensive ablation studies to discuss potential factors for the superior performance of vision transformers over CNNs and the impacts of network and loss function components. The code will be released on GitHub with the paper published.",
+      "doi": null,
+      "arxiv_id": "2302.11184v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2302.11184v2",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for Image Recognition and Beyond",
+      "authors": [
+        "Qiming Zhang",
+        "Yufei Xu",
+        "Jing Zhang",
+        "Dacheng Tao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Vision transformers have shown great potential in various computer vision tasks owing to their strong capability to model long-range dependency using the self-attention mechanism. Nevertheless, they treat an image as a 1D sequence of visual tokens, lacking an intrinsic inductive bias (IB) in modeling local visual structures and dealing with scale variance, which is instead learned implicitly from large-scale training data with longer training schedules. In this paper, we propose a Vision Transformer Advanced by Exploring intrinsic IB from convolutions, i.e., ViTAE. Technically, ViTAE has several spatial pyramid reduction modules to downsample and embed the input image into tokens with rich multi-scale context using multiple convolutions with different dilation rates. In this way, it acquires an intrinsic scale invariance IB and can learn robust feature representation for objects at various scales. Moreover, in each transformer layer, ViTAE has a convolution block parallel to the multi-head self-attention module, whose features are fused and fed into the feed-forward network. Consequently, it has the intrinsic locality IB and is able to learn local features and global dependencies collaboratively. The proposed two kinds of cells are stacked in both isotropic and multi-stage manners to formulate two families of ViTAE models, i.e., the vanilla ViTAE and ViTAEv2. Experiments on the ImageNet dataset as well as downstream tasks on the MS COCO, ADE20K, and AP10K datasets validate the superiority of our models over the baseline transformer models and concurrent works. Besides, we scale up our ViTAE model to 644M parameters and obtain the state-of-the-art classification performance, i.e., 88.5% Top-1 classification accuracy on ImageNet validation set and the best 91.2% Top-1 accuracy on ImageNet real validation set, without using extra private data.",
+      "doi": null,
+      "arxiv_id": "2202.10108v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2202.10108v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Compress image to patches for Vision Transformer",
+      "authors": [
+        "Xinfeng Zhao",
+        "Yaoru Sun"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The Vision Transformer (ViT) has made significant strides in the field of computer vision. However, as the depth of the model and the resolution of the input images increase, the computational cost associated with training and running ViT models has surged dramatically. This paper proposes a hybrid model based on CNN and Vision Transformer, named CI2P-ViT. The model incorporates a module called CI2P, which utilizes the CompressAI encoder to compress images and subsequently generates a sequence of patches through a series of convolutions. CI2P can replace the Patch Embedding component in the ViT model, enabling seamless integration into existing ViT models. Compared to ViT-B/16, CI2P-ViT has the number of patches input to the self-attention layer reduced to a quarter of the original. This design not only significantly reduces the computational cost of the ViT model but also effectively enhances the model's accuracy by introducing the inductive bias properties of CNN. The ViT model's precision is markedly enhanced. When trained from the ground up on the Animals-10 dataset, CI2P-ViT achieved an accuracy rate of 92.37%, representing a 3.3% improvement over the ViT-B/16 baseline. Additionally, the model's computational operations, measured in floating-point operations per second (FLOPs), were diminished by 63.35%, and it exhibited a 2-fold increase in training velocity on identical hardware configurations.",
+      "doi": null,
+      "arxiv_id": "2502.10120v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2502.10120v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "ViTBIS: Vision Transformer for Biomedical Image Segmentation",
+      "authors": [
+        "Abhinav Sagar"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper, we propose a novel network named Vision Transformer for Biomedical Image Segmentation (ViTBIS). Our network splits the input feature maps into three parts with $1\\times 1$, $3\\times 3$ and $5\\times 5$ convolutions in both encoder and decoder. Concat operator is used to merge the features before being fed to three consecutive transformer blocks with attention mechanism embedded inside it. Skip connections are used to connect encoder and decoder transformer blocks. Similarly, transformer blocks and multi scale architecture is used in decoder before being linearly projected to produce the output segmentation map. We test the performance of our network using Synapse multi-organ segmentation dataset, Automated cardiac diagnosis challenge dataset, Brain tumour MRI segmentation dataset and Spleen CT segmentation dataset. Without bells and whistles, our network outperforms most of the previous state of the art CNN and transformer based models using Dice score and the Hausdorff distance as the evaluation metrics.",
+      "doi": null,
+      "arxiv_id": "2201.05920v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2201.05920v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Multi-Head Self-Attention via Vision Transformer for Zero-Shot Learning",
+      "authors": [
+        "Faisal Alamri",
+        "Anjan Dutta"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Zero-Shot Learning (ZSL) aims to recognise unseen object classes, which are not observed during the training phase. The existing body of works on ZSL mostly relies on pretrained visual features and lacks the explicit attribute localisation mechanism on images. In this work, we propose an attention-based model in the problem settings of ZSL to learn attributes useful for unseen class recognition. Our method uses an attention mechanism adapted from Vision Transformer to capture and learn discriminative attributes by splitting images into small patches. We conduct experiments on three popular ZSL benchmarks (i.e., AWA2, CUB and SUN) and set new state-of-the-art harmonic mean results {on all the three datasets}, which illustrate the effectiveness of our proposed method.",
+      "doi": null,
+      "arxiv_id": "2108.00045v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2108.00045v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Accelerating Vision Transformers with Adaptive Patch Sizes",
+      "authors": [
+        "Rohan Choudhury",
+        "JungEun Kim",
+        "Jinhyung Park",
+        "Eunho Yang",
+        "László A. Jeni",
+        "Kris M. Kitani"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Vision Transformers (ViTs) partition input images into uniformly sized patches regardless of their content, resulting in long input sequence lengths for high-resolution images. We present Adaptive Patch Transformers (APT), which addresses this by using multiple different patch sizes within the same image. APT reduces the total number of input tokens by allocating larger patch sizes in more homogeneous areas and smaller patches in more complex ones. APT achieves a drastic speedup in ViT inference and training, increasing throughput by 40% on ViT-L and 50% on ViT-H while maintaining downstream performance, and can be applied to a previously fine-tuned ViT, converging in as little as 1 epoch. It also significantly reduces training and inference time without loss of performance in high-resolution dense visual tasks, achieving up to 30\\% faster training and inference in visual QA, object detection, and semantic segmentation.",
+      "doi": null,
+      "arxiv_id": "2510.18091v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2510.18091v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Leveraging Complementary Attention maps in vision transformers for OCT image analysis",
+      "authors": [
+        "Haz Sameen Shahgir",
+        "Tanjeem Azwad Zaman",
+        "Khondker Salman Sayeed",
+        "Md. Asif Haider",
+        "Sheikh Saifur Rahman Jony",
+        "M. Sohel Rahman"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Optical Coherence Tomography (OCT) scan yields all possible cross-section images of a retina for detecting biomarkers linked to optical defects. Due to the high volume of data generated, an automated and reliable biomarker detection pipeline is necessary as a primary screening stage.\n  We outline our new state-of-the-art pipeline for identifying biomarkers from OCT scans. In collaboration with trained ophthalmologists, we identify local and global structures in biomarkers. Through a comprehensive and systematic review of existing vision architectures, we evaluate different convolution and attention mechanisms for biomarker detection. We find that MaxViT, a hybrid vision transformer combining convolution layers with strided attention, is better suited for local feature detection, while EVA-02, a standard vision transformer leveraging pure attention and large-scale knowledge distillation, excels at capturing global features. We ensemble the predictions of both models to achieve first place in the IEEE Video and Image Processing Cup 2023 competition on OCT biomarker detection, achieving a patient-wise F1 score of 0.8527 in the final phase of the competition, scoring 3.8\\% higher than the next best solution. Finally, we used knowledge distillation to train a single MaxViT to outperform our ensemble at a fraction of the computation cost.",
+      "doi": null,
+      "arxiv_id": "2310.14005v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2310.14005v3",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Two-Stage Vision Transformer for Image Restoration: Colorization Pretraining + Residual Upsampling",
+      "authors": [
+        "Aditya Chaudhary",
+        "Prachet Dev Singh",
+        "Ankit Jha"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In computer vision, Single Image Super-Resolution (SISR) is still a difficult problem. We present ViT-SR, a new technique to improve the performance of a Vision Transformer (ViT) employing a two-stage training strategy. In our method, the model learns rich, generalizable visual representations from the data itself through a self-supervised pretraining phase on a colourization task. The pre-trained model is then adjusted for 4x super-resolution. By predicting the addition of a high-frequency residual image to an initial bicubic interpolation, this design simplifies residual learning. ViT-SR, trained and evaluated on the DIV2K benchmark dataset, achieves an impressive SSIM of 0.712 and PSNR of 22.90 dB. These results demonstrate the efficacy of our two-stage approach and highlight the potential of self-supervised pre-training for complex image restoration tasks. Further improvements may be possible with larger ViT architectures or alternative pretext tasks.",
+      "doi": null,
+      "arxiv_id": "2512.02512v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2512.02512v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "The Stellar Imager (SI) Vision Mission",
+      "authors": [
+        "Kenneth G. Carpenter",
+        "Carolus J. Schrijver",
+        "Margarita Karovska",
+        "SI Vision Mission Team"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The Stellar Imager (SI) is a UV-Optical, Space-Based Interferometer designed to enable 0.1 milli-arcsecond (mas) spectral imaging of stellar surfaces and of the Universe in general and asteroseismic imaging of stellar interiors. SI is identified as a \"Flagship and Landmark Discovery Mission\" in the 2005 Sun Solar System Connection (SSSC) Roadmap and as a candidate for a \"Pathways to Life Observatory\" in the Exploration of the Universe Division (EUD) Roadmap (May, 2005). SI will revolutionize our view of many dynamic astrophysical processes: its resolution will transform point sources into extended sources, and snapshots into evolving views. SI's science focuses on the role of magnetism in the Universe, particularly on magnetic activity on the surfaces of stars like the Sun. SI's prime goal is to enable long-term forecasting of solar activity and the space weather that it drives. SI will also revolutionize our understanding of the formation of planetary systems, of the habitability and climatology of distant planets, and of many magneto-hydrodynamically controlled processes in the Universe. The results of the SI \"Vision Mission\" Study are presented in this paper. Additional information on the SI mission concept and related technology development can be found at URL: http://hires.gsfc.nasa.gov/si/.",
+      "doi": null,
+      "arxiv_id": "0606411v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0606411v1",
+      "raw_payload": {
+        "categories": [
+          "astro-ph"
+        ],
+        "primary_category": "astro-ph"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "Vision Transformers for Remote Sensing Image Classification",
+      "authors": [
+        "Yakoub Bazi",
+        "Laila Bashmal",
+        "Mohamad Mahmoud Al Rahhal",
+        "Reham Al-Dayil",
+        "Naif Al Ajlan"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/rs13030516",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3128592650",
+      "citation_count": 640,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2072-4292/13/3/516/pdf?version=1612423035",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Comparing Vision Transformers and Convolutional Neural Networks for Image Classification: A Literature Review",
+      "authors": [
+        "José Maurício",
+        "Inês Domingues",
+        "Jorge Bernardino"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/app13095521",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4367598041",
+      "citation_count": 576,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2076-3417/13/9/5521/pdf?version=1683174100",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "authors": [
+        "Ze Liu",
+        "Yutong Lin",
+        "Yue Cao",
+        "Han Hu",
+        "Yixuan Wei",
+        "Zheng Zhang",
+        "Stephen Ching-Feng Lin",
+        "Baining Guo"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2103.14030",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3202406646",
+      "citation_count": 412,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2103.14030",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Segment anything in medical images",
+      "authors": [
+        "Jun Ma",
+        "Yuting He",
+        "Feifei Li",
+        "Lin Han",
+        "Chenyu You",
+        "Bo Wang"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41467-024-44824-z",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4391109864",
+      "citation_count": 2834,
+      "oa_status": "gold",
+      "pdf_url": "https://www.nature.com/articles/s41467-024-44824-z.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "DynamicViT: Efficient Vision Transformers with Dynamic Token Sparsification",
+      "authors": [
+        "Yongming Rao",
+        "Wenliang Zhao",
+        "Benlin Liu",
+        "Jiwen Lu",
+        "Jie Zhou",
+        "Cho‐Jui Hsieh"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2106.02034",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3168124404",
+      "citation_count": 311,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2106.02034",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Vision Transformers for Image Classification: A Comparative Survey",
+      "authors": [
+        "Yaoli Wang",
+        "Yaojun Deng",
+        "Yuanjin Zheng",
+        "Pratik Chattopadhyay",
+        "Lipo Wang"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/technologies13010032",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4406330070",
+      "citation_count": 166,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2227-7080/13/1/32/pdf?version=1736778259",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "SSAST: Self-Supervised Audio Spectrogram Transformer",
+      "authors": [
+        "Yuan Gong",
+        "Cheng-I Lai",
+        "Yu-An Chung",
+        "James Glass"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v36i10.21315",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3206996142",
+      "citation_count": 284,
+      "oa_status": "diamond",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Fast Vision Transformers with HiLo Attention",
+      "authors": [
+        "Zizheng Pan",
+        "Jianfei Cai",
+        "Bohan Zhuang"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2205.13213",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4281932953",
+      "citation_count": 116,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2205.13213",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ViTAE: Vision Transformer Advanced by Exploring Intrinsic Inductive Bias",
+      "authors": [
+        "Yufei Xu",
+        "Qiming Zhang",
+        "Jing Zhang",
+        "Dacheng Tao"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2106.03348",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3175227919",
+      "citation_count": 156,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2106.03348",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A foundation model for generalizable disease detection from retinal images",
+      "authors": [
+        "Yukun Zhou",
+        "Mark A. Chia",
+        "Siegfried K. Wagner",
+        "Murat Seçkin Ayhan",
+        "Dominic J. Williamson",
+        "Robbert Struyven",
+        "Timing Liu",
+        "Moucheng Xu",
+        "Mateo G. Lozano",
+        "Peter Woodward-Court",
+        "Yuka Kihara",
+        "Naomi E. Allen",
+        "John Gallacher",
+        "Thomas J. Littlejohns",
+        "Tariq Mehmood Aslam",
+        "Paul Bishop",
+        "Graeme Charles M. Black",
+        "Panagiotis I. Sergouniotis",
+        "Denize Atan",
+        "Andrew D. Dick",
+        "Cathy Williams",
+        "Sarah Ann Barman",
+        "Jenny H. Barrett",
+        "Sarah Mackie",
+        "Tasanee Braithwaite",
+        "Roxana Octavia Carare",
+        "Sarah A. Ennis",
+        "Jane Whitney Gibson",
+        "Andrew John Lotery",
+        "Jay Self",
+        "Usha Chakravarthy",
+        "Ruth Esther Hogg",
+        "Euan Paterson",
+        "Jayne V. Woodside",
+        "Tünde Pető",
+        "Gareth J. McKay",
+        "Bernadette McGuinness",
+        "Paul J. Foster",
+        "Konstantinos Balaskas",
+        "Anthony P. Khawaja",
+        "Nikolas Pontikos",
+        "Jugnoo Sangeeta Rahi",
+        "Gerassimos Lascaratos",
+        "Praveen J. Patel",
+        "Michelle Chan",
+        "Sharon Y. L. Chua",
+        "Alexander Clifford Day",
+        "Parul Desai",
+        "Cathy Egan",
+        "Marcus Fruttiger",
+        "David F. Garway‐Heath",
+        "Alison J. Hardcastle",
+        "Peng Tee Khaw",
+        "Tony Moore",
+        "Sobha Sivaprasad",
+        "Nicholas G. Strouthidis",
+        "Dhanes Thomas",
+        "Adnan Tufail",
+        "Ananth C. Viswanathan",
+        "Bal Dhillon",
+        "Tom MacGillivray",
+        "Cathie L. M. Sudlow",
+        "Véronique Vitart",
+        "Alex S. F. Doney",
+        "Emanuele Trucco",
+        "Jeremy A. Guggeinheim",
+        "James E. Morgan",
+        "Christopher Joseph Hammond",
+        "Katie M Williams",
+        "Pirro G. Hysi",
+        "Simon Peter Harding",
+        "Yalin Zheng",
+        "Robert Luben",
+        "Philip J. Luthert",
+        "Zihan Sun",
+        "Martin McKibbin",
+        "Eoin Daniel O'Sullivan",
+        "Richard A. Oram",
+        "Mike Weedon",
+        "Christopher G. Owen",
+        "Alicja Regina Rudnicka",
+        "Naveed A. Sattar",
+        "DAVID H. STEEL",
+        "IRENE M. STRATTON",
+        "Robyn Jennifer Tapp",
+        "Max M. Yates",
+        "Axel Petzold",
+        "Savita Madhusudhan",
+        "André Altmann",
+        "Aaron Lee",
+        "Eric J. Topol",
+        "Alastair Keith Denniston",
+        "Daniel C. Alexander",
+        "Pearse Andrew Keane"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41586-023-06555-x",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4386697749",
+      "citation_count": 976,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.nature.com/articles/s41586-023-06555-x.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CSWin Transformer: A General Vision Transformer Backbone with Cross-Shaped Windows",
+      "authors": [
+        "Xiaoyi Dong",
+        "Jianmin Bao",
+        "Dongdong Chen",
+        "Weiming Zhang",
+        "Nenghai Yu",
+        "Lu Yuan",
+        "Dong Chen",
+        "Baining Guo"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2107.00652",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3174738881",
+      "citation_count": 102,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2107.00652",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ViT-SmartAgri: Vision Transformer and Smartphone-Based Plant Disease Detection for Smart Agriculture",
+      "authors": [
+        "Utpal Barman",
+        "Parismita Sarma",
+        "Mirzanur Rahman",
+        "Vaskar Deka",
+        "Swati Lahkar",
+        "Vaishali Sharma",
+        "Manob Jyoti Saikia"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/agronomy14020327",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4391531549",
+      "citation_count": 154,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2073-4395/14/2/327/pdf?version=1707035693",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Implementing vision transformer for classifying 2D biomedical images",
+      "authors": [
+        "Arindam Halder",
+        "Sanghita Gharami",
+        "Priyangshu Sadhu",
+        "Pawan Kumar Singh",
+        "Marcin Woźniak",
+        "Muhammad Fazal Ijaz"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41598-024-63094-9",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4399208718",
+      "citation_count": 68,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Vision Transformer Approach for Traffic Congestion Prediction in Urban Areas",
+      "authors": [
+        "Kadiyala Ramana",
+        "Gautam Srivastava",
+        "Madapuri Rudra Kumar",
+        "Thippa Reddy Gadekallu",
+        "Jerry Chun‐Wei Lin",
+        "Mamoun Alazab",
+        "Celestine Iwendi"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tits.2022.3233801",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4313855663",
+      "citation_count": 117,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Chasing Sparsity in Vision Transformers: An End-to-End Exploration",
+      "authors": [
+        "Tianlong Chen",
+        "Yu Cheng",
+        "Zhe Gan",
+        "Lu Yuan",
+        "Lei Zhang",
+        "Zhangyang Wang"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2106.04533",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3169769781",
+      "citation_count": 85,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2106.04533",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Pose-Guided Feature Disentangling for Occluded Person Re-identification Based on Transformer",
+      "authors": [
+        "Tao Wang",
+        "Hong Liu",
+        "Pinhao Song",
+        "Tianyu Guo",
+        "Wei Shi"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v36i3.20155",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4200635168",
+      "citation_count": 232,
+      "oa_status": "diamond",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/20155/19914",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CF-ViT: A General Coarse-to-Fine Method for Vision Transformer",
+      "authors": [
+        "Mengzhao Chen",
+        "Mingbao Lin",
+        "Ke Li",
+        "Yunhang Shen",
+        "Yongjian Wu",
+        "Chao Fei",
+        "Rongrong Ji"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v37i6.25860",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4382239283",
+      "citation_count": 70,
+      "oa_status": "diamond",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25860/25632",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CrossFormer: A Versatile Vision Transformer Hinging on Cross-scale Attention",
+      "authors": [
+        "Wenxiao Wang",
+        "Yao Lu",
+        "Long Chen",
+        "Binbin Lin",
+        "Deng Cai",
+        "Xiaofei He",
+        "Wei Liu"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2108.00154",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4287062814",
+      "citation_count": 86,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2108.00154",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "DFDT: An End-to-End DeepFake Detection Framework Using Vision Transformer",
+      "authors": [
+        "Aminollah Khormali",
+        "Jiann Shiun Yuan"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/app12062953",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4221045030",
+      "citation_count": 89,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/2076-3417/12/6/2953/pdf?version=1647252838",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A hybrid explainable ensemble transformer encoder for pneumonia identification from chest X-ray images",
+      "authors": [
+        "Chiagoziem C. Ukwuoma",
+        "Zhiguang Qin",
+        "Md Belal Bin Heyat",
+        "Faijan Akhtar",
+        "Olusola Bamisile",
+        "Abdullah Yahya Mohammed Muaad",
+        "Daniel Addo",
+        "Mugahed A. Al–antari"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.jare.2022.08.021",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4295025118",
+      "citation_count": 166,
+      "oa_status": "gold",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2090123222002028/pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Table 2: Detailed analysis of patch size configurations in vision transformer models for image classification.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3544/table-2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Improvement of Vision Transformer Using Word Patches",
+      "authors": [
+        "Ayato Takama",
+        "Sota Kato",
+        "Satoshi Kamiya",
+        "Kazuhiro Hotta"
+      ],
+      "year": 2023,
+      "venue": "Proceedings of the 18th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+      "abstract": null,
+      "doi": "10.5220/0011732900003417",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Pyramid Swin Transformer: Different-Size Windows Swin Transformer for Image Classification and Object Detection",
+      "authors": [
+        "Chenyu Wang",
+        "Toshio Endo",
+        "Takahiro Hirofuchi",
+        "Tsutomu Ikegami"
+      ],
+      "year": 2023,
+      "venue": "Proceedings of the 18th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+      "abstract": null,
+      "doi": "10.5220/0011675800003417",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "CRE: Circle relationship embedding of patches in vision transformer",
+      "authors": [
+        "Zhengyang Yu",
+        "Jochen Triesch"
+      ],
+      "year": 2023,
+      "venue": "ESANN 2023 proceesdings",
+      "abstract": null,
+      "doi": "10.14428/esann/2023.es2023-75",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Image-consistent patches from unstructured points with J-linkage",
+      "authors": [
+        "Roberto Toldo",
+        "Andrea Fusiello"
+      ],
+      "year": 2013,
+      "venue": "Image and Vision Computing",
+      "abstract": null,
+      "doi": "10.1016/j.imavis.2013.07.007",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 11,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Neighbor Patches Merging Reduces Spatial Redundancy to Accelerate Vision Transformer",
+      "authors": [
+        "Kai Jiang",
+        "Peng Peng",
+        "Youzao Lian",
+        "Weihui Shao",
+        "weisheng xu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.4798857",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 5: Reshape the bytecode image to a fixed size square image.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.494/fig-5",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 4: Vision Transformer (ViT) architecture for image classification.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.3776/fig-4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Correction of image deformation from lens distortion using Bezier patches",
+      "authors": [
+        "Ardeshir Goshtasby"
+      ],
+      "year": 1989,
+      "venue": "Computer Vision, Graphics, and Image Processing",
+      "abstract": null,
+      "doi": "10.1016/0734-189x(89)90048-0",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Correction of image deformation from lens distortion using bezier patches",
+      "authors": [
+        "Ardeshir Goshtasby"
+      ],
+      "year": 1989,
+      "venue": "Computer Vision, Graphics, and Image Processing",
+      "abstract": null,
+      "doi": "10.1016/0734-189x(89)90120-5",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 37,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "ST-VTON: Self-supervised vision transformer for image-based virtual try-on",
+      "authors": [
+        "Zheng Chong",
+        "Lingfei Mo"
+      ],
+      "year": 2022,
+      "venue": "Image and Vision Computing",
+      "abstract": null,
+      "doi": "10.1016/j.imavis.2022.104568",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 8,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "ANIMAL IMAGE CLASSIFICATION USING THE VISION TRANSFORMER MODEL",
+      "authors": [
+        "Mahdi Rezapour"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.22541/au.172417371.16005170/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Deep compare: A study on using convolutional neural networks to compare image patches",
+      "authors": [
+        "S. Zagoruyko",
+        "N. Komodakis"
+      ],
+      "year": 2017,
+      "venue": "Computer Vision and Image Understanding",
+      "abstract": null,
+      "doi": "10.1016/j.cviu.2017.10.007",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 28,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Discrete analytical curve reconstruction without patches",
+      "authors": [
+        "Isabelle Sivignon",
+        "Rodolphe Breton",
+        "Florent Dupont",
+        "Eric Andrès"
+      ],
+      "year": 2005,
+      "venue": "Image and Vision Computing",
+      "abstract": null,
+      "doi": "10.1016/j.imavis.2004.06.014",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 14,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "From Volume Medical Images to Quadratic Surface Patches",
+      "authors": [
+        "Ivan Bricault",
+        "Olivier Monga"
+      ],
+      "year": 1997,
+      "venue": "Computer Vision and Image Understanding",
+      "abstract": null,
+      "doi": "10.1006/cviu.1996.0501",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 16,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "From learning models of natural image patches to whole image restoration",
+      "authors": [
+        "Daniel Zoran",
+        "Yair Weiss"
+      ],
+      "year": 2011,
+      "venue": "2011 International Conference on Computer Vision",
+      "abstract": null,
+      "doi": "10.1109/iccv.2011.6126278",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1115,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Linear discriminant projection embedding based on patches alignment",
+      "authors": [
+        "Jianzhong Wang",
+        "Baoxue Zhang",
+        "Miao Qi",
+        "Jun Kong"
+      ],
+      "year": 2010,
+      "venue": "Image and Vision Computing",
+      "abstract": null,
+      "doi": "10.1016/j.imavis.2010.05.001",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 10,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Good Similar Patches for Image Denoising",
+      "authors": [
+        "Si Lu"
+      ],
+      "year": 2019,
+      "venue": "2019 IEEE Winter Conference on Applications of Computer Vision (WACV)",
+      "abstract": null,
+      "doi": "10.1109/wacv.2019.00205",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Vision transformer: To discover the “four secrets” of image patches",
+      "authors": [
+        "Tao Zhou",
+        "Yuxia Niu",
+        "Huiling Lu",
+        "Caiyue Peng",
+        "Yujie Guo",
+        "Huiyu Zhou"
+      ],
+      "year": 2024,
+      "venue": "Information Fusion",
+      "abstract": null,
+      "doi": "10.1016/j.inffus.2024.102248",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 49,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "MDTN: Multi-scale Dense Transformer Network for single-image super-resolution",
+      "authors": [
+        "Inderjeet",
+        "Jyotindra Singh Sahambi"
+      ],
+      "year": 2025,
+      "venue": "Image and Vision Computing",
+      "abstract": null,
+      "doi": "10.1016/j.imavis.2025.105779",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Efficient Vision Transformer via Token Merger.",
+      "authors": [
+        "Feng Z",
+        "Zhang S"
+      ],
+      "year": 2023,
+      "venue": "IEEE transactions on image processing : a publication of the IEEE Signal Processing Society",
+      "abstract": null,
+      "doi": "10.1109/TIP.2023.3293763",
+      "arxiv_id": null,
+      "pmid": "37440394",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "HGR-ViT: Hand Gesture Recognition with Vision Transformer.",
+      "authors": [
+        "Tan CK",
+        "Lim KM",
+        "Chang RKY",
+        "Lee CP",
+        "Alqahtani A"
+      ],
+      "year": 2023,
+      "venue": "Sensors (Basel, Switzerland)",
+      "abstract": null,
+      "doi": "10.3390/s23125555",
+      "arxiv_id": null,
+      "pmid": "37420722",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Multi-Channel Vision Transformer for Epileptic Seizure Prediction.",
+      "authors": [
+        "Hussein R",
+        "Lee S",
+        "Ward R"
+      ],
+      "year": 2022,
+      "venue": "Biomedicines",
+      "abstract": null,
+      "doi": "10.3390/biomedicines10071551",
+      "arxiv_id": null,
+      "pmid": "35884859",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 1154,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2213,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 572,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1633,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "c02d28d161af2198ca02ab10ed1b9076128c92905edacf3d8a1e4d18d36fbc89",
+  "identified_openalex": true
+}

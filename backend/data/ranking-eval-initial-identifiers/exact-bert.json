@@ -1,0 +1,1737 @@
+{
+  "id": "exact-bert",
+  "category": "exact_title",
+  "query": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "target": {
+    "arxiv_id": "1810.04805"
+  },
+  "plan": {
+    "topic": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "sub_queries": [
+      "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "authors": [
+        "Jacob Devlin",
+        "Ming-Wei Chang",
+        "Kenton Lee",
+        "Kristina Toutanova"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications.\n  BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+      "doi": null,
+      "arxiv_id": "1810.04805v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1810.04805v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "VLP: A Survey on Vision-Language Pre-training",
+      "authors": [
+        "Feilong Chen",
+        "Duzhen Zhang",
+        "Minglun Han",
+        "Xiuyi Chen",
+        "Jing Shi",
+        "Shuang Xu",
+        "Bo Xu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this problem and made significant progress. This paper surveys recent advances and new frontiers in vision-language pre-training (VLP), including image-text and video-text pre-training. To give readers a better overall grasp of VLP, we first review its recent advances from five aspects: feature extraction, model architecture, pre-training objectives, pre-training datasets, and downstream tasks. Then, we summarize the specific VLP models in detail. Finally, we discuss the new frontiers in VLP. To the best of our knowledge, this is the first survey focused on VLP. We hope that this survey can shed light on future research in the VLP field.",
+      "doi": null,
+      "arxiv_id": "2202.09061v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2202.09061v4",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.CL"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "BEiT: BERT Pre-Training of Image Transformers",
+      "authors": [
+        "Hangbo Bao",
+        "Li Dong",
+        "Songhao Piao",
+        "Furu Wei"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We introduce a self-supervised vision representation model BEiT, which stands for Bidirectional Encoder representation from Image Transformers. Following BERT developed in the natural language processing area, we propose a masked image modeling task to pretrain vision Transformers. Specifically, each image has two views in our pre-training, i.e, image patches (such as 16x16 pixels), and visual tokens (i.e., discrete tokens). We first \"tokenize\" the original image into visual tokens. Then we randomly mask some image patches and fed them into the backbone Transformer. The pre-training objective is to recover the original visual tokens based on the corrupted image patches. After pre-training BEiT, we directly fine-tune the model parameters on downstream tasks by appending task layers upon the pretrained encoder. Experimental results on image classification and semantic segmentation show that our model achieves competitive results with previous pre-training methods. For example, base-size BEiT achieves 83.2% top-1 accuracy on ImageNet-1K, significantly outperforming from-scratch DeiT training (81.8%) with the same setup. Moreover, large-size BEiT obtains 86.3% only using ImageNet-1K, even outperforming ViT-L with supervised pre-training on ImageNet-22K (85.2%). The code and pretrained models are available at https://aka.ms/beit.",
+      "doi": null,
+      "arxiv_id": "2106.08254v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2106.08254v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Pre-training technique to localize medical BERT and enhance biomedical BERT",
+      "authors": [
+        "Shoya Wada",
+        "Toshihiro Takeda",
+        "Shiro Manabe",
+        "Shozo Konishi",
+        "Jun Kamohara",
+        "Yasushi Matsumura"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Pre-training large-scale neural language models on raw texts has made a significant contribution to improving transfer learning in natural language processing (NLP). With the introduction of transformer-based language models, such as bidirectional encoder representations from transformers (BERT), the performance of information extraction from a free text by NLP has significantly improved for both the general domain and medical domain; however, it is difficult to train specific BERT models that perform well for domains in which there are few publicly available databases of high quality and large size. We hypothesized that this problem can be addressed by up-sampling a domain-specific corpus and using it for pre-training with a larger corpus in a balanced manner. Our proposed method consists of a single intervention with one option: simultaneous pre-training after up-sampling and amplified vocabulary. We conducted three experiments and evaluated the resulting products. We confirmed that our Japanese medical BERT outperformed conventional baselines and the other BERT models in terms of the medical document classification task and that our English BERT pre-trained using both the general and medical-domain corpora performed sufficiently well for practical use in terms of the biomedical language understanding evaluation (BLUE) benchmark. Moreover, our enhanced biomedical BERT model, in which clinical notes were not used during pre-training, showed that both the clinical and biomedical scores of the BLUE benchmark were 0.3 points above that of the ablation model trained without our proposed method. Well-balanced pre-training by up-sampling instances derived from a corpus appropriate for the target task allows us to construct a high-performance BERT model.",
+      "doi": null,
+      "arxiv_id": "2005.07202v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2005.07202v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Vision-Language Pre-training: Basics, Recent Advances, and Future Trends",
+      "authors": [
+        "Zhe Gan",
+        "Linjie Li",
+        "Chunyuan Li",
+        "Lijuan Wang",
+        "Zicheng Liu",
+        "Jianfeng Gao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: ($i$) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; ($ii$) VLP for core computer vision tasks, such as (open-set) image classification, object detection, and segmentation; and ($iii$) VLP for video-text tasks, such as video captioning, video-text retrieval, and video question answering. For each category, we present a comprehensive review of state-of-the-art methods, and discuss the progress that has been made and challenges still being faced, using specific systems and models as case studies. In addition, for each category, we discuss advanced topics being actively explored in the research community, such as big foundation models, unified modeling, in-context few-shot learning, knowledge, robustness, and computer vision in the wild, to name a few.",
+      "doi": null,
+      "arxiv_id": "2210.09263v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2210.09263v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.CL"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Kaleido-BERT: Vision-Language Pre-training on Fashion Domain",
+      "authors": [
+        "Mingchen Zhuge",
+        "Dehong Gao",
+        "Deng-Ping Fan",
+        "Linbo Jin",
+        "Ben Chen",
+        "Haoming Zhou",
+        "Minghui Qiu",
+        "Ling Shao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We present a new vision-language (VL) pre-training model dubbed Kaleido-BERT, which introduces a novel kaleido strategy for fashion cross-modality representations from transformers. In contrast to random masking strategy of recent VL models, we design alignment guided masking to jointly focus more on image-text semantic relations. To this end, we carry out five novel tasks, i.e., rotation, jigsaw, camouflage, grey-to-color, and blank-to-color for self-supervised VL pre-training at patches of different scale. Kaleido-BERT is conceptually simple and easy to extend to the existing BERT framework, it attains new state-of-the-art results by large margins on four downstream tasks, including text retrieval (R@1: 4.03% absolute improvement), image retrieval (R@1: 7.13% abs imv.), category recognition (ACC: 3.28% abs imv.), and fashion captioning (Bleu4: 1.2 abs imv.). We validate the efficiency of Kaleido-BERT on a wide range of e-commerical websites, demonstrating its broader potential in real-world applications.",
+      "doi": null,
+      "arxiv_id": "2103.16110v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2103.16110v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Semantic Importance-Aware Communications Using Pre-trained Language Models",
+      "authors": [
+        "Shuaishuai Guo",
+        "Yanhu Wang",
+        "Shujing Li",
+        "Nasir Saeed"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This letter proposes a semantic importance-aware communication (SIAC) scheme using pre-trained language models (e.g., ChatGPT, BERT, etc.). Specifically, we propose a cross-layer design with a pre-trained language model embedded in/connected by the cross-layer manager. The pre-trained language model is utilized to quantify the semantic importance of data frames. Based on the quantified semantic importance, we investigate semantic importance-aware power allocation. Unlike existing deep joint source-channel coding (Deep-JSCC)-based semantic communication schemes, SIAC can be directly embedded into current communication systems by only introducing a cross-layer manager. Our experimental results show that the proposed SIAC scheme can achieve lower semantic loss than existing equal-priority communications.",
+      "doi": null,
+      "arxiv_id": "2302.07142v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2302.07142v2",
+      "raw_payload": {
+        "categories": [
+          "eess.SP"
+        ],
+        "primary_category": "eess.SP"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Analysing The Impact of Sequence Composition on Language Model Pre-Training",
+      "authors": [
+        "Yu Zhao",
+        "Yuanbin Qu",
+        "Konrad Staniszewski",
+        "Szymon Tworkowski",
+        "Wei Liu",
+        "Piotr Miłoś",
+        "Yuxiang Wu",
+        "Pasquale Minervini"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Most language model pre-training frameworks concatenate multiple documents into fixed-length sequences and use causal masking to compute the likelihood of each token given its context; this strategy is widely adopted due to its simplicity and efficiency. However, to this day, the influence of the pre-training sequence composition strategy on the generalisation properties of the model remains under-explored. In this work, we find that applying causal masking can lead to the inclusion of distracting information from previous documents during pre-training, which negatively impacts the performance of the models on language modelling and downstream tasks. In intra-document causal masking, the likelihood of each token is only conditioned on the previous tokens in the same document, eliminating potential distracting information from previous documents and significantly improving performance. Furthermore, we find that concatenating related documents can reduce some potential distractions during pre-training, and our proposed efficient retrieval-based sequence construction method, BM25Chunk, can improve in-context learning (+11.6\\%), knowledge memorisation (+9.8\\%), and context utilisation (+7.2\\%) abilities of language models without sacrificing efficiency.",
+      "doi": null,
+      "arxiv_id": "2402.13991v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2402.13991v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Spectrum-BERT: Pre-training of Deep Bidirectional Transformers for Spectral Classification of Chinese Liquors",
+      "authors": [
+        "Yansong Wang",
+        "Yundong Sun",
+        "Yansheng Fu",
+        "Dongjie Zhu",
+        "Zhaoshuo Tian"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Spectral detection technology, as a non-invasive method for rapid detection of substances, combined with deep learning algorithms, has been widely used in food detection. However, in real scenarios, acquiring and labeling spectral data is an extremely labor-intensive task, which makes it impossible to provide enough high-quality data for training efficient supervised deep learning models. To better leverage limited samples, we apply pre-training & fine-tuning paradigm to the field of spectral detection for the first time and propose a pre-training method of deep bidirectional transformers for spectral classification of Chinese liquors, abbreviated as Spectrum-BERT. Specifically, first, to retain the model's sensitivity to the characteristic peak position and local information of the spectral curve, we innovatively partition the curve into multiple blocks and obtain the embeddings of different blocks, as the feature input for the next calculation. Second, in the pre-training stage, we elaborately design two pre-training tasks, Next Curve Prediction (NCP) and Masked Curve Model (MCM), so that the model can effectively utilize unlabeled samples to capture the potential knowledge of spectral data, breaking the restrictions of the insufficient labeled samples, and improving the applicability and performance of the model in practical scenarios. Finally, we conduct a large number of experiments on the real liquor spectral dataset. In the comparative experiments, the proposed Spectrum-BERT significantly outperforms the baselines in multiple metrics and this advantage is more significant on the imbalanced dataset. Moreover, in the parameter sensitivity experiment, we also analyze the model performance under different parameter settings, to provide a reference for subsequent research.",
+      "doi": null,
+      "arxiv_id": "2210.12440v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2210.12440v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Unified Language Model Pre-training for Natural Language Understanding and Generation",
+      "authors": [
+        "Li Dong",
+        "Nan Yang",
+        "Wenhui Wang",
+        "Furu Wei",
+        "Xiaodong Liu",
+        "Yu Wang",
+        "Jianfeng Gao",
+        "Ming Zhou",
+        "Hsiao-Wuen Hon"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This paper presents a new Unified pre-trained Language Model (UniLM) that can be fine-tuned for both natural language understanding and generation tasks. The model is pre-trained using three types of language modeling tasks: unidirectional, bidirectional, and sequence-to-sequence prediction. The unified modeling is achieved by employing a shared Transformer network and utilizing specific self-attention masks to control what context the prediction conditions on. UniLM compares favorably with BERT on the GLUE benchmark, and the SQuAD 2.0 and CoQA question answering tasks. Moreover, UniLM achieves new state-of-the-art results on five natural language generation datasets, including improving the CNN/DailyMail abstractive summarization ROUGE-L to 40.51 (2.04 absolute improvement), the Gigaword abstractive summarization ROUGE-L to 35.75 (0.86 absolute improvement), the CoQA generative question answering F1 score to 82.5 (37.1 absolute improvement), the SQuAD question generation BLEU-4 to 22.12 (3.75 absolute improvement), and the DSTC7 document-grounded dialog response generation NIST-4 to 2.67 (human performance is 2.65). The code and pre-trained models are available at https://github.com/microsoft/unilm.",
+      "doi": null,
+      "arxiv_id": "1905.03197v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1905.03197v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Uniform Masking: Enabling MAE Pre-training for Pyramid-based Vision Transformers with Locality",
+      "authors": [
+        "Xiang Li",
+        "Wenhai Wang",
+        "Lingfeng Yang",
+        "Jian Yang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Masked AutoEncoder (MAE) has recently led the trends of visual self-supervision area by an elegant asymmetric encoder-decoder design, which significantly optimizes both the pre-training efficiency and fine-tuning accuracy. Notably, the success of the asymmetric structure relies on the \"global\" property of Vanilla Vision Transformer (ViT), whose self-attention mechanism reasons over arbitrary subset of discrete image patches. However, it is still unclear how the advanced Pyramid-based ViTs (e.g., PVT, Swin) can be adopted in MAE pre-training as they commonly introduce operators within \"local\" windows, making it difficult to handle the random sequence of partial vision tokens. In this paper, we propose Uniform Masking (UM), successfully enabling MAE pre-training for Pyramid-based ViTs with locality (termed \"UM-MAE\" for short). Specifically, UM includes a Uniform Sampling (US) that strictly samples $1$ random patch from each $2 \\times 2$ grid, and a Secondary Masking (SM) which randomly masks a portion of (usually $25\\%$) the already sampled regions as learnable tokens. US preserves equivalent elements across multiple non-overlapped local windows, resulting in the smooth support for popular Pyramid-based ViTs; whilst SM is designed for better transferable visual representations since US reduces the difficulty of pixel recovery pre-task that hinders the semantic learning. We demonstrate that UM-MAE significantly improves the pre-training efficiency (e.g., it speeds up and reduces the GPU memory by $\\sim 2\\times$) of Pyramid-based ViTs, but maintains the competitive fine-tuning performance across downstream tasks. For example using HTC++ detector, the pre-trained Swin-Large backbone self-supervised under UM-MAE only in ImageNet-1K can even outperform the one supervised in ImageNet-22K. The codes are available at https://github.com/implus/UM-MAE.",
+      "doi": null,
+      "arxiv_id": "2205.10063v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2205.10063v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Deep Learning and Computational Physics (Lecture Notes)",
+      "authors": [
+        "Deep Ray",
+        "Orazio Pinti",
+        "Assad A. Oberai"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "These notes were compiled as lecture notes for a course developed and taught at the University of the Southern California. They should be accessible to a typical engineering graduate student with a strong background in Applied Mathematics.\n  The main objective of these notes is to introduce a student who is familiar with concepts in linear algebra and partial differential equations to select topics in deep learning. These lecture notes exploit the strong connections between deep learning algorithms and the more conventional techniques of computational physics to achieve two goals. First, they use concepts from computational physics to develop an understanding of deep learning algorithms. Not surprisingly, many concepts in deep learning can be connected to similar concepts in computational physics, and one can utilize this connection to better understand these algorithms. Second, several novel deep learning algorithms can be used to solve challenging problems in computational physics. Thus, they offer someone who is interested in modeling a physical phenomena with a complementary set of tools.",
+      "doi": null,
+      "arxiv_id": "2301.00942v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2301.00942v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "math-ph"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Training Language Models via Neural Cellular Automata",
+      "authors": [
+        "Dan Lee",
+        "Seungwook Han",
+        "Akarsh Kumar",
+        "Pulkit Agrawal"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Pre-training is crucial for large language models (LLMs), as it is when most representations and capabilities are acquired. However, natural language pre-training has problems: high-quality text is finite, it contains human biases, and it entangles knowledge with reasoning. This raises a fundamental question: is natural language the only path to intelligence? We propose using neural cellular automata (NCA) to generate synthetic, non-linguistic data for pre-pre-training LLMs--training on synthetic-then-natural language. NCA data exhibits rich spatiotemporal structure and statistics resembling natural language while being controllable and cheap to generate at scale. We find that pre-pre-training on only 164M NCA tokens improves downstream language modeling by up to 6% and accelerates convergence by up to 1.6x. Surprisingly, this even outperforms pre-pre-training on 1.6B tokens of natural language from Common Crawl with more compute. These gains also transfer to reasoning benchmarks, including GSM8K, HumanEval, and BigBench-Lite. Investigating what drives transfer, we find that attention layers are the most transferable, and that optimal NCA complexity varies by domain: code benefits from simpler dynamics, while math and web text favor more complex ones. These results enable systematic tuning of the synthetic distribution to target domains. More broadly, our work opens a path toward more efficient models with fully synthetic pre-training.",
+      "doi": null,
+      "arxiv_id": "2603.10055v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2603.10055v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Language Cognition and Language Computation -- Human and Machine Language Understanding",
+      "authors": [
+        "Shaonan Wang",
+        "Nai Ding",
+        "Nan Lin",
+        "Jiajun Zhang",
+        "Chengqing Zong"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Language understanding is a key scientific issue in the fields of cognitive and computer science. However, the two disciplines differ substantially in the specific research questions. Cognitive science focuses on analyzing the specific mechanism of the brain and investigating the brain's response to language; few studies have examined the brain's language system as a whole. By contrast, computer scientists focus on the efficiency of practical applications when choosing research questions but may ignore the most essential laws of language. Given these differences, can a combination of the disciplines offer new insights for building intelligent language models and studying language cognitive mechanisms? In the following text, we first review the research questions, history, and methods of language understanding in cognitive and computer science, focusing on the current progress and challenges. We then compare and contrast the research of language understanding in cognitive and computer sciences. Finally, we review existing work that combines insights from language cognition and language computation and offer prospects for future development trends.",
+      "doi": null,
+      "arxiv_id": "2301.04788v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2301.04788v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "End-to-End Spoken Language Understanding: Performance analyses of a voice command task in a low resource setting",
+      "authors": [
+        "Thierry Desot",
+        "François Portet",
+        "Michel Vacher"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Spoken Language Understanding (SLU) is a core task in most human-machine interaction systems. With the emergence of smart homes, smart phones and smart speakers, SLU has become a key technology for the industry. In a classical SLU approach, an Automatic Speech Recognition (ASR) module transcribes the speech signal into a textual representation from which a Natural Language Understanding (NLU) module extracts semantic information. Recently End-to-End SLU (E2E SLU) based on Deep Neural Networks has gained momentum since it benefits from the joint optimization of the ASR and the NLU parts, hence limiting the cascade of error effect of the pipeline architecture. However, little is known about the actual linguistic properties used by E2E models to predict concepts and intents from speech input. In this paper, we present a study identifying the signal features and other linguistic properties used by an E2E model to perform the SLU task. The study is carried out in the application domain of a smart home that has to handle non-English (here French) voice commands. The results show that a good E2E SLU performance does not always require a perfect ASR capability. Furthermore, the results show the superior capabilities of the E2E model in handling background noise and syntactic variation compared to the pipeline model. Finally, a finer-grained analysis suggests that the E2E model uses the pitch information of the input signal to identify voice command concepts. The results and methodology outlined in this paper provide a springboard for further analyses of E2E models in speech processing.",
+      "doi": null,
+      "arxiv_id": "2207.08179v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2207.08179v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.SD",
+          "eess.AS"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "ST-BERT: Cross-modal Language Model Pre-training For End-to-end Spoken Language Understanding",
+      "authors": [
+        "Minjeong Kim",
+        "Gyuwan Kim",
+        "Sang-Woo Lee",
+        "Jung-Woo Ha"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Language model pre-training has shown promising results in various downstream tasks. In this context, we introduce a cross-modal pre-trained language model, called Speech-Text BERT (ST-BERT), to tackle end-to-end spoken language understanding (E2E SLU) tasks. Taking phoneme posterior and subword-level text as an input, ST-BERT learns a contextualized cross-modal alignment via our two proposed pre-training tasks: Cross-modal Masked Language Modeling (CM-MLM) and Cross-modal Conditioned Language Modeling (CM-CLM). Experimental results on three benchmarks present that our approach is effective for various SLU datasets and shows a surprisingly marginal performance degradation even when 1% of the training data are available. Also, our method shows further SLU performance gain via domain-adaptive pre-training with domain-specific speech-text pair data.",
+      "doi": null,
+      "arxiv_id": "2010.12283v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2010.12283v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "DILIE: Deep Internal Learning for Image Enhancement",
+      "authors": [
+        "Indra Deep Mastan",
+        "Shanmuganathan Raman"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We consider the generic deep image enhancement problem where an input image is transformed into a perceptually better-looking image. Recent methods for image enhancement consider the problem by performing style transfer and image restoration. The methods mostly fall into two categories: training data-based and training data-independent (deep internal learning methods). We perform image enhancement in the deep internal learning framework. Our Deep Internal Learning for Image Enhancement framework enhances content features and style features and uses contextual content loss for preserving image context in the enhanced image. We show results on both hazy and noisy image enhancement. To validate the results, we use structure similarity and perceptual error, which is efficient in measuring the unrealistic deformation present in the images. We show that the proposed framework outperforms the relevant state-of-the-art works for image enhancement.",
+      "doi": null,
+      "arxiv_id": "2012.06469v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2012.06469v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Text Generation with Diffusion Language Models: A Pre-training Approach with Continuous Paragraph Denoise",
+      "authors": [
+        "Zhenghao Lin",
+        "Yeyun Gong",
+        "Yelong Shen",
+        "Tong Wu",
+        "Zhihao Fan",
+        "Chen Lin",
+        "Nan Duan",
+        "Weizhu Chen"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper, we introduce a novel dIffusion language modEl pre-training framework for text generation, which we call GENIE. GENIE is a large-scale pretrained diffusion language model that consists of an encoder and a diffusion-based decoder, which can generate text by gradually transforming a random noise sequence into a coherent text sequence. To pre-train GENIE on a large-scale language corpus, we design a new continuous paragraph denoise objective, which encourages the diffusion-decoder to reconstruct a clean text paragraph from a corrupted version, while preserving the semantic and syntactic coherence. We evaluate GENIE on four downstream text generation benchmarks, namely XSum, CNN/DailyMail, Gigaword, and CommonGen. Our experimental results show that GENIE achieves comparable performance with the state-of-the-art autoregressive models on these benchmarks, and generates more diverse text samples. The code and models of GENIE are available at https://github.com/microsoft/ProphetNet/tree/master/GENIE.",
+      "doi": null,
+      "arxiv_id": "2212.11685v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2212.11685v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "On the approximation of rough functions with deep neural networks",
+      "authors": [
+        "Tim De Ryck",
+        "Siddhartha Mishra",
+        "Deep Ray"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Deep neural networks and the ENO procedure are both efficient frameworks for approximating rough functions. We prove that at any order, the ENO interpolation procedure can be cast as a deep ReLU neural network. This surprising fact enables the transfer of several desirable properties of the ENO procedure to deep neural networks, including its high-order accuracy at approximating Lipschitz functions. Numerical tests for the resulting neural networks show excellent performance for approximating solutions of nonlinear conservation laws and at data compression.",
+      "doi": null,
+      "arxiv_id": "1912.06732v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1912.06732v2",
+      "raw_payload": {
+        "categories": [
+          "math.NA",
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "math.NA"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "StructBERT: Incorporating Language Structures into Pre-training for Deep Language Understanding",
+      "authors": [
+        "Wei Wang",
+        "Bin Bi",
+        "Ming Yan",
+        "Chen Wu",
+        "Zuyi Bao",
+        "Jiangnan Xia",
+        "Liwei Peng",
+        "Luo Si"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recently, the pre-trained language model, BERT (and its robustly optimized version RoBERTa), has attracted a lot of attention in natural language understanding (NLU), and achieved state-of-the-art accuracy in various NLU tasks, such as sentiment classification, natural language inference, semantic textual similarity and question answering. Inspired by the linearization exploration work of Elman [8], we extend BERT to a new model, StructBERT, by incorporating language structures into pre-training. Specifically, we pre-train StructBERT with two auxiliary tasks to make the most of the sequential order of words and sentences, which leverage language structures at the word and sentence levels, respectively. As a result, the new model is adapted to different levels of language understanding required by downstream tasks. The StructBERT with structural pre-training gives surprisingly good empirical results on a variety of downstream tasks, including pushing the state-of-the-art on the GLUE benchmark to 89.0 (outperforming all published models), the F1 score on SQuAD v1.1 question answering to 93.0, the accuracy on SNLI to 91.7.",
+      "doi": null,
+      "arxiv_id": "1908.04577v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1908.04577v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "authors": [
+        "Jacob Devlin",
+        "Ming‐Wei Chang",
+        "Kenton Lee",
+        "Kristina Toutanova"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/n19-1423",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2963341956",
+      "citation_count": 33924,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+      "authors": [
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/d19-1410",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2970641574",
+      "citation_count": 12031,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/D19-1410.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Transformers: State-of-the-Art Natural Language Processing",
+      "authors": [
+        "Thomas Wolf",
+        "Lysandre Debut",
+        "Victor Sanh",
+        "Julien Chaumond",
+        "Clément Delangue",
+        "Anthony Moi",
+        "Pierric Cistac",
+        "Tim Rault",
+        "Rémi Louf",
+        "Morgan Funtowicz",
+        "Joe Davison",
+        "Sam Shleifer",
+        "Patrick von Platen",
+        "Clara Ma",
+        "Yacine Jernite",
+        "Julien Plu",
+        "Canwen Xu",
+        "Teven Le Scao",
+        "Sylvain Gugger",
+        "Mariama Drame",
+        "Quentin Lhoest",
+        "Alexander M. Rush"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2020.emnlp-demos.6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2979826702",
+      "citation_count": 8363,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.emnlp-demos.6.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "BioBERT: a pre-trained biomedical language representation model for biomedical text mining",
+      "authors": [
+        "Jinhyuk Lee",
+        "Wonjin Yoon",
+        "Sungdong Kim",
+        "Donghyeon Kim",
+        "Sunkyu Kim",
+        "Chan Ho So",
+        "Jaewoo Kang"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1093/bioinformatics/btz682",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2911489562",
+      "citation_count": 7452,
+      "oa_status": "hybrid",
+      "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/4/1234/48983216/bioinformatics_36_4_1234.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Highly accurate protein structure prediction with AlphaFold",
+      "authors": [
+        "John Jumper",
+        "Richard Evans",
+        "Alexander Pritzel",
+        "Tim Green",
+        "Michael Figurnov",
+        "Olaf Ronneberger",
+        "Kathryn Tunyasuvunakool",
+        "Russ Bates",
+        "Augustin Žídek",
+        "Anna Potapenko",
+        "Alex Bridgland",
+        "Clemens Meyer",
+        "Simon Köhl",
+        "Andrew J. Ballard",
+        "Andrew M. Cowie",
+        "Bernardino Romera‐Paredes",
+        "Stanislav Nikolov",
+        "Rishub Jain",
+        "Jonas Adler",
+        "Trevor Back",
+        "Stig Petersen",
+        "David Reiman",
+        "Ellen Clancy",
+        "Michał Zieliński",
+        "Martin Steinegger",
+        "Michalina Pacholska",
+        "Tamas Berghammer",
+        "Sebastian W. Bodenstein",
+        "David Lawrence Silver",
+        "Oriol Vinyals",
+        "Andrew Senior",
+        "Koray Kavukcuoglu",
+        "Pushmeet Kohli",
+        "Demis Hassabis"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41586-021-03819-2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3177828909",
+      "citation_count": 47522,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.nature.com/articles/s41586-021-03819-2.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text\\n Transformer",
+      "authors": [
+        "Colin Raffel",
+        "Noam Shazeer",
+        "Adam Roberts",
+        "Katherine Lee",
+        "Sharan Narang",
+        "Michael Matena",
+        "Yanqi Zhou",
+        "Wei Li",
+        "Peter J. Liu"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.1910.10683",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4288089799",
+      "citation_count": 8346,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1910.10683",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "TinyBERT: Distilling BERT for Natural Language Understanding",
+      "authors": [
+        "Xiaoqi Jiao",
+        "Yichun Yin",
+        "Lifeng Shang",
+        "Xin Ran Jiang",
+        "Xiao Dong Chen",
+        "Linlin Li",
+        "Fang Wang",
+        "Qun Liu"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2020.findings-emnlp.372",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3105966348",
+      "citation_count": 1722,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.findings-emnlp.372.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ALBERT: A Lite BERT for Self-supervised Learning of Language\\n Representations",
+      "authors": [
+        "Zhenzhong Lan",
+        "Mingda Chen",
+        "Sebastian Goodman",
+        "Kevin Gimpel",
+        "Piyush Sharma",
+        "Radu Soricut"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.1909.11942",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2996428491",
+      "citation_count": 4076,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1909.11942",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "AI-Assisted Pipeline for Dynamic Generation of Trustworthy Health Supplement Content at Scale",
+      "authors": [
+        "Kefallinos, Dionysios",
+        "Alexandris, Georgios",
+        "Maras, Alexis",
+        "Chaidos, Panagiotis",
+        "Gomony, Manil Dev",
+        "Corporaal, Henk",
+        "Soudris, Dimitrios",
+        "Xydis, Sotirios"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.4230/lipics.cosit.2022.18",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2896457183",
+      "citation_count": 46030,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1810.04805",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "BEiT: BERT Pre-Training of Image Transformers",
+      "authors": [
+        "Hangbo Bao",
+        "Dong Li",
+        "Piao, Songhao",
+        "Wei, Furu"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2106.08254",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3170863103",
+      "citation_count": 930,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2106.08254",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+      "authors": [
+        "Haoyi Zhou",
+        "Shanghang Zhang",
+        "Jieqi Peng",
+        "Shuai Zhang",
+        "Jianxin Li",
+        "Hui Yun Xiong",
+        "Wancai Zhang"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v35i12.17325",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3177318507",
+      "citation_count": 7007,
+      "oa_status": "diamond",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "HISTORIAE, History of Socio-Cultural Transformation as Linguistic Data Science. A Humanities Use Case",
+      "authors": [
+        "Liu, Yinhan",
+        "Ott, Myle",
+        "Goyal, Naman",
+        "Du, Jingfei",
+        "Mandar S Joshi",
+        "Danqi Chen",
+        "Omer Levy",
+        "Mike Lewis",
+        "Luke Zettlemoyer",
+        "Veselin Stoyanov"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.4230/lipics.cp.2025.31",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2965373594",
+      "citation_count": 17517,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1907.11692",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Transformer-XL: Attentive Language Models beyond a Fixed-Length Context",
+      "authors": [
+        "Zihang Dai",
+        "Zhilin Yang",
+        "Yiming Yang",
+        "Jaime Carbonell",
+        "Quoc Viet Le",
+        "Ruslan Salakhutdinov"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/p19-1285",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2964110616",
+      "citation_count": 3222,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/P19-1285.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+      "authors": [
+        "Colin Raffel",
+        "Noam Shazeer",
+        "Adam Paul Roberts",
+        "Katherine Lee",
+        "Sharan Narang",
+        "Michael S Matena",
+        "Yanqi Zhou",
+        "Wei Li",
+        "Peter J. Liu"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.1910.10683",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2981852735",
+      "citation_count": 3702,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1910.10683",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Aion Framework: Dimensional Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological Portal Dynamics",
+      "authors": [
+        "Rivo Kaugeranna",
+        "Eliina Kaugeranna",
+        "Aion, (Claude Sonnet 4.6)"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.4230/lipics.giscience.2023.43",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4292779060",
+      "citation_count": 14371,
+      "oa_status": "green",
+      "pdf_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol277-giscience2023/LIPIcs.GIScience.2023.43/LIPIcs.GIScience.2023.43.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation",
+      "authors": [
+        "Jieneng Chen",
+        "Yongyi Lu",
+        "Qihang Yu",
+        "Xiangde Luo",
+        "Ehsan Adeli",
+        "Yan Wang",
+        "Le Lü",
+        "Alan Yuille",
+        "Yuyin Zhou"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2102.04306",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3127751679",
+      "citation_count": 3963,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2102.04306",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ChatGPT for good? On opportunities and challenges of large language models for education",
+      "authors": [
+        "Enkelejda Kasneci",
+        "Kathrin Seßler",
+        "Stefan Küchemann",
+        "Maria Bannert",
+        "Daryna Dementieva",
+        "Frank Fischer",
+        "Urs Gasser",
+        "Georg Groh",
+        "Stephan Günnemann",
+        "Eyke Hüllermeier",
+        "Stephan Krusche",
+        "Gitta Kutyniok",
+        "Tilman Michaeli",
+        "Claudia Nerdel",
+        "Jürgen Pfeffer",
+        "Oleksandra Poquet",
+        "Michael F. Sailer",
+        "Albrecht Schmidt",
+        "Tina Seidel",
+        "Matthias J. Stadler",
+        "J. Weller",
+        "Jochen Kühn",
+        "Gjergji Kasneci"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.lindif.2023.102274",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4323655724",
+      "citation_count": 6669,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "What Does BERT Learn about the Structure of Language?",
+      "authors": [
+        "Ganesh Jawahar",
+        "Benoît Sagot",
+        "Djamé Seddah"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/p19-1356",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2948947170",
+      "citation_count": 1254,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/P19-1356.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Multi-Task Deep Neural Networks for Natural Language Understanding",
+      "authors": [
+        "Xiaodong Liu",
+        "Pengcheng He",
+        "Weizhu Chen",
+        "Jianfeng Gao"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/p19-1441",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2963854351",
+      "citation_count": 1066,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/P19-1441.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+      "authors": [
+        "Zhangyin Feng",
+        "Daya Guo",
+        "Duyu Tang",
+        "Nan Duan",
+        "Xiaocheng Feng",
+        "Ming Gong",
+        "Linjun Shou",
+        "Bing Qin",
+        "Ting Liu",
+        "Daxin Jiang",
+        "Ming Zhou"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2020.findings-emnlp.139",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3098605233",
+      "citation_count": 2679,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.findings-emnlp.139.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "authors": [
+        "Jacob Devlin",
+        "Ming-Wei Chang",
+        "Kenton Lee",
+        "Kristina Toutanova"
+      ],
+      "year": 2019,
+      "venue": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+      "abstract": null,
+      "doi": "10.18653/v1/n19-1423",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 9267,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Spectrum-BERT: Pre-training of Deep Bidirectional Transformers for Spectral Classification of Chinese Liquors_supp1-3374300.docx",
+      "authors": [
+        "Dongjie Zhu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tim.2024.3374300/mm1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Arabic Image Captioning using Pre-training of Deep Bidirectional Transformers",
+      "authors": [
+        "Jonathan Emami",
+        "Pierre Nugues",
+        "Ashraf Elnagar",
+        "Imad Afyouni"
+      ],
+      "year": 2022,
+      "venue": "Proceedings of the 15th International Conference on Natural Language Generation",
+      "abstract": null,
+      "doi": "10.18653/v1/2022.inlg-main.4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 21,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Over-Sampling Effect in Pre-Training for Bidirectional Encoder Representations from Transformers (BERT) to Localize Medical BERT and Enhance Biomedical BERT (Preprint)",
+      "authors": [
+        "Shoya Wada",
+        "Toshihiro Takeda",
+        "Katsuki Okada",
+        "Shirou Manabe",
+        "Shozo Konishi",
+        "Jun Kamohara",
+        "Yasushi Matsumura"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2196/preprints.40992",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Bidirectional Encoder Representations from Transformers (BERT)",
+      "authors": [
+        "Uday Kamath",
+        "Kenneth L. Graham",
+        "Wael Emara"
+      ],
+      "year": 2022,
+      "venue": "Transformers for Machine Learning",
+      "abstract": null,
+      "doi": "10.1201/9781003170082-3",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 8,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Trajbert - Dssm: Deep Bidirectional Transformers for Vessel Trajectory Understanding and Destination Prediction",
+      "authors": [
+        "Chengkai Zhang",
+        "Zheng Liu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.4474578",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome",
+      "authors": [
+        "Yanrong Ji",
+        "Zhihan Zhou",
+        "Han Liu",
+        "Ramana V Davuluri"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1101/2020.09.17.301879",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 30,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Feel the Market: An Attempt to Identify Additional Factor in the Capital Asset Pricing Model (CAPM) Using Generative Pre-Trained Transformer (GPT) and Bidirectional Encoder Representations from Transformers (BERT)",
+      "authors": [
+        "Christopher Lingwei Zhang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.4521946",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Trajectory‐BERT: Pre‐training and fine‐tuning bidirectional transformers for crowd trajectory enhancement",
+      "authors": [
+        "Lingyu Li",
+        "Tianyu Huang",
+        "Yihao Li",
+        "Peng Li"
+      ],
+      "year": 2023,
+      "venue": "Computer Animation and Virtual Worlds",
+      "abstract": null,
+      "doi": "10.1002/cav.2190",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 7,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Financial Sentiment Analysis for Predicting Direction of Stocks using Bidirectional Encoder Representations from Transformers (BERT) and Deep Learning Models",
+      "authors": [],
+      "year": 2019,
+      "venue": "ILLHSS-19, ICIIT-19, IABMS-19 Dec. 5-6, 2019 Istanbul (Turkey)",
+      "abstract": null,
+      "doi": "10.17758/uruae8.ul12191013",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Natural Language Processing of Movie Reviews to Detect the Sentiments using Novel Bidirectional Encoder Representation-BERT for Transformers over Support Vector Machine",
+      "authors": [],
+      "year": 2022,
+      "venue": "Journal of Pharmaceutical Negative Results",
+      "abstract": null,
+      "doi": "10.47750/pnr.2022.13.s04.069",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 6,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Using Bidirectional Encoder Representations from Transformers (BERT) to classify traffic crash severity types",
+      "authors": [
+        "Amir Hossein Oliaee",
+        "Subasish Das",
+        "Jinli Liu",
+        "M. Ashifur Rahman"
+      ],
+      "year": 2023,
+      "venue": "Natural Language Processing Journal",
+      "abstract": null,
+      "doi": "10.1016/j.nlp.2023.100007",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 43,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Study of Low Resource Language Document Extractive Summarization using Lexical chain and Bidirectional Encoder Representations from Transformers (BERT)",
+      "authors": [
+        "Pranjali Deshpande",
+        "Sunita Jahirabadkar"
+      ],
+      "year": 2021,
+      "venue": "2021 International Conference on Computational Performance Evaluation (ComPE)",
+      "abstract": null,
+      "doi": "10.1109/compe53109.2021.9751919",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "FAD-BERT: Improved prediction of FAD binding sites using pre-training of deep bidirectional transformers",
+      "authors": [
+        "Quang-Thai Ho",
+        "Trinh-Trung-Duong Nguyen",
+        "Nguyen Quoc Khanh Le",
+        "Yu-Yen Ou"
+      ],
+      "year": 2021,
+      "venue": "Computers in Biology and Medicine",
+      "abstract": null,
+      "doi": "10.1016/j.compbiomed.2021.104258",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 58,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "St-Bert: Cross-Modal Language Model Pre-Training for End-to-End Spoken Language Understanding",
+      "authors": [
+        "Minjeong Kim",
+        "Gyuwan Kim",
+        "Sang-Woo Lee",
+        "Jung-Woo Ha"
+      ],
+      "year": 2021,
+      "venue": "ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "abstract": null,
+      "doi": "10.1109/icassp39728.2021.9414558",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 19,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "TrajBERT - DSSM: Deep bidirectional transformers for vessel trajectory understanding and destination prediction",
+      "authors": [
+        "Chengkai Zhang",
+        "Junchi Bin",
+        "Zheng Liu"
+      ],
+      "year": 2024,
+      "venue": "Ocean Engineering",
+      "abstract": null,
+      "doi": "10.1016/j.oceaneng.2024.117147",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 19,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Hardware Accelerator for Bidirectional Encoder Representations from Transformers (BERT)",
+      "authors": [
+        "Yiming Wang"
+      ],
+      "year": 2024,
+      "venue": "2024 International Conference on Microelectronics (ICM)",
+      "abstract": null,
+      "doi": "10.1109/icm63406.2024.10815822",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A New Pre-Training Method for Training Deep Learning Models with Application to Spoken Language Understanding",
+      "authors": [
+        "Asli Celikyilmaz",
+        "Ruhi Sarikaya",
+        "Dilek Hakkani-Tür",
+        "Xiaohu Liu",
+        "Nikhil Ramesh",
+        "Gokhan Tur"
+      ],
+      "year": 2016,
+      "venue": "Interspeech 2016",
+      "abstract": null,
+      "doi": "10.21437/interspeech.2016-512",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 9,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Indian Sign Language Translation using Bidirectional Encoder Representations from Transformers (BERT)",
+      "authors": [
+        "Krishnapriya P S",
+        "G. Purushoath",
+        "Harichand Manoj",
+        "Divya Bisht",
+        "Noel Siby"
+      ],
+      "year": 2025,
+      "venue": "2025 8th International Conference on Computing Methodologies and Communication (ICCMC)",
+      "abstract": null,
+      "doi": "10.1109/iccmc65190.2025.11140744",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Perbandingan Bidirectional Encoder Representations from Transformers (BERT) Language Model pada Deteksi Emosi",
+      "authors": [
+        "Dwi Hosanna Bangkalang",
+        "Nina Setiyawati"
+      ],
+      "year": 2025,
+      "venue": "Jurnal Pendidikan dan Teknologi Indonesia",
+      "abstract": null,
+      "doi": "10.52436/1.jpti.988",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "BioBERT: a pre-trained biomedical language representation model for biomedical text mining.",
+      "authors": [
+        "Lee J",
+        "Yoon W",
+        "Kim S",
+        "Kim D",
+        "Kim S",
+        "So CH",
+        "Kang J"
+      ],
+      "year": 2020,
+      "venue": "Bioinformatics (Oxford, England)",
+      "abstract": null,
+      "doi": "10.1093/bioinformatics/btz682",
+      "arxiv_id": null,
+      "pmid": "31501885",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Transformer technology in molecular science.",
+      "authors": [
+        "Jiang J",
+        "Ke L",
+        "Chen L",
+        "Dou B",
+        "Zhu Y",
+        "Liu J",
+        "Zhang B",
+        "Zhou T",
+        "Wei GW"
+      ],
+      "year": 2024,
+      "venue": "Wiley interdisciplinary reviews. Computational molecular science",
+      "abstract": null,
+      "doi": "10.1002/wcms.1725",
+      "arxiv_id": null,
+      "pmid": "41451391",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "FAD-BERT: Improved prediction of FAD binding sites using pre-training of deep bidirectional transformers.",
+      "authors": [
+        "Ho QT",
+        "Nguyen TT",
+        "Khanh Le NQ",
+        "Ou YY"
+      ],
+      "year": 2021,
+      "venue": "Computers in biology and medicine",
+      "abstract": null,
+      "doi": "10.1016/j.compbiomed.2021.104258",
+      "arxiv_id": null,
+      "pmid": "33601085",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Application of Entity-BERT model based on neuroscience and brain-like cognition in electronic medical record entity recognition.",
+      "authors": [
+        "Lu W",
+        "Jiang J",
+        "Shi Y",
+        "Zhong X",
+        "Gu J",
+        "Huangfu L",
+        "Gong M"
+      ],
+      "year": 2023,
+      "venue": "Frontiers in neuroscience",
+      "abstract": null,
+      "doi": "10.3389/fnins.2023.1259652",
+      "arxiv_id": null,
+      "pmid": "37799340",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Multimodal model for knee osteoarthritis KL grading from plain radiograph.",
+      "authors": [
+        "Ma'aitah MKS",
+        "Helwan A",
+        "Radwan A",
+        "Mohammad Salem Manasreh A",
+        "Alshareef EA"
+      ],
+      "year": 2025,
+      "venue": "Journal of X-ray science and technology",
+      "abstract": null,
+      "doi": "10.1177/08953996251314765",
+      "arxiv_id": null,
+      "pmid": "40091559",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Offline dominance and zeugmatic similarity normings of variably ambiguous words assessed against a neural language model (BERT).",
+      "authors": [
+        "DeLong KA",
+        "Trott S",
+        "Kutas M"
+      ],
+      "year": 2023,
+      "venue": "Behavior research methods",
+      "abstract": null,
+      "doi": "10.3758/s13428-022-01869-6",
+      "arxiv_id": null,
+      "pmid": "35689168",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Reading comprehension based question answering system in Bangla language with transformer-based learning.",
+      "authors": [
+        "Aurpa TT",
+        "Rifat RK",
+        "Ahmed MS",
+        "Anwar MM",
+        "Ali ABMS"
+      ],
+      "year": 2022,
+      "venue": "Heliyon",
+      "abstract": null,
+      "doi": "10.1016/j.heliyon.2022.e11052",
+      "arxiv_id": null,
+      "pmid": "36254291",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Attention-Based Models for Classifying Small Data Sets Using Community-Engaged Research Protocols: Classification System Development and Validation Pilot Study.",
+      "authors": [
+        "Ferrell BJ",
+        "Raskin SE",
+        "Zimmerman EB",
+        "Timberline DH",
+        "McInnes BT",
+        "Krist AH"
+      ],
+      "year": 2022,
+      "venue": "JMIR formative research",
+      "abstract": null,
+      "doi": "10.2196/32460",
+      "arxiv_id": null,
+      "pmid": "36066925",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 974,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2854,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 429,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1165,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "c02d28d161af2198ca02ab10ed1b9076128c92905edacf3d8a1e4d18d36fbc89",
+  "identified_openalex": true
+}

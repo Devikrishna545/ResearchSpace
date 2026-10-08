@@ -1,0 +1,1890 @@
+{
+  "id": "exact-diffusion",
+  "category": "exact_title",
+  "query": "Denoising Diffusion Probabilistic Models",
+  "target": {
+    "arxiv_id": "2006.11239"
+  },
+  "plan": {
+    "topic": "Denoising Diffusion Probabilistic Models",
+    "sub_queries": [
+      "Denoising Diffusion Probabilistic Models"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "GeneOH Diffusion: Towards Generalizable Hand-Object Interaction Denoising via Denoising Diffusion",
+      "authors": [
+        "Xueyi Liu",
+        "Li Yi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this work, we tackle the challenging problem of denoising hand-object interactions (HOI). Given an erroneous interaction sequence, the objective is to refine the incorrect hand trajectory to remove interaction artifacts for a perceptually realistic sequence. This challenge involves intricate interaction noise, including unnatural hand poses and incorrect hand-object relations, alongside the necessity for robust generalization to new interactions and diverse noise patterns. We tackle those challenges through a novel approach, GeneOH Diffusion, incorporating two key designs: an innovative contact-centric HOI representation named GeneOH and a new domain-generalizable denoising scheme. The contact-centric representation GeneOH informatively parameterizes the HOI process, facilitating enhanced generalization across various HOI scenarios. The new denoising scheme consists of a canonical denoising model trained to project noisy data samples from a whitened noise space to a clean data manifold and a \"denoising via diffusion\" strategy which can handle input trajectories with various noise patterns by first diffusing them to align with the whitened noise space and cleaning via the canonical denoiser. Extensive experiments on four benchmarks with significant domain variations demonstrate the superior effectiveness of our method. GeneOH Diffusion also shows promise for various downstream applications. Project website: https://meowuu7.github.io/GeneOH-Diffusion/.",
+      "doi": null,
+      "arxiv_id": "2402.14810v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2402.14810v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.GR",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Denoising Monte Carlo Renders with Diffusion Models",
+      "authors": [
+        "Vaibhav Vavilala",
+        "Rahul Vasanth",
+        "David Forsyth"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Physically-based renderings contain Monte Carlo noise, with variance that increases as the number of rays per pixel decreases. This noise, while zero-mean for good modern renderers, can have heavy tails (most notably, for scenes containing specular or refractive objects). Learned methods for restoring low fidelity renders are highly developed, because suppressing render noise means one can save compute and use fast renders with few rays per pixel. We demonstrate that a diffusion model can denoise low fidelity renders successfully. Furthermore, our method can be conditioned on a variety of natural render information, and this conditioning helps performance. Quantitative experiments show that our method is competitive with SOTA across a range of sampling rates. Qualitative examination of the reconstructions suggests that the image prior applied by a diffusion method strongly favors reconstructions that are like real images -- so have straight shadow boundaries, curved specularities and no fireflies.",
+      "doi": null,
+      "arxiv_id": "2404.00491v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2404.00491v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "RePaint: Inpainting using Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Andreas Lugmayr",
+        "Martin Danelljan",
+        "Andres Romero",
+        "Fisher Yu",
+        "Radu Timofte",
+        "Luc Van Gool"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Free-form inpainting is the task of adding new content to an image in the regions specified by an arbitrary binary mask. Most existing approaches train for a certain distribution of masks, which limits their generalization capabilities to unseen mask types. Furthermore, training with pixel-wise and perceptual losses often leads to simple textural extensions towards the missing areas instead of semantically meaningful generation. In this work, we propose RePaint: A Denoising Diffusion Probabilistic Model (DDPM) based inpainting approach that is applicable to even extreme masks. We employ a pretrained unconditional DDPM as the generative prior. To condition the generation process, we only alter the reverse diffusion iterations by sampling the unmasked regions using the given image information. Since this technique does not modify or condition the original DDPM network itself, the model produces high-quality and diverse output images for any inpainting form. We validate our method for both faces and general-purpose image inpainting using standard and extreme masks.\n  RePaint outperforms state-of-the-art Autoregressive, and GAN approaches for at least five out of six mask distributions.\n  Github Repository: git.io/RePaint",
+      "doi": null,
+      "arxiv_id": "2201.09865v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2201.09865v4",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "qMRI Diffuser: Quantitative T1 Mapping of the Brain using a Denoising Diffusion Probabilistic Model",
+      "authors": [
+        "Shishuai Wang",
+        "Hua Ma",
+        "Juan A. Hernandez-Tamames",
+        "Stefan Klein",
+        "Dirk H. J. Poot"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Quantitative MRI (qMRI) offers significant advantages over weighted images by providing objective parameters related to tissue properties. Deep learning-based methods have demonstrated effectiveness in estimating quantitative maps from series of weighted images. In this study, we present qMRI Diffuser, a novel approach to qMRI utilising deep generative models. Specifically, we implemented denoising diffusion probabilistic models (DDPM) for T1 quantification in the brain, framing the estimation of quantitative maps as a conditional generation task. The proposed method is compared with the residual neural network (ResNet) and the recurrent inference machine (RIM) on both phantom and in vivo data. The results indicate that our method achieves improved accuracy and precision in parameter estimation, along with superior visual performance. Moreover, our method inherently incorporates stochasticity, enabling straightforward quantification of uncertainty. Hence, the proposed method holds significant promise for quantitative MR mapping.",
+      "doi": null,
+      "arxiv_id": "2407.16477v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2407.16477v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Conditional Variational Diffusion Models",
+      "authors": [
+        "Gabriel della Maggiora",
+        "Luis Alberto Croquevielle",
+        "Nikita Deshpande",
+        "Harry Horsley",
+        "Thomas Heinis",
+        "Artur Yakimovich"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Inverse problems aim to determine parameters from observations, a crucial task in engineering and science. Lately, generative models, especially diffusion models, have gained popularity in this area for their ability to produce realistic solutions and their good mathematical properties. Despite their success, an important drawback of diffusion models is their sensitivity to the choice of variance schedule, which controls the dynamics of the diffusion process. Fine-tuning this schedule for specific applications is crucial but time-costly and does not guarantee an optimal result. We propose a novel approach for learning the schedule as part of the training process. Our method supports probabilistic conditioning on data, provides high-quality solutions, and is flexible, proving able to adapt to different applications with minimum overhead. This approach is tested in two unrelated inverse problems: super-resolution microscopy and quantitative phase imaging, yielding comparable or superior results to previous methods and fine-tuned diffusion models. We conclude that fine-tuning the schedule by experimentation should be avoided because it can be learned during training in a stable way that yields better results.",
+      "doi": null,
+      "arxiv_id": "2312.02246v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2312.02246v4",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A Tutorial on Diffusion Theory: From Differential Equations to Diffusion Models",
+      "authors": [
+        "Jiayi Fu",
+        "Yuxia Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Diffusion models have emerged as a dominant framework for generative modeling, but their mathematical foundations are often presented separately through diffusion probabilistic models, score-based modeling, stochastic differential equations, and numerical sampling methods. We write this tutorial to provide a unified and self-contained account of these viewpoints from the perspective of differential equations. Starting from a conditional Gaussian noising process, we derive ordinary differential equation (ODE) and stochastic differential equation (SDE) representations, pass to the corresponding marginal forward dynamics, and then obtain the reverse-time SDE and probability-flow ODE that make generation possible. We show that the central unknown quantity in reverse sampling is the marginal score, explain how score matching becomes the standard denoising objective under a noise-prediction parameterization, and discuss practical reverse-time sampling and guidance. We further place DDPM, DDIM, flow matching, and score-based SDEs in a common framework, and conclude with diffusion language models in continuous embedding space together with a brief discussion of discrete masked-token diffusion. The tutorial is intended as a bridge between the analytical foundations of diffusion processes and the modern generative algorithms built upon them.",
+      "doi": null,
+      "arxiv_id": "2605.22586v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2605.22586v3",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "cs.CL"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Unified Discrete Diffusion for Categorical Data",
+      "authors": [
+        "Lingxiao Zhao",
+        "Xueying Ding",
+        "Lijun Yu",
+        "Leman Akoglu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Discrete diffusion models have seen a surge of attention with applications on naturally discrete data such as language and graphs. Although discrete-time discrete diffusion has been established for a while, only recently Campbell et al. (2022) introduced the first framework for continuous-time discrete diffusion. However, their training and sampling processes differ significantly from the discrete-time version, necessitating nontrivial approximations for tractability. In this paper, we first present a series of mathematical simplifications of the variational lower bound that enable more accurate and easy-to-optimize training for discrete diffusion. In addition, we derive a simple formulation for backward denoising that enables exact and accelerated sampling, and importantly, an elegant unification of discrete-time and continuous-time discrete diffusion. Thanks to simpler analytical formulations, both forward and now also backward probabilities can flexibly accommodate any noise distribution, including different noise distributions for multi-element objects. Experiments show that our proposed USD3 (for Unified Simplified Discrete Denoising Diffusion) outperform all SOTA baselines on established datasets. We open-source our unified code at https://github.com/LingxiaoShawn/USD3.",
+      "doi": null,
+      "arxiv_id": "2402.03701v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2402.03701v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Jonathan Ho",
+        "Ajay Jain",
+        "Pieter Abbeel"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and our models naturally admit a progressive lossy decompression scheme that can be interpreted as a generalization of autoregressive decoding. On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality similar to ProgressiveGAN. Our implementation is available at https://github.com/hojonathanho/diffusion",
+      "doi": null,
+      "arxiv_id": "2006.11239v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2006.11239v2",
+      "raw_payload": {
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Uncertainty-aware Surrogate Models for Airfoil Flow Simulations with Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Qiang Liu",
+        "Nils Thuerey"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Leveraging neural networks as surrogate models for turbulence simulation is a topic of growing interest. At the same time, embodying the inherent uncertainty of simulations in the predictions of surrogate models remains very challenging. The present study makes a first attempt to use denoising diffusion probabilistic models (DDPMs) to train an uncertainty-aware surrogate model for turbulence simulations. Due to its prevalence, the simulation of flows around airfoils with various shapes, Reynolds numbers, and angles of attack is chosen as the learning objective. Our results show that DDPMs can successfully capture the whole distribution of solutions and, as a consequence, accurately estimate the uncertainty of the simulations. The performance of DDPMs is also compared with varying baselines in the form of Bayesian neural networks and heteroscedastic models. Experiments demonstrate that DDPMs outperform the other methods regarding a variety of accuracy metrics. Besides, it offers the advantage of providing access to the complete distributions of uncertainties rather than providing a set of parameters. As such, it can yield realistic and detailed samples from the distribution of solutions. We also evaluate an emerging generative modeling variant, flow matching, in comparison to regular diffusion models. The results demonstrate that flow matching addresses the problem of slow sampling speed typically associated with diffusion models. As such, it offers a promising new paradigm for uncertainty quantification with generative models.",
+      "doi": null,
+      "arxiv_id": "2312.05320v4",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2312.05320v4",
+      "raw_payload": {
+        "categories": [
+          "physics.flu-dyn",
+          "cs.LG"
+        ],
+        "primary_category": "physics.flu-dyn"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Unrestrained Simplex Denoising for Discrete Data. A Non-Markovian Approach Applied to Graph Generation",
+      "authors": [
+        "Yoann Boget",
+        "Alexandros Kalousis"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Denoising models such as Diffusion or Flow Matching have recently advanced generative modeling for discrete structures, yet most approaches either operate directly in the discrete state space, causing abrupt state changes. We introduce simplex denoising, a simple yet effective generative framework that operates on the probability simplex. The key idea is a non-Markovian noising scheme in which, for a given clean data point, noisy representations at different times are conditionally independent. While preserving the theoretical guarantees of denoising-based generative models, our method removes unnecessary constraints, thereby improving performance and simplifying the formulation. Empirically, \\emph{unrestrained simplex denoising} surpasses strong discrete diffusion and flow-matching baselines across synthetic and real-world graph benchmarks. These results highlight the probability simplex as an effective framework for discrete generative modeling.",
+      "doi": null,
+      "arxiv_id": "2603.28572v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2603.28572v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Controllable Generation with Text-to-Image Diffusion Models: A Survey",
+      "authors": [
+        "Pu Cao",
+        "Feng Zhou",
+        "Qing Song",
+        "Lu Yang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In the rapidly advancing realm of visual generation, diffusion models have revolutionized the landscape, marking a significant shift in capabilities with their impressive text-guided generative functions. However, relying solely on text for conditioning these models does not fully cater to the varied and complex requirements of different applications and scenarios. Acknowledging this shortfall, a variety of studies aim to control pre-trained text-to-image (T2I) models to support novel conditions. In this survey, we undertake a thorough review of the literature on controllable generation with T2I diffusion models, covering both the theoretical foundations and practical advancements in this domain. Our review begins with a brief introduction to the basics of denoising diffusion probabilistic models (DDPMs) and widely used T2I diffusion models. We then reveal the controlling mechanisms of diffusion models, theoretically analyzing how novel conditions are introduced into the denoising process for conditional generation. Additionally, we offer a detailed overview of research in this area, organizing it into distinct categories from the condition perspective: generation with specific conditions, generation with multiple conditions, and universal controllable generation. For an exhaustive list of the controllable generation literature surveyed, please refer to our curated repository at https://github.com/PRIV-Creation/Awesome-Controllable-T2I-Diffusion-Models.",
+      "doi": null,
+      "arxiv_id": "2403.04279v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2403.04279v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "ResEnsemble-DDPM: Residual Denoising Diffusion Probabilistic Models for Ensemble Learning",
+      "authors": [
+        "Shi Zhenning",
+        "Dong Changsheng",
+        "Xie Xueshuo",
+        "Pan Bin",
+        "He Along",
+        "Li Tao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Nowadays, denoising diffusion probabilistic models have been adapted for many image segmentation tasks. However, existing end-to-end models have already demonstrated remarkable capabilities. Rather than using denoising diffusion probabilistic models alone, integrating the abilities of both denoising diffusion probabilistic models and existing end-to-end models can better improve the performance of image segmentation. Based on this, we implicitly introduce residual term into the diffusion process and propose ResEnsemble-DDPM, which seamlessly integrates the diffusion model and the end-to-end model through ensemble learning. The output distributions of these two models are strictly symmetric with respect to the ground truth distribution, allowing us to integrate the two models by reducing the residual term. Experimental results demonstrate that our ResEnsemble-DDPM can further improve the capabilities of existing models. Furthermore, its ensemble learning strategy can be generalized to other downstream tasks in image generation and get strong competitiveness.",
+      "doi": null,
+      "arxiv_id": "2312.01682v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2312.01682v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Denoising Functional Maps: Diffusion Models for Shape Correspondence",
+      "authors": [
+        "Aleksei Zhuravlev",
+        "Zorah Lähner",
+        "Vladislav Golyanik"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Estimating correspondences between pairs of deformable shapes remains a challenging problem. Despite substantial progress, existing methods lack broad generalization capabilities and require category-specific training data. To address these limitations, we propose a fundamentally new approach to shape correspondence based on denoising diffusion models. In our method, a diffusion model learns to directly predict the functional map, a low-dimensional representation of a point-wise map between shapes. We use a large dataset of synthetic human meshes for training and employ two steps to reduce the number of functional maps that need to be learned. First, the maps refer to a template rather than shape pairs. Second, the functional map is defined in a basis of eigenvectors of the Laplacian, which is not unique due to sign ambiguity. Therefore, we introduce an unsupervised approach to select a specific basis by correcting the signs of eigenvectors based on surface features. Our model achieves competitive performance on standard human datasets, meshes with anisotropic connectivity, non-isometric humanoid shapes, as well as animals compared to existing descriptor-based and large-scale shape deformation methods. See our project page for the source code and the datasets.",
+      "doi": null,
+      "arxiv_id": "2503.01845v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2503.01845v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Fixed Point Diffusion Models",
+      "authors": [
+        "Xingjian Bai",
+        "Luke Melas-Kyriazi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We introduce the Fixed Point Diffusion Model (FPDM), a novel approach to image generation that integrates the concept of fixed point solving into the framework of diffusion-based generative modeling. Our approach embeds an implicit fixed point solving layer into the denoising network of a diffusion model, transforming the diffusion process into a sequence of closely-related fixed point problems. Combined with a new stochastic training method, this approach significantly reduces model size, reduces memory usage, and accelerates training. Moreover, it enables the development of two new techniques to improve sampling efficiency: reallocating computation across timesteps and reusing fixed point solutions between timesteps. We conduct extensive experiments with state-of-the-art models on ImageNet, FFHQ, CelebA-HQ, and LSUN-Church, demonstrating substantial improvements in performance and efficiency. Compared to the state-of-the-art DiT model, FPDM contains 87% fewer parameters, consumes 60% less memory during training, and improves image generation quality in situations where sampling computation or time is limited. Our code and pretrained models are available at https://lukemelas.github.io/fixed-point-diffusion-models.",
+      "doi": null,
+      "arxiv_id": "2401.08741v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2401.08741v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Exploring Attribute Variations in Style-based GANs using Diffusion Models",
+      "authors": [
+        "Rishubh Parihar",
+        "Prasanna Balaji",
+        "Raghav Magazine",
+        "Sarthak Vora",
+        "Tejan Karmali",
+        "Varun Jampani",
+        "R. Venkatesh Babu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Existing attribute editing methods treat semantic attributes as binary, resulting in a single edit per attribute. However, attributes such as eyeglasses, smiles, or hairstyles exhibit a vast range of diversity. In this work, we formulate the task of \\textit{diverse attribute editing} by modeling the multidimensional nature of attribute edits. This enables users to generate multiple plausible edits per attribute. We capitalize on disentangled latent spaces of pretrained GANs and train a Denoising Diffusion Probabilistic Model (DDPM) to learn the latent distribution for diverse edits. Specifically, we train DDPM over a dataset of edit latent directions obtained by embedding image pairs with a single attribute change. This leads to latent subspaces that enable diverse attribute editing. Applying diffusion in the highly compressed latent space allows us to model rich distributions of edits within limited computational resources. Through extensive qualitative and quantitative experiments conducted across a range of datasets, we demonstrate the effectiveness of our approach for diverse attribute editing. We also showcase the results of our method applied for 3D editing of various face attributes.",
+      "doi": null,
+      "arxiv_id": "2311.16052v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2311.16052v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Mixed-State Quantum Denoising Diffusion Probabilistic Model",
+      "authors": [
+        "Gino Kwun",
+        "Bingzhi Zhang",
+        "Quntao Zhuang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Generative quantum machine learning has gained significant attention for its ability to produce quantum states with desired distributions. Among various quantum generative models, quantum denoising diffusion probabilistic models (QuDDPMs) [Phys. Rev. Lett. 132, 100602 (2024)] provide a promising approach with stepwise learning that resolves the training issues. However, the requirement of high-fidelity scrambling unitaries in QuDDPM poses a challenge in near-term implementation. We propose the \\textit{mixed-state quantum denoising diffusion probabilistic model} (MSQuDDPM) to eliminate the need for scrambling unitaries. Our approach focuses on adapting the quantum noise channels to the model architecture, which integrates depolarizing noise channels in the forward diffusion process and parameterized quantum circuits with projective measurements in the backward denoising steps. We also introduce several techniques to improve MSQuDDPM, including a cosine-exponent schedule of noise interpolation, the use of single-qubit random ancilla, and superfidelity-based cost functions to enhance the convergence. We evaluate MSQuDDPM on quantum ensemble generation tasks, demonstrating its successful performance.",
+      "doi": null,
+      "arxiv_id": "2411.17608v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2411.17608v2",
+      "raw_payload": {
+        "categories": [
+          "quant-ph",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "primary_category": "quant-ph"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "An Application of Computable Distributions to the Semantics of Probabilistic Programs",
+      "authors": [
+        "Daniel Huang",
+        "Greg Morrisett",
+        "Bas Spitters"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this chapter, we explore how (Type-2) computable distributions can be used to give both (algorithmic) sampling and distributional semantics to probabilistic programs with continuous distributions. Towards this end, we sketch an encoding of computable distributions in a fragment of Haskell and show how topological domains can be used to model the resulting PCF-like language. We also examine the implications that a (Type-2) computable semantics has for implementing conditioning. We hope to draw out the connection between an approach based on (Type-2) computability and ordinary programming throughout the chapter as well as highlight the relation with constructive mathematics (via realizability).",
+      "doi": null,
+      "arxiv_id": "1806.07966v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1806.07966v2",
+      "raw_payload": {
+        "categories": [
+          "cs.PL"
+        ],
+        "primary_category": "cs.PL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Rician Denoising Diffusion Probabilistic Models For Sodium Breast MRI Enhancement",
+      "authors": [
+        "Shuaiyu Yuan",
+        "Tristan Whitmarsh",
+        "Dimitri A Kessler",
+        "Otso Arponen",
+        "Mary A McLean",
+        "Gabrielle Baxter",
+        "Frank Riemer",
+        "Aneurin J Kennerley",
+        "William J Brackenbury",
+        "Fiona J Gilbert",
+        "Joshua D Kaggie"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Sodium MRI is an imaging technique used to visualize and quantify sodium concentrations in vivo, playing a role in many biological processes and potentially aiding in breast cancer characterization. Sodium MRI, however, suffers from inherently low signal-to-noise ratios (SNR) and spatial resolution, compared with conventional proton MRI. A deep-learning method, the Denoising Diffusion Probabilistic Models (DDPM), has demonstrated success across a wide range of denoising tasks, yet struggles with sodium MRI's unique noise profile, as DDPM primarily targets Gaussian noise. DDPM can distort features when applied to sodium MRI. This paper advances the DDPM by introducing the Rician Denoising Diffusion Probabilistic Models (RDDPM) for sodium MRI denoising. RDDPM converts Rician noise to Gaussian noise at each timestep during the denoising process. The model's performance is evaluated using three non-reference image quality assessment metrics, where RDDPM consistently outperforms DDPM and other CNN-based denoising methods.",
+      "doi": null,
+      "arxiv_id": "2410.11511v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2410.11511v1",
+      "raw_payload": {
+        "categories": [
+          "eess.IV",
+          "cs.CV"
+        ],
+        "primary_category": "eess.IV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "RDDPM: Robust Denoising Diffusion Probabilistic Model for Unsupervised Anomaly Segmentation",
+      "authors": [
+        "Mehrdad Moradi",
+        "Kamran Paynabar"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent advancements in diffusion models have demonstrated significant success in unsupervised anomaly segmentation. For anomaly segmentation, these models are first trained on normal data; then, an anomalous image is noised to an intermediate step, and the normal image is reconstructed through backward diffusion. Unlike traditional statistical methods, diffusion models do not rely on specific assumptions about the data or target anomalies, making them versatile for use across different domains. However, diffusion models typically assume access to normal data for training, limiting their applicability in realistic settings. In this paper, we propose novel robust denoising diffusion models for scenarios where only contaminated (i.e., a mix of normal and anomalous) unlabeled data is available. By casting maximum likelihood estimation of the data as a nonlinear regression problem, we reinterpret the denoising diffusion probabilistic model through a regression lens. Using robust regression, we derive a robust version of denoising diffusion probabilistic models. Our novel framework offers flexibility in constructing various robust diffusion models. Our experiments show that our approach outperforms current state of the art diffusion models, for unsupervised anomaly segmentation when only contaminated data is available. Our method outperforms existing diffusion-based approaches, achieving up to 8.08\\% higher AUROC and 10.37\\% higher AUPRC on MVTec datasets. The implementation code is available at: https://github.com/mehrdadmoradi124/RDDPM",
+      "doi": null,
+      "arxiv_id": "2508.02903v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2508.02903v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "eess.IV",
+          "stat.ML"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "UNIT-DDPM: UNpaired Image Translation with Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Hiroshi Sasaki",
+        "Chris G. Willcocks",
+        "Toby P. Breckon"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We propose a novel unpaired image-to-image translation method that uses denoising diffusion probabilistic models without requiring adversarial training. Our method, UNpaired Image Translation with Denoising Diffusion Probabilistic Models (UNIT-DDPM), trains a generative model to infer the joint distribution of images over both domains as a Markov chain by minimising a denoising score matching objective conditioned on the other domain. In particular, we update both domain translation models simultaneously, and we generate target domain images by a denoising Markov Chain Monte Carlo approach that is conditioned on the input source domain images, based on Langevin dynamics. Our approach provides stable model training for image-to-image translation and generates high-quality image outputs. This enables state-of-the-art Fréchet Inception Distance (FID) performance on several public datasets, including both colour and multispectral imagery, significantly outperforming the contemporary adversarial image-to-image translation methods.",
+      "doi": null,
+      "arxiv_id": "2104.05358v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2104.05358v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Ho, Jonathan",
+        "Ajay N. Jain",
+        "Pieter Abbeel"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2006.11239",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3036167779",
+      "citation_count": 5697,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2006.11239",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "RePaint: Inpainting using Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Andreas Lugmayr",
+        "Martin Danelljan",
+        "Andrés Romero",
+        "Fisher Yu",
+        "Radu Timofte",
+        "Luc Van Gool"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr52688.2022.01117",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4312497550",
+      "citation_count": 1646,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ILVR: Conditioning Method for Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Jooyoung Choi",
+        "Sungwon Kim",
+        "Yonghyun Jeong",
+        "Youngjune Gwon",
+        "Sungroh Yoon"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/iccv48922.2021.01410",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3191805365",
+      "citation_count": 635,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Improved Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Alex Nichol",
+        "Prafulla Dhariwal"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2102.09672",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3122887982",
+      "citation_count": 412,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2102.09672",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "AnoDDPM: Anomaly Detection with Denoising Diffusion Probabilistic Models using Simplex Noise",
+      "authors": [
+        "Julian Wyatt",
+        "Adam Leach",
+        "Sebastian M. Schmon",
+        "Chris G. Willcocks"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvprw56347.2022.00080",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4292851291",
+      "citation_count": 407,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Denoising diffusion probabilistic models for 3D medical image generation",
+      "authors": [
+        "Firas Khader",
+        "Gustav Anton Müller‐Franzes",
+        "Soroosh Tayebi Arasteh",
+        "Tianyu Han",
+        "Christoph Haarburger",
+        "Maximilian Franz Schulze-Hagen",
+        "Philipp Schad",
+        "Sandy Engelhardt",
+        "Bettina Baeßler",
+        "Sebastian Foersch",
+        "Johannes Stegmaier",
+        "Christiane Katharina Kuhl",
+        "Sven Nebelung",
+        "Jakob Nikolas Kather",
+        "Daniel Truhn"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41598-023-34341-2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4372336638",
+      "citation_count": 335,
+      "oa_status": "gold",
+      "pdf_url": "https://www.nature.com/articles/s41598-023-34341-2.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "PET image denoising based on denoising diffusion probabilistic model",
+      "authors": [
+        "Kuang Gong",
+        "Keith A. Johnson",
+        "Georges El Fakhri",
+        "Quanzheng Li",
+        "Tinsu Pan"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s00259-023-06417-8",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4387296387",
+      "citation_count": 162,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A multimodal comparison of latent denoising diffusion probabilistic models and generative adversarial networks for medical image synthesis",
+      "authors": [
+        "Gustav Anton Müller‐Franzes",
+        "Jan Niehues",
+        "Firas Khader",
+        "Soroosh Tayebi Arasteh",
+        "Christoph Haarburger",
+        "Christiane Katharina Kuhl",
+        "Tianci Wang",
+        "Tianyu Han",
+        "Teresa Nolte",
+        "Sven Nebelung",
+        "Jakob Nikolas Kather",
+        "Daniel Truhn"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41598-023-39278-0",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4385272245",
+      "citation_count": 213,
+      "oa_status": "gold",
+      "pdf_url": "https://www.nature.com/articles/s41598-023-39278-0.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "SAR Despeckling Using a Denoising Diffusion Probabilistic Model",
+      "authors": [
+        "Malsha V. Perera",
+        "Nithin Gopalakrishnan Nair",
+        "Wele Gedara Chaminda Bandara",
+        "Vishal M. Patel"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/lgrs.2023.3270799",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4367146570",
+      "citation_count": 95,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "2D medical image synthesis using transformer-based denoising diffusion probabilistic model",
+      "authors": [
+        "Shaoyan Pan",
+        "Tonghe Wang",
+        "Richard L. J. Qiu",
+        "Marian Axente",
+        "Chih‐Wei Chang",
+        "Junbo Peng",
+        "Ashish Bharat Patel",
+        "Joseph W. Shelton",
+        "Sagar Anil Patel",
+        "Justin R. Roper",
+        "Xiaofeng Yang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1088/1361-6560/acca5c",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4362594575",
+      "citation_count": 152,
+      "oa_status": "hybrid",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "DiffWater: Underwater Image Enhancement Based on Conditional Denoising Diffusion Probabilistic Model",
+      "authors": [
+        "Meisheng Guan",
+        "Haiyong Xu",
+        "Gangyi Jiang",
+        "Mei Yu",
+        "Yeyao Chen",
+        "Ting Luo",
+        "Xuebo Zhang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/jstars.2023.3344453",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389961128",
+      "citation_count": 115,
+      "oa_status": "gold",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Novel Data Augmentation Method Based on Denoising Diffusion Probabilistic Model for Fault Diagnosis Under Imbalanced Data",
+      "authors": [
+        "Xiongyan Yang",
+        "Tianyi Ye",
+        "Xianfeng Yuan",
+        "Weijie Zhu",
+        "Xiaoxue Mei",
+        "Fengyu Zhou"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tii.2024.3366991",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4392208038",
+      "citation_count": 202,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "RePaint: Inpainting using Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Andreas Lugmayr",
+        "Martin Danelljan",
+        "Andrés Romero",
+        "Fisher Yu",
+        "Radu Timofte",
+        "Luc Van Gool"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2201.09865",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4226339344",
+      "citation_count": 76,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2201.09865",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CBCT‐Based synthetic CT image generation using conditional denoising diffusion probabilistic model",
+      "authors": [
+        "Junbo Peng",
+        "Richard L. J. Qiu",
+        "Jacob Frank Wynne",
+        "Chih‐Wei Chang",
+        "Shaoyan Pan",
+        "Tonghe Wang",
+        "Justin R. Roper",
+        "Tian Liu",
+        "Pretesh R Patel",
+        "David S. Yu",
+        "Xiaofeng Yang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1002/mp.16704",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4386272462",
+      "citation_count": 117,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Super-resolution of brain MRI images based on denoising diffusion probabilistic model",
+      "authors": [
+        "Zhanxiong Wu",
+        "Xuanheng Chen",
+        "Sangma Xie",
+        "Jian Guo Shen",
+        "Yu Zeng"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.bspc.2023.104901",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4361861727",
+      "citation_count": 93,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Measurement-Conditioned Denoising Diffusion Probabilistic Model for Under-Sampled Medical Image Reconstruction",
+      "authors": [
+        "Yutong Xie",
+        "Quanzheng Li"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/978-3-031-16446-0_62",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4296057829",
+      "citation_count": 91,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Protein Structure and Sequence Generation with Equivariant Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Namrata Anand",
+        "Tudor Achim"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2205.15019",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4281702815",
+      "citation_count": 100,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2205.15019",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Denoising diffusion probabilistic models",
+      "authors": [
+        "Jonathan B. Ho"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.57702/q2z1tfp2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3100572490",
+      "citation_count": 50,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "UNIT-DDPM: UNpaired Image Translation with Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Hiroshi Sasaki",
+        "Chris G. Willcocks",
+        "Toby P. Breckon"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2104.05358",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3153819643",
+      "citation_count": 71,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2104.05358",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Time series diffusion method: A denoising diffusion probabilistic model for vibration signal generation",
+      "authors": [
+        "Haiming Yi",
+        "Lei Hou",
+        "Yuhong Jin",
+        "Nasser A. Saeed",
+        "Ali I. Kandil",
+        "Hao Duan"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.ymssp.2024.111481",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4396757885",
+      "citation_count": 102,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1117/12.3047152.fd9c569d-7554-ef11-a9a2-005056914f1c",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Discriminator-Augmented Denoising Diffusion Probabilistic Models for Seismic Data",
+      "authors": [
+        "Yawen Zhang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.5194/egusphere-egu26-10528",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1117/12.3051096.1c1ccaf8-8e6f-ef11-a9a2-00505691c5e1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Denoising Diffusion Probabilistic Models for Probabilistic Energy Forecasting",
+      "authors": [
+        "Esteban Hernandez Capel",
+        "Jonathan Dumas"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE Belgrade PowerTech",
+      "abstract": null,
+      "doi": "10.1109/powertech55446.2023.10202713",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 30,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Riemannian Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Zichen Liu",
+        "Wei Zhang",
+        "Christof Schütte",
+        "Tiejun Li"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.5358689",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 10,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Modelling Solar Images from Sdo/Aia with Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Francesco  Pio Ramunno"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.4504193",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1117/12.3001616.9fd3a119-7925-ee11-a99a-b38e0bc17c27",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Image Generation Framework Based on Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Himangi Ahuja",
+        "Ruchi Vyas",
+        "Mayank Patel"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.7345758",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Oversampling of Tabular Data for Imbalanced Learning Via Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Wenjie Liu",
+        "Wenbin Hu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.4673719",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Speech-to-Face Conversion Using Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Shuhei Kato",
+        "Taiichi Hashimoto"
+      ],
+      "year": 2023,
+      "venue": "INTERSPEECH 2023",
+      "abstract": null,
+      "doi": "10.21437/interspeech.2023-1358",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1117/12.3048822.1986b94f-345f-ef11-a9a2-00505691c5e1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Generating realistic neurophysiological time series with denoising diffusion probabilistic models",
+      "authors": [
+        "Julius Vetter",
+        "Jakob H. Macke",
+        "Richard Gao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1101/2023.08.23.554148",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 7,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "3d Clay Microstructure Synthesis Using Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Ali Aouf",
+        "Eric Laloy",
+        "Bart Rogiers",
+        "Christophe De Vleeschouwer"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.4814452",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Conditional Denoising Diffusion Probabilistic Models with Attention for Subject-Specific Brain Network Synthesis",
+      "authors": [
+        "Meenu Ajith",
+        "Vince D. Calhoun"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1101/2025.01.06.631503",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Attenuation Correction in Preclinical PET/MRI Imaging Using Denoising Diffusion Probabilistic Models with Multi-Loss Optimization",
+      "authors": [
+        "Kishore Krish",
+        "Sivakumar Duraisamy",
+        "Jyh-Cheng Chen"
+      ],
+      "year": 2026,
+      "venue": "Proceedings of the 19th International Joint Conference on Biomedical Engineering Systems and Technologies",
+      "abstract": null,
+      "doi": "10.5220/0014699600004070",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Unifying Human Motion Synthesis and Style Transfer with Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Ziyi Chang",
+        "Edmund Findlay",
+        "Haozheng Zhang",
+        "Hubert P. H. Shum"
+      ],
+      "year": 2023,
+      "venue": "Proceedings of the 18th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+      "abstract": null,
+      "doi": "10.5220/0011631000003417",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 9,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Research on Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Yiyang Jiang"
+      ],
+      "year": 2024,
+      "venue": "Highlights in Science, Engineering and Technology",
+      "abstract": null,
+      "doi": "10.54097/sxd49274",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 3,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Evaluation of OCT Image Synthesis for Choroidal and Retinal Layer Segmentation Using Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Yudai Yamauchi",
+        "Yuli Wu",
+        "Eiji Okada"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of the 18th International Joint Conference on Biomedical Engineering Systems and Technologies",
+      "abstract": null,
+      "doi": "10.5220/0013246600003911",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "BFD-DDPM: Denoising Diffusion Probabilistic Models for Bearing Fault Diagnosis",
+      "authors": [
+        "Yuting Zhang",
+        "Boyuan Yang"
+      ],
+      "year": 2024,
+      "venue": "2024 China Automation Congress (CAC)",
+      "abstract": null,
+      "doi": "10.1109/cac63892.2024.10865068",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "LiDAR Data Synthesis with Denoising Diffusion Probabilistic Models",
+      "authors": [
+        "Kazuto Nakashima",
+        "Ryo Kurazume"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+      "abstract": null,
+      "doi": "10.1109/icra57147.2024.10611480",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 31,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Self Supervised Denoising Diffusion Probabilistic Models for Abdominal DW-MRI.",
+      "authors": [
+        "Vasylechko S",
+        "Afacan O",
+        "Kurugol S"
+      ],
+      "year": 2023,
+      "venue": "Computational diffusion MRI. CDMRI (Workshop)",
+      "abstract": null,
+      "doi": "10.1007/978-3-031-47292-3_8",
+      "arxiv_id": null,
+      "pmid": "38736559",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Improved outcome models with denoising diffusion.",
+      "authors": [
+        "Dudas D",
+        "Dilling TJ",
+        "El Naqa I"
+      ],
+      "year": 2024,
+      "venue": "Physica medica : PM : an international journal devoted to the applications of physics to medicine and biology : official journal of the Italian Association of Biomedical Physics (AIFB)",
+      "abstract": null,
+      "doi": "10.1016/j.ejmp.2024.103307",
+      "arxiv_id": null,
+      "pmid": "38325221",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Semi-Implicit Denoising Diffusion Models (SIDDMs).",
+      "authors": [
+        "Xu Y",
+        "Gong M",
+        "Xie S",
+        "Wei W",
+        "Grundmann M",
+        "Batmanghelich K",
+        "Hou T"
+      ],
+      "year": 2023,
+      "venue": "Advances in neural information processing systems",
+      "abstract": null,
+      "doi": null,
+      "arxiv_id": null,
+      "pmid": "39130612",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Denoising diffusion probabilistic models for 3D medical image generation.",
+      "authors": [
+        "Khader F",
+        "Müller-Franzes G",
+        "Tayebi Arasteh S",
+        "Han T",
+        "Haarburger C",
+        "Schulze-Hagen M",
+        "Schad P",
+        "Engelhardt S",
+        "Baeßler B",
+        "Foersch S",
+        "Stegmaier J",
+        "Kuhl C",
+        "Nebelung S",
+        "Kather JN",
+        "Truhn D"
+      ],
+      "year": 2023,
+      "venue": "Scientific reports",
+      "abstract": null,
+      "doi": "10.1038/s41598-023-34341-2",
+      "arxiv_id": null,
+      "pmid": "37147413",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Colorectal polyp segmentation with denoising diffusion probabilistic models.",
+      "authors": [
+        "Wang Z",
+        "Liu M",
+        "Jiang J",
+        "Qu X"
+      ],
+      "year": 2024,
+      "venue": "Computers in biology and medicine",
+      "abstract": null,
+      "doi": "10.1016/j.compbiomed.2024.108981",
+      "arxiv_id": null,
+      "pmid": "39146839",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Accelerating denoising diffusion probabilistic model via truncated inverse processes for medical image segmentation.",
+      "authors": [
+        "Guo X",
+        "Xiang Y",
+        "Yang Y",
+        "Ye C",
+        "Yu Y",
+        "Ma T"
+      ],
+      "year": 2024,
+      "venue": "Computers in biology and medicine",
+      "abstract": null,
+      "doi": "10.1016/j.compbiomed.2024.108933",
+      "arxiv_id": null,
+      "pmid": "39096612",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "PET image denoising based on denoising diffusion probabilistic model.",
+      "authors": [
+        "Gong K",
+        "Johnson K",
+        "El Fakhri G",
+        "Li Q",
+        "Pan T"
+      ],
+      "year": 2024,
+      "venue": "European journal of nuclear medicine and molecular imaging",
+      "abstract": null,
+      "doi": "10.1007/s00259-023-06417-8",
+      "arxiv_id": null,
+      "pmid": "37787849",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Denoising Diffusion Probabilistic Models and Transfer Learning for citrus disease diagnosis.",
+      "authors": [
+        "Li Y",
+        "Guo J",
+        "Qiu H",
+        "Chen F",
+        "Zhang J"
+      ],
+      "year": 2023,
+      "venue": "Frontiers in plant science",
+      "abstract": null,
+      "doi": "10.3389/fpls.2023.1267810",
+      "arxiv_id": null,
+      "pmid": "38146275",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Poisson diffusion probabilistic model for low-dose SPECT sinogram denoising.",
+      "authors": [
+        "Lai P",
+        "Wu R",
+        "Yuan W",
+        "Li H",
+        "Jiang Y"
+      ],
+      "year": 2025,
+      "venue": "Medical physics",
+      "abstract": null,
+      "doi": "10.1002/mp.17760",
+      "arxiv_id": null,
+      "pmid": "40103551",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Self-supervised denoising diffusion probabilistic models for abdominal DW-MRI.",
+      "authors": [
+        "Vasylechko SD",
+        "Tsai A",
+        "Afacan O",
+        "Kurugol S"
+      ],
+      "year": 2025,
+      "venue": "Magnetic resonance in medicine",
+      "abstract": null,
+      "doi": "10.1002/mrm.30536",
+      "arxiv_id": null,
+      "pmid": "40312927",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Counterfactual MRI Generation with Denoising Diffusion Models for Interpretable Alzheimer's Disease Effect Detection.",
+      "authors": [
+        "Dhinagar NJ",
+        "Thomopoulos SI",
+        "Laltoo E",
+        "Thompson PM"
+      ],
+      "year": 2024,
+      "venue": "bioRxiv : the preprint server for biology",
+      "abstract": null,
+      "doi": "10.1101/2024.02.05.578983",
+      "arxiv_id": null,
+      "pmid": "38370616",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Counterfactual MRI Generation with Denoising Diffusion Models for Interpretable Alzheimer's Disease Effect Detection.",
+      "authors": [
+        "Dhinagar NJ",
+        "Thomopoulos SI",
+        "Laltoo E",
+        "Thompson PM"
+      ],
+      "year": 2024,
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+      "abstract": null,
+      "doi": "10.1109/EMBC53108.2024.10782737",
+      "arxiv_id": null,
+      "pmid": "40039528",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Generating realistic neurophysiological time series with denoising diffusion probabilistic models.",
+      "authors": [
+        "Vetter J",
+        "Macke JH",
+        "Gao R"
+      ],
+      "year": 2024,
+      "venue": "Patterns (New York, N.Y.)",
+      "abstract": null,
+      "doi": "10.1016/j.patter.2024.101047",
+      "arxiv_id": null,
+      "pmid": "39568643",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Denoising diffusion probabilistic models for generation of realistic fully-annotated microscopy image datasets.",
+      "authors": [
+        "Eschweiler D",
+        "Yilmaz R",
+        "Baumann M",
+        "Laube I",
+        "Roy R",
+        "Jose A",
+        "Brückner D",
+        "Stegmaier J"
+      ],
+      "year": 2024,
+      "venue": "PLoS computational biology",
+      "abstract": null,
+      "doi": "10.1371/journal.pcbi.1011890",
+      "arxiv_id": null,
+      "pmid": "38377165",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Physics-Inspired Diffusion Probabilistic Models for Improved Denoising in Intracardiac Time Series.",
+      "authors": [
+        "Ruiperez-Campillo S",
+        "Rau M",
+        "Ganesan P",
+        "Brennan KA",
+        "Feng R",
+        "Bandyopadhyay S",
+        "Rogers AJ",
+        "Narayan SM",
+        "Vogt JE"
+      ],
+      "year": 2025,
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+      "abstract": null,
+      "doi": "10.1109/EMBC58623.2025.11252692",
+      "arxiv_id": null,
+      "pmid": "41336909",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Molecular Denoising Using Diffusion Models with Physics-Informed Priors.",
+      "authors": [
+        "Nadkarni I",
+        "Martínez Cordeiro JP",
+        "Aluru NR"
+      ],
+      "year": 2025,
+      "venue": "The journal of physical chemistry letters",
+      "abstract": null,
+      "doi": "10.1021/acs.jpclett.5c00274",
+      "arxiv_id": null,
+      "pmid": "40101967",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "On Denoising Diffusion Probabilistic Models for Synthetic Aperture Radar Despeckling.",
+      "authors": [
+        "Paul A",
+        "Savakis A"
+      ],
+      "year": 2025,
+      "venue": "Sensors (Basel, Switzerland)",
+      "abstract": null,
+      "doi": "10.3390/s25072149",
+      "arxiv_id": null,
+      "pmid": "40218662",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Diffusion probabilistic generative models for accelerated, in-NICU permanent magnet neonatal MRI.",
+      "authors": [
+        "Arefeen Y",
+        "Levac B",
+        "Patel B",
+        "Ho C",
+        "Tamir JI"
+      ],
+      "year": 2025,
+      "venue": "Magnetic resonance in medicine",
+      "abstract": null,
+      "doi": "10.1002/mrm.30585",
+      "arxiv_id": null,
+      "pmid": "40528527",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "2D medical image synthesis using transformer-based denoising diffusion probabilistic model.",
+      "authors": [
+        "Pan S",
+        "Wang T",
+        "Qiu RLJ",
+        "Axente M",
+        "Chang CW",
+        "Peng J",
+        "Patel AB",
+        "Shelton J",
+        "Patel SA",
+        "Roper J",
+        "Yang X"
+      ],
+      "year": 2023,
+      "venue": "Physics in medicine and biology",
+      "abstract": null,
+      "doi": "10.1088/1361-6560/acca5c",
+      "arxiv_id": null,
+      "pmid": "37015231",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Accelerating Diffusion: Task-Optimized latent diffusion models for rapid CT denoising.",
+      "authors": [
+        "Jee J",
+        "Chang W",
+        "Kim E",
+        "Lee K"
+      ],
+      "year": 2025,
+      "venue": "Computers in biology and medicine",
+      "abstract": null,
+      "doi": "10.1016/j.compbiomed.2025.110517",
+      "arxiv_id": null,
+      "pmid": "40513477",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 821,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2793,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 370,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1389,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

@@ -1,0 +1,1430 @@
+{
+  "id": "exact-sentencebert",
+  "category": "exact_title",
+  "query": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+  "target": {
+    "arxiv_id": "1908.10084"
+  },
+  "plan": {
+    "topic": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+    "sub_queries": [
+      "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+      "authors": [
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "BERT (Devlin et al., 2018) and RoBERTa (Liu et al., 2019) has set a new state-of-the-art performance on sentence-pair regression tasks like semantic textual similarity (STS). However, it requires that both sentences are fed into the network, which causes a massive computational overhead: Finding the most similar pair in a collection of 10,000 sentences requires about 50 million inference computations (~65 hours) with BERT. The construction of BERT makes it unsuitable for semantic similarity search as well as for unsupervised tasks like clustering.\n  In this publication, we present Sentence-BERT (SBERT), a modification of the pretrained BERT network that use siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine-similarity. This reduces the effort for finding the most similar pair from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while maintaining the accuracy from BERT.\n  We evaluate SBERT and SRoBERTa on common STS tasks and transfer learning tasks, where it outperforms other state-of-the-art sentence embeddings methods.",
+      "doi": null,
+      "arxiv_id": "1908.10084v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1908.10084v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Dual-View Distilled BERT for Sentence Embedding",
+      "authors": [
+        "Xingyi Cheng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recently, BERT realized significant progress for sentence matching via word-level cross sentence attention. However, the performance significantly drops when using siamese BERT-networks to derive two sentence embeddings, which fall short in capturing the global semantic since the word-level attention between two sentences is absent. In this paper, we propose a Dual-view distilled BERT~(DvBERT) for sentence matching with sentence embeddings. Our method deals with a sentence pair from two distinct views, i.e., Siamese View and Interaction View. Siamese View is the backbone where we generate sentence embeddings. Interaction View integrates the cross sentence interaction as multiple teachers to boost the representation ability of sentence embeddings. Experiments on six STS tasks show that our method outperforms the state-of-the-art sentence embedding methods significantly.",
+      "doi": null,
+      "arxiv_id": "2104.08675v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2104.08675v1",
+      "raw_payload": {
+        "categories": [
+          "cs.AI",
+          "cs.CL"
+        ],
+        "primary_category": "cs.AI"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FinAI-BERT: A Transformer-Based Model for Sentence-Level Detection of AI Disclosures in Financial Reports",
+      "authors": [
+        "Muhammad Bilal Zafar"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The proliferation of artificial intelligence (AI) in financial services has prompted growing demand for tools that can systematically detect AI-related disclosures in corporate filings. While prior approaches often rely on keyword expansion or document-level classification, they fall short in granularity, interpretability, and robustness. This study introduces FinAI-BERT, a domain-adapted transformer-based language model designed to classify AI-related content at the sentence level within financial texts. The model was fine-tuned on a manually curated and balanced dataset of 1,586 sentences drawn from 669 annual reports of U.S. banks (2015 to 2023). FinAI-BERT achieved near-perfect classification performance (accuracy of 99.37 percent, F1 score of 0.993), outperforming traditional baselines such as Logistic Regression, Naive Bayes, Random Forest, and XGBoost. Interpretability was ensured through SHAP-based token attribution, while bias analysis and robustness checks confirmed the model's stability across sentence lengths, adversarial inputs, and temporal samples. Theoretically, the study advances financial NLP by operationalizing fine-grained, theme-specific classification using transformer architectures. Practically, it offers a scalable, transparent solution for analysts, regulators, and scholars seeking to monitor the diffusion and framing of AI across financial institutions.",
+      "doi": null,
+      "arxiv_id": "2507.01991v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2507.01991v1",
+      "raw_payload": {
+        "categories": [
+          "q-fin.CP",
+          "cs.CL",
+          "econ.GN",
+          "q-fin.GN"
+        ],
+        "primary_category": "q-fin.CP"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Evaluation of BERT and ALBERT Sentence Embedding Performance on Downstream NLP Tasks",
+      "authors": [
+        "Hyunjin Choi",
+        "Judong Kim",
+        "Seongho Joe",
+        "Youngjune Gwon"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Contextualized representations from a pre-trained language model are central to achieve a high performance on downstream NLP task. The pre-trained BERT and A Lite BERT (ALBERT) models can be fine-tuned to give state-ofthe-art results in sentence-pair regressions such as semantic textual similarity (STS) and natural language inference (NLI). Although BERT-based models yield the [CLS] token vector as a reasonable sentence embedding, the search for an optimal sentence embedding scheme remains an active research area in computational linguistics. This paper explores on sentence embedding models for BERT and ALBERT. In particular, we take a modified BERT network with siamese and triplet network structures called Sentence-BERT (SBERT) and replace BERT with ALBERT to create Sentence-ALBERT (SALBERT). We also experiment with an outer CNN sentence-embedding network for SBERT and SALBERT. We evaluate performances of all sentence-embedding models considered using the STS and NLI datasets. The empirical results indicate that our CNN architecture improves ALBERT models substantially more than BERT models for STS benchmark. Despite significantly fewer model parameters, ALBERT sentence embedding is highly competitive to BERT in downstream NLP evaluations.",
+      "doi": null,
+      "arxiv_id": "2101.10642v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2101.10642v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "ColBERT: Using BERT Sentence Embedding in Parallel Neural Networks for Computational Humor",
+      "authors": [
+        "Issa Annamoradnejad",
+        "Gohar Zoghi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Automation of humor detection and rating has interesting use cases in modern technologies, such as humanoid robots, chatbots, and virtual assistants. In this paper, we propose a novel approach for detecting and rating humor in short texts based on a popular linguistic theory of humor. The proposed technical method initiates by separating sentences of the given text and utilizing the BERT model to generate embeddings for each one. The embeddings are fed to separate lines of hidden layers in a neural network (one line for each sentence) to extract latent features. At last, the parallel lines are concatenated to determine the congruity and other relationships between the sentences and predict the target value. We accompany the paper with a novel dataset for humor detection consisting of 200,000 formal short texts. In addition to evaluating our work on the novel dataset, we participated in a live machine learning competition focused on rating humor in Spanish tweets. The proposed model obtained F1 scores of 0.982 and 0.869 in the humor detection experiments which outperform general and state-of-the-art models. The evaluation performed on two contrasting settings confirm the strength and robustness of the model and suggests two important factors in achieving high accuracy in the current task: 1) usage of sentence embeddings and 2) utilizing the linguistic structure of humor in designing the proposed model.",
+      "doi": null,
+      "arxiv_id": "2004.12765v7",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2004.12765v7",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Predicting Antibiotic Resistance Patterns Using Sentence-BERT: A Machine Learning Approach",
+      "authors": [
+        "Mahmoud Alwakeel",
+        "Michael E. Yarrington",
+        "Rebekah H. Wrenn",
+        "Ethan Fang",
+        "Jian Pei",
+        "Anand Chowdhury",
+        "An-Kwok Ian Wong"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Antibiotic resistance poses a significant threat in in-patient settings with high mortality. Using MIMIC-III data, we generated Sentence-BERT embeddings from clinical notes and applied Neural Networks and XGBoost to predict antibiotic susceptibility. XGBoost achieved an average F1 score of 0.86, while Neural Networks scored 0.84. This study is among the first to use document embeddings for predicting antibiotic resistance, offering a novel pathway for improving antimicrobial stewardship.",
+      "doi": null,
+      "arxiv_id": "2509.14283v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2509.14283v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "PromptBERT: Improving BERT Sentence Embeddings with Prompts",
+      "authors": [
+        "Ting Jiang",
+        "Jian Jiao",
+        "Shaohan Huang",
+        "Zihan Zhang",
+        "Deqing Wang",
+        "Fuzhen Zhuang",
+        "Furu Wei",
+        "Haizhen Huang",
+        "Denvy Deng",
+        "Qi Zhang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We propose PromptBERT, a novel contrastive learning method for learning better sentence representation. We firstly analyze the drawback of current sentence embedding from original BERT and find that it is mainly due to the static token embedding bias and ineffective BERT layers. Then we propose the first prompt-based sentence embeddings method and discuss two prompt representing methods and three prompt searching methods to make BERT achieve better sentence embeddings. Moreover, we propose a novel unsupervised training objective by the technology of template denoising, which substantially shortens the performance gap between the supervised and unsupervised settings. Extensive experiments show the effectiveness of our method. Compared to SimCSE, PromptBert achieves 2.29 and 2.58 points of improvement based on BERT and RoBERTa in the unsupervised setting.",
+      "doi": null,
+      "arxiv_id": "2201.04337v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2201.04337v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Language-agnostic BERT Sentence Embedding",
+      "authors": [
+        "Fangxiaoyu Feng",
+        "Yinfei Yang",
+        "Daniel Cer",
+        "Naveen Arivazhagan",
+        "Wei Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "While BERT is an effective method for learning monolingual sentence embeddings for semantic similarity and embedding based transfer learning (Reimers and Gurevych, 2019), BERT based cross-lingual sentence embeddings have yet to be explored. We systematically investigate methods for learning multilingual sentence embeddings by combining the best methods for learning monolingual and cross-lingual representations including: masked language modeling (MLM), translation language modeling (TLM) (Conneau and Lample, 2019), dual encoder translation ranking (Guo et al., 2018), and additive margin softmax (Yang et al., 2019a). We show that introducing a pre-trained multilingual language model dramatically reduces the amount of parallel training data required to achieve good performance by 80%. Composing the best of these methods produces a model that achieves 83.7% bi-text retrieval accuracy over 112 languages on Tatoeba, well above the 65.5% achieved by Artetxe and Schwenk (2019b), while still performing competitively on monolingual transfer learning benchmarks (Conneau and Kiela, 2018). Parallel data mined from CommonCrawl using our best model is shown to train competitive NMT models for en-zh and en-de. We publicly release our best multilingual sentence embedding model for 109+ languages at https://tfhub.dev/google/LaBSE.",
+      "doi": null,
+      "arxiv_id": "2007.01852v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2007.01852v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "BERT4SO: Neural Sentence Ordering by Fine-tuning BERT",
+      "authors": [
+        "Yutao Zhu",
+        "Jian-Yun Nie",
+        "Kun Zhou",
+        "Shengchao Liu",
+        "Yabo Ling",
+        "Pan Du"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Sentence ordering aims to arrange the sentences of a given text in the correct order. Recent work frames it as a ranking problem and applies deep neural networks to it. In this work, we propose a new method, named BERT4SO, by fine-tuning BERT for sentence ordering. We concatenate all sentences and compute their representations by using multiple special tokens and carefully designed segment (interval) embeddings. The tokens across multiple sentences can attend to each other which greatly enhances their interactions. We also propose a margin-based listwise ranking loss based on ListMLE to facilitate the optimization process. Experimental results on five benchmark datasets demonstrate the effectiveness of our proposed method.",
+      "doi": null,
+      "arxiv_id": "2103.13584v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2103.13584v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "A New Sentence Ordering Method Using BERT Pretrained Model",
+      "authors": [
+        "Melika Golestani",
+        "Seyedeh Zahra Razavi",
+        "Heshaam Faili"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Building systems with capability of natural language understanding (NLU) has been one of the oldest areas of AI. An essential component of NLU is to detect logical succession of events contained in a text. The task of sentence ordering is proposed to learn succession of events with applications in AI tasks. The performance of previous works employing statistical methods is poor, while the neural networks-based approaches are in serious need of large corpora for model learning. In this paper, we propose a method for sentence ordering which does not need a training phase and consequently a large corpus for learning. To this end, we generate sentence embedding using BERT pre-trained model and measure sentence similarity using cosine similarity score. We suggest this score as an indicator of sequential events' level of coherence. We finally sort the sentences through brute-force search to maximize overall similarities of the sequenced sentences. Our proposed method outperformed other baselines on ROCStories, a corpus of 5-sentence human-made stories. The method is specifically more efficient than neural network-based methods when no huge corpus is available. Among other advantages of this method are its interpretability and needlessness to linguistic knowledge.",
+      "doi": null,
+      "arxiv_id": "2108.11994v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2108.11994v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Siamese CBOW: Optimizing Word Embeddings for Sentence Representations",
+      "authors": [
+        "Tom Kenter",
+        "Alexey Borisov",
+        "Maarten de Rijke"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We present the Siamese Continuous Bag of Words (Siamese CBOW) model, a neural network for efficient estimation of high-quality sentence embeddings. Averaging the embeddings of words in a sentence has proven to be a surprisingly successful and efficient way of obtaining sentence embeddings. However, word embeddings trained with the methods currently available are not optimized for the task of sentence representation, and, thus, likely to be suboptimal. Siamese CBOW handles this problem by training word embeddings directly for the purpose of being averaged. The underlying neural network learns word embeddings by predicting, from a sentence representation, its surrounding sentences. We show the robustness of the Siamese CBOW model by evaluating it on 20 datasets stemming from a wide variety of sources.",
+      "doi": null,
+      "arxiv_id": "1606.04640v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1606.04640v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "L3Cube-MahaSBERT and HindSBERT: Sentence BERT Models and Benchmarking BERT Sentence Representations for Hindi and Marathi",
+      "authors": [
+        "Ananya Joshi",
+        "Aditi Kajale",
+        "Janhavi Gadre",
+        "Samruddhi Deode",
+        "Raviraj Joshi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Sentence representation from vanilla BERT models does not work well on sentence similarity tasks. Sentence-BERT models specifically trained on STS or NLI datasets are shown to provide state-of-the-art performance. However, building these models for low-resource languages is not straightforward due to the lack of these specialized datasets. This work focuses on two low-resource Indian languages, Hindi and Marathi. We train sentence-BERT models for these languages using synthetic NLI and STS datasets prepared using machine translation. We show that the strategy of NLI pre-training followed by STSb fine-tuning is effective in generating high-performance sentence-similarity models for Hindi and Marathi. The vanilla BERT models trained using this simple strategy outperform the multilingual LaBSE trained using a complex training strategy. These models are evaluated on downstream text classification and similarity tasks. We evaluate these models on real text classification datasets to show embeddings obtained from synthetic data training are generalizable to real datasets as well and thus represent an effective training strategy for low-resource languages. We also provide a comparative analysis of sentence embeddings from fast text models, multilingual BERT models (mBERT, IndicBERT, xlm-RoBERTa, MuRIL), multilingual sentence embedding models (LASER, LaBSE), and monolingual BERT models based on L3Cube-MahaBERT and HindBERT. We release L3Cube-MahaSBERT and HindSBERT, the state-of-the-art sentence-BERT models for Marathi and Hindi respectively. Our work also serves as a guide to building low-resource sentence embedding models.",
+      "doi": null,
+      "arxiv_id": "2211.11187v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2211.11187v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Towards Automatic Construction of Filipino WordNet: Word Sense Induction and Synset Induction Using Sentence Embeddings",
+      "authors": [
+        "Dan John Velasco",
+        "Axel Alba",
+        "Trisha Gail Pelagio",
+        "Bryce Anthony Ramirez",
+        "Unisse Chua",
+        "Briane Paul Samson",
+        "Jan Christian Blaise Cruz",
+        "Charibeth Cheng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Wordnets are indispensable tools for various natural language processing applications. Unfortunately, wordnets get outdated, and producing or updating wordnets can be slow and costly in terms of time and resources. This problem intensifies for low-resource languages. This study proposes a method for word sense induction and synset induction using only two linguistic resources, namely, an unlabeled corpus and a sentence embeddings-based language model. The resulting sense inventory and synonym sets can be used in automatically creating a wordnet. We applied this method on a corpus of Filipino text. The sense inventory and synsets were evaluated by matching them with the sense inventory of the machine translated Princeton WordNet, as well as comparing the synsets to the Filipino WordNet. This study empirically shows that the 30% of the induced word senses are valid and 40% of the induced synsets are valid in which 20% are novel synsets.",
+      "doi": null,
+      "arxiv_id": "2204.03251v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2204.03251v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "conSultantBERT: Fine-tuned Siamese Sentence-BERT for Matching Jobs and Job Seekers",
+      "authors": [
+        "Dor Lavi",
+        "Volodymyr Medentsiy",
+        "David Graus"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In this paper we focus on constructing useful embeddings of textual information in vacancies and resumes, which we aim to incorporate as features into job to job seeker matching models alongside other features. We explain our task where noisy data from parsed resumes, heterogeneous nature of the different sources of data, and crosslinguality and multilinguality present domain-specific challenges.\n  We address these challenges by fine-tuning a Siamese Sentence-BERT (SBERT) model, which we call conSultantBERT, using a large-scale, real-world, and high quality dataset of over 270,000 resume-vacancy pairs labeled by our staffing consultants. We show how our fine-tuned model significantly outperforms unsupervised and supervised baselines that rely on TF-IDF-weighted feature vectors and BERT embeddings. In addition, we find our model successfully matches cross-lingual and multilingual textual content.",
+      "doi": null,
+      "arxiv_id": "2109.06501v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2109.06501v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.IR"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "S-SimCSE: Sampled Sub-networks for Contrastive Learning of Sentence Embedding",
+      "authors": [
+        "Junlei Zhang",
+        "Zhenzhong lan"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Contrastive learning has been studied for improving the performance of learning sentence embeddings. The current state-of-the-art method is the SimCSE, which takes dropout as the data augmentation method and feeds a pre-trained transformer encoder the same input sentence twice. The corresponding outputs, two sentence embeddings derived from the same sentence with different dropout masks, can be used to build a positive pair. A network being applied with a dropout mask can be regarded as a sub-network of itsef, whose expected scale is determined by the dropout rate. In this paper, we push sub-networks with different expected scales learn similar embedding for the same sentence. SimCSE failed to do so because they fixed the dropout rate to a tuned hyperparameter. We achieve this by sampling dropout rate from a distribution eatch forward process. As this method may make optimization harder, we also propose a simple sentence-wise mask strategy to sample more sub-networks. We evaluated the proposed S-SimCSE on several popular semantic text similarity datasets. Experimental results show that S-SimCSE outperforms the state-of-the-art SimCSE more than $1\\%$ on BERT$_{base}$",
+      "doi": null,
+      "arxiv_id": "2111.11750v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2111.11750v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "InfoCSE: Information-aggregated Contrastive Learning of Sentence Embeddings",
+      "authors": [
+        "Xing Wu",
+        "Chaochen Gao",
+        "Zijia Lin",
+        "Jizhong Han",
+        "Zhongyuan Wang",
+        "Songlin Hu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Contrastive learning has been extensively studied in sentence embedding learning, which assumes that the embeddings of different views of the same sentence are closer. The constraint brought by this assumption is weak, and a good sentence representation should also be able to reconstruct the original sentence fragments. Therefore, this paper proposes an information-aggregated contrastive learning framework for learning unsupervised sentence embeddings, termed InfoCSE. InfoCSE forces the representation of [CLS] positions to aggregate denser sentence information by introducing an additional Masked language model task and a well-designed network. We evaluate the proposed InfoCSE on several benchmark datasets w.r.t the semantic text similarity (STS) task. Experimental results show that InfoCSE outperforms SimCSE by an average Spearman correlation of 2.60% on BERT-base, and 1.77% on BERT-large, achieving state-of-the-art results among unsupervised sentence representation learning methods. Our code are available at https://github.com/caskcsg/sentemb/tree/main/InfoCSE.",
+      "doi": null,
+      "arxiv_id": "2210.06432v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2210.06432v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "SBERT-WK: A Sentence Embedding Method by Dissecting BERT-based Word Models",
+      "authors": [
+        "Bin Wang",
+        "C. -C. Jay Kuo"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Sentence embedding is an important research topic in natural language processing (NLP) since it can transfer knowledge to downstream tasks. Meanwhile, a contextualized word representation, called BERT, achieves the state-of-the-art performance in quite a few NLP tasks. Yet, it is an open problem to generate a high quality sentence representation from BERT-based word models. It was shown in previous study that different layers of BERT capture different linguistic properties. This allows us to fusion information across layers to find better sentence representation. In this work, we study the layer-wise pattern of the word representation of deep contextualized models. Then, we propose a new sentence embedding method by dissecting BERT-based word models through geometric analysis of the space spanned by the word representation. It is called the SBERT-WK method. No further training is required in SBERT-WK. We evaluate SBERT-WK on semantic textual similarity and downstream supervised tasks. Furthermore, ten sentence-level probing tasks are presented for detailed linguistic analysis. Experiments show that SBERT-WK achieves the state-of-the-art performance. Our codes are publicly available.",
+      "doi": null,
+      "arxiv_id": "2002.06652v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2002.06652v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG",
+          "cs.MM"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Sentence Embeddings using Supervised Contrastive Learning",
+      "authors": [
+        "Danqi Liao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Sentence embeddings encode sentences in fixed dense vectors and have played an important role in various NLP tasks and systems. Methods for building sentence embeddings include unsupervised learning such as Quick-Thoughts and supervised learning such as InferSent. With the success of pretrained NLP models, recent research shows that fine-tuning pretrained BERT on SNLI and Multi-NLI data creates state-of-the-art sentence embeddings, outperforming previous sentence embeddings methods on various evaluation benchmarks. In this paper, we propose a new method to build sentence embeddings by doing supervised contrastive learning. Specifically our method fine-tunes pretrained BERT on SNLI data, incorporating both supervised crossentropy loss and supervised contrastive loss. Compared with baseline where fine-tuning is only done with supervised cross-entropy loss similar to current state-of-the-art method SBERT, our supervised contrastive method improves 2.8% in average on Semantic Textual Similarity (STS) benchmarks and 1.05% in average on various sentence transfer tasks.",
+      "doi": null,
+      "arxiv_id": "2106.04791v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2106.04791v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Self-Guided Contrastive Learning for BERT Sentence Representations",
+      "authors": [
+        "Taeuk Kim",
+        "Kang Min Yoo",
+        "Sang-goo Lee"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Although BERT and its variants have reshaped the NLP landscape, it still remains unclear how best to derive sentence embeddings from such pre-trained Transformers. In this work, we propose a contrastive learning method that utilizes self-guidance for improving the quality of BERT sentence representations. Our method fine-tunes BERT in a self-supervised fashion, does not rely on data augmentation, and enables the usual [CLS] token embeddings to function as sentence vectors. Moreover, we redesign the contrastive learning objective (NT-Xent) and apply it to sentence representation learning. We demonstrate with extensive experiments that our approach is more effective than competitive baselines on diverse sentence-related tasks. We also show it is efficient at inference and robust to domain shifts.",
+      "doi": null,
+      "arxiv_id": "2106.07345v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2106.07345v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "On the Sentence Embeddings from Pre-trained Language Models",
+      "authors": [
+        "Bohan Li",
+        "Hao Zhou",
+        "Junxian He",
+        "Mingxuan Wang",
+        "Yiming Yang",
+        "Lei Li"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Pre-trained contextual representations like BERT have achieved great success in natural language processing. However, the sentence embeddings from the pre-trained language models without fine-tuning have been found to poorly capture semantic meaning of sentences. In this paper, we argue that the semantic information in the BERT embeddings is not fully exploited. We first reveal the theoretical connection between the masked language model pre-training objective and the semantic similarity task theoretically, and then analyze the BERT sentence embeddings empirically. We find that BERT always induces a non-smooth anisotropic semantic space of sentences, which harms its performance of semantic similarity. To address this issue, we propose to transform the anisotropic sentence embedding distribution to a smooth and isotropic Gaussian distribution through normalizing flows that are learned with an unsupervised objective. Experimental results show that our proposed BERT-flow method obtains significant performance gains over the state-of-the-art sentence embeddings on a variety of semantic textual similarity tasks. The code is available at https://github.com/bohanli/BERT-flow.",
+      "doi": null,
+      "arxiv_id": "2011.05864v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2011.05864v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+      "authors": [
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/d19-1410",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2970641574",
+      "citation_count": 12031,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/D19-1410.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+      "authors": [
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.1908.10084",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2971193649",
+      "citation_count": 87,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+      "authors": [
+        "Tianyu Gao",
+        "Xingcheng Yao",
+        "Danqi Chen"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.emnlp-main.552",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3156636935",
+      "citation_count": 2679,
+      "oa_status": "hybrid",
+      "pdf_url": "https://aclanthology.org/2021.emnlp-main.552.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Language-agnostic BERT Sentence Embedding",
+      "authors": [
+        "Fangxiaoyu Feng",
+        "Yinfei Yang",
+        "Daniel M. Cer",
+        "Naveen Arivazhagan",
+        "Wei Wang"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2022.acl-long.62",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3039695075",
+      "citation_count": 536,
+      "oa_status": "hybrid",
+      "pdf_url": "https://aclanthology.org/2022.acl-long.62.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "On the Sentence Embeddings from Pre-trained Language Models",
+      "authors": [
+        "Bohan Li",
+        "Hao Zhou",
+        "Junxian He",
+        "Mingxuan Wang",
+        "Yiming Yang",
+        "Lei Li"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2020.emnlp-main.733",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3105816068",
+      "citation_count": 560,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.emnlp-main.733.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Language-agnostic BERT Sentence Embedding",
+      "authors": [
+        "Fangxiaoyu Feng",
+        "Yinfei Yang",
+        "Daniel M. Cer",
+        "Naveen Arivazhagan",
+        "Wei Wang"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2007.01852",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4299574851",
+      "citation_count": 195,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2007.01852",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Evaluation of BERT and ALBERT Sentence Embedding Performance on Downstream NLP Tasks",
+      "authors": [
+        "Hyun‐Jin Choi",
+        "Judong Kim",
+        "Seongho Joe",
+        "Youngjune Gwon"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/icpr48806.2021.9412102",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3162462834",
+      "citation_count": 128,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "PromptBERT: Improving BERT Sentence Embeddings with Prompts",
+      "authors": [
+        "Ting Chen Jiang",
+        "Jian Jiao",
+        "Shaohan Huang",
+        "Zihan Zhang",
+        "Deqing Wang",
+        "Fuzhen Zhuang",
+        "Furu Wei",
+        "Haizhen Huang",
+        "Denvy Deng",
+        "Qi Zhang"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2022.emnlp-main.603",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4385573170",
+      "citation_count": 150,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2022.emnlp-main.603.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Self-Guided Contrastive Learning for BERT Sentence Representations",
+      "authors": [
+        "Taeuk Kim",
+        "Kang Min Yoo",
+        "Sang‐goo Lee"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.acl-long.197",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3176047188",
+      "citation_count": 166,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2021.acl-long.197.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+      "authors": [
+        "Yuanmeng Yan",
+        "Rumei Li",
+        "Sirui Wang",
+        "Fuzheng Zhang",
+        "Wei Wu",
+        "Weiran Xu"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.acl-long.393",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3175362188",
+      "citation_count": 491,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2021.acl-long.393.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models",
+      "authors": [
+        "Jianmo Ni",
+        "Gustavo Hernández Ábrego",
+        "Noah Constant",
+        "Ji Ma",
+        "Keith Hall",
+        "Daniel M. Cer",
+        "Yinfei Yang"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2022.findings-acl.146",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3194782062",
+      "citation_count": 299,
+      "oa_status": "hybrid",
+      "pdf_url": "https://aclanthology.org/2022.findings-acl.146.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A BERT Framework to Sentiment Analysis of Tweets",
+      "authors": [
+        "Abayomi Bello",
+        "Sin-Chun Ng",
+        "Man-Fai Leung"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.3390/s23010506",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4313398738",
+      "citation_count": 249,
+      "oa_status": "gold",
+      "pdf_url": "https://www.mdpi.com/1424-8220/23/1/506/pdf?version=1672653036",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "BERT for Arabic Topic Modeling: An Experimental Study on BERTopic Technique",
+      "authors": [
+        "Abeer Abuzayed",
+        "Hend Suliman Al-Khalifa"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.procs.2021.05.096",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3179463712",
+      "citation_count": 194,
+      "oa_status": "diamond",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1877050921012199/pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Pretrained Transformers for Text Ranking: BERT and Beyond",
+      "authors": [
+        "Andrew Yates",
+        "Rodrigo Nogueira",
+        "Jimmy Lin"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3437963.3441667",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3134665270",
+      "citation_count": 174,
+      "oa_status": "gold",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3437963.3441667",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "BertGCN: Transductive Text Classification by Combining GNN and BERT",
+      "authors": [
+        "Yuxiao Lin",
+        "Yuxian Meng",
+        "Xiaofei Sun",
+        "Qinghong Han",
+        "Kun Kuang",
+        "Jiwei Li",
+        "Fei Qing Wu"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.findings-acl.126",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3173753074",
+      "citation_count": 212,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2021.findings-acl.126.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Graph Neural Networks: A Review of Methods and Applications",
+      "authors": [
+        "Jie Zhou",
+        "Ganqu Cui",
+        "Shengding Hu",
+        "Zhengyan Zhang",
+        "Cheng Hong Yang",
+        "Zhiyuan Liu",
+        "Lifeng Wang",
+        "Changcheng Li",
+        "Maosong Sun"
+      ],
+      "year": 2018,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.1812.08434",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2905224888",
+      "citation_count": 1444,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/1812.08434",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings",
+      "authors": [
+        "Yung-Sung Chuang",
+        "Rumen Dangovski",
+        "Hongyin Luo",
+        "Yang Zhang",
+        "Shiyu Chang",
+        "Marin Soljačić",
+        "Shang-Wen Li",
+        "Scott Yih",
+        "Yoon Kim",
+        "James Glass"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2022.naacl-main.311",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4224313754",
+      "citation_count": 166,
+      "oa_status": "hybrid",
+      "pdf_url": "https://aclanthology.org/2022.naacl-main.311.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "An Unsupervised Sentence Embedding Method by Mutual Information Maximization",
+      "authors": [
+        "Yan Zhang",
+        "Ruidan He",
+        "Zuozhu Liu",
+        "Kwan Hui Lim",
+        "Lidong Bing"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2020.emnlp-main.124",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3100652389",
+      "citation_count": 126,
+      "oa_status": "gold",
+      "pdf_url": "https://www.aclweb.org/anthology/2020.emnlp-main.124.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Whitening Sentence Representations for Better Semantics and Faster Retrieval",
+      "authors": [
+        "Jianlin Su",
+        "Jiarun Cao",
+        "Weijie Liu",
+        "Yangyiwen Ou"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2103.15316",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3154229486",
+      "citation_count": 206,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2103.15316",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A hybrid approach of Weighted Fine-Tuned BERT extraction with deep Siamese Bi – LSTM model for semantic text similarity identification",
+      "authors": [
+        "D. Viji",
+        "S. Revathy"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s11042-021-11771-6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4206693003",
+      "citation_count": 63,
+      "oa_status": "bronze",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11042-021-11771-6.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+      "authors": [
+        "Nils Reimers",
+        "Iryna Gurevych"
+      ],
+      "year": 2019,
+      "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+      "abstract": null,
+      "doi": "10.18653/v1/d19-1410",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 9328,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Classification of Mental Illnesses from Reddit Posts Using Sentence-BERT Embeddings and Neural Networks",
+      "authors": [
+        "Faheem Ahmad Wagay",
+        "Jahiruddin"
+      ],
+      "year": 2025,
+      "venue": "Procedia Computer Science",
+      "abstract": null,
+      "doi": "10.1016/j.procs.2025.04.398",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 6,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A SIAMESE-BASED NEURAL NETWORK WITH SENTENCE-BERT FOR SOLVING THE PROBLEM OF CLASSIFYING CAUSE-AND-EFFECT RELATIONSHIPS BASED ON A NATURAL LANGUAGE DATA CORPUS",
+      "authors": [
+        "N.N. MAKSIMOVA",
+        "D.V. TUZOV"
+      ],
+      "year": 2026,
+      "venue": "Informatika i sistemy upravleniya",
+      "abstract": null,
+      "doi": "10.22250/18142400_2026_87_1_74",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "BERT Has More to Offer: BERT Layers Combination Yields Better Sentence Embeddings",
+      "authors": [
+        "MohammadSaleh Hosseini",
+        "Munawara Munia",
+        "Latifur Khan"
+      ],
+      "year": 2023,
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+      "abstract": null,
+      "doi": "10.18653/v1/2023.findings-emnlp.1030",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 5,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Sentence Classification in Myanmar Language using FastText Embeddings and BERT-based Features",
+      "authors": [
+        "Kyault Kyault Khaing",
+        "Aye Mya Hlaing",
+        "Yadanar Oo"
+      ],
+      "year": 2025,
+      "venue": "2025 5th International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN)",
+      "abstract": null,
+      "doi": "10.1109/icecmsn68058.2025.11382966",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "MOCS-BERT: Multi-Objective Cuckoo Search with Sentence-BERT Embeddings for Semantically Enhanced Extractive Summarization",
+      "authors": [
+        "Riski Annisa",
+        "Agung Sasongko",
+        "Muhammad Sony Maulana"
+      ],
+      "year": 2026,
+      "venue": "GAZI UNIVERSITY JOURNAL OF SCIENCE",
+      "abstract": null,
+      "doi": "10.35378/gujs.1827571",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Text Mining Drug-Protein Interactions using an Ensemble of BERT, Sentence BERT and T5 models",
+      "authors": [
+        "Xin Sui",
+        "Wanjing Wang",
+        "Jinfeng Zhang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1101/2021.10.26.465944",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Deep Learning-based Sentence Embeddings using BERT for Textual Entailment",
+      "authors": [
+        "Mohammed Alsuhaibani"
+      ],
+      "year": 2023,
+      "venue": "International Journal of Advanced Computer Science and Applications",
+      "abstract": null,
+      "doi": "10.14569/ijacsa.2023.01408108",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Semantic Movie Recommendation Using Sentence-BERT Embeddings and Annoy-Based Approximate Retrieval",
+      "authors": [
+        "Ali Jamal",
+        "Ashwin Sharma",
+        "Trapti Shrivastava"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE 6th International Conference on Computing, Power, and Communication Technologies (IC2PCT)",
+      "abstract": null,
+      "doi": "10.1109/ic2pct68894.2026.11584287",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Smart Resume Analyzer Using LLM Embeddings (Sentence-BERT) for Automated Skill Gap Detection",
+      "authors": [
+        "Keerthi M S",
+        "Saritha Shetty",
+        "Savitha Shetty"
+      ],
+      "year": 2026,
+      "venue": "2026 4th International Conference on Knowledge Engineering and Communication Systems (ICKECS)",
+      "abstract": null,
+      "doi": "10.1109/ickecs70176.2026.11527519",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Sentence Classification Using Transfer Learning with BERT",
+      "authors": [
+        "Abhishek Verma",
+        "Nallarasan V"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.20944/preprints202505.2360.v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 4: Process structure of BERT-based scene sentence classifier.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.1398/fig-4",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Similarity analysis method for Patent Documents using Sentence BERT",
+      "authors": [
+        "Nanami Tsuchiya",
+        "Sayaka Nishio",
+        "Yuya Banno",
+        "Aderu Migita",
+        "Hirofumi Nonaka"
+      ],
+      "year": 2024,
+      "venue": "The Proceedings of The 11th International Conference on Intelligent Systems and Image Processing 2024",
+      "abstract": null,
+      "doi": "10.12792/icisip2024.062",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Sentence-BERT-based Short Sentence Classification for Elementary AI Programming Educational Environments",
+      "authors": [
+        "",
+        "Youngki Park",
+        "Youhyun Shin"
+      ],
+      "year": 2024,
+      "venue": "Journal of The Korean Association of Information Education",
+      "abstract": null,
+      "doi": "10.14352/jkaie.2024.28.5.645",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Prompt-Induced Three-Stage Architecture for Music-Lyrics Generation using GRU and Sentence-BERT Embeddings",
+      "authors": [
+        "Premanand Ghadekar",
+        "Pratik Dhame",
+        "Soham Dixit",
+        "Arpit Patil",
+        "Rushikesh Sanjekar",
+        "Siddhesh Shinde"
+      ],
+      "year": 2024,
+      "venue": "2024 IEEE Calcutta Conference (CALCON)",
+      "abstract": null,
+      "doi": "10.1109/calcon63337.2024.10914142",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Evaluating Cross-Lingual Semantic Textual Similarity Using BERT-Based Sentence Embeddings",
+      "authors": [
+        "Nathália O. Pereira",
+        "Vinícius R. P. Borges"
+      ],
+      "year": 2026,
+      "venue": "Lecture Notes in Networks and Systems",
+      "abstract": null,
+      "doi": "10.1007/978-3-031-97119-8_42",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Structure-aware Sentence Encoder in Bert-Based Siamese Network",
+      "authors": [
+        "Qiwei Peng",
+        "David Weir",
+        "Julie Weeds"
+      ],
+      "year": 2021,
+      "venue": "Proceedings of the 6th Workshop on Representation Learning for NLP (RepL4NLP-2021)",
+      "abstract": null,
+      "doi": "10.18653/v1/2021.repl4nlp-1.7",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 4,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Application of Sentence-BERT Embeddings for Semantic Deduplication of Industrial Material Records",
+      "authors": [
+        "Seno Hardijanto Purnomo",
+        "Agung Triayudi"
+      ],
+      "year": 2026,
+      "venue": "sinkron",
+      "abstract": null,
+      "doi": "10.33395/sinkron.v10i3.16220",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Grammatical information in BERT sentence embeddings as two-dimensional arrays",
+      "authors": [
+        "Vivi Nastase",
+        "Paola Merlo"
+      ],
+      "year": 2023,
+      "venue": "Proceedings of the 8th Workshop on Representation Learning for NLP (RepL4NLP 2023)",
+      "abstract": null,
+      "doi": "10.18653/v1/2023.repl4nlp-1.3",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 1,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Figure 8: Accuracy (A) and loss (B) curves of predicting sentence in injury cases using the original BERT model.",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.7717/peerj-cs.1841/fig-8",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 941,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 3535,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 474,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 525,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "f21d9fc870061811a0956e27e003cecf61160cb5e30f1e4c76ddf2268c0453d5",
+  "identified_openalex": true
+}

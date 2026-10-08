@@ -1,0 +1,1922 @@
+{
+  "id": "descriptive-nerf",
+  "category": "descriptive",
+  "query": "neural radiance fields for novel view synthesis",
+  "target": {
+    "arxiv_id": "2003.08934"
+  },
+  "plan": {
+    "topic": "neural radiance fields for novel view synthesis",
+    "sub_queries": [
+      "neural radiance fields for novel view synthesis"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "LiDAR-NeRF: Novel LiDAR View Synthesis via Neural Radiance Fields",
+      "authors": [
+        "Tang Tao",
+        "Longfei Gao",
+        "Guangrun Wang",
+        "Yixing Lao",
+        "Peng Chen",
+        "Hengshuang Zhao",
+        "Dayang Hao",
+        "Xiaodan Liang",
+        "Mathieu Salzmann",
+        "Kaicheng Yu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We introduce a new task, novel view synthesis for LiDAR sensors. While traditional model-based LiDAR simulators with style-transfer neural networks can be applied to render novel views, they fall short of producing accurate and realistic LiDAR patterns because the renderers rely on explicit 3D reconstruction and exploit game engines, that ignore important attributes of LiDAR points. We address this challenge by formulating, to the best of our knowledge, the first differentiable end-to-end LiDAR rendering framework, LiDAR-NeRF, leveraging a neural radiance field (NeRF) to facilitate the joint learning of geometry and the attributes of 3D points. However, simply employing NeRF cannot achieve satisfactory results, as it only focuses on learning individual pixels while ignoring local information, especially at low texture areas, resulting in poor geometry. To this end, we have taken steps to address this issue by introducing a structural regularization method to preserve local structural details. To evaluate the effectiveness of our approach, we establish an object-centric multi-view LiDAR dataset, dubbed NeRF-MVL. It contains observations of objects from 9 categories seen from 360-degree viewpoints captured with multiple LiDAR sensors. Our extensive experiments on the scene-level KITTI-360 dataset, and on our object-level NeRF-MVL show that our LiDAR-NeRF surpasses the model-based algorithms significantly.",
+      "doi": null,
+      "arxiv_id": "2304.10406v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2304.10406v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "DENSER: Depth-Guided Ensemble with Staged EFA-GS Reconstruction for Soccer Novel View Synthesis",
+      "authors": [
+        "Parthsarthi Rawat"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We propose DENSER, a Depth-guided ENSemble with Staged EFA-GS Reconstruction for soccer novel view synthesis. DENSER extends EFA-GS with three key contributions: (1) camera-height-based loss weighting that prioritises ground-level broadcast views, (2) monocular depth supervision from Depth-Anything-V2 to regularise geometry in textureless regions, and (3) a three-model pixel-average ensemble whose members diverge from a shared base checkpoint by varying training length and Gaussian scale clamping. On five held-out challenge scenes we achieve a mean PSNR of 29.89 dB, SSIM of 0.791, and LPIPS of 0.366.",
+      "doi": null,
+      "arxiv_id": "2606.01419v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2606.01419v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Multi-Plane Neural Radiance Fields for Novel View Synthesis",
+      "authors": [
+        "Youssef Abdelkareem",
+        "Shady Shehata",
+        "Fakhri Karray"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Novel view synthesis is a long-standing problem that revolves around rendering frames of scenes from novel camera viewpoints. Volumetric approaches provide a solution for modeling occlusions through the explicit 3D representation of the camera frustum. Multi-plane Images (MPI) are volumetric methods that represent the scene using front-parallel planes at distinct depths but suffer from depth discretization leading to a 2.D scene representation. Another line of approach relies on implicit 3D scene representations. Neural Radiance Fields (NeRF) utilize neural networks for encapsulating the continuous 3D scene structure within the network weights achieving photorealistic synthesis results, however, methods are constrained to per-scene optimization settings which are inefficient in practice. Multi-plane Neural Radiance Fields (MINE) open the door for combining implicit and explicit scene representations. It enables continuous 3D scene representations, especially in the depth dimension, while utilizing the input image features to avoid per-scene optimization. The main drawback of the current literature work in this domain is being constrained to single-view input, limiting the synthesis ability to narrow viewpoint ranges. In this work, we thoroughly examine the performance, generalization, and efficiency of single-view multi-plane neural radiance fields. In addition, we propose a new multiplane NeRF architecture that accepts multiple views to improve the synthesis results and expand the viewing range. Features from the input source frames are effectively fused through a proposed attention-aware fusion module to highlight important information from different viewpoints. Experiments show the effectiveness of attention-based fusion and the promising outcomes of our proposed method when compared to multi-view NeRF and MPI techniques.",
+      "doi": null,
+      "arxiv_id": "2303.01736v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2303.01736v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "SSDNeRF: Semantic Soft Decomposition of Neural Radiance Fields",
+      "authors": [
+        "Siddhant Ranade",
+        "Christoph Lassner",
+        "Kai Li",
+        "Christian Haene",
+        "Shen-Chi Chen",
+        "Jean-Charles Bazin",
+        "Sofien Bouaziz"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Neural Radiance Fields (NeRFs) encode the radiance in a scene parameterized by the scene's plenoptic function. This is achieved by using an MLP together with a mapping to a higher-dimensional space, and has been proven to capture scenes with a great level of detail. Naturally, the same parameterization can be used to encode additional properties of the scene, beyond just its radiance. A particularly interesting property in this regard is the semantic decomposition of the scene. We introduce a novel technique for semantic soft decomposition of neural radiance fields (named SSDNeRF) which jointly encodes semantic signals in combination with radiance signals of a scene. Our approach provides a soft decomposition of the scene into semantic parts, enabling us to correctly encode multiple semantic classes blending along the same direction -- an impossible feat for existing methods. Not only does this lead to a detailed, 3D semantic representation of the scene, but we also show that the regularizing effects of the MLP used for encoding help to improve the semantic representation. We show state-of-the-art segmentation and reconstruction results on a dataset of common objects and demonstrate how the proposed approach can be applied for high quality temporally consistent video editing and re-compositing on a dataset of casually captured selfie videos.",
+      "doi": null,
+      "arxiv_id": "2212.03406v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2212.03406v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Generalizable Neural Radiance Fields for Novel View Synthesis with Transformer",
+      "authors": [
+        "Dan Wang",
+        "Xinrui Cui",
+        "Septimiu Salcudean",
+        "Z. Jane Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We propose a Transformer-based NeRF (TransNeRF) to learn a generic neural radiance field conditioned on observed-view images for the novel view synthesis task. By contrast, existing MLP-based NeRFs are not able to directly receive observed views with an arbitrary number and require an auxiliary pooling-based operation to fuse source-view information, resulting in the missing of complicated relationships between source views and the target rendering view. Furthermore, current approaches process each 3D point individually and ignore the local consistency of a radiance field scene representation. These limitations potentially can reduce their performance in challenging real-world applications where large differences between source views and a novel rendering view may exist. To address these challenges, our TransNeRF utilizes the attention mechanism to naturally decode deep associations of an arbitrary number of source views into a coordinate-based scene representation. Local consistency of shape and appearance are considered in the ray-cast space and the surrounding-view space within a unified Transformer network. Experiments demonstrate that our TransNeRF, trained on a wide variety of scenes, can achieve better performance in comparison to state-of-the-art image-based neural rendering methods in both scene-agnostic and per-scene finetuning scenarios especially when there is a considerable gap between source views and a rendering view.",
+      "doi": null,
+      "arxiv_id": "2206.05375v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2206.05375v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Generalizable Neural Performer: Learning Robust Radiance Fields for Human Novel View Synthesis",
+      "authors": [
+        "Wei Cheng",
+        "Su Xu",
+        "Jingtan Piao",
+        "Chen Qian",
+        "Wayne Wu",
+        "Kwan-Yee Lin",
+        "Hongsheng Li"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "This work targets at using a general deep learning framework to synthesize free-viewpoint images of arbitrary human performers, only requiring a sparse number of camera views as inputs and skirting per-case fine-tuning. The large variation of geometry and appearance, caused by articulated body poses, shapes and clothing types, are the key bottlenecks of this task. To overcome these challenges, we present a simple yet powerful framework, named Generalizable Neural Performer (GNR), that learns a generalizable and robust neural body representation over various geometry and appearance. Specifically, we compress the light fields for novel view human rendering as conditional implicit neural radiance fields from both geometry and appearance aspects. We first introduce an Implicit Geometric Body Embedding strategy to enhance the robustness based on both parametric 3D human body model and multi-view images hints. We further propose a Screen-Space Occlusion-Aware Appearance Blending technique to preserve the high-quality appearance, through interpolating source view appearance to the radiance fields with a relax but approximate geometric guidance.\n  To evaluate our method, we present our ongoing effort of constructing a dataset with remarkable complexity and diversity. The dataset GeneBody-1.0, includes over 360M frames of 370 subjects under multi-view cameras capturing, performing a large variety of pose actions, along with diverse body shapes, clothing, accessories and hairdos. Experiments on GeneBody-1.0 and ZJU-Mocap show better robustness of our methods than recent state-of-the-art generalizable methods among all cross-dataset, unseen subjects and unseen poses settings. We also demonstrate the competitiveness of our model compared with cutting-edge case-specific ones. Dataset, code and model will be made publicly available.",
+      "doi": null,
+      "arxiv_id": "2204.11798v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2204.11798v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Cascaded and Generalizable Neural Radiance Fields for Fast View Synthesis",
+      "authors": [
+        "Phong Nguyen-Ha",
+        "Lam Huynh",
+        "Esa Rahtu",
+        "Jiri Matas",
+        "Janne Heikkila"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We present CG-NeRF, a cascade and generalizable neural radiance fields method for view synthesis. Recent generalizing view synthesis methods can render high-quality novel views using a set of nearby input views. However, the rendering speed is still slow due to the nature of uniformly-point sampling of neural radiance fields. Existing scene-specific methods can train and render novel views efficiently but can not generalize to unseen data. Our approach addresses the problems of fast and generalizing view synthesis by proposing two novel modules: a coarse radiance fields predictor and a convolutional-based neural renderer. This architecture infers consistent scene geometry based on the implicit neural fields and renders new views efficiently using a single GPU. We first train CG-NeRF on multiple 3D scenes of the DTU dataset, and the network can produce high-quality and accurate novel views on unseen real and synthetic data using only photometric losses. Moreover, our method can leverage a denser set of reference images of a single scene to produce accurate novel views without relying on additional explicit representations and still maintains the high-speed rendering of the pre-trained model. Experimental results show that CG-NeRF outperforms state-of-the-art generalizable neural rendering methods on various synthetic and real datasets.",
+      "doi": null,
+      "arxiv_id": "2208.04717v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2208.04717v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Improving Neural Radiance Fields with Depth-aware Optimization for Novel View Synthesis",
+      "authors": [
+        "Shu Chen",
+        "Junyao Li",
+        "Yang Zhang",
+        "Beiji Zou"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "With dense inputs, Neural Radiance Fields (NeRF) is able to render photo-realistic novel views under static conditions. Although the synthesis quality is excellent, existing NeRF-based methods fail to obtain moderate three-dimensional (3D) structures. The novel view synthesis quality drops dramatically given sparse input due to the implicitly reconstructed inaccurate 3D-scene structure. We propose SfMNeRF, a method to better synthesize novel views as well as reconstruct the 3D-scene geometry. SfMNeRF leverages the knowledge from the self-supervised depth estimation methods to constrain the 3D-scene geometry during view synthesis training. Specifically, SfMNeRF employs the epipolar, photometric consistency, depth smoothness, and position-of-matches constraints to explicitly reconstruct the 3D-scene structure. Through these explicit constraints and the implicit constraint from NeRF, our method improves the view synthesis as well as the 3D-scene geometry performance of NeRF at the same time. In addition, SfMNeRF synthesizes novel sub-pixels in which the ground truth is obtained by image interpolation. This strategy enables SfMNeRF to include more samples to improve generalization performance. Experiments on two public datasets demonstrate that SfMNeRF surpasses state-of-the-art approaches. Code is available at https://github.com/XTU-PR-LAB/SfMNeRF",
+      "doi": null,
+      "arxiv_id": "2304.05218v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2304.05218v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Segmentation-Guided Neural Radiance Fields for Novel Street View Synthesis",
+      "authors": [
+        "Yizhou Li",
+        "Yusuke Monno",
+        "Masatoshi Okutomi",
+        "Yuuichi Tanaka",
+        "Seiichi Kataoka",
+        "Teruaki Kosiba"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent advances in Neural Radiance Fields (NeRF) have shown great potential in 3D reconstruction and novel view synthesis, particularly for indoor and small-scale scenes. However, extending NeRF to large-scale outdoor environments presents challenges such as transient objects, sparse cameras and textures, and varying lighting conditions. In this paper, we propose a segmentation-guided enhancement to NeRF for outdoor street scenes, focusing on complex urban environments. Our approach extends ZipNeRF and utilizes Grounded SAM for segmentation mask generation, enabling effective handling of transient objects, modeling of the sky, and regularization of the ground. We also introduce appearance embeddings to adapt to inconsistent lighting across view sequences. Experimental results demonstrate that our method outperforms the baseline ZipNeRF, improving novel view synthesis quality with fewer artifacts and sharper details.",
+      "doi": null,
+      "arxiv_id": "2503.14219v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2503.14219v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Neural Radiance Fields (NeRFs): A Review and Some Recent Developments",
+      "authors": [
+        "Mohamed Debbagh"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Neural Radiance Field (NeRF) is a framework that represents a 3D scene in the weights of a fully connected neural network, known as the Multi-Layer Perception(MLP). The method was introduced for the task of novel view synthesis and is able to achieve state-of-the-art photorealistic image renderings from a given continuous viewpoint. NeRFs have become a popular field of research as recent developments have been made that expand the performance and capabilities of the base framework. Recent developments include methods that require less images to train the model for view synthesis as well as methods that are able to generate views from unconstrained and dynamic scene representations.",
+      "doi": null,
+      "arxiv_id": "2305.00375v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2305.00375v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "eess.IV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Efficient View Synthesis with Neural Radiance Distribution Field",
+      "authors": [
+        "Yushuang Wu",
+        "Xiao Li",
+        "Jinglu Wang",
+        "Xiaoguang Han",
+        "Shuguang Cui",
+        "Yan Lu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent work on Neural Radiance Fields (NeRF) has demonstrated significant advances in high-quality view synthesis. A major limitation of NeRF is its low rendering efficiency due to the need for multiple network forwardings to render a single pixel. Existing methods to improve NeRF either reduce the number of required samples or optimize the implementation to accelerate the network forwarding. Despite these efforts, the problem of multiple sampling persists due to the intrinsic representation of radiance fields. In contrast, Neural Light Fields (NeLF) reduce the computation cost of NeRF by querying only one single network forwarding per pixel. To achieve a close visual quality to NeRF, existing NeLF methods require significantly larger network capacities which limits their rendering efficiency in practice. In this work, we propose a new representation called Neural Radiance Distribution Field (NeRDF) that targets efficient view synthesis in real-time. Specifically, we use a small network similar to NeRF while preserving the rendering speed with a single network forwarding per pixel as in NeLF. The key is to model the radiance distribution along each ray with frequency basis and predict frequency weights using the network. Pixel values are then computed via volume rendering on radiance distributions. Experiments show that our proposed method offers a better trade-off among speed, quality, and network size than existing methods: we achieve a ~254x speed-up over NeRF with similar network size, with only a marginal performance decline. Our project page is at yushuang-wu.github.io/NeRDF.",
+      "doi": null,
+      "arxiv_id": "2308.11130v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2308.11130v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "IntrinsicNeRF: Learning Intrinsic Neural Radiance Fields for Editable Novel View Synthesis",
+      "authors": [
+        "Weicai Ye",
+        "Shuo Chen",
+        "Chong Bao",
+        "Hujun Bao",
+        "Marc Pollefeys",
+        "Zhaopeng Cui",
+        "Guofeng Zhang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Existing inverse rendering combined with neural rendering methods can only perform editable novel view synthesis on object-specific scenes, while we present intrinsic neural radiance fields, dubbed IntrinsicNeRF, which introduce intrinsic decomposition into the NeRF-based neural rendering method and can extend its application to room-scale scenes. Since intrinsic decomposition is a fundamentally under-constrained inverse problem, we propose a novel distance-aware point sampling and adaptive reflectance iterative clustering optimization method, which enables IntrinsicNeRF with traditional intrinsic decomposition constraints to be trained in an unsupervised manner, resulting in multi-view consistent intrinsic decomposition results. To cope with the problem that different adjacent instances of similar reflectance in a scene are incorrectly clustered together, we further propose a hierarchical clustering method with coarse-to-fine optimization to obtain a fast hierarchical indexing representation. It supports compelling real-time augmented applications such as recoloring and illumination variation. Extensive experiments and editing samples on both object-specific/room-scale scenes and synthetic/real-word data demonstrate that we can obtain consistent intrinsic decomposition results and high-fidelity novel view synthesis even for challenging sequences.",
+      "doi": null,
+      "arxiv_id": "2210.00647v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2210.00647v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Urban Radiance Fields",
+      "authors": [
+        "Konstantinos Rematas",
+        "Andrew Liu",
+        "Pratul P. Srinivasan",
+        "Jonathan T. Barron",
+        "Andrea Tagliasacchi",
+        "Thomas Funkhouser",
+        "Vittorio Ferrari"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The goal of this work is to perform 3D reconstruction and novel view synthesis from data captured by scanning platforms commonly deployed for world mapping in urban outdoor environments (e.g., Street View). Given a sequence of posed RGB images and lidar sweeps acquired by cameras and scanners moving through an outdoor scene, we produce a model from which 3D surfaces can be extracted and novel RGB images can be synthesized. Our approach extends Neural Radiance Fields, which has been demonstrated to synthesize realistic novel images for small scenes in controlled settings, with new methods for leveraging asynchronously captured lidar data, for addressing exposure variation between captured images, and for leveraging predicted image segmentations to supervise densities on rays pointing at the sky. Each of these three extensions provides significant performance improvements in experiments on Street View data. Our system produces state-of-the-art 3D surface reconstructions and synthesizes higher quality novel views in comparison to both traditional methods (e.g.~COLMAP) and recent neural representations (e.g.~Mip-NeRF).",
+      "doi": null,
+      "arxiv_id": "2111.14643v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2111.14643v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "3D Reconstruction and New View Synthesis of Indoor Environments based on a Dual Neural Radiance Field",
+      "authors": [
+        "Zhenyu Bao",
+        "Guibiao Liao",
+        "Zhongyuan Zhao",
+        "Kanglin Liu",
+        "Qing Li",
+        "Guoping Qiu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Simultaneously achieving 3D reconstruction and new view synthesis for indoor environments has widespread applications but is technically very challenging. State-of-the-art methods based on implicit neural functions can achieve excellent 3D reconstruction results, but their performances on new view synthesis can be unsatisfactory. The exciting development of neural radiance field (NeRF) has revolutionized new view synthesis, however, NeRF-based models can fail to reconstruct clean geometric surfaces. We have developed a dual neural radiance field (Du-NeRF) to simultaneously achieve high-quality geometry reconstruction and view rendering. Du-NeRF contains two geometric fields, one derived from the SDF field to facilitate geometric reconstruction and the other derived from the density field to boost new view synthesis. One of the innovative features of Du-NeRF is that it decouples a view-independent component from the density field and uses it as a label to supervise the learning process of the SDF field. This reduces shape-radiance ambiguity and enables geometry and color to benefit from each other during the learning process. Extensive experiments demonstrate that Du-NeRF can significantly improve the performance of novel view synthesis and 3D reconstruction for indoor environments and it is particularly effective in constructing areas containing fine geometries that do not obey multi-view color consistency.",
+      "doi": null,
+      "arxiv_id": "2401.14726v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2401.14726v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+      "authors": [
+        "Ben Mildenhall",
+        "Pratul P. Srinivasan",
+        "Matthew Tancik",
+        "Jonathan T. Barron",
+        "Ravi Ramamoorthi",
+        "Ren Ng"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views. Our algorithm represents a scene using a fully-connected (non-convolutional) deep network, whose input is a single continuous 5D coordinate (spatial location $(x,y,z)$ and viewing direction $(θ, φ)$) and whose output is the volume density and view-dependent emitted radiance at that spatial location. We synthesize views by querying 5D coordinates along camera rays and use classic volume rendering techniques to project the output colors and densities into an image. Because volume rendering is naturally differentiable, the only input required to optimize our representation is a set of images with known camera poses. We describe how to effectively optimize neural radiance fields to render photorealistic novel views of scenes with complicated geometry and appearance, and demonstrate results that outperform prior work on neural rendering and view synthesis. View synthesis results are best viewed as videos, so we urge readers to view our supplementary video for convincing comparisons.",
+      "doi": null,
+      "arxiv_id": "2003.08934v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2003.08934v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Neural Radiance Fields for Novel View Synthesis in Monocular Gastroscopy",
+      "authors": [
+        "Zijie Jiang",
+        "Yusuke Monno",
+        "Masatoshi Okutomi",
+        "Sho Suzuki",
+        "Kenji Miki"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Enabling the synthesis of arbitrarily novel viewpoint images within a patient's stomach from pre-captured monocular gastroscopic images is a promising topic in stomach diagnosis. Typical methods to achieve this objective integrate traditional 3D reconstruction techniques, including structure-from-motion (SfM) and Poisson surface reconstruction. These methods produce explicit 3D representations, such as point clouds and meshes, thereby enabling the rendering of the images from novel viewpoints. However, the existence of low-texture and non-Lambertian regions within the stomach often results in noisy and incomplete reconstructions of point clouds and meshes, hindering the attainment of high-quality image rendering. In this paper, we apply the emerging technique of neural radiance fields (NeRF) to monocular gastroscopic data for synthesizing photo-realistic images for novel viewpoints. To address the performance degradation due to view sparsity in local regions of monocular gastroscopy, we incorporate geometry priors from a pre-reconstructed point cloud into the training of NeRF, which introduces a novel geometry-based loss to both pre-captured observed views and generated unobserved views. Compared to other recent NeRF methods, our approach showcases high-fidelity image renderings from novel viewpoints within the stomach both qualitatively and quantitatively.",
+      "doi": null,
+      "arxiv_id": "2405.18863v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2405.18863v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "CeRF: Convolutional Neural Radiance Fields for New View Synthesis with Derivatives of Ray Modeling",
+      "authors": [
+        "Xiaoyan Yang",
+        "Dingbo Lu",
+        "Yang Li",
+        "Chenhui Li",
+        "Changbo Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In recent years, novel view synthesis has gained popularity in generating high-fidelity images. While demonstrating superior performance in the task of synthesizing novel views, the majority of these methods are still based on the conventional multi-layer perceptron for scene embedding. Furthermore, light field models suffer from geometric blurring during pixel rendering, while radiance field-based volume rendering methods have multiple solutions for a certain target of density distribution integration. To address these issues, we introduce the Convolutional Neural Radiance Fields to model the derivatives of radiance along rays. Based on 1D convolutional operations, our proposed method effectively extracts potential ray representations through a structured neural network architecture. Besides, with the proposed ray modeling, a proposed recurrent module is employed to solve geometric ambiguity in the fully neural rendering process. Extensive experiments demonstrate the promising results of our proposed model compared with existing state-of-the-art methods.",
+      "doi": null,
+      "arxiv_id": "2307.07125v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2307.07125v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "PVSeRF: Joint Pixel-, Voxel- and Surface-Aligned Radiance Field for Single-Image Novel View Synthesis",
+      "authors": [
+        "Xianggang Yu",
+        "Jiapeng Tang",
+        "Yipeng Qin",
+        "Chenghong Li",
+        "Linchao Bao",
+        "Xiaoguang Han",
+        "Shuguang Cui"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We present PVSeRF, a learning framework that reconstructs neural radiance fields from single-view RGB images, for novel view synthesis. Previous solutions, such as pixelNeRF, rely only on pixel-aligned features and suffer from feature ambiguity issues. As a result, they struggle with the disentanglement of geometry and appearance, leading to implausible geometries and blurry results. To address this challenge, we propose to incorporate explicit geometry reasoning and combine it with pixel-aligned features for radiance field prediction. Specifically, in addition to pixel-aligned features, we further constrain the radiance field learning to be conditioned on i) voxel-aligned features learned from a coarse volumetric grid and ii) fine surface-aligned features extracted from a regressed point cloud. We show that the introduction of such geometry-aware features helps to achieve a better disentanglement between appearance and geometry, i.e. recovering more accurate geometries and synthesizing higher quality images of novel views. Extensive experiments against state-of-the-art methods on ShapeNet benchmarks demonstrate the superiority of our approach for single-image novel view synthesis.",
+      "doi": null,
+      "arxiv_id": "2202.04879v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2202.04879v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Learning Neural Duplex Radiance Fields for Real-Time View Synthesis",
+      "authors": [
+        "Ziyu Wan",
+        "Christian Richardt",
+        "Aljaž Božič",
+        "Chao Li",
+        "Vijay Rengarajan",
+        "Seonghyeon Nam",
+        "Xiaoyu Xiang",
+        "Tuotuo Li",
+        "Bo Zhu",
+        "Rakesh Ranjan",
+        "Jing Liao"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Neural radiance fields (NeRFs) enable novel view synthesis with unprecedented visual quality. However, to render photorealistic images, NeRFs require hundreds of deep multilayer perceptron (MLP) evaluations - for each pixel. This is prohibitively expensive and makes real-time rendering infeasible, even on powerful modern GPUs. In this paper, we propose a novel approach to distill and bake NeRFs into highly efficient mesh-based neural representations that are fully compatible with the massively parallel graphics rendering pipeline. We represent scenes as neural radiance features encoded on a two-layer duplex mesh, which effectively overcomes the inherent inaccuracies in 3D surface reconstruction by learning the aggregated radiance information from a reliable interval of ray-surface intersections. To exploit local geometric relationships of nearby pixels, we leverage screen-space convolutions instead of the MLPs used in NeRFs to achieve high-quality appearance. Finally, the performance of the whole framework is further boosted by a novel multi-view distillation optimization strategy. We demonstrate the effectiveness and superiority of our approach via extensive experiments on a range of standard datasets.",
+      "doi": null,
+      "arxiv_id": "2304.10537v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2304.10537v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Sampling for View Synthesis: From Local Light Field Fusion to Neural Radiance Fields and Beyond",
+      "authors": [
+        "Ravi Ramamoorthi"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Capturing and rendering novel views of complex real-world scenes is a long-standing problem in computer graphics and vision, with applications in augmented and virtual reality, immersive experiences and 3D photography. The advent of deep learning has enabled revolutionary advances in this area, classically known as image-based rendering. However, previous approaches require intractably dense view sampling or provide little or no guidance for how users should sample views of a scene to reliably render high-quality novel views. Local light field fusion proposes an algorithm for practical view synthesis from an irregular grid of sampled views that first expands each sampled view into a local light field via a multiplane image scene representation, then renders novel views by blending adjacent local light fields. Crucially, we extend traditional plenoptic sampling theory to derive a bound that specifies precisely how densely users should sample views of a given scene when using our algorithm. We achieve the perceptual quality of Nyquist rate view sampling while using up to 4000x fewer views. Subsequent developments have led to new scene representations for deep learning with view synthesis, notably neural radiance fields, but the problem of sparse view synthesis from a small number of images has only grown in importance. We reprise some of the recent results on sparse and even single image view synthesis, while posing the question of whether prescriptive sampling guidelines are feasible for the new generation of image-based rendering algorithms.",
+      "doi": null,
+      "arxiv_id": "2408.04586v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2408.04586v1",
+      "raw_payload": {
+        "categories": [
+          "cs.GR",
+          "cs.AI",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "primary_category": "cs.GR"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+      "authors": [
+        "Ben Mildenhall",
+        "Pratul P. Srinivasan",
+        "Matthew Tancik",
+        "Jonathan T. Barron",
+        "Ravi Ramamoorthi",
+        "Ren Ng"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/978-3-030-58452-8_24",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3109585842",
+      "citation_count": 5160,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+      "authors": [
+        "Bernhard Kerbl",
+        "Georgios Kopanas",
+        "Thomas Leimkühler",
+        "George Drettakis"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3592433",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4385318467",
+      "citation_count": 5600,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Non-Rigid Neural Radiance Fields: Reconstruction and Novel View Synthesis of a Dynamic Scene From Monocular Video",
+      "authors": [
+        "Edgar Tretschk",
+        "Ayush Tewari",
+        "Vladislav Golyanik",
+        "Michael Zollhöfer",
+        "Christoph Lassner",
+        "Christian Theobalt"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/iccv48922.2021.01272",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3114462840",
+      "citation_count": 429,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "NeRF",
+      "authors": [
+        "Ben Mildenhall",
+        "Pratul P. Srinivasan",
+        "Matthew Tancik",
+        "Jonathan T. Barron",
+        "Ravi Ramamoorthi",
+        "Ren Ng"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3503250",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4200150166",
+      "citation_count": 6594,
+      "oa_status": "hybrid",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3503250",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "pixelNeRF: Neural Radiance Fields from One or Few Images",
+      "authors": [
+        "Alex W.Y. Yu",
+        "Vickie Ye",
+        "Matthew Tancik",
+        "Angjoo Kanazawa"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr46437.2021.00455",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3176368002",
+      "citation_count": 1528,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields",
+      "authors": [
+        "Jonathan T. Barron",
+        "Ben Mildenhall",
+        "Dor Verbin",
+        "Pratul P. Srinivasan",
+        "Peter Hedman"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr52688.2022.00539",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3215769467",
+      "citation_count": 1897,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Cross-Ray Neural Radiance Fields for Novel-view Synthesis from Unconstrained Image Collections",
+      "authors": [
+        "Yifan Yang",
+        "Shuhai Zhang",
+        "Zixiong Huang",
+        "Yubing Zhang",
+        "Mingkui Tan"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/iccv51070.2023.01457",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4390874091",
+      "citation_count": 27,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+      "authors": [
+        "Ben Mildenhall",
+        "Pratul P. Srinivasan",
+        "Matthew Tancik",
+        "Jonathan T. Barron",
+        "Ravi Ramamoorthi",
+        "Ren Ng"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2003.08934",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3011537551",
+      "citation_count": 532,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2003.08934",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs",
+      "authors": [
+        "Michael Niemeyer",
+        "Jonathan T. Barron",
+        "Ben Mildenhall",
+        "Mehdi S. M. Sajjadi",
+        "Andreas Geiger",
+        "Noha M. Radwan"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr52688.2022.00540",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3216476011",
+      "citation_count": 593,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "MVSNeRF: Fast Generalizable Radiance Field Reconstruction from Multi-View Stereo",
+      "authors": [
+        "Anpei Chen",
+        "Zexiang Xu",
+        "Fuqiang Zhao",
+        "Xiaoshuai Zhang",
+        "Fanbo Xiang",
+        "Jingyi Yu",
+        "Hao Su"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/iccv48922.2021.01386",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3204859697",
+      "citation_count": 788,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "D-NeRF: neural radiance fields for dynamic scenes",
+      "authors": [
+        "Albert Pumarola",
+        "Enric Corona",
+        "Gerard Pons‐Moll",
+        "Francesc Moreno-Noguer"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr46437.2021.01018",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3153220274",
+      "citation_count": 1344,
+      "oa_status": "green",
+      "pdf_url": "https://upcommons.upc.edu/bitstream/2117/365218/1/2510-D-nerf_-Neural-radiance-fields-for-dynamic-scenes.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "NeRF++: Analyzing and Improving Neural Radiance Fields",
+      "authors": [
+        "Kai Zhang",
+        "Gernot Riegler",
+        "Noah Snavely",
+        "Vladlen Koltun"
+      ],
+      "year": 2020,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2010.07492",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3092948912",
+      "citation_count": 510,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2010.07492",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "R2L: Distilling Neural Radiance Field to Neural Light Field for Efficient Novel View Synthesis",
+      "authors": [
+        "Huan Wang",
+        "Jian Cun Ren",
+        "Zeng Huang",
+        "Kyle Olszewski",
+        "Menglei Chai",
+        "Yun Fu",
+        "Sergey Tulyakov"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/978-3-031-19821-2_35",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4312814953",
+      "citation_count": 66,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Generalizable Neural Radiance Fields for Novel View Synthesis with Transformer",
+      "authors": [
+        "Dan Wang",
+        "Xinrui Cui",
+        "Septimiu E. Salcudean",
+        "Z. Jane Wang"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2206.05375",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4282932609",
+      "citation_count": 9,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2206.05375",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Point-NeRF: Point-based Neural Radiance Fields",
+      "authors": [
+        "Qiangeng Xu",
+        "Zexiang Xu",
+        "Julien Philip",
+        "Sai Bi",
+        "Zhixin Shu",
+        "Kalyan Sunkavalli",
+        "Ulrich Neumann"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr52688.2022.00536",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4312706422",
+      "citation_count": 558,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Direct Voxel Grid Optimization: Super-fast Convergence for Radiance Fields Reconstruction",
+      "authors": [
+        "Cheng Guo Sun",
+        "Min Sun",
+        "Hwann-Tzong Chen"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr52688.2022.00538",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3215589927",
+      "citation_count": 927,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "iNeRF: Inverting Neural Radiance Fields for Pose Estimation",
+      "authors": [
+        "Yen-Chen Lin",
+        "Pete Florence",
+        "Jonathan T. Barron",
+        "Alberto Rodríguez",
+        "Phillip Isola",
+        "Tsung-Yi Lin"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/iros51168.2021.9636708",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3112108866",
+      "citation_count": 413,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "IntrinsicNeRF: Learning Intrinsic Neural Radiance Fields for Editable Novel View Synthesis",
+      "authors": [
+        "Weicai Ye",
+        "Shuo Chen",
+        "Chong Gao Bao",
+        "Hujun Bao",
+        "Marc Pollefeys",
+        "Zhaopeng Cui",
+        "Guofeng Zhang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/iccv51070.2023.00038",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4390873173",
+      "citation_count": 46,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Dense Depth Priors for Neural Radiance Fields from Sparse Input Views",
+      "authors": [
+        "Barbara Roessle",
+        "Jonathan T. Barron",
+        "Ben Mildenhall",
+        "Pratul P. Srinivasan",
+        "Matthias NieBner"
+      ],
+      "year": 2022,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/cvpr52688.2022.01255",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4313154783",
+      "citation_count": 352,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Collaborative neural radiance fields for novel view synthesis",
+      "authors": [
+        "Junqing Yuan",
+        "Mengting Fan",
+        "Zhenyang Liu",
+        "Tongxuan Han",
+        "Zhenzhong Kuang",
+        "Chihao Pan",
+        "Jiajun Ding"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/s00371-024-03379-2",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4394751447",
+      "citation_count": 4,
+      "oa_status": "closed",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Segmentation-Guided Neural Radiance Fields for Novel Street View Synthesis",
+      "authors": [
+        "Yizhou Li",
+        "Yusuke Monno",
+        "Masatoshi Okutomi",
+        "Yuuichi Tanaka",
+        "Seiichi Kataoka",
+        "Teruaki Kosiba"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of the 20th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+      "abstract": null,
+      "doi": "10.5220/0013244200003912",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Depth-Supervised Neural Radiance Fields for Accurate Novel View Synthesis",
+      "authors": [
+        "Ming Xu",
+        "Bojun Wang"
+      ],
+      "year": 2024,
+      "venue": "2024 China Automation Congress (CAC)",
+      "abstract": null,
+      "doi": "10.1109/cac63892.2024.10864702",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Cross-View Token-Enhanced Neural Radiance Fields for Sparse-View Novel View Synthesis",
+      "authors": [
+        "Kehan Zhou"
+      ],
+      "year": 2026,
+      "venue": "2026 7th International Conference on Computer Vision, Image and Deep Learning (CVIDL)",
+      "abstract": null,
+      "doi": "10.1109/cvidl70130.2026.11637758",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Multi-Plane Neural Radiance Fields for Novel View Synthesis",
+      "authors": [
+        "Youssef Abdelkareem",
+        "Shady Shehata",
+        "Fakhri Karray"
+      ],
+      "year": 2023,
+      "venue": "Advanced Computer Science and Information Technology Trends",
+      "abstract": null,
+      "doi": "10.5121/csit.2023.131302",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "",
+      "authors": [],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1117/12.2643856.6315188058112",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "HyRF: Hybrid Radiance Fields for Memory-efficient and High-quality Novel View Synthesis",
+      "authors": [
+        "Zipeng Wang",
+        "Dan Xu"
+      ],
+      "year": 2025,
+      "venue": "Advances in Neural Information Processing Systems 38",
+      "abstract": null,
+      "doi": "10.52202/085713-0617",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 3,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "M-Mednerf: 3D Modeling and Novel View Synthesis from Single-View X-Rays Using Mamba-Accelerated Neural Radiance Fields",
+      "authors": [
+        "Lohith Kandukuri",
+        "Jiji Victor Charangatt"
+      ],
+      "year": 2025,
+      "venue": "TENCON 2025 - 2025 IEEE Region 10 Conference (TENCON)",
+      "abstract": null,
+      "doi": "10.1109/tencon66050.2025.11375142",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Relightable Neural Radiance Fields for Novel View Synthesis",
+      "authors": [
+        "Malena I. Mahoney"
+      ],
+      "year": 2025,
+      "venue": "Scholarly Horizons: University of Minnesota, Morris Undergraduate Journal",
+      "abstract": null,
+      "doi": "10.61366/2576-2176.1169",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "TeX-NeRF: Neural Radiance Fields for Novel HADAR View Synthesis",
+      "authors": [
+        "Chonghao Zhong",
+        "Chao Xu",
+        "Rihua Hao",
+        "Hao Zhao"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "abstract": null,
+      "doi": "10.1109/iros60139.2025.11246630",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "STNeRF: symmetric triplane neural radiance fields for novel view synthesis from single-view vehicle images",
+      "authors": [
+        "Zhao Liu",
+        "Zhongliang Fu",
+        "Gang Li",
+        "Jie Hu",
+        "Yang Yang"
+      ],
+      "year": 2025,
+      "venue": "Applied Intelligence",
+      "abstract": null,
+      "doi": "10.1007/s10489-024-06005-9",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "A Feasibility Study on Novel View Synthesis of Underwater Structures using Neural Radiance Fields",
+      "authors": [
+        "Yuen Min Too",
+        "Hari Vishnu",
+        "Mandar Chitre",
+        "Bharath Kalyan",
+        "Luyuan Peng",
+        "Rajat Mishra"
+      ],
+      "year": 2024,
+      "venue": "OCEANS 2024 - Singapore",
+      "abstract": null,
+      "doi": "10.1109/oceans51537.2024.10682127",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Novel View Synthesis of Defocused Blur Scenes Based on Neural Radiance Fields",
+      "authors": [
+        "Zhaoji Lin",
+        "Yuxin Zheng",
+        "Li Yao"
+      ],
+      "year": 2025,
+      "venue": "IEEE Access",
+      "abstract": null,
+      "doi": "10.1109/access.2025.3574881",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Cerf: Convolutional Neural Radiance Derivative Fields for New View Synthesis",
+      "authors": [
+        "Wenjie Liu",
+        "Ling You",
+        "Xiaoyan Yang",
+        "Dingbo Lu",
+        "Changbo Wang",
+        "Yang Li"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.5338603",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Novel view synthesis using neural radiance fields for laparoscopic surgery navigation",
+      "authors": [
+        "Nati Nawawithan",
+        "James Yu",
+        "Kelden Pruitt",
+        "Baowei Fei"
+      ],
+      "year": 2025,
+      "venue": "Medical Imaging 2025: Image-Guided Procedures, Robotic Interventions, and Modeling",
+      "abstract": null,
+      "doi": "10.1117/12.3048817",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Enhancing View Synthesis with Depth-Guided Neural Radiance Fields and Improved Depth Completion",
+      "authors": [
+        "Bojun Wang",
+        "Danhong Zhang",
+        "Yixin Su",
+        "Huajun Zhang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.20944/preprints202312.1467.v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Transient Neural Radiance Fields for Lidar View Synthesis and 3D Reconstruction",
+      "authors": [
+        "Anagh Malik",
+        "Parsa Mirdehghan",
+        "Sotiris Nousias",
+        "Kyros Kutulakos",
+        "David Lindell"
+      ],
+      "year": 2023,
+      "venue": "Advances in Neural Information Processing Systems 36",
+      "abstract": null,
+      "doi": "10.52202/075280-3133",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 8,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "CasTensoRF: Cascaded Tensorial Radiance Fields for Novel View Synthesis",
+      "authors": [
+        "Wenpeng Xing",
+        "Jie Chen"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE International Conference on Multimedia and Expo (ICME)",
+      "abstract": null,
+      "doi": "10.1109/icme55011.2023.00373",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Neural Radiance Fields for Novel View Synthesis in Monocular Gastroscopy",
+      "authors": [
+        "Zijie Jiang",
+        "Yusuke Monno",
+        "Masatoshi Okutomi",
+        "Sho Suzuki",
+        "Kenji Miki"
+      ],
+      "year": 2024,
+      "venue": "2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)",
+      "abstract": null,
+      "doi": "10.1109/embc53108.2024.10782186",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 2,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "SG-NeRF: Sparse-Input Generalized Neural Radiance Fields for Novel View Synthesis",
+      "authors": [
+        "Kuo Xu",
+        "Jie Li",
+        "Zhen-Qiang Li",
+        "Yang-Jie Cao"
+      ],
+      "year": 2024,
+      "venue": "Journal of Computer Science and Technology",
+      "abstract": null,
+      "doi": "10.1007/s11390-024-4157-6",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "IntrinsicNeRF: Learning Intrinsic Neural Radiance Fields for Editable Novel View Synthesis",
+      "authors": [
+        "Weicai Ye",
+        "Shuo Chen",
+        "Chong Bao",
+        "Hujun Bao",
+        "Marc Pollefeys",
+        "Zhaopeng Cui",
+        "Guofeng Zhang"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "abstract": null,
+      "doi": "10.1109/iccv51070.2023.00038",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 51,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Neural Radiance Fields for Novel View Synthesis in Monocular Gastroscopy.",
+      "authors": [
+        "Jiang Z",
+        "Monno Y",
+        "Okutomi M",
+        "Suzuki S",
+        "Miki K"
+      ],
+      "year": 2024,
+      "venue": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+      "abstract": null,
+      "doi": "10.1109/EMBC53108.2024.10782186",
+      "arxiv_id": null,
+      "pmid": "40039536",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Cascaded and Generalizable Neural Radiance Fields for Fast View Synthesis.",
+      "authors": [
+        "Nguyen-Ha P",
+        "Huynh L",
+        "Rahtu E",
+        "Matas J",
+        "Heikkila J"
+      ],
+      "year": 2024,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2023.3335311",
+      "arxiv_id": null,
+      "pmid": "37999969",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Neural Radiance Fields From Sparse RGB-D Images for High-Quality View Synthesis.",
+      "authors": [
+        "Yuan YJ",
+        "Lai YK",
+        "Huang YH",
+        "Kobbelt L",
+        "Gao L"
+      ],
+      "year": 2023,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2022.3232502",
+      "arxiv_id": null,
+      "pmid": "37015513",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Novel view synthesis using neural radiance fields for laparoscopic surgery navigation.",
+      "authors": [
+        "Nawawithan N",
+        "Yu J",
+        "Pruitt K",
+        "Fei B"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of SPIE--the International Society for Optical Engineering",
+      "abstract": null,
+      "doi": "10.1117/12.3048817",
+      "arxiv_id": null,
+      "pmid": "41122225",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Baking Neural Radiance Fields for Real-Time View Synthesis.",
+      "authors": [
+        "Hedman P",
+        "Srinivasan PP",
+        "Mildenhall B",
+        "Reiser C",
+        "Barron JT",
+        "Debevec P"
+      ],
+      "year": 2025,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2024.3381001",
+      "arxiv_id": null,
+      "pmid": "38526902",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Neural radiance fields-based multi-view endoscopic scene reconstruction for surgical simulation.",
+      "authors": [
+        "Qin Z",
+        "Qian K",
+        "Liang S",
+        "Zheng Q",
+        "Peng J",
+        "Tai Y"
+      ],
+      "year": 2024,
+      "venue": "International journal of computer assisted radiology and surgery",
+      "abstract": null,
+      "doi": "10.1007/s11548-024-03080-8",
+      "arxiv_id": null,
+      "pmid": "38413491",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "StructNeRF: Neural Radiance Fields for Indoor Scenes With Structural Hints.",
+      "authors": [
+        "Chen Z",
+        "Wang C",
+        "Guo YC",
+        "Zhang SH"
+      ],
+      "year": 2023,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2023.3305295",
+      "arxiv_id": null,
+      "pmid": "37581966",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Enhancing View Synthesis with Depth-Guided Neural Radiance Fields and Improved Depth Completion.",
+      "authors": [
+        "Wang B",
+        "Zhang D",
+        "Su Y",
+        "Zhang H"
+      ],
+      "year": 2024,
+      "venue": "Sensors (Basel, Switzerland)",
+      "abstract": null,
+      "doi": "10.3390/s24061919",
+      "arxiv_id": null,
+      "pmid": "38544180",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "VPRF: Visual Perceptual Radiance Fields for Foveated Image Synthesis.",
+      "authors": [
+        "Wang Z",
+        "Wu J",
+        "Fan R",
+        "Ke W",
+        "Wang L"
+      ],
+      "year": 2024,
+      "venue": "IEEE transactions on visualization and computer graphics",
+      "abstract": null,
+      "doi": "10.1109/TVCG.2024.3456184",
+      "arxiv_id": null,
+      "pmid": "39259633",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "VD-NeRF: Visibility-Aware Decoupled Neural Radiance Fields for View-Consistent Editing and High-Frequency Relighting.",
+      "authors": [
+        "Wu T",
+        "Sun JM",
+        "Lai YK",
+        "Gao L"
+      ],
+      "year": 2025,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2025.3531417",
+      "arxiv_id": null,
+      "pmid": "40031219",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Depth-Guided Optimization of Neural Radiance Fields for Indoor Multi-View Stereo.",
+      "authors": [
+        "Wei Y",
+        "Liu S",
+        "Zhou J",
+        "Lu J"
+      ],
+      "year": 2023,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2023.3263464",
+      "arxiv_id": null,
+      "pmid": "37015126",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "V4D: Voxel for 4D Novel View Synthesis.",
+      "authors": [
+        "Gan W",
+        "Xu H",
+        "Huang Y",
+        "Chen S",
+        "Yokoya N"
+      ],
+      "year": 2024,
+      "venue": "IEEE transactions on visualization and computer graphics",
+      "abstract": null,
+      "doi": "10.1109/TVCG.2023.3312127",
+      "arxiv_id": null,
+      "pmid": "37669213",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "UltraSoundNeRF: Sonographic neural reflection field for novel view synthesis.",
+      "authors": [
+        "Wysocki M",
+        "Azampour MF",
+        "Busam B",
+        "Navab N"
+      ],
+      "year": 2026,
+      "venue": "Medical image analysis",
+      "abstract": null,
+      "doi": "10.1016/j.media.2026.104194",
+      "arxiv_id": null,
+      "pmid": "42570451",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "NeRF-OR: neural radiance fields for operating room scene reconstruction from sparse-view RGB-D videos.",
+      "authors": [
+        "Gerats BGA",
+        "Wolterink JM",
+        "Broeders IAMJ"
+      ],
+      "year": 2025,
+      "venue": "International journal of computer assisted radiology and surgery",
+      "abstract": null,
+      "doi": "10.1007/s11548-024-03261-5",
+      "arxiv_id": null,
+      "pmid": "39271573",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Learning Spherical Radiance Field for Efficient 360° Unbounded Novel View Synthesis.",
+      "authors": [
+        "Chen M",
+        "Wang L",
+        "Lei Y",
+        "Dong Z",
+        "Guo Y"
+      ],
+      "year": 2024,
+      "venue": "IEEE transactions on image processing : a publication of the IEEE Signal Processing Society",
+      "abstract": null,
+      "doi": "10.1109/TIP.2024.3409052",
+      "arxiv_id": null,
+      "pmid": "38857135",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Neural Radiance Fields for Fisheye Driving Scenes Using Edge-Aware Integrated Depth Supervision.",
+      "authors": [
+        "Choi J",
+        "Lee SJ"
+      ],
+      "year": 2024,
+      "venue": "Sensors (Basel, Switzerland)",
+      "abstract": null,
+      "doi": "10.3390/s24216790",
+      "arxiv_id": null,
+      "pmid": "39517687",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Explicit Correspondence Matching for Generalizable Neural Radiance Fields.",
+      "authors": [
+        "Chen Y",
+        "Xu H",
+        "Wu Q",
+        "Zheng C",
+        "Cham TJ",
+        "Cai J"
+      ],
+      "year": 2025,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2025.3598711",
+      "arxiv_id": null,
+      "pmid": "40802638",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "SLS4D: Sparse Latent Space for 4D Novel View Synthesis.",
+      "authors": [
+        "Feng QY",
+        "Chen HX",
+        "Xu QC",
+        "Mu TJ"
+      ],
+      "year": 2025,
+      "venue": "IEEE transactions on visualization and computer graphics",
+      "abstract": null,
+      "doi": "10.1109/TVCG.2024.3429421",
+      "arxiv_id": null,
+      "pmid": "39012751",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "MoBluRF: Motion Deblurring Neural Radiance Fields for Blurry Monocular Video.",
+      "authors": [
+        "Bui MV",
+        "Park J",
+        "Oh J",
+        "Kim M"
+      ],
+      "year": 2025,
+      "venue": "IEEE transactions on pattern analysis and machine intelligence",
+      "abstract": null,
+      "doi": "10.1109/TPAMI.2025.3574644",
+      "arxiv_id": null,
+      "pmid": "40434862",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "NeRF-Art: Text-Driven Neural Radiance Fields Stylization.",
+      "authors": [
+        "Wang C",
+        "Jiang R",
+        "Chai M",
+        "He M",
+        "Chen D",
+        "Liao J"
+      ],
+      "year": 2024,
+      "venue": "IEEE transactions on visualization and computer graphics",
+      "abstract": null,
+      "doi": "10.1109/TVCG.2023.3283400",
+      "arxiv_id": null,
+      "pmid": "37279137",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 959,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2129,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 307,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1803,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "c02d28d161af2198ca02ab10ed1b9076128c92905edacf3d8a1e4d18d36fbc89",
+  "identified_openalex": true
+}

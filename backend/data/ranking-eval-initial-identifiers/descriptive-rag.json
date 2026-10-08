@@ -1,0 +1,2078 @@
+{
+  "id": "descriptive-rag",
+  "category": "descriptive",
+  "query": "retrieval augmented generation for knowledge intensive question answering",
+  "target": {
+    "arxiv_id": "2005.11401"
+  },
+  "plan": {
+    "topic": "retrieval augmented generation for knowledge intensive question answering",
+    "sub_queries": [
+      "retrieval augmented generation for knowledge intensive question answering"
+    ],
+    "source_hints": [],
+    "filters": {
+      "year_min": null,
+      "year_max": null,
+      "sources": [],
+      "open_access_only": false,
+      "venue": null,
+      "author": null,
+      "min_citations": null
+    },
+    "limit": 20,
+    "include_web": false,
+    "domain_tags": [],
+    "arxiv_categories": [],
+    "query_terms": []
+  },
+  "candidates": [
+    {
+      "source": "arxiv",
+      "title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+      "authors": [
+        "Daeyong Kwon",
+        "SeungHeon Doh",
+        "Juhan Nam"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recent advancements in Large language models (LLMs) have demonstrated remarkable capabilities across diverse domains. While they exhibit strong zero-shot performance on various tasks, LLMs' effectiveness in music-related applications remains limited due to the relatively small proportion of music-specific knowledge in their training data. To address this limitation, we propose MusT-RAG, a comprehensive framework based on Retrieval Augmented Generation (RAG) to adapt general-purpose LLMs for text-only music question answering (MQA) tasks. RAG is a technique that provides external knowledge to LLMs by retrieving relevant context information when generating answers to questions. To optimize RAG for the music domain, we (1) propose MusWikiDB, a music-specialized vector database for the retrieval stage, and (2) utilizes context information during both inference and fine-tuning processes to effectively transform general-purpose LLMs into music-specific models. Our experiment demonstrates that MusT-RAG significantly outperforms traditional fine-tuning approaches in enhancing LLMs' music domain adaptation capabilities, showing consistent improvements across both in-domain and out-of-domain MQA benchmarks. Additionally, our MusWikiDB proves substantially more effective than general Wikipedia corpora, delivering superior performance and computational efficiency.",
+      "doi": null,
+      "arxiv_id": "2507.23334v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2507.23334v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.IR",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Tree of Reviews: A Tree-based Dynamic Iterative Retrieval Framework for Multi-hop Question Answering",
+      "authors": [
+        "Li Jiapeng",
+        "Liu Runze",
+        "Li Yabo",
+        "Zhou Tong",
+        "Li Mingling",
+        "Chen Xiang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Multi-hop question answering is a knowledge-intensive complex problem. Large Language Models (LLMs) use their Chain of Thoughts (CoT) capability to reason complex problems step by step, and retrieval-augmentation can effectively alleviate factual errors caused by outdated and unknown knowledge in LLMs. Recent works have introduced retrieval-augmentation in the CoT reasoning to solve multi-hop question answering. However, these chain methods have the following problems: 1) Retrieved irrelevant paragraphs may mislead the reasoning; 2) An error in the chain structure may lead to a cascade of errors.\n  In this paper, we propose a dynamic retrieval framework called Tree of Reviews (ToR), where the root node is the question, and the other nodes are paragraphs from retrieval, extending different reasoning paths from the root node to other nodes. Our framework dynamically decides to initiate a new search, reject, or accept based on the paragraphs on the reasoning paths. Compared to related work, we introduce a tree structure to handle each retrieved paragraph separately, alleviating the misleading effect of irrelevant paragraphs on the reasoning path; the diversity of reasoning path extension reduces the impact of a single reasoning error on the whole. We conducted experiments on three different multi-hop question answering datasets. The results show that compared to the baseline methods, ToR achieves state-of-the-art performance in both retrieval and response generation. In addition, we propose two tree-based search optimization strategies, pruning and effective expansion, to reduce time overhead and increase the diversity of path extension. We will release our code.",
+      "doi": null,
+      "arxiv_id": "2404.14464v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2404.14464v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.IR"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "An Exploration of Data Augmentation and Sampling Techniques for Domain-Agnostic Question Answering",
+      "authors": [
+        "Shayne Longpre",
+        "Yi Lu",
+        "Zhucheng Tu",
+        "Chris DuBois"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "To produce a domain-agnostic question answering model for the Machine Reading Question Answering (MRQA) 2019 Shared Task, we investigate the relative benefits of large pre-trained language models, various data sampling strategies, as well as query and context paraphrases generated by back-translation. We find a simple negative sampling technique to be particularly effective, even though it is typically used for datasets that include unanswerable questions, such as SQuAD 2.0. When applied in conjunction with per-domain sampling, our XLNet (Yang et al., 2019)-based submission achieved the second best Exact Match and F1 in the MRQA leaderboard competition.",
+      "doi": null,
+      "arxiv_id": "1912.02145v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1912.02145v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Generating Answer Candidates for Quizzes and Answer-Aware Question Generators",
+      "authors": [
+        "Kristiyan Vachev",
+        "Momchil Hardalov",
+        "Georgi Karadzhov",
+        "Georgi Georgiev",
+        "Ivan Koychev",
+        "Preslav Nakov"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "In education, open-ended quiz questions have become an important tool for assessing the knowledge of students. Yet, manually preparing such questions is a tedious task, and thus automatic question generation has been proposed as a possible alternative. So far, the vast majority of research has focused on generating the question text, relying on question answering datasets with readily picked answers, and the problem of how to come up with answer candidates in the first place has been largely ignored. Here, we aim to bridge this gap. In particular, we propose a model that can generate a specified number of answer candidates for a given passage of text, which can then be used by instructors to write questions manually or can be passed as an input to automatic answer-aware question generators. Our experiments show that our proposed answer candidate generation model outperforms several baselines.",
+      "doi": null,
+      "arxiv_id": "2108.12898v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2108.12898v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.CY",
+          "cs.IR",
+          "cs.LG"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+      "authors": [
+        "Jingyuan Qi",
+        "Zhiyang Xu",
+        "Qifan Wang",
+        "Lifu Huang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "We introduce Autoregressive Retrieval Augmentation (AR-RAG), a novel paradigm that enhances image generation by autoregressively incorporating knearest neighbor retrievals at the patch level. Unlike prior methods that perform a single, static retrieval before generation and condition the entire generation on fixed reference images, AR-RAG performs context-aware retrievals at each generation step, using prior-generated patches as queries to retrieve and incorporate the most relevant patch-level visual references, enabling the model to respond to evolving generation needs while avoiding limitations (e.g., over-copying, stylistic bias, etc.) prevalent in existing methods. To realize AR-RAG, we propose two parallel frameworks: (1) Distribution-Augmentation in Decoding (DAiD), a training-free plug-and-use decoding strategy that directly merges the distribution of model-predicted patches with the distribution of retrieved patches, and (2) Feature-Augmentation in Decoding (FAiD), a parameter-efficient fine-tuning method that progressively smooths the features of retrieved patches via multi-scale convolution operations and leverages them to augment the image generation process. We validate the effectiveness of AR-RAG on widely adopted benchmarks, including Midjourney-30K, GenEval and DPG-Bench, demonstrating significant performance gains over state-of-the-art image generation models.",
+      "doi": null,
+      "arxiv_id": "2506.06962v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2506.06962v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CV"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "BioHarness: Substrate-Aware Evidence Assembly for Biomedical Question Answering across Literature, Knowledge Bases, and Biological Atlases",
+      "authors": [
+        "Meng Xiao",
+        "Chuan Qin",
+        "Jinmiao Chen",
+        "Yihang Cheng",
+        "Yuanchun Zhou",
+        "Hengshu Zhu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Motivation: Biomedical question answering often requires evidence beyond topically retrieved literature, including gene alias resolution, database identifier normalization, and atlas-derived biological measurements. However, existing retrieval-augmented generation (RAG) systems typically follow a fixed workflow and lack an explicit mechanism for deciding when retrieved text is sufficient, when curated biomedical knowledge is required, or when executable evidence assembly over structured measurements should be invoked. This motivates a substrate-aware large language model (LLM) harness that selectively assembles sufficient evidence across literature, knowledge bases, and biological atlases.\n  Results: We introduce BioHarness, an LLM harness for staged biomedical evidence assembly across literature retrieval, curated biomedical knowledge resources, and atlas-derived structured measurements. BioHarness first attempts to answer from reranked literature evidence and escalates through grounded cascade control to REPL-style evidence assembly only when the current evidence is uncertain, weakly grounded, or substrate-mismatched. Across 19,302 biomedical QA items spanning seven answer formats, BioHarness improves the pooled score from 65.9 to 71.0 over the strongest non-oracle baseline. Ablations, case studies, and backbone-scaling analyses show that these gains arise from repairing evidence-substrate mismatches through reranking, entity grounding, and structured measurement access, rather than from indiscriminately invoking more reasoning steps, retrieving additional literature, or relying on a particular answer-model scale.",
+      "doi": null,
+      "arxiv_id": "2606.19396v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2606.19396v1",
+      "raw_payload": {
+        "categories": [
+          "q-bio.QM"
+        ],
+        "primary_category": "q-bio.QM"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "From RAG to Agentic RAG for Faithful Islamic Question Answering",
+      "authors": [
+        "Gagan Bhatia",
+        "Hamdy Mubarak",
+        "Mustafa Jarrar",
+        "George Mikros",
+        "Fadi Zaraket",
+        "Mahmoud Alhirthani",
+        "Mutaz Al-Khatib",
+        "Logan Cochrane",
+        "Kareem Darwish",
+        "Rashid Yahiaoui",
+        "Firoj Alam"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Large Language Models (LLMs) are increasingly used for Islamic question answering, where ungrounded responses may carry serious religious consequences. Yet standard MCQ/MRC-style evaluations (MCQ: Multiple choice questions, MRC: Machine Reading Comprehension) do not capture key real-world failure modes, notably free-form hallucinations and the ability to abstain when evidence is insufficient. To address this gap, we introduce IslamicFaithQA, a 3,810-item bilingual (Arabic/English) generative benchmark with atomic single-gold answers, which enables direct measurement of hallucination and abstention. We additionally developed an end-to-end grounded Islamic modeling suite consisting of (i) 25K Arabic text-grounded SFT reasoning pairs, (ii) 5K bilingual preference samples for reward-guided alignment, and (iii) a verse-level Qur'an retrieval corpus of ~6k atomic verses (ayat). Building on these resources, we develop an agentic Quran-grounding framework (agentic RAG) that uses structured tool calls for iterative evidence seeking and answer revision. Experiments across Arabic-centric and multilingual LLMs show that retrieval improves correctness and that agentic RAG yields the largest gains beyond standard RAG, achieving state-of-the-art performance and stronger Arabic-English robustness even with a small model (i.e., Qwen3 4B). We made the datasets are publicly available. https://huggingface.co/datasets/QCRI/IslamicFaithQA",
+      "doi": null,
+      "arxiv_id": "2601.07528v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2601.07528v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "In-Context Learning for Knowledge Base Question Answering for Unmanned Systems based on Large Language Models",
+      "authors": [
+        "Yunlong Chen",
+        "Yaming Zhang",
+        "Jianfei Yu",
+        "Li Yang",
+        "Rui Xia"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Knowledge Base Question Answering (KBQA) aims to answer factoid questions based on knowledge bases. However, generating the most appropriate knowledge base query code based on Natural Language Questions (NLQ) poses a significant challenge in KBQA. In this work, we focus on the CCKS2023 Competition of Question Answering with Knowledge Graph Inference for Unmanned Systems. Inspired by the recent success of large language models (LLMs) like ChatGPT and GPT-3 in many QA tasks, we propose a ChatGPT-based Cypher Query Language (CQL) generation framework to generate the most appropriate CQL based on the given NLQ. Our generative framework contains six parts: an auxiliary model predicting the syntax-related information of CQL based on the given NLQ, a proper noun matcher extracting proper nouns from the given NLQ, a demonstration example selector retrieving similar examples of the input sample, a prompt constructor designing the input template of ChatGPT, a ChatGPT-based generation model generating the CQL, and an ensemble model to obtain the final answers from diversified outputs. With our ChatGPT-based CQL generation framework, we achieved the second place in the CCKS 2023 Question Answering with Knowledge Graph Inference for Unmanned Systems competition, achieving an F1-score of 0.92676.",
+      "doi": null,
+      "arxiv_id": "2311.02956v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2311.02956v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FARSIQA: Faithful and Advanced RAG System for Islamic Question Answering",
+      "authors": [
+        "Mohammad Aghajani Asl",
+        "Behrooz Minaei Bidgoli"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The advent of Large Language Models (LLMs) has revolutionized Natural Language Processing, yet their application in high-stakes, specialized domains like religious question answering is hindered by challenges like hallucination and unfaithfulness to authoritative sources. This issue is particularly critical for the Persian-speaking Muslim community, where accuracy and trustworthiness are paramount. Existing Retrieval-Augmented Generation (RAG) systems, relying on simplistic single-pass pipelines, fall short on complex, multi-hop queries requiring multi-step reasoning and evidence aggregation. To address this gap, we introduce FARSIQA, a novel, end-to-end system for Faithful Advanced Question Answering in the Persian Islamic domain. FARSIQA is built upon our innovative FAIR-RAG architecture: a Faithful, Adaptive, Iterative Refinement framework for RAG. FAIR-RAG employs a dynamic, self-correcting process: it adaptively decomposes complex queries, assesses evidence sufficiency, and enters an iterative loop to generate sub-queries, progressively filling information gaps. Operating on a curated knowledge base of over one million authoritative Islamic documents, FARSIQA demonstrates superior performance. Rigorous evaluation on the challenging IslamicPCQA benchmark shows state-of-the-art performance: the system achieves a remarkable 97.0% in Negative Rejection - a 40-point improvement over baselines - and a high Answer Correctness score of 74.3%. Our work establishes a new standard for Persian Islamic QA and validates that our iterative, adaptive architecture is crucial for building faithful, reliable AI systems in sensitive domains.",
+      "doi": null,
+      "arxiv_id": "2510.25621v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2510.25621v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.IR"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+      "authors": [
+        " Xiangrong",
+        " Zhu",
+        "Yuan Xu",
+        "Tianjian Liu",
+        "Jingwei Sun",
+        "Yu Zhang",
+        "Xin Tong"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Human cognition is constrained by processing limitations, leading to cognitive overload and inefficiencies in knowledge synthesis and decision-making. Large Language Models (LLMs) present an opportunity for cognitive augmentation, but their current reactive nature limits their real-world applicability. This position paper explores the potential of context-aware cognitive augmentation, where LLMs dynamically adapt to users' cognitive states and task environments to provide appropriate support. Through a think-aloud study in an exhibition setting, we examine how individuals interact with multi-modal information and identify key cognitive challenges in structuring, retrieving, and applying knowledge. Our findings highlight the need for AI-driven cognitive support systems that integrate real-time contextual awareness, personalized reasoning assistance, and socially adaptive interactions. We propose a framework for AI augmentation that seamlessly transitions between real-time cognitive support and post-experience knowledge organization, contributing to the design of more effective human-centered AI systems.",
+      "doi": null,
+      "arxiv_id": "2504.13684v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2504.13684v1",
+      "raw_payload": {
+        "categories": [
+          "cs.HC"
+        ],
+        "primary_category": "cs.HC"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Enabling Collaborative Parametric Knowledge Calibration for Retrieval-Augmented Vision Question Answering",
+      "authors": [
+        "Jiaqi Deng",
+        "Kaize Shi",
+        "Zonghan Wu",
+        "Huan Huo",
+        "Dingxian Wang",
+        "Guandong Xu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Knowledge-based Vision Question Answering (KB-VQA) systems address complex visual-grounded questions with knowledge retrieved from external knowledge bases. The tasks of knowledge retrieval and answer generation tasks both necessitate precise multimodal understanding of question context and external knowledge. However, existing methods treat these two stages as separate modules with limited interaction during training, which hinders bi-directional parametric knowledge sharing, ultimately leading to suboptimal performance. To fully exploit the cross-task synergy in KB-VQA, we propose a unified retrieval-augmented VQA framework with collaborative parametric knowledge calibration. The proposed framework can effectively adapt general multimodal pre-trained models for fine-grained, knowledge-intensive tasks while enabling the retriever and generator to collaboratively enhance and share their parametric knowledge during both training and inference. To enhance fine-grained understanding of questions and external documents, we also integrate late interaction mechanism into the proposed training framework. Additionally, we introduce a reflective-answering mechanism that allows the model to explicitly evaluate and refine its knowledge boundary. Our approach achieves competitive performance against state-of-the-art models, delivering a significant 4.7\\% improvement in answering accuracy, and brings an average 7.5\\% boost in base MLLMs' VQA performance.",
+      "doi": null,
+      "arxiv_id": "2504.04065v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2504.04065v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CV",
+          "cs.IR",
+          "cs.MM"
+        ],
+        "primary_category": "cs.CV"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Expert Mind: A Retrieval-Augmented Architecture for Expert Knowledge Preservation in the Energy Sector",
+      "authors": [
+        "Diego Ezequiel Cervera"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "The departure of subject-matter experts from industrial organizations results in the irreversible loss of tacit knowledge that is rarely captured through conventional documentation practices. This paper proposes Expert Mind, an experimental system that leverages Retrieval-Augmented Generation (RAG), large language models (LLMs), and multimodal capture techniques to preserve, structure, and make queryable the deep expertise of organizational knowledge holders. Drawing on the specific context of the energy sector, where decades of operational experience risk being lost to an aging workforce, we describe the system architecture, processing pipeline, ethical framework, and evaluation methodology. The proposed system addresses the knowledge elicitation problem through structured interviews, think-aloud sessions, and text corpus ingestion, which are subsequently embedded into a vector store and queried through a conversational interface. Preliminary design considerations suggest Expert Mind can significantly reduce knowledge transfer latency and improve onboarding efficiency. Ethical dimensions including informed consent, intellectual property, and the right to erasure are addressed as first-class design constraints.",
+      "doi": null,
+      "arxiv_id": "2603.14541v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2603.14541v1",
+      "raw_payload": {
+        "categories": [
+          "cs.AI",
+          "cs.IR"
+        ],
+        "primary_category": "cs.AI"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+      "authors": [
+        "Chitralekha Gupta",
+        "Hanjun Wu",
+        "Praveen Sasikumar",
+        "Shreyas Sridhar",
+        "Priambudi Bagaskara",
+        "Suranga Nanayakkara"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Wearable devices are transforming human capabilities by seamlessly augmenting cognitive functions. In this position paper, we propose a voice-based, interactive learning companion designed to amplify and extend cognitive abilities through informal learning. Our vision is threefold: (1) to enable users to discover new knowledge on-the-go through contextual interactive quizzes, fostering critical thinking and mindfulness, (2) to proactively detect misinformation, empowering users to critically assess information in real time, and (3) to provide spoken language correction and prompting hints for second language learning and effective communication. As an initial step toward this vision, we present Factually - a proactive, wearable fact-checking system integrated into devices like smartwatches or rings. Factually discreetly alerts users to potential falsehoods via vibrotactile feedback, helping them assess information critically. We demonstrate its utility through three illustrative scenarios, highlighting its potential to extend cognitive abilities for real-time misinformation detection. Early qualitative feedback suggests that Factually can enhance users' fact-checking capabilities, offering both practical and experiential benefits.",
+      "doi": null,
+      "arxiv_id": "2504.17204v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2504.17204v1",
+      "raw_payload": {
+        "categories": [
+          "cs.HC",
+          "cs.ET"
+        ],
+        "primary_category": "cs.HC"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Knowledge Graph-extended Retrieval Augmented Generation for Question Answering",
+      "authors": [
+        "Jasper Linders",
+        "Jakub M. Tomczak"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Large Language Models (LLMs) and Knowledge Graphs (KGs) offer a promising approach to robust and explainable Question Answering (QA). While LLMs excel at natural language understanding, they suffer from knowledge gaps and hallucinations. KGs provide structured knowledge but lack natural language interaction. Ideally, an AI system should be both robust to missing facts as well as easy to communicate with. This paper proposes such a system that integrates LLMs and KGs without requiring training, ensuring adaptability across different KGs with minimal human effort. The resulting approach can be classified as a specific form of a Retrieval Augmented Generation (RAG) with a KG, thus, it is dubbed Knowledge Graph-extended Retrieval Augmented Generation (KG-RAG). It includes a question decomposition module to enhance multi-hop information retrieval and answer explainability. Using In-Context Learning (ICL) and Chain-of-Thought (CoT) prompting, it generates explicit reasoning chains processed separately to improve truthfulness. Experiments on the MetaQA benchmark show increased accuracy for multi-hop questions, though with a slight trade-off in single-hop performance compared to LLM with KG baselines. These findings demonstrate KG-RAG's potential to improve transparency in QA by bridging unstructured language understanding with structured knowledge retrieval.",
+      "doi": null,
+      "arxiv_id": "2504.08893v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2504.08893v1",
+      "raw_payload": {
+        "categories": [
+          "cs.LG"
+        ],
+        "primary_category": "cs.LG"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Overcoming low-utility facets for complex answer retrieval",
+      "authors": [
+        "Sean MacAvaney",
+        "Andrew Yates",
+        "Arman Cohan",
+        "Luca Soldaini",
+        "Kai Hui",
+        "Nazli Goharian",
+        "Ophir Frieder"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Many questions cannot be answered simply; their answers must include numerous nuanced details and additional context. Complex Answer Retrieval (CAR) is the retrieval of answers to such questions. In their simplest form, these questions are constructed from a topic entity (e.g., `cheese') and a facet (e.g., `health effects'). While topic matching has been thoroughly explored, we observe that some facets use general language that is unlikely to appear verbatim in answers. We call these low-utility facets. In this work, we present an approach to CAR that identifies and addresses low-utility facets. We propose two estimators of facet utility. These include exploiting the hierarchical structure of CAR queries and using facet frequency information from training data. To improve the retrieval performance on low-utility headings, we also include entity similarity scores using knowledge graph embeddings. We apply our approaches to a leading neural ranking technique, and evaluate using the TREC CAR dataset. We find that our approach perform significantly better than the unmodified neural ranker and other leading CAR techniques. We also provide a detailed analysis of our results, and verify that low-utility facets are indeed more difficult to match, and that our approach improves the performance for these difficult queries.",
+      "doi": null,
+      "arxiv_id": "1811.08772v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/1811.08772v1",
+      "raw_payload": {
+        "categories": [
+          "cs.IR"
+        ],
+        "primary_category": "cs.IR"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "KERAG: Knowledge-Enhanced Retrieval-Augmented Generation for Advanced Question Answering",
+      "authors": [
+        "Yushi Sun",
+        "Kai Sun",
+        "Yifan Ethan Xu",
+        "Xiao Yang",
+        "Xin Luna Dong",
+        "Nan Tang",
+        "Lei Chen"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Retrieval-Augmented Generation (RAG) mitigates hallucination in Large Language Models (LLMs) by incorporating external data, with Knowledge Graphs (KGs) offering crucial information for question answering. Traditional Knowledge Graph Question Answering (KGQA) methods rely on semantic parsing, which typically retrieves knowledge strictly necessary for answer generation, thus often suffer from low coverage due to rigid schema requirements and semantic ambiguity. We present KERAG, a novel KG-based RAG pipeline that enhances QA coverage by retrieving a broader subgraph likely to contain relevant information. Our retrieval-filtering-summarization approach, combined with fine-tuned LLMs for Chain-of-Thought reasoning on knowledge sub-graphs, reduces noises and improves QA for both simple and complex questions. Experiments demonstrate that KERAG surpasses state-of-the-art solutions by about 7% in quality and exceeds GPT-4o (Tool) by 10-21%.",
+      "doi": null,
+      "arxiv_id": "2509.04716v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2509.04716v1",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.IR"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "FlexKBQA: A Flexible LLM-Powered Framework for Few-Shot Knowledge Base Question Answering",
+      "authors": [
+        "Zhenyu Li",
+        "Sunqi Fan",
+        "Yu Gu",
+        "Xiuxing Li",
+        "Zhichao Duan",
+        "Bowen Dong",
+        "Ning Liu",
+        "Jianyong Wang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Knowledge base question answering (KBQA) is a critical yet challenging task due to the vast number of entities within knowledge bases and the diversity of natural language questions posed by users. Unfortunately, the performance of most KBQA models tends to decline significantly in real-world scenarios where high-quality annotated data is insufficient. To mitigate the burden associated with manual annotation, we introduce FlexKBQA by utilizing Large Language Models (LLMs) as program translators for addressing the challenges inherent in the few-shot KBQA task. Specifically, FlexKBQA leverages automated algorithms to sample diverse programs, such as SPARQL queries, from the knowledge base, which are subsequently converted into natural language questions via LLMs. This synthetic dataset facilitates training a specialized lightweight model for the KB. Additionally, to reduce the barriers of distribution shift between synthetic data and real user questions, FlexKBQA introduces an executionguided self-training method to iterative leverage unlabeled user questions. Furthermore, we explore harnessing the inherent reasoning capability of LLMs to enhance the entire framework. Consequently, FlexKBQA delivers substantial flexibility, encompassing data annotation, deployment, and being domain agnostic. Through extensive experiments on GrailQA, WebQSP, and KQA Pro, we observe that under the few-shot even the more challenging zero-shot scenarios, FlexKBQA achieves impressive results with a few annotations, surpassing all previous baselines and even approaching the performance of supervised models, achieving a remarkable 93% performance relative to the fully-supervised models. We posit that FlexKBQA represents a significant advancement towards exploring better integration of large and lightweight models. The code is open-sourced.",
+      "doi": null,
+      "arxiv_id": "2308.12060v3",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2308.12060v3",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "EVOR: Evolving Retrieval for Code Generation",
+      "authors": [
+        "Hongjin Su",
+        "Shuyang Jiang",
+        "Yuhang Lai",
+        "Haoyuan Wu",
+        "Boao Shi",
+        "Che Liu",
+        "Qian Liu",
+        "Tao Yu"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Recently the retrieval-augmented generation (RAG) has been successfully applied in code generation. However, existing pipelines for retrieval-augmented code generation (RACG) employ static knowledge bases with a single source, limiting the adaptation capabilities of Large Language Models (LLMs) to domains they have insufficient knowledge of. In this work, we develop a novel pipeline, EVOR, that employs the synchronous evolution of both queries and diverse knowledge bases. On two realistic settings where the external knowledge is required to solve code generation tasks, we compile four new datasets associated with frequently updated libraries and long-tail programming languages, named EVOR-BENCH. Extensive experiments demonstrate that EVOR achieves two to four times of execution accuracy compared to other methods such as Reflexion (Shinn et al., 2024), DocPrompting (Zhou et al., 2023), etc. We demonstrate that EVOR is flexible and can be easily combined with them to achieve further improvement. Further analysis reveals that EVOR benefits from the synchronous evolution of queries and documents and the diverse information sources in the knowledge base. We hope that our studies will inspire more insights into the design of advanced RACG pipelines in future research. Our model, code, and data are available at https://arks-codegen.github.io.",
+      "doi": null,
+      "arxiv_id": "2402.12317v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2402.12317v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Generate-then-Ground in Retrieval-Augmented Generation for Multi-hop Question Answering",
+      "authors": [
+        "Zhengliang Shi",
+        "Weiwei Sun",
+        "Shen Gao",
+        "Pengjie Ren",
+        "Zhumin Chen",
+        "Zhaochun Ren"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Multi-Hop Question Answering (MHQA) tasks present a significant challenge for large language models (LLMs) due to the intensive knowledge required. Current solutions, like Retrieval-Augmented Generation, typically retrieve potential documents from an external corpus to read an answer. However, the performance of this retrieve-then-read paradigm is constrained by the retriever and the inevitable noise in the retrieved documents. To mitigate these challenges, we introduce a novel generate-then-ground (GenGround) framework, synergizing the parametric knowledge of LLMs and external documents to solve a multi-hop question. GenGround empowers LLMs to alternate two phases until the final answer is derived: (1) formulate a simpler, single-hop question and directly generate the answer; (2) ground the question-answer pair in retrieved documents, amending any wrong predictions in the answer. We also propose an instructional grounding distillation method to generalize our method into smaller models. Extensive experiments conducted on four datasets illustrate the superiority of our method.",
+      "doi": null,
+      "arxiv_id": "2406.14891v2",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2406.14891v2",
+      "raw_payload": {
+        "categories": [
+          "cs.CL",
+          "cs.IR"
+        ],
+        "primary_category": "cs.CL"
+      }
+    },
+    {
+      "source": "arxiv",
+      "title": "Salient Knowledge Pathways: Sparse Cross-Modal Routing for Efficient Knowledge-Intensive Multimodal Question Answering",
+      "authors": [
+        "Noor Islam S. Mohammad",
+        "Uluğ Bayazıt"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": "Knowledge-intensive multimodal question answering (KI-MMQA) sits at the intersection of three expensive primitives: long visual token sequences, dense retrieval over large external corpora, and full cross-modal fusion. Existing systems pay all three costs uniformly per query, even though only a small fraction of visual content and retrieved knowledge is actually relevant to any given question. We introduce SKIP (Salient Knowledge-Injected Pathways), a unified inference architecture that routes computation along sparse pathways jointly conditioned on the question, the image, and a difficulty estimate. SKIP combines question-guided visual token pruning, region-conditional sparse retrieval, bipartite sparse cross-attention, and speculative knowledge verification with an adaptive budget controller that allocates compute proportional to predicted question difficulty. We derive an information-bottleneck bound showing that the optimal visual sparsity rate scales as $O(1/\\sqrt{N})$ under realistic question-image mutual-information assumptions, with retained accuracy guarantees. Across five KI-MMQA benchmarks (OK-VQA, A-OKVQA, InfoSeek, Encyclopedic-VQA, and ViQuAE), SKIP matches or exceeds the accuracy of strong dense baselines while using $3.4$--$6.8\\times$ fewer FLOPs and $2.7\\times$ less end-to-end latency. Code available at: https://pmlrbd.github.io/skip/",
+      "doi": null,
+      "arxiv_id": "2607.25422v1",
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": "https://arxiv.org/pdf/2607.25422v1",
+      "raw_payload": {
+        "categories": [
+          "cs.AI"
+        ],
+        "primary_category": "cs.AI"
+      }
+    },
+    {
+      "source": "openalex",
+      "title": "Multilingual Retrieval-Augmented Generation for Knowledge-Intensive Question Answering Task",
+      "authors": [
+        "Leonardo Ranaldi"
+      ],
+      "year": 2026,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2026.findings-eacl.35",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4414957389",
+      "citation_count": 5,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2026.findings-eacl.35.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "authors": [
+        "Yunfan Gao",
+        "Yun Xiong",
+        "Xinyu Gao",
+        "Kangxiang Jia",
+        "Jinliu Pan",
+        "Yuxi Bi",
+        "Yi Qi Dai",
+        "Jiawei Sun",
+        "Wang, Meng",
+        "Wang, Haofen"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2312.10997",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389984066",
+      "citation_count": 749,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2312.10997",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Active Retrieval Augmented Generation",
+      "authors": [
+        "Zhengbao Jiang",
+        "Frank F. Xu",
+        "Luyu Gao",
+        "Zhiqing Sun",
+        "Qian Liu",
+        "Jane Dwivedi-Yu",
+        "Yiming Yang",
+        "Jamie Callan",
+        "Graham Neubig"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2023.emnlp-main.495",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389519118",
+      "citation_count": 449,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2023.emnlp-main.495.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "RAGAs: Automated Evaluation of Retrieval Augmented Generation",
+      "authors": [
+        "Shahul Es",
+        "Jithin James",
+        "Luis Espinosa-Anke",
+        "Steven Schockaert"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2024.eacl-demo.16",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4411630045",
+      "citation_count": 471,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2024.eacl-demo.16.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Improving the Domain Adaptation of Retrieval Augmented Generation (RAG) Models for Open Domain Question Answering",
+      "authors": [
+        "Shamane Siriwardhana",
+        "Rivindu Weerasekera",
+        "Elliott Wen",
+        "Tharindu Indrajith Kaluarachchi",
+        "Rajib Kumar Rana",
+        "Suranga Chandima Nanayakkara"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1162/tacl_a_00530",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4317898419",
+      "citation_count": 316,
+      "oa_status": "diamond",
+      "pdf_url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00530/2067834/tacl_a_00530.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+      "authors": [
+        "Wenqi Fan",
+        "Yujuan Ding",
+        "Liangbo Ning",
+        "Shijie Wang",
+        "Hengyun Li",
+        "Dawei Yin",
+        "Tat‐Seng Chua",
+        "Qing Li"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3637528.3671470",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4401857375",
+      "citation_count": 750,
+      "oa_status": "gold",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3637528.3671470",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Benchmarking Large Language Models in Retrieval-Augmented Generation",
+      "authors": [
+        "Jiawei Chen",
+        "Hongyu Lin",
+        "Xianpei Han",
+        "Le Sun"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1609/aaai.v38i16.29728",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4393147129",
+      "citation_count": 379,
+      "oa_status": "diamond",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29728/31250",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "CBR-RAG: Case-Based Reasoning for Retrieval Augmented Generation in LLMs for Legal Question Answering",
+      "authors": [
+        "Nirmalie Wiratunga",
+        "Ramitha Abeyratne",
+        "Lasal Jayawardena",
+        "Kyle Martin",
+        "Stewart Massie",
+        "Ikechukwu Nkisi-Orji",
+        "Ruvan Weerasinghe",
+        "Anne Liret",
+        "Bruno Fleisch"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1007/978-3-031-63646-2_29",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4399932275",
+      "citation_count": 108,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering",
+      "authors": [
+        "Zhentao Xu",
+        "Missy Meine C. Dela Cruz",
+        "Matthew Guevara",
+        "Tie Wang",
+        "M. N. DESHPANDE",
+        "Xiaofeng Wang",
+        "Zheng Li"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1145/3626772.3661370",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4396823873",
+      "citation_count": 152,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Benchmarking Retrieval-Augmented Generation for Medicine",
+      "authors": [
+        "Guangzhi Xiong",
+        "Qiao Jin",
+        "Zhiyong Lu",
+        "Aidong Zhang"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2024.findings-acl.372",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4402670290",
+      "citation_count": 264,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2024.findings-acl.372.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Generation-Augmented Retrieval for Open-Domain Question Answering",
+      "authors": [
+        "Yuning Mao",
+        "Pengcheng He",
+        "Xiaodong Liu",
+        "Yelong Shen",
+        "Jianfeng Gao",
+        "Jiawei Han",
+        "Weizhu Chen"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.acl-long.316",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3176182290",
+      "citation_count": 146,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2021.acl-long.316.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions",
+      "authors": [
+        "Harsh K. Trivedi",
+        "Niranjan Balasubramanian",
+        "Tushar Khot",
+        "Ashish Sabharwal"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2023.acl-long.557",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4385571271",
+      "citation_count": 291,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2023.acl-long.557.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "In-Context Retrieval-Augmented Language Models",
+      "authors": [
+        "Ori Ram",
+        "Yoav Levine",
+        "Itay Dalmedigos",
+        "Dor Muhlgay",
+        "Amnon Shashua",
+        "Kevin Leyton‐Brown",
+        "Yoav Shoham"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1162/tacl_a_00605",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4388778348",
+      "citation_count": 410,
+      "oa_status": "diamond",
+      "pdf_url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00605/2178834/tacl_a_00605.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Almanac — Retrieval-Augmented Language Models for Clinical Medicine",
+      "authors": [
+        "Cyril Zakka",
+        "Rohan Shad",
+        "Akash R. Chaurasia",
+        "Alex R. Dalal",
+        "Jennifer L. Kim",
+        "Michael Moor",
+        "Robyn Fong",
+        "C. Phillips",
+        "Kevin Michael Alexander",
+        "Euan Angus Ashley",
+        "Jack H. Boyd",
+        "Kathleen Boyd",
+        "Karen G. Hirsch",
+        "Curtis Langlotz",
+        "Rita Lee",
+        "Joanna Melia",
+        "Joanna K Nelson",
+        "Karim Sallam",
+        "Stacey Tullis",
+        "Melissa Ann Vogelsong",
+        "John P. Cunningham",
+        "William Hiesinger"
+      ],
+      "year": 2024,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1056/aioa2300068",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4391221150",
+      "citation_count": 398,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Toward expert-level medical question answering with large language models",
+      "authors": [
+        "K. K. Singhal",
+        "Tao Tu",
+        "Juraj Gottweis",
+        "Rory Sayres",
+        "Ellery Wulczyn",
+        "Mohamed Amin",
+        "Le Hou",
+        "Kevin Clark",
+        "Stephen Pfohl",
+        "Heather J. Cole-Lewis",
+        "Darlene Neal",
+        "Qazi Mamunur Rashid",
+        "Mike Schaekermann",
+        "Amy Wang",
+        "Dev Dash",
+        "Jonathan H. Chen",
+        "Nigam Haresh Shah",
+        "Sami Lachgar",
+        "P. Mansfield",
+        "Sushant Prakash",
+        "Bradley Green",
+        "Ewa Dominowska",
+        "Blaise Agüera y Arcas",
+        "Nenad Tomašev",
+        "Yun Liu",
+        "Renee Wong",
+        "Christopher Semturs",
+        "S. Sara Mahdavi",
+        "Joelle K. Barral",
+        "Dale R. Webster",
+        "Greg S. Corrado",
+        "Yossi Matias",
+        "Shekoofeh Azizi",
+        "Alan Karthikesalingam",
+        "Vivek Natarajan"
+      ],
+      "year": 2025,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1038/s41591-024-03423-7",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4406152279",
+      "citation_count": 952,
+      "oa_status": "hybrid",
+      "pdf_url": "https://www.nature.com/articles/s41591-024-03423-7.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey on Knowledge Graphs: Representation, Acquisition, and Applications",
+      "authors": [
+        "Shaoxiong Ji",
+        "Shirui Pan",
+        "Erik Cambria",
+        "Pekka Marttinen",
+        "Philip S. Yu"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1109/tnnls.2021.3070843",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3003265726",
+      "citation_count": 2918,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Behavioral Safety and Context Retention of Large Language Models in a Longitudinal ICU Simulation under Offline Conditions",
+      "authors": [
+        "Hugo Touvron",
+        "Louis Martin",
+        "Kevin H. Stone",
+        "Peter J. Albert",
+        "Amjad Almahairi",
+        "Yasmine Babaei",
+        "Nikolay Bashlykov",
+        "Soumya Batra",
+        "Prajjwal Bhargava",
+        "Shruti Bhosale",
+        "Dan Bikel",
+        "Lukas Blecher",
+        "Cristian Canton Ferrer",
+        "Moya Chen",
+        "Guillem Cucurull",
+        "David Esiobu",
+        "Jude Fernandes",
+        "Jeremy Fu",
+        "Wenyin Fu",
+        "Brian B. Fuller",
+        "Cynthia Gao",
+        "Vedanuj Goswami",
+        "Naman Goyal",
+        "Anthony S. Hartshorn",
+        "Saghar Hosseini",
+        "Rui Hou",
+        "Hakan Inan",
+        "Marcin Kardas",
+        "Viktor Kerkez",
+        "Madian Khabsa",
+        "Isabel M. Kloumann",
+        "Artem Korenev",
+        "Punit Singh Koura",
+        "Marie-Anne Lachaux",
+        "Thibaut Lavril",
+        "Jenya Lee",
+        "Diana Liskovich",
+        "Yinghai Lu",
+        "Yuning Mao",
+        "Xavier Martinet",
+        "Todor Mihaylov",
+        "Pushkar Mishra",
+        "Igor Molybog",
+        "Yixin Nie",
+        "Andrew M. Poulton",
+        "Jeremy Reizenstein",
+        "Rashi Rungta",
+        "Kalyan Saladi",
+        "Alan Schelten",
+        "Ruan Silva",
+        "Eric Michael Smith",
+        "Ranjan Subramanian",
+        "Xiaoqing Ellen Tan",
+        "Binh Tang",
+        "Ross Taylor",
+        "Adina Williams",
+        "Jian Xiang Kuan",
+        "Puxin Xu",
+        "Zheng Tao Yan",
+        "Iliyan Zarov",
+        "Yuchen Zhang",
+        "Angela Fan",
+        "Melanie Kambadur",
+        "Sharan Narang",
+        "Aurelien Rodriguez",
+        "Robert Stojnic",
+        "Sergey Edunov",
+        "Thomas Scialom"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.48550/arxiv.2307.09288",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4384918448",
+      "citation_count": 2681,
+      "oa_status": "green",
+      "pdf_url": "https://arxiv.org/pdf/2307.09288",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "Enhancing Retrieval-Augmented Large Language Models with Iterative Retrieval-Generation Synergy",
+      "authors": [
+        "Zhihong Shao",
+        "Yeyun Gong",
+        "Yelong Shen",
+        "Minlie Huang",
+        "Nan Duan",
+        "Weizhu Chen"
+      ],
+      "year": 2023,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2023.findings-emnlp.620",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W4389520468",
+      "citation_count": 181,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2023.findings-emnlp.620.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering",
+      "authors": [
+        "Yingqi Qu",
+        "Yuchen Ding",
+        "Jing Liu",
+        "Kai Liu",
+        "Ruiyang Ren",
+        "Wayne Xin Zhao",
+        "Daxiang Dong",
+        "Hua Ren Wu",
+        "Haifeng Wang"
+      ],
+      "year": 2021,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.18653/v1/2021.naacl-main.466",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W3168875417",
+      "citation_count": 353,
+      "oa_status": "gold",
+      "pdf_url": "https://aclanthology.org/2021.naacl-main.466.pdf",
+      "raw_payload": {}
+    },
+    {
+      "source": "openalex",
+      "title": "A survey on question answering technology from an information retrieval perspective",
+      "authors": [
+        "Oleksandr Kolomiyets",
+        "Marie‐Francine Moens"
+      ],
+      "year": 2011,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.1016/j.ins.2011.07.047",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": "https://openalex.org/W2170872814",
+      "citation_count": 257,
+      "oa_status": "green",
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Multilingual Retrieval-Augmented Generation for Knowledge-Intensive Question Answering Task",
+      "authors": [
+        "Leonardo Ranaldi"
+      ],
+      "year": 2026,
+      "venue": "Findings of the Association for Computational Linguistics: EACL 2026",
+      "abstract": null,
+      "doi": "10.18653/v1/2026.findings-eacl.35",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 7,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Intelligent Question-Answering on Geomorphology Knowledge Based on Knowledge Graph Retrieval-Augmented Generation Technology",
+      "authors": [
+        "Xueying Zhang",
+        "Junxi Du",
+        "Bohang Guo",
+        "Maosen Xiang"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-6288322/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "EntropyRAG: Entropy-Aware Retrieval-Augmented Generation for Knowledge Graph Question Answering",
+      "authors": [
+        "Donglin Qi",
+        "Long Cheng",
+        "Haofei Wang",
+        "Yan Zhang",
+        "Dayan Wan"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.6794971",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Question Answering in the Construction Domain Using Retrieval-Augmented Generation",
+      "authors": [
+        "Dimitri Busch"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.6530458",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Knowledge graph-extended retrieval augmented generation for question answering",
+      "authors": [
+        "Jasper Linders",
+        "Jakub M. Tomczak"
+      ],
+      "year": 2025,
+      "venue": "Applied Intelligence",
+      "abstract": null,
+      "doi": "10.1007/s10489-025-06885-5",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 35,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Dynamic Multi-Hop Retrieval-Augmented Generation Framework for Professional Domain Question Answering",
+      "authors": [
+        "Jingxuan Zhu",
+        "Yunxi Tong"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.22541/au.177499050.00368942/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Comparing FAQ-Based and Retrieval-Augmented Generation Chatbots for Academic Service Question Answering",
+      "authors": [
+        "Suherwin Suherwin",
+        "Moh. Zainuddin",
+        "Rachmat Rachmat"
+      ],
+      "year": 2026,
+      "venue": "G-Tech: Jurnal Teknologi Terapan",
+      "abstract": null,
+      "doi": "10.70609/g-tech.v10i3.10019",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Improving Amharic Legal Question Answering with Retrieval-Augmented Generation and Locally-Sourced Data",
+      "authors": [
+        "Zinawork  Assefa Tura"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.5390467",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "ragR: Retrieval-Augmented Generation and RAG Evaluation Tools",
+      "authors": [
+        "Muhammad Aimal Rehman",
+        "Zhili Lu",
+        "Chi-Kuang Yeh"
+      ],
+      "year": 2026,
+      "venue": "CRAN: Contributed Packages",
+      "abstract": null,
+      "doi": "10.32614/cran.package.ragr",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Retrieval-Augmented Generation for Reducing Hallucinations in Drug-Related Question Answering Systems",
+      "authors": [
+        "Pratik Kumar",
+        "Rajat Verma"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-10186581/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Flow-RAG: Retrieval-augmented generation for knowledge graph question answering via gated flow propagation",
+      "authors": [
+        "Weina Zhang",
+        "Junsheng Huang",
+        "Zhongqin Bi",
+        "Baonan Wang"
+      ],
+      "year": 2026,
+      "venue": "Knowledge-Based Systems",
+      "abstract": null,
+      "doi": "10.1016/j.knosys.2026.116400",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "TriRAG: Enhancing Retrieval-Augmented Generation Method with Triple-Based Knowledge Graphs for Improved Question Answering",
+      "authors": [
+        "Hongzhi Zhang",
+        "M. Omair Shafiq"
+      ],
+      "year": 2025,
+      "venue": "2025 19th International Conference on Semantic Computing (ICSC)",
+      "abstract": null,
+      "doi": "10.1109/icsc64641.2025.00011",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 5,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Knowledge Graph Based Retrieval-Augmented Generation for Multi-Hop Question Answering Enhancement",
+      "authors": [
+        "Mahdi Amiri Shavaki",
+        "Pouria Omrani",
+        "Ramin Toosi",
+        "Mohammad Ali Akhaee"
+      ],
+      "year": 2024,
+      "venue": "2024 15th International Conference on Information and Knowledge Technology (IKT)",
+      "abstract": null,
+      "doi": "10.1109/ikt65497.2024.10892619",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 6,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "AI-Driven Knowledge Retrieval for Medical Question-Answering Using Large Language Models and Retrieval-Augmented Generation",
+      "authors": [
+        "Arman Rasool Faridi",
+        "Keshvi",
+        "Faraz Masood"
+      ],
+      "year": 2026,
+      "venue": "2026 6th International Conference on Multimedia, Signal Processing and Communication Technologies (IMPACT)",
+      "abstract": null,
+      "doi": "10.1109/impact68503.2026.11468290",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Integrating Knowledge Graph with Retrieval-Augmented Generation in Medical Question Answering: Development and Usability Study with MEDQA (Preprint)",
+      "authors": [
+        "Lou Pei",
+        "Hu Jiahui",
+        "Zhao Wanqing",
+        "Wang Qian",
+        "Fang An"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2196/preprints.92241",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Integrating Retrieval-Augmented Generation (RAG) and Knowledge Augmented Generation (KAG) Frameworks to Build Accurate Enterprise Question Answering Systems",
+      "authors": [
+        "Yonghe Guo",
+        "Longchuan Yan",
+        "Jianing Niu",
+        "Dequan Gao",
+        "Xiaoyu Yuan"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE 8th Advanced Information Technology, Electronic and Automation Control Conference (IAEAC)",
+      "abstract": null,
+      "doi": "10.1109/iaeac65194.2025.11166604",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Democratizing Legal Knowledge in India Using Retrieval-Augmented Generation: A Scalable Large-Corpus Framework for Legal Question Answering",
+      "authors": [
+        "Amit Pratap Singh",
+        "Manas Pratap Singh",
+        "Madhav Sharma",
+        "Lakshay Dang",
+        "Anju Gera"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.2139/ssrn.7153718",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Query-Specific Knowledge Graph Neural Networks for Multi-Hop Question Answering via Retrieval-Augmented Generation",
+      "authors": [
+        "Marella Likhita Sri Durga",
+        "Aparajita Sinha",
+        "Monika Agarwal"
+      ],
+      "year": 2026,
+      "venue": "2026 IEEE Guwahati Subsection Conference (GCON)",
+      "abstract": null,
+      "doi": "10.1109/gcon69192.2026.11648808",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "SG-RAG MOT: SubGraph Retrieval Augmented Generation with Merging and Ordering Triplets for Knowledge Graph Multi-hop Question Answering",
+      "authors": [
+        "Ahmmad O. M. Saleh",
+        "Gokhan Tur",
+        "Yucel Saygin"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.20944/preprints202505.1992.v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "crossref",
+      "title": "Retrieval-Augmented Generation versus Fine-tuning for Turkish Cultural Question Answering: A Comprehensive Evaluation and Analysis",
+      "authors": [
+        "Murat Simsek"
+      ],
+      "year": null,
+      "venue": null,
+      "abstract": null,
+      "doi": "10.21203/rs.3.rs-7217024/v1",
+      "arxiv_id": null,
+      "pmid": null,
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "RARE: Retrieval-Augmented Reasoning Enhancement for Large Language Models.",
+      "authors": [
+        "Tran H",
+        "Yao Z",
+        "Yang Z",
+        "Wang J",
+        "Zhang Y",
+        "Han S",
+        "Ouyang F",
+        "Yu H"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of the conference. Association for Computational Linguistics. Meeting",
+      "abstract": null,
+      "doi": "10.18653/v1/2025.acl-long.896",
+      "arxiv_id": null,
+      "pmid": "42367181",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "CRITIC-RAG: Knowledge-Augmented Large Language Models With Verified Retrieval for Improved Medical Reasoning.",
+      "authors": [
+        "Li J",
+        "Lu L",
+        "Miao Y",
+        "Tian Y",
+        "Li J"
+      ],
+      "year": 2026,
+      "venue": "IEEE journal of biomedical and health informatics",
+      "abstract": null,
+      "doi": "10.1109/JBHI.2026.3687666",
+      "arxiv_id": null,
+      "pmid": "42139130",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Retrieval-augmented generation for interpreting clinical laboratory regulations using large language models.",
+      "authors": [
+        "Nanua S",
+        "Steward R",
+        "Neely B",
+        "Datto M",
+        "Youens K"
+      ],
+      "year": 2025,
+      "venue": "Journal of pathology informatics",
+      "abstract": null,
+      "doi": "10.1016/j.jpi.2025.100520",
+      "arxiv_id": null,
+      "pmid": "41244595",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Retrieval In Decoder benefits generative models for explainable complex question answering.",
+      "authors": [
+        "Feng J",
+        "Wang Q",
+        "Qiu H",
+        "Liu L"
+      ],
+      "year": 2025,
+      "venue": "Neural networks : the official journal of the International Neural Network Society",
+      "abstract": null,
+      "doi": "10.1016/j.neunet.2024.106833",
+      "arxiv_id": null,
+      "pmid": "39509813",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Fine grained reranking via caption bridging for knowledge augmented visual question answering.",
+      "authors": [
+        "Feng J",
+        "Liu T",
+        "Wu Y",
+        "Ng ZN",
+        "Ariannejad M",
+        "Tan JD",
+        "Bhuiyan MAS",
+        "Kang CC"
+      ],
+      "year": 2026,
+      "venue": "Scientific reports",
+      "abstract": null,
+      "doi": "10.1038/s41598-026-57349-w",
+      "arxiv_id": null,
+      "pmid": "42297857",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Simulated patient systems powered by large language model-based AI agents offer potential for transforming medical education.",
+      "authors": [
+        "Yu H",
+        "Zhou J",
+        "Li L",
+        "Chen S",
+        "Gallifant J",
+        "Shi A",
+        "Sun J",
+        "Li X",
+        "He J",
+        "Hua W",
+        "Jin M",
+        "Chen G",
+        "Zhou Y",
+        "Li Z",
+        "Gupte T",
+        "Chen ML",
+        "Azizi Z",
+        "Dou Q",
+        "Yan BP",
+        "Xing Y",
+        "Zhang Y",
+        "Assimes TL",
+        "Bitterman DS",
+        "Ma X",
+        "Lu L",
+        "Fan L"
+      ],
+      "year": 2025,
+      "venue": "Communications medicine",
+      "abstract": null,
+      "doi": "10.1038/s43856-025-01283-x",
+      "arxiv_id": null,
+      "pmid": "41420084",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Ascle-A Python Natural Language Processing Toolkit for Medical Text Generation: Development and Evaluation Study.",
+      "authors": [
+        "Yang R",
+        "Zeng Q",
+        "You K",
+        "Qiao Y",
+        "Huang L",
+        "Hsieh CC",
+        "Rosand B",
+        "Goldwasser J",
+        "Dave A",
+        "Keenan T",
+        "Ke Y",
+        "Hong C",
+        "Liu N",
+        "Chew E",
+        "Radev D",
+        "Lu Z",
+        "Xu H",
+        "Chen Q",
+        "Li I"
+      ],
+      "year": 2024,
+      "venue": "Journal of medical Internet research",
+      "abstract": null,
+      "doi": "10.2196/60601",
+      "arxiv_id": null,
+      "pmid": "39361955",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Large language models for closed-library multi-document query, test generation, and evaluation.",
+      "authors": [
+        "Randolph C",
+        "Michaleas A",
+        "Ricke DO"
+      ],
+      "year": 2025,
+      "venue": "Frontiers in artificial intelligence",
+      "abstract": null,
+      "doi": "10.3389/frai.2025.1592013",
+      "arxiv_id": null,
+      "pmid": "40842855",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "RadOncRAG: A Novel Retrieval-Augmented Generation Framework Improves Large Language Model Benchmark Performance in Radiation Oncology.",
+      "authors": [
+        "Thaker NG",
+        "Redjal N",
+        "Dicker A",
+        "Loaiza-Bonilla A",
+        "Royce T",
+        "Subbiah V",
+        "Deendyal V",
+        "Gabriel JR",
+        "Shetty N",
+        "Choudhri A",
+        "Thaker GH"
+      ],
+      "year": 2025,
+      "venue": "JCO clinical cancer informatics",
+      "abstract": null,
+      "doi": "10.1200/CCI-25-00220",
+      "arxiv_id": null,
+      "pmid": "41237352",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Leveraging contextual confidence for smarter retrieval in large language models.",
+      "authors": [
+        "Zubkova H",
+        "Park JH",
+        "Lee SW"
+      ],
+      "year": 2026,
+      "venue": "Neural networks : the official journal of the International Neural Network Society",
+      "abstract": null,
+      "doi": "10.1016/j.neunet.2026.108862",
+      "arxiv_id": null,
+      "pmid": "41863899",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Structured multi-level knowledge augmentation via small-to-large evidence-guided collaboration for knowledge-based VQA.",
+      "authors": [
+        "Zhang M",
+        "Wu D",
+        "Chung W"
+      ],
+      "year": 2026,
+      "venue": "Frontiers in artificial intelligence",
+      "abstract": null,
+      "doi": "10.3389/frai.2026.1884321",
+      "arxiv_id": null,
+      "pmid": "42577420",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "From reviews to real-time: dynamic evidence in dentistry.",
+      "authors": [
+        "Gavrilova AV",
+        "Galli C"
+      ],
+      "year": 2026,
+      "venue": "Evidence-based dentistry",
+      "abstract": null,
+      "doi": "10.1038/s41432-026-01206-2",
+      "arxiv_id": null,
+      "pmid": "41735601",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Improving accuracy of GPT-3/4 results on biomedical data using a retrieval-augmented language model.",
+      "authors": [
+        "Soong D",
+        "Sridhar S",
+        "Si H",
+        "Wagner JS",
+        "Sá ACC",
+        "Yu CY",
+        "Karagoz K",
+        "Guan M",
+        "Kumar S",
+        "Hamadeh H",
+        "Higgs BW"
+      ],
+      "year": 2024,
+      "venue": "PLOS digital health",
+      "abstract": null,
+      "doi": "10.1371/journal.pdig.0000568",
+      "arxiv_id": null,
+      "pmid": "39167594",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "CMedRAGBot: A Chinese Medical Chatbot Based on Graph RAG and Large Language Models.",
+      "authors": [
+        "Zhang D",
+        "Du H",
+        "Wang X",
+        "Zhu M",
+        "Pang X",
+        "Wei D",
+        "Wang X"
+      ],
+      "year": 2025,
+      "venue": "Interdisciplinary sciences, computational life sciences",
+      "abstract": null,
+      "doi": "10.1007/s12539-025-00715-5",
+      "arxiv_id": null,
+      "pmid": "40474035",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Active Knowledge Retrieval to Reduce Hallucinations and Enhance Factual Accuracy in Large Medical Reasoning Models.",
+      "authors": [
+        "Lian H",
+        "Wu J",
+        "Wang Z",
+        "Chen L",
+        "Ji L",
+        "Ren L"
+      ],
+      "year": 2026,
+      "venue": "The Journal of craniofacial surgery",
+      "abstract": null,
+      "doi": "10.1097/SCS.0000000000012355",
+      "arxiv_id": null,
+      "pmid": "41528309",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "LEAF: Learning and Evaluation Augmented by Fact-Checking to Improve Factualness in Large Language Models.",
+      "authors": [
+        "Tran H",
+        "Wang J",
+        "Ting Y",
+        "Yu H",
+        "Huang W",
+        "Chen T"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of the Conference on Empirical Methods in Natural Language Processing. Conference on Empirical Methods in Natural Language Processing",
+      "abstract": null,
+      "doi": "10.18653/v1/2025.emnlp-industry.23",
+      "arxiv_id": null,
+      "pmid": "41658343",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Specialized Artificial Intelligence Clinical Decision Support System for Aesthetic Surgery: Aesthetic Surgery Using Retrieval Augmentation (AURA).",
+      "authors": [
+        "Ozmen BB",
+        "Singh N",
+        "Shah K",
+        "Berber I",
+        "Singh D",
+        "Pinsky E",
+        "Sinclair NR",
+        "Isakov R",
+        "Schwarz GS"
+      ],
+      "year": 2025,
+      "venue": "Aesthetic surgery journal",
+      "abstract": null,
+      "doi": "10.1093/asj/sjaf120",
+      "arxiv_id": null,
+      "pmid": "40579186",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Analysis Model for Infant Incubator Adverse Events Using Retrieval-Augmented Generation Combined With Dual-Adapter Fine-Tuning: Development and Evaluation Study.",
+      "authors": [
+        "Xia W",
+        "Zhu W",
+        "Li T",
+        "Wang L",
+        "Li W",
+        "Zhang P"
+      ],
+      "year": 2026,
+      "venue": "JMIR medical informatics",
+      "abstract": null,
+      "doi": "10.2196/83745",
+      "arxiv_id": null,
+      "pmid": "41915420",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    },
+    {
+      "source": "pubmed",
+      "title": "Using Generative Artificial Intelligence in Health Economics and Outcomes Research: A Primer on Techniques and Breakthroughs.",
+      "authors": [
+        "Reason T",
+        "Klijn S",
+        "Rawlinson W",
+        "Benbow E",
+        "Langham J",
+        "Teitsson S",
+        "Johannesen K",
+        "Malcolm B"
+      ],
+      "year": 2025,
+      "venue": "PharmacoEconomics - open",
+      "abstract": null,
+      "doi": "10.1007/s41669-025-00580-4",
+      "arxiv_id": null,
+      "pmid": "40301283",
+      "openalex_id": null,
+      "citation_count": 0,
+      "oa_status": null,
+      "pdf_url": null,
+      "raw_payload": {}
+    }
+  ],
+  "source_health": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "latency_ms": 1049,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "openalex",
+      "status": "ok",
+      "latency_ms": 2839,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "crossref",
+      "status": "ok",
+      "latency_ms": 508,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "pubmed",
+      "status": "ok",
+      "latency_ms": 1860,
+      "error": null,
+      "retry_after_seconds": null
+    },
+    {
+      "source": "semantic_scholar",
+      "status": "degraded",
+      "latency_ms": 0,
+      "error": "semantic_scholar skipped: configure SEMANTIC_SCHOLAR_API_KEY to avoid unauthenticated rate limits",
+      "retry_after_seconds": null
+    }
+  ],
+  "dataset_sha256": "c02d28d161af2198ca02ab10ed1b9076128c92905edacf3d8a1e4d18d36fbc89",
+  "identified_openalex": true
+}

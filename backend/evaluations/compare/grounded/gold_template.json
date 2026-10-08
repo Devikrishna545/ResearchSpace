@@ -1,0 +1,37 @@
+{
+  "_comment": "Template only. Faculty reviewers create and approve the real gold set (gold.json) and set faculty_approved to true.",
+  "faculty_approved": false,
+  "pairs": [
+    {
+      "pair_id": "word2vec-vs-glove",
+      "case": "real agreement plus architecture-versus-dataset and related-work traps",
+      "space_id": "<space id>",
+      "paper_ids": ["<word2vec paper id>", "<glove paper id>"],
+      "report_id": null,
+      "facts": {
+        "P1": {
+          "dataset": {"values": ["Google News corpus"], "wrong_type": ["CBOW architecture", "Skip-gram"], "not_owned": []},
+          "method": {"values": ["Continuous Bag-of-Words", "Continuous Skip-gram"]}
+        },
+        "P2": {
+          "dataset": {"values": ["Wikipedia 2014", "Gigaword 5", "Common Crawl"], "not_owned": ["Google News corpus"]}
+        }
+      },
+      "commonalities": [{"dimension": "metric", "keywords": ["accuracy"]}],
+      "contradictions": [],
+      "numeric": [],
+      "accepted_gaps": [{"category": "generalizability_gap", "keywords": ["english"]}],
+      "expected_insufficient": {"P1": ["population"], "P2": ["population"]},
+      "unrelated": false
+    },
+    {
+      "pair_id": "unrelated-control",
+      "case": "unrelated papers: any shown commonality is a false cross-paper agreement",
+      "space_id": "<space id>",
+      "paper_ids": ["<paper a>", "<paper b>"],
+      "facts": {},
+      "commonalities": [],
+      "unrelated": true
+    }
+  ]
+}
