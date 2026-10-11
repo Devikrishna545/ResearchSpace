@@ -1,0 +1,149 @@
+R.SPACE END-TO-END TEST REPORT
+Executed: 2026-10-10
+Scope: backend API, frontend workflows, launcher, production build, and research
+       validation utilities.
+Environment: macOS; Python 3.14.7; Node/Next.js 16.3.5; local SQLite;
+             frontend .env.local; backend/.venv.
+
+EXECUTIVE SUMMARY
+-----------------
+Initial result: NOT READY FOR DEPLOYMENT
+Current result after TST-001 correction: BACKEND REGRESSION SUITE PASSING
+
+The frontend functional suite, linting, type check, and production build pass.
+The initial backend suite found a grounded-comparison deletion race. It has been
+corrected and the focused regression test and complete backend suite now pass.
+
+TEST EXECUTION EVIDENCE
+-----------------------
+7. TST-001 fix verification
+   Command: cd backend && .venv/bin/python -m pytest \
+            tests/unit/compare/test_grounded_compare.py::test_deleting_space_stops_its_running_job
+   Result: PASS. 1 passed.
+
+8. Backend regression suite after TST-001 correction
+   Command: cd backend && .venv/bin/python -m pytest
+   Result: PASS. 264 passed, 5 skipped, 1 known FastAPI deprecation warning.
+
+1. Backend functional and integration tests
+   Command: cd backend && .venv/bin/python -m pytest
+   Result: 263 passed, 5 skipped, 1 failed (269 collected), 55.49 seconds.
+
+2. Frontend functional tests
+   Command: cd frontend && npm test
+   Result: 134 passed, 0 failed.
+
+3. Frontend non-functional quality gates
+   Command: cd frontend && npm run lint && npm run typecheck && npm run build
+   Result: PASS. ESLint reported no warnings; TypeScript reported no errors;
+           the Next.js production build completed successfully.
+
+4. Backend syntax and launcher checks
+   Command: cd backend && .venv/bin/python -m compileall -q app tests &&
+            .venv/bin/python -m pytest tests/test_launcher.py
+   Result: PASS. Compilation succeeded; launcher tests: 30 passed, 4 skipped.
+
+5. Research validation utilities
+   Command: cd research && PYTHONPATH=. ../backend/.venv/bin/python -m pytest
+            chat_chunking/tests qasper_validation/tests
+   Result: PASS. 48 passed. The initial collection failure caused by a missing
+           declared tiktoken dependency was resolved by installing
+           research/requirements.txt; it is not a source-code defect.
+
+6. Integrated live smoke test
+   Command: backend/.venv/bin/python app.py
+   Result: PASS. Backend documentation and frontend page both returned HTTP 200.
+           The browser rendered the R.Space sign-in page with zero console
+           errors. /v1/auth/status returned 200, while anonymous requests to
+           /v1/admin/health, /v1/spaces, /v1/search/tags, and
+           /v1/grounded/tiers correctly returned HTTP 401.
+
+MODULE-BY-MODULE TEST PLAN AND CURRENT COVERAGE
+------------------------------------------------
+Module / surface             Functional testing                                  Non-functional testing                 Status
+---------------------------  --------------------------------------------------  -------------------------------------  ------
+Application launcher         Startup, port availability, process handling        Launcher unit tests; live startup      PASS
+Authentication & ownership   Bootstrap/login/session/logout/admin/ownership      Anonymous boundary checks               PASS
+Research spaces              Create/read/update/archive/duplicate/delete         Persistence/integration checks          BLOCKED*
+Discovery                    Provider adapters, tags, ranking, caching, consent  Ranking evaluation tests                PASS
+Library and papers           Pin/unpin, reader, annotations, PDF upload/content  PDF limits and lifecycle tests          PASS
+Chat                         Sessions, turns, compression, memory, export        API client/state tests                  PASS
+Retrieval                    Dense/sparse fusion, hybrid retrieval, rewriting    Retrieval unit tests                    PASS
+Verification                 Claims, evidence trail, policies, verdict parsing   Structured-output shape tests            PASS
+Compare                      Standard reports, reports lifecycle and UI state    Production build/state tests            PASS
+Grounded comparison          Jobs, corpus, evidence, tiers, cancellation         Concurrency/delete lifecycle test       FAIL
+Notes                        Manual/auto notes, memory and space linkage         Backend and UI state tests              PASS
+Sharing / LinkedIn           Status/connect/disconnect/publish route contracts   Existing API test coverage only         PASS
+Frontend shell               Dashboard, theme, notifications, brand and styles   Lint/type check/build/browser smoke     PASS
+Research chunking utilities  Experiment and QASPER validation                    Standalone pytest suite                 PASS
+
+* Space deletion itself is covered, but its required interaction with a running
+  grounded-  comparison job initially failed. It is now covered by a passing regression
+  test after the TST-001 correction.
+
+CONFIRMED ISSUES
+----------------
+ID: TST-001
+Severity: HIGH
+Module: Grounded comparison jobs / Research-space deletion
+Reproduction:
+  cd backend && .venv/bin/python -m pytest \
+    tests/unit/compare/test_grounded_compare.py::test_deleting_space_stops_its_running_job
+Expected:
+  Deleting a research space cancels or otherwise safely terminates every
+  comparison job belonging to it. The task finishes and removes its task entry
+  without attempting to persist to a deleted AnalysisJob row.
+Actual:
+  The task is cancelled while waiting on the model client, then its cleanup/
+  state-update path attempts to update analysis_jobs after the row has been
+  deleted. SQLAlchemy raises:
+    StaleDataError: UPDATE statement on table 'analysis_jobs' expected to
+    update 1 row(s); 0 were matched.
+Evidence:
+  backend/tests/unit/compare/test_grounded_compare.py, test beginning at line
+  667; full-suite failure: 1 failed, 263 passed, 5 skipped.
+Risk:
+  A user deleting a space while a grounded comparison is running can leave an
+  unhandled task exception and an inconsistent background-job lifecycle.
+Recommended correction:
+  Make cancellation/deletion ownership explicit and idempotent. Before any
+  background-job terminal-state update, re-read or conditionally update the job
+  row; treat a missing row caused by parent-space deletion as an expected
+  cancellation outcome. Add regression coverage for cancellation at every
+  awaited job phase and for repeated deletion/cancellation requests.
+Resolution:
+  update_job now confirms whether the job still exists after a stale database
+  update. A stale update is ignored only when deletion removed the job row;
+  all other stale updates still raise normally.
+Verification:
+  Focused deletion-race regression: passed.
+  Complete backend suite: 264 passed, 5 skipped.
+State: RESOLVED
+
+TEST PLAN FOR THE FIX VERIFICATION CYCLE
+----------------------------------------
+1. Implement the TST-001 lifecycle fix and keep the failed focused test as the
+   primary regression test.
+2. Add tests that delete a space while the job is queued, while it awaits model
+   output, while it writes evidence, and while it finalizes.
+3. Rerun the focused test, then the complete backend suite, frontend suite,
+   lint, type check, production build, and live smoke test recorded above.
+4. Perform authenticated browser journeys in a disposable test account:
+   bootstrap/sign in; create a space; discover and pin papers; upload a
+   permitted and an oversized PDF; annotate; chat with citations; create notes;
+   run/cancel/complete both comparison types; archive, duplicate, and delete.
+5. With deterministic local fixtures and no production data, add measured
+   non-functional baselines: concurrent job cancellation, API latency under
+   expected concurrency, upload-size boundary behavior, and keyboard/accessibility
+   checks. Record thresholds and results before deployment strategy is chosen.
+
+OUT-OF-SCOPE / NOT YET VERIFIED
+-------------------------------
+- Live external provider behavior (academic providers, web search, LinkedIn,
+  Ollama/model availability) was not invoked because it requires configured
+  credentials/services and could create external side effects.
+- Full authenticated browser workflows require a disposable account credential;
+  API and application-layer coverage was executed instead.
+- No load-test thresholds, accessibility audit, or security penetration test
+  baseline currently exists. These must be defined and run after TST-001 is
+  corrected and before selecting deployment architecture.

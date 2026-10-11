@@ -8,6 +8,7 @@ from uuid import uuid4
 
 from fastapi import HTTPException
 from sqlalchemy import select
+from sqlalchemy.orm.exc import StaleDataError
 
 from app.core.auth import owner_id
 from app.core.config import Settings
@@ -245,7 +246,14 @@ async def update_job(job_id: str, *, state: str | None = None, progress: float |
                     job.progress = 1.0
             job.updated_at = _now()
             await session.commit()
-    await retry_sqlite_locked(op)
+    try:
+        await retry_sqlite_locked(op)
+    except StaleDataError:
+        async with SessionLocal() as session:
+            exists = await session.scalar(select(AnalysisJob.id).where(AnalysisJob.id == job_id))
+        if exists is not None:
+            raise
+        # Space deletion can remove the job after this update loaded it.
 
 
 class GroundedComparePipeline:
